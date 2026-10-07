@@ -1,0 +1,2358 @@
+{
+  "version": "1.0.0",
+  "language": "pl",
+  "status": "unvalidated_operational_prototype",
+  "prepared_at": "2026-10-07",
+  "authorship": "Autorskie definicje COPOWIESZ, bez kopiowania katalogów jednostek DogFACS/CatFACS.",
+  "purpose": "Rejestracja widocznych i słyszalnych faktów w naturalnych spokojnych zdarzeniach. Nie jest walidowaną etykietą emocji ani narzędziem diagnozy.",
+  "definition_basis": "project_operational_definition",
+  "source_reference_policy": "source_ids wskazują kontekst metodologiczny raportowania, nie pochodzenie definicji ani dowód trafności kodów.",
+  "annotation_rules": [
+    "Nie wywołuj zachowania. Nie zlecaj nagrania eliminacji, kaszlu, duszności lub reakcji ochronnej; wykorzystuj wyłącznie materiał już bezpiecznie i prawnie dostępny.",
+    "Kod opisuje widoczny odcinek, nie pełne życie zwierzęcia. Brak widoczności, brak okazji i nieobecność mimo możliwości oceny są osobnymi stanami.",
+    "Kody mogą nakładać się między warstwami; sprzeczne pozycje w tej samej klatce wymagają przeglądu. Nie ma globalnego niezwalidowanego progu długości zachowania.",
+    "Początek/koniec znaczone w osi oryginalnego klipu. Przy wejściu poza kadr czas początku pozostaje lewostronnie niepełny; przy wyjściu czas końca prawostronnie niepełny.",
+    "Wideo nie wyznacza pilności zdrowotnej z kodu. Niepokojący opis wymaga odrębnej oceny z kontekstem; etogram nie wstrzymuje konsultacji.",
+    "Przesunięcie sceny, zmiana kąta, osoba poza kadrem i niepewna tożsamość muszą mieć flagę jakości.",
+    "Względne ruchy można opisać bez metrycznej kalibracji, ale prędkości, odległości i kąty metryczne wymagają jej osobno.",
+    "Źródło audio musi być potwierdzone. Bez audio nie koduj nieobecności wokalizacji.",
+    "Dane ludzi i prywatne nagrania poza repozytorium; nie wprowadzaj prawdziwych klipów do tej listy."
+  ],
+  "observation_states": [
+    "observed",
+    "not_observed_given_visibility",
+    "not_visible",
+    "no_opportunity",
+    "not_assessed",
+    "unresolved"
+  ],
+  "boundary_flags": [
+    "left_censored",
+    "right_censored",
+    "camera_motion",
+    "identity_uncertain",
+    "partial_visibility",
+    "audio_source_uncertain"
+  ],
+  "behaviors": [
+    {
+      "id": "etho_v1_walk",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "label_pl": "Chód krokiem",
+      "operational_definition": "Zwierzę przemieszcza tułów, stawiając widoczne kończyny kolejno; bez widocznej fazy oderwania wszystkich kończyn od podłoża.",
+      "onset_rule": "Pierwsza klatka lub próbka audio, w której definicja jest spełniona i wymagany sygnał widoczny/słyszalny.",
+      "offset_rule": "Ostatnia klatka lub próbka spełniająca definicję przed jej ustaniem; utratę widoczności oznacz jako zakończenie oceny, nie dowód ustania zachowania.",
+      "required_visibility": [
+        "cały tułów",
+        "kończyny i podłoże"
+      ],
+      "not_inferable": [
+        "stan emocjonalny",
+        "diagnoza",
+        "trwała cecha osobowości",
+        "cel psychiczny"
+      ],
+      "source_ids": [
+        "methods_src_v2_arrive_e"
+      ],
+      "basis": "project_operational_definition",
+      "source_reference_role": "methodological_context_not_definition_origin",
+      "category": "movement",
+      "measurement_hint": "duration",
+      "review_status": "editorial_screened_expert_pending"
+    },
+    {
+      "id": "etho_v1_trot",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "label_pl": "Chód z naprzemiennymi parami kończyn",
+      "operational_definition": "Przemieszczenie z rozpoznawalnym naprzemiennym ruchem par kończyn; kategoria tylko przy wystarczającym kadrowaniu cyklu.",
+      "onset_rule": "Pierwsza klatka lub próbka audio, w której definicja jest spełniona i wymagany sygnał widoczny/słyszalny.",
+      "offset_rule": "Ostatnia klatka lub próbka spełniająca definicję przed jej ustaniem; utratę widoczności oznacz jako zakończenie oceny, nie dowód ustania zachowania.",
+      "required_visibility": [
+        "cztery kończyny",
+        "tułów",
+        "podłoże"
+      ],
+      "not_inferable": [
+        "dokładna prędkość bez kalibracji",
+        "stan emocjonalny",
+        "rozpoznanie ortopedyczne"
+      ],
+      "source_ids": [
+        "methods_src_v2_arrive_e"
+      ],
+      "basis": "project_operational_definition",
+      "source_reference_role": "methodological_context_not_definition_origin",
+      "category": "movement",
+      "measurement_hint": "duration",
+      "review_status": "editorial_screened_expert_pending"
+    },
+    {
+      "id": "etho_v1_run",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "label_pl": "Bieg z widoczną fazą lotu",
+      "operational_definition": "Przemieszczenie, w którym w co najmniej jednej widocznej fazie żadna kończyna nie dotyka podłoża.",
+      "onset_rule": "Pierwsza klatka lub próbka audio, w której definicja jest spełniona i wymagany sygnał widoczny/słyszalny.",
+      "offset_rule": "Ostatnia klatka lub próbka spełniająca definicję przed jej ustaniem; utratę widoczności oznacz jako zakończenie oceny, nie dowód ustania zachowania.",
+      "required_visibility": [
+        "kończyny",
+        "cała sylwetka",
+        "podłoże"
+      ],
+      "not_inferable": [
+        "stan emocjonalny",
+        "diagnoza",
+        "trwała cecha osobowości",
+        "cel psychiczny"
+      ],
+      "source_ids": [
+        "methods_src_v2_arrive_e"
+      ],
+      "basis": "project_operational_definition",
+      "source_reference_role": "methodological_context_not_definition_origin",
+      "category": "movement",
+      "measurement_hint": "duration",
+      "review_status": "editorial_screened_expert_pending"
+    },
+    {
+      "id": "etho_v1_backward_step",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "label_pl": "Krok wstecz",
+      "operational_definition": "Przemieszczenie kończyn i tułowia przeciwnie do kierunku osi przodu ciała, bez uprzedniego pełnego odwrócenia.",
+      "onset_rule": "Pierwsza klatka lub próbka audio, w której definicja jest spełniona i wymagany sygnał widoczny/słyszalny.",
+      "offset_rule": "Ostatnia klatka lub próbka spełniająca definicję przed jej ustaniem; utratę widoczności oznacz jako zakończenie oceny, nie dowód ustania zachowania.",
+      "required_visibility": [
+        "tułów",
+        "łapy",
+        "kierunek osi ciała"
+      ],
+      "not_inferable": [
+        "stan emocjonalny",
+        "diagnoza",
+        "trwała cecha osobowości",
+        "cel psychiczny"
+      ],
+      "source_ids": [
+        "methods_src_v2_arrive_e"
+      ],
+      "basis": "project_operational_definition",
+      "source_reference_role": "methodological_context_not_definition_origin",
+      "category": "movement",
+      "measurement_hint": "duration",
+      "review_status": "editorial_screened_expert_pending"
+    },
+    {
+      "id": "etho_v1_body_turn",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "label_pl": "Obrót ciała",
+      "operational_definition": "Oś tułowia zmienia kierunek względem stałego elementu sceny; nie koduj ruchu samej kamery.",
+      "onset_rule": "Pierwsza klatka lub próbka audio, w której definicja jest spełniona i wymagany sygnał widoczny/słyszalny.",
+      "offset_rule": "Ostatnia klatka lub próbka spełniająca definicję przed jej ustaniem; utratę widoczności oznacz jako zakończenie oceny, nie dowód ustania zachowania.",
+      "required_visibility": [
+        "tułów",
+        "stały punkt otoczenia"
+      ],
+      "not_inferable": [
+        "stan emocjonalny",
+        "diagnoza",
+        "trwała cecha osobowości",
+        "cel psychiczny"
+      ],
+      "source_ids": [
+        "methods_src_v2_arrive_e"
+      ],
+      "basis": "project_operational_definition",
+      "source_reference_role": "methodological_context_not_definition_origin",
+      "category": "movement",
+      "measurement_hint": "duration",
+      "review_status": "editorial_screened_expert_pending"
+    },
+    {
+      "id": "etho_v1_approach_person",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "label_pl": "Zmniejszenie dystansu do osoby",
+      "operational_definition": "Odległość zwierzęcia od tej samej widocznej osoby zmniejsza się wskutek ruchu zwierzęcia.",
+      "onset_rule": "Pierwsza klatka lub próbka audio, w której definicja jest spełniona i wymagany sygnał widoczny/słyszalny.",
+      "offset_rule": "Ostatnia klatka lub próbka spełniająca definicję przed jej ustaniem; utratę widoczności oznacz jako zakończenie oceny, nie dowód ustania zachowania.",
+      "required_visibility": [
+        "zwierzę",
+        "osoba lub potwierdzony punkt jej pozycji",
+        "stały kadr"
+      ],
+      "not_inferable": [
+        "przywiązanie",
+        "życzliwość",
+        "oczekiwanie nagrody",
+        "intencja"
+      ],
+      "source_ids": [
+        "methods_src_v2_arrive_e"
+      ],
+      "basis": "project_operational_definition",
+      "source_reference_role": "methodological_context_not_definition_origin",
+      "category": "movement",
+      "measurement_hint": "duration",
+      "review_status": "editorial_screened_expert_pending"
+    },
+    {
+      "id": "etho_v1_withdraw_person",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "label_pl": "Zwiększenie dystansu od osoby",
+      "operational_definition": "Odległość od tej samej osoby zwiększa się wskutek ruchu zwierzęcia; ruch człowieka opisuj oddzielnie.",
+      "onset_rule": "Pierwsza klatka lub próbka audio, w której definicja jest spełniona i wymagany sygnał widoczny/słyszalny.",
+      "offset_rule": "Ostatnia klatka lub próbka spełniająca definicję przed jej ustaniem; utratę widoczności oznacz jako zakończenie oceny, nie dowód ustania zachowania.",
+      "required_visibility": [
+        "zwierzę",
+        "osoba lub potwierdzony punkt jej pozycji",
+        "stały kadr"
+      ],
+      "not_inferable": [
+        "stan emocjonalny",
+        "diagnoza",
+        "trwała cecha osobowości",
+        "cel psychiczny"
+      ],
+      "source_ids": [
+        "methods_src_v2_arrive_e"
+      ],
+      "basis": "project_operational_definition",
+      "source_reference_role": "methodological_context_not_definition_origin",
+      "category": "movement",
+      "measurement_hint": "duration",
+      "review_status": "editorial_screened_expert_pending"
+    },
+    {
+      "id": "etho_v1_approach_animal",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "label_pl": "Zmniejszenie dystansu do zwierzęcia",
+      "operational_definition": "Odległość od określonego widocznego drugiego zwierzęcia zmniejsza się wskutek ruchu kodowanego osobnika.",
+      "onset_rule": "Pierwsza klatka lub próbka audio, w której definicja jest spełniona i wymagany sygnał widoczny/słyszalny.",
+      "offset_rule": "Ostatnia klatka lub próbka spełniająca definicję przed jej ustaniem; utratę widoczności oznacz jako zakończenie oceny, nie dowód ustania zachowania.",
+      "required_visibility": [
+        "oba zwierzęta",
+        "ciągła identyfikacja osobnika",
+        "stały kadr"
+      ],
+      "not_inferable": [
+        "stan emocjonalny",
+        "diagnoza",
+        "trwała cecha osobowości",
+        "cel psychiczny"
+      ],
+      "source_ids": [
+        "methods_src_v2_arrive_e"
+      ],
+      "basis": "project_operational_definition",
+      "source_reference_role": "methodological_context_not_definition_origin",
+      "category": "movement",
+      "measurement_hint": "duration",
+      "review_status": "editorial_screened_expert_pending"
+    },
+    {
+      "id": "etho_v1_withdraw_animal",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "label_pl": "Zwiększenie dystansu od zwierzęcia",
+      "operational_definition": "Odległość od określonego drugiego zwierzęcia zwiększa się wskutek ruchu kodowanego osobnika.",
+      "onset_rule": "Pierwsza klatka lub próbka audio, w której definicja jest spełniona i wymagany sygnał widoczny/słyszalny.",
+      "offset_rule": "Ostatnia klatka lub próbka spełniająca definicję przed jej ustaniem; utratę widoczności oznacz jako zakończenie oceny, nie dowód ustania zachowania.",
+      "required_visibility": [
+        "oba zwierzęta",
+        "ciągła identyfikacja osobnika",
+        "stały kadr"
+      ],
+      "not_inferable": [
+        "stan emocjonalny",
+        "diagnoza",
+        "trwała cecha osobowości",
+        "cel psychiczny"
+      ],
+      "source_ids": [
+        "methods_src_v2_arrive_e"
+      ],
+      "basis": "project_operational_definition",
+      "source_reference_role": "methodological_context_not_definition_origin",
+      "category": "movement",
+      "measurement_hint": "duration",
+      "review_status": "editorial_screened_expert_pending"
+    },
+    {
+      "id": "etho_v1_jump_up",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "label_pl": "Skok na wyższe podłoże",
+      "operational_definition": "Widoczne odbicie, przemieszczenie do wyżej położonej dostępnej powierzchni i lądowanie lub utrata obserwacji.",
+      "onset_rule": "Pierwsza klatka lub próbka audio, w której definicja jest spełniona i wymagany sygnał widoczny/słyszalny.",
+      "offset_rule": "Ostatnia klatka lub próbka spełniająca definicję przed jej ustaniem; utratę widoczności oznacz jako zakończenie oceny, nie dowód ustania zachowania.",
+      "required_visibility": [
+        "kończyny",
+        "odbicie",
+        "miejsce docelowe"
+      ],
+      "not_inferable": [
+        "stan emocjonalny",
+        "diagnoza",
+        "trwała cecha osobowości",
+        "cel psychiczny"
+      ],
+      "source_ids": [
+        "methods_src_v2_arrive_e"
+      ],
+      "basis": "project_operational_definition",
+      "source_reference_role": "methodological_context_not_definition_origin",
+      "category": "movement",
+      "measurement_hint": "event_count",
+      "review_status": "editorial_screened_expert_pending"
+    },
+    {
+      "id": "etho_v1_jump_down",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "label_pl": "Skok na niższe podłoże",
+      "operational_definition": "Widoczne opuszczenie wyższej powierzchni z fazą braku podparcia, zakończone lądowaniem albo utratą obserwacji.",
+      "onset_rule": "Pierwsza klatka lub próbka audio, w której definicja jest spełniona i wymagany sygnał widoczny/słyszalny.",
+      "offset_rule": "Ostatnia klatka lub próbka spełniająca definicję przed jej ustaniem; utratę widoczności oznacz jako zakończenie oceny, nie dowód ustania zachowania.",
+      "required_visibility": [
+        "kończyny",
+        "wyższa i niższa powierzchnia"
+      ],
+      "not_inferable": [
+        "stan emocjonalny",
+        "diagnoza",
+        "trwała cecha osobowości",
+        "cel psychiczny"
+      ],
+      "source_ids": [
+        "methods_src_v2_arrive_e"
+      ],
+      "basis": "project_operational_definition",
+      "source_reference_role": "methodological_context_not_definition_origin",
+      "category": "movement",
+      "measurement_hint": "event_count",
+      "review_status": "editorial_screened_expert_pending"
+    },
+    {
+      "id": "etho_v1_stumble",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "label_pl": "Utrata równowagi w kroku",
+      "operational_definition": "Widoczny krok zakończony nagłą zmianą podparcia lub położenia tułowia, po której następuje ruch przywracający podparcie.",
+      "onset_rule": "Pierwsza klatka lub próbka audio, w której definicja jest spełniona i wymagany sygnał widoczny/słyszalny.",
+      "offset_rule": "Ostatnia klatka lub próbka spełniająca definicję przed jej ustaniem; utratę widoczności oznacz jako zakończenie oceny, nie dowód ustania zachowania.",
+      "required_visibility": [
+        "tułów",
+        "kończyny",
+        "podłoże"
+      ],
+      "not_inferable": [
+        "przyczyna neurologiczna",
+        "ból",
+        "trwała niesprawność"
+      ],
+      "source_ids": [
+        "methods_src_v2_arrive_e"
+      ],
+      "basis": "project_operational_definition",
+      "source_reference_role": "methodological_context_not_definition_origin",
+      "category": "movement",
+      "measurement_hint": "event_count",
+      "review_status": "editorial_screened_expert_pending"
+    },
+    {
+      "id": "etho_v1_slip",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "label_pl": "Poślizg łapy na podłożu",
+      "operational_definition": "Łapa podczas obciążonego widocznego kontaktu przesuwa się względem podłoża bez widocznego uniesienia; opisz równoległy ruch tułowia.",
+      "onset_rule": "Pierwsza klatka lub próbka audio, w której definicja jest spełniona i wymagany sygnał widoczny/słyszalny.",
+      "offset_rule": "Ostatnia klatka lub próbka spełniająca definicję przed jej ustaniem; utratę widoczności oznacz jako zakończenie oceny, nie dowód ustania zachowania.",
+      "required_visibility": [
+        "łapa",
+        "podłoże",
+        "ciągłość sekwencji"
+      ],
+      "not_inferable": [
+        "choroba",
+        "ból",
+        "cel ruchu"
+      ],
+      "source_ids": [
+        "methods_src_v2_arrive_e"
+      ],
+      "basis": "project_operational_definition",
+      "source_reference_role": "methodological_context_not_definition_origin",
+      "category": "movement",
+      "measurement_hint": "event_count",
+      "review_status": "editorial_screened_expert_pending"
+    },
+    {
+      "id": "etho_v1_limb_lift",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "label_pl": "Kończyna uniesiona bez podparcia",
+      "operational_definition": "Zwierzę utrzymuje jedną widoczną kończynę nad podłożem poza normalnym widocznym etapem kroku.",
+      "onset_rule": "Pierwsza klatka lub próbka audio, w której definicja jest spełniona i wymagany sygnał widoczny/słyszalny.",
+      "offset_rule": "Ostatnia klatka lub próbka spełniająca definicję przed jej ustaniem; utratę widoczności oznacz jako zakończenie oceny, nie dowód ustania zachowania.",
+      "required_visibility": [
+        "określona kończyna",
+        "podłoże",
+        "tułów"
+      ],
+      "not_inferable": [
+        "kulawizna kliniczna",
+        "ból",
+        "prośba o kontakt"
+      ],
+      "source_ids": [
+        "methods_src_v2_arrive_e"
+      ],
+      "basis": "project_operational_definition",
+      "source_reference_role": "methodological_context_not_definition_origin",
+      "category": "posture",
+      "measurement_hint": "duration",
+      "review_status": "editorial_screened_expert_pending"
+    },
+    {
+      "id": "etho_v1_unequal_steps",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "label_pl": "Widoczna nierówność kroków",
+      "operational_definition": "W porównywalnych kolejnych cyklach występuje różna widoczna długość lub czas podparcia stron; zachowaj stronę i warunki kadru.",
+      "onset_rule": "Pierwsza klatka lub próbka audio, w której definicja jest spełniona i wymagany sygnał widoczny/słyszalny.",
+      "offset_rule": "Ostatnia klatka lub próbka spełniająca definicję przed jej ustaniem; utratę widoczności oznacz jako zakończenie oceny, nie dowód ustania zachowania.",
+      "required_visibility": [
+        "obie strony lub odpowiedni widok kończyn",
+        "cykle chodu",
+        "stała perspektywa"
+      ],
+      "not_inferable": [
+        "przyczyna",
+        "diagnostyczny stopień kulawizny",
+        "ból"
+      ],
+      "source_ids": [
+        "methods_src_v2_arrive_e"
+      ],
+      "basis": "project_operational_definition",
+      "source_reference_role": "methodological_context_not_definition_origin",
+      "category": "movement",
+      "measurement_hint": "duration",
+      "review_status": "editorial_screened_expert_pending"
+    },
+    {
+      "id": "etho_v1_paw_drag",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "label_pl": "Przesuwanie łapy po podłożu",
+      "operational_definition": "Podczas ruchu łapa lub jej grzbiet pozostaje w widocznym kontakcie z podłożem i przesuwa się zamiast wyraźnego uniesienia.",
+      "onset_rule": "Pierwsza klatka lub próbka audio, w której definicja jest spełniona i wymagany sygnał widoczny/słyszalny.",
+      "offset_rule": "Ostatnia klatka lub próbka spełniająca definicję przed jej ustaniem; utratę widoczności oznacz jako zakończenie oceny, nie dowód ustania zachowania.",
+      "required_visibility": [
+        "określona łapa",
+        "podłoże"
+      ],
+      "not_inferable": [
+        "diagnoza neurologiczna",
+        "przyczyna ruchu",
+        "ból"
+      ],
+      "source_ids": [
+        "methods_src_v2_arrive_e"
+      ],
+      "basis": "project_operational_definition",
+      "source_reference_role": "methodological_context_not_definition_origin",
+      "category": "movement",
+      "measurement_hint": "duration",
+      "review_status": "editorial_screened_expert_pending"
+    },
+    {
+      "id": "etho_v1_stand",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "label_pl": "Stanie",
+      "operational_definition": "Tułów utrzymany nad podłożem przy podparciu kończyn, bez kodowanej lokomocji.",
+      "onset_rule": "Pierwsza klatka lub próbka audio, w której definicja jest spełniona i wymagany sygnał widoczny/słyszalny.",
+      "offset_rule": "Ostatnia klatka lub próbka spełniająca definicję przed jej ustaniem; utratę widoczności oznacz jako zakończenie oceny, nie dowód ustania zachowania.",
+      "required_visibility": [
+        "tułów",
+        "podparcie kończyn"
+      ],
+      "not_inferable": [
+        "stan emocjonalny",
+        "diagnoza",
+        "trwała cecha osobowości",
+        "cel psychiczny"
+      ],
+      "source_ids": [
+        "methods_src_v2_arrive_e"
+      ],
+      "basis": "project_operational_definition",
+      "source_reference_role": "methodological_context_not_definition_origin",
+      "category": "posture",
+      "measurement_hint": "duration",
+      "review_status": "editorial_screened_expert_pending"
+    },
+    {
+      "id": "etho_v1_sit",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "label_pl": "Siedzenie",
+      "operational_definition": "Tylna część ciała oparta o podłoże przy uniesionym przodzie tułowia; sposób ułożenia kończyn zanotuj.",
+      "onset_rule": "Pierwsza klatka lub próbka audio, w której definicja jest spełniona i wymagany sygnał widoczny/słyszalny.",
+      "offset_rule": "Ostatnia klatka lub próbka spełniająca definicję przed jej ustaniem; utratę widoczności oznacz jako zakończenie oceny, nie dowód ustania zachowania.",
+      "required_visibility": [
+        "miednica",
+        "tułów",
+        "podłoże"
+      ],
+      "not_inferable": [
+        "stan emocjonalny",
+        "diagnoza",
+        "trwała cecha osobowości",
+        "cel psychiczny"
+      ],
+      "source_ids": [
+        "methods_src_v2_arrive_e"
+      ],
+      "basis": "project_operational_definition",
+      "source_reference_role": "methodological_context_not_definition_origin",
+      "category": "posture",
+      "measurement_hint": "duration",
+      "review_status": "editorial_screened_expert_pending"
+    },
+    {
+      "id": "etho_v1_sternal_lie",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "label_pl": "Leżenie na części brzusznej",
+      "operational_definition": "Brzuszna część tułowia pozostaje oparta o powierzchnię, z określoną pozycją głowy i kończyn.",
+      "onset_rule": "Pierwsza klatka lub próbka audio, w której definicja jest spełniona i wymagany sygnał widoczny/słyszalny.",
+      "offset_rule": "Ostatnia klatka lub próbka spełniająca definicję przed jej ustaniem; utratę widoczności oznacz jako zakończenie oceny, nie dowód ustania zachowania.",
+      "required_visibility": [
+        "tułów",
+        "podłoże"
+      ],
+      "not_inferable": [
+        "sen",
+        "relaks",
+        "ból"
+      ],
+      "source_ids": [
+        "methods_src_v2_arrive_e"
+      ],
+      "basis": "project_operational_definition",
+      "source_reference_role": "methodological_context_not_definition_origin",
+      "category": "posture",
+      "measurement_hint": "duration",
+      "review_status": "editorial_screened_expert_pending"
+    },
+    {
+      "id": "etho_v1_lateral_lie",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "label_pl": "Leżenie na boku",
+      "operational_definition": "Boczna powierzchnia tułowia jest oparta o podłoże; zanotuj widoczną stronę.",
+      "onset_rule": "Pierwsza klatka lub próbka audio, w której definicja jest spełniona i wymagany sygnał widoczny/słyszalny.",
+      "offset_rule": "Ostatnia klatka lub próbka spełniająca definicję przed jej ustaniem; utratę widoczności oznacz jako zakończenie oceny, nie dowód ustania zachowania.",
+      "required_visibility": [
+        "tułów",
+        "podłoże"
+      ],
+      "not_inferable": [
+        "sen",
+        "utrata świadomości",
+        "zaufanie"
+      ],
+      "source_ids": [
+        "methods_src_v2_arrive_e"
+      ],
+      "basis": "project_operational_definition",
+      "source_reference_role": "methodological_context_not_definition_origin",
+      "category": "posture",
+      "measurement_hint": "duration",
+      "review_status": "editorial_screened_expert_pending"
+    },
+    {
+      "id": "etho_v1_curled_lie",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "label_pl": "Leżenie ze zwiniętym tułowiem",
+      "operational_definition": "Tułów jest zakrzywiony, a głowa i okolica tylna położone blisko siebie podczas leżenia.",
+      "onset_rule": "Pierwsza klatka lub próbka audio, w której definicja jest spełniona i wymagany sygnał widoczny/słyszalny.",
+      "offset_rule": "Ostatnia klatka lub próbka spełniająca definicję przed jej ustaniem; utratę widoczności oznacz jako zakończenie oceny, nie dowód ustania zachowania.",
+      "required_visibility": [
+        "cała sylwetka"
+      ],
+      "not_inferable": [
+        "stan emocjonalny",
+        "diagnoza",
+        "trwała cecha osobowości",
+        "cel psychiczny"
+      ],
+      "source_ids": [
+        "methods_src_v2_arrive_e"
+      ],
+      "basis": "project_operational_definition",
+      "source_reference_role": "methodological_context_not_definition_origin",
+      "category": "posture",
+      "measurement_hint": "duration",
+      "review_status": "editorial_screened_expert_pending"
+    },
+    {
+      "id": "etho_v1_body_roll",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "label_pl": "Przetoczenie tułowia",
+      "operational_definition": "Tułów obraca się z jednego podparcia na inne przez pozycję boczną lub grzbietową.",
+      "onset_rule": "Pierwsza klatka lub próbka audio, w której definicja jest spełniona i wymagany sygnał widoczny/słyszalny.",
+      "offset_rule": "Ostatnia klatka lub próbka spełniająca definicję przed jej ustaniem; utratę widoczności oznacz jako zakończenie oceny, nie dowód ustania zachowania.",
+      "required_visibility": [
+        "tułów",
+        "podłoże"
+      ],
+      "not_inferable": [
+        "stan emocjonalny",
+        "diagnoza",
+        "trwała cecha osobowości",
+        "cel psychiczny"
+      ],
+      "source_ids": [
+        "methods_src_v2_arrive_e"
+      ],
+      "basis": "project_operational_definition",
+      "source_reference_role": "methodological_context_not_definition_origin",
+      "category": "posture",
+      "measurement_hint": "event_count",
+      "review_status": "editorial_screened_expert_pending"
+    },
+    {
+      "id": "etho_v1_fore_stretch",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "label_pl": "Wyprost przednich kończyn",
+      "operational_definition": "Przednie kończyny wyciągane do przodu względem tułowia; opisz towarzyszące położenie przodu i tyłu ciała.",
+      "onset_rule": "Pierwsza klatka lub próbka audio, w której definicja jest spełniona i wymagany sygnał widoczny/słyszalny.",
+      "offset_rule": "Ostatnia klatka lub próbka spełniająca definicję przed jej ustaniem; utratę widoczności oznacz jako zakończenie oceny, nie dowód ustania zachowania.",
+      "required_visibility": [
+        "przednie kończyny",
+        "tułów"
+      ],
+      "not_inferable": [
+        "stan emocjonalny",
+        "diagnoza",
+        "trwała cecha osobowości",
+        "cel psychiczny"
+      ],
+      "source_ids": [
+        "methods_src_v2_arrive_e"
+      ],
+      "basis": "project_operational_definition",
+      "source_reference_role": "methodological_context_not_definition_origin",
+      "category": "posture",
+      "measurement_hint": "duration",
+      "review_status": "editorial_screened_expert_pending"
+    },
+    {
+      "id": "etho_v1_hind_stretch",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "label_pl": "Wyprost tylnej kończyny",
+      "operational_definition": "Jedna lub obie tylne kończyny wyciągane ku tyłowi względem osi ciała.",
+      "onset_rule": "Pierwsza klatka lub próbka audio, w której definicja jest spełniona i wymagany sygnał widoczny/słyszalny.",
+      "offset_rule": "Ostatnia klatka lub próbka spełniająca definicję przed jej ustaniem; utratę widoczności oznacz jako zakończenie oceny, nie dowód ustania zachowania.",
+      "required_visibility": [
+        "tylne kończyny",
+        "tułów"
+      ],
+      "not_inferable": [
+        "stan emocjonalny",
+        "diagnoza",
+        "trwała cecha osobowości",
+        "cel psychiczny"
+      ],
+      "source_ids": [
+        "methods_src_v2_arrive_e"
+      ],
+      "basis": "project_operational_definition",
+      "source_reference_role": "methodological_context_not_definition_origin",
+      "category": "posture",
+      "measurement_hint": "duration",
+      "review_status": "editorial_screened_expert_pending"
+    },
+    {
+      "id": "etho_v1_arched_back",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "label_pl": "Grzbiet wyraźnie wygięty ku górze",
+      "operational_definition": "Linia grzbietu przyjmuje widoczny łuk skierowany ku górze; oceniaj zmianę względem wcześniejszej sylwetki osobnika.",
+      "onset_rule": "Pierwsza klatka lub próbka audio, w której definicja jest spełniona i wymagany sygnał widoczny/słyszalny.",
+      "offset_rule": "Ostatnia klatka lub próbka spełniająca definicję przed jej ustaniem; utratę widoczności oznacz jako zakończenie oceny, nie dowód ustania zachowania.",
+      "required_visibility": [
+        "profil tułowia",
+        "wcześniejsza pozycja odniesienia"
+      ],
+      "not_inferable": [
+        "ból",
+        "lęk",
+        "choroba",
+        "intencja odstraszania"
+      ],
+      "source_ids": [
+        "methods_src_v2_arrive_e"
+      ],
+      "basis": "project_operational_definition",
+      "source_reference_role": "methodological_context_not_definition_origin",
+      "category": "posture",
+      "measurement_hint": "duration",
+      "review_status": "editorial_screened_expert_pending"
+    },
+    {
+      "id": "etho_v1_crouch",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "label_pl": "Obniżona pozycja ciała",
+      "operational_definition": "Tułów znajduje się niżej względem podłoża niż w poprzednim staniu przy zgięciu kończyn.",
+      "onset_rule": "Pierwsza klatka lub próbka audio, w której definicja jest spełniona i wymagany sygnał widoczny/słyszalny.",
+      "offset_rule": "Ostatnia klatka lub próbka spełniająca definicję przed jej ustaniem; utratę widoczności oznacz jako zakończenie oceny, nie dowód ustania zachowania.",
+      "required_visibility": [
+        "tułów",
+        "kończyny",
+        "podłoże"
+      ],
+      "not_inferable": [
+        "stan emocjonalny",
+        "diagnoza",
+        "trwała cecha osobowości",
+        "cel psychiczny"
+      ],
+      "source_ids": [
+        "methods_src_v2_arrive_e"
+      ],
+      "basis": "project_operational_definition",
+      "source_reference_role": "methodological_context_not_definition_origin",
+      "category": "posture",
+      "measurement_hint": "duration",
+      "review_status": "editorial_screened_expert_pending"
+    },
+    {
+      "id": "etho_v1_dog_fore_low_hind_high",
+      "species": [
+        "dog"
+      ],
+      "label_pl": "Przód psa obniżony, tył wyżej",
+      "operational_definition": "Pies opiera lub zbliża przednią część ciała do podłoża przy wyżej utrzymanej tylnej części.",
+      "onset_rule": "Pierwsza klatka lub próbka audio, w której definicja jest spełniona i wymagany sygnał widoczny/słyszalny.",
+      "offset_rule": "Ostatnia klatka lub próbka spełniająca definicję przed jej ustaniem; utratę widoczności oznacz jako zakończenie oceny, nie dowód ustania zachowania.",
+      "required_visibility": [
+        "cała sylwetka",
+        "podłoże"
+      ],
+      "not_inferable": [
+        "pewna zabawa",
+        "przyczyna pozycji",
+        "ból"
+      ],
+      "source_ids": [
+        "methods_src_v2_arrive_e"
+      ],
+      "basis": "project_operational_definition",
+      "source_reference_role": "methodological_context_not_definition_origin",
+      "category": "posture",
+      "measurement_hint": "duration",
+      "review_status": "editorial_screened_expert_pending"
+    },
+    {
+      "id": "etho_v1_rise",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "label_pl": "Wstawanie",
+      "operational_definition": "Przejście z siedzenia lub leżenia do podparcia tułowia kończynami nad podłożem.",
+      "onset_rule": "Pierwsza klatka lub próbka audio, w której definicja jest spełniona i wymagany sygnał widoczny/słyszalny.",
+      "offset_rule": "Ostatnia klatka lub próbka spełniająca definicję przed jej ustaniem; utratę widoczności oznacz jako zakończenie oceny, nie dowód ustania zachowania.",
+      "required_visibility": [
+        "tułów",
+        "kończyny",
+        "pozycja początkowa i końcowa"
+      ],
+      "not_inferable": [
+        "stan emocjonalny",
+        "diagnoza",
+        "trwała cecha osobowości",
+        "cel psychiczny"
+      ],
+      "source_ids": [
+        "methods_src_v2_arrive_e"
+      ],
+      "basis": "project_operational_definition",
+      "source_reference_role": "methodological_context_not_definition_origin",
+      "category": "posture",
+      "measurement_hint": "event_count",
+      "review_status": "editorial_screened_expert_pending"
+    },
+    {
+      "id": "etho_v1_lie_down",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "label_pl": "Kładzenie się",
+      "operational_definition": "Przejście z pozycji uniesionego tułowia do oparcia jego powierzchni o podłoże.",
+      "onset_rule": "Pierwsza klatka lub próbka audio, w której definicja jest spełniona i wymagany sygnał widoczny/słyszalny.",
+      "offset_rule": "Ostatnia klatka lub próbka spełniająca definicję przed jej ustaniem; utratę widoczności oznacz jako zakończenie oceny, nie dowód ustania zachowania.",
+      "required_visibility": [
+        "tułów",
+        "podłoże",
+        "początek i koniec ruchu"
+      ],
+      "not_inferable": [
+        "stan emocjonalny",
+        "diagnoza",
+        "trwała cecha osobowości",
+        "cel psychiczny"
+      ],
+      "source_ids": [
+        "methods_src_v2_arrive_e"
+      ],
+      "basis": "project_operational_definition",
+      "source_reference_role": "methodological_context_not_definition_origin",
+      "category": "posture",
+      "measurement_hint": "event_count",
+      "review_status": "editorial_screened_expert_pending"
+    },
+    {
+      "id": "etho_v1_still_body",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "label_pl": "Brak widocznego ruchu tułowia",
+      "operational_definition": "W danym ciągłym widocznym odcinku nie widać przemieszczania tułowia; ruch oddechowy i oczu można kodować osobno.",
+      "onset_rule": "Pierwsza klatka lub próbka audio, w której definicja jest spełniona i wymagany sygnał widoczny/słyszalny.",
+      "offset_rule": "Ostatnia klatka lub próbka spełniająca definicję przed jej ustaniem; utratę widoczności oznacz jako zakończenie oceny, nie dowód ustania zachowania.",
+      "required_visibility": [
+        "tułów przez oceniany odcinek"
+      ],
+      "not_inferable": [
+        "spokój",
+        "sen",
+        "znieruchomienie ze strachu",
+        "utrata świadomości"
+      ],
+      "source_ids": [
+        "methods_src_v2_arrive_e"
+      ],
+      "basis": "project_operational_definition",
+      "source_reference_role": "methodological_context_not_definition_origin",
+      "category": "posture",
+      "measurement_hint": "duration",
+      "review_status": "editorial_screened_expert_pending"
+    },
+    {
+      "id": "etho_v1_head_toward_person",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "label_pl": "Głowa w stronę osoby",
+      "operational_definition": "Oś głowy zmienia kierunek ku położeniu określonej osoby widocznej w scenie.",
+      "onset_rule": "Pierwsza klatka lub próbka audio, w której definicja jest spełniona i wymagany sygnał widoczny/słyszalny.",
+      "offset_rule": "Ostatnia klatka lub próbka spełniająca definicję przed jej ustaniem; utratę widoczności oznacz jako zakończenie oceny, nie dowód ustania zachowania.",
+      "required_visibility": [
+        "głowa",
+        "pozycja osoby"
+      ],
+      "not_inferable": [
+        "rozumienie wypowiedzi",
+        "uwaga psychiczna",
+        "kontakt wzrokowy przy niewidocznych oczach"
+      ],
+      "source_ids": [
+        "methods_src_v2_arrive_e"
+      ],
+      "basis": "project_operational_definition",
+      "source_reference_role": "methodological_context_not_definition_origin",
+      "category": "orientation",
+      "measurement_hint": "duration",
+      "review_status": "editorial_screened_expert_pending"
+    },
+    {
+      "id": "etho_v1_head_away_person",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "label_pl": "Głowa odwrócona od osoby",
+      "operational_definition": "Oś głowy zmienia kierunek od położenia określonej osoby w scenie.",
+      "onset_rule": "Pierwsza klatka lub próbka audio, w której definicja jest spełniona i wymagany sygnał widoczny/słyszalny.",
+      "offset_rule": "Ostatnia klatka lub próbka spełniająca definicję przed jej ustaniem; utratę widoczności oznacz jako zakończenie oceny, nie dowód ustania zachowania.",
+      "required_visibility": [
+        "głowa",
+        "pozycja osoby"
+      ],
+      "not_inferable": [
+        "stan emocjonalny",
+        "diagnoza",
+        "trwała cecha osobowości",
+        "cel psychiczny"
+      ],
+      "source_ids": [
+        "methods_src_v2_arrive_e"
+      ],
+      "basis": "project_operational_definition",
+      "source_reference_role": "methodological_context_not_definition_origin",
+      "category": "orientation",
+      "measurement_hint": "duration",
+      "review_status": "editorial_screened_expert_pending"
+    },
+    {
+      "id": "etho_v1_head_lower",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "label_pl": "Obniżenie głowy",
+      "operational_definition": "Głowa przesuwa się w dół względem tułowia; ruch kamery i całego ciała opisuj oddzielnie.",
+      "onset_rule": "Pierwsza klatka lub próbka audio, w której definicja jest spełniona i wymagany sygnał widoczny/słyszalny.",
+      "offset_rule": "Ostatnia klatka lub próbka spełniająca definicję przed jej ustaniem; utratę widoczności oznacz jako zakończenie oceny, nie dowód ustania zachowania.",
+      "required_visibility": [
+        "głowa",
+        "tułów"
+      ],
+      "not_inferable": [
+        "stan emocjonalny",
+        "diagnoza",
+        "trwała cecha osobowości",
+        "cel psychiczny"
+      ],
+      "source_ids": [
+        "methods_src_v2_arrive_e"
+      ],
+      "basis": "project_operational_definition",
+      "source_reference_role": "methodological_context_not_definition_origin",
+      "category": "orientation",
+      "measurement_hint": "duration",
+      "review_status": "editorial_screened_expert_pending"
+    },
+    {
+      "id": "etho_v1_head_tilt",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "label_pl": "Boczne przechylenie głowy",
+      "operational_definition": "Linia między widocznymi bokami głowy przechyla się względem wcześniejszego poziomu w stałym kadrze.",
+      "onset_rule": "Pierwsza klatka lub próbka audio, w której definicja jest spełniona i wymagany sygnał widoczny/słyszalny.",
+      "offset_rule": "Ostatnia klatka lub próbka spełniająca definicję przed jej ustaniem; utratę widoczności oznacz jako zakończenie oceny, nie dowód ustania zachowania.",
+      "required_visibility": [
+        "głowa",
+        "stała perspektywa"
+      ],
+      "not_inferable": [
+        "ciekawość",
+        "rozumienie",
+        "rozpoznanie neurologiczne"
+      ],
+      "source_ids": [
+        "methods_src_v2_arrive_e"
+      ],
+      "basis": "project_operational_definition",
+      "source_reference_role": "methodological_context_not_definition_origin",
+      "category": "orientation",
+      "measurement_hint": "duration",
+      "review_status": "editorial_screened_expert_pending"
+    },
+    {
+      "id": "etho_v1_ear_rotation",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "label_pl": "Zmiana ustawienia małżowiny",
+      "operational_definition": "Co najmniej jedna widoczna małżowina zmienia kierunek lub kąt względem wcześniejszej pozycji głowy.",
+      "onset_rule": "Pierwsza klatka lub próbka audio, w której definicja jest spełniona i wymagany sygnał widoczny/słyszalny.",
+      "offset_rule": "Ostatnia klatka lub próbka spełniająca definicję przed jej ustaniem; utratę widoczności oznacz jako zakończenie oceny, nie dowód ustania zachowania.",
+      "required_visibility": [
+        "określone ucho",
+        "głowa"
+      ],
+      "not_inferable": [
+        "cel nasłuchiwania",
+        "dokładny bodziec",
+        "emocja"
+      ],
+      "source_ids": [
+        "methods_src_v2_arrive_e"
+      ],
+      "basis": "project_operational_definition",
+      "source_reference_role": "methodological_context_not_definition_origin",
+      "category": "orientation",
+      "measurement_hint": "duration",
+      "review_status": "editorial_screened_expert_pending"
+    },
+    {
+      "id": "etho_v1_ears_back",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "label_pl": "Przemieszczenie uszu ku tyłowi",
+      "operational_definition": "Widoczne małżowiny zmieniają pozycję ku tylnej części głowy; opisuj tylko uszy dające się ocenić.",
+      "onset_rule": "Pierwsza klatka lub próbka audio, w której definicja jest spełniona i wymagany sygnał widoczny/słyszalny.",
+      "offset_rule": "Ostatnia klatka lub próbka spełniająca definicję przed jej ustaniem; utratę widoczności oznacz jako zakończenie oceny, nie dowód ustania zachowania.",
+      "required_visibility": [
+        "uszy",
+        "głowa",
+        "pozycja odniesienia"
+      ],
+      "not_inferable": [
+        "stan emocjonalny",
+        "diagnoza",
+        "trwała cecha osobowości",
+        "cel psychiczny"
+      ],
+      "source_ids": [
+        "methods_src_v2_arrive_e"
+      ],
+      "basis": "project_operational_definition",
+      "source_reference_role": "methodological_context_not_definition_origin",
+      "category": "orientation",
+      "measurement_hint": "duration",
+      "review_status": "editorial_screened_expert_pending"
+    },
+    {
+      "id": "etho_v1_tail_raise",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "label_pl": "Uniesienie ogona",
+      "operational_definition": "Widoczna część ogona przemieszcza się ku górze względem poprzedniej pozycji tułowia.",
+      "onset_rule": "Pierwsza klatka lub próbka audio, w której definicja jest spełniona i wymagany sygnał widoczny/słyszalny.",
+      "offset_rule": "Ostatnia klatka lub próbka spełniająca definicję przed jej ustaniem; utratę widoczności oznacz jako zakończenie oceny, nie dowód ustania zachowania.",
+      "required_visibility": [
+        "ogon",
+        "tułów"
+      ],
+      "not_inferable": [
+        "stan emocjonalny",
+        "diagnoza",
+        "trwała cecha osobowości",
+        "cel psychiczny"
+      ],
+      "source_ids": [
+        "methods_src_v2_arrive_e"
+      ],
+      "basis": "project_operational_definition",
+      "source_reference_role": "methodological_context_not_definition_origin",
+      "category": "orientation",
+      "measurement_hint": "duration",
+      "review_status": "editorial_screened_expert_pending"
+    },
+    {
+      "id": "etho_v1_tail_lower",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "label_pl": "Obniżenie ogona",
+      "operational_definition": "Widoczna część ogona przemieszcza się ku dołowi względem poprzedniej pozycji tułowia.",
+      "onset_rule": "Pierwsza klatka lub próbka audio, w której definicja jest spełniona i wymagany sygnał widoczny/słyszalny.",
+      "offset_rule": "Ostatnia klatka lub próbka spełniająca definicję przed jej ustaniem; utratę widoczności oznacz jako zakończenie oceny, nie dowód ustania zachowania.",
+      "required_visibility": [
+        "ogon",
+        "tułów"
+      ],
+      "not_inferable": [
+        "stan emocjonalny",
+        "diagnoza",
+        "trwała cecha osobowości",
+        "cel psychiczny"
+      ],
+      "source_ids": [
+        "methods_src_v2_arrive_e"
+      ],
+      "basis": "project_operational_definition",
+      "source_reference_role": "methodological_context_not_definition_origin",
+      "category": "orientation",
+      "measurement_hint": "duration",
+      "review_status": "editorial_screened_expert_pending"
+    },
+    {
+      "id": "etho_v1_tail_lateral",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "label_pl": "Ruch ogona na boki",
+      "operational_definition": "Ogon przemieszcza się naprzemiennie w lewo i w prawo względem tułowia.",
+      "onset_rule": "Pierwsza klatka lub próbka audio, w której definicja jest spełniona i wymagany sygnał widoczny/słyszalny.",
+      "offset_rule": "Ostatnia klatka lub próbka spełniająca definicję przed jej ustaniem; utratę widoczności oznacz jako zakończenie oceny, nie dowód ustania zachowania.",
+      "required_visibility": [
+        "ogon",
+        "tułów",
+        "ciągła sekwencja"
+      ],
+      "not_inferable": [
+        "radość",
+        "zgoda na dotyk",
+        "bezpieczeństwo kontaktu",
+        "intencja"
+      ],
+      "source_ids": [
+        "methods_src_v2_arrive_e"
+      ],
+      "basis": "project_operational_definition",
+      "source_reference_role": "methodological_context_not_definition_origin",
+      "category": "orientation",
+      "measurement_hint": "duration",
+      "review_status": "editorial_screened_expert_pending"
+    },
+    {
+      "id": "etho_v1_cat_tail_tip",
+      "species": [
+        "cat"
+      ],
+      "label_pl": "Ruch końcówki ogona kota",
+      "operational_definition": "Koniec ogona kota porusza się przy względnie niezmiennej pozycji jego nasady.",
+      "onset_rule": "Pierwsza klatka lub próbka audio, w której definicja jest spełniona i wymagany sygnał widoczny/słyszalny.",
+      "offset_rule": "Ostatnia klatka lub próbka spełniająca definicję przed jej ustaniem; utratę widoczności oznacz jako zakończenie oceny, nie dowód ustania zachowania.",
+      "required_visibility": [
+        "nasada i końcówka ogona"
+      ],
+      "not_inferable": [
+        "stan emocjonalny",
+        "diagnoza",
+        "trwała cecha osobowości",
+        "cel psychiczny"
+      ],
+      "source_ids": [
+        "methods_src_v2_arrive_e"
+      ],
+      "basis": "project_operational_definition",
+      "source_reference_role": "methodological_context_not_definition_origin",
+      "category": "orientation",
+      "measurement_hint": "duration",
+      "review_status": "editorial_screened_expert_pending"
+    },
+    {
+      "id": "etho_v1_nose_object",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "label_pl": "Kontakt nosa z przedmiotem",
+      "operational_definition": "Nos zwierzęcia dotyka określonego widocznego przedmiotu.",
+      "onset_rule": "Pierwsza klatka lub próbka audio, w której definicja jest spełniona i wymagany sygnał widoczny/słyszalny.",
+      "offset_rule": "Ostatnia klatka lub próbka spełniająca definicję przed jej ustaniem; utratę widoczności oznacz jako zakończenie oceny, nie dowód ustania zachowania.",
+      "required_visibility": [
+        "nos",
+        "przedmiot",
+        "punkt kontaktu"
+      ],
+      "not_inferable": [
+        "zapach",
+        "funkcja badania",
+        "zainteresowanie psychiczne"
+      ],
+      "source_ids": [
+        "methods_src_v2_arrive_e"
+      ],
+      "basis": "project_operational_definition",
+      "source_reference_role": "methodological_context_not_definition_origin",
+      "category": "contact",
+      "measurement_hint": "duration",
+      "review_status": "editorial_screened_expert_pending"
+    },
+    {
+      "id": "etho_v1_nose_person",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "label_pl": "Kontakt nosa z osobą",
+      "operational_definition": "Nos zwierzęcia dotyka widocznej części ciała lub ubrania określonej osoby.",
+      "onset_rule": "Pierwsza klatka lub próbka audio, w której definicja jest spełniona i wymagany sygnał widoczny/słyszalny.",
+      "offset_rule": "Ostatnia klatka lub próbka spełniająca definicję przed jej ustaniem; utratę widoczności oznacz jako zakończenie oceny, nie dowód ustania zachowania.",
+      "required_visibility": [
+        "nos",
+        "osoba",
+        "punkt kontaktu"
+      ],
+      "not_inferable": [
+        "stan emocjonalny",
+        "diagnoza",
+        "trwała cecha osobowości",
+        "cel psychiczny"
+      ],
+      "source_ids": [
+        "methods_src_v2_arrive_e"
+      ],
+      "basis": "project_operational_definition",
+      "source_reference_role": "methodological_context_not_definition_origin",
+      "category": "contact",
+      "measurement_hint": "duration",
+      "review_status": "editorial_screened_expert_pending"
+    },
+    {
+      "id": "etho_v1_paw_person",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "label_pl": "Kontakt łapy z osobą",
+      "operational_definition": "Widoczna łapa dotyka osoby lub jej ubrania; strona i część ciała zapisywane oddzielnie.",
+      "onset_rule": "Pierwsza klatka lub próbka audio, w której definicja jest spełniona i wymagany sygnał widoczny/słyszalny.",
+      "offset_rule": "Ostatnia klatka lub próbka spełniająca definicję przed jej ustaniem; utratę widoczności oznacz jako zakończenie oceny, nie dowód ustania zachowania.",
+      "required_visibility": [
+        "łapa",
+        "osoba",
+        "punkt kontaktu"
+      ],
+      "not_inferable": [
+        "stan emocjonalny",
+        "diagnoza",
+        "trwała cecha osobowości",
+        "cel psychiczny"
+      ],
+      "source_ids": [
+        "methods_src_v2_arrive_e"
+      ],
+      "basis": "project_operational_definition",
+      "source_reference_role": "methodological_context_not_definition_origin",
+      "category": "contact",
+      "measurement_hint": "duration",
+      "review_status": "editorial_screened_expert_pending"
+    },
+    {
+      "id": "etho_v1_paw_object",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "label_pl": "Kontakt łapy z przedmiotem",
+      "operational_definition": "Łapa styka się z widocznym przedmiotem, z ewentualnym jego przesunięciem.",
+      "onset_rule": "Pierwsza klatka lub próbka audio, w której definicja jest spełniona i wymagany sygnał widoczny/słyszalny.",
+      "offset_rule": "Ostatnia klatka lub próbka spełniająca definicję przed jej ustaniem; utratę widoczności oznacz jako zakończenie oceny, nie dowód ustania zachowania.",
+      "required_visibility": [
+        "łapa",
+        "przedmiot"
+      ],
+      "not_inferable": [
+        "stan emocjonalny",
+        "diagnoza",
+        "trwała cecha osobowości",
+        "cel psychiczny"
+      ],
+      "source_ids": [
+        "methods_src_v2_arrive_e"
+      ],
+      "basis": "project_operational_definition",
+      "source_reference_role": "methodological_context_not_definition_origin",
+      "category": "contact",
+      "measurement_hint": "duration",
+      "review_status": "editorial_screened_expert_pending"
+    },
+    {
+      "id": "etho_v1_body_rub",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "label_pl": "Ocieranie głowy lub tułowia",
+      "operational_definition": "Głowa lub powierzchnia tułowia pozostaje w kontakcie z obiektem albo osobą podczas przesunięcia wzdłuż niej.",
+      "onset_rule": "Pierwsza klatka lub próbka audio, w której definicja jest spełniona i wymagany sygnał widoczny/słyszalny.",
+      "offset_rule": "Ostatnia klatka lub próbka spełniająca definicję przed jej ustaniem; utratę widoczności oznacz jako zakończenie oceny, nie dowód ustania zachowania.",
+      "required_visibility": [
+        "część ciała",
+        "punkt kontaktu",
+        "obiekt kontaktu"
+      ],
+      "not_inferable": [
+        "stan emocjonalny",
+        "diagnoza",
+        "trwała cecha osobowości",
+        "cel psychiczny"
+      ],
+      "source_ids": [
+        "methods_src_v2_arrive_e"
+      ],
+      "basis": "project_operational_definition",
+      "source_reference_role": "methodological_context_not_definition_origin",
+      "category": "contact",
+      "measurement_hint": "duration",
+      "review_status": "editorial_screened_expert_pending"
+    },
+    {
+      "id": "etho_v1_self_lick",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "label_pl": "Lizanie własnego ciała",
+      "operational_definition": "Widoczny język wykonuje kontakt z własną powierzchnią ciała; zapisz region i stronę.",
+      "onset_rule": "Pierwsza klatka lub próbka audio, w której definicja jest spełniona i wymagany sygnał widoczny/słyszalny.",
+      "offset_rule": "Ostatnia klatka lub próbka spełniająca definicję przed jej ustaniem; utratę widoczności oznacz jako zakończenie oceny, nie dowód ustania zachowania.",
+      "required_visibility": [
+        "język lub wyraźny kontakt pyska",
+        "obszar ciała"
+      ],
+      "not_inferable": [
+        "kompulsja",
+        "stan skóry",
+        "samouspokajanie",
+        "ból"
+      ],
+      "source_ids": [
+        "methods_src_v2_arrive_e"
+      ],
+      "basis": "project_operational_definition",
+      "source_reference_role": "methodological_context_not_definition_origin",
+      "category": "grooming",
+      "measurement_hint": "duration",
+      "review_status": "editorial_screened_expert_pending"
+    },
+    {
+      "id": "etho_v1_person_lick",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "label_pl": "Lizanie osoby",
+      "operational_definition": "Widoczny język styka się z ciałem lub ubraniem osoby.",
+      "onset_rule": "Pierwsza klatka lub próbka audio, w której definicja jest spełniona i wymagany sygnał widoczny/słyszalny.",
+      "offset_rule": "Ostatnia klatka lub próbka spełniająca definicję przed jej ustaniem; utratę widoczności oznacz jako zakończenie oceny, nie dowód ustania zachowania.",
+      "required_visibility": [
+        "język",
+        "osoba",
+        "punkt kontaktu"
+      ],
+      "not_inferable": [
+        "stan emocjonalny",
+        "diagnoza",
+        "trwała cecha osobowości",
+        "cel psychiczny"
+      ],
+      "source_ids": [
+        "methods_src_v2_arrive_e"
+      ],
+      "basis": "project_operational_definition",
+      "source_reference_role": "methodological_context_not_definition_origin",
+      "category": "contact",
+      "measurement_hint": "duration",
+      "review_status": "editorial_screened_expert_pending"
+    },
+    {
+      "id": "etho_v1_self_scratch",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "label_pl": "Drapanie własnego ciała kończyną",
+      "operational_definition": "Kończyna wykonuje powtarzane ruchy kontaktowe z określonym obszarem własnego ciała.",
+      "onset_rule": "Pierwsza klatka lub próbka audio, w której definicja jest spełniona i wymagany sygnał widoczny/słyszalny.",
+      "offset_rule": "Ostatnia klatka lub próbka spełniająca definicję przed jej ustaniem; utratę widoczności oznacz jako zakończenie oceny, nie dowód ustania zachowania.",
+      "required_visibility": [
+        "kończyna",
+        "obszar ciała",
+        "sekwencja"
+      ],
+      "not_inferable": [
+        "świąd kliniczny",
+        "choroba skóry",
+        "emocja"
+      ],
+      "source_ids": [
+        "methods_src_v2_arrive_e"
+      ],
+      "basis": "project_operational_definition",
+      "source_reference_role": "methodological_context_not_definition_origin",
+      "category": "grooming",
+      "measurement_hint": "duration",
+      "review_status": "editorial_screened_expert_pending"
+    },
+    {
+      "id": "etho_v1_head_shake",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "label_pl": "Potrząśnięcie głową",
+      "operational_definition": "Głowa wykonuje szybkie naprzemienne skręty względem tułowia.",
+      "onset_rule": "Pierwsza klatka lub próbka audio, w której definicja jest spełniona i wymagany sygnał widoczny/słyszalny.",
+      "offset_rule": "Ostatnia klatka lub próbka spełniająca definicję przed jej ustaniem; utratę widoczności oznacz jako zakończenie oceny, nie dowód ustania zachowania.",
+      "required_visibility": [
+        "głowa",
+        "tułów"
+      ],
+      "not_inferable": [
+        "choroba ucha",
+        "ból",
+        "przyczyna"
+      ],
+      "source_ids": [
+        "methods_src_v2_arrive_e"
+      ],
+      "basis": "project_operational_definition",
+      "source_reference_role": "methodological_context_not_definition_origin",
+      "category": "grooming",
+      "measurement_hint": "event_count",
+      "review_status": "editorial_screened_expert_pending"
+    },
+    {
+      "id": "etho_v1_whole_shake",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "label_pl": "Potrząśnięcie całym ciałem",
+      "operational_definition": "Tułów i zwykle głowa wykonują serię naprzemiennych obrotów, przy widocznej zmianie powierzchni sierści.",
+      "onset_rule": "Pierwsza klatka lub próbka audio, w której definicja jest spełniona i wymagany sygnał widoczny/słyszalny.",
+      "offset_rule": "Ostatnia klatka lub próbka spełniająca definicję przed jej ustaniem; utratę widoczności oznacz jako zakończenie oceny, nie dowód ustania zachowania.",
+      "required_visibility": [
+        "tułów",
+        "głowa",
+        "ciągła sekwencja"
+      ],
+      "not_inferable": [
+        "stan emocjonalny",
+        "diagnoza",
+        "trwała cecha osobowości",
+        "cel psychiczny"
+      ],
+      "source_ids": [
+        "methods_src_v2_arrive_e"
+      ],
+      "basis": "project_operational_definition",
+      "source_reference_role": "methodological_context_not_definition_origin",
+      "category": "grooming",
+      "measurement_hint": "event_count",
+      "review_status": "editorial_screened_expert_pending"
+    },
+    {
+      "id": "etho_v1_take_food",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "label_pl": "Pobranie widocznego pokarmu",
+      "operational_definition": "Pysk obejmuje widoczny fragment pokarmu albo pokarm znika z widocznego miejsca bezpośrednio przy kontakcie pyska.",
+      "onset_rule": "Pierwsza klatka lub próbka audio, w której definicja jest spełniona i wymagany sygnał widoczny/słyszalny.",
+      "offset_rule": "Ostatnia klatka lub próbka spełniająca definicję przed jej ustaniem; utratę widoczności oznacz jako zakończenie oceny, nie dowód ustania zachowania.",
+      "required_visibility": [
+        "pysk",
+        "pokarm lub jego miejsce"
+      ],
+      "not_inferable": [
+        "głód",
+        "wartość preferencji",
+        "pełny apetyt"
+      ],
+      "source_ids": [
+        "methods_src_v2_arrive_e"
+      ],
+      "basis": "project_operational_definition",
+      "source_reference_role": "methodological_context_not_definition_origin",
+      "category": "feeding",
+      "measurement_hint": "event_count",
+      "review_status": "editorial_screened_expert_pending"
+    },
+    {
+      "id": "etho_v1_drink",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "label_pl": "Pobieranie płynu z naczynia",
+      "operational_definition": "Widoczny język lub pysk wykonuje powtarzane kontakty z dostępną powierzchnią płynu.",
+      "onset_rule": "Pierwsza klatka lub próbka audio, w której definicja jest spełniona i wymagany sygnał widoczny/słyszalny.",
+      "offset_rule": "Ostatnia klatka lub próbka spełniająca definicję przed jej ustaniem; utratę widoczności oznacz jako zakończenie oceny, nie dowód ustania zachowania.",
+      "required_visibility": [
+        "pysk",
+        "płyn",
+        "naczynie"
+      ],
+      "not_inferable": [
+        "ilość wypitego płynu bez pomiaru",
+        "pragnienie",
+        "choroba"
+      ],
+      "source_ids": [
+        "methods_src_v2_arrive_e"
+      ],
+      "basis": "project_operational_definition",
+      "source_reference_role": "methodological_context_not_definition_origin",
+      "category": "feeding",
+      "measurement_hint": "duration",
+      "review_status": "editorial_screened_expert_pending"
+    },
+    {
+      "id": "etho_v1_chew",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "label_pl": "Powtarzany ruch żuchwy przy zawartości pyska",
+      "operational_definition": "Pysk wykonuje powtarzane ruchy przy widocznym lub uprzednio pobranym materiale; nie określaj połykania z samego ruchu.",
+      "onset_rule": "Pierwsza klatka lub próbka audio, w której definicja jest spełniona i wymagany sygnał widoczny/słyszalny.",
+      "offset_rule": "Ostatnia klatka lub próbka spełniająca definicję przed jej ustaniem; utratę widoczności oznacz jako zakończenie oceny, nie dowód ustania zachowania.",
+      "required_visibility": [
+        "pysk",
+        "ciągła sekwencja"
+      ],
+      "not_inferable": [
+        "stan emocjonalny",
+        "diagnoza",
+        "trwała cecha osobowości",
+        "cel psychiczny"
+      ],
+      "source_ids": [
+        "methods_src_v2_arrive_e"
+      ],
+      "basis": "project_operational_definition",
+      "source_reference_role": "methodological_context_not_definition_origin",
+      "category": "feeding",
+      "measurement_hint": "duration",
+      "review_status": "editorial_screened_expert_pending"
+    },
+    {
+      "id": "etho_v1_leave_food",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "label_pl": "Oddalenie od widocznego pokarmu",
+      "operational_definition": "Zwierzę zwiększa dystans od dostępnego widocznego pokarmu po wcześniejszym zbliżeniu.",
+      "onset_rule": "Pierwsza klatka lub próbka audio, w której definicja jest spełniona i wymagany sygnał widoczny/słyszalny.",
+      "offset_rule": "Ostatnia klatka lub próbka spełniająca definicję przed jej ustaniem; utratę widoczności oznacz jako zakończenie oceny, nie dowód ustania zachowania.",
+      "required_visibility": [
+        "zwierzę",
+        "miejsce pokarmu"
+      ],
+      "not_inferable": [
+        "brak apetytu",
+        "sytość",
+        "niechęć do karmy",
+        "choroba"
+      ],
+      "source_ids": [
+        "methods_src_v2_arrive_e"
+      ],
+      "basis": "project_operational_definition",
+      "source_reference_role": "methodological_context_not_definition_origin",
+      "category": "feeding",
+      "measurement_hint": "duration",
+      "review_status": "editorial_screened_expert_pending"
+    },
+    {
+      "id": "etho_v1_dog_bark",
+      "species": [
+        "dog"
+      ],
+      "label_pl": "Szczeknięcie psa — opis audio",
+      "operational_definition": "Krótki wyraźny impuls wokalny psa zgodny z kategorią szczeknięcia; przy niepewnym źródle dźwięku pozostaw nierozstrzygnięte.",
+      "onset_rule": "Pierwsza klatka lub próbka audio, w której definicja jest spełniona i wymagany sygnał widoczny/słyszalny.",
+      "offset_rule": "Ostatnia klatka lub próbka spełniająca definicję przed jej ustaniem; utratę widoczności oznacz jako zakończenie oceny, nie dowód ustania zachowania.",
+      "required_visibility": [
+        "audio o wystarczającej jakości",
+        "potwierdzone źródło: pies"
+      ],
+      "not_inferable": [
+        "treść zdania",
+        "emocja",
+        "agresja"
+      ],
+      "source_ids": [
+        "methods_src_v2_arrive_e"
+      ],
+      "basis": "project_operational_definition",
+      "source_reference_role": "methodological_context_not_definition_origin",
+      "category": "vocalization",
+      "measurement_hint": "event_count",
+      "review_status": "editorial_screened_expert_pending"
+    },
+    {
+      "id": "etho_v1_dog_whine",
+      "species": [
+        "dog"
+      ],
+      "label_pl": "Skowyt lub pisk psa — opis audio",
+      "operational_definition": "Wysoki dźwięk wokalny psa, ciągły lub modulowany; zachowaj plik audio i wątpliwość kategorii.",
+      "onset_rule": "Pierwsza klatka lub próbka audio, w której definicja jest spełniona i wymagany sygnał widoczny/słyszalny.",
+      "offset_rule": "Ostatnia klatka lub próbka spełniająca definicję przed jej ustaniem; utratę widoczności oznacz jako zakończenie oceny, nie dowód ustania zachowania.",
+      "required_visibility": [
+        "audio",
+        "potwierdzone źródło: pies"
+      ],
+      "not_inferable": [
+        "ból",
+        "żądanie",
+        "emocja"
+      ],
+      "source_ids": [
+        "methods_src_v2_arrive_e"
+      ],
+      "basis": "project_operational_definition",
+      "source_reference_role": "methodological_context_not_definition_origin",
+      "category": "vocalization",
+      "measurement_hint": "duration",
+      "review_status": "editorial_screened_expert_pending"
+    },
+    {
+      "id": "etho_v1_dog_howl",
+      "species": [
+        "dog"
+      ],
+      "label_pl": "Wycie psa — opis audio",
+      "operational_definition": "Przedłużony tonalny dźwięk psa; zanotuj rozpoczęcie, zakończenie i nakładanie innych dźwięków.",
+      "onset_rule": "Pierwsza klatka lub próbka audio, w której definicja jest spełniona i wymagany sygnał widoczny/słyszalny.",
+      "offset_rule": "Ostatnia klatka lub próbka spełniająca definicję przed jej ustaniem; utratę widoczności oznacz jako zakończenie oceny, nie dowód ustania zachowania.",
+      "required_visibility": [
+        "audio",
+        "potwierdzone źródło: pies"
+      ],
+      "not_inferable": [
+        "stan emocjonalny",
+        "diagnoza",
+        "trwała cecha osobowości",
+        "cel psychiczny"
+      ],
+      "source_ids": [
+        "methods_src_v2_arrive_e"
+      ],
+      "basis": "project_operational_definition",
+      "source_reference_role": "methodological_context_not_definition_origin",
+      "category": "vocalization",
+      "measurement_hint": "duration",
+      "review_status": "editorial_screened_expert_pending"
+    },
+    {
+      "id": "etho_v1_cat_meow",
+      "species": [
+        "cat"
+      ],
+      "label_pl": "Miauknięcie kota — opis audio",
+      "operational_definition": "Wyodrębniony dźwięk kota klasyfikowany przez kodera jako miauknięcie; bez przypisywania znaczenia wypowiedzi.",
+      "onset_rule": "Pierwsza klatka lub próbka audio, w której definicja jest spełniona i wymagany sygnał widoczny/słyszalny.",
+      "offset_rule": "Ostatnia klatka lub próbka spełniająca definicję przed jej ustaniem; utratę widoczności oznacz jako zakończenie oceny, nie dowód ustania zachowania.",
+      "required_visibility": [
+        "audio",
+        "potwierdzone źródło: kot"
+      ],
+      "not_inferable": [
+        "treść zdania",
+        "głód",
+        "emocja"
+      ],
+      "source_ids": [
+        "methods_src_v2_arrive_e"
+      ],
+      "basis": "project_operational_definition",
+      "source_reference_role": "methodological_context_not_definition_origin",
+      "category": "vocalization",
+      "measurement_hint": "event_count",
+      "review_status": "editorial_screened_expert_pending"
+    },
+    {
+      "id": "etho_v1_cat_purr",
+      "species": [
+        "cat"
+      ],
+      "label_pl": "Mruczenie kota — opis audio",
+      "operational_definition": "Słyszalny powtarzalny niski dźwięk kota zgodny z kategorią mruczenia; sam obraz nie wystarcza do obecności.",
+      "onset_rule": "Pierwsza klatka lub próbka audio, w której definicja jest spełniona i wymagany sygnał widoczny/słyszalny.",
+      "offset_rule": "Ostatnia klatka lub próbka spełniająca definicję przed jej ustaniem; utratę widoczności oznacz jako zakończenie oceny, nie dowód ustania zachowania.",
+      "required_visibility": [
+        "audio bliskie źródłu",
+        "potwierdzone źródło: kot"
+      ],
+      "not_inferable": [
+        "dobrostan",
+        "brak bólu",
+        "radość"
+      ],
+      "source_ids": [
+        "methods_src_v2_arrive_e"
+      ],
+      "basis": "project_operational_definition",
+      "source_reference_role": "methodological_context_not_definition_origin",
+      "category": "vocalization",
+      "measurement_hint": "duration",
+      "review_status": "editorial_screened_expert_pending"
+    },
+    {
+      "id": "etho_v1_cat_hiss",
+      "species": [
+        "cat"
+      ],
+      "label_pl": "Syk kota — opis audio",
+      "operational_definition": "Krótki lub przedłużony szumowy wydechowy dźwięk kota; nie zlecaj jego wywołania.",
+      "onset_rule": "Pierwsza klatka lub próbka audio, w której definicja jest spełniona i wymagany sygnał widoczny/słyszalny.",
+      "offset_rule": "Ostatnia klatka lub próbka spełniająca definicję przed jej ustaniem; utratę widoczności oznacz jako zakończenie oceny, nie dowód ustania zachowania.",
+      "required_visibility": [
+        "audio",
+        "potwierdzone źródło: kot"
+      ],
+      "not_inferable": [
+        "stan emocjonalny",
+        "diagnoza",
+        "trwała cecha osobowości",
+        "cel psychiczny"
+      ],
+      "source_ids": [
+        "methods_src_v2_arrive_e"
+      ],
+      "basis": "project_operational_definition",
+      "source_reference_role": "methodological_context_not_definition_origin",
+      "category": "vocalization",
+      "measurement_hint": "duration",
+      "review_status": "editorial_screened_expert_pending"
+    },
+    {
+      "id": "etho_v1_growl",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "label_pl": "Warczenie — opis audio",
+      "operational_definition": "Niski dźwięk wokalny potwierdzonego zwierzęcia klasyfikowany przez kodera jako warczenie.",
+      "onset_rule": "Pierwsza klatka lub próbka audio, w której definicja jest spełniona i wymagany sygnał widoczny/słyszalny.",
+      "offset_rule": "Ostatnia klatka lub próbka spełniająca definicję przed jej ustaniem; utratę widoczności oznacz jako zakończenie oceny, nie dowód ustania zachowania.",
+      "required_visibility": [
+        "audio",
+        "potwierdzone źródło dźwięku"
+      ],
+      "not_inferable": [
+        "intencja ataku",
+        "poziom ryzyka",
+        "emocja"
+      ],
+      "source_ids": [
+        "methods_src_v2_arrive_e"
+      ],
+      "basis": "project_operational_definition",
+      "source_reference_role": "methodological_context_not_definition_origin",
+      "category": "vocalization",
+      "measurement_hint": "duration",
+      "review_status": "editorial_screened_expert_pending"
+    },
+    {
+      "id": "etho_v1_open_mouth_breathing",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "label_pl": "Otwarty pysk i rytmiczny ruch oddechowy",
+      "operational_definition": "Widoczny otwarty pysk współwystępuje z powtarzanym ruchem klatki lub brzucha; język zapisz osobno.",
+      "onset_rule": "Pierwsza klatka lub próbka audio, w której definicja jest spełniona i wymagany sygnał widoczny/słyszalny.",
+      "offset_rule": "Ostatnia klatka lub próbka spełniająca definicję przed jej ustaniem; utratę widoczności oznacz jako zakończenie oceny, nie dowód ustania zachowania.",
+      "required_visibility": [
+        "pysk",
+        "klatka lub brzuch",
+        "ciągła sekwencja"
+      ],
+      "not_inferable": [
+        "dyszenie jako pewna przyczyna",
+        "lęk",
+        "temperatura",
+        "choroba",
+        "bezpieczeństwo zdrowotne"
+      ],
+      "source_ids": [
+        "methods_src_v2_arrive_e"
+      ],
+      "basis": "project_operational_definition",
+      "source_reference_role": "methodological_context_not_definition_origin",
+      "category": "physical_observation",
+      "measurement_hint": "duration",
+      "review_status": "editorial_screened_expert_pending"
+    },
+    {
+      "id": "etho_v1_visible_chest_cycle",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "label_pl": "Widoczny cykl ruchu klatki",
+      "operational_definition": "Klatka lub brzuch przechodzi przez widoczne rozszerzenie i powrót; liczbę cykli podaj tylko przy nieprzerwanej obserwacji.",
+      "onset_rule": "Pierwsza klatka lub próbka audio, w której definicja jest spełniona i wymagany sygnał widoczny/słyszalny.",
+      "offset_rule": "Ostatnia klatka lub próbka spełniająca definicję przed jej ustaniem; utratę widoczności oznacz jako zakończenie oceny, nie dowód ustania zachowania.",
+      "required_visibility": [
+        "klatka lub brzuch",
+        "oś czasu i pełny cykl"
+      ],
+      "not_inferable": [
+        "częstość oddechu w całym dniu",
+        "niewidoczne cykle",
+        "diagnoza",
+        "pilność kliniczna"
+      ],
+      "source_ids": [
+        "methods_src_v2_arrive_e"
+      ],
+      "basis": "project_operational_definition",
+      "source_reference_role": "methodological_context_not_definition_origin",
+      "category": "physical_observation",
+      "measurement_hint": "event_count",
+      "review_status": "editorial_screened_expert_pending"
+    },
+    {
+      "id": "etho_v1_abrupt_expulsive_sound",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "label_pl": "Nagły dźwięk z ruchem wydechowym",
+      "operational_definition": "Nagły dźwięk współwystępuje z widocznym gwałtownym ruchem tułowia lub pyska; zapisz sekwencję bez pewnej klasy medycznej.",
+      "onset_rule": "Pierwsza klatka lub próbka audio, w której definicja jest spełniona i wymagany sygnał widoczny/słyszalny.",
+      "offset_rule": "Ostatnia klatka lub próbka spełniająca definicję przed jej ustaniem; utratę widoczności oznacz jako zakończenie oceny, nie dowód ustania zachowania.",
+      "required_visibility": [
+        "audio",
+        "tułów lub pysk",
+        "pełna sekwencja"
+      ],
+      "not_inferable": [
+        "pewny kaszel",
+        "przyczyna infekcyjna",
+        "choroba oddechowa",
+        "pilność"
+      ],
+      "source_ids": [
+        "methods_src_v2_arrive_e"
+      ],
+      "basis": "project_operational_definition",
+      "source_reference_role": "methodological_context_not_definition_origin",
+      "category": "physical_observation",
+      "measurement_hint": "event_count",
+      "review_status": "editorial_screened_expert_pending"
+    },
+    {
+      "id": "etho_v1_abdominal_contraction",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "label_pl": "Powtarzane skurczowe ruchy tułowia",
+      "operational_definition": "Widoczna seria zmian kształtu brzucha lub tułowia, często z ruchem głowy; opisz kierunek i materiał w pysku oddzielnie.",
+      "onset_rule": "Pierwsza klatka lub próbka audio, w której definicja jest spełniona i wymagany sygnał widoczny/słyszalny.",
+      "offset_rule": "Ostatnia klatka lub próbka spełniająca definicję przed jej ustaniem; utratę widoczności oznacz jako zakończenie oceny, nie dowód ustania zachowania.",
+      "required_visibility": [
+        "brzuch",
+        "tułów",
+        "głowa",
+        "pełna sekwencja"
+      ],
+      "not_inferable": [
+        "pewne nudności",
+        "diagnoza",
+        "przyczyna",
+        "pilność"
+      ],
+      "source_ids": [
+        "methods_src_v2_arrive_e"
+      ],
+      "basis": "project_operational_definition",
+      "source_reference_role": "methodological_context_not_definition_origin",
+      "category": "physical_observation",
+      "measurement_hint": "duration",
+      "review_status": "editorial_screened_expert_pending"
+    },
+    {
+      "id": "etho_v1_material_expulsion",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "label_pl": "Wydalenie materiału przez pysk",
+      "operational_definition": "Materiał wydostaje się z pyska do otoczenia; zanotuj poprzedzającą sekwencję i wygląd bez diagnozy.",
+      "onset_rule": "Pierwsza klatka lub próbka audio, w której definicja jest spełniona i wymagany sygnał widoczny/słyszalny.",
+      "offset_rule": "Ostatnia klatka lub próbka spełniająca definicję przed jej ustaniem; utratę widoczności oznacz jako zakończenie oceny, nie dowód ustania zachowania.",
+      "required_visibility": [
+        "pysk",
+        "wydalony materiał",
+        "sekwencja przed i po"
+      ],
+      "not_inferable": [
+        "pewne rozróżnienie wymiotów i regurgitacji",
+        "przyczyna",
+        "diagnoza",
+        "pilność"
+      ],
+      "source_ids": [
+        "methods_src_v2_arrive_e"
+      ],
+      "basis": "project_operational_definition",
+      "source_reference_role": "methodological_context_not_definition_origin",
+      "category": "physical_observation",
+      "measurement_hint": "event_count",
+      "review_status": "editorial_screened_expert_pending"
+    },
+    {
+      "id": "etho_v1_visible_urine_release",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "label_pl": "Widoczne oddanie moczu",
+      "operational_definition": "Płyn wydostaje się z okolicy ujścia moczowego; sama pozycja lub pobyt przy kuwecie nie spełnia definicji.",
+      "onset_rule": "Pierwsza klatka lub próbka audio, w której definicja jest spełniona i wymagany sygnał widoczny/słyszalny.",
+      "offset_rule": "Ostatnia klatka lub próbka spełniająca definicję przed jej ustaniem; utratę widoczności oznacz jako zakończenie oceny, nie dowód ustania zachowania.",
+      "required_visibility": [
+        "okolica tylna",
+        "widoczny strumień lub płyn",
+        "powierzchnia"
+      ],
+      "not_inferable": [
+        "ilość bez pomiaru",
+        "choroba",
+        "znaczenie społeczne",
+        "ból"
+      ],
+      "source_ids": [
+        "methods_src_v2_arrive_e"
+      ],
+      "basis": "project_operational_definition",
+      "source_reference_role": "methodological_context_not_definition_origin",
+      "category": "elimination",
+      "measurement_hint": "event_count",
+      "review_status": "editorial_screened_expert_pending"
+    },
+    {
+      "id": "etho_v1_visible_stool_release",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "label_pl": "Widoczne oddanie kału",
+      "operational_definition": "Widoczny materiał kałowy wydostaje się z okolicy odbytu; sama pozycja nie wystarcza do kodu.",
+      "onset_rule": "Pierwsza klatka lub próbka audio, w której definicja jest spełniona i wymagany sygnał widoczny/słyszalny.",
+      "offset_rule": "Ostatnia klatka lub próbka spełniająca definicję przed jej ustaniem; utratę widoczności oznacz jako zakończenie oceny, nie dowód ustania zachowania.",
+      "required_visibility": [
+        "okolica tylna",
+        "materiał",
+        "powierzchnia"
+      ],
+      "not_inferable": [
+        "choroba",
+        "ból",
+        "stan jelit"
+      ],
+      "source_ids": [
+        "methods_src_v2_arrive_e"
+      ],
+      "basis": "project_operational_definition",
+      "source_reference_role": "methodological_context_not_definition_origin",
+      "category": "elimination",
+      "measurement_hint": "event_count",
+      "review_status": "editorial_screened_expert_pending"
+    },
+    {
+      "id": "etho_v1_elimination_posture_no_visible_output",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "label_pl": "Pozycja eliminacyjna bez widocznego materiału",
+      "operational_definition": "Zwierzę przyjmuje pozycję kojarzoną przez kodera z eliminacją, lecz w kadrze nie widać wydalenia; zapis wyłącznie pozycji.",
+      "onset_rule": "Pierwsza klatka lub próbka audio, w której definicja jest spełniona i wymagany sygnał widoczny/słyszalny.",
+      "offset_rule": "Ostatnia klatka lub próbka spełniająca definicję przed jej ustaniem; utratę widoczności oznacz jako zakończenie oceny, nie dowód ustania zachowania.",
+      "required_visibility": [
+        "tułów",
+        "tylne kończyny",
+        "miejsce pod ciałem"
+      ],
+      "not_inferable": [
+        "brak oddania moczu poza widocznością",
+        "zatkanie",
+        "zaparcie",
+        "znaczenie pozycji"
+      ],
+      "source_ids": [
+        "methods_src_v2_arrive_e"
+      ],
+      "basis": "project_operational_definition",
+      "source_reference_role": "methodological_context_not_definition_origin",
+      "category": "elimination",
+      "measurement_hint": "duration",
+      "review_status": "editorial_screened_expert_pending"
+    },
+    {
+      "id": "etho_v1_repeat_toilet_entry",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "label_pl": "Ponowne wejście do miejsca eliminacji",
+      "operational_definition": "Zwierzę ponownie wchodzi do tego samego widocznego miejsca po uprzednim pełnym wyjściu; odnotuj oba zdarzenia.",
+      "onset_rule": "Pierwsza klatka lub próbka audio, w której definicja jest spełniona i wymagany sygnał widoczny/słyszalny.",
+      "offset_rule": "Ostatnia klatka lub próbka spełniająca definicję przed jej ustaniem; utratę widoczności oznacz jako zakończenie oceny, nie dowód ustania zachowania.",
+      "required_visibility": [
+        "wejście i wyjście",
+        "całe zwierzę",
+        "ciągłość osi czasu"
+      ],
+      "not_inferable": [
+        "choroba układu moczowego",
+        "pilność",
+        "cel wejścia"
+      ],
+      "source_ids": [
+        "methods_src_v2_arrive_e"
+      ],
+      "basis": "project_operational_definition",
+      "source_reference_role": "methodological_context_not_definition_origin",
+      "category": "elimination",
+      "measurement_hint": "event_count",
+      "review_status": "editorial_screened_expert_pending"
+    },
+    {
+      "id": "etho_v1_same_region_grooming",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "label_pl": "Powtarzany kontakt pyska z tym samym regionem",
+      "operational_definition": "Kolejne kontakty pyska lub języka dotyczą tego samego widocznego regionu ciała; zachowaj stronę i przerwy.",
+      "onset_rule": "Pierwsza klatka lub próbka audio, w której definicja jest spełniona i wymagany sygnał widoczny/słyszalny.",
+      "offset_rule": "Ostatnia klatka lub próbka spełniająca definicję przed jej ustaniem; utratę widoczności oznacz jako zakończenie oceny, nie dowód ustania zachowania.",
+      "required_visibility": [
+        "pysk",
+        "określony region ciała",
+        "pełna sekwencja"
+      ],
+      "not_inferable": [
+        "nadmierne w sensie klinicznym",
+        "kompulsja",
+        "ból",
+        "przyczyna skórna"
+      ],
+      "source_ids": [
+        "methods_src_v2_arrive_e"
+      ],
+      "basis": "project_operational_definition",
+      "source_reference_role": "methodological_context_not_definition_origin",
+      "category": "grooming",
+      "measurement_hint": "duration",
+      "review_status": "editorial_screened_expert_pending"
+    },
+    {
+      "id": "etho_v1_cat_surface_scratch",
+      "species": [
+        "cat"
+      ],
+      "label_pl": "Drapanie powierzchni przez kota",
+      "operational_definition": "Kot wykonuje powtarzane ruchy przednich kończyn po widocznej powierzchni; obecności pazurów nie zgaduj.",
+      "onset_rule": "Pierwsza klatka lub próbka audio, w której definicja jest spełniona i wymagany sygnał widoczny/słyszalny.",
+      "offset_rule": "Ostatnia klatka lub próbka spełniająca definicję przed jej ustaniem; utratę widoczności oznacz jako zakończenie oceny, nie dowód ustania zachowania.",
+      "required_visibility": [
+        "przednie łapy",
+        "powierzchnia"
+      ],
+      "not_inferable": [
+        "stan emocjonalny",
+        "diagnoza",
+        "trwała cecha osobowości",
+        "cel psychiczny"
+      ],
+      "source_ids": [
+        "methods_src_v2_arrive_e"
+      ],
+      "basis": "project_operational_definition",
+      "source_reference_role": "methodological_context_not_definition_origin",
+      "category": "contact",
+      "measurement_hint": "duration",
+      "review_status": "editorial_screened_expert_pending"
+    },
+    {
+      "id": "etho_v1_cat_knead",
+      "species": [
+        "cat"
+      ],
+      "label_pl": "Naprzemienne ugniatanie przez kota",
+      "operational_definition": "Przednie łapy kota naprzemiennie naciskają tę samą powierzchnię bez przemieszczenia całego ciała jak podczas chodu.",
+      "onset_rule": "Pierwsza klatka lub próbka audio, w której definicja jest spełniona i wymagany sygnał widoczny/słyszalny.",
+      "offset_rule": "Ostatnia klatka lub próbka spełniająca definicję przed jej ustaniem; utratę widoczności oznacz jako zakończenie oceny, nie dowód ustania zachowania.",
+      "required_visibility": [
+        "przednie łapy",
+        "powierzchnia",
+        "tułów"
+      ],
+      "not_inferable": [
+        "wspomnienia z dzieciństwa",
+        "radość",
+        "przywiązanie"
+      ],
+      "source_ids": [
+        "methods_src_v2_arrive_e"
+      ],
+      "basis": "project_operational_definition",
+      "source_reference_role": "methodological_context_not_definition_origin",
+      "category": "contact",
+      "measurement_hint": "duration",
+      "review_status": "editorial_screened_expert_pending"
+    },
+    {
+      "id": "etho_v1_cat_substrate_paw",
+      "species": [
+        "cat"
+      ],
+      "label_pl": "Ruch łapą po podłożu kuwety",
+      "operational_definition": "Kot porusza łapą po widocznym podłożu kuwety przed lub po innej czynności; kierunek zapisz oddzielnie.",
+      "onset_rule": "Pierwsza klatka lub próbka audio, w której definicja jest spełniona i wymagany sygnał widoczny/słyszalny.",
+      "offset_rule": "Ostatnia klatka lub próbka spełniająca definicję przed jej ustaniem; utratę widoczności oznacz jako zakończenie oceny, nie dowód ustania zachowania.",
+      "required_visibility": [
+        "łapa",
+        "podłoże kuwety"
+      ],
+      "not_inferable": [
+        "cel zakopywania",
+        "oddanie moczu",
+        "stan zdrowia"
+      ],
+      "source_ids": [
+        "methods_src_v2_arrive_e"
+      ],
+      "basis": "project_operational_definition",
+      "source_reference_role": "methodological_context_not_definition_origin",
+      "category": "elimination",
+      "measurement_hint": "duration",
+      "review_status": "editorial_screened_expert_pending"
+    },
+    {
+      "id": "etho_v1_carry_object",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "label_pl": "Przenoszenie przedmiotu w pysku",
+      "operational_definition": "Zwierzę utrzymuje widoczny przedmiot w pysku podczas przemieszczenia.",
+      "onset_rule": "Pierwsza klatka lub próbka audio, w której definicja jest spełniona i wymagany sygnał widoczny/słyszalny.",
+      "offset_rule": "Ostatnia klatka lub próbka spełniająca definicję przed jej ustaniem; utratę widoczności oznacz jako zakończenie oceny, nie dowód ustania zachowania.",
+      "required_visibility": [
+        "pysk",
+        "przedmiot",
+        "tułów"
+      ],
+      "not_inferable": [
+        "stan emocjonalny",
+        "diagnoza",
+        "trwała cecha osobowości",
+        "cel psychiczny"
+      ],
+      "source_ids": [
+        "methods_src_v2_arrive_e"
+      ],
+      "basis": "project_operational_definition",
+      "source_reference_role": "methodological_context_not_definition_origin",
+      "category": "object_interaction",
+      "measurement_hint": "duration",
+      "review_status": "editorial_screened_expert_pending"
+    },
+    {
+      "id": "etho_v1_drop_object",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "label_pl": "Wypuszczenie przedmiotu z pyska",
+      "operational_definition": "Przedmiot uprzednio trzymany w pysku traci z nim kontakt i przemieszcza się na podłoże albo poza kadr.",
+      "onset_rule": "Pierwsza klatka lub próbka audio, w której definicja jest spełniona i wymagany sygnał widoczny/słyszalny.",
+      "offset_rule": "Ostatnia klatka lub próbka spełniająca definicję przed jej ustaniem; utratę widoczności oznacz jako zakończenie oceny, nie dowód ustania zachowania.",
+      "required_visibility": [
+        "pysk",
+        "przedmiot",
+        "pełna sekwencja"
+      ],
+      "not_inferable": [
+        "stan emocjonalny",
+        "diagnoza",
+        "trwała cecha osobowości",
+        "cel psychiczny"
+      ],
+      "source_ids": [
+        "methods_src_v2_arrive_e"
+      ],
+      "basis": "project_operational_definition",
+      "source_reference_role": "methodological_context_not_definition_origin",
+      "category": "object_interaction",
+      "measurement_hint": "event_count",
+      "review_status": "editorial_screened_expert_pending"
+    },
+    {
+      "id": "etho_v1_nose_near_surface",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "label_pl": "Nos blisko powierzchni",
+      "operational_definition": "Nos zbliżony do określonej widocznej powierzchni; brak kontaktu i przepływ powietrza mogą pozostać nieznane.",
+      "onset_rule": "Pierwsza klatka lub próbka audio, w której definicja jest spełniona i wymagany sygnał widoczny/słyszalny.",
+      "offset_rule": "Ostatnia klatka lub próbka spełniająca definicję przed jej ustaniem; utratę widoczności oznacz jako zakończenie oceny, nie dowód ustania zachowania.",
+      "required_visibility": [
+        "nos",
+        "powierzchnia"
+      ],
+      "not_inferable": [
+        "pewne węszenie",
+        "konkretny zapach",
+        "emocja"
+      ],
+      "source_ids": [
+        "methods_src_v2_arrive_e"
+      ],
+      "basis": "project_operational_definition",
+      "source_reference_role": "methodological_context_not_definition_origin",
+      "category": "orientation",
+      "measurement_hint": "duration",
+      "review_status": "editorial_screened_expert_pending"
+    },
+    {
+      "id": "etho_v1_blink",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "label_pl": "Krótkie zamknięcie i otwarcie powieki",
+      "operational_definition": "Widoczna powieka zamyka oko i otwiera je w tej samej nieprzerwanej sekwencji; opisuj każde widoczne oko osobno.",
+      "onset_rule": "Pierwsza klatka lub próbka audio, w której definicja jest spełniona i wymagany sygnał widoczny/słyszalny.",
+      "offset_rule": "Ostatnia klatka lub próbka spełniająca definicję przed jej ustaniem; utratę widoczności oznacz jako zakończenie oceny, nie dowód ustania zachowania.",
+      "required_visibility": [
+        "oko",
+        "powieka",
+        "sekwencja"
+      ],
+      "not_inferable": [
+        "sen",
+        "intencja komunikacyjna",
+        "emocja",
+        "ból"
+      ],
+      "source_ids": [
+        "methods_src_v2_arrive_e"
+      ],
+      "basis": "project_operational_definition",
+      "source_reference_role": "methodological_context_not_definition_origin",
+      "category": "face",
+      "measurement_hint": "event_count",
+      "review_status": "editorial_screened_expert_pending"
+    },
+    {
+      "id": "etho_v1_closed_eye",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "label_pl": "Oko z widocznie zamkniętą powieką",
+      "operational_definition": "Widoczna powieka pozostaje zamknięta w ocenianym odcinku; nie traktuj niewidocznego oka jako zamkniętego.",
+      "onset_rule": "Pierwsza klatka lub próbka audio, w której definicja jest spełniona i wymagany sygnał widoczny/słyszalny.",
+      "offset_rule": "Ostatnia klatka lub próbka spełniająca definicję przed jej ustaniem; utratę widoczności oznacz jako zakończenie oceny, nie dowód ustania zachowania.",
+      "required_visibility": [
+        "konkretne oko i powieka"
+      ],
+      "not_inferable": [
+        "sen",
+        "ból",
+        "uspokojenie",
+        "intencja"
+      ],
+      "source_ids": [
+        "methods_src_v2_arrive_e"
+      ],
+      "basis": "project_operational_definition",
+      "source_reference_role": "methodological_context_not_definition_origin",
+      "category": "face",
+      "measurement_hint": "duration",
+      "review_status": "editorial_screened_expert_pending"
+    },
+    {
+      "id": "etho_v1_mouth_open",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "label_pl": "Otwarcie pyska",
+      "operational_definition": "Szczelina pyska otwiera się względem uprzedniej widocznej pozycji; dźwięk i ruch języka koduj osobno.",
+      "onset_rule": "Pierwsza klatka lub próbka audio, w której definicja jest spełniona i wymagany sygnał widoczny/słyszalny.",
+      "offset_rule": "Ostatnia klatka lub próbka spełniająca definicję przed jej ustaniem; utratę widoczności oznacz jako zakończenie oceny, nie dowód ustania zachowania.",
+      "required_visibility": [
+        "pysk",
+        "pozycja odniesienia"
+      ],
+      "not_inferable": [
+        "wokalizacja bez audio",
+        "dyszenie",
+        "ziewanie bez sekwencji",
+        "emocja"
+      ],
+      "source_ids": [
+        "methods_src_v2_arrive_e"
+      ],
+      "basis": "project_operational_definition",
+      "source_reference_role": "methodological_context_not_definition_origin",
+      "category": "face",
+      "measurement_hint": "duration",
+      "review_status": "editorial_screened_expert_pending"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "format_version": "2.0",
+  "built_at": "2026-10-07T19:39:43.421936+00:00",
+  "source_count": 173,
+  "card_count": 290,
+  "species_counts": {
+    "cat": 162,
+    "dog": 166
+  },
+  "domain_counts": {
+    "behavior": 210,
+    "health": 40,
+    "methods": 40
+  },
+  "inputs": [
+    {
+      "file": "cat_expansion_v2_sources.json",
+      "sha256": "29efe1568bfef4de1f59d478a1e698da1f3253754881c83d2383cafff4366080"
+    },
+    {
+      "file": "cat_sources.json",
+      "sha256": "7daa85715b808c398a9e9ea4ab63ee6240c8e56fc2e4553c8dce18cb2e02049b"
+    },
+    {
+      "file": "dog_expansion_v2_sources.json",
+      "sha256": "9d58d6c6b28dad198020890481cc6ba6427623023164a644a25dced76bc86f7f"
+    },
+    {
+      "file": "dog_sources.json",
+      "sha256": "a71224397c3dcbdd1809777c9881c0e007e2b73ff3c17595de18250ef7fc31f7"
+    },
+    {
+      "file": "health_v2_sources.json",
+      "sha256": "dbd69125bb66855b4e1e7bcca62e153b41995c606f876ab661868ec439d0fdb5"
+    },
+    {
+      "file": "methods_expansion_v2_sources.json",
+      "sha256": "428f04e246e5b731e63950f48003597922240c81630ffebba000598f26adaafa"
+    },
+    {
+      "file": "cat_cards.json",
+      "sha256": "8773ebb0ad2834ca79f11c0502adfd1ff4f0e52a2fcd668669f01823c166aec3"
+    },
+    {
+      "file": "cat_expansion_v2_cards.json",
+      "sha256": "b756c07ef8e799e1c184349294e6214908e211547cdd9903ea462b926d3f2167"
+    },
+    {
+      "file": "dog_cards.json",
+      "sha256": "df62b22f1b715718e1ca61485a018ffa78fdb9654ee22336dc78044789b76a8c"
+    },
+    {
+      "file": "dog_expansion_v2_cards.json",
+      "sha256": "0a31703d38643b799b174b217429288585e727cf1dd862bc6470894b59148f77"
+    },
+    {
+      "file": "health_v2_cards.json",
+      "sha256": "73ae27821899ceab65b9ae6dbbdb778d64390bf550d72faf2d5434cf32a80be4"
+    },
+    {
+      "file": "methods_expansion_v2_cards.json",
+      "sha256": "49007470da9a0576bbc8918be9940f71ed751d451b2c743704c1c0cb056d1c43"
+    }
+  ],
+  "retrieval": "SQLite FTS5; jawne polskie warianty słów i filtr gatunku/domeny; max 24 tokeny, bez rozumienia negacji ani oceny klinicznej"
+}

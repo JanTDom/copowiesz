@@ -1,0 +1,27 @@
+{
+  "formatVersion": 1,
+  "questionnaireVersion": "1.0.0",
+  "cards": 290,
+  "sources": 173,
+  "questions": 94,
+  "questionsPerSpecies": {
+    "dog": 85,
+    "cat": 85
+  },
+  "inputSha256": {
+    "data/raw/manual/behavior_knowledge/cat_cards.json": "8773ebb0ad2834ca79f11c0502adfd1ff4f0e52a2fcd668669f01823c166aec3",
+    "data/raw/manual/behavior_knowledge/cat_expansion_v2_cards.json": "b756c07ef8e799e1c184349294e6214908e211547cdd9903ea462b926d3f2167",
+    "data/raw/manual/behavior_knowledge/cat_expansion_v2_sources.json": "29efe1568bfef4de1f59d478a1e698da1f3253754881c83d2383cafff4366080",
+    "data/raw/manual/behavior_knowledge/cat_sources.json": "7daa85715b808c398a9e9ea4ab63ee6240c8e56fc2e4553c8dce18cb2e02049b",
+    "data/raw/manual/behavior_knowledge/dog_cards.json": "df62b22f1b715718e1ca61485a018ffa78fdb9654ee22336dc78044789b76a8c",
+    "data/raw/manual/behavior_knowledge/dog_expansion_v2_cards.json": "0a31703d38643b799b174b217429288585e727cf1dd862bc6470894b59148f77",
+    "data/raw/manual/behavior_knowledge/dog_expansion_v2_sources.json": "9d58d6c6b28dad198020890481cc6ba6427623023164a644a25dced76bc86f7f",
+    "data/raw/manual/behavior_knowledge/dog_sources.json": "a71224397c3dcbdd1809777c9881c0e007e2b73ff3c17595de18250ef7fc31f7",
+    "data/raw/manual/behavior_knowledge/health_v2_cards.json": "73ae27821899ceab65b9ae6dbbdb778d64390bf550d72faf2d5434cf32a80be4",
+    "data/raw/manual/behavior_knowledge/health_v2_sources.json": "dbd69125bb66855b4e1e7bcca62e153b41995c606f876ab661868ec439d0fdb5",
+    "data/raw/manual/behavior_knowledge/methods_expansion_v2_cards.json": "49007470da9a0576bbc8918be9940f71ed751d451b2c743704c1c0cb056d1c43",
+    "data/raw/manual/behavior_knowledge/methods_expansion_v2_sources.json": "428f04e246e5b731e63950f48003597922240c81630ffebba000598f26adaafa",
+    "data/raw/manual/questionnaires/owner_questionnaire_v1.json": "594931e8341e9cb3d0cee4d4c389730bc27a93304278225cdc065f4b33e5c768"
+  },
+  "limitations": "Autorski prototyp do przeglądu eksperckiego; brak klinicznej lub psychometrycznej walidacji. Pełne teksty źródeł nie są kopiowane."
+}

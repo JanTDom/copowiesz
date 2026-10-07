@@ -1,0 +1,2258 @@
+[
+  {
+    "id": "methods_v2_001",
+    "species": [
+      "dog"
+    ],
+    "topic": "repeated_measures",
+    "title": "Powtórzenie odpowiedzi i zmiana zachowania",
+    "observation": "Dwie ankiety dotyczą różnych tygodni, lecz porównuje się je jak ponowne kodowanie tego samego materiału.",
+    "possible_interpretations": [
+      "To problem zakresu pomiaru; sam zapis nie rozstrzyga osobowości, emocji ani zdrowia."
+    ],
+    "confounders": [
+      "Odstęp pomiarów i zmiana codziennych warunków."
+    ],
+    "safe_next_steps": [
+      "Zapisz oddzielnie powtórne kodowanie, odpowiedzi o tym samym oknie i obserwacje nowego okresu."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "methods_src_v2_vidopet"
+    ],
+    "limitations": "Autorska zasada projektu wymaga pilotażu. Źródło wspiera metodę, a nie automatyczną ocenę konkretnego zwierzęcia.",
+    "tags": [
+      "repeated_measures",
+      "metodologia",
+      "niepewność",
+      "profil_opisowy"
+    ],
+    "version": "2.0.0",
+    "review_status": "editorial_screened_expert_pending",
+    "claims": [
+      {
+        "id": "methods_v2_001_source",
+        "text": "VIDOPET oceniał osobno zgodność oceniających, spójność i ponowny pomiar.",
+        "basis": "source_finding",
+        "source_ids": [
+          "methods_src_v2_vidopet"
+        ],
+        "locator": "Methods: Reliability and validity analyses",
+        "uncertainty": "Zakres wskazanej publikacji lub dokumentu; brak samodzielnej walidacji COPOWIESZ."
+      },
+      {
+        "id": "methods_v2_001_policy",
+        "text": "Zapisz oddzielnie powtórne kodowanie, odpowiedzi o tym samym oknie i obserwacje nowego okresu.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "methods_src_v2_vidopet"
+        ],
+        "locator": "Autorska reguła COPOWIESZ, wersja 2.0.0.",
+        "uncertainty": "Decyzja projektu do sprawdzenia z ekspertem i w pilotażu; nie jest wynikiem źródłowego badania.",
+        "source_reference_role": "background_method_only_not_source_result"
+      }
+    ],
+    "domain": "methods"
+  },
+  {
+    "id": "methods_v2_002",
+    "species": [
+      "dog"
+    ],
+    "topic": "trait_state_context",
+    "title": "Tendencja psa ma datę i kontekst",
+    "observation": "Po jednym spacerze profil otrzymuje trwałą etykietę.",
+    "possible_interpretations": [
+      "To problem zakresu pomiaru; sam zapis nie rozstrzyga osobowości, emocji ani zdrowia."
+    ],
+    "confounders": [
+      "Zdrowie, zmiana otoczenia i znajomość sytuacji."
+    ],
+    "safe_next_steps": [
+      "Zachowaj sekwencje z różnych dni i porównywalnych sytuacji oraz kontrprzykłady; nie zamrażaj charakteru z pojedynczej sesji."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "methods_src_v2_vidopet"
+    ],
+    "limitations": "Autorska zasada projektu wymaga pilotażu. Źródło wspiera metodę, a nie automatyczną ocenę konkretnego zwierzęcia.",
+    "tags": [
+      "trait_state_context",
+      "metodologia",
+      "niepewność",
+      "profil_opisowy"
+    ],
+    "version": "2.0.0",
+    "review_status": "editorial_screened_expert_pending",
+    "claims": [
+      {
+        "id": "methods_v2_002_source",
+        "text": "W badaniu VIDOPET oceniono temporalną zgodność podpróby psów.",
+        "basis": "source_finding",
+        "source_ids": [
+          "methods_src_v2_vidopet"
+        ],
+        "locator": "Abstract; Discussion: Reliability",
+        "uncertainty": "Zakres wskazanej publikacji lub dokumentu; brak samodzielnej walidacji COPOWIESZ."
+      },
+      {
+        "id": "methods_v2_002_policy",
+        "text": "Zachowaj sekwencje z różnych dni i porównywalnych sytuacji oraz kontrprzykłady; nie zamrażaj charakteru z pojedynczej sesji.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "methods_src_v2_vidopet"
+        ],
+        "locator": "Autorska reguła COPOWIESZ, wersja 2.0.0.",
+        "uncertainty": "Decyzja projektu do sprawdzenia z ekspertem i w pilotażu; nie jest wynikiem źródłowego badania.",
+        "source_reference_role": "background_method_only_not_source_result"
+      }
+    ],
+    "domain": "methods"
+  },
+  {
+    "id": "methods_v2_003",
+    "species": [
+      "dog"
+    ],
+    "topic": "observer_bias",
+    "title": "Zgodność opiekunów a trafność opisu psa",
+    "observation": "Dwaj opiekunowie wybierają tę samą etykietę bez wspólnego przykładu.",
+    "possible_interpretations": [
+      "To problem zakresu pomiaru; sam zapis nie rozstrzyga osobowości, emocji ani zdrowia."
+    ],
+    "confounders": [
+      "Wspólna historia, słownictwo i wzajemna sugestia."
+    ],
+    "safe_next_steps": [
+      "Zapisz obu oceniających i ich ekspozycję; sprawdzaj zgodność opisu z zachowaniem osobno od zgodności między ludźmi."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "methods_src_v2_gosling"
+    ],
+    "limitations": "Autorska zasada projektu wymaga pilotażu. Źródło wspiera metodę, a nie automatyczną ocenę konkretnego zwierzęcia.",
+    "tags": [
+      "observer_bias",
+      "metodologia",
+      "niepewność",
+      "profil_opisowy"
+    ],
+    "version": "2.0.0",
+    "review_status": "editorial_screened_expert_pending",
+    "claims": [
+      {
+        "id": "methods_v2_003_source",
+        "text": "Badanie rozróżniało spójność, konsensus i korespondencję ocen.",
+        "basis": "source_finding",
+        "source_ids": [
+          "methods_src_v2_gosling"
+        ],
+        "locator": "Abstract",
+        "uncertainty": "Zakres wskazanej publikacji lub dokumentu; brak samodzielnej walidacji COPOWIESZ."
+      },
+      {
+        "id": "methods_v2_003_policy",
+        "text": "Zapisz obu oceniających i ich ekspozycję; sprawdzaj zgodność opisu z zachowaniem osobno od zgodności między ludźmi.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "methods_src_v2_gosling"
+        ],
+        "locator": "Autorska reguła COPOWIESZ, wersja 2.0.0.",
+        "uncertainty": "Decyzja projektu do sprawdzenia z ekspertem i w pilotażu; nie jest wynikiem źródłowego badania.",
+        "source_reference_role": "background_method_only_not_source_result"
+      }
+    ],
+    "domain": "methods"
+  },
+  {
+    "id": "methods_v2_004",
+    "species": [
+      "dog"
+    ],
+    "topic": "construct_validation",
+    "title": "Ludzkie słowo nie stanowi automatycznie cechy psa",
+    "observation": "Słowo „inteligentny” z ankiety staje się pełnym profilem poznawczym.",
+    "possible_interpretations": [
+      "To problem zakresu pomiaru; sam zapis nie rozstrzyga osobowości, emocji ani zdrowia."
+    ],
+    "confounders": [
+      "Oczekiwania kulturowe i interpretacja przymiotników."
+    ],
+    "safe_next_steps": [
+      "Określ roboczy konstrukt i zachowania, które mogłyby go wesprzeć lub podważyć; nie kopiuj ludzkich typów bez walidacji."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "methods_src_v2_gosling"
+    ],
+    "limitations": "Autorska zasada projektu wymaga pilotażu. Źródło wspiera metodę, a nie automatyczną ocenę konkretnego zwierzęcia.",
+    "tags": [
+      "construct_validation",
+      "metodologia",
+      "niepewność",
+      "profil_opisowy"
+    ],
+    "version": "2.0.0",
+    "review_status": "editorial_screened_expert_pending",
+    "claims": [
+      {
+        "id": "methods_v2_004_source",
+        "text": "Autorzy zastosowali równoległe procedury oceny psów i ludzi.",
+        "basis": "source_finding",
+        "source_ids": [
+          "methods_src_v2_gosling"
+        ],
+        "locator": "Abstract",
+        "uncertainty": "Zakres wskazanej publikacji lub dokumentu; brak samodzielnej walidacji COPOWIESZ."
+      },
+      {
+        "id": "methods_v2_004_policy",
+        "text": "Określ roboczy konstrukt i zachowania, które mogłyby go wesprzeć lub podważyć; nie kopiuj ludzkich typów bez walidacji.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "methods_src_v2_gosling"
+        ],
+        "locator": "Autorska reguła COPOWIESZ, wersja 2.0.0.",
+        "uncertainty": "Decyzja projektu do sprawdzenia z ekspertem i w pilotażu; nie jest wynikiem źródłowego badania.",
+        "source_reference_role": "background_method_only_not_source_result"
+      }
+    ],
+    "domain": "methods"
+  },
+  {
+    "id": "methods_v2_005",
+    "species": [
+      "cat"
+    ],
+    "topic": "repeated_measures",
+    "title": "Powtarzalność kota nie oznacza niezmienności",
+    "observation": "Profil po adopcji powiela wcześniejszy wynik bez nowego kontekstu.",
+    "possible_interpretations": [
+      "To problem zakresu pomiaru; sam zapis nie rozstrzyga osobowości, emocji ani zdrowia."
+    ],
+    "confounders": [
+      "Zmiana miejsca, człowieka i warunków opieki."
+    ],
+    "safe_next_steps": [
+      "Wersjonuj opis kota po zmianie domu; porównuj podobne sytuacje i ujawniaj brak materiału po zmianie."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "methods_src_v2_cat_temperament"
+    ],
+    "limitations": "Autorska zasada projektu wymaga pilotażu. Źródło wspiera metodę, a nie automatyczną ocenę konkretnego zwierzęcia.",
+    "tags": [
+      "repeated_measures",
+      "metodologia",
+      "niepewność",
+      "profil_opisowy"
+    ],
+    "version": "2.0.0",
+    "review_status": "editorial_screened_expert_pending",
+    "claims": [
+      {
+        "id": "methods_v2_005_source",
+        "text": "Badanie FTP śledziło ocenę kotów w czasie i różnych warunkach.",
+        "basis": "source_finding",
+        "source_ids": [
+          "methods_src_v2_cat_temperament"
+        ],
+        "locator": "Abstract",
+        "uncertainty": "Zakres wskazanej publikacji lub dokumentu; brak samodzielnej walidacji COPOWIESZ."
+      },
+      {
+        "id": "methods_v2_005_policy",
+        "text": "Wersjonuj opis kota po zmianie domu; porównuj podobne sytuacje i ujawniaj brak materiału po zmianie.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "methods_src_v2_cat_temperament"
+        ],
+        "locator": "Autorska reguła COPOWIESZ, wersja 2.0.0.",
+        "uncertainty": "Decyzja projektu do sprawdzenia z ekspertem i w pilotażu; nie jest wynikiem źródłowego badania.",
+        "source_reference_role": "background_method_only_not_source_result"
+      }
+    ],
+    "domain": "methods"
+  },
+  {
+    "id": "methods_v2_006",
+    "species": [
+      "cat"
+    ],
+    "topic": "construct_validation",
+    "title": "Jedna fizjologia nie jest całym temperamentem kota",
+    "observation": "Brak związku dwóch pomiarów uznaje się za brak emocji albo brak osobowości.",
+    "possible_interpretations": [
+      "To problem zakresu pomiaru; sam zapis nie rozstrzyga osobowości, emocji ani zdrowia."
+    ],
+    "confounders": [
+      "Właściwości pomiaru i zakres badanego zachowania."
+    ],
+    "safe_next_steps": [
+      "Przechowuj wskaźniki oddzielnie i oceniaj wcześniej zdefiniowany związek; brak korelacji nie uzasadnia pełnej zgodności ani negacji konstruktu."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "methods_src_v2_cat_temperament"
+    ],
+    "limitations": "Wniosek dotyczy tej próby i pomiaru; nie interpretujemy poziomu hormonów indywidualnego kota.",
+    "tags": [
+      "construct_validation",
+      "metodologia",
+      "niepewność",
+      "profil_opisowy"
+    ],
+    "version": "2.0.0",
+    "review_status": "editorial_screened_expert_pending",
+    "claims": [
+      {
+        "id": "methods_v2_006_source",
+        "text": "W tym badaniu FTP nie korelował z bazowym kortyzolem ślinowym.",
+        "basis": "source_finding",
+        "source_ids": [
+          "methods_src_v2_cat_temperament"
+        ],
+        "locator": "Abstract",
+        "uncertainty": "Zakres wskazanej publikacji lub dokumentu; brak samodzielnej walidacji COPOWIESZ."
+      },
+      {
+        "id": "methods_v2_006_policy",
+        "text": "Przechowuj wskaźniki oddzielnie i oceniaj wcześniej zdefiniowany związek; brak korelacji nie uzasadnia pełnej zgodności ani negacji konstruktu.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "methods_src_v2_cat_temperament"
+        ],
+        "locator": "Autorska reguła COPOWIESZ, wersja 2.0.0.",
+        "uncertainty": "Decyzja projektu do sprawdzenia z ekspertem i w pilotażu; nie jest wynikiem źródłowego badania.",
+        "source_reference_role": "background_method_only_not_source_result"
+      }
+    ],
+    "domain": "methods"
+  },
+  {
+    "id": "methods_v2_007",
+    "species": [
+      "dog"
+    ],
+    "topic": "pose_action_emotion",
+    "title": "Ruch twarzy psa a nazwa emocji",
+    "observation": "System wykrywa zmianę brwi i dopisuje „smutek”.",
+    "possible_interpretations": [
+      "To problem zakresu pomiaru; sam zapis nie rozstrzyga osobowości, emocji ani zdrowia."
+    ],
+    "confounders": [
+      "Kąt twarzy, sierść i indywidualna budowa."
+    ],
+    "safe_next_steps": [
+      "Zapisuj widoczny ruch osobno; hipotezę stanu dodawaj dopiero z kontekstem i ograniczeniami, bez pewnej etykiety."
+    ],
+    "escalation": "none",
+    "evidence_level": "technical_documentation",
+    "source_ids": [
+      "methods_src_v2_dogfacs_official"
+    ],
+    "limitations": "Autorska zasada projektu wymaga pilotażu. Źródło wspiera metodę, a nie automatyczną ocenę konkretnego zwierzęcia.",
+    "tags": [
+      "pose_action_emotion",
+      "metodologia",
+      "niepewność",
+      "profil_opisowy"
+    ],
+    "version": "2.0.0",
+    "review_status": "editorial_screened_expert_pending",
+    "claims": [
+      {
+        "id": "methods_v2_007_source",
+        "text": "DogFACS koduje ruchy, bez wnioskowania o emocji lub powodującym je kontekście.",
+        "basis": "source_finding",
+        "source_ids": [
+          "methods_src_v2_dogfacs_official"
+        ],
+        "locator": "What DogFACS isn’t",
+        "uncertainty": "Zakres wskazanej publikacji lub dokumentu; brak samodzielnej walidacji COPOWIESZ."
+      },
+      {
+        "id": "methods_v2_007_policy",
+        "text": "Zapisuj widoczny ruch osobno; hipotezę stanu dodawaj dopiero z kontekstem i ograniczeniami, bez pewnej etykiety.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "methods_src_v2_dogfacs_official"
+        ],
+        "locator": "Autorska reguła COPOWIESZ, wersja 2.0.0.",
+        "uncertainty": "Decyzja projektu do sprawdzenia z ekspertem i w pilotażu; nie jest wynikiem źródłowego badania.",
+        "source_reference_role": "background_method_only_not_source_result"
+      }
+    ],
+    "domain": "methods"
+  },
+  {
+    "id": "methods_v2_008",
+    "species": [
+      "dog"
+    ],
+    "topic": "annotation_rights",
+    "title": "Bezpłatna instrukcja nie uwalnia cudzych filmów",
+    "observation": "Film z instrukcji trafia do treningu bez ustalenia uprawnienia.",
+    "possible_interpretations": [
+      "To problem zakresu pomiaru; sam zapis nie rozstrzyga osobowości, emocji ani zdrowia."
+    ],
+    "confounders": [
+      "Różne prawa instrukcji, przykładów i testu."
+    ],
+    "safe_next_steps": [
+      "Rejestruj osobno prawo odczytu instrukcji, szkolenia kodera i wykorzystania nagrań; nie importuj cudzych mediów bez konkretnej podstawy."
+    ],
+    "escalation": "none",
+    "evidence_level": "technical_documentation",
+    "source_ids": [
+      "methods_src_v2_dogfacs_official"
+    ],
+    "limitations": "Autorska zasada projektu wymaga pilotażu. Źródło wspiera metodę, a nie automatyczną ocenę konkretnego zwierzęcia.",
+    "tags": [
+      "annotation_rights",
+      "metodologia",
+      "niepewność",
+      "profil_opisowy"
+    ],
+    "version": "2.0.0",
+    "review_status": "editorial_screened_expert_pending",
+    "claims": [
+      {
+        "id": "methods_v2_008_source",
+        "text": "Oficjalna dokumentacja wymaga pozwolenia właścicieli przy użyciu udostępnionych filmów.",
+        "basis": "source_finding",
+        "source_ids": [
+          "methods_src_v2_dogfacs_official"
+        ],
+        "locator": "Usage of materials",
+        "uncertainty": "Zakres wskazanej publikacji lub dokumentu; brak samodzielnej walidacji COPOWIESZ."
+      },
+      {
+        "id": "methods_v2_008_policy",
+        "text": "Rejestruj osobno prawo odczytu instrukcji, szkolenia kodera i wykorzystania nagrań; nie importuj cudzych mediów bez konkretnej podstawy.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "methods_src_v2_dogfacs_official"
+        ],
+        "locator": "Autorska reguła COPOWIESZ, wersja 2.0.0.",
+        "uncertainty": "Decyzja projektu do sprawdzenia z ekspertem i w pilotażu; nie jest wynikiem źródłowego badania.",
+        "source_reference_role": "background_method_only_not_source_result"
+      }
+    ],
+    "domain": "methods"
+  },
+  {
+    "id": "methods_v2_009",
+    "species": [
+      "cat"
+    ],
+    "topic": "annotation",
+    "title": "Ruchy kota kodujemy według gatunku",
+    "observation": "Definicje ruchu psa stosuje się do twarzy kota bez przeglądu.",
+    "possible_interpretations": [
+      "To problem zakresu pomiaru; sam zapis nie rozstrzyga osobowości, emocji ani zdrowia."
+    ],
+    "confounders": [
+      "Anatomia i różne rodzaje ruchów."
+    ],
+    "safe_next_steps": [
+      "Utrzymuj definicje i ocenę widoczności osobno dla gatunków; etogram COPOWIESZ nie oznacza certyfikacji CatFACS."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "methods_src_v2_catfacs"
+    ],
+    "limitations": "Autorska zasada projektu wymaga pilotażu. Źródło wspiera metodę, a nie automatyczną ocenę konkretnego zwierzęcia.",
+    "tags": [
+      "annotation",
+      "metodologia",
+      "niepewność",
+      "profil_opisowy"
+    ],
+    "version": "2.0.0",
+    "review_status": "editorial_screened_expert_pending",
+    "claims": [
+      {
+        "id": "methods_v2_009_source",
+        "text": "CatFACS opracowano jako anatomiczny system kodowania ruchów twarzy kota.",
+        "basis": "source_finding",
+        "source_ids": [
+          "methods_src_v2_catfacs"
+        ],
+        "locator": "Abstract",
+        "uncertainty": "Zakres wskazanej publikacji lub dokumentu; brak samodzielnej walidacji COPOWIESZ."
+      },
+      {
+        "id": "methods_v2_009_policy",
+        "text": "Utrzymuj definicje i ocenę widoczności osobno dla gatunków; etogram COPOWIESZ nie oznacza certyfikacji CatFACS.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "methods_src_v2_catfacs"
+        ],
+        "locator": "Autorska reguła COPOWIESZ, wersja 2.0.0.",
+        "uncertainty": "Decyzja projektu do sprawdzenia z ekspertem i w pilotażu; nie jest wynikiem źródłowego badania.",
+        "source_reference_role": "background_method_only_not_source_result"
+      }
+    ],
+    "domain": "methods"
+  },
+  {
+    "id": "methods_v2_010",
+    "species": [
+      "cat"
+    ],
+    "topic": "context",
+    "title": "Wybór adopcyjny nie jest pełnym profilem kota",
+    "observation": "Szybkość adopcji otrzymuje etykietę „lepsza osobowość”.",
+    "possible_interpretations": [
+      "To problem zakresu pomiaru; sam zapis nie rozstrzyga osobowości, emocji ani zdrowia."
+    ],
+    "confounders": [
+      "Procedura spotkania, schronisko i preferencje ludzi."
+    ],
+    "safe_next_steps": [
+      "Zachowaj cel i warunki badania; nie zastępuj zachowania kota preferencją człowieka ani szybkością decyzji adopcyjnej."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "methods_src_v2_catfacs"
+    ],
+    "limitations": "Autorska zasada projektu wymaga pilotażu. Źródło wspiera metodę, a nie automatyczną ocenę konkretnego zwierzęcia.",
+    "tags": [
+      "context",
+      "metodologia",
+      "niepewność",
+      "profil_opisowy"
+    ],
+    "version": "2.0.0",
+    "review_status": "editorial_screened_expert_pending",
+    "claims": [
+      {
+        "id": "methods_v2_010_source",
+        "text": "Badanie porównywało zachowanie 106 kotów i szybkość adopcji.",
+        "basis": "source_finding",
+        "source_ids": [
+          "methods_src_v2_catfacs"
+        ],
+        "locator": "Abstract",
+        "uncertainty": "Zakres wskazanej publikacji lub dokumentu; brak samodzielnej walidacji COPOWIESZ."
+      },
+      {
+        "id": "methods_v2_010_policy",
+        "text": "Zachowaj cel i warunki badania; nie zastępuj zachowania kota preferencją człowieka ani szybkością decyzji adopcyjnej.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "methods_src_v2_catfacs"
+        ],
+        "locator": "Autorska reguła COPOWIESZ, wersja 2.0.0.",
+        "uncertainty": "Decyzja projektu do sprawdzenia z ekspertem i w pilotażu; nie jest wynikiem źródłowego badania.",
+        "source_reference_role": "background_method_only_not_source_result"
+      }
+    ],
+    "domain": "methods"
+  },
+  {
+    "id": "methods_v2_011",
+    "species": [
+      "dog"
+    ],
+    "topic": "animal_affect_uncertainty",
+    "title": "Sygnał psa wymaga sprawdzenia w innym kontekście",
+    "observation": "Gest związany z warunkiem eksperymentalnym otrzymuje uniwersalny słownik emocji.",
+    "possible_interpretations": [
+      "To problem zakresu pomiaru; sam zapis nie rozstrzyga osobowości, emocji ani zdrowia."
+    ],
+    "confounders": [
+      "Typ nagrody, sytuacja i różnice psów."
+    ],
+    "safe_next_steps": [
+      "Oceniaj sygnał w kilku naturalnych kontekstach; odnotuj alternatywy, nie naśladuj procedury wywołującej frustrację."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "methods_src_v2_dog_context_affect"
+    ],
+    "limitations": "Autorska zasada projektu wymaga pilotażu. Źródło wspiera metodę, a nie automatyczną ocenę konkretnego zwierzęcia.",
+    "tags": [
+      "animal_affect_uncertainty",
+      "metodologia",
+      "niepewność",
+      "profil_opisowy"
+    ],
+    "version": "2.0.0",
+    "review_status": "editorial_screened_expert_pending",
+    "claims": [
+      {
+        "id": "methods_v2_011_source",
+        "text": "Badanie sprawdzało wskaźniki twarzy między kontekstami i rodzajami nagród.",
+        "basis": "source_finding",
+        "source_ids": [
+          "methods_src_v2_dog_context_affect"
+        ],
+        "locator": "Abstract; Discussion",
+        "uncertainty": "Zakres wskazanej publikacji lub dokumentu; brak samodzielnej walidacji COPOWIESZ."
+      },
+      {
+        "id": "methods_v2_011_policy",
+        "text": "Oceniaj sygnał w kilku naturalnych kontekstach; odnotuj alternatywy, nie naśladuj procedury wywołującej frustrację.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "methods_src_v2_dog_context_affect"
+        ],
+        "locator": "Autorska reguła COPOWIESZ, wersja 2.0.0.",
+        "uncertainty": "Decyzja projektu do sprawdzenia z ekspertem i w pilotażu; nie jest wynikiem źródłowego badania.",
+        "source_reference_role": "background_method_only_not_source_result"
+      }
+    ],
+    "domain": "methods"
+  },
+  {
+    "id": "methods_v2_012",
+    "species": [
+      "dog"
+    ],
+    "topic": "validation",
+    "title": "Trafność wskaźnika psa jest odrębnym zadaniem",
+    "observation": "Kod ruchu jest zgodny między oceniającymi, więc ogłasza się trafne rozpoznanie emocji.",
+    "possible_interpretations": [
+      "To problem zakresu pomiaru; sam zapis nie rozstrzyga osobowości, emocji ani zdrowia."
+    ],
+    "confounders": [
+      "Zgodność obserwatorów może dotyczyć tylko ruchu."
+    ],
+    "safe_next_steps": [
+      "Sprawdzaj osobno zgodność kodowania i trafność hipotezy; nie zastępuj braku odniesienia procentem pewności modelu."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "methods_src_v2_dog_context_affect"
+    ],
+    "limitations": "Autorska zasada projektu wymaga pilotażu. Źródło wspiera metodę, a nie automatyczną ocenę konkretnego zwierzęcia.",
+    "tags": [
+      "validation",
+      "metodologia",
+      "niepewność",
+      "profil_opisowy"
+    ],
+    "version": "2.0.0",
+    "review_status": "editorial_screened_expert_pending",
+    "claims": [
+      {
+        "id": "methods_v2_012_source",
+        "text": "Autorzy oceniali trafność potencjalnych wskaźników przy użyciu miar diagnostycznej dokładności.",
+        "basis": "source_finding",
+        "source_ids": [
+          "methods_src_v2_dog_context_affect"
+        ],
+        "locator": "Abstract; Discussion",
+        "uncertainty": "Zakres wskazanej publikacji lub dokumentu; brak samodzielnej walidacji COPOWIESZ."
+      },
+      {
+        "id": "methods_v2_012_policy",
+        "text": "Sprawdzaj osobno zgodność kodowania i trafność hipotezy; nie zastępuj braku odniesienia procentem pewności modelu.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "methods_src_v2_dog_context_affect"
+        ],
+        "locator": "Autorska reguła COPOWIESZ, wersja 2.0.0.",
+        "uncertainty": "Decyzja projektu do sprawdzenia z ekspertem i w pilotażu; nie jest wynikiem źródłowego badania.",
+        "source_reference_role": "background_method_only_not_source_result"
+      }
+    ],
+    "domain": "methods"
+  },
+  {
+    "id": "methods_v2_013",
+    "species": [
+      "cat"
+    ],
+    "topic": "animal_affect_uncertainty",
+    "title": "Etykieta stanu kota pozostaje hipotezą",
+    "observation": "Opis kota w ograniczonej przestrzeni stosuje się do dowolnego klipu z domu.",
+    "possible_interpretations": [
+      "To problem zakresu pomiaru; sam zapis nie rozstrzyga osobowości, emocji ani zdrowia."
+    ],
+    "confounders": [
+      "Ograniczona przestrzeń i warunki kontaktu."
+    ],
+    "safe_next_steps": [
+      "Oddziel typ miejsca, kontakt człowieka i kod ruchu; wskaż stan jako możliwy i dopuszczaj nierozstrzygnięcie."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "methods_src_v2_cat_affect_hypotheses"
+    ],
+    "limitations": "Autorska zasada projektu wymaga pilotażu. Źródło wspiera metodę, a nie automatyczną ocenę konkretnego zwierzęcia.",
+    "tags": [
+      "animal_affect_uncertainty",
+      "metodologia",
+      "niepewność",
+      "profil_opisowy"
+    ],
+    "version": "2.0.0",
+    "review_status": "editorial_screened_expert_pending",
+    "claims": [
+      {
+        "id": "methods_v2_013_source",
+        "text": "Autorzy opisali związki twarzy i zachowania w celu generowania hipotez emocjonalnych.",
+        "basis": "source_finding",
+        "source_ids": [
+          "methods_src_v2_cat_affect_hypotheses"
+        ],
+        "locator": "Abstract",
+        "uncertainty": "Zakres wskazanej publikacji lub dokumentu; brak samodzielnej walidacji COPOWIESZ."
+      },
+      {
+        "id": "methods_v2_013_policy",
+        "text": "Oddziel typ miejsca, kontakt człowieka i kod ruchu; wskaż stan jako możliwy i dopuszczaj nierozstrzygnięcie.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "methods_src_v2_cat_affect_hypotheses"
+        ],
+        "locator": "Autorska reguła COPOWIESZ, wersja 2.0.0.",
+        "uncertainty": "Decyzja projektu do sprawdzenia z ekspertem i w pilotażu; nie jest wynikiem źródłowego badania.",
+        "source_reference_role": "background_method_only_not_source_result"
+      }
+    ],
+    "domain": "methods"
+  },
+  {
+    "id": "methods_v2_014",
+    "species": [
+      "cat"
+    ],
+    "topic": "annotation",
+    "title": "Etykieta kota nie bierze się z pierwszego wrażenia",
+    "observation": "Koder najpierw czyta „zazdrość”, potem wyszukuje ruchy potwierdzające opis.",
+    "possible_interpretations": [
+      "To problem zakresu pomiaru; sam zapis nie rozstrzyga osobowości, emocji ani zdrowia."
+    ],
+    "confounders": [
+      "Efekt oczekiwań i brak pełnej sekwencji."
+    ],
+    "safe_next_steps": [
+      "Pierwsze kodowanie faktów wykonuj bez interpretacji opiekuna i bez stylu przyszłej persony; zachowuj rozbieżności."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "methods_src_v2_cat_affect_hypotheses"
+    ],
+    "limitations": "Autorska zasada projektu wymaga pilotażu. Źródło wspiera metodę, a nie automatyczną ocenę konkretnego zwierzęcia.",
+    "tags": [
+      "annotation",
+      "metodologia",
+      "niepewność",
+      "profil_opisowy"
+    ],
+    "version": "2.0.0",
+    "review_status": "editorial_screened_expert_pending",
+    "claims": [
+      {
+        "id": "methods_v2_014_source",
+        "text": "Badanie używało CatFACS do opisu relacji twarzy i zachowania.",
+        "basis": "source_finding",
+        "source_ids": [
+          "methods_src_v2_cat_affect_hypotheses"
+        ],
+        "locator": "Abstract",
+        "uncertainty": "Zakres wskazanej publikacji lub dokumentu; brak samodzielnej walidacji COPOWIESZ."
+      },
+      {
+        "id": "methods_v2_014_policy",
+        "text": "Pierwsze kodowanie faktów wykonuj bez interpretacji opiekuna i bez stylu przyszłej persony; zachowuj rozbieżności.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "methods_src_v2_cat_affect_hypotheses"
+        ],
+        "locator": "Autorska reguła COPOWIESZ, wersja 2.0.0.",
+        "uncertainty": "Decyzja projektu do sprawdzenia z ekspertem i w pilotażu; nie jest wynikiem źródłowego badania.",
+        "source_reference_role": "background_method_only_not_source_result"
+      }
+    ],
+    "domain": "methods"
+  },
+  {
+    "id": "methods_v2_015",
+    "species": [
+      "cat"
+    ],
+    "topic": "behavioral_sequences",
+    "title": "Układ sygnałów społecznych kota",
+    "observation": "Rozpoznanie kontaktu oparto wyłącznie na liczbie ruchów twarzy.",
+    "possible_interpretations": [
+      "To problem zakresu pomiaru; sam zapis nie rozstrzyga osobowości, emocji ani zdrowia."
+    ],
+    "confounders": [
+      "Widoczność partnera i specyfika miejsca."
+    ],
+    "safe_next_steps": [
+      "Zapisuj które ruchy współwystępują, ich kolejność, partnera i dystans; nie utożsamiaj liczby ruchów z siłą uczucia."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "methods_src_v2_cat_social_faces"
+    ],
+    "limitations": "Autorska zasada projektu wymaga pilotażu. Źródło wspiera metodę, a nie automatyczną ocenę konkretnego zwierzęcia.",
+    "tags": [
+      "behavioral_sequences",
+      "metodologia",
+      "niepewność",
+      "profil_opisowy"
+    ],
+    "version": "2.0.0",
+    "review_status": "editorial_screened_expert_pending",
+    "claims": [
+      {
+        "id": "methods_v2_015_source",
+        "text": "W badaniu skład ruchów wiązał się z funkcją społeczną sygnału.",
+        "basis": "source_finding",
+        "source_ids": [
+          "methods_src_v2_cat_social_faces"
+        ],
+        "locator": "Abstract",
+        "uncertainty": "Zakres wskazanej publikacji lub dokumentu; brak samodzielnej walidacji COPOWIESZ."
+      },
+      {
+        "id": "methods_v2_015_policy",
+        "text": "Zapisuj które ruchy współwystępują, ich kolejność, partnera i dystans; nie utożsamiaj liczby ruchów z siłą uczucia.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "methods_src_v2_cat_social_faces"
+        ],
+        "locator": "Autorska reguła COPOWIESZ, wersja 2.0.0.",
+        "uncertainty": "Decyzja projektu do sprawdzenia z ekspertem i w pilotażu; nie jest wynikiem źródłowego badania.",
+        "source_reference_role": "background_method_only_not_source_result"
+      }
+    ],
+    "domain": "methods"
+  },
+  {
+    "id": "methods_v2_016",
+    "species": [
+      "cat"
+    ],
+    "topic": "external_validity",
+    "title": "Jedna grupa kotów nie tworzy norm gatunku",
+    "observation": "Wynik obserwacji kawiarni staje się normą domowego kota.",
+    "possible_interpretations": [
+      "To problem zakresu pomiaru; sam zapis nie rozstrzyga osobowości, emocji ani zdrowia."
+    ],
+    "confounders": [
+      "Współmieszkanie i dobór grupy."
+    ],
+    "safe_next_steps": [
+      "Przed przeniesieniem sprawdź środowisko, liczbę partnerów i historię kontaktów; oznacz domowe zastosowanie jako wymagające sprawdzenia."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "methods_src_v2_cat_social_faces"
+    ],
+    "limitations": "Autorska zasada projektu wymaga pilotażu. Źródło wspiera metodę, a nie automatyczną ocenę konkretnego zwierzęcia.",
+    "tags": [
+      "external_validity",
+      "metodologia",
+      "niepewność",
+      "profil_opisowy"
+    ],
+    "version": "2.0.0",
+    "review_status": "editorial_screened_expert_pending",
+    "claims": [
+      {
+        "id": "methods_v2_016_source",
+        "text": "Badanie obserwowało 53 koty w jednej kawiarni.",
+        "basis": "source_finding",
+        "source_ids": [
+          "methods_src_v2_cat_social_faces"
+        ],
+        "locator": "Abstract",
+        "uncertainty": "Zakres wskazanej publikacji lub dokumentu; brak samodzielnej walidacji COPOWIESZ."
+      },
+      {
+        "id": "methods_v2_016_policy",
+        "text": "Przed przeniesieniem sprawdź środowisko, liczbę partnerów i historię kontaktów; oznacz domowe zastosowanie jako wymagające sprawdzenia.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "methods_src_v2_cat_social_faces"
+        ],
+        "locator": "Autorska reguła COPOWIESZ, wersja 2.0.0.",
+        "uncertainty": "Decyzja projektu do sprawdzenia z ekspertem i w pilotażu; nie jest wynikiem źródłowego badania.",
+        "source_reference_role": "background_method_only_not_source_result"
+      }
+    ],
+    "domain": "methods"
+  },
+  {
+    "id": "methods_v2_017",
+    "species": [
+      "cat"
+    ],
+    "topic": "pose_action_emotion",
+    "title": "Punkty twarzy kota bez osobowości",
+    "observation": "Model lokalizuje punkty i generuje ocenę charakteru.",
+    "possible_interpretations": [
+      "To problem zakresu pomiaru; sam zapis nie rozstrzyga osobowości, emocji ani zdrowia."
+    ],
+    "confounders": [
+      "Rozdzielczość, kąt i oświetlenie."
+    ],
+    "safe_next_steps": [
+      "Raportuj zadanie lokalizacji punktów oraz brakujące części; nie dopisuj emocji, bólu lub osobowości z samego benchmarku."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "methods_src_v2_catflw"
+    ],
+    "limitations": "Autorska zasada projektu wymaga pilotażu. Źródło wspiera metodę, a nie automatyczną ocenę konkretnego zwierzęcia.",
+    "tags": [
+      "pose_action_emotion",
+      "metodologia",
+      "niepewność",
+      "profil_opisowy"
+    ],
+    "version": "2.0.0",
+    "review_status": "editorial_screened_expert_pending",
+    "claims": [
+      {
+        "id": "methods_v2_017_source",
+        "text": "CatFLW zawiera anotacje 48 punktów na zdjęciach twarzy kotów.",
+        "basis": "source_finding",
+        "source_ids": [
+          "methods_src_v2_catflw"
+        ],
+        "locator": "Abstract",
+        "uncertainty": "Zakres wskazanej publikacji lub dokumentu; brak samodzielnej walidacji COPOWIESZ."
+      },
+      {
+        "id": "methods_v2_017_policy",
+        "text": "Raportuj zadanie lokalizacji punktów oraz brakujące części; nie dopisuj emocji, bólu lub osobowości z samego benchmarku.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "methods_src_v2_catflw"
+        ],
+        "locator": "Autorska reguła COPOWIESZ, wersja 2.0.0.",
+        "uncertainty": "Decyzja projektu do sprawdzenia z ekspertem i w pilotażu; nie jest wynikiem źródłowego badania.",
+        "source_reference_role": "background_method_only_not_source_result"
+      }
+    ],
+    "domain": "methods"
+  },
+  {
+    "id": "methods_v2_018",
+    "species": [
+      "cat"
+    ],
+    "topic": "data_access",
+    "title": "Publikacja kota a dostęp do zbioru",
+    "observation": "Dostępny abstrakt uznaje się za pobrany i gotowy zbiór.",
+    "possible_interpretations": [
+      "To problem zakresu pomiaru; sam zapis nie rozstrzyga osobowości, emocji ani zdrowia."
+    ],
+    "confounders": [
+      "Warunki wniosku i licencja konkretnych zdjęć."
+    ],
+    "safe_next_steps": [
+      "Opisuj osobno rekord publikacji, uzyskanie danych i prawa użycia; obecnie pozostaw dane jako niepołączone."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "methods_src_v2_catflw"
+    ],
+    "limitations": "W COPOWIESZ nie pobrano danych ani nie uzyskano uprawnień treningowych.",
+    "tags": [
+      "data_access",
+      "metodologia",
+      "niepewność",
+      "profil_opisowy"
+    ],
+    "version": "2.0.0",
+    "review_status": "editorial_screened_expert_pending",
+    "claims": [
+      {
+        "id": "methods_v2_018_source",
+        "text": "Abstrakt podaje dostępność CatFLW na prośbę.",
+        "basis": "source_finding",
+        "source_ids": [
+          "methods_src_v2_catflw"
+        ],
+        "locator": "Abstract",
+        "uncertainty": "Zakres wskazanej publikacji lub dokumentu; brak samodzielnej walidacji COPOWIESZ."
+      },
+      {
+        "id": "methods_v2_018_policy",
+        "text": "Opisuj osobno rekord publikacji, uzyskanie danych i prawa użycia; obecnie pozostaw dane jako niepołączone.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "methods_src_v2_catflw"
+        ],
+        "locator": "Autorska reguła COPOWIESZ, wersja 2.0.0.",
+        "uncertainty": "Decyzja projektu do sprawdzenia z ekspertem i w pilotażu; nie jest wynikiem źródłowego badania.",
+        "source_reference_role": "background_method_only_not_source_result"
+      }
+    ],
+    "domain": "methods"
+  },
+  {
+    "id": "methods_v2_019",
+    "species": [
+      "dog"
+    ],
+    "topic": "pose_action_emotion",
+    "title": "Twarz psa: geometria ma własną ocenę jakości",
+    "observation": "Wiarygodność punktu twarzy nazywa się pewnością rozpoznania emocji.",
+    "possible_interpretations": [
+      "To problem zakresu pomiaru; sam zapis nie rozstrzyga osobowości, emocji ani zdrowia."
+    ],
+    "confounders": [
+      "Morfologia kufy, pozycja głowy i sierść."
+    ],
+    "safe_next_steps": [
+      "Przechowuj jakość lokalizacji osobno od hipotezy zachowania i stanu; pokazuj różnicę celu użytkownikowi."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "methods_src_v2_dogflw"
+    ],
+    "limitations": "Autorska zasada projektu wymaga pilotażu. Źródło wspiera metodę, a nie automatyczną ocenę konkretnego zwierzęcia.",
+    "tags": [
+      "pose_action_emotion",
+      "metodologia",
+      "niepewność",
+      "profil_opisowy"
+    ],
+    "version": "2.0.0",
+    "review_status": "editorial_screened_expert_pending",
+    "claims": [
+      {
+        "id": "methods_v2_019_source",
+        "text": "DogFLW opisuje zbiór zdjęć z 46 punktami twarzy psa.",
+        "basis": "source_finding",
+        "source_ids": [
+          "methods_src_v2_dogflw"
+        ],
+        "locator": "Abstract",
+        "uncertainty": "Zakres wskazanej publikacji lub dokumentu; brak samodzielnej walidacji COPOWIESZ."
+      },
+      {
+        "id": "methods_v2_019_policy",
+        "text": "Przechowuj jakość lokalizacji osobno od hipotezy zachowania i stanu; pokazuj różnicę celu użytkownikowi.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "methods_src_v2_dogflw"
+        ],
+        "locator": "Autorska reguła COPOWIESZ, wersja 2.0.0.",
+        "uncertainty": "Decyzja projektu do sprawdzenia z ekspertem i w pilotażu; nie jest wynikiem źródłowego badania.",
+        "source_reference_role": "background_method_only_not_source_result"
+      }
+    ],
+    "domain": "methods"
+  },
+  {
+    "id": "methods_v2_020",
+    "species": [
+      "dog"
+    ],
+    "topic": "data_leakage",
+    "title": "Ten sam pies w różnych zdjęciach",
+    "observation": "Podział losuje obrazy tego samego psa między zbiorem uczącym i testowym.",
+    "possible_interpretations": [
+      "To problem zakresu pomiaru; sam zapis nie rozstrzyga osobowości, emocji ani zdrowia."
+    ],
+    "confounders": [
+      "Brak identyfikatora i duplikaty obrazów."
+    ],
+    "safe_next_steps": [
+      "Grupuj podział według osobnika i domu, jeżeli identyfikatory istnieją; przy braku tożsamości jawnie zgłoś niemożność kontroli."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "methods_src_v2_dogflw"
+    ],
+    "limitations": "Autorska zasada projektu wymaga pilotażu. Źródło wspiera metodę, a nie automatyczną ocenę konkretnego zwierzęcia.",
+    "tags": [
+      "data_leakage",
+      "metodologia",
+      "niepewność",
+      "profil_opisowy"
+    ],
+    "version": "2.0.0",
+    "review_status": "editorial_screened_expert_pending",
+    "claims": [
+      {
+        "id": "methods_v2_020_source",
+        "text": "DogFLW jest zbiorem zdjęć psów, nie podłużnym pomiarem osobowości.",
+        "basis": "source_finding",
+        "source_ids": [
+          "methods_src_v2_dogflw"
+        ],
+        "locator": "Abstract",
+        "uncertainty": "Zakres wskazanej publikacji lub dokumentu; brak samodzielnej walidacji COPOWIESZ."
+      },
+      {
+        "id": "methods_v2_020_policy",
+        "text": "Grupuj podział według osobnika i domu, jeżeli identyfikatory istnieją; przy braku tożsamości jawnie zgłoś niemożność kontroli.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "methods_src_v2_dogflw"
+        ],
+        "locator": "Autorska reguła COPOWIESZ, wersja 2.0.0.",
+        "uncertainty": "Decyzja projektu do sprawdzenia z ekspertem i w pilotażu; nie jest wynikiem źródłowego badania.",
+        "source_reference_role": "background_method_only_not_source_result"
+      }
+    ],
+    "domain": "methods"
+  },
+  {
+    "id": "methods_v2_021",
+    "species": [
+      "dog",
+      "cat"
+    ],
+    "topic": "pose_action_emotion",
+    "title": "Poza, czynność i stan są osobnymi celami",
+    "observation": "Punkty ciała są poprawne, więc produkt obiecuje trafny opis emocji.",
+    "possible_interpretations": [
+      "To problem zakresu pomiaru; sam zapis nie rozstrzyga osobowości, emocji ani zdrowia."
+    ],
+    "confounders": [
+      "Różne jednostki błędu i dane odniesienia."
+    ],
+    "safe_next_steps": [
+      "Zdefiniuj osobne etykiety i testy dla punktów, czynności i hipotezy stanu; skuteczność jednego celu nie waliduje kolejnego."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "methods_src_v2_ap10k"
+    ],
+    "limitations": "Autorska zasada projektu wymaga pilotażu. Źródło wspiera metodę, a nie automatyczną ocenę konkretnego zwierzęcia.",
+    "tags": [
+      "pose_action_emotion",
+      "metodologia",
+      "niepewność",
+      "profil_opisowy"
+    ],
+    "version": "2.0.0",
+    "review_status": "editorial_screened_expert_pending",
+    "claims": [
+      {
+        "id": "methods_v2_021_source",
+        "text": "AP-10K jest benchmarkiem pozy ssaków i transferu między gatunkami.",
+        "basis": "source_finding",
+        "source_ids": [
+          "methods_src_v2_ap10k"
+        ],
+        "locator": "Abstract",
+        "uncertainty": "Zakres wskazanej publikacji lub dokumentu; brak samodzielnej walidacji COPOWIESZ."
+      },
+      {
+        "id": "methods_v2_021_policy",
+        "text": "Zdefiniuj osobne etykiety i testy dla punktów, czynności i hipotezy stanu; skuteczność jednego celu nie waliduje kolejnego.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "methods_src_v2_ap10k"
+        ],
+        "locator": "Autorska reguła COPOWIESZ, wersja 2.0.0.",
+        "uncertainty": "Decyzja projektu do sprawdzenia z ekspertem i w pilotażu; nie jest wynikiem źródłowego badania.",
+        "source_reference_role": "background_method_only_not_source_result"
+      }
+    ],
+    "domain": "methods"
+  },
+  {
+    "id": "methods_v2_022",
+    "species": [
+      "dog",
+      "cat"
+    ],
+    "topic": "missing_vs_absent",
+    "title": "Zasłonięta kończyna nie jest nieruchoma",
+    "observation": "Niewidoczna łapa otrzymuje zerową aktywność.",
+    "possible_interpretations": [
+      "To problem zakresu pomiaru; sam zapis nie rozstrzyga osobowości, emocji ani zdrowia."
+    ],
+    "confounders": [
+      "Przesłonięcie, mały obraz i nieznana perspektywa."
+    ],
+    "safe_next_steps": [
+      "Dla każdej części ciała zapisuj widoczna, zasłonięta lub poza kadrem; nie wypełniaj braków ruchem domyślnym."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "methods_src_v2_ap10k"
+    ],
+    "limitations": "Autorska zasada projektu wymaga pilotażu. Źródło wspiera metodę, a nie automatyczną ocenę konkretnego zwierzęcia.",
+    "tags": [
+      "missing_vs_absent",
+      "metodologia",
+      "niepewność",
+      "profil_opisowy"
+    ],
+    "version": "2.0.0",
+    "review_status": "editorial_screened_expert_pending",
+    "claims": [
+      {
+        "id": "methods_v2_022_source",
+        "text": "AP-10K wykorzystuje ręcznie oznaczone punkty ciała wielu ssaków.",
+        "basis": "source_finding",
+        "source_ids": [
+          "methods_src_v2_ap10k"
+        ],
+        "locator": "Abstract",
+        "uncertainty": "Zakres wskazanej publikacji lub dokumentu; brak samodzielnej walidacji COPOWIESZ."
+      },
+      {
+        "id": "methods_v2_022_policy",
+        "text": "Dla każdej części ciała zapisuj widoczna, zasłonięta lub poza kadrem; nie wypełniaj braków ruchem domyślnym.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "methods_src_v2_ap10k"
+        ],
+        "locator": "Autorska reguła COPOWIESZ, wersja 2.0.0.",
+        "uncertainty": "Decyzja projektu do sprawdzenia z ekspertem i w pilotażu; nie jest wynikiem źródłowego badania.",
+        "source_reference_role": "background_method_only_not_source_result"
+      }
+    ],
+    "domain": "methods"
+  },
+  {
+    "id": "methods_v2_023",
+    "species": [
+      "dog",
+      "cat"
+    ],
+    "topic": "appearance",
+    "title": "Klasyfikacja wyglądu nie jest indywidualnym charakterem",
+    "observation": "Model rasy otrzymuje pole „osobowość zwierzęcia”.",
+    "possible_interpretations": [
+      "To problem zakresu pomiaru; sam zapis nie rozstrzyga osobowości, emocji ani zdrowia."
+    ],
+    "confounders": [
+      "Podobieństwo wyglądu i pochodzenie obrazów."
+    ],
+    "safe_next_steps": [
+      "Traktuj gatunek i wygląd jako metadane; profil indywidualny opieraj na własnych obserwacjach i źródłach, bez stereotypu rasy."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "methods_src_v2_oxford_pet"
+    ],
+    "limitations": "Autorska zasada projektu wymaga pilotażu. Źródło wspiera metodę, a nie automatyczną ocenę konkretnego zwierzęcia.",
+    "tags": [
+      "appearance",
+      "metodologia",
+      "niepewność",
+      "profil_opisowy"
+    ],
+    "version": "2.0.0",
+    "review_status": "editorial_screened_expert_pending",
+    "claims": [
+      {
+        "id": "methods_v2_023_source",
+        "text": "Oxford-IIIT Pet bada klasyfikację wyglądu ras psów i kotów.",
+        "basis": "source_finding",
+        "source_ids": [
+          "methods_src_v2_oxford_pet"
+        ],
+        "locator": "Author abstract",
+        "uncertainty": "Zakres wskazanej publikacji lub dokumentu; brak samodzielnej walidacji COPOWIESZ."
+      },
+      {
+        "id": "methods_v2_023_policy",
+        "text": "Traktuj gatunek i wygląd jako metadane; profil indywidualny opieraj na własnych obserwacjach i źródłach, bez stereotypu rasy.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "methods_src_v2_oxford_pet"
+        ],
+        "locator": "Autorska reguła COPOWIESZ, wersja 2.0.0.",
+        "uncertainty": "Decyzja projektu do sprawdzenia z ekspertem i w pilotażu; nie jest wynikiem źródłowego badania.",
+        "source_reference_role": "background_method_only_not_source_result"
+      }
+    ],
+    "domain": "methods"
+  },
+  {
+    "id": "methods_v2_024",
+    "species": [
+      "dog",
+      "cat"
+    ],
+    "topic": "model_boundaries",
+    "title": "Segmentacja zwierzęcia nie identyfikuje osobnika",
+    "observation": "Wycięta sylwetka zostaje przypisana do profilu bez sprawdzenia, który zwierzak jest na filmie.",
+    "possible_interpretations": [
+      "To problem zakresu pomiaru; sam zapis nie rozstrzyga osobowości, emocji ani zdrowia."
+    ],
+    "confounders": [
+      "Podobne zwierzęta w domu."
+    ],
+    "safe_next_steps": [
+      "Wymagaj potwierdzenia pseudonimowego osobnika i oznacz wielozwierzęcy kadr; segmentacji nie traktuj jako autoryzacji tożsamości."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "methods_src_v2_oxford_pet"
+    ],
+    "limitations": "Autorska zasada projektu wymaga pilotażu. Źródło wspiera metodę, a nie automatyczną ocenę konkretnego zwierzęcia.",
+    "tags": [
+      "model_boundaries",
+      "metodologia",
+      "niepewność",
+      "profil_opisowy"
+    ],
+    "version": "2.0.0",
+    "review_status": "editorial_screened_expert_pending",
+    "claims": [
+      {
+        "id": "methods_v2_024_source",
+        "text": "Opis zbioru obejmuje klasyfikację i segmentację zdjęć.",
+        "basis": "source_finding",
+        "source_ids": [
+          "methods_src_v2_oxford_pet"
+        ],
+        "locator": "Author abstract",
+        "uncertainty": "Zakres wskazanej publikacji lub dokumentu; brak samodzielnej walidacji COPOWIESZ."
+      },
+      {
+        "id": "methods_v2_024_policy",
+        "text": "Wymagaj potwierdzenia pseudonimowego osobnika i oznacz wielozwierzęcy kadr; segmentacji nie traktuj jako autoryzacji tożsamości.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "methods_src_v2_oxford_pet"
+        ],
+        "locator": "Autorska reguła COPOWIESZ, wersja 2.0.0.",
+        "uncertainty": "Decyzja projektu do sprawdzenia z ekspertem i w pilotażu; nie jest wynikiem źródłowego badania.",
+        "source_reference_role": "background_method_only_not_source_result"
+      }
+    ],
+    "domain": "methods"
+  },
+  {
+    "id": "methods_v2_025",
+    "species": [
+      "dog",
+      "cat"
+    ],
+    "topic": "behavioral_sequences",
+    "title": "Jednoczesne czynności nie wymagają jednej etykiety",
+    "observation": "Na filmie zwierzę porusza się i wydaje głos, lecz zachowano tylko jedną klasę.",
+    "possible_interpretations": [
+      "To problem zakresu pomiaru; sam zapis nie rozstrzyga osobowości, emocji ani zdrowia."
+    ],
+    "confounders": [
+      "Wiele osobników oraz różne kanały danych."
+    ],
+    "safe_next_steps": [
+      "Dopuszczaj nakładające się warstwy ruchu, kontaktu i audio; zapisuj osobne początki i końce."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "methods_src_v2_animal_kingdom"
+    ],
+    "limitations": "Autorska zasada projektu wymaga pilotażu. Źródło wspiera metodę, a nie automatyczną ocenę konkretnego zwierzęcia.",
+    "tags": [
+      "behavioral_sequences",
+      "metodologia",
+      "niepewność",
+      "profil_opisowy"
+    ],
+    "version": "2.0.0",
+    "review_status": "editorial_screened_expert_pending",
+    "claims": [
+      {
+        "id": "methods_v2_025_source",
+        "text": "Animal Kingdom zawiera zadanie wieloetykietowego rozpoznawania czynności.",
+        "basis": "source_finding",
+        "source_ids": [
+          "methods_src_v2_animal_kingdom"
+        ],
+        "locator": "Abstract",
+        "uncertainty": "Zakres wskazanej publikacji lub dokumentu; brak samodzielnej walidacji COPOWIESZ."
+      },
+      {
+        "id": "methods_v2_025_policy",
+        "text": "Dopuszczaj nakładające się warstwy ruchu, kontaktu i audio; zapisuj osobne początki i końce.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "methods_src_v2_animal_kingdom"
+        ],
+        "locator": "Autorska reguła COPOWIESZ, wersja 2.0.0.",
+        "uncertainty": "Decyzja projektu do sprawdzenia z ekspertem i w pilotażu; nie jest wynikiem źródłowego badania.",
+        "source_reference_role": "background_method_only_not_source_result"
+      }
+    ],
+    "domain": "methods"
+  },
+  {
+    "id": "methods_v2_026",
+    "species": [
+      "dog",
+      "cat"
+    ],
+    "topic": "data_leakage",
+    "title": "Klip i długi film mają wspólne pochodzenie",
+    "observation": "Kawałki tego samego filmu trafiają do uczenia i niezależnego testu.",
+    "possible_interpretations": [
+      "To problem zakresu pomiaru; sam zapis nie rozstrzyga osobowości, emocji ani zdrowia."
+    ],
+    "confounders": [
+      "Wycinki, transkodowanie i brak metadanych pochodzenia."
+    ],
+    "safe_next_steps": [
+      "Grupuj po filmie źródłowym, osobniku i gospodarstwie; przed podziałem kontroluj duplikaty i powiązane wycinki."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "methods_src_v2_animal_kingdom"
+    ],
+    "limitations": "Autorska zasada projektu wymaga pilotażu. Źródło wspiera metodę, a nie automatyczną ocenę konkretnego zwierzęcia.",
+    "tags": [
+      "data_leakage",
+      "metodologia",
+      "niepewność",
+      "profil_opisowy"
+    ],
+    "version": "2.0.0",
+    "review_status": "editorial_screened_expert_pending",
+    "claims": [
+      {
+        "id": "methods_v2_026_source",
+        "text": "Animal Kingdom rozróżnia lokalizację zdarzeń, czynności i pozy.",
+        "basis": "source_finding",
+        "source_ids": [
+          "methods_src_v2_animal_kingdom"
+        ],
+        "locator": "Abstract",
+        "uncertainty": "Zakres wskazanej publikacji lub dokumentu; brak samodzielnej walidacji COPOWIESZ."
+      },
+      {
+        "id": "methods_v2_026_policy",
+        "text": "Grupuj po filmie źródłowym, osobniku i gospodarstwie; przed podziałem kontroluj duplikaty i powiązane wycinki.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "methods_src_v2_animal_kingdom"
+        ],
+        "locator": "Autorska reguła COPOWIESZ, wersja 2.0.0.",
+        "uncertainty": "Decyzja projektu do sprawdzenia z ekspertem i w pilotażu; nie jest wynikiem źródłowego badania.",
+        "source_reference_role": "background_method_only_not_source_result"
+      }
+    ],
+    "domain": "methods"
+  },
+  {
+    "id": "methods_v2_027",
+    "species": [
+      "dog",
+      "cat"
+    ],
+    "topic": "experimental_unit",
+    "title": "Klatki nie mnożą liczby niezależnych zwierząt",
+    "observation": "Tysiąc klatek jednego kota raportuje się jako tysiąc niezależnych obserwowanych kotów.",
+    "possible_interpretations": [
+      "To problem zakresu pomiaru; sam zapis nie rozstrzyga osobowości, emocji ani zdrowia."
+    ],
+    "confounders": [
+      "Silna zależność klatek i sesji."
+    ],
+    "safe_next_steps": [
+      "Podawaj osobno osobniki, domy, sesje, klipy i klatki; planuj analizę zależności i powtarzanych pomiarów."
+    ],
+    "escalation": "none",
+    "evidence_level": "guideline",
+    "source_ids": [
+      "methods_src_v2_arrive"
+    ],
+    "limitations": "Autorska zasada projektu wymaga pilotażu. Źródło wspiera metodę, a nie automatyczną ocenę konkretnego zwierzęcia.",
+    "tags": [
+      "experimental_unit",
+      "metodologia",
+      "niepewność",
+      "profil_opisowy"
+    ],
+    "version": "2.0.0",
+    "review_status": "editorial_screened_expert_pending",
+    "claims": [
+      {
+        "id": "methods_v2_027_source",
+        "text": "ARRIVE wymaga opisania projektu badania, liczebności i jednostki eksperymentalnej.",
+        "basis": "source_finding",
+        "source_ids": [
+          "methods_src_v2_arrive"
+        ],
+        "locator": "ARRIVE Essential 10: Study design; Sample size",
+        "uncertainty": "Zakres wskazanej publikacji lub dokumentu; brak samodzielnej walidacji COPOWIESZ."
+      },
+      {
+        "id": "methods_v2_027_policy",
+        "text": "Podawaj osobno osobniki, domy, sesje, klipy i klatki; planuj analizę zależności i powtarzanych pomiarów.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "methods_src_v2_arrive"
+        ],
+        "locator": "Autorska reguła COPOWIESZ, wersja 2.0.0.",
+        "uncertainty": "Decyzja projektu do sprawdzenia z ekspertem i w pilotażu; nie jest wynikiem źródłowego badania.",
+        "source_reference_role": "background_method_only_not_source_result"
+      }
+    ],
+    "domain": "methods"
+  },
+  {
+    "id": "methods_v2_028",
+    "species": [
+      "dog",
+      "cat"
+    ],
+    "topic": "preregistration",
+    "title": "Wykluczenia przed poznaniem wyniku",
+    "observation": "Trudne przypadki usuwa się dopiero, gdy obniżają skuteczność.",
+    "possible_interpretations": [
+      "To problem zakresu pomiaru; sam zapis nie rozstrzyga osobowości, emocji ani zdrowia."
+    ],
+    "confounders": [
+      "Dopasowanie kryteriów do oczekiwanego wyniku."
+    ],
+    "safe_next_steps": [
+      "Ustal i wersjonuj kryteria jakości oraz wykluczenia przed testem; raportuj odrzucone materiały i powody."
+    ],
+    "escalation": "none",
+    "evidence_level": "guideline",
+    "source_ids": [
+      "methods_src_v2_arrive"
+    ],
+    "limitations": "Autorska zasada projektu wymaga pilotażu. Źródło wspiera metodę, a nie automatyczną ocenę konkretnego zwierzęcia.",
+    "tags": [
+      "preregistration",
+      "metodologia",
+      "niepewność",
+      "profil_opisowy"
+    ],
+    "version": "2.0.0",
+    "review_status": "editorial_screened_expert_pending",
+    "claims": [
+      {
+        "id": "methods_v2_028_source",
+        "text": "ARRIVE obejmuje kryteria włączenia, wykluczenia i raportowania analizy.",
+        "basis": "source_finding",
+        "source_ids": [
+          "methods_src_v2_arrive"
+        ],
+        "locator": "ARRIVE Essential 10: Inclusion and exclusion criteria",
+        "uncertainty": "Zakres wskazanej publikacji lub dokumentu; brak samodzielnej walidacji COPOWIESZ."
+      },
+      {
+        "id": "methods_v2_028_policy",
+        "text": "Ustal i wersjonuj kryteria jakości oraz wykluczenia przed testem; raportuj odrzucone materiały i powody.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "methods_src_v2_arrive"
+        ],
+        "locator": "Autorska reguła COPOWIESZ, wersja 2.0.0.",
+        "uncertainty": "Decyzja projektu do sprawdzenia z ekspertem i w pilotażu; nie jest wynikiem źródłowego badania.",
+        "source_reference_role": "background_method_only_not_source_result"
+      }
+    ],
+    "domain": "methods"
+  },
+  {
+    "id": "methods_v2_029",
+    "species": [
+      "dog",
+      "cat"
+    ],
+    "topic": "denominators",
+    "title": "Liczba wpisów bez mianownika",
+    "observation": "Jednemu zwierzęciu zapisano pięć podejść, drugiemu dwa, przy różnym czasie obserwacji.",
+    "possible_interpretations": [
+      "To problem zakresu pomiaru; sam zapis nie rozstrzyga osobowości, emocji ani zdrowia."
+    ],
+    "confounders": [
+      "Nierówna ekspozycja i selekcja ciekawych zdarzeń."
+    ],
+    "safe_next_steps": [
+      "Przechowuj czas widocznej obserwacji i liczbę naturalnych okazji; bez nich raportuj tylko liczbę zapisów."
+    ],
+    "escalation": "none",
+    "evidence_level": "guideline",
+    "source_ids": [
+      "methods_src_v2_arrive_e"
+    ],
+    "limitations": "Autorska zasada projektu wymaga pilotażu. Źródło wspiera metodę, a nie automatyczną ocenę konkretnego zwierzęcia.",
+    "tags": [
+      "denominators",
+      "metodologia",
+      "niepewność",
+      "profil_opisowy"
+    ],
+    "version": "2.0.0",
+    "review_status": "editorial_screened_expert_pending",
+    "claims": [
+      {
+        "id": "methods_v2_029_source",
+        "text": "Objaśnienia ARRIVE wymagają jasnego określenia miar wynikowych i analiz.",
+        "basis": "source_finding",
+        "source_ids": [
+          "methods_src_v2_arrive_e"
+        ],
+        "locator": "Sections: Outcome measures; Statistical methods",
+        "uncertainty": "Zakres wskazanej publikacji lub dokumentu; brak samodzielnej walidacji COPOWIESZ."
+      },
+      {
+        "id": "methods_v2_029_policy",
+        "text": "Przechowuj czas widocznej obserwacji i liczbę naturalnych okazji; bez nich raportuj tylko liczbę zapisów.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "methods_src_v2_arrive_e"
+        ],
+        "locator": "Autorska reguła COPOWIESZ, wersja 2.0.0.",
+        "uncertainty": "Decyzja projektu do sprawdzenia z ekspertem i w pilotażu; nie jest wynikiem źródłowego badania.",
+        "source_reference_role": "background_method_only_not_source_result"
+      }
+    ],
+    "domain": "methods"
+  },
+  {
+    "id": "methods_v2_030",
+    "species": [
+      "dog",
+      "cat"
+    ],
+    "topic": "missing_vs_absent",
+    "title": "Brak okazji, brak wiedzy i brak zdarzenia",
+    "observation": "Pole puste jest zamieniane na „nigdy”.",
+    "possible_interpretations": [
+      "To problem zakresu pomiaru; sam zapis nie rozstrzyga osobowości, emocji ani zdrowia."
+    ],
+    "confounders": [
+      "Wyjście poza kadr i brak obserwacji w danym kontekście."
+    ],
+    "safe_next_steps": [
+      "Rozróżnij niewidoczne, niezaobserwowane mimo okazji, brak okazji i pominięte; zachowaj powód braku bez zastępowania zerem."
+    ],
+    "escalation": "none",
+    "evidence_level": "guideline",
+    "source_ids": [
+      "methods_src_v2_arrive_e"
+    ],
+    "limitations": "Autorska zasada projektu wymaga pilotażu. Źródło wspiera metodę, a nie automatyczną ocenę konkretnego zwierzęcia.",
+    "tags": [
+      "missing_vs_absent",
+      "metodologia",
+      "niepewność",
+      "profil_opisowy"
+    ],
+    "version": "2.0.0",
+    "review_status": "editorial_screened_expert_pending",
+    "claims": [
+      {
+        "id": "methods_v2_030_source",
+        "text": "Objaśnienia ARRIVE opisują ujawnianie braków i wykluczonych danych.",
+        "basis": "source_finding",
+        "source_ids": [
+          "methods_src_v2_arrive_e"
+        ],
+        "locator": "Sections: Inclusion and exclusion criteria; Results",
+        "uncertainty": "Zakres wskazanej publikacji lub dokumentu; brak samodzielnej walidacji COPOWIESZ."
+      },
+      {
+        "id": "methods_v2_030_policy",
+        "text": "Rozróżnij niewidoczne, niezaobserwowane mimo okazji, brak okazji i pominięte; zachowaj powód braku bez zastępowania zerem.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "methods_src_v2_arrive_e"
+        ],
+        "locator": "Autorska reguła COPOWIESZ, wersja 2.0.0.",
+        "uncertainty": "Decyzja projektu do sprawdzenia z ekspertem i w pilotażu; nie jest wynikiem źródłowego badania.",
+        "source_reference_role": "background_method_only_not_source_result"
+      }
+    ],
+    "domain": "methods"
+  },
+  {
+    "id": "methods_v2_031",
+    "species": [
+      "dog",
+      "cat"
+    ],
+    "topic": "anthropomorphism",
+    "title": "Fikcyjny głos ma jawny status",
+    "observation": "Płynna wypowiedź „pamiętam nasze wakacje” sugeruje prawdziwą pamięć zwierzęcia.",
+    "possible_interpretations": [
+      "To problem zakresu pomiaru; sam zapis nie rozstrzyga osobowości, emocji ani zdrowia."
+    ],
+    "confounders": [
+      "Wiarygodny styl i przywiązanie opiekuna."
+    ],
+    "safe_next_steps": [
+      "Oznaczaj wyobrażony głos; fakty osobiste przytaczaj tylko z pamięci o znanym pochodzeniu, a brakujące wspomnienia pozostaw nieznane."
+    ],
+    "escalation": "none",
+    "evidence_level": "technical_documentation",
+    "source_ids": [
+      "methods_src_v2_nist_gai"
+    ],
+    "limitations": "Dokument dotyczy AI, nie psychologii psa lub kota. Brak wdrożonego LLM w projekcie.",
+    "tags": [
+      "anthropomorphism",
+      "metodologia",
+      "niepewność",
+      "profil_opisowy"
+    ],
+    "version": "2.0.0",
+    "review_status": "editorial_screened_expert_pending",
+    "claims": [
+      {
+        "id": "methods_v2_031_source",
+        "text": "NIST opisuje ryzyko antropomorfizacji i nadmiernego polegania na generatywnej AI.",
+        "basis": "source_finding",
+        "source_ids": [
+          "methods_src_v2_nist_gai"
+        ],
+        "locator": "Section 2.7: Human-AI Configuration",
+        "uncertainty": "Zakres wskazanej publikacji lub dokumentu; brak samodzielnej walidacji COPOWIESZ."
+      },
+      {
+        "id": "methods_v2_031_policy",
+        "text": "Oznaczaj wyobrażony głos; fakty osobiste przytaczaj tylko z pamięci o znanym pochodzeniu, a brakujące wspomnienia pozostaw nieznane.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "methods_src_v2_nist_gai"
+        ],
+        "locator": "Autorska reguła COPOWIESZ, wersja 2.0.0.",
+        "uncertainty": "Decyzja projektu do sprawdzenia z ekspertem i w pilotażu; nie jest wynikiem źródłowego badania.",
+        "source_reference_role": "background_method_only_not_source_result"
+      }
+    ],
+    "domain": "methods"
+  },
+  {
+    "id": "methods_v2_032",
+    "species": [
+      "dog",
+      "cat"
+    ],
+    "topic": "citation_integrity",
+    "title": "Wygenerowane cytowanie wymaga weryfikacji",
+    "observation": "Model dopisuje tytuł badania lub liczbową pewność bez dostępnego rekordu.",
+    "possible_interpretations": [
+      "To problem zakresu pomiaru; sam zapis nie rozstrzyga osobowości, emocji ani zdrowia."
+    ],
+    "confounders": [
+      "Konfabulacja cytowania i rozbieżność z materiałem wejściowym."
+    ],
+    "safe_next_steps": [
+      "Udostępniaj modelowi wyłącznie istniejące identyfikatory dowodów; sprawdzaj, czy teza odpowiada źródłu, i zachowuj brak odpowiedzi."
+    ],
+    "escalation": "none",
+    "evidence_level": "technical_documentation",
+    "source_ids": [
+      "methods_src_v2_nist_gai"
+    ],
+    "limitations": "Ogólna dokumentacja generatywnej AI; nie stanowi wyniku badania zwierząt.",
+    "tags": [
+      "citation_integrity",
+      "metodologia",
+      "niepewność",
+      "profil_opisowy"
+    ],
+    "version": "2.0.0",
+    "review_status": "editorial_screened_expert_pending",
+    "claims": [
+      {
+        "id": "methods_v2_032_source",
+        "text": "NIST opisuje możliwość pewnie podawanych fałszywych treści i cytowań.",
+        "basis": "source_finding",
+        "source_ids": [
+          "methods_src_v2_nist_gai"
+        ],
+        "locator": "Section 2.2: Confabulation",
+        "uncertainty": "Zakres wskazanej publikacji lub dokumentu; brak samodzielnej walidacji COPOWIESZ."
+      },
+      {
+        "id": "methods_v2_032_policy",
+        "text": "Udostępniaj modelowi wyłącznie istniejące identyfikatory dowodów; sprawdzaj, czy teza odpowiada źródłu, i zachowuj brak odpowiedzi.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "methods_src_v2_nist_gai"
+        ],
+        "locator": "Autorska reguła COPOWIESZ, wersja 2.0.0.",
+        "uncertainty": "Decyzja projektu do sprawdzenia z ekspertem i w pilotażu; nie jest wynikiem źródłowego badania.",
+        "source_reference_role": "background_method_only_not_source_result"
+      }
+    ],
+    "domain": "methods"
+  },
+  {
+    "id": "methods_v2_033",
+    "species": [
+      "dog",
+      "cat"
+    ],
+    "topic": "model_boundaries",
+    "title": "Detekcja psa/kota nie oznacza rozpoznania czynności",
+    "observation": "Prostokąt wokół zwierzęcia jest prezentowany jako „spokojny pupil”.",
+    "possible_interpretations": [
+      "To problem zakresu pomiaru; sam zapis nie rozstrzyga osobowości, emocji ani zdrowia."
+    ],
+    "confounders": [
+      "Obiekty na zdjęciu i mała widoczna część ciała."
+    ],
+    "safe_next_steps": [
+      "Raportuj kategorię obiektu i granice kadru osobno; opis czynności i stanu wymaga innych danych oraz testów."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "methods_src_v2_coco"
+    ],
+    "limitations": "Autorska zasada projektu wymaga pilotażu. Źródło wspiera metodę, a nie automatyczną ocenę konkretnego zwierzęcia.",
+    "tags": [
+      "model_boundaries",
+      "metodologia",
+      "niepewność",
+      "profil_opisowy"
+    ],
+    "version": "2.0.0",
+    "review_status": "editorial_screened_expert_pending",
+    "claims": [
+      {
+        "id": "methods_v2_033_source",
+        "text": "COCO służy detekcji i segmentacji obiektów w kontekście.",
+        "basis": "source_finding",
+        "source_ids": [
+          "methods_src_v2_coco"
+        ],
+        "locator": "Abstract",
+        "uncertainty": "Zakres wskazanej publikacji lub dokumentu; brak samodzielnej walidacji COPOWIESZ."
+      },
+      {
+        "id": "methods_v2_033_policy",
+        "text": "Raportuj kategorię obiektu i granice kadru osobno; opis czynności i stanu wymaga innych danych oraz testów.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "methods_src_v2_coco"
+        ],
+        "locator": "Autorska reguła COPOWIESZ, wersja 2.0.0.",
+        "uncertainty": "Decyzja projektu do sprawdzenia z ekspertem i w pilotażu; nie jest wynikiem źródłowego badania.",
+        "source_reference_role": "background_method_only_not_source_result"
+      }
+    ],
+    "domain": "methods"
+  },
+  {
+    "id": "methods_v2_034",
+    "species": [
+      "dog",
+      "cat"
+    ],
+    "topic": "domain_shift",
+    "title": "Publiczny benchmark a własny dom",
+    "observation": "Skuteczność na zdjęciach przenosi się bez testu na domowe nocne wideo.",
+    "possible_interpretations": [
+      "To problem zakresu pomiaru; sam zapis nie rozstrzyga osobowości, emocji ani zdrowia."
+    ],
+    "confounders": [
+      "Kompresja, kamera, światło i domena nagrania."
+    ],
+    "safe_next_steps": [
+      "Zbierz niezależny uprawniony test z docelowych kamer i warunków; raportuj błędy według oświetlenia i widoczności."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "methods_src_v2_coco"
+    ],
+    "limitations": "Autorska zasada projektu wymaga pilotażu. Źródło wspiera metodę, a nie automatyczną ocenę konkretnego zwierzęcia.",
+    "tags": [
+      "domain_shift",
+      "metodologia",
+      "niepewność",
+      "profil_opisowy"
+    ],
+    "version": "2.0.0",
+    "review_status": "editorial_screened_expert_pending",
+    "claims": [
+      {
+        "id": "methods_v2_034_source",
+        "text": "COCO obejmuje nieikoniczne obrazy obiektów w złożonych scenach.",
+        "basis": "source_finding",
+        "source_ids": [
+          "methods_src_v2_coco"
+        ],
+        "locator": "Abstract",
+        "uncertainty": "Zakres wskazanej publikacji lub dokumentu; brak samodzielnej walidacji COPOWIESZ."
+      },
+      {
+        "id": "methods_v2_034_policy",
+        "text": "Zbierz niezależny uprawniony test z docelowych kamer i warunków; raportuj błędy według oświetlenia i widoczności.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "methods_src_v2_coco"
+        ],
+        "locator": "Autorska reguła COPOWIESZ, wersja 2.0.0.",
+        "uncertainty": "Decyzja projektu do sprawdzenia z ekspertem i w pilotażu; nie jest wynikiem źródłowego badania.",
+        "source_reference_role": "background_method_only_not_source_result"
+      }
+    ],
+    "domain": "methods"
+  },
+  {
+    "id": "methods_v2_035",
+    "species": [
+      "dog",
+      "cat"
+    ],
+    "topic": "welfare_dimensions",
+    "title": "Dobrostan nie jest jednym sygnałem ruchowym",
+    "observation": "Brak szczekania lub bezruch zostaje nazwany dobrym dobrostanem.",
+    "possible_interpretations": [
+      "To problem zakresu pomiaru; sam zapis nie rozstrzyga osobowości, emocji ani zdrowia."
+    ],
+    "confounders": [
+      "Wybrany fragment filmu i brak kontekstu zasobów."
+    ],
+    "safe_next_steps": [
+      "Rozpatruj osobno zdrowie, zasoby, środowisko, zachowanie i ograniczenia obserwacji; nie sumuj tego do niezwalidowanej oceny."
+    ],
+    "escalation": "none",
+    "evidence_level": "guideline",
+    "source_ids": [
+      "methods_src_v2_woah_welfare"
+    ],
+    "limitations": "Autorska zasada projektu wymaga pilotażu. Źródło wspiera metodę, a nie automatyczną ocenę konkretnego zwierzęcia.",
+    "tags": [
+      "welfare_dimensions",
+      "metodologia",
+      "niepewność",
+      "profil_opisowy"
+    ],
+    "version": "2.0.0",
+    "review_status": "editorial_screened_expert_pending",
+    "claims": [
+      {
+        "id": "methods_v2_035_source",
+        "text": "WOAH definiuje dobrostan przez stan fizyczny i psychiczny w warunkach życia.",
+        "basis": "source_finding",
+        "source_ids": [
+          "methods_src_v2_woah_welfare"
+        ],
+        "locator": "Article 7.1.1",
+        "uncertainty": "Zakres wskazanej publikacji lub dokumentu; brak samodzielnej walidacji COPOWIESZ."
+      },
+      {
+        "id": "methods_v2_035_policy",
+        "text": "Rozpatruj osobno zdrowie, zasoby, środowisko, zachowanie i ograniczenia obserwacji; nie sumuj tego do niezwalidowanej oceny.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "methods_src_v2_woah_welfare"
+        ],
+        "locator": "Autorska reguła COPOWIESZ, wersja 2.0.0.",
+        "uncertainty": "Decyzja projektu do sprawdzenia z ekspertem i w pilotażu; nie jest wynikiem źródłowego badania.",
+        "source_reference_role": "background_method_only_not_source_result"
+      }
+    ],
+    "domain": "methods"
+  },
+  {
+    "id": "methods_v2_036",
+    "species": [
+      "dog",
+      "cat"
+    ],
+    "topic": "health_context",
+    "title": "Zdrowie i tendencja pozostają osobnymi warstwami",
+    "observation": "Zmiana sposobu chodzenia zostaje automatycznie wpisana jako „lenistwo”.",
+    "possible_interpretations": [
+      "To problem zakresu pomiaru; sam zapis nie rozstrzyga osobowości, emocji ani zdrowia."
+    ],
+    "confounders": [
+      "Ograniczenia ruchowe, podłoże i niedostateczny kadr."
+    ],
+    "safe_next_steps": [
+      "Zachowaj opis ruchu, moment zmiany i relację zdrowotną oddzielnie; interpretację przyczyny pozostaw ekspertowi bez diagnozy z etogramu."
+    ],
+    "escalation": "none",
+    "evidence_level": "guideline",
+    "source_ids": [
+      "methods_src_v2_woah_welfare"
+    ],
+    "limitations": "Autorska zasada projektu wymaga pilotażu. Źródło wspiera metodę, a nie automatyczną ocenę konkretnego zwierzęcia.",
+    "tags": [
+      "health_context",
+      "metodologia",
+      "niepewność",
+      "profil_opisowy"
+    ],
+    "version": "2.0.0",
+    "review_status": "editorial_screened_expert_pending",
+    "claims": [
+      {
+        "id": "methods_v2_036_source",
+        "text": "WOAH wskazuje związek zdrowia i dobrostanu oraz wielość miar oceny.",
+        "basis": "source_finding",
+        "source_ids": [
+          "methods_src_v2_woah_welfare"
+        ],
+        "locator": "Articles 7.1.2–7.1.3",
+        "uncertainty": "Zakres wskazanej publikacji lub dokumentu; brak samodzielnej walidacji COPOWIESZ."
+      },
+      {
+        "id": "methods_v2_036_policy",
+        "text": "Zachowaj opis ruchu, moment zmiany i relację zdrowotną oddzielnie; interpretację przyczyny pozostaw ekspertowi bez diagnozy z etogramu.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "methods_src_v2_woah_welfare"
+        ],
+        "locator": "Autorska reguła COPOWIESZ, wersja 2.0.0.",
+        "uncertainty": "Decyzja projektu do sprawdzenia z ekspertem i w pilotażu; nie jest wynikiem źródłowego badania.",
+        "source_reference_role": "background_method_only_not_source_result"
+      }
+    ],
+    "domain": "methods"
+  },
+  {
+    "id": "methods_v2_037",
+    "species": [
+      "dog"
+    ],
+    "topic": "cognition_not_personality",
+    "title": "Wynik zadania psa nie mierzy całej kontroli",
+    "observation": "Jedna udana próba zostaje oceną „zawsze cierpliwy”.",
+    "possible_interpretations": [
+      "To problem zakresu pomiaru; sam zapis nie rozstrzyga osobowości, emocji ani zdrowia."
+    ],
+    "confounders": [
+      "Motywacja, doświadczenie i specyfika zadania."
+    ],
+    "safe_next_steps": [
+      "Opisuj wykonanie zadania w jego kontekście; nie zamieniaj go w uniwersalny wynik inteligencji lub temperamentu."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "methods_src_v2_dog_inhibition"
+    ],
+    "limitations": "Autorska zasada projektu wymaga pilotażu. Źródło wspiera metodę, a nie automatyczną ocenę konkretnego zwierzęcia.",
+    "tags": [
+      "cognition_not_personality",
+      "metodologia",
+      "niepewność",
+      "profil_opisowy"
+    ],
+    "version": "2.0.0",
+    "review_status": "editorial_screened_expert_pending",
+    "claims": [
+      {
+        "id": "methods_v2_037_source",
+        "text": "W badaniu wyniki hamowania psów nie korelowały między zadaniami.",
+        "basis": "source_finding",
+        "source_ids": [
+          "methods_src_v2_dog_inhibition"
+        ],
+        "locator": "Results: Correlation between inhibition measures across tests",
+        "uncertainty": "Zakres wskazanej publikacji lub dokumentu; brak samodzielnej walidacji COPOWIESZ."
+      },
+      {
+        "id": "methods_v2_037_policy",
+        "text": "Opisuj wykonanie zadania w jego kontekście; nie zamieniaj go w uniwersalny wynik inteligencji lub temperamentu.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "methods_src_v2_dog_inhibition"
+        ],
+        "locator": "Autorska reguła COPOWIESZ, wersja 2.0.0.",
+        "uncertainty": "Decyzja projektu do sprawdzenia z ekspertem i w pilotażu; nie jest wynikiem źródłowego badania.",
+        "source_reference_role": "background_method_only_not_source_result"
+      }
+    ],
+    "domain": "methods"
+  },
+  {
+    "id": "methods_v2_038",
+    "species": [
+      "dog"
+    ],
+    "topic": "construct_validation",
+    "title": "Nazwa zadania nie gwarantuje wspólnego konstruktu",
+    "observation": "Kilka ćwiczeń nazwano testem tej samej cechy, bez zbadania relacji wyników.",
+    "possible_interpretations": [
+      "To problem zakresu pomiaru; sam zapis nie rozstrzyga osobowości, emocji ani zdrowia."
+    ],
+    "confounders": [
+      "Różny proces uczenia i różny dostęp do nagrody."
+    ],
+    "safe_next_steps": [
+      "Przed wspólną skalą ustal jej hipotezę i sprawdź strukturę oraz trafność; różnic zadań nie usuwaj uśrednianiem."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "methods_src_v2_dog_inhibition"
+    ],
+    "limitations": "Autorska zasada projektu wymaga pilotażu. Źródło wspiera metodę, a nie automatyczną ocenę konkretnego zwierzęcia.",
+    "tags": [
+      "construct_validation",
+      "metodologia",
+      "niepewność",
+      "profil_opisowy"
+    ],
+    "version": "2.0.0",
+    "review_status": "editorial_screened_expert_pending",
+    "claims": [
+      {
+        "id": "methods_v2_038_source",
+        "text": "Autorzy stwierdzili, że badane zadania nie mierzyły jednolitego procesu.",
+        "basis": "source_finding",
+        "source_ids": [
+          "methods_src_v2_dog_inhibition"
+        ],
+        "locator": "Discussion",
+        "uncertainty": "Zakres wskazanej publikacji lub dokumentu; brak samodzielnej walidacji COPOWIESZ."
+      },
+      {
+        "id": "methods_v2_038_policy",
+        "text": "Przed wspólną skalą ustal jej hipotezę i sprawdź strukturę oraz trafność; różnic zadań nie usuwaj uśrednianiem.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "methods_src_v2_dog_inhibition"
+        ],
+        "locator": "Autorska reguła COPOWIESZ, wersja 2.0.0.",
+        "uncertainty": "Decyzja projektu do sprawdzenia z ekspertem i w pilotażu; nie jest wynikiem źródłowego badania.",
+        "source_reference_role": "background_method_only_not_source_result"
+      }
+    ],
+    "domain": "methods"
+  },
+  {
+    "id": "methods_v2_039",
+    "species": [
+      "dog"
+    ],
+    "topic": "observer_bias",
+    "title": "Preferencja człowieka a fakt na twarzy psa",
+    "observation": "Opiekun opisuje gest jako „uroczy”, co staje się etykietą uczącą.",
+    "possible_interpretations": [
+      "To problem zakresu pomiaru; sam zapis nie rozstrzyga osobowości, emocji ani zdrowia."
+    ],
+    "confounders": [
+      "Wpływ wyglądu oraz oczekiwań ludzi."
+    ],
+    "safe_next_steps": [
+      "Oddziel ocenę człowieka od ruchu widocznego na twarzy; pierwszą anotację wykonuj bez opisów atrakcyjności i persony."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "methods_src_v2_dogfacs_study"
+    ],
+    "limitations": "Autorska zasada projektu wymaga pilotażu. Źródło wspiera metodę, a nie automatyczną ocenę konkretnego zwierzęcia.",
+    "tags": [
+      "observer_bias",
+      "metodologia",
+      "niepewność",
+      "profil_opisowy"
+    ],
+    "version": "2.0.0",
+    "review_status": "editorial_screened_expert_pending",
+    "claims": [
+      {
+        "id": "methods_v2_039_source",
+        "text": "W pracy kodowano ruchy twarzy i analizowano związek z wyborem adopcyjnym.",
+        "basis": "source_finding",
+        "source_ids": [
+          "methods_src_v2_dogfacs_study"
+        ],
+        "locator": "Methods",
+        "uncertainty": "Zakres wskazanej publikacji lub dokumentu; brak samodzielnej walidacji COPOWIESZ."
+      },
+      {
+        "id": "methods_v2_039_policy",
+        "text": "Oddziel ocenę człowieka od ruchu widocznego na twarzy; pierwszą anotację wykonuj bez opisów atrakcyjności i persony.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "methods_src_v2_dogfacs_study"
+        ],
+        "locator": "Autorska reguła COPOWIESZ, wersja 2.0.0.",
+        "uncertainty": "Decyzja projektu do sprawdzenia z ekspertem i w pilotażu; nie jest wynikiem źródłowego badania.",
+        "source_reference_role": "background_method_only_not_source_result"
+      }
+    ],
+    "domain": "methods"
+  },
+  {
+    "id": "methods_v2_040",
+    "species": [
+      "dog"
+    ],
+    "topic": "measurement_scope",
+    "title": "Kod ruchu nie jest kodem intencji psa",
+    "observation": "Uniesienie okolicy brwi opisuje się jako świadome manipulowanie opiekunem.",
+    "possible_interpretations": [
+      "To problem zakresu pomiaru; sam zapis nie rozstrzyga osobowości, emocji ani zdrowia."
+    ],
+    "confounders": [
+      "Obecność człowieka i kontekst spotkania."
+    ],
+    "safe_next_steps": [
+      "Zapisz ruch i kontakt odbiorcy osobno; nie przypisuj celu psychicznego, którego obserwacja nie rozstrzyga."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "methods_src_v2_dogfacs_study"
+    ],
+    "limitations": "Autorska zasada projektu wymaga pilotażu. Źródło wspiera metodę, a nie automatyczną ocenę konkretnego zwierzęcia.",
+    "tags": [
+      "measurement_scope",
+      "metodologia",
+      "niepewność",
+      "profil_opisowy"
+    ],
+    "version": "2.0.0",
+    "review_status": "editorial_screened_expert_pending",
+    "claims": [
+      {
+        "id": "methods_v2_040_source",
+        "text": "Badanie wykorzystało anatomicznie oparty system zapisu ruchów twarzy psa.",
+        "basis": "source_finding",
+        "source_ids": [
+          "methods_src_v2_dogfacs_study"
+        ],
+        "locator": "Introduction; Methods",
+        "uncertainty": "Zakres wskazanej publikacji lub dokumentu; brak samodzielnej walidacji COPOWIESZ."
+      },
+      {
+        "id": "methods_v2_040_policy",
+        "text": "Zapisz ruch i kontakt odbiorcy osobno; nie przypisuj celu psychicznego, którego obserwacja nie rozstrzyga.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "methods_src_v2_dogfacs_study"
+        ],
+        "locator": "Autorska reguła COPOWIESZ, wersja 2.0.0.",
+        "uncertainty": "Decyzja projektu do sprawdzenia z ekspertem i w pilotażu; nie jest wynikiem źródłowego badania.",
+        "source_reference_role": "background_method_only_not_source_result"
+      }
+    ],
+    "domain": "methods"
+  }
+]

@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "COPOWIESZ observation v1 — implemented local contract",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "pet_id", "behavior", "context", "observed_at", "recorded_at", "evidence_kind", "evidence_ref", "provenance_status"],
+  "properties": {
+    "id": {"type": "string", "pattern": "^[a-f0-9]{32}$"},
+    "pet_id": {"type": "string", "pattern": "^[a-zA-Z0-9_-]{1,64}$"},
+    "behavior": {"type": "string", "minLength": 1, "maxLength": 4000},
+    "context": {"type": "string", "minLength": 1, "maxLength": 4000},
+    "observed_at": {"type": "string", "format": "date-time"},
+    "recorded_at": {"type": "string", "format": "date-time"},
+    "evidence_kind": {"enum": ["owner_report", "human_video_annotation", "clinician_note"]},
+    "evidence_ref": {"type": ["string", "null"]},
+    "provenance_status": {"const": "unverified"}
+  },
+  "allOf": [
+    {
+      "if": {"properties": {"evidence_kind": {"enum": ["human_video_annotation", "clinician_note"]}}},
+      "then": {"properties": {"evidence_ref": {"type": "string", "minLength": 1}}}
+    }
+  ]
+}

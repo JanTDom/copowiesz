@@ -1,0 +1,95 @@
+{
+  "version": "1.0",
+  "status": "synthetic_language_regression_not_clinical_validation",
+  "description": "Autorskie zapytania sprawdzają odnalezienie kart. Wynik nie mierzy rozpoznawania chorób, pilności ani trafności u realnych zwierząt.",
+  "cases": [
+    {
+      "id": "urine",
+      "query": "Mój kot nie może się wysikać",
+      "species": "cat",
+      "domain": "health",
+      "limit": 3,
+      "expected_card_id": "health_v2_urine_block"
+    },
+    {
+      "id": "breathing",
+      "query": "Kot oddycha z otwartym pyskiem",
+      "species": "cat",
+      "domain": "health",
+      "limit": 3,
+      "expected_card_id": "health_v2_cat_open_mouth"
+    },
+    {
+      "id": "yellow",
+      "query": "Kot ma żółte oczy",
+      "species": "cat",
+      "domain": "health",
+      "limit": 3,
+      "expected_card_id": "health_v2_jaundice"
+    },
+    {
+      "id": "abdomen",
+      "query": "Pies próbuje wymiotować i ma duży brzuch",
+      "species": "dog",
+      "domain": "health",
+      "limit": 3,
+      "expected_card_id": "health_v2_dog_gdv"
+    },
+    {
+      "id": "ear",
+      "query": "Pies potrząsa głową i drapie ucho",
+      "species": "dog",
+      "domain": "health",
+      "limit": 3,
+      "expected_card_id": "health_v2_ear"
+    },
+    {
+      "id": "cough",
+      "query": "Kot kaszle i wyciąga szyję",
+      "species": "cat",
+      "domain": "health",
+      "limit": 3,
+      "expected_card_id": "health_v2_cat_cough"
+    },
+    {
+      "id": "lilies",
+      "query": "Kot mógł zjeść lilię",
+      "species": "cat",
+      "domain": "health",
+      "limit": 3,
+      "expected_card_id": "health_v2_lilies"
+    },
+    {
+      "id": "xylitol",
+      "query": "Pies zjadł ksylitol",
+      "species": "dog",
+      "domain": "health",
+      "limit": 3,
+      "expected_card_id": "health_v2_xylitol"
+    },
+    {
+      "id": "hindlimbs",
+      "query": "Nagły paraliż tylnych łap kota",
+      "species": "cat",
+      "domain": "health",
+      "limit": 3,
+      "expected_card_id": "health_v2_fate"
+    },
+    {
+      "id": "colloquial_breathing",
+      "query": "kotek ciężko zipie",
+      "species": "cat",
+      "domain": "health",
+      "limit": 3,
+      "expected_card_id": "health_v2_cat_open_mouth"
+    },
+    {
+      "id": "colloquial_urine",
+      "query": "kot próbuje siusiać i nic nie leci",
+      "species": "cat",
+      "domain": "health",
+      "limit": 3,
+      "expected_card_id": "health_v2_urine_block"
+    }
+  ]
+}

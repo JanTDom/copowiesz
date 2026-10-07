@@ -1,0 +1,73 @@
+{
+  "provider": "huggingface_public_hub",
+  "catalog": "datasets",
+  "query": "animal",
+  "requested_limit": 2,
+  "request_url": "https://huggingface.co/api/datasets?search=animal&limit=2&expand%5B%5D=author&expand%5B%5D=createdAt&expand%5B%5D=lastModified&expand%5B%5D=downloads&expand%5B%5D=likes&expand%5B%5D=private&expand%5B%5D=gated&expand%5B%5D=tags&expand%5B%5D=cardData",
+  "http_method": "GET",
+  "authentication": "none",
+  "retrieved_at": "2026-10-07T09:35:30.208454+00:00",
+  "record_count": 2,
+  "contains_model_weights": false,
+  "contains_dataset_examples": false,
+  "contains_card_text": false,
+  "license_status": "not_verified",
+  "review_status": "not_reviewed",
+  "records": [
+    {
+      "provider_id": "osanseviero/kaggle-animal-crossing-new-horizons-nookplaza-dataset",
+      "catalog": "datasets",
+      "url": "https://huggingface.co/datasets/osanseviero/kaggle-animal-crossing-new-horizons-nookplaza-dataset",
+      "author": "osanseviero",
+      "created_at": "2022-06-22T15:45:17.000Z",
+      "last_modified": "2022-10-25T10:32:48.000Z",
+      "downloads": 372,
+      "likes": 0,
+      "private": false,
+      "gated": false,
+      "tags": [
+        "license:cc0-1.0",
+        "region:us"
+      ],
+      "declared_licenses": [
+        "cc0-1.0"
+      ],
+      "declared_license_name": null,
+      "declared_license_link": null,
+      "declared_license_tags": [
+        "license:cc0-1.0"
+      ],
+      "license_status": "not_verified",
+      "review_status": "candidate_not_behavioral_evidence"
+    },
+    {
+      "provider_id": "yuntian-deng/im2latex-animals-200k",
+      "catalog": "datasets",
+      "url": "https://huggingface.co/datasets/yuntian-deng/im2latex-animals-200k",
+      "author": "yuntian-deng",
+      "created_at": "2022-09-13T04:27:53.000Z",
+      "last_modified": "2022-09-13T04:50:05.000Z",
+      "downloads": 62,
+      "likes": 1,
+      "private": false,
+      "gated": false,
+      "tags": [
+        "size_categories:100K<n<1M",
+        "format:parquet",
+        "modality:image",
+        "modality:text",
+        "library:datasets",
+        "library:dask",
+        "library:mlcroissant",
+        "library:polars",
+        "region:us"
+      ],
+      "declared_licenses": [],
+      "declared_license_name": null,
+      "declared_license_link": null,
+      "declared_license_tags": [],
+      "license_status": "not_verified",
+      "review_status": "candidate_not_behavioral_evidence"
+    }
+  ]
+}

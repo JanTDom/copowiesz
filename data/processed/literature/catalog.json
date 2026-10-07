@@ -1,0 +1,5049 @@
+{
+  "format_version": "1.0",
+  "snapshot_count": 20,
+  "record_count_with_duplicates": 186,
+  "deduplicated_record_count": 138,
+  "deduplication": "DOI casefold, else PMID, else provider identity",
+  "manual_review_complete": false,
+  "input_files": [
+    "crossref_20261007T084348510721Z_83621a5b13.json",
+    "europepmc_20261007T084326056965Z_69dfe9c8b8.json",
+    "europepmc_20261007T084603314095Z_94b90c5c81.json",
+    "europepmc_20261007T084604961174Z_311e1f1300.json",
+    "europepmc_20261007T084611801551Z_b629963377.json",
+    "europepmc_20261007T084613512358Z_7e1bd73119.json",
+    "europepmc_20261007T084615063501Z_f3ec26765d.json",
+    "europepmc_20261007T084616600665Z_c003fb4506.json",
+    "europepmc_20261007T084618191536Z_3c006bd54d.json",
+    "europepmc_20261007T084619896519Z_bf068737c8.json",
+    "europepmc_20261007T084621338059Z_c97c5ce265.json",
+    "europepmc_20261007T084623472242Z_ce98411d8b.json",
+    "europepmc_20261007T084629547157Z_0bb5f07d7c.json",
+    "europepmc_20261007T084631431094Z_9fea29617e.json",
+    "europepmc_20261007T084644412462Z_14125e7308.json",
+    "europepmc_20261007T084646349664Z_b4659a5090.json",
+    "europepmc_20261007T084648223546Z_2d73d9724a.json",
+    "europepmc_20261007T084650072390Z_c47b45d62d.json",
+    "europepmc_20261007T084651878684Z_9c87167aac.json",
+    "europepmc_20261007T084653464856Z_8810944fb2.json"
+  ],
+  "records": [
+    {
+      "key": "doi:10.1002/brv.70179",
+      "metadata": {
+        "provider_id": "42077158",
+        "provider_source": "MED",
+        "title": "Stress, needs, and behaviour: understanding chronic stress in pet domestic dogs (Canis lupus familiaris) from the prism of needs.",
+        "authors": "Tananaeva A, Udell MAR.",
+        "year": "2026",
+        "doi": "10.1002/brv.70179",
+        "pmid": "42077158",
+        "pmcid": "PMC13542328",
+        "journal": "Biol Rev Camb Philos Soc",
+        "is_open_access": "N",
+        "url": "https://europepmc.org/article/MED/42077158",
+        "license_status": "not_verified",
+        "review_status": "candidate_not_behavioral_evidence"
+      },
+      "retrieval_contexts": [
+        {
+          "file": "europepmc_20261007T084604961174Z_311e1f1300.json",
+          "provider": "europepmc",
+          "query": "(canine OR dog) AND training AND (reinforcement OR aversive) AND welfare",
+          "topics": [
+            {
+              "topic": "dog_learning",
+              "species": "dog"
+            }
+          ]
+        }
+      ],
+      "review_status": "candidate_not_reviewed"
+    },
+    {
+      "key": "doi:10.1002/ece3.73520",
+      "metadata": {
+        "provider_id": "42063654",
+        "provider_source": "MED",
+        "title": "Personality Matters: Owner-Ascribed Personality Predicts Range Size Tendencies and Predation Behavior in Domestic Cats.",
+        "authors": "Berrand B, Baudry E, Bonnaud E.",
+        "year": "2026",
+        "doi": "10.1002/ece3.73520",
+        "pmid": "42063654",
+        "pmcid": "PMC13126088",
+        "journal": "Ecol Evol",
+        "is_open_access": "Y",
+        "url": "https://europepmc.org/article/MED/42063654",
+        "license_status": "not_verified",
+        "review_status": "candidate_not_behavioral_evidence"
+      },
+      "retrieval_contexts": [
+        {
+          "file": "europepmc_20261007T084621338059Z_c97c5ce265.json",
+          "provider": "europepmc",
+          "query": "(feline OR cat) AND (personality OR temperament) AND (validation OR reliability)",
+          "topics": [
+            {
+              "topic": "cat_personality",
+              "species": "cat"
+            }
+          ]
+        }
+      ],
+      "review_status": "candidate_not_reviewed"
+    },
+    {
+      "key": "doi:10.1002/jeab.70148",
+      "metadata": {
+        "provider_id": "42810743",
+        "provider_source": "MED",
+        "title": "Preference assessment and reinforcer effectiveness in domestic cats.",
+        "authors": "Machado MA, Huber H, Thompson S, Monasky CA, Najafighabouri M, Cicchillo BM.",
+        "year": "2026",
+        "doi": "10.1002/jeab.70148",
+        "pmid": "42810743",
+        "pmcid": "PMC13623505",
+        "journal": "J Exp Anal Behav",
+        "is_open_access": "Y",
+        "url": "https://europepmc.org/article/MED/42810743",
+        "license_status": "not_verified",
+        "review_status": "candidate_not_behavioral_evidence"
+      },
+      "retrieval_contexts": [
+        {
+          "file": "europepmc_20261007T084629547157Z_0bb5f07d7c.json",
+          "provider": "europepmc",
+          "query": "(feline OR cat) AND (intercat OR social behavior) AND household",
+          "topics": [
+            {
+              "topic": "cat_relations",
+              "species": "cat"
+            }
+          ]
+        },
+        {
+          "file": "europepmc_20261007T084646349664Z_b4659a5090.json",
+          "provider": "europepmc",
+          "query": "(feline OR cat) AND (communication OR vocalization OR meow)",
+          "topics": [
+            {
+              "topic": "cat_communication",
+              "species": "cat"
+            }
+          ]
+        },
+        {
+          "file": "europepmc_20261007T084648223546Z_2d73d9724a.json",
+          "provider": "europepmc",
+          "query": "(feline OR cat) AND (play OR predatory behavior) AND welfare",
+          "topics": [
+            {
+              "topic": "cat_play",
+              "species": "cat"
+            }
+          ]
+        }
+      ],
+      "review_status": "candidate_not_reviewed"
+    },
+    {
+      "key": "doi:10.1002/puh2.70399",
+      "metadata": {
+        "provider_id": "42812793",
+        "provider_source": "MED",
+        "title": "Participatory Communication and Mass Dog Vaccination for Effective Rabies Management in Mitooma District, Western Uganda: An Exploratory Study.",
+        "authors": "Ngabirano A, Igwe MC, Idehen C.",
+        "year": "2026",
+        "doi": "10.1002/puh2.70399",
+        "pmid": "42812793",
+        "pmcid": "PMC13621931",
+        "journal": "Public Health Chall",
+        "is_open_access": "Y",
+        "url": "https://europepmc.org/article/MED/42812793",
+        "license_status": "not_verified",
+        "review_status": "candidate_not_behavioral_evidence"
+      },
+      "retrieval_contexts": [
+        {
+          "file": "europepmc_20261007T084615063501Z_f3ec26765d.json",
+          "provider": "europepmc",
+          "query": "(canine OR dog) AND pain AND behavior AND assessment",
+          "topics": [
+            {
+              "topic": "dog_pain",
+              "species": "dog"
+            }
+          ]
+        }
+      ],
+      "review_status": "candidate_not_reviewed"
+    },
+    {
+      "key": "doi:10.1002/vetr.5561",
+      "metadata": {
+        "provider_id": "40482058",
+        "provider_source": "MED",
+        "title": "Feline management practices and resource provision in the UK: A questionnaire-based study of 565 caregivers.",
+        "authors": "Taylor S, Mackie IM, Heath S, Paramasivam SJ.",
+        "year": "2025",
+        "doi": "10.1002/vetr.5561",
+        "pmid": "40482058",
+        "pmcid": "PMC12315624",
+        "journal": "Vet Rec",
+        "is_open_access": "Y",
+        "url": "https://europepmc.org/article/MED/40482058",
+        "license_status": "not_verified",
+        "review_status": "candidate_not_behavioral_evidence"
+      },
+      "retrieval_contexts": [
+        {
+          "file": "europepmc_20261007T084631431094Z_9fea29617e.json",
+          "provider": "europepmc",
+          "query": "(feline OR cat) AND (house soiling OR litter box OR urine marking)",
+          "topics": [
+            {
+              "topic": "cat_elimination",
+              "species": "cat"
+            }
+          ]
+        }
+      ],
+      "review_status": "candidate_not_reviewed"
+    },
+    {
+      "key": "doi:10.1002/vms3.71152",
+      "metadata": {
+        "provider_id": "42573268",
+        "provider_source": "MED",
+        "title": "Artificial Intelligence in Veterinary Neurology: Comparative Insights From Human Medicine and Cross-Species Technology Transfer.",
+        "authors": "Saberi K, Abbood RS, Al-Taie SF, Smerat A, Mukhamedovich AM, Khamdamjonovna MM, Hedayatinia M, Zarei A, Nourizadeh M, Ghahari AA, Gharamaleki MN, Malekinejad F, Akhavan-Sigari R.",
+        "year": "2026",
+        "doi": "10.1002/vms3.71152",
+        "pmid": "42573268",
+        "pmcid": "PMC13455681",
+        "journal": "Vet Med Sci",
+        "is_open_access": "Y",
+        "url": "https://europepmc.org/article/MED/42573268",
+        "license_status": "not_verified",
+        "review_status": "candidate_not_behavioral_evidence"
+      },
+      "retrieval_contexts": [
+        {
+          "file": "europepmc_20261007T084653464856Z_8810944fb2.json",
+          "provider": "europepmc",
+          "query": "(canine OR feline) AND (pose estimation OR video behavior recognition)",
+          "topics": [
+            {
+              "topic": "animal_video",
+              "species": "both"
+            }
+          ]
+        }
+      ],
+      "review_status": "candidate_not_reviewed"
+    },
+    {
+      "key": "doi:10.1002/vms3.71198",
+      "metadata": {
+        "provider_id": "42633613",
+        "provider_source": "MED",
+        "title": "Dog Breeding in Italy: A Technical Overview of Husbandry and Reproductive Management.",
+        "authors": "Ferré-Dolcet L, Petronella F, Bramante G, Carbonari A, Frattina L, Andriulo OM, Cicirelli V.",
+        "year": "2026",
+        "doi": "10.1002/vms3.71198",
+        "pmid": "42633613",
+        "pmcid": "PMC13500040",
+        "journal": "Vet Med Sci",
+        "is_open_access": "Y",
+        "url": "https://europepmc.org/article/MED/42633613",
+        "license_status": "not_verified",
+        "review_status": "candidate_not_behavioral_evidence"
+      },
+      "retrieval_contexts": [
+        {
+          "file": "europepmc_20261007T084616600665Z_c003fb4506.json",
+          "provider": "europepmc",
+          "query": "(canine OR puppy) AND (socialization OR development) AND behavior",
+          "topics": [
+            {
+              "topic": "dog_development",
+              "species": "dog"
+            }
+          ]
+        }
+      ],
+      "review_status": "candidate_not_reviewed"
+    },
+    {
+      "key": "doi:10.1007/s10071-026-02063-3",
+      "metadata": {
+        "provider_id": "41961323",
+        "provider_source": "MED",
+        "title": "Social communicative characteristics of adolescent police dogs: Acquired experience plays a crucial role.",
+        "authors": "Huang X, Mei X, Wan K, Chen C, Wang L, Wang X, Wang GD.",
+        "year": "2026",
+        "doi": "10.1007/s10071-026-02063-3",
+        "pmid": "41961323",
+        "pmcid": "PMC13194238",
+        "journal": "Anim Cogn",
+        "is_open_access": "Y",
+        "url": "https://europepmc.org/article/MED/41961323",
+        "license_status": "not_verified",
+        "review_status": "candidate_not_behavioral_evidence"
+      },
+      "retrieval_contexts": [
+        {
+          "file": "europepmc_20261007T084616600665Z_c003fb4506.json",
+          "provider": "europepmc",
+          "query": "(canine OR puppy) AND (socialization OR development) AND behavior",
+          "topics": [
+            {
+              "topic": "dog_development",
+              "species": "dog"
+            }
+          ]
+        }
+      ],
+      "review_status": "candidate_not_reviewed"
+    },
+    {
+      "key": "doi:10.1007/s11259-026-11227-y",
+      "metadata": {
+        "provider_id": "42033518",
+        "provider_source": "MED",
+        "title": "Owner-reported prevalence and severity of fear and anxiety in dogs.",
+        "authors": "Beaver BV.",
+        "year": "2026",
+        "doi": "10.1007/s11259-026-11227-y",
+        "pmid": "42033518",
+        "pmcid": "PMC13110192",
+        "journal": "Vet Res Commun",
+        "is_open_access": "Y",
+        "url": "https://europepmc.org/article/MED/42033518",
+        "license_status": "not_verified",
+        "review_status": "candidate_not_behavioral_evidence"
+      },
+      "retrieval_contexts": [
+        {
+          "file": "europepmc_20261007T084611801551Z_b629963377.json",
+          "provider": "europepmc",
+          "query": "(canine OR dog) AND (separation anxiety OR separation-related behavior)",
+          "topics": [
+            {
+              "topic": "dog_separation",
+              "species": "dog"
+            }
+          ]
+        },
+        {
+          "file": "europepmc_20261007T084618191536Z_3c006bd54d.json",
+          "provider": "europepmc",
+          "query": "(canine OR dog) AND (noise fear OR fearfulness)",
+          "topics": [
+            {
+              "topic": "dog_fear",
+              "species": "dog"
+            }
+          ]
+        }
+      ],
+      "review_status": "candidate_not_reviewed"
+    },
+    {
+      "key": "doi:10.1007/s11259-026-11255-8",
+      "metadata": {
+        "provider_id": "42101534",
+        "provider_source": "MED",
+        "title": "A presumptive diagnosis of feline hyperesthesia syndrome due to stressful human-related condition: case report.",
+        "authors": "Silveira de Moraes R, da Silva Vieira Ribeiro M, Corrêa LL, Purcena da Guimarães Silveira H, Dos Reis Paludo RL, Moreira CN, de Souza Ramos DG, Braga ÍA.",
+        "year": "2026",
+        "doi": "10.1007/s11259-026-11255-8",
+        "pmid": "42101534",
+        "pmcid": "PMC13156213",
+        "journal": "Vet Res Commun",
+        "is_open_access": "Y",
+        "url": "https://europepmc.org/article/MED/42101534",
+        "license_status": "not_verified",
+        "review_status": "candidate_not_behavioral_evidence"
+      },
+      "retrieval_contexts": [
+        {
+          "file": "europepmc_20261007T084623472242Z_ce98411d8b.json",
+          "provider": "europepmc",
+          "query": "(feline OR cat) AND (environmental needs OR enrichment) AND welfare",
+          "topics": [
+            {
+              "topic": "cat_environment",
+              "species": "cat"
+            }
+          ]
+        },
+        {
+          "file": "europepmc_20261007T084629547157Z_0bb5f07d7c.json",
+          "provider": "europepmc",
+          "query": "(feline OR cat) AND (intercat OR social behavior) AND household",
+          "topics": [
+            {
+              "topic": "cat_relations",
+              "species": "cat"
+            }
+          ]
+        },
+        {
+          "file": "europepmc_20261007T084648223546Z_2d73d9724a.json",
+          "provider": "europepmc",
+          "query": "(feline OR cat) AND (play OR predatory behavior) AND welfare",
+          "topics": [
+            {
+              "topic": "cat_play",
+              "species": "cat"
+            }
+          ]
+        }
+      ],
+      "review_status": "candidate_not_reviewed"
+    },
+    {
+      "key": "doi:10.1016/b978-0-323-22652-3.00094-3",
+      "metadata": {
+        "doi": "10.1016/b978-0-323-22652-3.00094-3",
+        "title": "Feline Social Behavior and Personality",
+        "authors": [
+          {
+            "given": "Jacqui",
+            "family": "Ley"
+          }
+        ],
+        "publication_date": [
+          [
+            2016
+          ]
+        ],
+        "publisher": "Elsevier",
+        "type": "book-chapter",
+        "url": "https://doi.org/10.1016/b978-0-323-22652-3.00094-3",
+        "declared_licenses": [
+          {
+            "start": {
+              "date-parts": [
+                [
+                  2016,
+                  1,
+                  1
+                ]
+              ],
+              "date-time": "2016-01-01T00:00:00Z",
+              "timestamp": 1451606400000
+            },
+            "content-version": "tdm",
+            "delay-in-days": 0,
+            "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+          },
+          {
+            "start": {
+              "date-parts": [
+                [
+                  2016,
+                  1,
+                  1
+                ]
+              ],
+              "date-time": "2016-01-01T00:00:00Z",
+              "timestamp": 1451606400000
+            },
+            "content-version": "tdm",
+            "delay-in-days": 0,
+            "URL": "https://www.elsevier.com/legal/tdmrep-license"
+          }
+        ],
+        "license_status": "requires_version_and_rights_review",
+        "review_status": "candidate_not_behavioral_evidence"
+      },
+      "retrieval_contexts": [
+        {
+          "file": "crossref_20261007T084348510721Z_83621a5b13.json",
+          "provider": "crossref",
+          "query": "feline personality",
+          "topics": []
+        }
+      ],
+      "review_status": "candidate_not_reviewed"
+    },
+    {
+      "key": "doi:10.1016/j.isci.2026.117340",
+      "metadata": {
+        "provider_id": "42707081",
+        "provider_source": "MED",
+        "title": "Green light exposure reduces central sensitization in cats with osteoarthritis-associated somatosensory impairment.",
+        "authors": "Delsart A, Castel A, Dumas G, Sauvé F, Otis C, Lussier B, Péron F, Hébert M, Lapointe N, Quaegebeur N, Grandjean P, Moreau M, Martel-Pelletier J, Pelletier JP, Troncy E.",
+        "year": "2026",
+        "doi": "10.1016/j.isci.2026.117340",
+        "pmid": "42707081",
+        "pmcid": "PMC13546925",
+        "journal": "iScience",
+        "is_open_access": "Y",
+        "url": "https://europepmc.org/article/MED/42707081",
+        "license_status": "not_verified",
+        "review_status": "candidate_not_behavioral_evidence"
+      },
+      "retrieval_contexts": [
+        {
+          "file": "europepmc_20261007T084650072390Z_c47b45d62d.json",
+          "provider": "europepmc",
+          "query": "(feline OR cat) AND (aging OR cognitive dysfunction) AND behavior",
+          "topics": [
+            {
+              "topic": "cat_aging",
+              "species": "cat"
+            }
+          ]
+        }
+      ],
+      "review_status": "candidate_not_reviewed"
+    },
+    {
+      "key": "doi:10.1016/j.tcam.2026.101088",
+      "metadata": {
+        "provider_id": "42437610",
+        "provider_source": "MED",
+        "title": "Vestibular syndrome associated with subcutaneous hemangiosarcoma in a cat.",
+        "authors": "Tondo LA, Santi JP, Santos BB, Araujo AS, Mascarenhas MB, Nogueira VA, França TN.",
+        "year": "2026",
+        "doi": "10.1016/j.tcam.2026.101088",
+        "pmid": "42437610",
+        "pmcid": null,
+        "journal": "Top Companion Anim Med",
+        "is_open_access": "N",
+        "url": "https://europepmc.org/article/MED/42437610",
+        "license_status": "not_verified",
+        "review_status": "candidate_not_behavioral_evidence"
+      },
+      "retrieval_contexts": [
+        {
+          "file": "europepmc_20261007T084646349664Z_b4659a5090.json",
+          "provider": "europepmc",
+          "query": "(feline OR cat) AND (communication OR vocalization OR meow)",
+          "topics": [
+            {
+              "topic": "cat_communication",
+              "species": "cat"
+            }
+          ]
+        }
+      ],
+      "review_status": "candidate_not_reviewed"
+    },
+    {
+      "key": "doi:10.1016/j.tvjl.2026.106665",
+      "metadata": {
+        "provider_id": "41962800",
+        "provider_source": "MED",
+        "title": "A global survey of attitudes and practices of veterinarians about pain management in cats.",
+        "authors": "Steagall PV, Marangoni S, Bukhari SSUH, Luna SPL, Almendros A.",
+        "year": "2026",
+        "doi": "10.1016/j.tvjl.2026.106665",
+        "pmid": "41962800",
+        "pmcid": null,
+        "journal": "Vet J",
+        "is_open_access": "N",
+        "url": "https://europepmc.org/article/MED/41962800",
+        "license_status": "not_verified",
+        "review_status": "candidate_not_behavioral_evidence"
+      },
+      "retrieval_contexts": [
+        {
+          "file": "europepmc_20261007T084644412462Z_14125e7308.json",
+          "provider": "europepmc",
+          "query": "(feline OR cat) AND pain AND (grimace OR behavior)",
+          "topics": [
+            {
+              "topic": "cat_pain",
+              "species": "cat"
+            }
+          ]
+        }
+      ],
+      "review_status": "candidate_not_reviewed"
+    },
+    {
+      "key": "doi:10.1016/j.tvjl.2026.106760",
+      "metadata": {
+        "provider_id": "42365892",
+        "provider_source": "MED",
+        "title": "Keeping an eye on pain: Characterization of pain behaviours in cats undergoing ophthalmic surgery.",
+        "authors": "Marangoni S, Frank D, Chow D, Bukhari SSUH, Steagall PV.",
+        "year": "2026",
+        "doi": "10.1016/j.tvjl.2026.106760",
+        "pmid": "42365892",
+        "pmcid": null,
+        "journal": "Vet J",
+        "is_open_access": "N",
+        "url": "https://europepmc.org/article/MED/42365892",
+        "license_status": "not_verified",
+        "review_status": "candidate_not_behavioral_evidence"
+      },
+      "retrieval_contexts": [
+        {
+          "file": "europepmc_20261007T084644412462Z_14125e7308.json",
+          "provider": "europepmc",
+          "query": "(feline OR cat) AND pain AND (grimace OR behavior)",
+          "topics": [
+            {
+              "topic": "cat_pain",
+              "species": "cat"
+            }
+          ]
+        }
+      ],
+      "review_status": "candidate_not_reviewed"
+    },
+    {
+      "key": "doi:10.1016/j.vaa.2026.101331",
+      "metadata": {
+        "provider_id": "42721642",
+        "provider_source": "MED",
+        "title": "Influence of drug-induced nausea and opioid-associated behavioural alterations on pain scores in nonpainful cats: a prospective, randomised, experimental trial.",
+        "authors": "Rupp V, Kästner S, Foraita N, Delarocque J, Schütter AF.",
+        "year": "2026",
+        "doi": "10.1016/j.vaa.2026.101331",
+        "pmid": "42721642",
+        "pmcid": null,
+        "journal": "Vet Anaesth Analg",
+        "is_open_access": "N",
+        "url": "https://europepmc.org/article/MED/42721642",
+        "license_status": "not_verified",
+        "review_status": "candidate_not_behavioral_evidence"
+      },
+      "retrieval_contexts": [
+        {
+          "file": "europepmc_20261007T084644412462Z_14125e7308.json",
+          "provider": "europepmc",
+          "query": "(feline OR cat) AND pain AND (grimace OR behavior)",
+          "topics": [
+            {
+              "topic": "cat_pain",
+              "species": "cat"
+            }
+          ]
+        }
+      ],
+      "review_status": "candidate_not_reviewed"
+    },
+    {
+      "key": "doi:10.1017/awf.2025.10051",
+      "metadata": {
+        "provider_id": "41446015",
+        "provider_source": "MED",
+        "title": "A framework to refocus the conversation around the welfare of UK purebred cats.",
+        "authors": "Roberts C, Foreman-Worsley R, O'Neill DG, McDonald JL.",
+        "year": "2025",
+        "doi": "10.1017/awf.2025.10051",
+        "pmid": "41446015",
+        "pmcid": "PMC12722057",
+        "journal": "Anim Welf",
+        "is_open_access": "Y",
+        "url": "https://europepmc.org/article/MED/41446015",
+        "license_status": "not_verified",
+        "review_status": "candidate_not_behavioral_evidence"
+      },
+      "retrieval_contexts": [
+        {
+          "file": "europepmc_20261007T084623472242Z_ce98411d8b.json",
+          "provider": "europepmc",
+          "query": "(feline OR cat) AND (environmental needs OR enrichment) AND welfare",
+          "topics": [
+            {
+              "topic": "cat_environment",
+              "species": "cat"
+            }
+          ]
+        }
+      ],
+      "review_status": "candidate_not_reviewed"
+    },
+    {
+      "key": "doi:10.1017/awf.2026.10098",
+      "metadata": {
+        "provider_id": "42534209",
+        "provider_source": "MED",
+        "title": "Resource management practices of Canadian and American domestic dog breeders and associations with puppy competitive behaviour: A cross-sectional study.",
+        "authors": "Rausch Q, White S, Widowski TM, Coe J, Jacobs J, Niel L.",
+        "year": "2026",
+        "doi": "10.1017/awf.2026.10098",
+        "pmid": "42534209",
+        "pmcid": "PMC13419449",
+        "journal": "Anim Welf",
+        "is_open_access": "Y",
+        "url": "https://europepmc.org/article/MED/42534209",
+        "license_status": "not_verified",
+        "review_status": "candidate_not_behavioral_evidence"
+      },
+      "retrieval_contexts": [
+        {
+          "file": "europepmc_20261007T084604961174Z_311e1f1300.json",
+          "provider": "europepmc",
+          "query": "(canine OR dog) AND training AND (reinforcement OR aversive) AND welfare",
+          "topics": [
+            {
+              "topic": "dog_learning",
+              "species": "dog"
+            }
+          ]
+        },
+        {
+          "file": "europepmc_20261007T084616600665Z_c003fb4506.json",
+          "provider": "europepmc",
+          "query": "(canine OR puppy) AND (socialization OR development) AND behavior",
+          "topics": [
+            {
+              "topic": "dog_development",
+              "species": "dog"
+            }
+          ]
+        }
+      ],
+      "review_status": "candidate_not_reviewed"
+    },
+    {
+      "key": "doi:10.1038/s41598-025-17986-z",
+      "metadata": {
+        "provider_id": "41044140",
+        "provider_source": "MED",
+        "title": "A deep learning pipeline for age prediction from vocalisations of the domestic feline.",
+        "authors": "van Toor A, Qazi N, Paladini S.",
+        "year": "2025",
+        "doi": "10.1038/s41598-025-17986-z",
+        "pmid": "41044140",
+        "pmcid": "PMC12494702",
+        "journal": "Sci Rep",
+        "is_open_access": "Y",
+        "url": "https://europepmc.org/article/MED/41044140",
+        "license_status": "not_verified",
+        "review_status": "candidate_not_behavioral_evidence"
+      },
+      "retrieval_contexts": [
+        {
+          "file": "europepmc_20261007T084646349664Z_b4659a5090.json",
+          "provider": "europepmc",
+          "query": "(feline OR cat) AND (communication OR vocalization OR meow)",
+          "topics": [
+            {
+              "topic": "cat_communication",
+              "species": "cat"
+            }
+          ]
+        }
+      ],
+      "review_status": "candidate_not_reviewed"
+    },
+    {
+      "key": "doi:10.1038/s41598-025-31536-7",
+      "metadata": {
+        "provider_id": "41366409",
+        "provider_source": "MED",
+        "title": "Meows encode less individual information than purrs and show greater variability in domestic than in wild cats.",
+        "authors": "Russo D, Schild AB, Knörnschild M.",
+        "year": "2025",
+        "doi": "10.1038/s41598-025-31536-7",
+        "pmid": "41366409",
+        "pmcid": "PMC12695941",
+        "journal": "Sci Rep",
+        "is_open_access": "Y",
+        "url": "https://europepmc.org/article/MED/41366409",
+        "license_status": "not_verified",
+        "review_status": "candidate_not_behavioral_evidence"
+      },
+      "retrieval_contexts": [
+        {
+          "file": "europepmc_20261007T084646349664Z_b4659a5090.json",
+          "provider": "europepmc",
+          "query": "(feline OR cat) AND (communication OR vocalization OR meow)",
+          "topics": [
+            {
+              "topic": "cat_communication",
+              "species": "cat"
+            }
+          ]
+        }
+      ],
+      "review_status": "candidate_not_reviewed"
+    },
+    {
+      "key": "doi:10.1038/s41598-026-41426-1",
+      "metadata": {
+        "provider_id": "41741611",
+        "provider_source": "MED",
+        "title": "Dogs (Canis familiaris) distinguish conspecific emotional chemosignals.",
+        "authors": "Wang A, Horowitz A.",
+        "year": "2026",
+        "doi": "10.1038/s41598-026-41426-1",
+        "pmid": "41741611",
+        "pmcid": "PMC13046943",
+        "journal": "Sci Rep",
+        "is_open_access": "Y",
+        "url": "https://europepmc.org/article/MED/41741611",
+        "license_status": "not_verified",
+        "review_status": "candidate_not_behavioral_evidence"
+      },
+      "retrieval_contexts": [
+        {
+          "file": "europepmc_20261007T084613512358Z_7e1bd73119.json",
+          "provider": "europepmc",
+          "query": "(canine OR dog) AND communication AND (gaze OR posture OR vocalization)",
+          "topics": [
+            {
+              "topic": "dog_communication",
+              "species": "dog"
+            }
+          ]
+        }
+      ],
+      "review_status": "candidate_not_reviewed"
+    },
+    {
+      "key": "doi:10.1038/s41598-026-44812-x",
+      "metadata": {
+        "provider_id": "41876603",
+        "provider_source": "MED",
+        "title": "Human recognition of feline stress-related behavioral states from visual cues depends on observer characteristics.",
+        "authors": "d'Ingeo S, Nolè M, Straziota V, Lavopa A, Quaranta A, Siniscalchi M.",
+        "year": "2026",
+        "doi": "10.1038/s41598-026-44812-x",
+        "pmid": "41876603",
+        "pmcid": "PMC13168556",
+        "journal": "Sci Rep",
+        "is_open_access": "Y",
+        "url": "https://europepmc.org/article/MED/41876603",
+        "license_status": "not_verified",
+        "review_status": "candidate_not_behavioral_evidence"
+      },
+      "retrieval_contexts": [
+        {
+          "file": "europepmc_20261007T084646349664Z_b4659a5090.json",
+          "provider": "europepmc",
+          "query": "(feline OR cat) AND (communication OR vocalization OR meow)",
+          "topics": [
+            {
+              "topic": "cat_communication",
+              "species": "cat"
+            }
+          ]
+        }
+      ],
+      "review_status": "candidate_not_reviewed"
+    },
+    {
+      "key": "doi:10.1038/s41598-026-50161-6",
+      "metadata": {
+        "provider_id": "42045494",
+        "provider_source": "MED",
+        "title": "The effects of observer gender on feline acute pain assessment using three pain scoring instruments.",
+        "authors": "Monteiro BP, Evangelista MC, Steagall PV.",
+        "year": "2026",
+        "doi": "10.1038/s41598-026-50161-6",
+        "pmid": "42045494",
+        "pmcid": "PMC13287790",
+        "journal": "Sci Rep",
+        "is_open_access": "Y",
+        "url": "https://europepmc.org/article/MED/42045494",
+        "license_status": "not_verified",
+        "review_status": "candidate_not_behavioral_evidence"
+      },
+      "retrieval_contexts": [
+        {
+          "file": "europepmc_20261007T084644412462Z_14125e7308.json",
+          "provider": "europepmc",
+          "query": "(feline OR cat) AND pain AND (grimace OR behavior)",
+          "topics": [
+            {
+              "topic": "cat_pain",
+              "species": "cat"
+            }
+          ]
+        }
+      ],
+      "review_status": "candidate_not_reviewed"
+    },
+    {
+      "key": "doi:10.1080/10888705.2026.2693645",
+      "metadata": {
+        "provider_id": "42425940",
+        "provider_source": "MED",
+        "title": "A Systematic Review of the Characterization of Behavior in Canine Behavioral Questionnaires.",
+        "authors": "A J, K S, J F, D SL.",
+        "year": "2026",
+        "doi": "10.1080/10888705.2026.2693645",
+        "pmid": "42425940",
+        "pmcid": null,
+        "journal": "J Appl Anim Welf Sci",
+        "is_open_access": "N",
+        "url": "https://europepmc.org/article/MED/42425940",
+        "license_status": "not_verified",
+        "review_status": "candidate_not_behavioral_evidence"
+      },
+      "retrieval_contexts": [
+        {
+          "file": "europepmc_20261007T084326056965Z_69dfe9c8b8.json",
+          "provider": "europepmc",
+          "query": "canine behavior questionnaire",
+          "topics": []
+        }
+      ],
+      "review_status": "candidate_not_reviewed"
+    },
+    {
+      "key": "doi:10.1093/biolre/ioag055",
+      "metadata": {
+        "provider_id": "42384936",
+        "provider_source": "MED",
+        "title": "Developmental programming in dogs.",
+        "authors": "Chastant S.",
+        "year": "2026",
+        "doi": "10.1093/biolre/ioag055",
+        "pmid": "42384936",
+        "pmcid": "PMC13482281",
+        "journal": "Biol Reprod",
+        "is_open_access": "Y",
+        "url": "https://europepmc.org/article/MED/42384936",
+        "license_status": "not_verified",
+        "review_status": "candidate_not_behavioral_evidence"
+      },
+      "retrieval_contexts": [
+        {
+          "file": "europepmc_20261007T084616600665Z_c003fb4506.json",
+          "provider": "europepmc",
+          "query": "(canine OR puppy) AND (socialization OR development) AND behavior",
+          "topics": [
+            {
+              "topic": "dog_development",
+              "species": "dog"
+            }
+          ]
+        }
+      ],
+      "review_status": "candidate_not_reviewed"
+    },
+    {
+      "key": "doi:10.1093/gerona/glag241",
+      "metadata": {
+        "provider_id": "42789758",
+        "provider_source": "MED",
+        "title": "Alda-1 Alleviates the Cognitive Deficits in D-galactose-induced Aging Mice by Regulating Oxidative Stress, Neuroinflammation, and Mitochondrial Biogenesis.",
+        "authors": "Liang T, Wang L, Kang S, Pang X, Yan H.",
+        "year": "2026",
+        "doi": "10.1093/gerona/glag241",
+        "pmid": "42789758",
+        "pmcid": null,
+        "journal": "J Gerontol A Biol Sci Med Sci",
+        "is_open_access": "N",
+        "url": "https://europepmc.org/article/MED/42789758",
+        "license_status": "not_verified",
+        "review_status": "candidate_not_behavioral_evidence"
+      },
+      "retrieval_contexts": [
+        {
+          "file": "europepmc_20261007T084650072390Z_c47b45d62d.json",
+          "provider": "europepmc",
+          "query": "(feline OR cat) AND (aging OR cognitive dysfunction) AND behavior",
+          "topics": [
+            {
+              "topic": "cat_aging",
+              "species": "cat"
+            }
+          ]
+        }
+      ],
+      "review_status": "candidate_not_reviewed"
+    },
+    {
+      "key": "doi:10.1093/jas/skag260",
+      "metadata": {
+        "provider_id": "42616905",
+        "provider_source": "MED",
+        "title": "Investigating targeted and untargeted approaches to biomarker discovery in fearful, adult dogs.",
+        "authors": "Burron SR, Croney CC, Seymour DJ, Strassburger R, Cottee S, Harlander A, Shoveller AK.",
+        "year": "2026",
+        "doi": "10.1093/jas/skag260",
+        "pmid": "42616905",
+        "pmcid": "PMC13552375",
+        "journal": "J Anim Sci",
+        "is_open_access": "Y",
+        "url": "https://europepmc.org/article/MED/42616905",
+        "license_status": "not_verified",
+        "review_status": "candidate_not_behavioral_evidence"
+      },
+      "retrieval_contexts": [
+        {
+          "file": "europepmc_20261007T084611801551Z_b629963377.json",
+          "provider": "europepmc",
+          "query": "(canine OR dog) AND (separation anxiety OR separation-related behavior)",
+          "topics": [
+            {
+              "topic": "dog_separation",
+              "species": "dog"
+            }
+          ]
+        },
+        {
+          "file": "europepmc_20261007T084618191536Z_3c006bd54d.json",
+          "provider": "europepmc",
+          "query": "(canine OR dog) AND (noise fear OR fearfulness)",
+          "topics": [
+            {
+              "topic": "dog_fear",
+              "species": "dog"
+            }
+          ]
+        }
+      ],
+      "review_status": "candidate_not_reviewed"
+    },
+    {
+      "key": "doi:10.1093/jvimsj/aalag125",
+      "metadata": {
+        "provider_id": "42492061",
+        "provider_source": "MED",
+        "title": "Effects of cow placenta extract on cognitive function in aged dogs: a randomized controlled trial.",
+        "authors": "Lu J, Lu W, Qian XL.",
+        "year": "2026",
+        "doi": "10.1093/jvimsj/aalag125",
+        "pmid": "42492061",
+        "pmcid": "PMC13395076",
+        "journal": "J Vet Intern Med",
+        "is_open_access": "Y",
+        "url": "https://europepmc.org/article/MED/42492061",
+        "license_status": "not_verified",
+        "review_status": "candidate_not_behavioral_evidence"
+      },
+      "retrieval_contexts": [
+        {
+          "file": "europepmc_20261007T084619896519Z_bf068737c8.json",
+          "provider": "europepmc",
+          "query": "(canine OR dog) AND (aging OR cognitive dysfunction) AND behavior",
+          "topics": [
+            {
+              "topic": "dog_aging",
+              "species": "dog"
+            }
+          ]
+        },
+        {
+          "file": "europepmc_20261007T084650072390Z_c47b45d62d.json",
+          "provider": "europepmc",
+          "query": "(feline OR cat) AND (aging OR cognitive dysfunction) AND behavior",
+          "topics": [
+            {
+              "topic": "cat_aging",
+              "species": "cat"
+            }
+          ]
+        }
+      ],
+      "review_status": "candidate_not_reviewed"
+    },
+    {
+      "key": "doi:10.1093/jvimsj/aalag164",
+      "metadata": {
+        "provider_id": "42627936",
+        "provider_source": "MED",
+        "title": "Rethinking clinical response criteria in trials of chronic enteropathy in dogs: what change is truly meaningful?",
+        "authors": "Méric T, Vérollet C, Darnis E, Rhimi M, Hernandez J.",
+        "year": "2026",
+        "doi": "10.1093/jvimsj/aalag164",
+        "pmid": "42627936",
+        "pmcid": "PMC13575271",
+        "journal": "J Vet Intern Med",
+        "is_open_access": "Y",
+        "url": "https://europepmc.org/article/MED/42627936",
+        "license_status": "not_verified",
+        "review_status": "candidate_not_behavioral_evidence"
+      },
+      "retrieval_contexts": [
+        {
+          "file": "europepmc_20261007T084651878684Z_9c87167aac.json",
+          "provider": "europepmc",
+          "query": "(canine OR feline) AND (owner report OR questionnaire) AND (observer OR bias OR reliability)",
+          "topics": [
+            {
+              "topic": "observer_bias",
+              "species": "both"
+            }
+          ]
+        }
+      ],
+      "review_status": "candidate_not_reviewed"
+    },
+    {
+      "key": "doi:10.1093/jvimsj/aalag208",
+      "metadata": {
+        "provider_id": "42806282",
+        "provider_source": "MED",
+        "title": "The relationship between urinalysis abnormalities, soiling behavior, and cognitive decline in aging dogs.",
+        "authors": "Rafatpanah Baigi S, Yang CC, Mondino A, Fefer G, Panek WK, Case BC, Griffith EH, Gruen ME, Olby NJ.",
+        "year": "2026",
+        "doi": "10.1093/jvimsj/aalag208",
+        "pmid": "42806282",
+        "pmcid": "PMC13619339",
+        "journal": "J Vet Intern Med",
+        "is_open_access": "Y",
+        "url": "https://europepmc.org/article/MED/42806282",
+        "license_status": "not_verified",
+        "review_status": "candidate_not_behavioral_evidence"
+      },
+      "retrieval_contexts": [
+        {
+          "file": "europepmc_20261007T084326056965Z_69dfe9c8b8.json",
+          "provider": "europepmc",
+          "query": "canine behavior questionnaire",
+          "topics": []
+        },
+        {
+          "file": "europepmc_20261007T084619896519Z_bf068737c8.json",
+          "provider": "europepmc",
+          "query": "(canine OR dog) AND (aging OR cognitive dysfunction) AND behavior",
+          "topics": [
+            {
+              "topic": "dog_aging",
+              "species": "dog"
+            }
+          ]
+        }
+      ],
+      "review_status": "candidate_not_reviewed"
+    },
+    {
+      "key": "doi:10.1093/jvimsj/aalag211",
+      "metadata": {
+        "provider_id": "42823068",
+        "provider_source": "MED",
+        "title": "Phenotypic characterization of presumptive propriospinal myoclonus in young dogs (2013-2025).",
+        "authors": "Polidoro D, Bhatti SFM, Santens P, Mandigers P, Santifort KM, Kanazono S, Lu D, Sánchez-Masián D, de Stefani A, Shafie INF, Álvarez P, Meyerhoff N, Jeroncic T, Lai SR, Dutil GF, Rohdin C, Marchand A, Thomovsky S, Liatis T.",
+        "year": "2026",
+        "doi": "10.1093/jvimsj/aalag211",
+        "pmid": "42823068",
+        "pmcid": "PMC13630453",
+        "journal": "J Vet Intern Med",
+        "is_open_access": "Y",
+        "url": "https://europepmc.org/article/MED/42823068",
+        "license_status": "not_verified",
+        "review_status": "candidate_not_behavioral_evidence"
+      },
+      "retrieval_contexts": [
+        {
+          "file": "europepmc_20261007T084613512358Z_7e1bd73119.json",
+          "provider": "europepmc",
+          "query": "(canine OR dog) AND communication AND (gaze OR posture OR vocalization)",
+          "topics": [
+            {
+              "topic": "dog_communication",
+              "species": "dog"
+            }
+          ]
+        }
+      ],
+      "review_status": "candidate_not_reviewed"
+    },
+    {
+      "key": "doi:10.1097/j.pain.0000000000004102",
+      "metadata": {
+        "provider_id": "42683626",
+        "provider_source": "MED",
+        "title": "Deep FLASH-seq profiling of purified canine sensory neurons uncovers species-specific signatures relevant to pain and itch.",
+        "authors": "Ledesma Fernandez P, Ledesma Fernandez P, Butler B, Theis H, Paulusch S, De Domenico E, Weir GA, Bell AM.",
+        "year": "2026",
+        "doi": "10.1097/j.pain.0000000000004102",
+        "pmid": "42683626",
+        "pmcid": "PMC7619458",
+        "journal": "Pain",
+        "is_open_access": "Y",
+        "url": "https://europepmc.org/article/MED/42683626",
+        "license_status": "not_verified",
+        "review_status": "candidate_not_behavioral_evidence"
+      },
+      "retrieval_contexts": [
+        {
+          "file": "europepmc_20261007T084615063501Z_f3ec26765d.json",
+          "provider": "europepmc",
+          "query": "(canine OR dog) AND pain AND behavior AND assessment",
+          "topics": [
+            {
+              "topic": "dog_pain",
+              "species": "dog"
+            }
+          ]
+        }
+      ],
+      "review_status": "candidate_not_reviewed"
+    },
+    {
+      "key": "doi:10.1111/avj.70083",
+      "metadata": {
+        "provider_id": "42012404",
+        "provider_source": "MED",
+        "title": "The benefits of multidisciplinary collaboration in the successful management of two complex feline cases.",
+        "authors": "Bollaert BE, Ley JM, Zulch HE.",
+        "year": "2026",
+        "doi": "10.1111/avj.70083",
+        "pmid": "42012404",
+        "pmcid": null,
+        "journal": "Aust Vet J",
+        "is_open_access": "N",
+        "url": "https://europepmc.org/article/MED/42012404",
+        "license_status": "not_verified",
+        "review_status": "candidate_not_behavioral_evidence"
+      },
+      "retrieval_contexts": [
+        {
+          "file": "europepmc_20261007T084623472242Z_ce98411d8b.json",
+          "provider": "europepmc",
+          "query": "(feline OR cat) AND (environmental needs OR enrichment) AND welfare",
+          "topics": [
+            {
+              "topic": "cat_environment",
+              "species": "cat"
+            }
+          ]
+        }
+      ],
+      "review_status": "candidate_not_reviewed"
+    },
+    {
+      "key": "doi:10.1111/avj.70113",
+      "metadata": {
+        "provider_id": "42560180",
+        "provider_source": "MED",
+        "title": "Veterinarian attitudes towards immunocontraceptive use in cats.",
+        "authors": "Vartola E, Wills S, Cottingham E, Marth CD, Krekeler N.",
+        "year": "2026",
+        "doi": "10.1111/avj.70113",
+        "pmid": "42560180",
+        "pmcid": "PMC13631546",
+        "journal": "Aust Vet J",
+        "is_open_access": "Y",
+        "url": "https://europepmc.org/article/MED/42560180",
+        "license_status": "not_verified",
+        "review_status": "candidate_not_behavioral_evidence"
+      },
+      "retrieval_contexts": [
+        {
+          "file": "europepmc_20261007T084648223546Z_2d73d9724a.json",
+          "provider": "europepmc",
+          "query": "(feline OR cat) AND (play OR predatory behavior) AND welfare",
+          "topics": [
+            {
+              "topic": "cat_play",
+              "species": "cat"
+            }
+          ]
+        }
+      ],
+      "review_status": "candidate_not_reviewed"
+    },
+    {
+      "key": "doi:10.1111/avj.70127",
+      "metadata": {
+        "provider_id": "42551850",
+        "provider_source": "MED",
+        "title": "Investigation of breed-related variation in judgement bias, sustained gaze and cylinder task performance in healthy pet dogs.",
+        "authors": "Seymour R, Caddiell R, Cunningham RM, Pachel CL, Love KR, Lascelles B, Gruen ME.",
+        "year": "2026",
+        "doi": "10.1111/avj.70127",
+        "pmid": "42551850",
+        "pmcid": null,
+        "journal": "Aust Vet J",
+        "is_open_access": "N",
+        "url": "https://europepmc.org/article/MED/42551850",
+        "license_status": "not_verified",
+        "review_status": "candidate_not_behavioral_evidence"
+      },
+      "retrieval_contexts": [
+        {
+          "file": "europepmc_20261007T084615063501Z_f3ec26765d.json",
+          "provider": "europepmc",
+          "query": "(canine OR dog) AND pain AND behavior AND assessment",
+          "topics": [
+            {
+              "topic": "dog_pain",
+              "species": "dog"
+            }
+          ]
+        }
+      ],
+      "review_status": "candidate_not_reviewed"
+    },
+    {
+      "key": "doi:10.1111/vru.70249",
+      "metadata": {
+        "provider_id": "42746951",
+        "provider_source": "MED",
+        "title": "Computed Tomographic and Ultrasonographic Characteristics of Presumed Traumatic Unilateral Cavernositis of the Penis in a 2-Year-Old Dog.",
+        "authors": "Aledón I, Forward A, Hughes J.",
+        "year": "2026",
+        "doi": "10.1111/vru.70249",
+        "pmid": "42746951",
+        "pmcid": "PMC13579705",
+        "journal": "Vet Radiol Ultrasound",
+        "is_open_access": "N",
+        "url": "https://europepmc.org/article/MED/42746951",
+        "license_status": "not_verified",
+        "review_status": "candidate_not_behavioral_evidence"
+      },
+      "retrieval_contexts": [
+        {
+          "file": "europepmc_20261007T084615063501Z_f3ec26765d.json",
+          "provider": "europepmc",
+          "query": "(canine OR dog) AND pain AND behavior AND assessment",
+          "topics": [
+            {
+              "topic": "dog_pain",
+              "species": "dog"
+            }
+          ]
+        }
+      ],
+      "review_status": "candidate_not_reviewed"
+    },
+    {
+      "key": "doi:10.1136/medhum-2025-013346",
+      "metadata": {
+        "provider_id": "41151808",
+        "provider_source": "MED",
+        "title": "Gaze that shamed science: Canine defiance and the ethics of experimental physiology.",
+        "authors": "Hung RYY.",
+        "year": "2026",
+        "doi": "10.1136/medhum-2025-013346",
+        "pmid": "41151808",
+        "pmcid": "PMC13539850",
+        "journal": "Med Humanit",
+        "is_open_access": "Y",
+        "url": "https://europepmc.org/article/MED/41151808",
+        "license_status": "not_verified",
+        "review_status": "candidate_not_behavioral_evidence"
+      },
+      "retrieval_contexts": [
+        {
+          "file": "europepmc_20261007T084613512358Z_7e1bd73119.json",
+          "provider": "europepmc",
+          "query": "(canine OR dog) AND communication AND (gaze OR posture OR vocalization)",
+          "topics": [
+            {
+              "topic": "dog_communication",
+              "species": "dog"
+            }
+          ]
+        }
+      ],
+      "review_status": "candidate_not_reviewed"
+    },
+    {
+      "key": "doi:10.1136/vr.j4464",
+      "metadata": {
+        "doi": "10.1136/vr.j4464",
+        "title": "Feline playful: personality traits of the cat discovered",
+        "authors": [],
+        "publication_date": [
+          [
+            2017,
+            9
+          ]
+        ],
+        "publisher": "Wiley",
+        "type": "journal-article",
+        "url": "https://doi.org/10.1136/vr.j4464",
+        "declared_licenses": [
+          {
+            "start": {
+              "date-parts": [
+                [
+                  2017,
+                  9,
+                  30
+                ]
+              ],
+              "date-time": "2017-09-30T00:00:00Z",
+              "timestamp": 1506729600000
+            },
+            "content-version": "vor",
+            "delay-in-days": 29,
+            "URL": "http://onlinelibrary.wiley.com/termsAndConditions#vor"
+          }
+        ],
+        "license_status": "requires_version_and_rights_review",
+        "review_status": "candidate_not_behavioral_evidence"
+      },
+      "retrieval_contexts": [
+        {
+          "file": "crossref_20261007T084348510721Z_83621a5b13.json",
+          "provider": "crossref",
+          "query": "feline personality",
+          "topics": []
+        }
+      ],
+      "review_status": "candidate_not_reviewed"
+    },
+    {
+      "key": "doi:10.1155/crve/9804544",
+      "metadata": {
+        "provider_id": "42211242",
+        "provider_source": "MED",
+        "title": "Evaluation of a Young Dog for Escalating Aggression Toward Both Familiar and Unfamiliar People.",
+        "authors": "Honeckman L.",
+        "year": "2026",
+        "doi": "10.1155/crve/9804544",
+        "pmid": "42211242",
+        "pmcid": "PMC13213711",
+        "journal": "Case Rep Vet Med",
+        "is_open_access": "Y",
+        "url": "https://europepmc.org/article/MED/42211242",
+        "license_status": "not_verified",
+        "review_status": "candidate_not_behavioral_evidence"
+      },
+      "retrieval_contexts": [
+        {
+          "file": "europepmc_20261007T084616600665Z_c003fb4506.json",
+          "provider": "europepmc",
+          "query": "(canine OR puppy) AND (socialization OR development) AND behavior",
+          "topics": [
+            {
+              "topic": "dog_development",
+              "species": "dog"
+            }
+          ]
+        }
+      ],
+      "review_status": "candidate_not_reviewed"
+    },
+    {
+      "key": "doi:10.1155/vmi/6224941",
+      "metadata": {
+        "provider_id": "42540681",
+        "provider_source": "MED",
+        "title": "Owner-Directed Canine Aggression in Thailand: Triggers, Associated Factors and Clinical Interventions.",
+        "authors": "Supanta J, Boonhoh W, Hayakijkosol O, Wongtawan T.",
+        "year": "2026",
+        "doi": "10.1155/vmi/6224941",
+        "pmid": "42540681",
+        "pmcid": "PMC13426483",
+        "journal": "Vet Med Int",
+        "is_open_access": "Y",
+        "url": "https://europepmc.org/article/MED/42540681",
+        "license_status": "not_verified",
+        "review_status": "candidate_not_behavioral_evidence"
+      },
+      "retrieval_contexts": [
+        {
+          "file": "europepmc_20261007T084604961174Z_311e1f1300.json",
+          "provider": "europepmc",
+          "query": "(canine OR dog) AND training AND (reinforcement OR aversive) AND welfare",
+          "topics": [
+            {
+              "topic": "dog_learning",
+              "species": "dog"
+            }
+          ]
+        }
+      ],
+      "review_status": "candidate_not_reviewed"
+    },
+    {
+      "key": "doi:10.1177/1098612x231202482",
+      "metadata": {
+        "provider_id": "37975187",
+        "provider_source": "MED",
+        "title": "Factors associated with house-soiling in Italian cats.",
+        "authors": "Padalino B, Zappaterra M, Felici M, Ricci-Bonot C, Nanni Costa L, Houpt K, Tateo A.",
+        "year": "2023",
+        "doi": "10.1177/1098612x231202482",
+        "pmid": "37975187",
+        "pmcid": "PMC10812005",
+        "journal": "J Feline Med Surg",
+        "is_open_access": "Y",
+        "url": "https://europepmc.org/article/MED/37975187",
+        "license_status": "not_verified",
+        "review_status": "candidate_not_behavioral_evidence"
+      },
+      "retrieval_contexts": [
+        {
+          "file": "europepmc_20261007T084631431094Z_9fea29617e.json",
+          "provider": "europepmc",
+          "query": "(feline OR cat) AND (house soiling OR litter box OR urine marking)",
+          "topics": [
+            {
+              "topic": "cat_elimination",
+              "species": "cat"
+            }
+          ]
+        }
+      ],
+      "review_status": "candidate_not_reviewed"
+    },
+    {
+      "key": "doi:10.1177/1098612x241263465",
+      "metadata": {
+        "provider_id": "39012263",
+        "provider_source": "MED",
+        "title": "2024 AAFP intercat tension guidelines: recognition, prevention and management.",
+        "authors": "Rodan I, Ramos D, Carney H, DePorter T, Horwitz DF, Mills D, Vitale K.",
+        "year": "2024",
+        "doi": "10.1177/1098612x241263465",
+        "pmid": "39012263",
+        "pmcid": "PMC11292941",
+        "journal": "J Feline Med Surg",
+        "is_open_access": "Y",
+        "url": "https://europepmc.org/article/MED/39012263",
+        "license_status": "not_verified",
+        "review_status": "candidate_not_behavioral_evidence"
+      },
+      "retrieval_contexts": [
+        {
+          "file": "europepmc_20261007T084629547157Z_0bb5f07d7c.json",
+          "provider": "europepmc",
+          "query": "(feline OR cat) AND (intercat OR social behavior) AND household",
+          "topics": [
+            {
+              "topic": "cat_relations",
+              "species": "cat"
+            }
+          ]
+        },
+        {
+          "file": "europepmc_20261007T084631431094Z_9fea29617e.json",
+          "provider": "europepmc",
+          "query": "(feline OR cat) AND (house soiling OR litter box OR urine marking)",
+          "topics": [
+            {
+              "topic": "cat_elimination",
+              "species": "cat"
+            }
+          ]
+        }
+      ],
+      "review_status": "candidate_not_reviewed"
+    },
+    {
+      "key": "doi:10.1177/1098612x241309176",
+      "metadata": {
+        "provider_id": "39935081",
+        "provider_source": "MED",
+        "title": "2025 iCatCare consensus guidelines on the diagnosis and management of lower urinary tract diseases in cats.",
+        "authors": "Taylor S, Boysen S, Buffington T, Chalhoub S, Defauw P, Delgado MM, Gunn-Moore D, Korman R.",
+        "year": "2025",
+        "doi": "10.1177/1098612x241309176",
+        "pmid": "39935081",
+        "pmcid": "PMC11816079",
+        "journal": "J Feline Med Surg",
+        "is_open_access": "Y",
+        "url": "https://europepmc.org/article/MED/39935081",
+        "license_status": "not_verified",
+        "review_status": "candidate_not_behavioral_evidence"
+      },
+      "retrieval_contexts": [
+        {
+          "file": "europepmc_20261007T084631431094Z_9fea29617e.json",
+          "provider": "europepmc",
+          "query": "(feline OR cat) AND (house soiling OR litter box OR urine marking)",
+          "topics": [
+            {
+              "topic": "cat_elimination",
+              "species": "cat"
+            }
+          ]
+        }
+      ],
+      "review_status": "candidate_not_reviewed"
+    },
+    {
+      "key": "doi:10.1177/1098612x251349718",
+      "metadata": {
+        "doi": "10.1177/1098612x251349718",
+        "title": "Effects of feline personality on pain assessment with two validated behaviour-based scales",
+        "authors": [
+          {
+            "given": "Ana",
+            "family": "Cadariu"
+          },
+          {
+            "given": "Chiara",
+            "family": "Adami",
+            "ORCID": "https://orcid.org/0000-0003-1909-5807"
+          }
+        ],
+        "publication_date": [
+          [
+            2025,
+            7
+          ]
+        ],
+        "publisher": "SAGE Publications",
+        "type": "journal-article",
+        "url": "https://doi.org/10.1177/1098612x251349718",
+        "declared_licenses": [
+          {
+            "start": {
+              "date-parts": [
+                [
+                  2025,
+                  7,
+                  1
+                ]
+              ],
+              "date-time": "2025-07-01T00:00:00Z",
+              "timestamp": 1751328000000
+            },
+            "content-version": "vor",
+            "delay-in-days": 0,
+            "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+          },
+          {
+            "start": {
+              "date-parts": [
+                [
+                  2025,
+                  7,
+                  1
+                ]
+              ],
+              "date-time": "2025-07-01T00:00:00Z",
+              "timestamp": 1751328000000
+            },
+            "content-version": "tdm",
+            "delay-in-days": 0,
+            "URL": "https://journals.sagepub.com/page/policies/text-and-data-mining-license"
+          }
+        ],
+        "license_status": "requires_version_and_rights_review",
+        "review_status": "candidate_not_behavioral_evidence"
+      },
+      "retrieval_contexts": [
+        {
+          "file": "crossref_20261007T084348510721Z_83621a5b13.json",
+          "provider": "crossref",
+          "query": "feline personality",
+          "topics": []
+        },
+        {
+          "file": "europepmc_20261007T084621338059Z_c97c5ce265.json",
+          "provider": "europepmc",
+          "query": "(feline OR cat) AND (personality OR temperament) AND (validation OR reliability)",
+          "topics": [
+            {
+              "topic": "cat_personality",
+              "species": "cat"
+            }
+          ]
+        }
+      ],
+      "review_status": "candidate_not_reviewed"
+    },
+    {
+      "key": "doi:10.1177/1098612x261422953",
+      "metadata": {
+        "provider_id": "41622153",
+        "provider_source": "MED",
+        "title": "Enhanced environmental acclimation of cats using an innovative passive diffuser of the facial-marking pheromone (F3).",
+        "authors": "Cozzi A, Marcet-Rius M, Teruel E, Monneret P, Menuge F, Asproni P, Pageat P.",
+        "year": "2026",
+        "doi": "10.1177/1098612x261422953",
+        "pmid": "41622153",
+        "pmcid": "PMC13009756",
+        "journal": "J Feline Med Surg",
+        "is_open_access": "Y",
+        "url": "https://europepmc.org/article/MED/41622153",
+        "license_status": "not_verified",
+        "review_status": "candidate_not_behavioral_evidence"
+      },
+      "retrieval_contexts": [
+        {
+          "file": "europepmc_20261007T084623472242Z_ce98411d8b.json",
+          "provider": "europepmc",
+          "query": "(feline OR cat) AND (environmental needs OR enrichment) AND welfare",
+          "topics": [
+            {
+              "topic": "cat_environment",
+              "species": "cat"
+            }
+          ]
+        },
+        {
+          "file": "europepmc_20261007T084648223546Z_2d73d9724a.json",
+          "provider": "europepmc",
+          "query": "(feline OR cat) AND (play OR predatory behavior) AND welfare",
+          "topics": [
+            {
+              "topic": "cat_play",
+              "species": "cat"
+            }
+          ]
+        }
+      ],
+      "review_status": "candidate_not_reviewed"
+    },
+    {
+      "key": "doi:10.1177/1098612x261445224",
+      "metadata": {
+        "provider_id": "41981764",
+        "provider_source": "MED",
+        "title": "Acute pain in cats: knowledge, attitudes and practices among Argentine veterinarians - a survey-based study.",
+        "authors": "Alegre EA, Koscinczuk P, Carlos RSA, Lavor MSL.",
+        "year": "2026",
+        "doi": "10.1177/1098612x261445224",
+        "pmid": "41981764",
+        "pmcid": "PMC13494730",
+        "journal": "J Feline Med Surg",
+        "is_open_access": "Y",
+        "url": "https://europepmc.org/article/MED/41981764",
+        "license_status": "not_verified",
+        "review_status": "candidate_not_behavioral_evidence"
+      },
+      "retrieval_contexts": [
+        {
+          "file": "europepmc_20261007T084644412462Z_14125e7308.json",
+          "provider": "europepmc",
+          "query": "(feline OR cat) AND pain AND (grimace OR behavior)",
+          "topics": [
+            {
+              "topic": "cat_pain",
+              "species": "cat"
+            }
+          ]
+        }
+      ],
+      "review_status": "candidate_not_reviewed"
+    },
+    {
+      "key": "doi:10.1177/1098612x261484766",
+      "metadata": {
+        "provider_id": "42655881",
+        "provider_source": "MED",
+        "title": "EXPRESS: Attitudes and practices of veterinarians regarding feline pain management in Western versus Eastern Europe.",
+        "authors": "Bukhari SSUH, Marangoni S, Almendros A, Luna SP, Steagall P.",
+        "year": "2026",
+        "doi": "10.1177/1098612x261484766",
+        "pmid": "42655881",
+        "pmcid": null,
+        "journal": "J Feline Med Surg",
+        "is_open_access": "N",
+        "url": "https://europepmc.org/article/MED/42655881",
+        "license_status": "not_verified",
+        "review_status": "candidate_not_behavioral_evidence"
+      },
+      "retrieval_contexts": [
+        {
+          "file": "europepmc_20261007T084644412462Z_14125e7308.json",
+          "provider": "europepmc",
+          "query": "(feline OR cat) AND pain AND (grimace OR behavior)",
+          "topics": [
+            {
+              "topic": "cat_pain",
+              "species": "cat"
+            }
+          ]
+        }
+      ],
+      "review_status": "candidate_not_reviewed"
+    },
+    {
+      "key": "doi:10.1177/1098612x261487063",
+      "metadata": {
+        "provider_id": "42736627",
+        "provider_source": "MED",
+        "title": "EXPRESS: Beyond the bowl: behavioural, sensory and environmental strategies to support healthy ageing in cats.",
+        "authors": "Hoummady S, Schoeman T, Bermingham E, Goyon A, Dowgray NJ.",
+        "year": "2026",
+        "doi": "10.1177/1098612x261487063",
+        "pmid": "42736627",
+        "pmcid": null,
+        "journal": "J Feline Med Surg",
+        "is_open_access": "N",
+        "url": "https://europepmc.org/article/MED/42736627",
+        "license_status": "not_verified",
+        "review_status": "candidate_not_behavioral_evidence"
+      },
+      "retrieval_contexts": [
+        {
+          "file": "europepmc_20261007T084650072390Z_c47b45d62d.json",
+          "provider": "europepmc",
+          "query": "(feline OR cat) AND (aging OR cognitive dysfunction) AND behavior",
+          "topics": [
+            {
+              "topic": "cat_aging",
+              "species": "cat"
+            }
+          ]
+        }
+      ],
+      "review_status": "candidate_not_reviewed"
+    },
+    {
+      "key": "doi:10.1186/s13028-026-00878-1",
+      "metadata": {
+        "provider_id": "42760569",
+        "provider_source": "MED",
+        "title": "Treatment, monitoring, and euthanasia in canine diabetes mellitus - a questionnaire-based survey among veterinarians in Norway.",
+        "authors": "Nerhagen S, Eriksen EØ, Amundstad J, Anfinsen KP.",
+        "year": "2026",
+        "doi": "10.1186/s13028-026-00878-1",
+        "pmid": "42760569",
+        "pmcid": "PMC13587334",
+        "journal": "Acta Vet Scand",
+        "is_open_access": "Y",
+        "url": "https://europepmc.org/article/MED/42760569",
+        "license_status": "not_verified",
+        "review_status": "candidate_not_behavioral_evidence"
+      },
+      "retrieval_contexts": [
+        {
+          "file": "europepmc_20261007T084651878684Z_9c87167aac.json",
+          "provider": "europepmc",
+          "query": "(canine OR feline) AND (owner report OR questionnaire) AND (observer OR bias OR reliability)",
+          "topics": [
+            {
+              "topic": "observer_bias",
+              "species": "both"
+            }
+          ]
+        }
+      ],
+      "review_status": "candidate_not_reviewed"
+    },
+    {
+      "key": "doi:10.1242/bio.062604",
+      "metadata": {
+        "provider_id": "42145034",
+        "provider_source": "MED",
+        "title": "Cat brains age like humans: translating time shows pet cats live to be natural models for human aging.",
+        "authors": "Januel C, Morrow E, Gibson R, Gross A, de Sousa AA, Rigby Dames BA, Charvet CJ.",
+        "year": "2026",
+        "doi": "10.1242/bio.062604",
+        "pmid": "42145034",
+        "pmcid": "PMC13382973",
+        "journal": "Biol Open",
+        "is_open_access": "Y",
+        "url": "https://europepmc.org/article/MED/42145034",
+        "license_status": "not_verified",
+        "review_status": "candidate_not_behavioral_evidence"
+      },
+      "retrieval_contexts": [
+        {
+          "file": "europepmc_20261007T084650072390Z_c47b45d62d.json",
+          "provider": "europepmc",
+          "query": "(feline OR cat) AND (aging OR cognitive dysfunction) AND behavior",
+          "topics": [
+            {
+              "topic": "cat_aging",
+              "species": "cat"
+            }
+          ]
+        }
+      ],
+      "review_status": "candidate_not_reviewed"
+    },
+    {
+      "key": "doi:10.1292/jvms.24-0468",
+      "metadata": {
+        "provider_id": "40204471",
+        "provider_source": "MED",
+        "title": "Litter box size and litter type preference and their associated behavioral changes in cats.",
+        "authors": "Iwabuchi-Inoue Y, Hattori Y, Kikusui T.",
+        "year": "2025",
+        "doi": "10.1292/jvms.24-0468",
+        "pmid": "40204471",
+        "pmcid": "PMC12169895",
+        "journal": "J Vet Med Sci",
+        "is_open_access": "Y",
+        "url": "https://europepmc.org/article/MED/40204471",
+        "license_status": "not_verified",
+        "review_status": "candidate_not_behavioral_evidence"
+      },
+      "retrieval_contexts": [
+        {
+          "file": "europepmc_20261007T084631431094Z_9fea29617e.json",
+          "provider": "europepmc",
+          "query": "(feline OR cat) AND (house soiling OR litter box OR urine marking)",
+          "topics": [
+            {
+              "topic": "cat_elimination",
+              "species": "cat"
+            }
+          ]
+        }
+      ],
+      "review_status": "candidate_not_reviewed"
+    },
+    {
+      "key": "doi:10.1371/journal.pone.0337781",
+      "metadata": {
+        "provider_id": "41637403",
+        "provider_source": "MED",
+        "title": "Associations between canine temperament and salivary concentrations of cortisol and serotonin.",
+        "authors": "Jung Y, Song Y, Yang K, Yoo K, Heo Y, Yoon M.",
+        "year": "2026",
+        "doi": "10.1371/journal.pone.0337781",
+        "pmid": "41637403",
+        "pmcid": "PMC12871959",
+        "journal": "PLoS One",
+        "is_open_access": "Y",
+        "url": "https://europepmc.org/article/MED/41637403",
+        "license_status": "not_verified",
+        "review_status": "candidate_not_behavioral_evidence"
+      },
+      "retrieval_contexts": [
+        {
+          "file": "europepmc_20261007T084603314095Z_94b90c5c81.json",
+          "provider": "europepmc",
+          "query": "(canine OR dog) AND (personality OR temperament) AND (validation OR repeatability)",
+          "topics": [
+            {
+              "topic": "dog_personality",
+              "species": "dog"
+            }
+          ]
+        }
+      ],
+      "review_status": "candidate_not_reviewed"
+    },
+    {
+      "key": "doi:10.1371/journal.pone.0342847",
+      "metadata": {
+        "provider_id": "41854121",
+        "provider_source": "MED",
+        "title": "Comparing undesirable behaviours between 'designer' Poodle-cross dogs and their purebred progenitor breeds.",
+        "authors": "Bryson GT, O'Neill DG, Belshaw Z, Brand CL, Packer RMA.",
+        "year": "2026",
+        "doi": "10.1371/journal.pone.0342847",
+        "pmid": "41854121",
+        "pmcid": "PMC13001074",
+        "journal": "PLoS One",
+        "is_open_access": "Y",
+        "url": "https://europepmc.org/article/MED/41854121",
+        "license_status": "not_verified",
+        "review_status": "candidate_not_behavioral_evidence"
+      },
+      "retrieval_contexts": [
+        {
+          "file": "europepmc_20261007T084604961174Z_311e1f1300.json",
+          "provider": "europepmc",
+          "query": "(canine OR dog) AND training AND (reinforcement OR aversive) AND welfare",
+          "topics": [
+            {
+              "topic": "dog_learning",
+              "species": "dog"
+            }
+          ]
+        }
+      ],
+      "review_status": "candidate_not_reviewed"
+    },
+    {
+      "key": "doi:10.1590/1984-3143-ar2025-0125",
+      "metadata": {
+        "provider_id": "42524431",
+        "provider_source": "MED",
+        "title": "Exploring behavioral outcomes of gonadectomy in pets: a need for personalized approaches.",
+        "authors": "Guimarães FB, Barreto RO, Apparício M.",
+        "year": "2026",
+        "doi": "10.1590/1984-3143-ar2025-0125",
+        "pmid": "42524431",
+        "pmcid": "PMC13411998",
+        "journal": "Anim Reprod",
+        "is_open_access": "Y",
+        "url": "https://europepmc.org/article/MED/42524431",
+        "license_status": "not_verified",
+        "review_status": "candidate_not_behavioral_evidence"
+      },
+      "retrieval_contexts": [
+        {
+          "file": "europepmc_20261007T084611801551Z_b629963377.json",
+          "provider": "europepmc",
+          "query": "(canine OR dog) AND (separation anxiety OR separation-related behavior)",
+          "topics": [
+            {
+              "topic": "dog_separation",
+              "species": "dog"
+            }
+          ]
+        },
+        {
+          "file": "europepmc_20261007T084618191536Z_3c006bd54d.json",
+          "provider": "europepmc",
+          "query": "(canine OR dog) AND (noise fear OR fearfulness)",
+          "topics": [
+            {
+              "topic": "dog_fear",
+              "species": "dog"
+            }
+          ]
+        },
+        {
+          "file": "europepmc_20261007T084619896519Z_bf068737c8.json",
+          "provider": "europepmc",
+          "query": "(canine OR dog) AND (aging OR cognitive dysfunction) AND behavior",
+          "topics": [
+            {
+              "topic": "dog_aging",
+              "species": "dog"
+            }
+          ]
+        }
+      ],
+      "review_status": "candidate_not_reviewed"
+    },
+    {
+      "key": "doi:10.18849/ve.v11i3.745",
+      "metadata": {
+        "provider_id": "42602613",
+        "provider_source": "MED",
+        "title": "Does imepitoin reduce signs of fear and anxiety in dogs frightened by loud noises?",
+        "authors": "McNicholas H.",
+        "year": "2026",
+        "doi": "10.18849/ve.v11i3.745",
+        "pmid": "42602613",
+        "pmcid": "PMC13474324",
+        "journal": "Vet Evid",
+        "is_open_access": "Y",
+        "url": "https://europepmc.org/article/MED/42602613",
+        "license_status": "not_verified",
+        "review_status": "candidate_not_behavioral_evidence"
+      },
+      "retrieval_contexts": [
+        {
+          "file": "europepmc_20261007T084618191536Z_3c006bd54d.json",
+          "provider": "europepmc",
+          "query": "(canine OR dog) AND (noise fear OR fearfulness)",
+          "topics": [
+            {
+              "topic": "dog_fear",
+              "species": "dog"
+            }
+          ]
+        },
+        {
+          "file": "europepmc_20261007T084651878684Z_9c87167aac.json",
+          "provider": "europepmc",
+          "query": "(canine OR feline) AND (owner report OR questionnaire) AND (observer OR bias OR reliability)",
+          "topics": [
+            {
+              "topic": "observer_bias",
+              "species": "both"
+            }
+          ]
+        }
+      ],
+      "review_status": "candidate_not_reviewed"
+    },
+    {
+      "key": "doi:10.2460/ajvr.25.12.0436",
+      "metadata": {
+        "provider_id": "41791227",
+        "provider_source": "MED",
+        "title": "Sacrococcygeal epidural injection of morphine and ropivacaine provides analgesia after feline ovariohysterectomy.",
+        "authors": "Boesch JM, Wong S, Tobin K, Parry S, Muto R, Whittington M, Martin-Flores M, Campoy L, Gleed RD.",
+        "year": "2026",
+        "doi": "10.2460/ajvr.25.12.0436",
+        "pmid": "41791227",
+        "pmcid": null,
+        "journal": "Am J Vet Res",
+        "is_open_access": "N",
+        "url": "https://europepmc.org/article/MED/41791227",
+        "license_status": "not_verified",
+        "review_status": "candidate_not_behavioral_evidence"
+      },
+      "retrieval_contexts": [
+        {
+          "file": "europepmc_20261007T084644412462Z_14125e7308.json",
+          "provider": "europepmc",
+          "query": "(feline OR cat) AND pain AND (grimace OR behavior)",
+          "topics": [
+            {
+              "topic": "cat_pain",
+              "species": "cat"
+            }
+          ]
+        }
+      ],
+      "review_status": "candidate_not_reviewed"
+    },
+    {
+      "key": "doi:10.2460/ajvr.26.05.0237",
+      "metadata": {
+        "provider_id": "42480621",
+        "provider_source": "MED",
+        "title": "Epidural analgesia reduces or eliminates neuropathic pain refractory to oral medications in dogs and cats for weeks to months.",
+        "authors": "Bergstein O, Boesch JM, Thomson ACS, Todd-Donato A.",
+        "year": "2026",
+        "doi": "10.2460/ajvr.26.05.0237",
+        "pmid": "42480621",
+        "pmcid": null,
+        "journal": "Am J Vet Res",
+        "is_open_access": "N",
+        "url": "https://europepmc.org/article/MED/42480621",
+        "license_status": "not_verified",
+        "review_status": "candidate_not_behavioral_evidence"
+      },
+      "retrieval_contexts": [
+        {
+          "file": "europepmc_20261007T084646349664Z_b4659a5090.json",
+          "provider": "europepmc",
+          "query": "(feline OR cat) AND (communication OR vocalization OR meow)",
+          "topics": [
+            {
+              "topic": "cat_communication",
+              "species": "cat"
+            }
+          ]
+        }
+      ],
+      "review_status": "candidate_not_reviewed"
+    },
+    {
+      "key": "doi:10.2460/javma.26.04.0301",
+      "metadata": {
+        "provider_id": "42486150",
+        "provider_source": "MED",
+        "title": "Automated acute pain assessment in brachycephalic cats with ocular pain using the Feline Grimace Scale.",
+        "authors": "Steagall PV, Li J, Marangoni S, Bukhari SSUH.",
+        "year": "2026",
+        "doi": "10.2460/javma.26.04.0301",
+        "pmid": "42486150",
+        "pmcid": null,
+        "journal": "J Am Vet Med Assoc",
+        "is_open_access": "N",
+        "url": "https://europepmc.org/article/MED/42486150",
+        "license_status": "not_verified",
+        "review_status": "candidate_not_behavioral_evidence"
+      },
+      "retrieval_contexts": [
+        {
+          "file": "europepmc_20261007T084644412462Z_14125e7308.json",
+          "provider": "europepmc",
+          "query": "(feline OR cat) AND pain AND (grimace OR behavior)",
+          "topics": [
+            {
+              "topic": "cat_pain",
+              "species": "cat"
+            }
+          ]
+        }
+      ],
+      "review_status": "candidate_not_reviewed"
+    },
+    {
+      "key": "doi:10.2460/javma.26.04.0326",
+      "metadata": {
+        "provider_id": "42526494",
+        "provider_source": "MED",
+        "title": "Clinically important abnormalities are common in senior cats perceived to be healthy by owners.",
+        "authors": "Herrera K, Nichelason A, Snyder Z, Hetzel S, McLellan GJ, Crawford LK, Cameron S.",
+        "year": "2026",
+        "doi": "10.2460/javma.26.04.0326",
+        "pmid": "42526494",
+        "pmcid": "PMC13472236",
+        "journal": "J Am Vet Med Assoc",
+        "is_open_access": "N",
+        "url": "https://europepmc.org/article/MED/42526494",
+        "license_status": "not_verified",
+        "review_status": "candidate_not_behavioral_evidence"
+      },
+      "retrieval_contexts": [
+        {
+          "file": "europepmc_20261007T084650072390Z_c47b45d62d.json",
+          "provider": "europepmc",
+          "query": "(feline OR cat) AND (aging OR cognitive dysfunction) AND behavior",
+          "topics": [
+            {
+              "topic": "cat_aging",
+              "species": "cat"
+            }
+          ]
+        }
+      ],
+      "review_status": "candidate_not_reviewed"
+    },
+    {
+      "key": "doi:10.3138/jvme-2025-0199",
+      "metadata": {
+        "provider_id": "42496695",
+        "provider_source": "MED",
+        "title": "Cat Play or Cat Fray? Investigating the Accuracy of Veterinary Student Classifications of Human-Cat Interactions.",
+        "authors": "Rademacher J, Kendall S, Nielsen T, Henning JSL, Hazel SJ, Atkinson PJ.",
+        "year": "2026",
+        "doi": "10.3138/jvme-2025-0199",
+        "pmid": "42496695",
+        "pmcid": null,
+        "journal": "J Vet Med Educ",
+        "is_open_access": "N",
+        "url": "https://europepmc.org/article/MED/42496695",
+        "license_status": "not_verified",
+        "review_status": "candidate_not_behavioral_evidence"
+      },
+      "retrieval_contexts": [
+        {
+          "file": "europepmc_20261007T084648223546Z_2d73d9724a.json",
+          "provider": "europepmc",
+          "query": "(feline OR cat) AND (play OR predatory behavior) AND welfare",
+          "topics": [
+            {
+              "topic": "cat_play",
+              "species": "cat"
+            }
+          ]
+        }
+      ],
+      "review_status": "candidate_not_reviewed"
+    },
+    {
+      "key": "doi:10.3389/falgy.2026.1930696",
+      "metadata": {
+        "provider_id": "42719600",
+        "provider_source": "MED",
+        "title": "Taming pet allergens: strategies to make furry cats less allergenic.",
+        "authors": "Guillet C, Lüthi A, Šošić L, Paolucci M, Kündig TM, Johansen P.",
+        "year": "2026",
+        "doi": "10.3389/falgy.2026.1930696",
+        "pmid": "42719600",
+        "pmcid": "PMC13555257",
+        "journal": "Front Allergy",
+        "is_open_access": "Y",
+        "url": "https://europepmc.org/article/MED/42719600",
+        "license_status": "not_verified",
+        "review_status": "candidate_not_behavioral_evidence"
+      },
+      "retrieval_contexts": [
+        {
+          "file": "europepmc_20261007T084623472242Z_ce98411d8b.json",
+          "provider": "europepmc",
+          "query": "(feline OR cat) AND (environmental needs OR enrichment) AND welfare",
+          "topics": [
+            {
+              "topic": "cat_environment",
+              "species": "cat"
+            }
+          ]
+        }
+      ],
+      "review_status": "candidate_not_reviewed"
+    },
+    {
+      "key": "doi:10.3389/fnagi.2025.1703764",
+      "metadata": {
+        "provider_id": "41268300",
+        "provider_source": "MED",
+        "title": "Variations in body condition score, inflammatory and metabolic biomarkers predict cognitive changes in clinically healthy senior cats.",
+        "authors": "Memoli H, Albertini M, Grader I, Provoost L, Filipe J, Piotti P, Scarpa P, Stefanovski D, Pirrone F, Siracusa C.",
+        "year": "2025",
+        "doi": "10.3389/fnagi.2025.1703764",
+        "pmid": "41268300",
+        "pmcid": "PMC12627069",
+        "journal": "Front Aging Neurosci",
+        "is_open_access": "Y",
+        "url": "https://europepmc.org/article/MED/41268300",
+        "license_status": "not_verified",
+        "review_status": "candidate_not_behavioral_evidence"
+      },
+      "retrieval_contexts": [
+        {
+          "file": "europepmc_20261007T084650072390Z_c47b45d62d.json",
+          "provider": "europepmc",
+          "query": "(feline OR cat) AND (aging OR cognitive dysfunction) AND behavior",
+          "topics": [
+            {
+              "topic": "cat_aging",
+              "species": "cat"
+            }
+          ]
+        }
+      ],
+      "review_status": "candidate_not_reviewed"
+    },
+    {
+      "key": "doi:10.3389/fpsyg.2026.1767922",
+      "metadata": {
+        "provider_id": "42495207",
+        "provider_source": "MED",
+        "title": "Agency denied: PADA and the perils of paternalistic dog care.",
+        "authors": "Foltin S.",
+        "year": "2026",
+        "doi": "10.3389/fpsyg.2026.1767922",
+        "pmid": "42495207",
+        "pmcid": "PMC13391819",
+        "journal": "Front Psychol",
+        "is_open_access": "Y",
+        "url": "https://europepmc.org/article/MED/42495207",
+        "license_status": "not_verified",
+        "review_status": "candidate_not_behavioral_evidence"
+      },
+      "retrieval_contexts": [
+        {
+          "file": "europepmc_20261007T084604961174Z_311e1f1300.json",
+          "provider": "europepmc",
+          "query": "(canine OR dog) AND training AND (reinforcement OR aversive) AND welfare",
+          "topics": [
+            {
+              "topic": "dog_learning",
+              "species": "dog"
+            }
+          ]
+        }
+      ],
+      "review_status": "candidate_not_reviewed"
+    },
+    {
+      "key": "doi:10.3389/fvets.2025.1614403",
+      "metadata": {
+        "provider_id": "41383971",
+        "provider_source": "MED",
+        "title": "Assessment of acute and chronic pain in canine internal medicine-what is missing in our diagnostic toolbox?",
+        "authors": "Sander AN, Storz S, Xenoulis PG, Heilmann RM.",
+        "year": "2025",
+        "doi": "10.3389/fvets.2025.1614403",
+        "pmid": "41383971",
+        "pmcid": "PMC12689315",
+        "journal": "Front Vet Sci",
+        "is_open_access": "Y",
+        "url": "https://europepmc.org/article/MED/41383971",
+        "license_status": "not_verified",
+        "review_status": "candidate_not_behavioral_evidence"
+      },
+      "retrieval_contexts": [
+        {
+          "file": "europepmc_20261007T084613512358Z_7e1bd73119.json",
+          "provider": "europepmc",
+          "query": "(canine OR dog) AND communication AND (gaze OR posture OR vocalization)",
+          "topics": [
+            {
+              "topic": "dog_communication",
+              "species": "dog"
+            }
+          ]
+        }
+      ],
+      "review_status": "candidate_not_reviewed"
+    },
+    {
+      "key": "doi:10.3389/fvets.2025.1658857",
+      "metadata": {
+        "provider_id": "41479417",
+        "provider_source": "MED",
+        "title": "PTSD assistance dogs: concerns for animal well-being, rights, and justice.",
+        "authors": "Kiiroja L, Gadbois S, Fenton A.",
+        "year": "2025",
+        "doi": "10.3389/fvets.2025.1658857",
+        "pmid": "41479417",
+        "pmcid": "PMC12755157",
+        "journal": "Front Vet Sci",
+        "is_open_access": "Y",
+        "url": "https://europepmc.org/article/MED/41479417",
+        "license_status": "not_verified",
+        "review_status": "candidate_not_behavioral_evidence"
+      },
+      "retrieval_contexts": [
+        {
+          "file": "europepmc_20261007T084604961174Z_311e1f1300.json",
+          "provider": "europepmc",
+          "query": "(canine OR dog) AND training AND (reinforcement OR aversive) AND welfare",
+          "topics": [
+            {
+              "topic": "dog_learning",
+              "species": "dog"
+            }
+          ]
+        }
+      ],
+      "review_status": "candidate_not_reviewed"
+    },
+    {
+      "key": "doi:10.3389/fvets.2026.1706134",
+      "metadata": {
+        "provider_id": "41756578",
+        "provider_source": "MED",
+        "title": "Cerebral iron deposition in the Globus pallidus and Substantia nigra of aging dogs and cats presenting as bilateral hypointensity on T2w and iron-sensitive MRI sequences (SWI, T2*).",
+        "authors": "Fischer C, Schaub S, Körber SSE, Hoppe MI, Büttner K, Schmidt MJ.",
+        "year": "2026",
+        "doi": "10.3389/fvets.2026.1706134",
+        "pmid": "41756578",
+        "pmcid": "PMC12933945",
+        "journal": "Front Vet Sci",
+        "is_open_access": "Y",
+        "url": "https://europepmc.org/article/MED/41756578",
+        "license_status": "not_verified",
+        "review_status": "candidate_not_behavioral_evidence"
+      },
+      "retrieval_contexts": [
+        {
+          "file": "europepmc_20261007T084650072390Z_c47b45d62d.json",
+          "provider": "europepmc",
+          "query": "(feline OR cat) AND (aging OR cognitive dysfunction) AND behavior",
+          "topics": [
+            {
+              "topic": "cat_aging",
+              "species": "cat"
+            }
+          ]
+        }
+      ],
+      "review_status": "candidate_not_reviewed"
+    },
+    {
+      "key": "doi:10.3389/fvets.2026.1729697",
+      "metadata": {
+        "provider_id": "42164771",
+        "provider_source": "MED",
+        "title": "Automatic gait analysis in canines using computer vision.",
+        "authors": "Phelan B, Mc Nally T, Cuddy L, Lacey G.",
+        "year": "2026",
+        "doi": "10.3389/fvets.2026.1729697",
+        "pmid": "42164771",
+        "pmcid": "PMC13185694",
+        "journal": "Front Vet Sci",
+        "is_open_access": "Y",
+        "url": "https://europepmc.org/article/MED/42164771",
+        "license_status": "not_verified",
+        "review_status": "candidate_not_behavioral_evidence"
+      },
+      "retrieval_contexts": [
+        {
+          "file": "europepmc_20261007T084653464856Z_8810944fb2.json",
+          "provider": "europepmc",
+          "query": "(canine OR feline) AND (pose estimation OR video behavior recognition)",
+          "topics": [
+            {
+              "topic": "animal_video",
+              "species": "both"
+            }
+          ]
+        }
+      ],
+      "review_status": "candidate_not_reviewed"
+    },
+    {
+      "key": "doi:10.3389/fvets.2026.1744448",
+      "metadata": {
+        "provider_id": "41822226",
+        "provider_source": "MED",
+        "title": "Professional dog trainers' perspectives on training methods: ethical and evidentiary insights.",
+        "authors": "DeLeeuw JL, Williams TJ.",
+        "year": "2026",
+        "doi": "10.3389/fvets.2026.1744448",
+        "pmid": "41822226",
+        "pmcid": "PMC12975608",
+        "journal": "Front Vet Sci",
+        "is_open_access": "Y",
+        "url": "https://europepmc.org/article/MED/41822226",
+        "license_status": "not_verified",
+        "review_status": "candidate_not_behavioral_evidence"
+      },
+      "retrieval_contexts": [
+        {
+          "file": "europepmc_20261007T084604961174Z_311e1f1300.json",
+          "provider": "europepmc",
+          "query": "(canine OR dog) AND training AND (reinforcement OR aversive) AND welfare",
+          "topics": [
+            {
+              "topic": "dog_learning",
+              "species": "dog"
+            }
+          ]
+        }
+      ],
+      "review_status": "candidate_not_reviewed"
+    },
+    {
+      "key": "doi:10.3389/fvets.2026.1774034",
+      "metadata": {
+        "provider_id": "42631010",
+        "provider_source": "MED",
+        "title": "Development and validation of a Quality of Life and Treatment Satisfaction measure in feline osteoarthritis.",
+        "authors": "Gildea E, Thompson J, Cook A, Skingley G, Findley A, Panter C, Sandri TL, Mahon-Smith A, Lydon A.",
+        "year": "2026",
+        "doi": "10.3389/fvets.2026.1774034",
+        "pmid": "42631010",
+        "pmcid": "PMC13495205",
+        "journal": "Front Vet Sci",
+        "is_open_access": "Y",
+        "url": "https://europepmc.org/article/MED/42631010",
+        "license_status": "not_verified",
+        "review_status": "candidate_not_behavioral_evidence"
+      },
+      "retrieval_contexts": [
+        {
+          "file": "europepmc_20261007T084621338059Z_c97c5ce265.json",
+          "provider": "europepmc",
+          "query": "(feline OR cat) AND (personality OR temperament) AND (validation OR reliability)",
+          "topics": [
+            {
+              "topic": "cat_personality",
+              "species": "cat"
+            }
+          ]
+        }
+      ],
+      "review_status": "candidate_not_reviewed"
+    },
+    {
+      "key": "doi:10.3389/fvets.2026.1782396",
+      "metadata": {
+        "provider_id": "42052335",
+        "provider_source": "MED",
+        "title": "BCST-GCN: a skeleton-based spatiotemporal graph convolutional network with bidirectional cross-attention for pig behavior recognition.",
+        "authors": "Chai H, Zhan W, Su J.",
+        "year": "2026",
+        "doi": "10.3389/fvets.2026.1782396",
+        "pmid": "42052335",
+        "pmcid": "PMC13111057",
+        "journal": "Front Vet Sci",
+        "is_open_access": "Y",
+        "url": "https://europepmc.org/article/MED/42052335",
+        "license_status": "not_verified",
+        "review_status": "candidate_not_behavioral_evidence"
+      },
+      "retrieval_contexts": [
+        {
+          "file": "europepmc_20261007T084653464856Z_8810944fb2.json",
+          "provider": "europepmc",
+          "query": "(canine OR feline) AND (pose estimation OR video behavior recognition)",
+          "topics": [
+            {
+              "topic": "animal_video",
+              "species": "both"
+            }
+          ]
+        }
+      ],
+      "review_status": "candidate_not_reviewed"
+    },
+    {
+      "key": "doi:10.3389/fvets.2026.1802205",
+      "metadata": {
+        "provider_id": "42078843",
+        "provider_source": "MED",
+        "title": "A non-separation diagnostic framework for assessing canine attachment structure.",
+        "authors": "Kim J.",
+        "year": "2026",
+        "doi": "10.3389/fvets.2026.1802205",
+        "pmid": "42078843",
+        "pmcid": "PMC13132736",
+        "journal": "Front Vet Sci",
+        "is_open_access": "Y",
+        "url": "https://europepmc.org/article/MED/42078843",
+        "license_status": "not_verified",
+        "review_status": "candidate_not_behavioral_evidence"
+      },
+      "retrieval_contexts": [
+        {
+          "file": "europepmc_20261007T084611801551Z_b629963377.json",
+          "provider": "europepmc",
+          "query": "(canine OR dog) AND (separation anxiety OR separation-related behavior)",
+          "topics": [
+            {
+              "topic": "dog_separation",
+              "species": "dog"
+            }
+          ]
+        }
+      ],
+      "review_status": "candidate_not_reviewed"
+    },
+    {
+      "key": "doi:10.3389/fvets.2026.1814017",
+      "metadata": {
+        "provider_id": "42427973",
+        "provider_source": "MED",
+        "title": "Thoracic limb stride length is associated with cognitive impairment in aging dogs.",
+        "authors": "Rafatpanah Baigi S, Stywall A, Yang CC, Mondino A, Fefer G, Panek WK, Simon KE, Case BC, Gruen ME, Olby NJ.",
+        "year": "2026",
+        "doi": "10.3389/fvets.2026.1814017",
+        "pmid": "42427973",
+        "pmcid": "PMC13345842",
+        "journal": "Front Vet Sci",
+        "is_open_access": "Y",
+        "url": "https://europepmc.org/article/MED/42427973",
+        "license_status": "not_verified",
+        "review_status": "candidate_not_behavioral_evidence"
+      },
+      "retrieval_contexts": [
+        {
+          "file": "europepmc_20261007T084619896519Z_bf068737c8.json",
+          "provider": "europepmc",
+          "query": "(canine OR dog) AND (aging OR cognitive dysfunction) AND behavior",
+          "topics": [
+            {
+              "topic": "dog_aging",
+              "species": "dog"
+            }
+          ]
+        },
+        {
+          "file": "europepmc_20261007T084651878684Z_9c87167aac.json",
+          "provider": "europepmc",
+          "query": "(canine OR feline) AND (owner report OR questionnaire) AND (observer OR bias OR reliability)",
+          "topics": [
+            {
+              "topic": "observer_bias",
+              "species": "both"
+            }
+          ]
+        }
+      ],
+      "review_status": "candidate_not_reviewed"
+    },
+    {
+      "key": "doi:10.3389/fvets.2026.1814440",
+      "metadata": {
+        "provider_id": "42058561",
+        "provider_source": "MED",
+        "title": "Factors affecting hair cortisol concentration in privately owned intact cats.",
+        "authors": "Vojtkovská V, Konečná N, Štěpánková K, Šebánková M, Kovaříková S.",
+        "year": "2026",
+        "doi": "10.3389/fvets.2026.1814440",
+        "pmid": "42058561",
+        "pmcid": "PMC13120955",
+        "journal": "Front Vet Sci",
+        "is_open_access": "Y",
+        "url": "https://europepmc.org/article/MED/42058561",
+        "license_status": "not_verified",
+        "review_status": "candidate_not_behavioral_evidence"
+      },
+      "retrieval_contexts": [
+        {
+          "file": "europepmc_20261007T084621338059Z_c97c5ce265.json",
+          "provider": "europepmc",
+          "query": "(feline OR cat) AND (personality OR temperament) AND (validation OR reliability)",
+          "topics": [
+            {
+              "topic": "cat_personality",
+              "species": "cat"
+            }
+          ]
+        }
+      ],
+      "review_status": "candidate_not_reviewed"
+    },
+    {
+      "key": "doi:10.3389/fvets.2026.1828548",
+      "metadata": {
+        "provider_id": "42656266",
+        "provider_source": "MED",
+        "title": "From dyadic deco-construction to reco-construction: a framework for the human-osteoarthritic dog relationship.",
+        "authors": "Martin L, Otis C, Lussier B, Troncy E.",
+        "year": "2026",
+        "doi": "10.3389/fvets.2026.1828548",
+        "pmid": "42656266",
+        "pmcid": "PMC13506275",
+        "journal": "Front Vet Sci",
+        "is_open_access": "Y",
+        "url": "https://europepmc.org/article/MED/42656266",
+        "license_status": "not_verified",
+        "review_status": "candidate_not_behavioral_evidence"
+      },
+      "retrieval_contexts": [
+        {
+          "file": "europepmc_20261007T084603314095Z_94b90c5c81.json",
+          "provider": "europepmc",
+          "query": "(canine OR dog) AND (personality OR temperament) AND (validation OR repeatability)",
+          "topics": [
+            {
+              "topic": "dog_personality",
+              "species": "dog"
+            }
+          ]
+        },
+        {
+          "file": "europepmc_20261007T084615063501Z_f3ec26765d.json",
+          "provider": "europepmc",
+          "query": "(canine OR dog) AND pain AND behavior AND assessment",
+          "topics": [
+            {
+              "topic": "dog_pain",
+              "species": "dog"
+            }
+          ]
+        },
+        {
+          "file": "europepmc_20261007T084618191536Z_3c006bd54d.json",
+          "provider": "europepmc",
+          "query": "(canine OR dog) AND (noise fear OR fearfulness)",
+          "topics": [
+            {
+              "topic": "dog_fear",
+              "species": "dog"
+            }
+          ]
+        }
+      ],
+      "review_status": "candidate_not_reviewed"
+    },
+    {
+      "key": "doi:10.3389/fvets.2026.1829873",
+      "metadata": {
+        "provider_id": "42211333",
+        "provider_source": "MED",
+        "title": "Analysis of human-oriented facial signals of the domestic dog using eye tracker technology.",
+        "authors": "Sheidin J, Asaad SY, Ghazawi S, Chaloupková H, Eretová P, Přibylová L, Pongrácz P, Zamansky A.",
+        "year": "2026",
+        "doi": "10.3389/fvets.2026.1829873",
+        "pmid": "42211333",
+        "pmcid": "PMC13212098",
+        "journal": "Front Vet Sci",
+        "is_open_access": "Y",
+        "url": "https://europepmc.org/article/MED/42211333",
+        "license_status": "not_verified",
+        "review_status": "candidate_not_behavioral_evidence"
+      },
+      "retrieval_contexts": [
+        {
+          "file": "europepmc_20261007T084613512358Z_7e1bd73119.json",
+          "provider": "europepmc",
+          "query": "(canine OR dog) AND communication AND (gaze OR posture OR vocalization)",
+          "topics": [
+            {
+              "topic": "dog_communication",
+              "species": "dog"
+            }
+          ]
+        }
+      ],
+      "review_status": "candidate_not_reviewed"
+    },
+    {
+      "key": "doi:10.3389/fvets.2026.1833531",
+      "metadata": {
+        "provider_id": "42131431",
+        "provider_source": "MED",
+        "title": "Hard-working or hardly working dogs stay young longer? Lifetime sports engagement, joint activity with the owner and breed type are associated with the severity of canine cognitive decline.",
+        "authors": "Lugosi CA, Dobos P, Pongrácz P.",
+        "year": "2026",
+        "doi": "10.3389/fvets.2026.1833531",
+        "pmid": "42131431",
+        "pmcid": "PMC13161145",
+        "journal": "Front Vet Sci",
+        "is_open_access": "Y",
+        "url": "https://europepmc.org/article/MED/42131431",
+        "license_status": "not_verified",
+        "review_status": "candidate_not_behavioral_evidence"
+      },
+      "retrieval_contexts": [
+        {
+          "file": "europepmc_20261007T084619896519Z_bf068737c8.json",
+          "provider": "europepmc",
+          "query": "(canine OR dog) AND (aging OR cognitive dysfunction) AND behavior",
+          "topics": [
+            {
+              "topic": "dog_aging",
+              "species": "dog"
+            }
+          ]
+        }
+      ],
+      "review_status": "candidate_not_reviewed"
+    },
+    {
+      "key": "doi:10.3389/fvets.2026.1869578",
+      "metadata": {
+        "provider_id": "42626406",
+        "provider_source": "MED",
+        "title": "Measuring canine impulsivity: translation and validation of a German dog impulsivity assessment scale.",
+        "authors": "Kero D, Dolezal M, Affenzeller N.",
+        "year": "2026",
+        "doi": "10.3389/fvets.2026.1869578",
+        "pmid": "42626406",
+        "pmcid": "PMC13491426",
+        "journal": "Front Vet Sci",
+        "is_open_access": "Y",
+        "url": "https://europepmc.org/article/MED/42626406",
+        "license_status": "not_verified",
+        "review_status": "candidate_not_behavioral_evidence"
+      },
+      "retrieval_contexts": [
+        {
+          "file": "europepmc_20261007T084326056965Z_69dfe9c8b8.json",
+          "provider": "europepmc",
+          "query": "canine behavior questionnaire",
+          "topics": []
+        },
+        {
+          "file": "europepmc_20261007T084603314095Z_94b90c5c81.json",
+          "provider": "europepmc",
+          "query": "(canine OR dog) AND (personality OR temperament) AND (validation OR repeatability)",
+          "topics": [
+            {
+              "topic": "dog_personality",
+              "species": "dog"
+            }
+          ]
+        }
+      ],
+      "review_status": "candidate_not_reviewed"
+    },
+    {
+      "key": "doi:10.3389/fvets.2026.1879445",
+      "metadata": {
+        "provider_id": "42459545",
+        "provider_source": "MED",
+        "title": "Species-specific differences across the rural-urban spectrum for perceived veterinary visit costs among U.S. pet owners.",
+        "authors": "Neill CL, ShalekBriski A.",
+        "year": "2026",
+        "doi": "10.3389/fvets.2026.1879445",
+        "pmid": "42459545",
+        "pmcid": "PMC13368650",
+        "journal": "Front Vet Sci",
+        "is_open_access": "Y",
+        "url": "https://europepmc.org/article/MED/42459545",
+        "license_status": "not_verified",
+        "review_status": "candidate_not_behavioral_evidence"
+      },
+      "retrieval_contexts": [
+        {
+          "file": "europepmc_20261007T084629547157Z_0bb5f07d7c.json",
+          "provider": "europepmc",
+          "query": "(feline OR cat) AND (intercat OR social behavior) AND household",
+          "topics": [
+            {
+              "topic": "cat_relations",
+              "species": "cat"
+            }
+          ]
+        }
+      ],
+      "review_status": "candidate_not_reviewed"
+    },
+    {
+      "key": "doi:10.3389/fvets.2026.1880180",
+      "metadata": {
+        "provider_id": "42638931",
+        "provider_source": "MED",
+        "title": "Sustained improvements in human-cat interaction in the shelter sector: a study of a best-practice educational intervention.",
+        "authors": "Hatam EV, Barcelos AM, Waterman J, Bhatia A, Finka L.",
+        "year": "2026",
+        "doi": "10.3389/fvets.2026.1880180",
+        "pmid": "42638931",
+        "pmcid": "PMC13500327",
+        "journal": "Front Vet Sci",
+        "is_open_access": "Y",
+        "url": "https://europepmc.org/article/MED/42638931",
+        "license_status": "not_verified",
+        "review_status": "candidate_not_behavioral_evidence"
+      },
+      "retrieval_contexts": [
+        {
+          "file": "europepmc_20261007T084621338059Z_c97c5ce265.json",
+          "provider": "europepmc",
+          "query": "(feline OR cat) AND (personality OR temperament) AND (validation OR reliability)",
+          "topics": [
+            {
+              "topic": "cat_personality",
+              "species": "cat"
+            }
+          ]
+        }
+      ],
+      "review_status": "candidate_not_reviewed"
+    },
+    {
+      "key": "doi:10.3389/fvets.2026.1881772",
+      "metadata": {
+        "provider_id": "42745785",
+        "provider_source": "MED",
+        "title": "Automated analysis of feline posture using deep learning and geometric modeling.",
+        "authors": "Bezerra CE, Bittencourt C, Alves R, Ribeiro T, Azorín-Ortuño M, Nejar G, Barreras A, Zemirline C, Lewiner T, Le Bourdiec A, Pagny G, Barbosa A, Yang X, Oliveira K, Vieira T.",
+        "year": "2026",
+        "doi": "10.3389/fvets.2026.1881772",
+        "pmid": "42745785",
+        "pmcid": "PMC13574629",
+        "journal": "Front Vet Sci",
+        "is_open_access": "Y",
+        "url": "https://europepmc.org/article/MED/42745785",
+        "license_status": "not_verified",
+        "review_status": "candidate_not_behavioral_evidence"
+      },
+      "retrieval_contexts": [
+        {
+          "file": "europepmc_20261007T084621338059Z_c97c5ce265.json",
+          "provider": "europepmc",
+          "query": "(feline OR cat) AND (personality OR temperament) AND (validation OR reliability)",
+          "topics": [
+            {
+              "topic": "cat_personality",
+              "species": "cat"
+            }
+          ]
+        },
+        {
+          "file": "europepmc_20261007T084623472242Z_ce98411d8b.json",
+          "provider": "europepmc",
+          "query": "(feline OR cat) AND (environmental needs OR enrichment) AND welfare",
+          "topics": [
+            {
+              "topic": "cat_environment",
+              "species": "cat"
+            }
+          ]
+        },
+        {
+          "file": "europepmc_20261007T084648223546Z_2d73d9724a.json",
+          "provider": "europepmc",
+          "query": "(feline OR cat) AND (play OR predatory behavior) AND welfare",
+          "topics": [
+            {
+              "topic": "cat_play",
+              "species": "cat"
+            }
+          ]
+        },
+        {
+          "file": "europepmc_20261007T084653464856Z_8810944fb2.json",
+          "provider": "europepmc",
+          "query": "(canine OR feline) AND (pose estimation OR video behavior recognition)",
+          "topics": [
+            {
+              "topic": "animal_video",
+              "species": "both"
+            }
+          ]
+        }
+      ],
+      "review_status": "candidate_not_reviewed"
+    },
+    {
+      "key": "doi:10.3390/ani13142382",
+      "metadata": {
+        "provider_id": "37508159",
+        "provider_source": "MED",
+        "title": "Litter Management Practices and House-Soiling in Italian Cats.",
+        "authors": "Tateo A, Ricci-Bonot C, Felici M, Zappaterra M, Nanni Costa L, Houpt K, Padalino B.",
+        "year": "2023",
+        "doi": "10.3390/ani13142382",
+        "pmid": "37508159",
+        "pmcid": "PMC10376366",
+        "journal": "Animals (Basel)",
+        "is_open_access": "Y",
+        "url": "https://europepmc.org/article/MED/37508159",
+        "license_status": "not_verified",
+        "review_status": "candidate_not_behavioral_evidence"
+      },
+      "retrieval_contexts": [
+        {
+          "file": "europepmc_20261007T084631431094Z_9fea29617e.json",
+          "provider": "europepmc",
+          "query": "(feline OR cat) AND (house soiling OR litter box OR urine marking)",
+          "topics": [
+            {
+              "topic": "cat_elimination",
+              "species": "cat"
+            }
+          ]
+        }
+      ],
+      "review_status": "candidate_not_reviewed"
+    },
+    {
+      "key": "doi:10.3390/ani16020265",
+      "metadata": {
+        "provider_id": "41594455",
+        "provider_source": "MED",
+        "title": "The Complexity of Communication in Mammals: From Social and Emotional Mechanisms to Human Influence and Multimodal Applications.",
+        "authors": "Górski K, Kondracki S, Kępka-Borkowska K.",
+        "year": "2026",
+        "doi": "10.3390/ani16020265",
+        "pmid": "41594455",
+        "pmcid": "PMC12837618",
+        "journal": "Animals (Basel)",
+        "is_open_access": "Y",
+        "url": "https://europepmc.org/article/MED/41594455",
+        "license_status": "not_verified",
+        "review_status": "candidate_not_behavioral_evidence"
+      },
+      "retrieval_contexts": [
+        {
+          "file": "europepmc_20261007T084613512358Z_7e1bd73119.json",
+          "provider": "europepmc",
+          "query": "(canine OR dog) AND communication AND (gaze OR posture OR vocalization)",
+          "topics": [
+            {
+              "topic": "dog_communication",
+              "species": "dog"
+            }
+          ]
+        }
+      ],
+      "review_status": "candidate_not_reviewed"
+    },
+    {
+      "key": "doi:10.3390/ani16030375",
+      "metadata": {
+        "provider_id": "41681356",
+        "provider_source": "MED",
+        "title": "Animals as Communication Partners: Ethics and Challenges in Interspecies Language Research.",
+        "authors": "Mamzer H, Kuchtar M, Grzegorzewski W.",
+        "year": "2026",
+        "doi": "10.3390/ani16030375",
+        "pmid": "41681356",
+        "pmcid": "PMC12896553",
+        "journal": "Animals (Basel)",
+        "is_open_access": "Y",
+        "url": "https://europepmc.org/article/MED/41681356",
+        "license_status": "not_verified",
+        "review_status": "candidate_not_behavioral_evidence"
+      },
+      "retrieval_contexts": [
+        {
+          "file": "europepmc_20261007T084613512358Z_7e1bd73119.json",
+          "provider": "europepmc",
+          "query": "(canine OR dog) AND communication AND (gaze OR posture OR vocalization)",
+          "topics": [
+            {
+              "topic": "dog_communication",
+              "species": "dog"
+            }
+          ]
+        }
+      ],
+      "review_status": "candidate_not_reviewed"
+    },
+    {
+      "key": "doi:10.3390/ani16030417",
+      "metadata": {
+        "provider_id": "41681398",
+        "provider_source": "MED",
+        "title": "It's Premature to Encourage Working Cats for Rodent Control on Australian Dairy Farms.",
+        "authors": "Calver MC, Crawford HM, Kurz T, Watson J, Webber BL.",
+        "year": "2026",
+        "doi": "10.3390/ani16030417",
+        "pmid": "41681398",
+        "pmcid": "PMC12897469",
+        "journal": "Animals (Basel)",
+        "is_open_access": "Y",
+        "url": "https://europepmc.org/article/MED/41681398",
+        "license_status": "not_verified",
+        "review_status": "candidate_not_behavioral_evidence"
+      },
+      "retrieval_contexts": [
+        {
+          "file": "europepmc_20261007T084648223546Z_2d73d9724a.json",
+          "provider": "europepmc",
+          "query": "(feline OR cat) AND (play OR predatory behavior) AND welfare",
+          "topics": [
+            {
+              "topic": "cat_play",
+              "species": "cat"
+            }
+          ]
+        }
+      ],
+      "review_status": "candidate_not_reviewed"
+    },
+    {
+      "key": "doi:10.3390/ani16030485",
+      "metadata": {
+        "provider_id": "41681466",
+        "provider_source": "MED",
+        "title": "Participation in a Short-Term Socialization and Training Program Improved Kennel-Raised Dog Welfare.",
+        "authors": "Ing NH, Richardson R, Lamon TK, Daigle CL.",
+        "year": "2026",
+        "doi": "10.3390/ani16030485",
+        "pmid": "41681466",
+        "pmcid": "PMC12897358",
+        "journal": "Animals (Basel)",
+        "is_open_access": "Y",
+        "url": "https://europepmc.org/article/MED/41681466",
+        "license_status": "not_verified",
+        "review_status": "candidate_not_behavioral_evidence"
+      },
+      "retrieval_contexts": [
+        {
+          "file": "europepmc_20261007T084616600665Z_c003fb4506.json",
+          "provider": "europepmc",
+          "query": "(canine OR puppy) AND (socialization OR development) AND behavior",
+          "topics": [
+            {
+              "topic": "dog_development",
+              "species": "dog"
+            }
+          ]
+        }
+      ],
+      "review_status": "candidate_not_reviewed"
+    },
+    {
+      "key": "doi:10.3390/ani16040571",
+      "metadata": {
+        "provider_id": "41751031",
+        "provider_source": "MED",
+        "title": "Nutrition Research in Aging Dogs and Cats: What We Know and What We Need to Do.",
+        "authors": "Cai X, Mao H, Zhu L.",
+        "year": "2026",
+        "doi": "10.3390/ani16040571",
+        "pmid": "41751031",
+        "pmcid": "PMC12937246",
+        "journal": "Animals (Basel)",
+        "is_open_access": "Y",
+        "url": "https://europepmc.org/article/MED/41751031",
+        "license_status": "not_verified",
+        "review_status": "candidate_not_behavioral_evidence"
+      },
+      "retrieval_contexts": [
+        {
+          "file": "europepmc_20261007T084650072390Z_c47b45d62d.json",
+          "provider": "europepmc",
+          "query": "(feline OR cat) AND (aging OR cognitive dysfunction) AND behavior",
+          "topics": [
+            {
+              "topic": "cat_aging",
+              "species": "cat"
+            }
+          ]
+        }
+      ],
+      "review_status": "candidate_not_reviewed"
+    },
+    {
+      "key": "doi:10.3390/ani16040607",
+      "metadata": {
+        "provider_id": "41751066",
+        "provider_source": "MED",
+        "title": "The Influence of Environmental and Genetic Factors and Training Background on the Welfare of Herding Dogs.",
+        "authors": "Pilarczyk B, Pilarczyk R, Bąkowska M, Tomza-Marciniak A, Kwita E, Udała J.",
+        "year": "2026",
+        "doi": "10.3390/ani16040607",
+        "pmid": "41751066",
+        "pmcid": "PMC12937214",
+        "journal": "Animals (Basel)",
+        "is_open_access": "Y",
+        "url": "https://europepmc.org/article/MED/41751066",
+        "license_status": "not_verified",
+        "review_status": "candidate_not_behavioral_evidence"
+      },
+      "retrieval_contexts": [
+        {
+          "file": "europepmc_20261007T084604961174Z_311e1f1300.json",
+          "provider": "europepmc",
+          "query": "(canine OR dog) AND training AND (reinforcement OR aversive) AND welfare",
+          "topics": [
+            {
+              "topic": "dog_learning",
+              "species": "dog"
+            }
+          ]
+        }
+      ],
+      "review_status": "candidate_not_reviewed"
+    },
+    {
+      "key": "doi:10.3390/ani16040664",
+      "metadata": {
+        "provider_id": "41751125",
+        "provider_source": "MED",
+        "title": "What Makes Canine Search and Rescue Successful? Insights into Environmental, Management, and Personality Factors.",
+        "authors": "Silvestri S, Brecchia G, Barbato O, Quattrone A, Valsecchi M, Menchetti L.",
+        "year": "2026",
+        "doi": "10.3390/ani16040664",
+        "pmid": "41751125",
+        "pmcid": "PMC12937267",
+        "journal": "Animals (Basel)",
+        "is_open_access": "Y",
+        "url": "https://europepmc.org/article/MED/41751125",
+        "license_status": "not_verified",
+        "review_status": "candidate_not_behavioral_evidence"
+      },
+      "retrieval_contexts": [
+        {
+          "file": "europepmc_20261007T084603314095Z_94b90c5c81.json",
+          "provider": "europepmc",
+          "query": "(canine OR dog) AND (personality OR temperament) AND (validation OR repeatability)",
+          "topics": [
+            {
+              "topic": "dog_personality",
+              "species": "dog"
+            }
+          ]
+        },
+        {
+          "file": "europepmc_20261007T084616600665Z_c003fb4506.json",
+          "provider": "europepmc",
+          "query": "(canine OR puppy) AND (socialization OR development) AND behavior",
+          "topics": [
+            {
+              "topic": "dog_development",
+              "species": "dog"
+            }
+          ]
+        }
+      ],
+      "review_status": "candidate_not_reviewed"
+    },
+    {
+      "key": "doi:10.3390/ani16060897",
+      "metadata": {
+        "provider_id": "41897874",
+        "provider_source": "MED",
+        "title": "Integrated Canine-Assisted Services and Art Therapy in Prison: Pilot Study of Animal Well-Being Aspects and Its Impact on Inmate Critical Events.",
+        "authors": "Garzillo S, Sacchettino L, Esposito L, Giuliano VO, Panico V, Rusu AS, Ponticiello R, Nese A, Rizzo N, Nese G, Napolitano F, d'Angelo D.",
+        "year": "2026",
+        "doi": "10.3390/ani16060897",
+        "pmid": "41897874",
+        "pmcid": "PMC13023288",
+        "journal": "Animals (Basel)",
+        "is_open_access": "Y",
+        "url": "https://europepmc.org/article/MED/41897874",
+        "license_status": "not_verified",
+        "review_status": "candidate_not_behavioral_evidence"
+      },
+      "retrieval_contexts": [
+        {
+          "file": "europepmc_20261007T084603314095Z_94b90c5c81.json",
+          "provider": "europepmc",
+          "query": "(canine OR dog) AND (personality OR temperament) AND (validation OR repeatability)",
+          "topics": [
+            {
+              "topic": "dog_personality",
+              "species": "dog"
+            }
+          ]
+        }
+      ],
+      "review_status": "candidate_not_reviewed"
+    },
+    {
+      "key": "doi:10.3390/ani16071035",
+      "metadata": {
+        "provider_id": "41976014",
+        "provider_source": "MED",
+        "title": "The Expanding Role of Artificial Intelligence in Companion Animal Care: A Systematic Review.",
+        "authors": "Sabolek I, Jović A.",
+        "year": "2026",
+        "doi": "10.3390/ani16071035",
+        "pmid": "41976014",
+        "pmcid": "PMC13072288",
+        "journal": "Animals (Basel)",
+        "is_open_access": "Y",
+        "url": "https://europepmc.org/article/MED/41976014",
+        "license_status": "not_verified",
+        "review_status": "candidate_not_behavioral_evidence"
+      },
+      "retrieval_contexts": [
+        {
+          "file": "europepmc_20261007T084603314095Z_94b90c5c81.json",
+          "provider": "europepmc",
+          "query": "(canine OR dog) AND (personality OR temperament) AND (validation OR repeatability)",
+          "topics": [
+            {
+              "topic": "dog_personality",
+              "species": "dog"
+            }
+          ]
+        },
+        {
+          "file": "europepmc_20261007T084621338059Z_c97c5ce265.json",
+          "provider": "europepmc",
+          "query": "(feline OR cat) AND (personality OR temperament) AND (validation OR reliability)",
+          "topics": [
+            {
+              "topic": "cat_personality",
+              "species": "cat"
+            }
+          ]
+        },
+        {
+          "file": "europepmc_20261007T084653464856Z_8810944fb2.json",
+          "provider": "europepmc",
+          "query": "(canine OR feline) AND (pose estimation OR video behavior recognition)",
+          "topics": [
+            {
+              "topic": "animal_video",
+              "species": "both"
+            }
+          ]
+        }
+      ],
+      "review_status": "candidate_not_reviewed"
+    },
+    {
+      "key": "doi:10.3390/ani16071117",
+      "metadata": {
+        "provider_id": "41976095",
+        "provider_source": "MED",
+        "title": "Canine Cognitive Dysfunction from the Perspective of Dog Owners: Recognition, Care, and Emotional Challenges.",
+        "authors": "Balatonfüredi V, Kubinyi E.",
+        "year": "2026",
+        "doi": "10.3390/ani16071117",
+        "pmid": "41976095",
+        "pmcid": "PMC13072030",
+        "journal": "Animals (Basel)",
+        "is_open_access": "Y",
+        "url": "https://europepmc.org/article/MED/41976095",
+        "license_status": "not_verified",
+        "review_status": "candidate_not_behavioral_evidence"
+      },
+      "retrieval_contexts": [
+        {
+          "file": "europepmc_20261007T084619896519Z_bf068737c8.json",
+          "provider": "europepmc",
+          "query": "(canine OR dog) AND (aging OR cognitive dysfunction) AND behavior",
+          "topics": [
+            {
+              "topic": "dog_aging",
+              "species": "dog"
+            }
+          ]
+        }
+      ],
+      "review_status": "candidate_not_reviewed"
+    },
+    {
+      "key": "doi:10.3390/ani16111589",
+      "metadata": {
+        "provider_id": "42278024",
+        "provider_source": "MED",
+        "title": "PMTNet: A Part-Centric Missing-Aware Temporal Network for Cat Behavior Recognition in Unconstrained Videos.",
+        "authors": "Tu C, Wu J, Huang Z, Xie J.",
+        "year": "2026",
+        "doi": "10.3390/ani16111589",
+        "pmid": "42278024",
+        "pmcid": "PMC13255710",
+        "journal": "Animals (Basel)",
+        "is_open_access": "Y",
+        "url": "https://europepmc.org/article/MED/42278024",
+        "license_status": "not_verified",
+        "review_status": "candidate_not_behavioral_evidence"
+      },
+      "retrieval_contexts": [
+        {
+          "file": "europepmc_20261007T084653464856Z_8810944fb2.json",
+          "provider": "europepmc",
+          "query": "(canine OR feline) AND (pose estimation OR video behavior recognition)",
+          "topics": [
+            {
+              "topic": "animal_video",
+              "species": "both"
+            }
+          ]
+        }
+      ],
+      "review_status": "candidate_not_reviewed"
+    },
+    {
+      "key": "doi:10.3390/ani16131965",
+      "metadata": {
+        "provider_id": "42450672",
+        "provider_source": "MED",
+        "title": "High Rank, Low Tolerance: Hierarchy-Dependent Reactions of Cohabiting Companion Dogs to Being Separated from Their Owner.",
+        "authors": "Dobos P, Vékony K, Bakos V, Veres B, Lugosi CA, Pongrácz P.",
+        "year": "2026",
+        "doi": "10.3390/ani16131965",
+        "pmid": "42450672",
+        "pmcid": "PMC13359868",
+        "journal": "Animals (Basel)",
+        "is_open_access": "Y",
+        "url": "https://europepmc.org/article/MED/42450672",
+        "license_status": "not_verified",
+        "review_status": "candidate_not_behavioral_evidence"
+      },
+      "retrieval_contexts": [
+        {
+          "file": "europepmc_20261007T084611801551Z_b629963377.json",
+          "provider": "europepmc",
+          "query": "(canine OR dog) AND (separation anxiety OR separation-related behavior)",
+          "topics": [
+            {
+              "topic": "dog_separation",
+              "species": "dog"
+            }
+          ]
+        }
+      ],
+      "review_status": "candidate_not_reviewed"
+    },
+    {
+      "key": "doi:10.3390/ani16131976",
+      "metadata": {
+        "provider_id": "42450683",
+        "provider_source": "MED",
+        "title": "Participation in Breed-Specific Cynological Activities Is Associated with Behavioral Variation in Terrier-Type Dogs: A C-BARQ Study.",
+        "authors": "Bellini V, Stagi G, Gazzano V, Cordon R, Gazzano A, Cecchi F, Curadi MC, Ogi A.",
+        "year": "2026",
+        "doi": "10.3390/ani16131976",
+        "pmid": "42450683",
+        "pmcid": "PMC13359903",
+        "journal": "Animals (Basel)",
+        "is_open_access": "Y",
+        "url": "https://europepmc.org/article/MED/42450683",
+        "license_status": "not_verified",
+        "review_status": "candidate_not_behavioral_evidence"
+      },
+      "retrieval_contexts": [
+        {
+          "file": "europepmc_20261007T084611801551Z_b629963377.json",
+          "provider": "europepmc",
+          "query": "(canine OR dog) AND (separation anxiety OR separation-related behavior)",
+          "topics": [
+            {
+              "topic": "dog_separation",
+              "species": "dog"
+            }
+          ]
+        },
+        {
+          "file": "europepmc_20261007T084618191536Z_3c006bd54d.json",
+          "provider": "europepmc",
+          "query": "(canine OR dog) AND (noise fear OR fearfulness)",
+          "topics": [
+            {
+              "topic": "dog_fear",
+              "species": "dog"
+            }
+          ]
+        }
+      ],
+      "review_status": "candidate_not_reviewed"
+    },
+    {
+      "key": "doi:10.3390/ani16131997",
+      "metadata": {
+        "provider_id": "42450704",
+        "provider_source": "MED",
+        "title": "TP-CanineNet: Temporal Context Contrastive Learning with Pseudo-Label Supervision for Abnormal Behavior Detection of Canine.",
+        "authors": "Guo X, Kong X, Kong C, Feng J, Liu Y.",
+        "year": "2026",
+        "doi": "10.3390/ani16131997",
+        "pmid": "42450704",
+        "pmcid": "PMC13360469",
+        "journal": "Animals (Basel)",
+        "is_open_access": "Y",
+        "url": "https://europepmc.org/article/MED/42450704",
+        "license_status": "not_verified",
+        "review_status": "candidate_not_behavioral_evidence"
+      },
+      "retrieval_contexts": [
+        {
+          "file": "europepmc_20261007T084653464856Z_8810944fb2.json",
+          "provider": "europepmc",
+          "query": "(canine OR feline) AND (pose estimation OR video behavior recognition)",
+          "topics": [
+            {
+              "topic": "animal_video",
+              "species": "both"
+            }
+          ]
+        }
+      ],
+      "review_status": "candidate_not_reviewed"
+    },
+    {
+      "key": "doi:10.3390/ani16142133",
+      "metadata": {
+        "provider_id": "42511012",
+        "provider_source": "MED",
+        "title": "Evaluating a Novel Cat-Assisted Training (CAT) Intervention for Youth with Developmental Disabilities and Their Family Cat.",
+        "authors": "Frank DH, Darling S, Moore K, Vitale KR, MacDonald M, Udell MAR.",
+        "year": "2026",
+        "doi": "10.3390/ani16142133",
+        "pmid": "42511012",
+        "pmcid": "PMC13404458",
+        "journal": "Animals (Basel)",
+        "is_open_access": "Y",
+        "url": "https://europepmc.org/article/MED/42511012",
+        "license_status": "not_verified",
+        "review_status": "candidate_not_behavioral_evidence"
+      },
+      "retrieval_contexts": [
+        {
+          "file": "europepmc_20261007T084629547157Z_0bb5f07d7c.json",
+          "provider": "europepmc",
+          "query": "(feline OR cat) AND (intercat OR social behavior) AND household",
+          "topics": [
+            {
+              "topic": "cat_relations",
+              "species": "cat"
+            }
+          ]
+        }
+      ],
+      "review_status": "candidate_not_reviewed"
+    },
+    {
+      "key": "doi:10.3390/ani16142168",
+      "metadata": {
+        "provider_id": "42511047",
+        "provider_source": "MED",
+        "title": "Caring About Dogs, Filming Dogs, Watching Dogs: How Far Does the Human-Dog Relationship Travel Through Cultural Production? A Case Study of &lt;i&gt;Good Boy&lt;/i&gt; (2025).",
+        "authors": "Rebout N, Besegher A, Hoummady S.",
+        "year": "2026",
+        "doi": "10.3390/ani16142168",
+        "pmid": "42511047",
+        "pmcid": "PMC13405868",
+        "journal": "Animals (Basel)",
+        "is_open_access": "Y",
+        "url": "https://europepmc.org/article/MED/42511047",
+        "license_status": "not_verified",
+        "review_status": "candidate_not_behavioral_evidence"
+      },
+      "retrieval_contexts": [
+        {
+          "file": "europepmc_20261007T084611801551Z_b629963377.json",
+          "provider": "europepmc",
+          "query": "(canine OR dog) AND (separation anxiety OR separation-related behavior)",
+          "topics": [
+            {
+              "topic": "dog_separation",
+              "species": "dog"
+            }
+          ]
+        },
+        {
+          "file": "europepmc_20261007T084613512358Z_7e1bd73119.json",
+          "provider": "europepmc",
+          "query": "(canine OR dog) AND communication AND (gaze OR posture OR vocalization)",
+          "topics": [
+            {
+              "topic": "dog_communication",
+              "species": "dog"
+            }
+          ]
+        }
+      ],
+      "review_status": "candidate_not_reviewed"
+    },
+    {
+      "key": "doi:10.3390/ani16142182",
+      "metadata": {
+        "provider_id": "42511061",
+        "provider_source": "MED",
+        "title": "Development and Validation of an Observational Behavior Tool (LIFE&lt;sup&gt;™&lt;/sup&gt;) for Assessing Canine Coping in Shelter Environments.",
+        "authors": "Herron ME, Martin A, Dowling-Guyer S.",
+        "year": "2026",
+        "doi": "10.3390/ani16142182",
+        "pmid": "42511061",
+        "pmcid": "PMC13405833",
+        "journal": "Animals (Basel)",
+        "is_open_access": "Y",
+        "url": "https://europepmc.org/article/MED/42511061",
+        "license_status": "not_verified",
+        "review_status": "candidate_not_behavioral_evidence"
+      },
+      "retrieval_contexts": [
+        {
+          "file": "europepmc_20261007T084603314095Z_94b90c5c81.json",
+          "provider": "europepmc",
+          "query": "(canine OR dog) AND (personality OR temperament) AND (validation OR repeatability)",
+          "topics": [
+            {
+              "topic": "dog_personality",
+              "species": "dog"
+            }
+          ]
+        }
+      ],
+      "review_status": "candidate_not_reviewed"
+    },
+    {
+      "key": "doi:10.3390/ani16142183",
+      "metadata": {
+        "provider_id": "42511062",
+        "provider_source": "MED",
+        "title": "Stress in Free-Roaming and Shelter-Housed Dogs: A Review of Neurobiological, Physiological and Behavioral Mechanisms Relevant to Welfare Assessment.",
+        "authors": "Rotaru G, Hrițcu TD, Mălăncuș RN, Hrițcu LD, Soponaru C, Nechifor F, Boghian V, Cherșunaru AA, Munteanu A, Spataru MC.",
+        "year": "2026",
+        "doi": "10.3390/ani16142183",
+        "pmid": "42511062",
+        "pmcid": "PMC13405600",
+        "journal": "Animals (Basel)",
+        "is_open_access": "Y",
+        "url": "https://europepmc.org/article/MED/42511062",
+        "license_status": "not_verified",
+        "review_status": "candidate_not_behavioral_evidence"
+      },
+      "retrieval_contexts": [
+        {
+          "file": "europepmc_20261007T084618191536Z_3c006bd54d.json",
+          "provider": "europepmc",
+          "query": "(canine OR dog) AND (noise fear OR fearfulness)",
+          "topics": [
+            {
+              "topic": "dog_fear",
+              "species": "dog"
+            }
+          ]
+        }
+      ],
+      "review_status": "candidate_not_reviewed"
+    },
+    {
+      "key": "doi:10.3390/ani16162473",
+      "metadata": {
+        "provider_id": "42651878",
+        "provider_source": "MED",
+        "title": "How Do Women and Domestic Animals Share Parturition Pain? A Systematic Review.",
+        "authors": "Rota A, Ottino C, Bertero A.",
+        "year": "2026",
+        "doi": "10.3390/ani16162473",
+        "pmid": "42651878",
+        "pmcid": "PMC13508949",
+        "journal": "Animals (Basel)",
+        "is_open_access": "Y",
+        "url": "https://europepmc.org/article/MED/42651878",
+        "license_status": "not_verified",
+        "review_status": "candidate_not_behavioral_evidence"
+      },
+      "retrieval_contexts": [
+        {
+          "file": "europepmc_20261007T084644412462Z_14125e7308.json",
+          "provider": "europepmc",
+          "query": "(feline OR cat) AND pain AND (grimace OR behavior)",
+          "topics": [
+            {
+              "topic": "cat_pain",
+              "species": "cat"
+            }
+          ]
+        }
+      ],
+      "review_status": "candidate_not_reviewed"
+    },
+    {
+      "key": "doi:10.3390/ani16162496",
+      "metadata": {
+        "provider_id": "42651901",
+        "provider_source": "MED",
+        "title": "Assessing Animal Welfare and Service Needs in a Community-Based Program.",
+        "authors": "Patterson-Kane E.",
+        "year": "2026",
+        "doi": "10.3390/ani16162496",
+        "pmid": "42651901",
+        "pmcid": "PMC13508974",
+        "journal": "Animals (Basel)",
+        "is_open_access": "Y",
+        "url": "https://europepmc.org/article/MED/42651901",
+        "license_status": "not_verified",
+        "review_status": "candidate_not_behavioral_evidence"
+      },
+      "retrieval_contexts": [
+        {
+          "file": "europepmc_20261007T084623472242Z_ce98411d8b.json",
+          "provider": "europepmc",
+          "query": "(feline OR cat) AND (environmental needs OR enrichment) AND welfare",
+          "topics": [
+            {
+              "topic": "cat_environment",
+              "species": "cat"
+            }
+          ]
+        }
+      ],
+      "review_status": "candidate_not_reviewed"
+    },
+    {
+      "key": "doi:10.3390/ani16162557",
+      "metadata": {
+        "provider_id": "42651962",
+        "provider_source": "MED",
+        "title": "Preparing Therapy Dogs for Animal-Assisted Services: Governance, Welfare-Centred Preparation, and a Lifecycle Research Agenda Across Selected European and United States Frameworks.",
+        "authors": "Shajid Pyari M, Guo K, Kargas N.",
+        "year": "2026",
+        "doi": "10.3390/ani16162557",
+        "pmid": "42651962",
+        "pmcid": "PMC13508879",
+        "journal": "Animals (Basel)",
+        "is_open_access": "Y",
+        "url": "https://europepmc.org/article/MED/42651962",
+        "license_status": "not_verified",
+        "review_status": "candidate_not_behavioral_evidence"
+      },
+      "retrieval_contexts": [
+        {
+          "file": "europepmc_20261007T084603314095Z_94b90c5c81.json",
+          "provider": "europepmc",
+          "query": "(canine OR dog) AND (personality OR temperament) AND (validation OR repeatability)",
+          "topics": [
+            {
+              "topic": "dog_personality",
+              "species": "dog"
+            }
+          ]
+        },
+        {
+          "file": "europepmc_20261007T084604961174Z_311e1f1300.json",
+          "provider": "europepmc",
+          "query": "(canine OR dog) AND training AND (reinforcement OR aversive) AND welfare",
+          "topics": [
+            {
+              "topic": "dog_learning",
+              "species": "dog"
+            }
+          ]
+        },
+        {
+          "file": "europepmc_20261007T084615063501Z_f3ec26765d.json",
+          "provider": "europepmc",
+          "query": "(canine OR dog) AND pain AND behavior AND assessment",
+          "topics": [
+            {
+              "topic": "dog_pain",
+              "species": "dog"
+            }
+          ]
+        }
+      ],
+      "review_status": "candidate_not_reviewed"
+    },
+    {
+      "key": "doi:10.3390/ani16162578",
+      "metadata": {
+        "provider_id": "42651983",
+        "provider_source": "MED",
+        "title": "Artificial Intelligence-Based Decoding of Animal Micro-Expressions: A Review of Methodological Advances and Translational Applications.",
+        "authors": "Su F, Wang Y, Li X, Wei Y, Tian Y.",
+        "year": "2026",
+        "doi": "10.3390/ani16162578",
+        "pmid": "42651983",
+        "pmcid": "PMC13508858",
+        "journal": "Animals (Basel)",
+        "is_open_access": "Y",
+        "url": "https://europepmc.org/article/MED/42651983",
+        "license_status": "not_verified",
+        "review_status": "candidate_not_behavioral_evidence"
+      },
+      "retrieval_contexts": [
+        {
+          "file": "europepmc_20261007T084653464856Z_8810944fb2.json",
+          "provider": "europepmc",
+          "query": "(canine OR feline) AND (pose estimation OR video behavior recognition)",
+          "topics": [
+            {
+              "topic": "animal_video",
+              "species": "both"
+            }
+          ]
+        }
+      ],
+      "review_status": "candidate_not_reviewed"
+    },
+    {
+      "key": "doi:10.3390/ani16172659",
+      "metadata": {
+        "provider_id": "42738448",
+        "provider_source": "MED",
+        "title": "Investigation of Serum Neurofilament Light Chain as a Surrogate for Cerebrospinal Fluid Neurofilament Light Chain in Canine Cognitive Dysfunction Syndrome.",
+        "authors": "Wu CC, Huang WH, Chang YP.",
+        "year": "2026",
+        "doi": "10.3390/ani16172659",
+        "pmid": "42738448",
+        "pmcid": "PMC13564329",
+        "journal": "Animals (Basel)",
+        "is_open_access": "Y",
+        "url": "https://europepmc.org/article/MED/42738448",
+        "license_status": "not_verified",
+        "review_status": "candidate_not_behavioral_evidence"
+      },
+      "retrieval_contexts": [
+        {
+          "file": "europepmc_20261007T084619896519Z_bf068737c8.json",
+          "provider": "europepmc",
+          "query": "(canine OR dog) AND (aging OR cognitive dysfunction) AND behavior",
+          "topics": [
+            {
+              "topic": "dog_aging",
+              "species": "dog"
+            }
+          ]
+        }
+      ],
+      "review_status": "candidate_not_reviewed"
+    },
+    {
+      "key": "doi:10.3390/ani16172721",
+      "metadata": {
+        "provider_id": "42738509",
+        "provider_source": "MED",
+        "title": "Gaps and Controversies in Feline Food Palatability.",
+        "authors": "van der Vyver Y, Paul A, Blecker C, Danthine S.",
+        "year": "2026",
+        "doi": "10.3390/ani16172721",
+        "pmid": "42738509",
+        "pmcid": "PMC13565187",
+        "journal": "Animals (Basel)",
+        "is_open_access": "Y",
+        "url": "https://europepmc.org/article/MED/42738509",
+        "license_status": "not_verified",
+        "review_status": "candidate_not_behavioral_evidence"
+      },
+      "retrieval_contexts": [
+        {
+          "file": "europepmc_20261007T084621338059Z_c97c5ce265.json",
+          "provider": "europepmc",
+          "query": "(feline OR cat) AND (personality OR temperament) AND (validation OR reliability)",
+          "topics": [
+            {
+              "topic": "cat_personality",
+              "species": "cat"
+            }
+          ]
+        }
+      ],
+      "review_status": "candidate_not_reviewed"
+    },
+    {
+      "key": "doi:10.3390/ani16172737",
+      "metadata": {
+        "provider_id": "42738524",
+        "provider_source": "MED",
+        "title": "Concurrent Multidomain Cognitive Assessment and Serum BDNF Level in Aged Dogs: Comparison Between Normal Cognition and Mild Cognitive Impairment.",
+        "authors": "Tanongpitchayes K, Chuasakhonwilai A, Warrit K, Chaisri W, Warin R, Pipanmekaporn T, Suriyasathaporn W, Suriyasathaporn W.",
+        "year": "2026",
+        "doi": "10.3390/ani16172737",
+        "pmid": "42738524",
+        "pmcid": "PMC13565028",
+        "journal": "Animals (Basel)",
+        "is_open_access": "Y",
+        "url": "https://europepmc.org/article/MED/42738524",
+        "license_status": "not_verified",
+        "review_status": "candidate_not_behavioral_evidence"
+      },
+      "retrieval_contexts": [
+        {
+          "file": "europepmc_20261007T084619896519Z_bf068737c8.json",
+          "provider": "europepmc",
+          "query": "(canine OR dog) AND (aging OR cognitive dysfunction) AND behavior",
+          "topics": [
+            {
+              "topic": "dog_aging",
+              "species": "dog"
+            }
+          ]
+        },
+        {
+          "file": "europepmc_20261007T084651878684Z_9c87167aac.json",
+          "provider": "europepmc",
+          "query": "(canine OR feline) AND (owner report OR questionnaire) AND (observer OR bias OR reliability)",
+          "topics": [
+            {
+              "topic": "observer_bias",
+              "species": "both"
+            }
+          ]
+        }
+      ],
+      "review_status": "candidate_not_reviewed"
+    },
+    {
+      "key": "doi:10.3390/ani16172744",
+      "metadata": {
+        "provider_id": "42738532",
+        "provider_source": "MED",
+        "title": "Fecal Microbiota Transplantation in Dogs and Cats: Evidence for Gastrointestinal and Emerging Extra-Intestinal Applications.",
+        "authors": "Jin J, Xu C, Bao W.",
+        "year": "2026",
+        "doi": "10.3390/ani16172744",
+        "pmid": "42738532",
+        "pmcid": "PMC13565557",
+        "journal": "Animals (Basel)",
+        "is_open_access": "Y",
+        "url": "https://europepmc.org/article/MED/42738532",
+        "license_status": "not_verified",
+        "review_status": "candidate_not_behavioral_evidence"
+      },
+      "retrieval_contexts": [
+        {
+          "file": "europepmc_20261007T084651878684Z_9c87167aac.json",
+          "provider": "europepmc",
+          "query": "(canine OR feline) AND (owner report OR questionnaire) AND (observer OR bias OR reliability)",
+          "topics": [
+            {
+              "topic": "observer_bias",
+              "species": "both"
+            }
+          ]
+        }
+      ],
+      "review_status": "candidate_not_reviewed"
+    },
+    {
+      "key": "doi:10.3390/ani16172757",
+      "metadata": {
+        "provider_id": "42738545",
+        "provider_source": "MED",
+        "title": "Dog Breeds for the Future: Theoretical Assessment of Strategies for Enhancing the Behavioural Reliability of Existing Dog Breeds, or Developing New Ideal Urban Companion Dogs.",
+        "authors": "Pongrácz P, Dobos P.",
+        "year": "2026",
+        "doi": "10.3390/ani16172757",
+        "pmid": "42738545",
+        "pmcid": "PMC13564546",
+        "journal": "Animals (Basel)",
+        "is_open_access": "Y",
+        "url": "https://europepmc.org/article/MED/42738545",
+        "license_status": "not_verified",
+        "review_status": "candidate_not_behavioral_evidence"
+      },
+      "retrieval_contexts": [
+        {
+          "file": "europepmc_20261007T084611801551Z_b629963377.json",
+          "provider": "europepmc",
+          "query": "(canine OR dog) AND (separation anxiety OR separation-related behavior)",
+          "topics": [
+            {
+              "topic": "dog_separation",
+              "species": "dog"
+            }
+          ]
+        },
+        {
+          "file": "europepmc_20261007T084616600665Z_c003fb4506.json",
+          "provider": "europepmc",
+          "query": "(canine OR puppy) AND (socialization OR development) AND behavior",
+          "topics": [
+            {
+              "topic": "dog_development",
+              "species": "dog"
+            }
+          ]
+        },
+        {
+          "file": "europepmc_20261007T084618191536Z_3c006bd54d.json",
+          "provider": "europepmc",
+          "query": "(canine OR dog) AND (noise fear OR fearfulness)",
+          "topics": [
+            {
+              "topic": "dog_fear",
+              "species": "dog"
+            }
+          ]
+        }
+      ],
+      "review_status": "candidate_not_reviewed"
+    },
+    {
+      "key": "doi:10.3390/ani16182820",
+      "metadata": {
+        "provider_id": "42791675",
+        "provider_source": "MED",
+        "title": "Welfare Under Transient Pressure: Rethinking Behavioral Assessments and Stress Mitigation for Shelter Dogs.",
+        "authors": "Breithaupt A, Jacobs J.",
+        "year": "2026",
+        "doi": "10.3390/ani16182820",
+        "pmid": "42791675",
+        "pmcid": "PMC13603411",
+        "journal": "Animals (Basel)",
+        "is_open_access": "Y",
+        "url": "https://europepmc.org/article/MED/42791675",
+        "license_status": "not_verified",
+        "review_status": "candidate_not_behavioral_evidence"
+      },
+      "retrieval_contexts": [
+        {
+          "file": "europepmc_20261007T084603314095Z_94b90c5c81.json",
+          "provider": "europepmc",
+          "query": "(canine OR dog) AND (personality OR temperament) AND (validation OR repeatability)",
+          "topics": [
+            {
+              "topic": "dog_personality",
+              "species": "dog"
+            }
+          ]
+        },
+        {
+          "file": "europepmc_20261007T084604961174Z_311e1f1300.json",
+          "provider": "europepmc",
+          "query": "(canine OR dog) AND training AND (reinforcement OR aversive) AND welfare",
+          "topics": [
+            {
+              "topic": "dog_learning",
+              "species": "dog"
+            }
+          ]
+        },
+        {
+          "file": "europepmc_20261007T084611801551Z_b629963377.json",
+          "provider": "europepmc",
+          "query": "(canine OR dog) AND (separation anxiety OR separation-related behavior)",
+          "topics": [
+            {
+              "topic": "dog_separation",
+              "species": "dog"
+            }
+          ]
+        },
+        {
+          "file": "europepmc_20261007T084618191536Z_3c006bd54d.json",
+          "provider": "europepmc",
+          "query": "(canine OR dog) AND (noise fear OR fearfulness)",
+          "topics": [
+            {
+              "topic": "dog_fear",
+              "species": "dog"
+            }
+          ]
+        }
+      ],
+      "review_status": "candidate_not_reviewed"
+    },
+    {
+      "key": "doi:10.3390/ani16182961",
+      "metadata": {
+        "provider_id": "42791818",
+        "provider_source": "MED",
+        "title": "Pet Nutrition and the Unmeasured Owner Outcome: A Bidirectional Framework for Relational Value in Human-Animal Relationships.",
+        "authors": "Wang H, Wang W, Chen Q, Ma M, Zhang Y, Zhu S, Wang R, Zhu Y, Xiong W.",
+        "year": "2026",
+        "doi": "10.3390/ani16182961",
+        "pmid": "42791818",
+        "pmcid": "PMC13603178",
+        "journal": "Animals (Basel)",
+        "is_open_access": "Y",
+        "url": "https://europepmc.org/article/MED/42791818",
+        "license_status": "not_verified",
+        "review_status": "candidate_not_behavioral_evidence"
+      },
+      "retrieval_contexts": [
+        {
+          "file": "europepmc_20261007T084611801551Z_b629963377.json",
+          "provider": "europepmc",
+          "query": "(canine OR dog) AND (separation anxiety OR separation-related behavior)",
+          "topics": [
+            {
+              "topic": "dog_separation",
+              "species": "dog"
+            }
+          ]
+        },
+        {
+          "file": "europepmc_20261007T084615063501Z_f3ec26765d.json",
+          "provider": "europepmc",
+          "query": "(canine OR dog) AND pain AND behavior AND assessment",
+          "topics": [
+            {
+              "topic": "dog_pain",
+              "species": "dog"
+            }
+          ]
+        },
+        {
+          "file": "europepmc_20261007T084618191536Z_3c006bd54d.json",
+          "provider": "europepmc",
+          "query": "(canine OR dog) AND (noise fear OR fearfulness)",
+          "topics": [
+            {
+              "topic": "dog_fear",
+              "species": "dog"
+            }
+          ]
+        },
+        {
+          "file": "europepmc_20261007T084619896519Z_bf068737c8.json",
+          "provider": "europepmc",
+          "query": "(canine OR dog) AND (aging OR cognitive dysfunction) AND behavior",
+          "topics": [
+            {
+              "topic": "dog_aging",
+              "species": "dog"
+            }
+          ]
+        },
+        {
+          "file": "europepmc_20261007T084651878684Z_9c87167aac.json",
+          "provider": "europepmc",
+          "query": "(canine OR feline) AND (owner report OR questionnaire) AND (observer OR bias OR reliability)",
+          "topics": [
+            {
+              "topic": "observer_bias",
+              "species": "both"
+            }
+          ]
+        }
+      ],
+      "review_status": "candidate_not_reviewed"
+    },
+    {
+      "key": "doi:10.3390/life16010155",
+      "metadata": {
+        "provider_id": "41598309",
+        "provider_source": "MED",
+        "title": "Evaluation of Factors Impacting Shelter Cats' Personalities.",
+        "authors": "Borzan M, Digonnet C, Pall E, Paștiu AI, Tabaran A.",
+        "year": "2026",
+        "doi": "10.3390/life16010155",
+        "pmid": "41598309",
+        "pmcid": "PMC12842891",
+        "journal": "Life (Basel)",
+        "is_open_access": "Y",
+        "url": "https://europepmc.org/article/MED/41598309",
+        "license_status": "not_verified",
+        "review_status": "candidate_not_behavioral_evidence"
+      },
+      "retrieval_contexts": [
+        {
+          "file": "europepmc_20261007T084621338059Z_c97c5ce265.json",
+          "provider": "europepmc",
+          "query": "(feline OR cat) AND (personality OR temperament) AND (validation OR reliability)",
+          "topics": [
+            {
+              "topic": "cat_personality",
+              "species": "cat"
+            }
+          ]
+        }
+      ],
+      "review_status": "candidate_not_reviewed"
+    },
+    {
+      "key": "doi:10.3390/life16091575",
+      "metadata": {
+        "provider_id": "42795439",
+        "provider_source": "MED",
+        "title": "Feasibility of a SOFA-Derived Organ Dysfunction Score in Cats with Systemic Inflammatory Response Syndrome.",
+        "authors": "Codea AR, Biriș A, Niculae M, Hașaș AD, Neagu D, Popovici C, Mircean M.",
+        "year": "2026",
+        "doi": "10.3390/life16091575",
+        "pmid": "42795439",
+        "pmcid": "PMC13608349",
+        "journal": "Life (Basel)",
+        "is_open_access": "Y",
+        "url": "https://europepmc.org/article/MED/42795439",
+        "license_status": "not_verified",
+        "review_status": "candidate_not_behavioral_evidence"
+      },
+      "retrieval_contexts": [
+        {
+          "file": "europepmc_20261007T084650072390Z_c47b45d62d.json",
+          "provider": "europepmc",
+          "query": "(feline OR cat) AND (aging OR cognitive dysfunction) AND behavior",
+          "topics": [
+            {
+              "topic": "cat_aging",
+              "species": "cat"
+            }
+          ]
+        }
+      ],
+      "review_status": "candidate_not_reviewed"
+    },
+    {
+      "key": "doi:10.3390/metabo16050318",
+      "metadata": {
+        "provider_id": "42188027",
+        "provider_source": "MED",
+        "title": "Anatomical Atlas of Kinase Responsiveness to Weight Gain: Adipose Depot Reprogramming in Diet-Induced Adiposity.",
+        "authors": "Lee WH, Kipp ZA, Pauss SN, Martinez GJ, Xu M, Hinds TD.",
+        "year": "2026",
+        "doi": "10.3390/metabo16050318",
+        "pmid": "42188027",
+        "pmcid": "PMC13208352",
+        "journal": "Metabolites",
+        "is_open_access": "Y",
+        "url": "https://europepmc.org/article/MED/42188027",
+        "license_status": "not_verified",
+        "review_status": "candidate_not_behavioral_evidence"
+      },
+      "retrieval_contexts": [
+        {
+          "file": "europepmc_20261007T084646349664Z_b4659a5090.json",
+          "provider": "europepmc",
+          "query": "(feline OR cat) AND (communication OR vocalization OR meow)",
+          "topics": [
+            {
+              "topic": "cat_communication",
+              "species": "cat"
+            }
+          ]
+        }
+      ],
+      "review_status": "candidate_not_reviewed"
+    },
+    {
+      "key": "doi:10.3390/microorganisms14081642",
+      "metadata": {
+        "provider_id": "42654988",
+        "provider_source": "MED",
+        "title": "Molecular Epidemiology and Genetic Characterization of Feline Panleukopenia Virus among Clinically Suspected Domestic Cats in Tamil Nadu, India.",
+        "authors": "Paramasivam R, Vijayalakshmi R, Saminathan M, Parthiban M, Vinitha V, Chandrasekar M, Naveenkumar V, Nair A, Nabiya F, Saravanan S, Sekar D, Raj GD.",
+        "year": "2026",
+        "doi": "10.3390/microorganisms14081642",
+        "pmid": "42654988",
+        "pmcid": "PMC13515424",
+        "journal": "Microorganisms",
+        "is_open_access": "Y",
+        "url": "https://europepmc.org/article/MED/42654988",
+        "license_status": "not_verified",
+        "review_status": "candidate_not_behavioral_evidence"
+      },
+      "retrieval_contexts": [
+        {
+          "file": "europepmc_20261007T084653464856Z_8810944fb2.json",
+          "provider": "europepmc",
+          "query": "(canine OR feline) AND (pose estimation OR video behavior recognition)",
+          "topics": [
+            {
+              "topic": "animal_video",
+              "species": "both"
+            }
+          ]
+        }
+      ],
+      "review_status": "candidate_not_reviewed"
+    },
+    {
+      "key": "doi:10.3390/pathogens15050499",
+      "metadata": {
+        "provider_id": "42198625",
+        "provider_source": "MED",
+        "title": "Epidemiological and Clinical Insights from 68 Veterinarian-Reported Cases of Feline Infectious Peritonitis During the Documented FIP Epizootic in Cyprus.",
+        "authors": "Epaminondas D, Mazeri S, Lyraki M, Tait-Burkard C, Gunn-Moore D, Loukaidi S, Georgiadi EE, Loizides S, Demetriou D, Polizopoulou Z, Attipa C, Filippitzi ME.",
+        "year": "2026",
+        "doi": "10.3390/pathogens15050499",
+        "pmid": "42198625",
+        "pmcid": "PMC13209701",
+        "journal": "Pathogens",
+        "is_open_access": "Y",
+        "url": "https://europepmc.org/article/MED/42198625",
+        "license_status": "not_verified",
+        "review_status": "candidate_not_behavioral_evidence"
+      },
+      "retrieval_contexts": [
+        {
+          "file": "europepmc_20261007T084631431094Z_9fea29617e.json",
+          "provider": "europepmc",
+          "query": "(feline OR cat) AND (house soiling OR litter box OR urine marking)",
+          "topics": [
+            {
+              "topic": "cat_elimination",
+              "species": "cat"
+            }
+          ]
+        }
+      ],
+      "review_status": "candidate_not_reviewed"
+    },
+    {
+      "key": "doi:10.3390/pathogens15070673",
+      "metadata": {
+        "provider_id": "42515000",
+        "provider_source": "MED",
+        "title": "Pathogens Associated with Domestic Cats (&lt;i&gt;Felis catus&lt;/i&gt;), Their Public Health Impact on Children, and Implications of Urban Management.",
+        "authors": "Yosef R.",
+        "year": "2026",
+        "doi": "10.3390/pathogens15070673",
+        "pmid": "42515000",
+        "pmcid": "PMC13414506",
+        "journal": "Pathogens",
+        "is_open_access": "Y",
+        "url": "https://europepmc.org/article/MED/42515000",
+        "license_status": "not_verified",
+        "review_status": "candidate_not_behavioral_evidence"
+      },
+      "retrieval_contexts": [
+        {
+          "file": "europepmc_20261007T084629547157Z_0bb5f07d7c.json",
+          "provider": "europepmc",
+          "query": "(feline OR cat) AND (intercat OR social behavior) AND household",
+          "topics": [
+            {
+              "topic": "cat_relations",
+              "species": "cat"
+            }
+          ]
+        },
+        {
+          "file": "europepmc_20261007T084648223546Z_2d73d9724a.json",
+          "provider": "europepmc",
+          "query": "(feline OR cat) AND (play OR predatory behavior) AND welfare",
+          "topics": [
+            {
+              "topic": "cat_play",
+              "species": "cat"
+            }
+          ]
+        }
+      ],
+      "review_status": "candidate_not_reviewed"
+    },
+    {
+      "key": "doi:10.3390/s26134015",
+      "metadata": {
+        "provider_id": "42451259",
+        "provider_source": "MED",
+        "title": "Precision Livestock Farming and Biomedical Engineering: Assessing Feed Quality, Animal Health, and Behavior Using Machine Learning for Sensor Data.",
+        "authors": "Kiktev N, Hradoboiev D, Pravilov M, Antypov I, Meish Y, Stroianovska L, Kielbasa P, Hutsol T.",
+        "year": "2026",
+        "doi": "10.3390/s26134015",
+        "pmid": "42451259",
+        "pmcid": "PMC13364016",
+        "journal": "Sensors (Basel)",
+        "is_open_access": "Y",
+        "url": "https://europepmc.org/article/MED/42451259",
+        "license_status": "not_verified",
+        "review_status": "candidate_not_behavioral_evidence"
+      },
+      "retrieval_contexts": [
+        {
+          "file": "europepmc_20261007T084653464856Z_8810944fb2.json",
+          "provider": "europepmc",
+          "query": "(canine OR feline) AND (pose estimation OR video behavior recognition)",
+          "topics": [
+            {
+              "topic": "animal_video",
+              "species": "both"
+            }
+          ]
+        }
+      ],
+      "review_status": "candidate_not_reviewed"
+    },
+    {
+      "key": "doi:10.3390/tropicalmed11080232",
+      "metadata": {
+        "provider_id": "42646809",
+        "provider_source": "MED",
+        "title": "One Health Prioritization of Rabies Risk in the Republic of Guinea: Integration of Human Knowledge, Canine Immunity, and Spatial Analysis.",
+        "authors": "Kante N, Traore AK, Kaba L, Ouédraogo N, Barro N.",
+        "year": "2026",
+        "doi": "10.3390/tropicalmed11080232",
+        "pmid": "42646809",
+        "pmcid": "PMC13517567",
+        "journal": "Trop Med Infect Dis",
+        "is_open_access": "Y",
+        "url": "https://europepmc.org/article/MED/42646809",
+        "license_status": "not_verified",
+        "review_status": "candidate_not_behavioral_evidence"
+      },
+      "retrieval_contexts": [
+        {
+          "file": "europepmc_20261007T084615063501Z_f3ec26765d.json",
+          "provider": "europepmc",
+          "query": "(canine OR dog) AND pain AND behavior AND assessment",
+          "topics": [
+            {
+              "topic": "dog_pain",
+              "species": "dog"
+            }
+          ]
+        }
+      ],
+      "review_status": "candidate_not_reviewed"
+    },
+    {
+      "key": "doi:10.3390/vetsci13030234",
+      "metadata": {
+        "provider_id": "41893650",
+        "provider_source": "MED",
+        "title": "Retrospective Analysis of Compulsive-like Long-Standing Unacceptable Urination in Cats.",
+        "authors": "Uccheddu S, Pirrone F.",
+        "year": "2026",
+        "doi": "10.3390/vetsci13030234",
+        "pmid": "41893650",
+        "pmcid": "PMC13030811",
+        "journal": "Vet Sci",
+        "is_open_access": "Y",
+        "url": "https://europepmc.org/article/MED/41893650",
+        "license_status": "not_verified",
+        "review_status": "candidate_not_behavioral_evidence"
+      },
+      "retrieval_contexts": [
+        {
+          "file": "europepmc_20261007T084631431094Z_9fea29617e.json",
+          "provider": "europepmc",
+          "query": "(feline OR cat) AND (house soiling OR litter box OR urine marking)",
+          "topics": [
+            {
+              "topic": "cat_elimination",
+              "species": "cat"
+            }
+          ]
+        }
+      ],
+      "review_status": "candidate_not_reviewed"
+    },
+    {
+      "key": "doi:10.3390/vetsci13050428",
+      "metadata": {
+        "provider_id": "42188898",
+        "provider_source": "MED",
+        "title": "Behavioral Outcomes Associated with Hormonal Sterilization in a Questionnaire-Based Study of Cats.",
+        "authors": "Velkovska M, Pipan MZ, Bolko I, Pavlin D.",
+        "year": "2026",
+        "doi": "10.3390/vetsci13050428",
+        "pmid": "42188898",
+        "pmcid": "PMC13211747",
+        "journal": "Vet Sci",
+        "is_open_access": "Y",
+        "url": "https://europepmc.org/article/MED/42188898",
+        "license_status": "not_verified",
+        "review_status": "candidate_not_behavioral_evidence"
+      },
+      "retrieval_contexts": [
+        {
+          "file": "europepmc_20261007T084629547157Z_0bb5f07d7c.json",
+          "provider": "europepmc",
+          "query": "(feline OR cat) AND (intercat OR social behavior) AND household",
+          "topics": [
+            {
+              "topic": "cat_relations",
+              "species": "cat"
+            }
+          ]
+        }
+      ],
+      "review_status": "candidate_not_reviewed"
+    },
+    {
+      "key": "doi:10.3390/vetsci13060519",
+      "metadata": {
+        "provider_id": "42357717",
+        "provider_source": "MED",
+        "title": "Acoustic Analysis of Vocalizations in Malinois Dogs: Context-Associated Variation in Fundamental Frequency, Harmonic-to-Noise Ratio, and Formants.",
+        "authors": "Li B, Xie L, Song M, Zhai H, Sun N, Meng X.",
+        "year": "2026",
+        "doi": "10.3390/vetsci13060519",
+        "pmid": "42357717",
+        "pmcid": null,
+        "journal": "Vet Sci",
+        "is_open_access": "N",
+        "url": "https://europepmc.org/article/MED/42357717",
+        "license_status": "not_verified",
+        "review_status": "candidate_not_behavioral_evidence"
+      },
+      "retrieval_contexts": [
+        {
+          "file": "europepmc_20261007T084613512358Z_7e1bd73119.json",
+          "provider": "europepmc",
+          "query": "(canine OR dog) AND communication AND (gaze OR posture OR vocalization)",
+          "topics": [
+            {
+              "topic": "dog_communication",
+              "species": "dog"
+            }
+          ]
+        }
+      ],
+      "review_status": "candidate_not_reviewed"
+    },
+    {
+      "key": "doi:10.3390/vetsci13060581",
+      "metadata": {
+        "provider_id": "42357779",
+        "provider_source": "MED",
+        "title": "Assessing Cat Welfare: A Literature Review on Behavioural, Physiological and Health Parameters with a Focus on Animal-Assisted Services (AAS).",
+        "authors": "Russo G, Borrelli C, Overall KL, Mariti C.",
+        "year": "2026",
+        "doi": "10.3390/vetsci13060581",
+        "pmid": "42357779",
+        "pmcid": "PMC13307602",
+        "journal": "Vet Sci",
+        "is_open_access": "Y",
+        "url": "https://europepmc.org/article/MED/42357779",
+        "license_status": "not_verified",
+        "review_status": "candidate_not_behavioral_evidence"
+      },
+      "retrieval_contexts": [
+        {
+          "file": "europepmc_20261007T084621338059Z_c97c5ce265.json",
+          "provider": "europepmc",
+          "query": "(feline OR cat) AND (personality OR temperament) AND (validation OR reliability)",
+          "topics": [
+            {
+              "topic": "cat_personality",
+              "species": "cat"
+            }
+          ]
+        },
+        {
+          "file": "europepmc_20261007T084623472242Z_ce98411d8b.json",
+          "provider": "europepmc",
+          "query": "(feline OR cat) AND (environmental needs OR enrichment) AND welfare",
+          "topics": [
+            {
+              "topic": "cat_environment",
+              "species": "cat"
+            }
+          ]
+        },
+        {
+          "file": "europepmc_20261007T084644412462Z_14125e7308.json",
+          "provider": "europepmc",
+          "query": "(feline OR cat) AND pain AND (grimace OR behavior)",
+          "topics": [
+            {
+              "topic": "cat_pain",
+              "species": "cat"
+            }
+          ]
+        },
+        {
+          "file": "europepmc_20261007T084648223546Z_2d73d9724a.json",
+          "provider": "europepmc",
+          "query": "(feline OR cat) AND (play OR predatory behavior) AND welfare",
+          "topics": [
+            {
+              "topic": "cat_play",
+              "species": "cat"
+            }
+          ]
+        }
+      ],
+      "review_status": "candidate_not_reviewed"
+    },
+    {
+      "key": "doi:10.3390/vetsci13060587",
+      "metadata": {
+        "provider_id": "42357785",
+        "provider_source": "MED",
+        "title": "Part 1: A Sector-Wide Survey of UK/British Isles Shelter Organisations Caring for Cats: Caregiver-Reported Approaches to Housing, Husbandry and General Care Provision.",
+        "authors": "Finka LR, Barcelos AM, Waterman J, Bhatia A, McDonald JL, Foreman-Worsley R, Skillings B.",
+        "year": "2026",
+        "doi": "10.3390/vetsci13060587",
+        "pmid": "42357785",
+        "pmcid": "PMC13308460",
+        "journal": "Vet Sci",
+        "is_open_access": "Y",
+        "url": "https://europepmc.org/article/MED/42357785",
+        "license_status": "not_verified",
+        "review_status": "candidate_not_behavioral_evidence"
+      },
+      "retrieval_contexts": [
+        {
+          "file": "europepmc_20261007T084623472242Z_ce98411d8b.json",
+          "provider": "europepmc",
+          "query": "(feline OR cat) AND (environmental needs OR enrichment) AND welfare",
+          "topics": [
+            {
+              "topic": "cat_environment",
+              "species": "cat"
+            }
+          ]
+        },
+        {
+          "file": "europepmc_20261007T084631431094Z_9fea29617e.json",
+          "provider": "europepmc",
+          "query": "(feline OR cat) AND (house soiling OR litter box OR urine marking)",
+          "topics": [
+            {
+              "topic": "cat_elimination",
+              "species": "cat"
+            }
+          ]
+        }
+      ],
+      "review_status": "candidate_not_reviewed"
+    },
+    {
+      "key": "doi:10.3390/vetsci13070646",
+      "metadata": {
+        "provider_id": "42514656",
+        "provider_source": "MED",
+        "title": "Drivers, Barriers and Unmet Needs Affecting Feline Vaccination Compliance: Insights from a Global Survey of Cat Owners and Veterinarians.",
+        "authors": "Carroll EL, Nawar N, Bourgeois M.",
+        "year": "2026",
+        "doi": "10.3390/vetsci13070646",
+        "pmid": "42514656",
+        "pmcid": "PMC13431493",
+        "journal": "Vet Sci",
+        "is_open_access": "Y",
+        "url": "https://europepmc.org/article/MED/42514656",
+        "license_status": "not_verified",
+        "review_status": "candidate_not_behavioral_evidence"
+      },
+      "retrieval_contexts": [
+        {
+          "file": "europepmc_20261007T084629547157Z_0bb5f07d7c.json",
+          "provider": "europepmc",
+          "query": "(feline OR cat) AND (intercat OR social behavior) AND household",
+          "topics": [
+            {
+              "topic": "cat_relations",
+              "species": "cat"
+            }
+          ]
+        }
+      ],
+      "review_status": "candidate_not_reviewed"
+    },
+    {
+      "key": "doi:10.3390/vetsci13080754",
+      "metadata": {
+        "provider_id": "42655774",
+        "provider_source": "MED",
+        "title": "Genetic and Environmental Causes of Aggression in the Domestic Cat.",
+        "authors": "Sartore S, Moretti R, Chessa S, Sacchi P.",
+        "year": "2026",
+        "doi": "10.3390/vetsci13080754",
+        "pmid": "42655774",
+        "pmcid": "PMC13517829",
+        "journal": "Vet Sci",
+        "is_open_access": "Y",
+        "url": "https://europepmc.org/article/MED/42655774",
+        "license_status": "not_verified",
+        "review_status": "candidate_not_behavioral_evidence"
+      },
+      "retrieval_contexts": [
+        {
+          "file": "europepmc_20261007T084623472242Z_ce98411d8b.json",
+          "provider": "europepmc",
+          "query": "(feline OR cat) AND (environmental needs OR enrichment) AND welfare",
+          "topics": [
+            {
+              "topic": "cat_environment",
+              "species": "cat"
+            }
+          ]
+        },
+        {
+          "file": "europepmc_20261007T084629547157Z_0bb5f07d7c.json",
+          "provider": "europepmc",
+          "query": "(feline OR cat) AND (intercat OR social behavior) AND household",
+          "topics": [
+            {
+              "topic": "cat_relations",
+              "species": "cat"
+            }
+          ]
+        },
+        {
+          "file": "europepmc_20261007T084648223546Z_2d73d9724a.json",
+          "provider": "europepmc",
+          "query": "(feline OR cat) AND (play OR predatory behavior) AND welfare",
+          "topics": [
+            {
+              "topic": "cat_play",
+              "species": "cat"
+            }
+          ]
+        },
+        {
+          "file": "europepmc_20261007T084651878684Z_9c87167aac.json",
+          "provider": "europepmc",
+          "query": "(canine OR feline) AND (owner report OR questionnaire) AND (observer OR bias OR reliability)",
+          "topics": [
+            {
+              "topic": "observer_bias",
+              "species": "both"
+            }
+          ]
+        }
+      ],
+      "review_status": "candidate_not_reviewed"
+    },
+    {
+      "key": "doi:10.3390/vetsci13080778",
+      "metadata": {
+        "provider_id": "42655798",
+        "provider_source": "MED",
+        "title": "Therapeutic Monoclonal Antibodies as Advanced Therapies for Companion Animals: Species Adaptation, Fc Biology, Clinical Translation, and Future Platforms.",
+        "authors": "Fu Y, Guo Z, Wang H.",
+        "year": "2026",
+        "doi": "10.3390/vetsci13080778",
+        "pmid": "42655798",
+        "pmcid": "PMC13517563",
+        "journal": "Vet Sci",
+        "is_open_access": "Y",
+        "url": "https://europepmc.org/article/MED/42655798",
+        "license_status": "not_verified",
+        "review_status": "candidate_not_behavioral_evidence"
+      },
+      "retrieval_contexts": [
+        {
+          "file": "europepmc_20261007T084651878684Z_9c87167aac.json",
+          "provider": "europepmc",
+          "query": "(canine OR feline) AND (owner report OR questionnaire) AND (observer OR bias OR reliability)",
+          "topics": [
+            {
+              "topic": "observer_bias",
+              "species": "both"
+            }
+          ]
+        }
+      ],
+      "review_status": "candidate_not_reviewed"
+    },
+    {
+      "key": "doi:10.3390/vetsci13080803",
+      "metadata": {
+        "provider_id": "42655823",
+        "provider_source": "MED",
+        "title": "qEEG and Functional Connectivity as a Translational Bridge Between Humans and Dogs in Epilepsy and Associated Disorders: From Spontaneous Model to Automatic Classification-An Integrative Review.",
+        "authors": "Anghelinici D, Musteata M.",
+        "year": "2026",
+        "doi": "10.3390/vetsci13080803",
+        "pmid": "42655823",
+        "pmcid": "PMC13517202",
+        "journal": "Vet Sci",
+        "is_open_access": "Y",
+        "url": "https://europepmc.org/article/MED/42655823",
+        "license_status": "not_verified",
+        "review_status": "candidate_not_behavioral_evidence"
+      },
+      "retrieval_contexts": [
+        {
+          "file": "europepmc_20261007T084619896519Z_bf068737c8.json",
+          "provider": "europepmc",
+          "query": "(canine OR dog) AND (aging OR cognitive dysfunction) AND behavior",
+          "topics": [
+            {
+              "topic": "dog_aging",
+              "species": "dog"
+            }
+          ]
+        }
+      ],
+      "review_status": "candidate_not_reviewed"
+    },
+    {
+      "key": "doi:10.3390/vetsci13080828",
+      "metadata": {
+        "provider_id": "42655847",
+        "provider_source": "MED",
+        "title": "Judgment Bias Responses in Domestic Dog Puppies at 60 Days of Age.",
+        "authors": "Gazzano V, Bellini V, Cecchi F, Curadi MC, Baragli P, Gazzano A, Ogi A.",
+        "year": "2026",
+        "doi": "10.3390/vetsci13080828",
+        "pmid": "42655847",
+        "pmcid": "PMC13517232",
+        "journal": "Vet Sci",
+        "is_open_access": "Y",
+        "url": "https://europepmc.org/article/MED/42655847",
+        "license_status": "not_verified",
+        "review_status": "candidate_not_behavioral_evidence"
+      },
+      "retrieval_contexts": [
+        {
+          "file": "europepmc_20261007T084603314095Z_94b90c5c81.json",
+          "provider": "europepmc",
+          "query": "(canine OR dog) AND (personality OR temperament) AND (validation OR repeatability)",
+          "topics": [
+            {
+              "topic": "dog_personality",
+              "species": "dog"
+            }
+          ]
+        },
+        {
+          "file": "europepmc_20261007T084616600665Z_c003fb4506.json",
+          "provider": "europepmc",
+          "query": "(canine OR puppy) AND (socialization OR development) AND behavior",
+          "topics": [
+            {
+              "topic": "dog_development",
+              "species": "dog"
+            }
+          ]
+        }
+      ],
+      "review_status": "candidate_not_reviewed"
+    },
+    {
+      "key": "doi:10.3390/vetsci13090891",
+      "metadata": {
+        "provider_id": "42797927",
+        "provider_source": "MED",
+        "title": "Selective Symmetrical Encephalomalacia in a Maine Coon Crossbred Kitten in Italy.",
+        "authors": "Frizziero S, Casalone C, Tripodi L, Cimino F, Avanzato T, Testori C, Carta V, Zoccola R, Messana E, Cantile C, Iulini B.",
+        "year": "2026",
+        "doi": "10.3390/vetsci13090891",
+        "pmid": "42797927",
+        "pmcid": "PMC13611904",
+        "journal": "Vet Sci",
+        "is_open_access": "Y",
+        "url": "https://europepmc.org/article/MED/42797927",
+        "license_status": "not_verified",
+        "review_status": "candidate_not_behavioral_evidence"
+      },
+      "retrieval_contexts": [
+        {
+          "file": "europepmc_20261007T084646349664Z_b4659a5090.json",
+          "provider": "europepmc",
+          "query": "(feline OR cat) AND (communication OR vocalization OR meow)",
+          "topics": [
+            {
+              "topic": "cat_communication",
+              "species": "cat"
+            }
+          ]
+        }
+      ],
+      "review_status": "candidate_not_reviewed"
+    },
+    {
+      "key": "doi:10.3390/vetsci13090977",
+      "metadata": {
+        "provider_id": "42798010",
+        "provider_source": "MED",
+        "title": "Molecular Detection and Phylogenetic Characterization of CPV-2c in Apparently Healthy Domestic Cats in the Guadalajara Metropolitan Area, Mexico.",
+        "authors": "Gil-Bernal SDCR, Elizondo-Quiroga D, Barba-León J, Charles-Niño CL, Leal-Pimentel AS, Gaona Bernal J, Pedroza-Roldán C.",
+        "year": "2026",
+        "doi": "10.3390/vetsci13090977",
+        "pmid": "42798010",
+        "pmcid": "PMC13612087",
+        "journal": "Vet Sci",
+        "is_open_access": "Y",
+        "url": "https://europepmc.org/article/MED/42798010",
+        "license_status": "not_verified",
+        "review_status": "candidate_not_behavioral_evidence"
+      },
+      "retrieval_contexts": [
+        {
+          "file": "europepmc_20261007T084629547157Z_0bb5f07d7c.json",
+          "provider": "europepmc",
+          "query": "(feline OR cat) AND (intercat OR social behavior) AND household",
+          "topics": [
+            {
+              "topic": "cat_relations",
+              "species": "cat"
+            }
+          ]
+        }
+      ],
+      "review_status": "candidate_not_reviewed"
+    },
+    {
+      "key": "doi:10.5455/ovj.2026.v16.i4.16",
+      "metadata": {
+        "provider_id": "42375964",
+        "provider_source": "MED",
+        "title": "Client experience and owner-reported functional recovery after feline orthopedic surgery: A structural equation model of loyalty and recommendation intentions.",
+        "authors": "Kusumah AY, Marliani C, Bernarto I.",
+        "year": "2026",
+        "doi": "10.5455/ovj.2026.v16.i4.16",
+        "pmid": "42375964",
+        "pmcid": "PMC13314356",
+        "journal": "Open Vet J",
+        "is_open_access": "Y",
+        "url": "https://europepmc.org/article/MED/42375964",
+        "license_status": "not_verified",
+        "review_status": "candidate_not_behavioral_evidence"
+      },
+      "retrieval_contexts": [
+        {
+          "file": "europepmc_20261007T084651878684Z_9c87167aac.json",
+          "provider": "europepmc",
+          "query": "(canine OR feline) AND (owner report OR questionnaire) AND (observer OR bias OR reliability)",
+          "topics": [
+            {
+              "topic": "observer_bias",
+              "species": "both"
+            }
+          ]
+        }
+      ],
+      "review_status": "candidate_not_reviewed"
+    },
+    {
+      "key": "doi:10.7717/peerj.21292",
+      "metadata": {
+        "provider_id": "42222494",
+        "provider_source": "MED",
+        "title": "Purr-ceiving feelings: domestic cats respond to intraspecific cues of emotion.",
+        "authors": "Spoelstra KE, Vonk J, van Berlo E, Kok J, Kret ME.",
+        "year": "2026",
+        "doi": "10.7717/peerj.21292",
+        "pmid": "42222494",
+        "pmcid": "PMC13218337",
+        "journal": "PeerJ",
+        "is_open_access": "Y",
+        "url": "https://europepmc.org/article/MED/42222494",
+        "license_status": "not_verified",
+        "review_status": "candidate_not_behavioral_evidence"
+      },
+      "retrieval_contexts": [
+        {
+          "file": "europepmc_20261007T084646349664Z_b4659a5090.json",
+          "provider": "europepmc",
+          "query": "(feline OR cat) AND (communication OR vocalization OR meow)",
+          "topics": [
+            {
+              "topic": "cat_communication",
+              "species": "cat"
+            }
+          ]
+        }
+      ],
+      "review_status": "candidate_not_reviewed"
+    },
+    {
+      "key": "pmid:42266333",
+      "metadata": {
+        "provider_id": "42266333",
+        "provider_source": "MED",
+        "title": "Diagnosis and treatment of Merkel cell carcinoma in a puppy: A comparative oncology approach.",
+        "authors": "Gougeon E, Touzet C, Henriques J.",
+        "year": "2026",
+        "doi": null,
+        "pmid": "42266333",
+        "pmcid": "PMC13244530",
+        "journal": "Can Vet J",
+        "is_open_access": "N",
+        "url": "https://europepmc.org/article/MED/42266333",
+        "license_status": "not_verified",
+        "review_status": "candidate_not_behavioral_evidence"
+      },
+      "retrieval_contexts": [
+        {
+          "file": "europepmc_20261007T084616600665Z_c003fb4506.json",
+          "provider": "europepmc",
+          "query": "(canine OR puppy) AND (socialization OR development) AND behavior",
+          "topics": [
+            {
+              "topic": "dog_development",
+              "species": "dog"
+            }
+          ]
+        }
+      ],
+      "review_status": "candidate_not_reviewed"
+    },
+    {
+      "key": "provider:PMC:PMC11770619",
+      "metadata": {
+        "provider_id": "PMC11770619",
+        "provider_source": "PMC",
+        "title": "Feline cognitive-behavioral therapy: Understanding and shaping feline behavior",
+        "authors": null,
+        "year": null,
+        "doi": null,
+        "pmid": null,
+        "pmcid": "PMC11770619",
+        "journal": "Can Vet J",
+        "is_open_access": "N",
+        "url": "https://europepmc.org/article/PMC/PMC11770619",
+        "license_status": "not_verified",
+        "review_status": "candidate_not_behavioral_evidence"
+      },
+      "retrieval_contexts": [
+        {
+          "file": "europepmc_20261007T084646349664Z_b4659a5090.json",
+          "provider": "europepmc",
+          "query": "(feline OR cat) AND (communication OR vocalization OR meow)",
+          "topics": [
+            {
+              "topic": "cat_communication",
+              "species": "cat"
+            }
+          ]
+        }
+      ],
+      "review_status": "candidate_not_reviewed"
+    },
+    {
+      "key": "provider:PMC:PMC13295960",
+      "metadata": {
+        "provider_id": "PMC13295960",
+        "provider_source": "PMC",
+        "title": "Percutaneous Cementoplasty as a Monotherapy in the Treatment of Appendicular Osteosarcoma in Ten Dogs",
+        "authors": "MacArthur S, Drygas K, Lewis D, Colee J, Villamonte-Chevalier A.",
+        "year": "2026",
+        "doi": null,
+        "pmid": null,
+        "pmcid": "PMC13295960",
+        "journal": "Animals (Basel)",
+        "is_open_access": "Y",
+        "url": "https://europepmc.org/article/PMC/PMC13295960",
+        "license_status": "not_verified",
+        "review_status": "candidate_not_behavioral_evidence"
+      },
+      "retrieval_contexts": [
+        {
+          "file": "europepmc_20261007T084615063501Z_f3ec26765d.json",
+          "provider": "europepmc",
+          "query": "(canine OR dog) AND pain AND behavior AND assessment",
+          "topics": [
+            {
+              "topic": "dog_pain",
+              "species": "dog"
+            }
+          ]
+        }
+      ],
+      "review_status": "candidate_not_reviewed"
+    },
+    {
+      "key": "provider:PMC:PMC13425727",
+      "metadata": {
+        "provider_id": "PMC13425727",
+        "provider_source": "PMC",
+        "title": "Selected highlights from other journals",
+        "authors": null,
+        "year": "2026",
+        "doi": null,
+        "pmid": null,
+        "pmcid": "PMC13425727",
+        "journal": "Vet Rec",
+        "is_open_access": "N",
+        "url": "https://europepmc.org/article/PMC/PMC13425727",
+        "license_status": "not_verified",
+        "review_status": "candidate_not_behavioral_evidence"
+      },
+      "retrieval_contexts": [
+        {
+          "file": "europepmc_20261007T084631431094Z_9fea29617e.json",
+          "provider": "europepmc",
+          "query": "(feline OR cat) AND (house soiling OR litter box OR urine marking)",
+          "topics": [
+            {
+              "topic": "cat_elimination",
+              "species": "cat"
+            }
+          ]
+        }
+      ],
+      "review_status": "candidate_not_reviewed"
+    },
+    {
+      "key": "provider:PMC:PMC13635250",
+      "metadata": {
+        "provider_id": "PMC13635250",
+        "provider_source": "PMC",
+        "title": "Prospective, randomized, placebo-controlled, multicenter, double-blind, parallel-group, registration field trial evaluating izenivetmab, a caninized anti-nerve growth factor monoclonal antibody, administered quarterly to dogs with naturally occurring osteoarthritis",
+        "authors": "Moyaert H, Michels G, Berlamont H, Akkermans K, Hummel B, Tena J, Corral M, Gisbert I, Cleaver D, Stegemann M.",
+        "year": "2026",
+        "doi": null,
+        "pmid": null,
+        "pmcid": "PMC13635250",
+        "journal": "Vet Anim Sci",
+        "is_open_access": "Y",
+        "url": "https://europepmc.org/article/PMC/PMC13635250",
+        "license_status": "not_verified",
+        "review_status": "candidate_not_behavioral_evidence"
+      },
+      "retrieval_contexts": [
+        {
+          "file": "europepmc_20261007T084615063501Z_f3ec26765d.json",
+          "provider": "europepmc",
+          "query": "(canine OR dog) AND pain AND behavior AND assessment",
+          "topics": [
+            {
+              "topic": "dog_pain",
+              "species": "dog"
+            }
+          ]
+        }
+      ],
+      "review_status": "candidate_not_reviewed"
+    },
+    {
+      "key": "provider:PMC:PMC13637520",
+      "metadata": {
+        "provider_id": "PMC13637520",
+        "provider_source": "PMC",
+        "title": "Editorial: Animal communication: neurobiological, chemical, and physiological aspects",
+        "authors": "Mota-Rojas D, Grandin T.",
+        "year": null,
+        "doi": null,
+        "pmid": null,
+        "pmcid": "PMC13637520",
+        "journal": "Front Vet Sci",
+        "is_open_access": "Y",
+        "url": "https://europepmc.org/article/PMC/PMC13637520",
+        "license_status": "not_verified",
+        "review_status": "candidate_not_behavioral_evidence"
+      },
+      "retrieval_contexts": [
+        {
+          "file": "europepmc_20261007T084613512358Z_7e1bd73119.json",
+          "provider": "europepmc",
+          "query": "(canine OR dog) AND communication AND (gaze OR posture OR vocalization)",
+          "topics": [
+            {
+              "topic": "dog_communication",
+              "species": "dog"
+            }
+          ]
+        }
+      ],
+      "review_status": "candidate_not_reviewed"
+    }
+  ]
+}

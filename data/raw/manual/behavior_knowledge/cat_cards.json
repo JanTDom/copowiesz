@@ -1,0 +1,1204 @@
+[
+  {
+    "id": "cat_resources",
+    "species": [
+      "cat"
+    ],
+    "topic": "environment",
+    "title": "Wybór i dostęp do zasobów",
+    "observation": "Kot omija miskę lub kuwetę, gdy drugi kot zajmuje przejście.",
+    "possible_interpretations": [
+      "Dostęp może być ograniczony społecznie; znaczenie ma powtarzalny układ miejsc i relacji."
+    ],
+    "confounders": [
+      "Hałas",
+      "ból utrudniający poruszanie"
+    ],
+    "safe_next_steps": [
+      "Rozdziel zasoby i zapewnij drogi odejścia; zapisz mapę domu."
+    ],
+    "escalation": "behaviorist",
+    "evidence_level": "guideline",
+    "source_ids": [
+      "cat_src_environment"
+    ],
+    "limitations": "Liczba zasobów bez ich rozmieszczenia nie opisuje dostępności.",
+    "tags": [
+      "zasoby",
+      "relacje"
+    ]
+  },
+  {
+    "id": "cat_scent",
+    "species": [
+      "cat"
+    ],
+    "topic": "environment",
+    "title": "Zapach i znajome otoczenie",
+    "observation": "Po zmianie wyposażenia kot intensywnie ociera się o przedmioty.",
+    "possible_interpretations": [
+      "Może odnawiać znajomy profil zapachowy; oceniaj też odpoczynek i unikanie."
+    ],
+    "confounders": [
+      "Nowe środki czyszczące",
+      "obecność innych zwierząt"
+    ],
+    "safe_next_steps": [
+      "Wprowadzaj zmiany stopniowo; pozostaw część znajomych legowisk."
+    ],
+    "escalation": "none",
+    "evidence_level": "guideline",
+    "source_ids": [
+      "cat_src_environment"
+    ],
+    "limitations": "Ocieranie samo nie dowodzi stresu.",
+    "tags": [
+      "zapach",
+      "zmiana"
+    ]
+  },
+  {
+    "id": "cat_hiding",
+    "species": [
+      "cat"
+    ],
+    "topic": "environment",
+    "title": "Kryjówka jako możliwość regulacji",
+    "observation": "W nowym otoczeniu kot wybiera osłonięte miejsce i stopniowo wychodzi.",
+    "possible_interpretations": [
+      "Ukrycie może pomagać w radzeniu sobie; znaczenie mają czas i powrót do aktywności."
+    ],
+    "confounders": [
+      "Ból",
+      "brak apetytu",
+      "schroniskowe warunki badania"
+    ],
+    "safe_next_steps": [
+      "Udostępnij kryjówkę i obserwuj bez wyciągania kota."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "cat_src_hiding_box"
+    ],
+    "limitations": "Nowe lub długotrwałe ukrywanie z innymi zmianami wymaga konsultacji.",
+    "tags": [
+      "kryjowka",
+      "kontrola"
+    ]
+  },
+  {
+    "id": "cat_separate_feeding",
+    "species": [
+      "cat"
+    ],
+    "topic": "feeding",
+    "title": "Jedzenie bez konkurencji",
+    "observation": "Jeden kot przerywa posiłek przy zbliżeniu drugiego.",
+    "possible_interpretations": [
+      "Możliwa konkurencja lub unikanie; porównaj powtarzalne posiłki i spożycie."
+    ],
+    "confounders": [
+      "Ból jamy ustnej",
+      "nudności",
+      "preferencja pokarmu"
+    ],
+    "safe_next_steps": [
+      "Zapewnij oddzielne stanowiska; zapisuj spożycie każdego kota."
+    ],
+    "escalation": "veterinarian",
+    "evidence_level": "guideline",
+    "source_ids": [
+      "cat_src_feeding"
+    ],
+    "limitations": "Wspólne jedzenie nie potwierdza dobrych relacji.",
+    "tags": [
+      "karmienie",
+      "zasoby"
+    ]
+  },
+  {
+    "id": "cat_foraging",
+    "species": [
+      "cat"
+    ],
+    "topic": "feeding",
+    "title": "Stopniowe zadania pokarmowe",
+    "observation": "Kot zainteresowany łatwym zadaniem pokarmowym szybko rezygnuje z trudnego.",
+    "possible_interpretations": [
+      "Zadanie może przekraczać umiejętności lub motywację w tej sytuacji."
+    ],
+    "confounders": [
+      "Głód",
+      "dieta lecznicza",
+      "ograniczenia ruchu"
+    ],
+    "safe_next_steps": [
+      "Zaczynaj od łatwego dostępu; uwzględnij całą dzienną porcję."
+    ],
+    "escalation": "none",
+    "evidence_level": "guideline",
+    "source_ids": [
+      "cat_src_feeding"
+    ],
+    "limitations": "Niepowodzenie nie mierzy inteligencji ani osobowości.",
+    "tags": [
+      "wzbogacanie",
+      "karmienie"
+    ]
+  },
+  {
+    "id": "cat_scratching_function",
+    "species": [
+      "cat"
+    ],
+    "topic": "scratching",
+    "title": "Drapanie jako zachowanie gatunkowe",
+    "observation": "Kot regularnie drapie wybrane powierzchnie po odpoczynku.",
+    "possible_interpretations": [
+      "Może pielęgnować pazury i zostawiać sygnały; oceniaj lokalizację i zmiany."
+    ],
+    "confounders": [
+      "Nieodpowiednia stabilność drapaka",
+      "materiał",
+      "ból"
+    ],
+    "safe_next_steps": [
+      "Udostępnij stabilne powierzchnie i nagradzaj korzystanie."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "cat_src_scratching"
+    ],
+    "limitations": "Drapanie nie jest dowodem złośliwości ani samodzielną diagnozą stresu.",
+    "tags": [
+      "drapanie",
+      "etogram"
+    ]
+  },
+  {
+    "id": "cat_scratching_preferences",
+    "species": [
+      "cat"
+    ],
+    "topic": "scratching",
+    "title": "Preferencje powierzchni",
+    "observation": "Kot wybiera poziomą powierzchnię mimo dostępnego słupka.",
+    "possible_interpretations": [
+      "Może preferować orientację, materiał lub miejsce; testuj wybór bez przymusu."
+    ],
+    "confounders": [
+      "Drapak chwiejący się",
+      "położenie",
+      "zużycie"
+    ],
+    "safe_next_steps": [
+      "Oferuj kilka bezpiecznych wariantów; zapisuj użycie."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "cat_src_scratching"
+    ],
+    "limitations": "Ankieta przekrojowa nie dowodzi skuteczności każdego rozwiązania.",
+    "tags": [
+      "drapanie",
+      "preferencje"
+    ]
+  },
+  {
+    "id": "cat_slow_blink",
+    "species": [
+      "cat"
+    ],
+    "topic": "communication",
+    "title": "Wolne mruganie w interakcji",
+    "observation": "Kot odpowiada zwężeniem oczu podczas spokojnej wymiany spojrzeń.",
+    "possible_interpretations": [
+      "W takim kontekście może towarzyszyć pozytywnej komunikacji."
+    ],
+    "confounders": [
+      "Senność",
+      "choroba oka",
+      "ból",
+      "jasne światło"
+    ],
+    "safe_next_steps": [
+      "Zachowaj dystans i możliwość odejścia; obserwuj całe ciało."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "cat_src_slow_blink"
+    ],
+    "limitations": "Jedno mrugnięcie nie potwierdza zaufania.",
+    "tags": [
+      "oczy",
+      "kontakt"
+    ]
+  },
+  {
+    "id": "cat_blink_context",
+    "species": [
+      "cat"
+    ],
+    "topic": "communication",
+    "title": "Zwężenie oczu wymaga kontekstu",
+    "observation": "Kot ma stale przymrużone oczy poza społeczną wymianą.",
+    "possible_interpretations": [
+      "Możliwy dyskomfort; nie utożsamiaj tego automatycznie z wolnym mruganiem."
+    ],
+    "confounders": [
+      "Światło",
+      "sen",
+      "nieczytelne nagranie"
+    ],
+    "safe_next_steps": [
+      "Przy nowej, utrzymującej się zmianie skonsultuj lekarza."
+    ],
+    "escalation": "veterinarian",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "cat_src_slow_blink",
+      "cat_src_acute_pain"
+    ],
+    "limitations": "Podobny wygląd może mieć różne przyczyny.",
+    "tags": [
+      "oczy",
+      "bol"
+    ]
+  },
+  {
+    "id": "cat_meow_context",
+    "species": [
+      "cat"
+    ],
+    "topic": "vocalization",
+    "title": "Miauknięcie nie ma stałego tłumaczenia",
+    "observation": "Podobne miauknięcia pojawiają się przy jedzeniu, kontakcie i drzwiach.",
+    "possible_interpretations": [
+      "Funkcja może zależeć od sekwencji i wyuczonych reakcji opiekuna."
+    ],
+    "confounders": [
+      "Różnice osobnicze",
+      "jakość dźwięku",
+      "sytuacja"
+    ],
+    "safe_next_steps": [
+      "Zapisuj zdarzenia przed i po dźwięku."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "cat_src_meow"
+    ],
+    "limitations": "Badanie ocen ludzi nie waliduje tłumacza AI.",
+    "tags": [
+      "dzwiek",
+      "kontekst"
+    ]
+  },
+  {
+    "id": "cat_meow_personalization",
+    "species": [
+      "cat"
+    ],
+    "topic": "vocalization",
+    "title": "Osobisty repertuar dźwięków",
+    "observation": "Powtarzalny dźwięk poprzedza tę samą czynność w znanych sytuacjach.",
+    "possible_interpretations": [
+      "Możliwa stabilna zależność kontekstowa tego kota; sprawdzaj wyjątki."
+    ],
+    "confounders": [
+      "Selektywne nagrania",
+      "oczekiwania opiekuna",
+      "zmiana rutyny"
+    ],
+    "safe_next_steps": [
+      "Łącz audio z wideo i dziennikiem, pozostawiając wynik niepewny."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "cat_src_meow"
+    ],
+    "limitations": "Zależność nie dowodzi językowego znaczenia wypowiedzi.",
+    "tags": [
+      "personalizacja",
+      "audio"
+    ]
+  },
+  {
+    "id": "cat_purr_solicitation",
+    "species": [
+      "cat"
+    ],
+    "topic": "vocalization",
+    "title": "Mruczenie podczas zabiegania o pokarm",
+    "observation": "Kot mruczy przy opiekunie przed posiłkiem i podąża za nim.",
+    "possible_interpretations": [
+      "W tej sekwencji może zabiegać o pokarm lub uwagę."
+    ],
+    "confounders": [
+      "Znajoma rutyna",
+      "pozostałe przyczyny mruczenia"
+    ],
+    "safe_next_steps": [
+      "Porównuj nagrania tego kota w różnych naturalnych kontekstach."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "cat_src_purr"
+    ],
+    "limitations": "Mruczenie samo nie potwierdza komfortu ani intencji.",
+    "tags": [
+      "mruczenie",
+      "jedzenie"
+    ]
+  },
+  {
+    "id": "cat_speech_response",
+    "species": [
+      "cat"
+    ],
+    "topic": "communication",
+    "title": "Reakcja na głos opiekuna",
+    "observation": "Kot orientuje głowę lub uszy, gdy opiekun zmienia sposób mówienia.",
+    "possible_interpretations": [
+      "Może rozróżniać znajomy rejestr mowy w danej sytuacji."
+    ],
+    "confounders": [
+      "Nagłośnienie",
+      "inne bodźce",
+      "nawyki"
+    ],
+    "safe_next_steps": [
+      "Mów spokojnie; opisuj obserwowaną reakcję."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "cat_src_directed_speech"
+    ],
+    "limitations": "Małe badanie nie potwierdza rozumienia polskich zdań.",
+    "tags": [
+      "glos",
+      "czlowiek"
+    ]
+  },
+  {
+    "id": "cat_mutual_play",
+    "species": [
+      "cat"
+    ],
+    "topic": "social_play",
+    "title": "Wzajemna zabawa kotów",
+    "observation": "Dwa koty naprzemiennie angażują się w zapasy i wracają po przerwach.",
+    "possible_interpretations": [
+      "Możliwa zabawa społeczna przy dobrowolnym udziale obu."
+    ],
+    "confounders": [
+      "Brak dźwięku",
+      "ucięty film",
+      "nierówne role"
+    ],
+    "safe_next_steps": [
+      "Obserwuj obydwa koty i ich zachowanie po interakcji."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "cat_src_play"
+    ],
+    "limitations": "Same zapasy nie rozstrzygają charakteru spotkania.",
+    "tags": [
+      "zabawa",
+      "sekwencja"
+    ]
+  },
+  {
+    "id": "cat_mixed_play",
+    "species": [
+      "cat"
+    ],
+    "topic": "social_play",
+    "title": "Zabawa może przejść w napięcie",
+    "observation": "Po zapasach jeden kot odchodzi, drugi ściga go przy wokalizacji.",
+    "possible_interpretations": [
+      "Możliwa różnica gotowości do kontynuowania lub konflikt."
+    ],
+    "confounders": [
+      "Gonitwa bywa zabawą",
+      "niepełny obraz"
+    ],
+    "safe_next_steps": [
+      "Zapewnij możliwość odejścia; powtarzalne napięcie omów ze specjalistą."
+    ],
+    "escalation": "behaviorist",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "cat_src_play"
+    ],
+    "limitations": "Klasyfikacja z badania nie zastępuje oceny relacji.",
+    "tags": [
+      "relacje",
+      "gonitwa"
+    ]
+  },
+  {
+    "id": "cat_blocking",
+    "species": [
+      "cat"
+    ],
+    "topic": "intercat",
+    "title": "Blokowanie bez walki",
+    "observation": "Kot zatrzymuje się w korytarzu; drugi zawraca po spojrzeniu.",
+    "possible_interpretations": [
+      "Powtarzalna sekwencja może wskazywać napięcie i ograniczanie dostępu."
+    ],
+    "confounders": [
+      "Wąskie przejście",
+      "chwilowe zainteresowanie"
+    ],
+    "safe_next_steps": [
+      "Dodaj alternatywne trasy i rozproszone zasoby."
+    ],
+    "escalation": "behaviorist",
+    "evidence_level": "guideline",
+    "source_ids": [
+      "cat_src_intercat"
+    ],
+    "limitations": "Brak bójki nie wyklucza problemu.",
+    "tags": [
+      "blokowanie",
+      "zasoby"
+    ]
+  },
+  {
+    "id": "cat_introductions",
+    "species": [
+      "cat"
+    ],
+    "topic": "intercat",
+    "title": "Tempo wprowadzania nowego kota",
+    "observation": "Po zwiększeniu bliskości pojawiają się syczenie i wycofanie.",
+    "possible_interpretations": [
+      "Etap może przekraczać tolerancję któregoś kota w tej chwili."
+    ],
+    "confounders": [
+      "Zapach",
+      "niedawna wizyta lekarska",
+      "ból"
+    ],
+    "safe_next_steps": [
+      "Zmniejsz kontakt; zapewnij oddzielne bezpieczne strefy."
+    ],
+    "escalation": "behaviorist",
+    "evidence_level": "guideline",
+    "source_ids": [
+      "cat_src_intercat"
+    ],
+    "limitations": "Nie ma uniwersalnego terminu zakończenia zapoznawania.",
+    "tags": [
+      "socjalizacja",
+      "nowy_kot"
+    ]
+  },
+  {
+    "id": "cat_redirected_arousal",
+    "species": [
+      "cat"
+    ],
+    "topic": "intercat",
+    "title": "Pobudzenie i bezpieczeństwo człowieka",
+    "observation": "Kot obserwuje drugiego zwierzęcego rywala, potem atakuje zbliżającą się rękę.",
+    "possible_interpretations": [
+      "Możliwe przekierowanie pobudzenia; rozważ też ból."
+    ],
+    "confounders": [
+      "Bliskość",
+      "dotyk",
+      "brak drogi odejścia"
+    ],
+    "safe_next_steps": [
+      "Zachowaj dystans, użyj bariery; nie rozdzielaj rękami."
+    ],
+    "escalation": "behaviorist",
+    "evidence_level": "guideline",
+    "source_ids": [
+      "cat_src_intercat"
+    ],
+    "limitations": "Przy urazie lub nagłej zmianie potrzebna jest ocena lekarska.",
+    "tags": [
+      "bezpieczenstwo",
+      "pobudzenie"
+    ]
+  },
+  {
+    "id": "cat_contact_choice",
+    "species": [
+      "cat"
+    ],
+    "topic": "handling",
+    "title": "Kot inicjuje kontakt",
+    "observation": "Kot zbliża się, ociera i wraca po przerwie w dotyku.",
+    "possible_interpretations": [
+      "Możliwa gotowość do interakcji w tej sytuacji."
+    ],
+    "confounders": [
+      "Jedzenie w ręce",
+      "wcześniejsze uczenie",
+      "ból"
+    ],
+    "safe_next_steps": [
+      "Pozwól zainicjować kontakt i wycofać się."
+    ],
+    "escalation": "none",
+    "evidence_level": "guideline",
+    "source_ids": [
+      "cat_src_interaction"
+    ],
+    "limitations": "Podejście nie oznacza zgody na każdy dotyk.",
+    "tags": [
+      "wybor",
+      "dotyk"
+    ]
+  },
+  {
+    "id": "cat_freezing",
+    "species": [
+      "cat"
+    ],
+    "topic": "handling",
+    "title": "Bezruch podczas obchodzenia się z kotem",
+    "observation": "Podczas przytrzymywania kot sztywnieje i przestaje reagować.",
+    "possible_interpretations": [
+      "Możliwa reakcja ochronna; oceń napięcie i sytuację."
+    ],
+    "confounders": [
+      "Senność",
+      "leki",
+      "choroba",
+      "obraz statyczny"
+    ],
+    "safe_next_steps": [
+      "Ogranicz nacisk; zapewnij spokojne otoczenie i możliwość schowania."
+    ],
+    "escalation": "veterinarian",
+    "evidence_level": "guideline",
+    "source_ids": [
+      "cat_src_interaction"
+    ],
+    "limitations": "Bezruch nie jest dowodem akceptacji zabiegu.",
+    "tags": [
+      "bezruch",
+      "strach"
+    ]
+  },
+  {
+    "id": "cat_petting_pause",
+    "species": [
+      "cat"
+    ],
+    "topic": "handling",
+    "title": "Przerwy i sygnały przy głaskaniu",
+    "observation": "Podczas dotyku rośnie napięcie, kot obraca głowę i odsuwa się.",
+    "possible_interpretations": [
+      "Może chcieć zakończyć kontakt w tym miejscu lub czasie."
+    ],
+    "confounders": [
+      "Wrażliwość skóry",
+      "ból",
+      "nagły hałas"
+    ],
+    "safe_next_steps": [
+      "Przerwij dotyk; pozostaw decyzję o powrocie kotu."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "cat_src_handling_study"
+    ],
+    "limitations": "Nagła zmiana tolerancji wymaga oceny medycznej.",
+    "tags": [
+      "glaskanie",
+      "kontrola"
+    ]
+  },
+  {
+    "id": "cat_carrier_environment",
+    "species": [
+      "cat"
+    ],
+    "topic": "environment",
+    "title": "Transporter i obce środowisko",
+    "observation": "Kot chowa się w transporterze po wejściu do gabinetu.",
+    "possible_interpretations": [
+      "Może wybierać znajome schronienie; nie oceniaj domowego temperamentu z wizyty."
+    ],
+    "confounders": [
+      "Transport",
+      "zapachy",
+      "psy",
+      "ból"
+    ],
+    "safe_next_steps": [
+      "Zapewnij spokojny transport i znajome posłanie; pracuj z personelem."
+    ],
+    "escalation": "none",
+    "evidence_level": "guideline",
+    "source_ids": [
+      "cat_src_vet_environment"
+    ],
+    "limitations": "Gabinet zmienia zachowanie i warunki obserwacji.",
+    "tags": [
+      "transport",
+      "gabinet"
+    ]
+  },
+  {
+    "id": "cat_urine_outside",
+    "species": [
+      "cat"
+    ],
+    "topic": "elimination",
+    "title": "Mocz poza kuwetą",
+    "observation": "Kot zmienia miejsce oddawania moczu lub postawę przy eliminacji.",
+    "possible_interpretations": [
+      "Możliwe przyczyny medyczne, środowiskowe lub społeczne."
+    ],
+    "confounders": [
+      "Ból",
+      "podłoże",
+      "dostęp do kuwety"
+    ],
+    "safe_next_steps": [
+      "Zapisz chronologię i miejsca; umów badanie."
+    ],
+    "escalation": "veterinarian",
+    "evidence_level": "guideline",
+    "source_ids": [
+      "cat_src_house_soiling"
+    ],
+    "limitations": "Z filmu nie rozpoznaje się przyczyny; to nie dowód zemsty.",
+    "tags": [
+      "mocz",
+      "kuweta"
+    ]
+  },
+  {
+    "id": "cat_spraying",
+    "species": [
+      "cat"
+    ],
+    "topic": "elimination",
+    "title": "Znakowanie a zwykła eliminacja",
+    "observation": "Kot stoi z uniesionym ogonem i zostawia niewielką ilość moczu na powierzchni.",
+    "possible_interpretations": [
+      "Sekwencja może odpowiadać znakowaniu; sprawdź zdrowie i kontekst."
+    ],
+    "confounders": [
+      "Choroba dróg moczowych",
+      "nietypowa postawa"
+    ],
+    "safe_next_steps": [
+      "Zapisuj miejsca i zmiany otoczenia; skonsultuj lekarza."
+    ],
+    "escalation": "veterinarian",
+    "evidence_level": "guideline",
+    "source_ids": [
+      "cat_src_house_soiling"
+    ],
+    "limitations": "Orientacja powierzchni sama nie daje diagnozy.",
+    "tags": [
+      "znakowanie",
+      "mocz"
+    ]
+  },
+  {
+    "id": "cat_litter_choice",
+    "species": [
+      "cat"
+    ],
+    "topic": "elimination",
+    "title": "Indywidualne preferencje kuwety",
+    "observation": "Kot regularnie wybiera jedną z dwóch dostępnych kuwet.",
+    "possible_interpretations": [
+      "Może preferować konstrukcję lub związane z nią warunki."
+    ],
+    "confounders": [
+      "Czystość",
+      "miejsce",
+      "podłoże",
+      "obecność kota"
+    ],
+    "safe_next_steps": [
+      "Porównuj podobne, czyste kuwety bez odbierania używanej."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "cat_src_covered_litter"
+    ],
+    "limitations": "Małe badanie nie ustala jednego idealnego typu.",
+    "tags": [
+      "preferencje",
+      "kuweta"
+    ]
+  },
+  {
+    "id": "cat_urinary_emergency",
+    "species": [
+      "cat"
+    ],
+    "topic": "medical_triage",
+    "title": "Bezskuteczne próby oddania moczu",
+    "observation": "Kot wielokrotnie napina się, a moczu nie ma lub jest go bardzo mało.",
+    "possible_interpretations": [
+      "Możliwa niedrożność lub inna bolesna choroba; nie czekaj na pewność."
+    ],
+    "confounders": [
+      "Parcie na kał może wyglądać podobnie"
+    ],
+    "safe_next_steps": [
+      "Natychmiast skontaktuj się z dyżurnym lekarzem; nie uciskaj brzucha."
+    ],
+    "escalation": "urgent_veterinarian",
+    "evidence_level": "guideline",
+    "source_ids": [
+      "cat_src_urinary"
+    ],
+    "limitations": "Nagrywanie nie może opóźniać pomocy.",
+    "tags": [
+      "pilne",
+      "mocz"
+    ]
+  },
+  {
+    "id": "cat_urinary_uncertainty",
+    "species": [
+      "cat"
+    ],
+    "topic": "medical_triage",
+    "title": "Podobne objawy mają różne przyczyny",
+    "observation": "Kot często odwiedza kuwetę, liże okolice płciowe lub oddaje mocz poza nią.",
+    "possible_interpretations": [
+      "Możliwe różne choroby dolnych dróg moczowych."
+    ],
+    "confounders": [
+      "Stres",
+      "kamienie",
+      "infekcja",
+      "niedrożność"
+    ],
+    "safe_next_steps": [
+      "Skontaktuj lekarza; bezskuteczne oddawanie moczu traktuj pilnie."
+    ],
+    "escalation": "veterinarian",
+    "evidence_level": "guideline",
+    "source_ids": [
+      "cat_src_urinary"
+    ],
+    "limitations": "Wideo nie rozróżnia etiologii.",
+    "tags": [
+      "diagnostyka",
+      "niepewnosc"
+    ]
+  },
+  {
+    "id": "cat_overgrooming",
+    "species": [
+      "cat"
+    ],
+    "topic": "grooming",
+    "title": "Wylizywanie i ubytek sierści",
+    "observation": "Kot powtarzalnie liże miejsce, gdzie pojawia się przerzedzenie sierści.",
+    "possible_interpretations": [
+      "Możliwy świąd, ból lub komponent behawioralny."
+    ],
+    "confounders": [
+      "Pasożyty",
+      "alergia",
+      "inne choroby skóry"
+    ],
+    "safe_next_steps": [
+      "Zapisz lokalizację i przebieg; umów badanie przed etykietą behawioralną."
+    ],
+    "escalation": "veterinarian",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "cat_src_alopecia"
+    ],
+    "limitations": "Seria skierowanych przypadków nie opisuje całej populacji.",
+    "tags": [
+      "pielegnacja",
+      "skora"
+    ]
+  },
+  {
+    "id": "cat_fgs_face",
+    "species": [
+      "cat"
+    ],
+    "topic": "pain",
+    "title": "Mimika jako przesłanka ostrego bólu",
+    "observation": "Jednocześnie zmieniają się ułożenie uszu, oczu, pyska, wąsów i głowy.",
+    "possible_interpretations": [
+      "Taki układ może uzasadniać ocenę ostrego bólu."
+    ],
+    "confounders": [
+      "Sen",
+      "emocje",
+      "niewidoczne części twarzy"
+    ],
+    "safe_next_steps": [
+      "Skonsultuj lekarza; korzystaj z przeszkolonej oceny skali."
+    ],
+    "escalation": "veterinarian",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "cat_src_fgs"
+    ],
+    "limitations": "FGS nie rozpoznaje przyczyny ani całego bólu przewlekłego.",
+    "tags": [
+      "FGS",
+      "mimika"
+    ]
+  },
+  {
+    "id": "cat_fgs_visibility",
+    "species": [
+      "cat"
+    ],
+    "topic": "pain",
+    "title": "Niewidoczny sygnał nie oznacza braku bólu",
+    "observation": "Na filmie zasłonięte są oczy lub uszy, albo kot śpi.",
+    "possible_interpretations": [
+      "Ocena mimiki może być niemożliwa; brak wyniku nie uspokaja."
+    ],
+    "confounders": [
+      "Kąt kamery",
+      "światło",
+      "rozdzielczość"
+    ],
+    "safe_next_steps": [
+      "Oznacz element jako nieocenialny; pokaż film lekarzowi."
+    ],
+    "escalation": "veterinarian",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "cat_src_fgs",
+      "cat_src_fgs_official"
+    ],
+    "limitations": "Automatycznej analizy wideo projektu jeszcze nie zwalidowano.",
+    "tags": [
+      "jakosc",
+      "bol"
+    ]
+  },
+  {
+    "id": "cat_acute_pain_silence",
+    "species": [
+      "cat"
+    ],
+    "topic": "pain",
+    "title": "Ból bez głośnej wokalizacji",
+    "observation": "Po zabiegu kot mniej się porusza i zmienia postawę, pozostając cichy.",
+    "possible_interpretations": [
+      "Możliwy ból, ale potrzebna ocena kliniczna w kontekście."
+    ],
+    "confounders": [
+      "Leki",
+      "osłabienie",
+      "lęk"
+    ],
+    "safe_next_steps": [
+      "Zgłoś zmianę prowadzącemu lekarzowi; przestrzegaj jego planu."
+    ],
+    "escalation": "veterinarian",
+    "evidence_level": "guideline",
+    "source_ids": [
+      "cat_src_acute_pain",
+      "cat_src_wsava_pain"
+    ],
+    "limitations": "Brak miauczenia nie wyklucza bólu.",
+    "tags": [
+      "zabieg",
+      "bol"
+    ]
+  },
+  {
+    "id": "cat_jumping_change",
+    "species": [
+      "cat"
+    ],
+    "topic": "pain",
+    "title": "Zmiana sposobu skakania",
+    "observation": "Kot zaczyna unikać dawnych wysokości lub korzysta z etapów pośrednich.",
+    "possible_interpretations": [
+      "Możliwy ból lub ograniczenie sprawności względem własnej normy."
+    ],
+    "confounders": [
+      "Śliska powierzchnia",
+      "masa ciała",
+      "wzrok"
+    ],
+    "safe_next_steps": [
+      "Ułatw dostęp; umów ocenę i pokaż naturalne nagranie."
+    ],
+    "escalation": "veterinarian",
+    "evidence_level": "guideline",
+    "source_ids": [
+      "cat_src_aaha_pain"
+    ],
+    "limitations": "Nie prowokuj skoku jako testu.",
+    "tags": [
+      "ruch",
+      "bol_przewlekly"
+    ]
+  },
+  {
+    "id": "cat_pain_baseline",
+    "species": [
+      "cat"
+    ],
+    "topic": "pain",
+    "title": "Nagranie codziennych czynności",
+    "observation": "W porównywalnych sytuacjach zmieniają się chód, odpoczynek i interakcje.",
+    "possible_interpretations": [
+      "Zmiana względem własnej normy może wspierać ocenę bólu."
+    ],
+    "confounders": [
+      "Kamera",
+      "pora dnia",
+      "leki",
+      "otoczenie"
+    ],
+    "safe_next_steps": [
+      "Zapisuj warunki i zmiany; przekaż lekarzowi."
+    ],
+    "escalation": "veterinarian",
+    "evidence_level": "guideline",
+    "source_ids": [
+      "cat_src_aaha_pain"
+    ],
+    "limitations": "Film wspiera ocenę, nie zastępuje badania.",
+    "tags": [
+      "baseline",
+      "monitorowanie"
+    ]
+  },
+  {
+    "id": "cat_senior_night",
+    "species": [
+      "cat"
+    ],
+    "topic": "senior",
+    "title": "Nowa nocna wokalizacja seniora",
+    "observation": "Starszy kot częściej budzi domowników i miauczy nocą.",
+    "possible_interpretations": [
+      "Możliwe zmiany zmysłów, ból lub choroby; oceń cały przebieg."
+    ],
+    "confounders": [
+      "Rutyna",
+      "dostęp do zasobów",
+      "zmiany poznawcze"
+    ],
+    "safe_next_steps": [
+      "Zapisz początek, apetyt i aktywność; umów kontrolę."
+    ],
+    "escalation": "veterinarian",
+    "evidence_level": "guideline",
+    "source_ids": [
+      "cat_src_senior",
+      "cat_src_life_stage_senior"
+    ],
+    "limitations": "Nie uznawaj automatycznie za zwykłe starzenie.",
+    "tags": [
+      "senior",
+      "noc"
+    ]
+  },
+  {
+    "id": "cat_inappetence",
+    "species": [
+      "cat"
+    ],
+    "topic": "medical_triage",
+    "title": "Spadek apetytu",
+    "observation": "Kot odchodzi od jedzenia lub je wyraźnie mniej niż zwykle.",
+    "possible_interpretations": [
+      "Możliwe nudności, ból, choroba lub stres."
+    ],
+    "confounders": [
+      "Nowy pokarm",
+      "leki",
+      "otoczenie"
+    ],
+    "safe_next_steps": [
+      "Szybko skontaktuj lekarza; zapisuj spożycie; nie karm siłą."
+    ],
+    "escalation": "veterinarian",
+    "evidence_level": "guideline",
+    "source_ids": [
+      "cat_src_inappetence"
+    ],
+    "limitations": "Wytyczne szpitalne nie wyznaczają domowej diagnozy.",
+    "tags": [
+      "apetyt",
+      "zdrowie"
+    ]
+  },
+  {
+    "id": "cat_personality_stability",
+    "species": [
+      "cat"
+    ],
+    "topic": "personality",
+    "title": "Profil cech wymaga powtarzalności",
+    "observation": "Opiekun dostrzega podobne wzorce w różnych tygodniach i sytuacjach.",
+    "possible_interpretations": [
+      "Mogą odzwierciedlać różnice osobnicze, uwzględniając środowisko."
+    ],
+    "confounders": [
+      "Choroba",
+      "wiek",
+      "oczekiwania oceniającego"
+    ],
+    "safe_next_steps": [
+      "Zbieraj serię obserwacji; opisuj cechy jako zmienne nasilenia."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "cat_src_feline_five"
+    ],
+    "limitations": "Pięć czynników nie jest kopią świadomości kota.",
+    "tags": [
+      "osobowosc",
+      "czas"
+    ]
+  },
+  {
+    "id": "cat_febarq_validity",
+    "species": [
+      "cat"
+    ],
+    "topic": "assessment",
+    "title": "Kwestionariusz i walidacja",
+    "observation": "Opiekun opisuje częstość zachowań w określonych sytuacjach.",
+    "possible_interpretations": [
+      "Standaryzowane raporty mogą opisywać wielowymiarowy profil."
+    ],
+    "confounders": [
+      "Pamięć",
+      "brak obserwacji",
+      "dobór próby"
+    ],
+    "safe_next_steps": [
+      "Rozdziel obserwację od opinii; dodaj odpowiedź nie wiem."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "cat_src_febarq_study"
+    ],
+    "limitations": "Nie wszystkie podskale miały równie wysoką spójność.",
+    "tags": [
+      "kwestionariusz",
+      "walidacja"
+    ]
+  },
+  {
+    "id": "cat_proxy_report",
+    "species": [
+      "cat"
+    ],
+    "topic": "assessment",
+    "title": "Raport opiekuna to perspektywa",
+    "observation": "Dwie osoby różnie opisują tego samego kota w innych porach.",
+    "possible_interpretations": [
+      "Różnice mogą wynikać z kontekstu lub sposobu obserwacji."
+    ],
+    "confounders": [
+      "Czas kontaktu",
+      "różne definicje zachowania"
+    ],
+    "safe_next_steps": [
+      "Zapisuj obserwatora i przykłady zdarzeń."
+    ],
+    "escalation": "none",
+    "evidence_level": "technical_documentation",
+    "source_ids": [
+      "cat_src_febarq_official"
+    ],
+    "limitations": "Fe-BARQ opisuje zachowanie przez informatora.",
+    "tags": [
+      "opiekun",
+      "pochodzenie"
+    ]
+  },
+  {
+    "id": "cat_traits_and_symptoms",
+    "species": [
+      "cat"
+    ],
+    "topic": "assessment",
+    "title": "Cecha i problem to odrębne informacje",
+    "observation": "Profil obejmuje towarzyskość, aktywność oraz problemy pielęgnacji lub kuwety.",
+    "possible_interpretations": [
+      "Obszary mogą współwystępować, lecz nie są jedną etykietą charakteru."
+    ],
+    "confounders": [
+      "Stan zdrowia",
+      "środowisko",
+      "populacja badania"
+    ],
+    "safe_next_steps": [
+      "Przechowuj obszary oddzielnie; oceniaj zgodność obserwatorów."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "cat_src_seven_traits"
+    ],
+    "limitations": "Wyniki fińskiej ankiety nie walidują polskiego formularza projektu.",
+    "tags": [
+      "cechy",
+      "objawy"
+    ]
+  },
+  {
+    "id": "cat_reward_training",
+    "species": [
+      "cat"
+    ],
+    "topic": "learning",
+    "title": "Uczenie przez nagradzanie",
+    "observation": "Kot częściej wykonuje czynność, po której otrzymuje lubianą nagrodę.",
+    "possible_interpretations": [
+      "Możliwa wyuczona zależność w danym kontekście."
+    ],
+    "confounders": [
+      "Moment nagrody",
+      "motywacja",
+      "stres"
+    ],
+    "safe_next_steps": [
+      "Nagradzaj pożądaną czynność; skracaj sesje przy napięciu."
+    ],
+    "escalation": "none",
+    "evidence_level": "guideline",
+    "source_ids": [
+      "cat_src_behavior_management"
+    ],
+    "limitations": "Nie stosuj kar ani wymuszonego zalewania bodźcem.",
+    "tags": [
+      "uczenie",
+      "dobrostan"
+    ]
+  }
+]
+

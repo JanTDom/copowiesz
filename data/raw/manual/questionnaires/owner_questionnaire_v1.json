@@ -1,0 +1,3881 @@
+{
+  "version": "1.0.0",
+  "language": "pl",
+  "status": "unvalidated_research_prototype",
+  "recall_window_days": 14,
+  "scoring_policy": "descriptive_only_no_clinical_cutoffs",
+  "authorship": "Autorskie pozycje COPOWIESZ. Nie są kopiami, tłumaczeniami ani licencjonowaną wersją C-BARQ lub Fe-BARQ.",
+  "usage_instructions": [
+    "Wypełniaj formularz osobno dla jednego zwierzęcia; pokazuj tylko pytania zgodne z jego gatunkiem.",
+    "Wybierz zakres dat obejmujący ostatnie 14 dni i zapisz go w odpowiedziach; pytania historyczne mają recall_window_days null.",
+    "W pytaniach o częstość uwzględniaj tylko naturalnie występujące, osobiście obserwowane okazje. „Nigdy” wymaga co najmniej jednej okazji.",
+    "Nie aranżuj prób ani nie wywołuj strachu, agresji, rywalizacji, frustracji lub separacji. Jeśli sytuacja nie wystąpiła, wybierz „nie dotyczy”.",
+    "Każde pytanie można pominąć. Dla liczb i tekstu interfejs powinien osobno udostępnić „nie wiem” oraz „nie dotyczy”.",
+    "Nie sumuj odpowiedzi do wyniku osobowości, zaburzenia ani ryzyka. Etykiety construct są roboczymi obszarami opisu, a nie zwalidowanymi skalami."
+  ],
+  "response_contract": {
+    "pet_id": "Losowy pseudonimowy identyfikator; oddzielny od danych kontaktowych opiekuna.",
+    "respondent_id": "Losowy identyfikator opiekuna, bez imienia i nazwiska.",
+    "questionnaire_version": "Wersja formularza.",
+    "window_start": "YYYY-MM-DD, strefa Europe/Warsaw.",
+    "window_end": "YYYY-MM-DD, 14 dni włącznie z początkiem.",
+    "answers": "Lista rekordów: question_id, response_state, value, observed_opportunities, source, evidence_refs, quality_flags, note.",
+    "response_state": [
+      "answered",
+      "unknown",
+      "not_applicable",
+      "skipped"
+    ],
+    "value_rules": "Dla answered: liczba, tekst, wartość opcji albo lista wartości zgodnie z typem; dla pozostałych stanów null. unknown i not_applicable z opcji mapuj do stanu, nie do wartości ani zera.",
+    "source_values": [
+      "direct_observation",
+      "video",
+      "contemporaneous_diary",
+      "second_hand",
+      "general_memory",
+      "mixed",
+      "unknown"
+    ],
+    "observed_opportunities": "Opcjonalna liczba okazji; null oznacza niepoliczone. 0 oznacza brak okazji i stan not_applicable dla częstości. Nie zgaduj liczby.",
+    "evidence_refs": "Opcjonalne pseudonimowe identyfikatory własnych notatek lub klipów; bez publicznych URL i danych osób.",
+    "quality_flags": "Lista jawnych ograniczeń; nie przeliczaj jej automatycznie na procent pewności.",
+    "note": "Opcjonalny kontekst lub hipoteza opiekuna oznaczona jako hipoteza; bez danych identyfikujących ludzi."
+  },
+  "quality_policy": {
+    "flags": [
+      "limited_observation",
+      "low_context_coverage",
+      "second_hand",
+      "general_impression",
+      "outside_recall_window",
+      "recent_home_change",
+      "reported_health_context",
+      "treatment_context",
+      "estimated_age",
+      "estimated_body_mass",
+      "observer_disagreement",
+      "few_observed_opportunities",
+      "video_visibility_limit",
+      "missing_context",
+      "not_assessed"
+    ],
+    "handling": "Zachowuj flagi przy odpowiedzi i późniejszym profilu. Ujawniaj brak danych, nie uzupełniaj go domysłem ani stereotypem rasy.",
+    "known_triggers": [
+      {
+        "question_ids": [
+          "q012",
+          "q013",
+          "q017"
+        ],
+        "flag": "limited_observation",
+        "rule": "Opiekun zgłasza mało obserwacji; brak zwalidowanego progu."
+      },
+      {
+        "question_ids": [
+          "q014"
+        ],
+        "flag": "second_hand",
+        "rule": "Odpowiedź pochodzi z cudzej relacji; oceniaj źródło na poziomie konkretnej odpowiedzi."
+      },
+      {
+        "question_ids": [
+          "q018",
+          "q094"
+        ],
+        "flag": "general_impression",
+        "rule": "Odpowiedź opiera się na ogólnym wrażeniu."
+      },
+      {
+        "question_ids": [
+          "q019"
+        ],
+        "flag": "outside_recall_window",
+        "rule": "Konkretna odpowiedź korzysta ze zdarzeń spoza okna."
+      },
+      {
+        "question_ids": [
+          "q020",
+          "q022",
+          "q027",
+          "q029"
+        ],
+        "flag": "reported_health_context",
+        "rule": "Zgłoszono kontekst zdrowotny; nie zakładaj diagnozy ani przyczynowości."
+      },
+      {
+        "question_ids": [
+          "q021"
+        ],
+        "flag": "treatment_context",
+        "rule": "Zgłoszono leczenie w okresie obserwacji."
+      },
+      {
+        "question_ids": [
+          "q006",
+          "q038"
+        ],
+        "flag": "recent_home_change",
+        "rule": "Zgłoszono zmianę domu/rutyny; zachowaj datę i kontekst."
+      }
+    ],
+    "exclusive_options": [
+      "unknown",
+      "not_applicable",
+      "none_known",
+      "none_observed",
+      "none",
+      "not_used"
+    ],
+    "exclusive_option_rule": "W multi_choice żadna z powyższych opcji nie może wystąpić z inną. answered nie może zawierać unknown ani not_applicable."
+  },
+  "sections": [
+    {
+      "id": "identity_history",
+      "title": "Etap 1: Kim jest zwierzę i skąd znamy jego historię?",
+      "description": "Dane podstawowe i historia. Podaj tylko informacje, które znasz; nie zapisuj danych identyfikujących ludzi."
+    },
+    {
+      "id": "observer_quality",
+      "title": "Etap 1: Jak powstały obserwacje?",
+      "description": "Źródło odpowiedzi, ilość kontaktu i luki. Te odpowiedzi służą ocenie danych, a nie osobowości zwierzęcia."
+    },
+    {
+      "id": "health_context",
+      "title": "Etap 1: Zdrowie i ograniczenia obserwacji",
+      "description": "Zgłoszone przez opiekuna informacje o stanie zdrowia i zmianach. Nie jest to badanie ani rozpoznanie choroby."
+    },
+    {
+      "id": "environment_routines",
+      "title": "Etap 2: Otoczenie i codzienne warunki",
+      "description": "Zasoby, zwykła rutyna, zmiany środowiska i reakcje opiekuna w ostatnich 14 dniach."
+    },
+    {
+      "id": "rest_activity",
+      "title": "Etap 2: Odpoczynek i aktywność",
+      "description": "Widoczne zachowania w odpoczynku i dobrowolnej zabawie w ostatnich 14 dniach."
+    },
+    {
+      "id": "social_choice",
+      "title": "Etap 2: Kontakt i wybór dystansu",
+      "description": "Dobrowolne zbliżanie się, wycofywanie i korzystanie z przestrzeni w ostatnich 14 dniach."
+    },
+    {
+      "id": "communication",
+      "title": "Etap 2: Sygnały i kontekst komunikacji",
+      "description": "Obserwowalne ruchy, dźwięki i okoliczności ich występowania w ostatnich 14 dniach."
+    },
+    {
+      "id": "learning_preferences",
+      "title": "Etap 2: Uczenie się i preferencje",
+      "description": "Zachowania podczas znanych, dobrowolnych i nagradzanych aktywności. Nie organizuj testów na potrzeby ankiety."
+    },
+    {
+      "id": "ordinary_events",
+      "title": "Etap 2: Zwykłe zdarzenia i powrót do rutyny",
+      "description": "Wyłącznie zdarzenia, które wystąpiły naturalnie. Nie wywołuj hałasu, strachu, konfliktu ani separacji."
+    },
+    {
+      "id": "dog_context",
+      "title": "Etap 3: Codzienność psa",
+      "description": "Obserwacje z normalnych spacerów i znanych aktywności psa w ostatnich 14 dniach."
+    },
+    {
+      "id": "cat_context",
+      "title": "Etap 3: Codzienność kota",
+      "description": "Obserwacje zasobów, przestrzeni i znanych aktywności kota w ostatnich 14 dniach."
+    },
+    {
+      "id": "examples_followup",
+      "title": "Etap 3: Przykłady i sprawdzenie pewności",
+      "description": "Konkretne zdarzenia, wyjątki i informacja o brakach obserwacji. Przegląd przed zapisaniem odpowiedzi."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q001",
+      "section_id": "identity_history",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "prompt": "Dla którego zwierzęcia wypełniasz ten formularz?",
+      "type": "single_choice",
+      "required": false,
+      "recall_window_days": null,
+      "construct": "species",
+      "notes": "Dane opisowe z wiedzy opiekuna; źródło i niepewność zapisz w metadanych odpowiedzi. Nie wyprowadzaj z tej odpowiedzi cechy osobowości.",
+      "options": [
+        {
+          "value": "dog",
+          "label": "Pies"
+        },
+        {
+          "value": "cat",
+          "label": "Kot"
+        },
+        {
+          "value": "unknown",
+          "label": "Nie wiem / nie mam wystarczającej obserwacji"
+        },
+        {
+          "value": "not_applicable",
+          "label": "Nie dotyczy / sytuacja nie wystąpiła"
+        }
+      ]
+    },
+    {
+      "id": "q002",
+      "section_id": "identity_history",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "prompt": "Jakim pseudonimem będziemy oznaczać zwierzę? Nie podawaj nazwiska ani adresu.",
+      "type": "free_text",
+      "required": false,
+      "recall_window_days": null,
+      "construct": "pet_alias",
+      "notes": "Dane opisowe z wiedzy opiekuna; źródło i niepewność zapisz w metadanych odpowiedzi. Nie wyprowadzaj z tej odpowiedzi cechy osobowości."
+    },
+    {
+      "id": "q003",
+      "section_id": "identity_history",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "prompt": "Ile miesięcy ma zwierzę? Jeżeli wiek jest szacowany, zaznacz to w notatce odpowiedzi.",
+      "type": "number",
+      "required": false,
+      "recall_window_days": null,
+      "construct": "age_months",
+      "notes": "Jednostka: miesiące; liczba nieujemna. Wiek szacowany oznacz flagą estimated_age. „Nie wiem” i „nie dotyczy” wybiera się jako stan odpowiedzi, bez liczby."
+    },
+    {
+      "id": "q004",
+      "section_id": "identity_history",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "prompt": "Jaka płeć zwierzęcia jest znana z dokumentacji lub informacji lekarza?",
+      "type": "single_choice",
+      "required": false,
+      "recall_window_days": null,
+      "construct": "reported_sex",
+      "notes": "Dane opisowe z wiedzy opiekuna; źródło i niepewność zapisz w metadanych odpowiedzi. Nie wyprowadzaj z tej odpowiedzi cechy osobowości.",
+      "options": [
+        {
+          "value": "female",
+          "label": "Samica"
+        },
+        {
+          "value": "male",
+          "label": "Samiec"
+        },
+        {
+          "value": "other_documented",
+          "label": "Inna informacja w dokumentacji"
+        },
+        {
+          "value": "unknown",
+          "label": "Nie wiem / nie mam wystarczającej obserwacji"
+        },
+        {
+          "value": "not_applicable",
+          "label": "Nie dotyczy / sytuacja nie wystąpiła"
+        }
+      ]
+    },
+    {
+      "id": "q005",
+      "section_id": "identity_history",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "prompt": "Jaki jest znany status kastracji/sterylizacji zwierzęcia?",
+      "type": "single_choice",
+      "required": false,
+      "recall_window_days": null,
+      "construct": "reported_neuter_status",
+      "notes": "Dane opisowe z wiedzy opiekuna; źródło i niepewność zapisz w metadanych odpowiedzi. Nie wyprowadzaj z tej odpowiedzi cechy osobowości.",
+      "options": [
+        {
+          "value": "not_neutered",
+          "label": "Nie było poddane zabiegowi"
+        },
+        {
+          "value": "neutered",
+          "label": "Było poddane zabiegowi"
+        },
+        {
+          "value": "procedure_recent",
+          "label": "Zabieg odbył się w ostatnich 14 dniach"
+        },
+        {
+          "value": "unknown",
+          "label": "Nie wiem / nie mam wystarczającej obserwacji"
+        },
+        {
+          "value": "not_applicable",
+          "label": "Nie dotyczy / sytuacja nie wystąpiła"
+        }
+      ]
+    },
+    {
+      "id": "q006",
+      "section_id": "identity_history",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "prompt": "Od ilu miesięcy zwierzę mieszka w obecnym gospodarstwie domowym?",
+      "type": "number",
+      "required": false,
+      "recall_window_days": null,
+      "construct": "months_in_current_home",
+      "notes": "Jednostka: miesiące; można podać część miesiąca. Krótki pobyt ogranicza wnioskowanie o powtarzalnym profilu. Brak wiedzy zapisz stanem unknown."
+    },
+    {
+      "id": "q007",
+      "section_id": "identity_history",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "prompt": "Jak zwierzę trafiło do obecnego domu?",
+      "type": "single_choice",
+      "required": false,
+      "recall_window_days": null,
+      "construct": "reported_origin",
+      "notes": "Dane opisowe z wiedzy opiekuna; źródło i niepewność zapisz w metadanych odpowiedzi. Nie wyprowadzaj z tej odpowiedzi cechy osobowości.",
+      "options": [
+        {
+          "value": "adoption",
+          "label": "Adopcja ze schroniska lub organizacji"
+        },
+        {
+          "value": "private_rehome",
+          "label": "Przekazanie przez inną osobę"
+        },
+        {
+          "value": "breeder",
+          "label": "Od hodowcy"
+        },
+        {
+          "value": "born_here",
+          "label": "Urodziło się w obecnym domu"
+        },
+        {
+          "value": "found",
+          "label": "Znalezione"
+        },
+        {
+          "value": "other",
+          "label": "Inna znana droga"
+        },
+        {
+          "value": "unknown",
+          "label": "Nie wiem / nie mam wystarczającej obserwacji"
+        },
+        {
+          "value": "not_applicable",
+          "label": "Nie dotyczy / sytuacja nie wystąpiła"
+        }
+      ]
+    },
+    {
+      "id": "q008",
+      "section_id": "identity_history",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "prompt": "Co wiadomo o wcześniejszych domach, opiece i socjalizacji? Oddziel potwierdzone informacje od przypuszczeń.",
+      "type": "free_text",
+      "required": false,
+      "recall_window_days": null,
+      "construct": "reported_early_history",
+      "notes": "Dane opisowe z wiedzy opiekuna; źródło i niepewność zapisz w metadanych odpowiedzi. Nie wyprowadzaj z tej odpowiedzi cechy osobowości."
+    },
+    {
+      "id": "q009",
+      "section_id": "identity_history",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "prompt": "Jaka była ostatnia znana masa ciała zwierzęcia w kilogramach? Podaj datę lub przybliżenie w notatce.",
+      "type": "number",
+      "required": false,
+      "recall_window_days": null,
+      "construct": "reported_body_mass_kg",
+      "notes": "Jednostka: kg; wartość dodatnia. To metadane kontekstu, nie wskaźnik charakteru. Szacunek oznacz estimated_body_mass; nie waż zwierzęcia, jeżeli byłoby to dla niego stresujące."
+    },
+    {
+      "id": "q010",
+      "section_id": "identity_history",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "prompt": "Jakie znane wydarzenia sprzed ostatnich 14 dni mogą pomóc rozumieć obecną rutynę? Opisz wydarzenia, bez przypisywania im pewnego wpływu.",
+      "type": "free_text",
+      "required": false,
+      "recall_window_days": null,
+      "construct": "reported_long_term_history",
+      "notes": "Dane opisowe z wiedzy opiekuna; źródło i niepewność zapisz w metadanych odpowiedzi. Nie wyprowadzaj z tej odpowiedzi cechy osobowości."
+    },
+    {
+      "id": "q011",
+      "section_id": "observer_quality",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "prompt": "Jaka jest Twoja rola w codziennej opiece nad tym zwierzęciem?",
+      "type": "single_choice",
+      "required": false,
+      "recall_window_days": null,
+      "construct": "respondent_role",
+      "notes": "Dane opisowe z wiedzy opiekuna; źródło i niepewność zapisz w metadanych odpowiedzi. Nie wyprowadzaj z tej odpowiedzi cechy osobowości.",
+      "options": [
+        {
+          "value": "main_caregiver",
+          "label": "Główny opiekun"
+        },
+        {
+          "value": "shared_caregiver",
+          "label": "Współopiekun"
+        },
+        {
+          "value": "occasional_caregiver",
+          "label": "Opiekun okazjonalny"
+        },
+        {
+          "value": "professional_caregiver",
+          "label": "Osoba sprawująca opiekę zawodowo"
+        },
+        {
+          "value": "unknown",
+          "label": "Nie wiem / nie mam wystarczającej obserwacji"
+        },
+        {
+          "value": "not_applicable",
+          "label": "Nie dotyczy / sytuacja nie wystąpiła"
+        }
+      ]
+    },
+    {
+      "id": "q012",
+      "section_id": "observer_quality",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "prompt": "W ilu z ostatnich 14 dni obserwowałeś/obserwowałaś zwierzę osobiście?",
+      "type": "number",
+      "required": false,
+      "recall_window_days": 14,
+      "construct": "observed_days",
+      "notes": "Liczba całkowita 0–14. Nie licz dni znanych wyłącznie z cudzej relacji. Niska liczba dni oznacza limited_observation, a nie cechę zwierzęcia."
+    },
+    {
+      "id": "q013",
+      "section_id": "observer_quality",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "prompt": "Ile czasu dziennie zwykle widziałeś/widziałaś zwierzę w dniach obserwacji?",
+      "type": "single_choice",
+      "required": false,
+      "recall_window_days": 14,
+      "construct": "daily_observation_exposure",
+      "notes": "Opisuj tylko osobiście zaobserwowane sytuacje. Brak okazji oznacza „nie dotyczy”, brak wiedzy oznacza „nie wiem”. Nie wywołuj sytuacji na potrzeby odpowiedzi.",
+      "options": [
+        {
+          "value": "under_30_min",
+          "label": "Mniej niż 30 minut"
+        },
+        {
+          "value": "30_min_to_2_h",
+          "label": "Od 30 minut do mniej niż 2 godzin"
+        },
+        {
+          "value": "2_to_6_h",
+          "label": "Od 2 do mniej niż 6 godzin"
+        },
+        {
+          "value": "6_h_or_more",
+          "label": "6 godzin lub więcej"
+        },
+        {
+          "value": "unknown",
+          "label": "Nie wiem / nie mam wystarczającej obserwacji"
+        },
+        {
+          "value": "not_applicable",
+          "label": "Nie dotyczy / sytuacja nie wystąpiła"
+        }
+      ]
+    },
+    {
+      "id": "q014",
+      "section_id": "observer_quality",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "prompt": "Z jakich źródeł będą pochodzić Twoje odpowiedzi o ostatnich 14 dniach?",
+      "type": "multi_choice",
+      "required": false,
+      "recall_window_days": 14,
+      "construct": "observation_sources",
+      "notes": "Można wybrać wiele źródeł. Dla każdej odpowiedzi zapisz jej źródło osobno. Relację pośrednią oznacz second_hand; odpowiedzi poza oknem czasu oznacz outside_recall_window.",
+      "options": [
+        {
+          "value": "direct",
+          "label": "Własna obserwacja na żywo"
+        },
+        {
+          "value": "video",
+          "label": "Nagrania tego zwierzęcia"
+        },
+        {
+          "value": "diary",
+          "label": "Notatki prowadzone na bieżąco"
+        },
+        {
+          "value": "other_person",
+          "label": "Relacja innej osoby"
+        },
+        {
+          "value": "general_memory",
+          "label": "Ogólne wspomnienie bez konkretnego przykładu"
+        },
+        {
+          "value": "unknown",
+          "label": "Nie wiem / nie mam wystarczającej obserwacji"
+        },
+        {
+          "value": "not_applicable",
+          "label": "Nie dotyczy / sytuacja nie wystąpiła"
+        }
+      ]
+    },
+    {
+      "id": "q015",
+      "section_id": "observer_quality",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "prompt": "W jakich sytuacjach rzeczywiście obserwowałeś/obserwowałaś zwierzę?",
+      "type": "multi_choice",
+      "required": false,
+      "recall_window_days": 14,
+      "construct": "observed_context_coverage",
+      "notes": "Opisuj tylko osobiście zaobserwowane sytuacje. Brak okazji oznacza „nie dotyczy”, brak wiedzy oznacza „nie wiem”. Nie wywołuj sytuacji na potrzeby odpowiedzi.",
+      "options": [
+        {
+          "value": "rest",
+          "label": "Odpoczynek"
+        },
+        {
+          "value": "feeding",
+          "label": "Zwykłe karmienie"
+        },
+        {
+          "value": "voluntary_play",
+          "label": "Dobrowolna zabawa"
+        },
+        {
+          "value": "familiar_people",
+          "label": "Kontakt ze znanymi ludźmi"
+        },
+        {
+          "value": "ordinary_visitors",
+          "label": "Zwykła wizyta gości"
+        },
+        {
+          "value": "familiar_animals",
+          "label": "Codzienny kontakt ze znanymi zwierzętami"
+        },
+        {
+          "value": "walk_or_safe_outdoor",
+          "label": "Zwykły spacer lub bezpieczny pobyt na zewnątrz"
+        },
+        {
+          "value": "routine_care",
+          "label": "Znana rutynowa pielęgnacja"
+        },
+        {
+          "value": "existing_alone_recording",
+          "label": "Już istniejące nagranie zwykłej nieobecności opiekuna"
+        },
+        {
+          "value": "unknown",
+          "label": "Nie wiem / nie mam wystarczającej obserwacji"
+        },
+        {
+          "value": "not_applicable",
+          "label": "Nie dotyczy / sytuacja nie wystąpiła"
+        }
+      ]
+    },
+    {
+      "id": "q016",
+      "section_id": "observer_quality",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "prompt": "Czy drugi opiekun może niezależnie opisać te same ostatnie 14 dni?",
+      "type": "single_choice",
+      "required": false,
+      "recall_window_days": 14,
+      "construct": "independent_observer_availability",
+      "notes": "Opisuj tylko osobiście zaobserwowane sytuacje. Brak okazji oznacza „nie dotyczy”, brak wiedzy oznacza „nie wiem”. Nie wywołuj sytuacji na potrzeby odpowiedzi.",
+      "options": [
+        {
+          "value": "yes",
+          "label": "Tak"
+        },
+        {
+          "value": "no",
+          "label": "Nie"
+        },
+        {
+          "value": "partly",
+          "label": "Tylko część sytuacji"
+        },
+        {
+          "value": "unknown",
+          "label": "Nie wiem / nie mam wystarczającej obserwacji"
+        },
+        {
+          "value": "not_applicable",
+          "label": "Nie dotyczy / sytuacja nie wystąpiła"
+        }
+      ]
+    },
+    {
+      "id": "q017",
+      "section_id": "observer_quality",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "prompt": "Co ograniczało Twoje obserwacje?",
+      "type": "multi_choice",
+      "required": false,
+      "recall_window_days": 14,
+      "construct": "observation_limitations",
+      "notes": "none_known nie łączy się z inną odpowiedzią. Ograniczenia zapisuj jako flagi jakości obserwacji, bez obniżania dobrostanu lub osobowości w profilu.",
+      "options": [
+        {
+          "value": "none_known",
+          "label": "Nie zauważyłem/zauważyłam ograniczeń"
+        },
+        {
+          "value": "few_days",
+          "label": "Niewiele wspólnych dni"
+        },
+        {
+          "value": "one_context",
+          "label": "Głównie jeden rodzaj sytuacji"
+        },
+        {
+          "value": "animal_not_visible",
+          "label": "Zwierzę często było poza zasięgiem wzroku"
+        },
+        {
+          "value": "routine_unusual",
+          "label": "Ten okres był nietypowy dla naszej rutyny"
+        },
+        {
+          "value": "recall_difficult",
+          "label": "Trudno odtworzyć konkretne zdarzenia"
+        },
+        {
+          "value": "other",
+          "label": "Inne ograniczenie"
+        },
+        {
+          "value": "unknown",
+          "label": "Nie wiem / nie mam wystarczającej obserwacji"
+        },
+        {
+          "value": "not_applicable",
+          "label": "Nie dotyczy / sytuacja nie wystąpiła"
+        }
+      ]
+    },
+    {
+      "id": "q018",
+      "section_id": "observer_quality",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "prompt": "Jak oszacowałeś/oszacowałaś częstość zachowań w tym formularzu?",
+      "type": "single_choice",
+      "required": false,
+      "recall_window_days": 14,
+      "construct": "frequency_estimation_basis",
+      "notes": "Opisuj tylko osobiście zaobserwowane sytuacje. Brak okazji oznacza „nie dotyczy”, brak wiedzy oznacza „nie wiem”. Nie wywołuj sytuacji na potrzeby odpowiedzi.",
+      "options": [
+        {
+          "value": "dated_records",
+          "label": "Na podstawie datowanych notatek lub nagrań"
+        },
+        {
+          "value": "specific_examples",
+          "label": "Na podstawie kilku konkretnych sytuacji"
+        },
+        {
+          "value": "general_impression",
+          "label": "Na podstawie ogólnego wrażenia"
+        },
+        {
+          "value": "mixed",
+          "label": "Różnie, zależnie od pytania"
+        },
+        {
+          "value": "unknown",
+          "label": "Nie wiem / nie mam wystarczającej obserwacji"
+        },
+        {
+          "value": "not_applicable",
+          "label": "Nie dotyczy / sytuacja nie wystąpiła"
+        }
+      ]
+    },
+    {
+      "id": "q019",
+      "section_id": "observer_quality",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "prompt": "Czy w odpowiedziach zdarzyło Ci się korzystać ze wspomnień starszych niż 14 dni?",
+      "type": "single_choice",
+      "required": false,
+      "recall_window_days": 14,
+      "construct": "recall_contamination",
+      "notes": "Wskaż starsze odpowiedzi w ich metadanych. Nie zamieniaj starszego wspomnienia na obserwację w bieżącym oknie.",
+      "options": [
+        {
+          "value": "no",
+          "label": "Nie"
+        },
+        {
+          "value": "some",
+          "label": "Tak, w części odpowiedzi"
+        },
+        {
+          "value": "most",
+          "label": "Tak, w większości odpowiedzi"
+        },
+        {
+          "value": "unknown",
+          "label": "Nie wiem / nie mam wystarczającej obserwacji"
+        },
+        {
+          "value": "not_applicable",
+          "label": "Nie dotyczy / sytuacja nie wystąpiła"
+        }
+      ]
+    },
+    {
+      "id": "q020",
+      "section_id": "health_context",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "prompt": "Jakie aktualne rozpoznania lub zalecenia lekarza weterynarii są istotne dla codziennych aktywności? Możesz pominąć szczegóły i podać tylko ograniczenia.",
+      "type": "free_text",
+      "required": false,
+      "recall_window_days": null,
+      "construct": "reported_veterinary_context",
+      "notes": "Wyłącznie zgłoszenie opiekuna. Nie potwierdza rozpoznania i nie służy do diagnozy. Nie zapisuj danych lekarza ani skanów dokumentów zawierających dane ludzi."
+    },
+    {
+      "id": "q021",
+      "section_id": "health_context",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "prompt": "Czy zwierzę otrzymywało w ostatnich 14 dniach leki lub przechodziło leczenie, które według lekarza może wpływać na aktywność?",
+      "type": "single_choice",
+      "required": false,
+      "recall_window_days": 14,
+      "construct": "reported_treatment_context",
+      "notes": "Nie proponuj zmian leczenia. Lek/leczenie jest możliwym czynnikiem kontekstu, nie automatycznym wyjaśnieniem zachowania.",
+      "options": [
+        {
+          "value": "yes",
+          "label": "Tak, zgodnie z informacją lekarza"
+        },
+        {
+          "value": "no",
+          "label": "Nie"
+        },
+        {
+          "value": "treatment_effect_unknown",
+          "label": "Było leczenie, ale nie znam wpływu na aktywność"
+        },
+        {
+          "value": "unknown",
+          "label": "Nie wiem / nie mam wystarczającej obserwacji"
+        },
+        {
+          "value": "not_applicable",
+          "label": "Nie dotyczy / sytuacja nie wystąpiła"
+        }
+      ]
+    },
+    {
+      "id": "q022",
+      "section_id": "health_context",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "prompt": "Jakie znane ograniczenia trzeba uwzględnić przy obserwacji?",
+      "type": "multi_choice",
+      "required": false,
+      "recall_window_days": 14,
+      "construct": "reported_functional_limitations",
+      "notes": "none_known jest wyłączne. Nie testuj wzroku, słuchu ani sprawności na potrzeby kwestionariusza.",
+      "options": [
+        {
+          "value": "none_known",
+          "label": "Brak znanych ograniczeń"
+        },
+        {
+          "value": "vision",
+          "label": "Ograniczenie wzroku"
+        },
+        {
+          "value": "hearing",
+          "label": "Ograniczenie słuchu"
+        },
+        {
+          "value": "movement",
+          "label": "Ograniczenie ruchu"
+        },
+        {
+          "value": "veterinary_activity_limit",
+          "label": "Zalecenie ograniczenia aktywności przez lekarza"
+        },
+        {
+          "value": "other",
+          "label": "Inne znane ograniczenie"
+        },
+        {
+          "value": "unknown",
+          "label": "Nie wiem / nie mam wystarczającej obserwacji"
+        },
+        {
+          "value": "not_applicable",
+          "label": "Nie dotyczy / sytuacja nie wystąpiła"
+        }
+      ]
+    },
+    {
+      "id": "q023",
+      "section_id": "health_context",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "prompt": "Jak ilość zwykle zjadanej karmy zmieniała się względem wcześniejszej rutyny?",
+      "type": "single_choice",
+      "required": false,
+      "recall_window_days": 14,
+      "construct": "reported_appetite_change",
+      "notes": "Opisuj tylko osobiście zaobserwowane sytuacje. Brak okazji oznacza „nie dotyczy”, brak wiedzy oznacza „nie wiem”. Nie wywołuj sytuacji na potrzeby odpowiedzi.",
+      "options": [
+        {
+          "value": "similar",
+          "label": "Podobna ilość"
+        },
+        {
+          "value": "less",
+          "label": "Mniej"
+        },
+        {
+          "value": "more",
+          "label": "Więcej"
+        },
+        {
+          "value": "variable",
+          "label": "Zmieniała się między dniami"
+        },
+        {
+          "value": "routine_changed",
+          "label": "Zmieniono karmę lub sposób karmienia; trudno porównać"
+        },
+        {
+          "value": "unknown",
+          "label": "Nie wiem / nie mam wystarczającej obserwacji"
+        },
+        {
+          "value": "not_applicable",
+          "label": "Nie dotyczy / sytuacja nie wystąpiła"
+        }
+      ]
+    },
+    {
+      "id": "q024",
+      "section_id": "health_context",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "prompt": "Jak często zwierzę przerywało zwykłe chodzenie, wstawanie lub wskakiwanie w sposób odmienny od swojej wcześniejszej rutyny?",
+      "type": "frequency",
+      "required": false,
+      "recall_window_days": 14,
+      "construct": "observed_mobility_change",
+      "notes": "Opis zachowania i zmiany; nie rozpoznawaj bólu z tej odpowiedzi. Nie namawiaj do ruchu ani skoku, żeby sprawdzić odpowiedź.",
+      "options": [
+        {
+          "value": "never_observed",
+          "label": "Nigdy w obserwowanych sytuacjach"
+        },
+        {
+          "value": "rarely",
+          "label": "Rzadko w obserwowanych sytuacjach"
+        },
+        {
+          "value": "sometimes",
+          "label": "Czasami w obserwowanych sytuacjach"
+        },
+        {
+          "value": "often",
+          "label": "Często w obserwowanych sytuacjach"
+        },
+        {
+          "value": "almost_always",
+          "label": "Prawie zawsze w obserwowanych sytuacjach"
+        },
+        {
+          "value": "unknown",
+          "label": "Nie wiem / nie mam wystarczającej obserwacji"
+        },
+        {
+          "value": "not_applicable",
+          "label": "Nie dotyczy / sytuacja nie wystąpiła"
+        }
+      ]
+    },
+    {
+      "id": "q025",
+      "section_id": "health_context",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "prompt": "Jak często zauważałeś/zauważałaś nowe wyraźne przerzedzenie sierści lub uszkodzenie skóry w miejscach lizania lub drapania?",
+      "type": "frequency",
+      "required": false,
+      "recall_window_days": 14,
+      "construct": "reported_grooming_skin_change",
+      "notes": "Obserwacja opiekuna bez diagnozy. Nie odsłaniaj skóry ani nie manipuluj zwierzęciem tylko dla formularza.",
+      "options": [
+        {
+          "value": "never_observed",
+          "label": "Nigdy w obserwowanych sytuacjach"
+        },
+        {
+          "value": "rarely",
+          "label": "Rzadko w obserwowanych sytuacjach"
+        },
+        {
+          "value": "sometimes",
+          "label": "Czasami w obserwowanych sytuacjach"
+        },
+        {
+          "value": "often",
+          "label": "Często w obserwowanych sytuacjach"
+        },
+        {
+          "value": "almost_always",
+          "label": "Prawie zawsze w obserwowanych sytuacjach"
+        },
+        {
+          "value": "unknown",
+          "label": "Nie wiem / nie mam wystarczającej obserwacji"
+        },
+        {
+          "value": "not_applicable",
+          "label": "Nie dotyczy / sytuacja nie wystąpiła"
+        }
+      ]
+    },
+    {
+      "id": "q026",
+      "section_id": "health_context",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "prompt": "Jakie nowe zmiany fizyczne rzeczywiście zauważyłeś/zauważyłaś?",
+      "type": "multi_choice",
+      "required": false,
+      "recall_window_days": 14,
+      "construct": "reported_new_physical_changes",
+      "notes": "none_observed jest wyłączne. To opis zmian, nie klasyfikacja choroby. Nowa zmiana może wymagać konsultacji weterynaryjnej; formularz nie ustala pilności.",
+      "options": [
+        {
+          "value": "none_observed",
+          "label": "Nie zauważyłem/zauważyłam nowych zmian"
+        },
+        {
+          "value": "water_intake",
+          "label": "Inna ilość wypijanej wody"
+        },
+        {
+          "value": "urination",
+          "label": "Zmiana oddawania moczu"
+        },
+        {
+          "value": "stool",
+          "label": "Zmiana wypróżnień"
+        },
+        {
+          "value": "vomiting",
+          "label": "Wymioty"
+        },
+        {
+          "value": "breathing",
+          "label": "Zmiana oddychania"
+        },
+        {
+          "value": "other",
+          "label": "Inna widoczna zmiana"
+        },
+        {
+          "value": "unknown",
+          "label": "Nie wiem / nie mam wystarczającej obserwacji"
+        },
+        {
+          "value": "not_applicable",
+          "label": "Nie dotyczy / sytuacja nie wystąpiła"
+        }
+      ]
+    },
+    {
+      "id": "q027",
+      "section_id": "health_context",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "prompt": "Czy w tym okresie trwała rekonwalescencja albo obowiązywała nowa rutyna zalecona przez lekarza?",
+      "type": "single_choice",
+      "required": false,
+      "recall_window_days": 14,
+      "construct": "reported_recovery_context",
+      "notes": "Opisuj tylko osobiście zaobserwowane sytuacje. Brak okazji oznacza „nie dotyczy”, brak wiedzy oznacza „nie wiem”. Nie wywołuj sytuacji na potrzeby odpowiedzi.",
+      "options": [
+        {
+          "value": "yes",
+          "label": "Tak"
+        },
+        {
+          "value": "no",
+          "label": "Nie"
+        },
+        {
+          "value": "unknown",
+          "label": "Nie wiem / nie mam wystarczającej obserwacji"
+        },
+        {
+          "value": "not_applicable",
+          "label": "Nie dotyczy / sytuacja nie wystąpiła"
+        }
+      ]
+    },
+    {
+      "id": "q028",
+      "section_id": "health_context",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "prompt": "Jak często zwierzę odsuwało dotykaną część ciała podczas znanej, wcześniej akceptowanej codziennej pielęgnacji?",
+      "type": "frequency",
+      "required": false,
+      "recall_window_days": 14,
+      "construct": "observed_care_withdrawal",
+      "notes": "Tylko już zaobserwowane zdarzenia. Nie powtarzaj dotyku, nie przytrzymuj i nie testuj tolerancji. Brak pielęgnacji w oknie to not_applicable.",
+      "options": [
+        {
+          "value": "never_observed",
+          "label": "Nigdy w obserwowanych sytuacjach"
+        },
+        {
+          "value": "rarely",
+          "label": "Rzadko w obserwowanych sytuacjach"
+        },
+        {
+          "value": "sometimes",
+          "label": "Czasami w obserwowanych sytuacjach"
+        },
+        {
+          "value": "often",
+          "label": "Często w obserwowanych sytuacjach"
+        },
+        {
+          "value": "almost_always",
+          "label": "Prawie zawsze w obserwowanych sytuacjach"
+        },
+        {
+          "value": "unknown",
+          "label": "Nie wiem / nie mam wystarczającej obserwacji"
+        },
+        {
+          "value": "not_applicable",
+          "label": "Nie dotyczy / sytuacja nie wystąpiła"
+        }
+      ]
+    },
+    {
+      "id": "q029",
+      "section_id": "health_context",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "prompt": "Opisz jedną nową zmianę zdrowotną lub w rutynie ruchu, z datą jej zauważenia i źródłem informacji, jeśli taka zmiana wystąpiła.",
+      "type": "free_text",
+      "required": false,
+      "recall_window_days": 14,
+      "construct": "health_change_example",
+      "notes": "Opisuj tylko osobiście zaobserwowane sytuacje. Brak okazji oznacza „nie dotyczy”, brak wiedzy oznacza „nie wiem”. Nie wywołuj sytuacji na potrzeby odpowiedzi."
+    },
+    {
+      "id": "q030",
+      "section_id": "environment_routines",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "prompt": "Ile innych zwierząt mieszkało na stałe w tym samym domu?",
+      "type": "number",
+      "required": false,
+      "recall_window_days": 14,
+      "construct": "cohabiting_animal_count",
+      "notes": "Liczba całkowita nieujemna. Nie podawaj danych opiekunów innych zwierząt. Liczba współmieszkańców nie dowodzi towarzyskości."
+    },
+    {
+      "id": "q031",
+      "section_id": "environment_routines",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "prompt": "W jakich znanych przestrzeniach zwierzę przebywało na co dzień?",
+      "type": "multi_choice",
+      "required": false,
+      "recall_window_days": 14,
+      "construct": "daily_space_context",
+      "notes": "Zapis istniejących warunków, bez rekomendowania wypuszczania zwierzęcia. Brak obserwacji na zewnątrz oznacza lukę danych.",
+      "options": [
+        {
+          "value": "home_interior",
+          "label": "Wnętrze domu"
+        },
+        {
+          "value": "secured_garden",
+          "label": "Zabezpieczony ogród"
+        },
+        {
+          "value": "secured_balcony",
+          "label": "Zabezpieczony balkon lub wybieg"
+        },
+        {
+          "value": "leashed_outdoor",
+          "label": "Na zewnątrz pod opieką na smyczy"
+        },
+        {
+          "value": "free_outdoor",
+          "label": "Na zewnątrz bez bezpośredniej obserwacji"
+        },
+        {
+          "value": "temporary_home",
+          "label": "W domu tymczasowym lub hotelu"
+        },
+        {
+          "value": "other",
+          "label": "Inna przestrzeń"
+        },
+        {
+          "value": "unknown",
+          "label": "Nie wiem / nie mam wystarczającej obserwacji"
+        },
+        {
+          "value": "not_applicable",
+          "label": "Nie dotyczy / sytuacja nie wystąpiła"
+        }
+      ]
+    },
+    {
+      "id": "q032",
+      "section_id": "environment_routines",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "prompt": "Z jakich zasobów zwierzę mogło korzystać bez rywalizacji w zwykłym dniu?",
+      "type": "multi_choice",
+      "required": false,
+      "recall_window_days": 14,
+      "construct": "resource_availability",
+      "notes": "Opisuj tylko osobiście zaobserwowane sytuacje. Brak okazji oznacza „nie dotyczy”, brak wiedzy oznacza „nie wiem”. Nie wywołuj sytuacji na potrzeby odpowiedzi.",
+      "options": [
+        {
+          "value": "quiet_rest",
+          "label": "Ciche miejsce odpoczynku"
+        },
+        {
+          "value": "hide",
+          "label": "Miejsce schowania się"
+        },
+        {
+          "value": "water",
+          "label": "Dostęp do wody"
+        },
+        {
+          "value": "feeding_space",
+          "label": "Własna przestrzeń karmienia"
+        },
+        {
+          "value": "voluntary_play_space",
+          "label": "Miejsce dobrowolnej zabawy"
+        },
+        {
+          "value": "toileting_space",
+          "label": "Dostępne miejsce załatwiania potrzeb"
+        },
+        {
+          "value": "elevated_space",
+          "label": "Bezpieczne miejsce na wysokości"
+        },
+        {
+          "value": "unknown",
+          "label": "Nie wiem / nie mam wystarczającej obserwacji"
+        },
+        {
+          "value": "not_applicable",
+          "label": "Nie dotyczy / sytuacja nie wystąpiła"
+        }
+      ]
+    },
+    {
+      "id": "q033",
+      "section_id": "environment_routines",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "prompt": "Jak przewidywalne były pory zwykłego karmienia, odpoczynku i aktywności?",
+      "type": "single_choice",
+      "required": false,
+      "recall_window_days": 14,
+      "construct": "routine_regularities",
+      "notes": "Opisuj tylko osobiście zaobserwowane sytuacje. Brak okazji oznacza „nie dotyczy”, brak wiedzy oznacza „nie wiem”. Nie wywołuj sytuacji na potrzeby odpowiedzi.",
+      "options": [
+        {
+          "value": "mostly_same",
+          "label": "Zwykle podobne z dnia na dzień"
+        },
+        {
+          "value": "some_changes",
+          "label": "Część dni różniła się"
+        },
+        {
+          "value": "many_changes",
+          "label": "Wiele dni różniło się"
+        },
+        {
+          "value": "no_stable_pattern",
+          "label": "Nie było rozpoznawalnego rytmu"
+        },
+        {
+          "value": "unknown",
+          "label": "Nie wiem / nie mam wystarczającej obserwacji"
+        },
+        {
+          "value": "not_applicable",
+          "label": "Nie dotyczy / sytuacja nie wystąpiła"
+        }
+      ]
+    },
+    {
+      "id": "q034",
+      "section_id": "environment_routines",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "prompt": "Czy zwierzę mogło odejść od ludzi lub innych zwierząt do dostępnego spokojnego miejsca?",
+      "type": "single_choice",
+      "required": false,
+      "recall_window_days": 14,
+      "construct": "withdrawal_access",
+      "notes": "Opisuj tylko osobiście zaobserwowane sytuacje. Brak okazji oznacza „nie dotyczy”, brak wiedzy oznacza „nie wiem”. Nie wywołuj sytuacji na potrzeby odpowiedzi.",
+      "options": [
+        {
+          "value": "yes_usually",
+          "label": "Tak, w większości obserwowanych sytuacji"
+        },
+        {
+          "value": "sometimes",
+          "label": "Tylko w części sytuacji"
+        },
+        {
+          "value": "no",
+          "label": "Nie"
+        },
+        {
+          "value": "unknown",
+          "label": "Nie wiem / nie mam wystarczającej obserwacji"
+        },
+        {
+          "value": "not_applicable",
+          "label": "Nie dotyczy / sytuacja nie wystąpiła"
+        }
+      ]
+    },
+    {
+      "id": "q035",
+      "section_id": "environment_routines",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "prompt": "Jak długo w zwykłym dniu nie było w domu żadnego opiekuna?",
+      "type": "single_choice",
+      "required": false,
+      "recall_window_days": 14,
+      "construct": "ordinary_caregiver_absence",
+      "notes": "Informacja o zwykłej rutynie, nie dowód sposobu zachowania podczas nieobecności. Nie organizuj separacji ani nie przedłużaj nieobecności dla projektu.",
+      "options": [
+        {
+          "value": "none",
+          "label": "Opiekun zwykle był obecny"
+        },
+        {
+          "value": "under_2_h",
+          "label": "Mniej niż 2 godziny"
+        },
+        {
+          "value": "2_to_6_h",
+          "label": "Od 2 do mniej niż 6 godzin"
+        },
+        {
+          "value": "6_h_or_more",
+          "label": "6 godzin lub więcej"
+        },
+        {
+          "value": "variable",
+          "label": "Bardzo różnie między dniami"
+        },
+        {
+          "value": "unknown",
+          "label": "Nie wiem / nie mam wystarczającej obserwacji"
+        },
+        {
+          "value": "not_applicable",
+          "label": "Nie dotyczy / sytuacja nie wystąpiła"
+        }
+      ]
+    },
+    {
+      "id": "q036",
+      "section_id": "environment_routines",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "prompt": "Jaki sposób karmienia dominował?",
+      "type": "single_choice",
+      "required": false,
+      "recall_window_days": 14,
+      "construct": "feeding_routine",
+      "notes": "Opisuj tylko osobiście zaobserwowane sytuacje. Brak okazji oznacza „nie dotyczy”, brak wiedzy oznacza „nie wiem”. Nie wywołuj sytuacji na potrzeby odpowiedzi.",
+      "options": [
+        {
+          "value": "scheduled",
+          "label": "Posiłki o określonych porach"
+        },
+        {
+          "value": "available",
+          "label": "Karma dostępna przez większą część dnia"
+        },
+        {
+          "value": "mixed",
+          "label": "Mieszany sposób"
+        },
+        {
+          "value": "special_plan",
+          "label": "Indywidualny plan zalecony przez lekarza"
+        },
+        {
+          "value": "unknown",
+          "label": "Nie wiem / nie mam wystarczającej obserwacji"
+        },
+        {
+          "value": "not_applicable",
+          "label": "Nie dotyczy / sytuacja nie wystąpiła"
+        }
+      ]
+    },
+    {
+      "id": "q037",
+      "section_id": "environment_routines",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "prompt": "Jakie znane, dobrowolne aktywności były dostępne?",
+      "type": "multi_choice",
+      "required": false,
+      "recall_window_days": 14,
+      "construct": "enrichment_context",
+      "notes": "none_observed jest wyłączne. Pytanie opisuje to, co już było dostępne; nie nakazuje zwiększania aktywności.",
+      "options": [
+        {
+          "value": "sniffing",
+          "label": "Węszenie lub wyszukiwanie zapachu"
+        },
+        {
+          "value": "object_play",
+          "label": "Zabawa przedmiotem"
+        },
+        {
+          "value": "play_with_person",
+          "label": "Zabawa z opiekunem"
+        },
+        {
+          "value": "food_task",
+          "label": "Znane proste zadanie z karmą"
+        },
+        {
+          "value": "rewarded_learning",
+          "label": "Nauka z nagrodą"
+        },
+        {
+          "value": "quiet_exploration",
+          "label": "Spokojne poznawanie znanej przestrzeni"
+        },
+        {
+          "value": "none_observed",
+          "label": "Nie zaobserwowałem/zaobserwowałam takich aktywności"
+        },
+        {
+          "value": "unknown",
+          "label": "Nie wiem / nie mam wystarczającej obserwacji"
+        },
+        {
+          "value": "not_applicable",
+          "label": "Nie dotyczy / sytuacja nie wystąpiła"
+        }
+      ]
+    },
+    {
+      "id": "q038",
+      "section_id": "environment_routines",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "prompt": "Jakie zmiany zwykłego otoczenia wystąpiły?",
+      "type": "multi_choice",
+      "required": false,
+      "recall_window_days": 14,
+      "construct": "recent_environmental_change",
+      "notes": "none_known jest wyłączne. Wpływu zmiany nie zakłada się z góry; przechowaj datę i obserwację oddzielnie.",
+      "options": [
+        {
+          "value": "none_known",
+          "label": "Brak znanych zmian"
+        },
+        {
+          "value": "move_or_room",
+          "label": "Przeprowadzka lub zmiana dostępnych pomieszczeń"
+        },
+        {
+          "value": "household",
+          "label": "Zmiana osób lub zwierząt w domu"
+        },
+        {
+          "value": "visitors",
+          "label": "Nietypowo dużo gości"
+        },
+        {
+          "value": "noise",
+          "label": "Remont lub nietypowy hałas"
+        },
+        {
+          "value": "schedule",
+          "label": "Zmiana pór opieki"
+        },
+        {
+          "value": "travel",
+          "label": "Podróż lub pobyt poza domem"
+        },
+        {
+          "value": "other",
+          "label": "Inna zmiana"
+        },
+        {
+          "value": "unknown",
+          "label": "Nie wiem / nie mam wystarczającej obserwacji"
+        },
+        {
+          "value": "not_applicable",
+          "label": "Nie dotyczy / sytuacja nie wystąpiła"
+        }
+      ]
+    },
+    {
+      "id": "q039",
+      "section_id": "environment_routines",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "prompt": "Jakie Twoje reakcje na zachowanie zwierzęcia rzeczywiście występowały?",
+      "type": "multi_choice",
+      "required": false,
+      "recall_window_days": 14,
+      "construct": "caregiver_response_context",
+      "notes": "To rejestr warunków obserwacji, nie zachęta do podnoszenia głosu ani przytrzymywania. Nie używaj kar lub przymusu na potrzeby projektu.",
+      "options": [
+        {
+          "value": "reward",
+          "label": "Nagroda za wybraną czynność"
+        },
+        {
+          "value": "pause",
+          "label": "Przerwa lub umożliwienie odejścia"
+        },
+        {
+          "value": "environment_change",
+          "label": "Zmiana otoczenia"
+        },
+        {
+          "value": "quiet_redirection",
+          "label": "Spokojne skierowanie do znanej czynności"
+        },
+        {
+          "value": "raised_voice",
+          "label": "Podniesiony głos"
+        },
+        {
+          "value": "physical_restraint",
+          "label": "Fizyczne przytrzymanie"
+        },
+        {
+          "value": "other",
+          "label": "Inna reakcja"
+        },
+        {
+          "value": "unknown",
+          "label": "Nie wiem / nie mam wystarczającej obserwacji"
+        },
+        {
+          "value": "not_applicable",
+          "label": "Nie dotyczy / sytuacja nie wystąpiła"
+        }
+      ]
+    },
+    {
+      "id": "q040",
+      "section_id": "rest_activity",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "prompt": "Jak często zwierzę samo układało się do odpoczynku w swoim dostępnym miejscu, gdy w domu trwała zwykła spokojna aktywność?",
+      "type": "frequency",
+      "required": false,
+      "recall_window_days": 14,
+      "construct": "self_selected_rest",
+      "notes": "Opisuj tylko osobiście zaobserwowane sytuacje. Brak okazji oznacza „nie dotyczy”, brak wiedzy oznacza „nie wiem”. Nie wywołuj sytuacji na potrzeby odpowiedzi.",
+      "options": [
+        {
+          "value": "never_observed",
+          "label": "Nigdy w obserwowanych sytuacjach"
+        },
+        {
+          "value": "rarely",
+          "label": "Rzadko w obserwowanych sytuacjach"
+        },
+        {
+          "value": "sometimes",
+          "label": "Czasami w obserwowanych sytuacjach"
+        },
+        {
+          "value": "often",
+          "label": "Często w obserwowanych sytuacjach"
+        },
+        {
+          "value": "almost_always",
+          "label": "Prawie zawsze w obserwowanych sytuacjach"
+        },
+        {
+          "value": "unknown",
+          "label": "Nie wiem / nie mam wystarczającej obserwacji"
+        },
+        {
+          "value": "not_applicable",
+          "label": "Nie dotyczy / sytuacja nie wystąpiła"
+        }
+      ]
+    },
+    {
+      "id": "q041",
+      "section_id": "rest_activity",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "prompt": "Jak często podczas okresu odpoczynku zwierzę przechodziło między kilkoma miejscami zamiast pozostawać w jednym?",
+      "type": "frequency",
+      "required": false,
+      "recall_window_days": 14,
+      "construct": "rest_location_switching",
+      "notes": "Opisuj tylko osobiście zaobserwowane sytuacje. Brak okazji oznacza „nie dotyczy”, brak wiedzy oznacza „nie wiem”. Nie wywołuj sytuacji na potrzeby odpowiedzi.",
+      "options": [
+        {
+          "value": "never_observed",
+          "label": "Nigdy w obserwowanych sytuacjach"
+        },
+        {
+          "value": "rarely",
+          "label": "Rzadko w obserwowanych sytuacjach"
+        },
+        {
+          "value": "sometimes",
+          "label": "Czasami w obserwowanych sytuacjach"
+        },
+        {
+          "value": "often",
+          "label": "Często w obserwowanych sytuacjach"
+        },
+        {
+          "value": "almost_always",
+          "label": "Prawie zawsze w obserwowanych sytuacjach"
+        },
+        {
+          "value": "unknown",
+          "label": "Nie wiem / nie mam wystarczającej obserwacji"
+        },
+        {
+          "value": "not_applicable",
+          "label": "Nie dotyczy / sytuacja nie wystąpiła"
+        }
+      ]
+    },
+    {
+      "id": "q042",
+      "section_id": "rest_activity",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "prompt": "Co obserwowałeś/obserwowałaś podczas typowych dłuższych okresów odpoczynku?",
+      "type": "single_choice",
+      "required": false,
+      "recall_window_days": 14,
+      "construct": "observed_rest_continuity",
+      "notes": "Opis widocznego odpoczynku, nie pomiar faz snu. Podaj kontekst w notatce.",
+      "options": [
+        {
+          "value": "mostly_continuous",
+          "label": "Zwykle pozostawało w jednym miejscu bez częstego wstawania"
+        },
+        {
+          "value": "interrupted",
+          "label": "Często wstawało lub zmieniało miejsce"
+        },
+        {
+          "value": "varied",
+          "label": "Zależało to od dnia lub okoliczności"
+        },
+        {
+          "value": "unknown",
+          "label": "Nie wiem / nie mam wystarczającej obserwacji"
+        },
+        {
+          "value": "not_applicable",
+          "label": "Nie dotyczy / sytuacja nie wystąpiła"
+        }
+      ]
+    },
+    {
+      "id": "q043",
+      "section_id": "rest_activity",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "prompt": "Jak często zwierzę samo rozpoczynało zabawę przez podejście do znanej zabawki lub rozpoczęcie ruchów zabawowych?",
+      "type": "frequency",
+      "required": false,
+      "recall_window_days": 14,
+      "construct": "voluntary_play_initiation",
+      "notes": "Opisuj tylko osobiście zaobserwowane sytuacje. Brak okazji oznacza „nie dotyczy”, brak wiedzy oznacza „nie wiem”. Nie wywołuj sytuacji na potrzeby odpowiedzi.",
+      "options": [
+        {
+          "value": "never_observed",
+          "label": "Nigdy w obserwowanych sytuacjach"
+        },
+        {
+          "value": "rarely",
+          "label": "Rzadko w obserwowanych sytuacjach"
+        },
+        {
+          "value": "sometimes",
+          "label": "Czasami w obserwowanych sytuacjach"
+        },
+        {
+          "value": "often",
+          "label": "Często w obserwowanych sytuacjach"
+        },
+        {
+          "value": "almost_always",
+          "label": "Prawie zawsze w obserwowanych sytuacjach"
+        },
+        {
+          "value": "unknown",
+          "label": "Nie wiem / nie mam wystarczającej obserwacji"
+        },
+        {
+          "value": "not_applicable",
+          "label": "Nie dotyczy / sytuacja nie wystąpiła"
+        }
+      ]
+    },
+    {
+      "id": "q044",
+      "section_id": "rest_activity",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "prompt": "Jak często zwierzę pozostawało przy znanej zabawie po tym, jak mogło swobodnie odejść?",
+      "type": "frequency",
+      "required": false,
+      "recall_window_days": 14,
+      "construct": "voluntary_play_persistence",
+      "notes": "Opisuj tylko osobiście zaobserwowane sytuacje. Brak okazji oznacza „nie dotyczy”, brak wiedzy oznacza „nie wiem”. Nie wywołuj sytuacji na potrzeby odpowiedzi.",
+      "options": [
+        {
+          "value": "never_observed",
+          "label": "Nigdy w obserwowanych sytuacjach"
+        },
+        {
+          "value": "rarely",
+          "label": "Rzadko w obserwowanych sytuacjach"
+        },
+        {
+          "value": "sometimes",
+          "label": "Czasami w obserwowanych sytuacjach"
+        },
+        {
+          "value": "often",
+          "label": "Często w obserwowanych sytuacjach"
+        },
+        {
+          "value": "almost_always",
+          "label": "Prawie zawsze w obserwowanych sytuacjach"
+        },
+        {
+          "value": "unknown",
+          "label": "Nie wiem / nie mam wystarczającej obserwacji"
+        },
+        {
+          "value": "not_applicable",
+          "label": "Nie dotyczy / sytuacja nie wystąpiła"
+        }
+      ]
+    },
+    {
+      "id": "q045",
+      "section_id": "rest_activity",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "prompt": "Jakie miejsca zwierzę wybierało do odpoczynku, gdy miało rzeczywisty wybór?",
+      "type": "multi_choice",
+      "required": false,
+      "recall_window_days": 14,
+      "construct": "observed_rest_preferences",
+      "notes": "Opisuj tylko osobiście zaobserwowane sytuacje. Brak okazji oznacza „nie dotyczy”, brak wiedzy oznacza „nie wiem”. Nie wywołuj sytuacji na potrzeby odpowiedzi.",
+      "options": [
+        {
+          "value": "near_person",
+          "label": "Blisko spokojnego opiekuna"
+        },
+        {
+          "value": "separate_room",
+          "label": "W osobnym spokojnym pomieszczeniu"
+        },
+        {
+          "value": "covered",
+          "label": "W osłoniętym miejscu"
+        },
+        {
+          "value": "open_floor",
+          "label": "Na otwartej powierzchni"
+        },
+        {
+          "value": "elevated",
+          "label": "Na bezpiecznej wysokości"
+        },
+        {
+          "value": "varied",
+          "label": "Różne miejsca bez rozpoznawalnego wzoru"
+        },
+        {
+          "value": "unknown",
+          "label": "Nie wiem / nie mam wystarczającej obserwacji"
+        },
+        {
+          "value": "not_applicable",
+          "label": "Nie dotyczy / sytuacja nie wystąpiła"
+        }
+      ]
+    },
+    {
+      "id": "q046",
+      "section_id": "rest_activity",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "prompt": "Jakie formy ruchu pojawiały się w dobrowolnej zabawie?",
+      "type": "multi_choice",
+      "required": false,
+      "recall_window_days": 14,
+      "construct": "observed_play_forms",
+      "notes": "Nie zachęcaj do nieznanej aktywności, nie stosuj dłoni jako celu gryzienia i nie aranżuj pościgu za żywym zwierzęciem.",
+      "options": [
+        {
+          "value": "chase_object",
+          "label": "Podążanie za zabawką"
+        },
+        {
+          "value": "carry_object",
+          "label": "Noszenie przedmiotu"
+        },
+        {
+          "value": "tug_known_toy",
+          "label": "Ciągnięcie znanej zabawki"
+        },
+        {
+          "value": "paw_object",
+          "label": "Dotykanie zabawki łapą"
+        },
+        {
+          "value": "short_runs",
+          "label": "Krótkie biegi"
+        },
+        {
+          "value": "quiet_manipulation",
+          "label": "Spokojne manipulowanie przedmiotem"
+        },
+        {
+          "value": "other",
+          "label": "Inna forma"
+        },
+        {
+          "value": "unknown",
+          "label": "Nie wiem / nie mam wystarczającej obserwacji"
+        },
+        {
+          "value": "not_applicable",
+          "label": "Nie dotyczy / sytuacja nie wystąpiła"
+        }
+      ]
+    },
+    {
+      "id": "q047",
+      "section_id": "social_choice",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "prompt": "Jak często zwierzę samo podchodziło do spokojnie obecnego, znanego opiekuna?",
+      "type": "frequency",
+      "required": false,
+      "recall_window_days": 14,
+      "construct": "familiar_person_approach",
+      "notes": "Opisuj tylko osobiście zaobserwowane sytuacje. Brak okazji oznacza „nie dotyczy”, brak wiedzy oznacza „nie wiem”. Nie wywołuj sytuacji na potrzeby odpowiedzi.",
+      "options": [
+        {
+          "value": "never_observed",
+          "label": "Nigdy w obserwowanych sytuacjach"
+        },
+        {
+          "value": "rarely",
+          "label": "Rzadko w obserwowanych sytuacjach"
+        },
+        {
+          "value": "sometimes",
+          "label": "Czasami w obserwowanych sytuacjach"
+        },
+        {
+          "value": "often",
+          "label": "Często w obserwowanych sytuacjach"
+        },
+        {
+          "value": "almost_always",
+          "label": "Prawie zawsze w obserwowanych sytuacjach"
+        },
+        {
+          "value": "unknown",
+          "label": "Nie wiem / nie mam wystarczającej obserwacji"
+        },
+        {
+          "value": "not_applicable",
+          "label": "Nie dotyczy / sytuacja nie wystąpiła"
+        }
+      ]
+    },
+    {
+      "id": "q048",
+      "section_id": "social_choice",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "prompt": "Jak często zwierzę odchodziło podczas zwykłego kontaktu z opiekunem, gdy miało możliwość swobodnego odejścia?",
+      "type": "frequency",
+      "required": false,
+      "recall_window_days": 14,
+      "construct": "contact_withdrawal",
+      "notes": "Opisuj tylko osobiście zaobserwowane sytuacje. Brak okazji oznacza „nie dotyczy”, brak wiedzy oznacza „nie wiem”. Nie wywołuj sytuacji na potrzeby odpowiedzi.",
+      "options": [
+        {
+          "value": "never_observed",
+          "label": "Nigdy w obserwowanych sytuacjach"
+        },
+        {
+          "value": "rarely",
+          "label": "Rzadko w obserwowanych sytuacjach"
+        },
+        {
+          "value": "sometimes",
+          "label": "Czasami w obserwowanych sytuacjach"
+        },
+        {
+          "value": "often",
+          "label": "Często w obserwowanych sytuacjach"
+        },
+        {
+          "value": "almost_always",
+          "label": "Prawie zawsze w obserwowanych sytuacjach"
+        },
+        {
+          "value": "unknown",
+          "label": "Nie wiem / nie mam wystarczającej obserwacji"
+        },
+        {
+          "value": "not_applicable",
+          "label": "Nie dotyczy / sytuacja nie wystąpiła"
+        }
+      ]
+    },
+    {
+      "id": "q049",
+      "section_id": "social_choice",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "prompt": "Jak często zwierzę samo wracało do kontaktu po spokojnej przerwie pozostawionej przez opiekuna?",
+      "type": "frequency",
+      "required": false,
+      "recall_window_days": 14,
+      "construct": "contact_reinitiation",
+      "notes": "Opisuj tylko osobiście zaobserwowane sytuacje. Brak okazji oznacza „nie dotyczy”, brak wiedzy oznacza „nie wiem”. Nie wywołuj sytuacji na potrzeby odpowiedzi.",
+      "options": [
+        {
+          "value": "never_observed",
+          "label": "Nigdy w obserwowanych sytuacjach"
+        },
+        {
+          "value": "rarely",
+          "label": "Rzadko w obserwowanych sytuacjach"
+        },
+        {
+          "value": "sometimes",
+          "label": "Czasami w obserwowanych sytuacjach"
+        },
+        {
+          "value": "often",
+          "label": "Często w obserwowanych sytuacjach"
+        },
+        {
+          "value": "almost_always",
+          "label": "Prawie zawsze w obserwowanych sytuacjach"
+        },
+        {
+          "value": "unknown",
+          "label": "Nie wiem / nie mam wystarczającej obserwacji"
+        },
+        {
+          "value": "not_applicable",
+          "label": "Nie dotyczy / sytuacja nie wystąpiła"
+        }
+      ]
+    },
+    {
+      "id": "q050",
+      "section_id": "social_choice",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "prompt": "Jak często zwierzę pozostawało w innym miejscu niż zwykli goście, choć mogło swobodnie zmienić miejsce?",
+      "type": "frequency",
+      "required": false,
+      "recall_window_days": 14,
+      "construct": "visitor_distance_choice",
+      "notes": "Tylko zwykłe wizyty, które już się odbyły. Nie zapraszaj gości ani nie skłaniaj zwierzęcia do podejścia dla odpowiedzi.",
+      "options": [
+        {
+          "value": "never_observed",
+          "label": "Nigdy w obserwowanych sytuacjach"
+        },
+        {
+          "value": "rarely",
+          "label": "Rzadko w obserwowanych sytuacjach"
+        },
+        {
+          "value": "sometimes",
+          "label": "Czasami w obserwowanych sytuacjach"
+        },
+        {
+          "value": "often",
+          "label": "Często w obserwowanych sytuacjach"
+        },
+        {
+          "value": "almost_always",
+          "label": "Prawie zawsze w obserwowanych sytuacjach"
+        },
+        {
+          "value": "unknown",
+          "label": "Nie wiem / nie mam wystarczającej obserwacji"
+        },
+        {
+          "value": "not_applicable",
+          "label": "Nie dotyczy / sytuacja nie wystąpiła"
+        }
+      ]
+    },
+    {
+      "id": "q051",
+      "section_id": "social_choice",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "prompt": "Czy dobrowolny kontakt różnił się między znanymi domownikami w podobnych spokojnych sytuacjach?",
+      "type": "single_choice",
+      "required": false,
+      "recall_window_days": 14,
+      "construct": "person_specific_contact",
+      "notes": "Nie zapisuj nazwisk domowników. Różnica kontaktu nie dowodzi hierarchii, miłości lub braku więzi.",
+      "options": [
+        {
+          "value": "similar",
+          "label": "Zwykle wyglądał podobnie"
+        },
+        {
+          "value": "different",
+          "label": "Zwykle różnił się między osobami"
+        },
+        {
+          "value": "context_dependent",
+          "label": "Zależał głównie od sytuacji"
+        },
+        {
+          "value": "unknown",
+          "label": "Nie wiem / nie mam wystarczającej obserwacji"
+        },
+        {
+          "value": "not_applicable",
+          "label": "Nie dotyczy / sytuacja nie wystąpiła"
+        }
+      ]
+    },
+    {
+      "id": "q052",
+      "section_id": "social_choice",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "prompt": "Jak często zwierzę samo przebywało w tej samej spokojnej przestrzeni co inne znane zwierzę bez blokowania mu drogi?",
+      "type": "frequency",
+      "required": false,
+      "recall_window_days": 14,
+      "construct": "familiar_animal_space_sharing",
+      "notes": "Opisuj tylko osobiście zaobserwowane sytuacje. Brak okazji oznacza „nie dotyczy”, brak wiedzy oznacza „nie wiem”. Nie wywołuj sytuacji na potrzeby odpowiedzi.",
+      "options": [
+        {
+          "value": "never_observed",
+          "label": "Nigdy w obserwowanych sytuacjach"
+        },
+        {
+          "value": "rarely",
+          "label": "Rzadko w obserwowanych sytuacjach"
+        },
+        {
+          "value": "sometimes",
+          "label": "Czasami w obserwowanych sytuacjach"
+        },
+        {
+          "value": "often",
+          "label": "Często w obserwowanych sytuacjach"
+        },
+        {
+          "value": "almost_always",
+          "label": "Prawie zawsze w obserwowanych sytuacjach"
+        },
+        {
+          "value": "unknown",
+          "label": "Nie wiem / nie mam wystarczającej obserwacji"
+        },
+        {
+          "value": "not_applicable",
+          "label": "Nie dotyczy / sytuacja nie wystąpiła"
+        }
+      ]
+    },
+    {
+      "id": "q053",
+      "section_id": "social_choice",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "prompt": "Jak często zwierzę wybierało inny zasób lub odchodziło, gdy do miejsca odpoczynku albo karmienia zbliżało się inne zwierzę?",
+      "type": "frequency",
+      "required": false,
+      "recall_window_days": 14,
+      "construct": "resource_context_withdrawal",
+      "notes": "Nie aranżuj rywalizacji, nie odbieraj zasobów i nie zbliżaj zwierząt do siebie. Brak współmieszkańca lub zdarzenia to not_applicable.",
+      "options": [
+        {
+          "value": "never_observed",
+          "label": "Nigdy w obserwowanych sytuacjach"
+        },
+        {
+          "value": "rarely",
+          "label": "Rzadko w obserwowanych sytuacjach"
+        },
+        {
+          "value": "sometimes",
+          "label": "Czasami w obserwowanych sytuacjach"
+        },
+        {
+          "value": "often",
+          "label": "Często w obserwowanych sytuacjach"
+        },
+        {
+          "value": "almost_always",
+          "label": "Prawie zawsze w obserwowanych sytuacjach"
+        },
+        {
+          "value": "unknown",
+          "label": "Nie wiem / nie mam wystarczającej obserwacji"
+        },
+        {
+          "value": "not_applicable",
+          "label": "Nie dotyczy / sytuacja nie wystąpiła"
+        }
+      ]
+    },
+    {
+      "id": "q054",
+      "section_id": "social_choice",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "prompt": "Co zwykle robiłeś/robiłaś, gdy zwierzę odsuwało się podczas kontaktu?",
+      "type": "single_choice",
+      "required": false,
+      "recall_window_days": 14,
+      "construct": "caregiver_withdrawal_response",
+      "notes": "Opis wcześniejszych zdarzeń. Dla nowych obserwacji zakończ kontakt po wycofaniu i umożliwiaj swobodne odejście.",
+      "options": [
+        {
+          "value": "pause_and_choice",
+          "label": "Przerywałem/przerywałam kontakt i umożliwiałem/umożliwiałam odejście"
+        },
+        {
+          "value": "continued",
+          "label": "Kontynuowałem/kontynuowałam kontakt"
+        },
+        {
+          "value": "varied",
+          "label": "Reakcja była różna zależnie od sytuacji"
+        },
+        {
+          "value": "unknown",
+          "label": "Nie wiem / nie mam wystarczającej obserwacji"
+        },
+        {
+          "value": "not_applicable",
+          "label": "Nie dotyczy / sytuacja nie wystąpiła"
+        }
+      ]
+    },
+    {
+      "id": "q055",
+      "section_id": "communication",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "prompt": "Jak często zwierzę samo dotykało opiekuna nosem, głową lub łapą podczas spokojnej codziennej aktywności?",
+      "type": "frequency",
+      "required": false,
+      "recall_window_days": 14,
+      "construct": "person_directed_touch",
+      "notes": "Opisuj tylko osobiście zaobserwowane sytuacje. Brak okazji oznacza „nie dotyczy”, brak wiedzy oznacza „nie wiem”. Nie wywołuj sytuacji na potrzeby odpowiedzi.",
+      "options": [
+        {
+          "value": "never_observed",
+          "label": "Nigdy w obserwowanych sytuacjach"
+        },
+        {
+          "value": "rarely",
+          "label": "Rzadko w obserwowanych sytuacjach"
+        },
+        {
+          "value": "sometimes",
+          "label": "Czasami w obserwowanych sytuacjach"
+        },
+        {
+          "value": "often",
+          "label": "Często w obserwowanych sytuacjach"
+        },
+        {
+          "value": "almost_always",
+          "label": "Prawie zawsze w obserwowanych sytuacjach"
+        },
+        {
+          "value": "unknown",
+          "label": "Nie wiem / nie mam wystarczającej obserwacji"
+        },
+        {
+          "value": "not_applicable",
+          "label": "Nie dotyczy / sytuacja nie wystąpiła"
+        }
+      ]
+    },
+    {
+      "id": "q056",
+      "section_id": "communication",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "prompt": "Jak często zwierzę wydawało głos, zanim rozpoczęła się dobrze znana codzienna czynność, np. zwykłe karmienie?",
+      "type": "frequency",
+      "required": false,
+      "recall_window_days": 14,
+      "construct": "routine_associated_vocalization",
+      "notes": "Opisuj tylko osobiście zaobserwowane sytuacje. Brak okazji oznacza „nie dotyczy”, brak wiedzy oznacza „nie wiem”. Nie wywołuj sytuacji na potrzeby odpowiedzi.",
+      "options": [
+        {
+          "value": "never_observed",
+          "label": "Nigdy w obserwowanych sytuacjach"
+        },
+        {
+          "value": "rarely",
+          "label": "Rzadko w obserwowanych sytuacjach"
+        },
+        {
+          "value": "sometimes",
+          "label": "Czasami w obserwowanych sytuacjach"
+        },
+        {
+          "value": "often",
+          "label": "Często w obserwowanych sytuacjach"
+        },
+        {
+          "value": "almost_always",
+          "label": "Prawie zawsze w obserwowanych sytuacjach"
+        },
+        {
+          "value": "unknown",
+          "label": "Nie wiem / nie mam wystarczającej obserwacji"
+        },
+        {
+          "value": "not_applicable",
+          "label": "Nie dotyczy / sytuacja nie wystąpiła"
+        }
+      ]
+    },
+    {
+      "id": "q057",
+      "section_id": "communication",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "prompt": "Jak często zwierzę wydawało głos w chwili, gdy opiekun przerywał dobrowolną wspólną aktywność?",
+      "type": "frequency",
+      "required": false,
+      "recall_window_days": 14,
+      "construct": "activity_pause_vocalization",
+      "notes": "Uwzględniaj tylko zwykłe przerwy, które już wystąpiły. Nie przerywaj specjalnie aktywności i nie zostawiaj zwierzęcia samego dla testu.",
+      "options": [
+        {
+          "value": "never_observed",
+          "label": "Nigdy w obserwowanych sytuacjach"
+        },
+        {
+          "value": "rarely",
+          "label": "Rzadko w obserwowanych sytuacjach"
+        },
+        {
+          "value": "sometimes",
+          "label": "Czasami w obserwowanych sytuacjach"
+        },
+        {
+          "value": "often",
+          "label": "Często w obserwowanych sytuacjach"
+        },
+        {
+          "value": "almost_always",
+          "label": "Prawie zawsze w obserwowanych sytuacjach"
+        },
+        {
+          "value": "unknown",
+          "label": "Nie wiem / nie mam wystarczającej obserwacji"
+        },
+        {
+          "value": "not_applicable",
+          "label": "Nie dotyczy / sytuacja nie wystąpiła"
+        }
+      ]
+    },
+    {
+      "id": "q058",
+      "section_id": "communication",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "prompt": "Jak często zwierzę obracało głowę lub uszy w Twoją stronę po znanym spokojnym sygnale głosowym?",
+      "type": "frequency",
+      "required": false,
+      "recall_window_days": 14,
+      "construct": "orientation_to_familiar_voice",
+      "notes": "To obserwacja orientacji, nie dowód rozumienia słów. Uwzględnij słuch, odległość, sen i inne zajęcie; nie powtarzaj sygnału natarczywie.",
+      "options": [
+        {
+          "value": "never_observed",
+          "label": "Nigdy w obserwowanych sytuacjach"
+        },
+        {
+          "value": "rarely",
+          "label": "Rzadko w obserwowanych sytuacjach"
+        },
+        {
+          "value": "sometimes",
+          "label": "Czasami w obserwowanych sytuacjach"
+        },
+        {
+          "value": "often",
+          "label": "Często w obserwowanych sytuacjach"
+        },
+        {
+          "value": "almost_always",
+          "label": "Prawie zawsze w obserwowanych sytuacjach"
+        },
+        {
+          "value": "unknown",
+          "label": "Nie wiem / nie mam wystarczającej obserwacji"
+        },
+        {
+          "value": "not_applicable",
+          "label": "Nie dotyczy / sytuacja nie wystąpiła"
+        }
+      ]
+    },
+    {
+      "id": "q059",
+      "section_id": "communication",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "prompt": "Jakie widoczne ruchy zauważałeś/zauważałaś w zwykłych kontaktach?",
+      "type": "multi_choice",
+      "required": false,
+      "recall_window_days": 14,
+      "construct": "observed_body_signals",
+      "notes": "Żaden pojedynczy ruch nie otrzymuje pewnej etykiety emocji. Zapisz sytuację, sekwencję i widoczność części ciała.",
+      "options": [
+        {
+          "value": "head_turn",
+          "label": "Odwracanie głowy"
+        },
+        {
+          "value": "ear_position_change",
+          "label": "Zmianę ustawienia uszu"
+        },
+        {
+          "value": "tail_movement",
+          "label": "Ruch ogona"
+        },
+        {
+          "value": "body_lowering",
+          "label": "Obniżenie tułowia"
+        },
+        {
+          "value": "body_stillness",
+          "label": "Zatrzymanie ruchu ciała"
+        },
+        {
+          "value": "lick_or_yawn",
+          "label": "Lizanie nosa lub ziewanie"
+        },
+        {
+          "value": "move_away",
+          "label": "Oddalanie się"
+        },
+        {
+          "value": "approach",
+          "label": "Zbliżanie się"
+        },
+        {
+          "value": "unknown",
+          "label": "Nie wiem / nie mam wystarczającej obserwacji"
+        },
+        {
+          "value": "not_applicable",
+          "label": "Nie dotyczy / sytuacja nie wystąpiła"
+        }
+      ]
+    },
+    {
+      "id": "q060",
+      "section_id": "communication",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "prompt": "Opisz jedną sytuację wydawania głosu: co działo się tuż przed, jaki dźwięk słyszałeś/słyszałaś i co wydarzyło się potem?",
+      "type": "free_text",
+      "required": false,
+      "recall_window_days": 14,
+      "construct": "vocalization_context_example",
+      "notes": "Opisuj tylko osobiście zaobserwowane sytuacje. Brak okazji oznacza „nie dotyczy”, brak wiedzy oznacza „nie wiem”. Nie wywołuj sytuacji na potrzeby odpowiedzi."
+    },
+    {
+      "id": "q061",
+      "section_id": "communication",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "prompt": "Czy ten sam widoczny sygnał, np. ruch ogona lub odwrócenie głowy, występował w różnych codziennych sytuacjach?",
+      "type": "single_choice",
+      "required": false,
+      "recall_window_days": 14,
+      "construct": "signal_context_variation",
+      "notes": "Opisuj tylko osobiście zaobserwowane sytuacje. Brak okazji oznacza „nie dotyczy”, brak wiedzy oznacza „nie wiem”. Nie wywołuj sytuacji na potrzeby odpowiedzi.",
+      "options": [
+        {
+          "value": "yes",
+          "label": "Tak, w różnych sytuacjach"
+        },
+        {
+          "value": "one_context",
+          "label": "Zauważyłem/zauważyłam go tylko w jednej sytuacji"
+        },
+        {
+          "value": "cannot_compare",
+          "label": "Widziałem/widziałam go, ale nie potrafię porównać sytuacji"
+        },
+        {
+          "value": "unknown",
+          "label": "Nie wiem / nie mam wystarczającej obserwacji"
+        },
+        {
+          "value": "not_applicable",
+          "label": "Nie dotyczy / sytuacja nie wystąpiła"
+        }
+      ]
+    },
+    {
+      "id": "q062",
+      "section_id": "learning_preferences",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "prompt": "W jakich znanych dobrowolnych aktywnościach z opiekunem zwierzę uczestniczyło?",
+      "type": "multi_choice",
+      "required": false,
+      "recall_window_days": 14,
+      "construct": "familiar_learning_context",
+      "notes": "none jest wyłączne. Nie rozpoczynaj nowych ćwiczeń tylko dla kwestionariusza.",
+      "options": [
+        {
+          "value": "known_cue",
+          "label": "Reakcja na znany sygnał"
+        },
+        {
+          "value": "simple_food_task",
+          "label": "Znane proste zadanie z karmą"
+        },
+        {
+          "value": "cooperative_care",
+          "label": "Znana pielęgnacja z możliwością przerwy"
+        },
+        {
+          "value": "toy_routine",
+          "label": "Znana zabawa według rutyny"
+        },
+        {
+          "value": "none",
+          "label": "Nie było takich aktywności"
+        },
+        {
+          "value": "unknown",
+          "label": "Nie wiem / nie mam wystarczającej obserwacji"
+        },
+        {
+          "value": "not_applicable",
+          "label": "Nie dotyczy / sytuacja nie wystąpiła"
+        }
+      ]
+    },
+    {
+      "id": "q063",
+      "section_id": "learning_preferences",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "prompt": "Jak często zwierzę ponownie wykonywało znaną prostą czynność, po której wcześniej dostało akceptowaną przez siebie nagrodę?",
+      "type": "frequency",
+      "required": false,
+      "recall_window_days": 14,
+      "construct": "observed_rewarded_repetition",
+      "notes": "Opisuj tylko osobiście zaobserwowane sytuacje. Brak okazji oznacza „nie dotyczy”, brak wiedzy oznacza „nie wiem”. Nie wywołuj sytuacji na potrzeby odpowiedzi.",
+      "options": [
+        {
+          "value": "never_observed",
+          "label": "Nigdy w obserwowanych sytuacjach"
+        },
+        {
+          "value": "rarely",
+          "label": "Rzadko w obserwowanych sytuacjach"
+        },
+        {
+          "value": "sometimes",
+          "label": "Czasami w obserwowanych sytuacjach"
+        },
+        {
+          "value": "often",
+          "label": "Często w obserwowanych sytuacjach"
+        },
+        {
+          "value": "almost_always",
+          "label": "Prawie zawsze w obserwowanych sytuacjach"
+        },
+        {
+          "value": "unknown",
+          "label": "Nie wiem / nie mam wystarczającej obserwacji"
+        },
+        {
+          "value": "not_applicable",
+          "label": "Nie dotyczy / sytuacja nie wystąpiła"
+        }
+      ]
+    },
+    {
+      "id": "q064",
+      "section_id": "learning_preferences",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "prompt": "Jak często zwierzę samo dołączało do znanej aktywności po udostępnieniu mu miejsca lub znanego przedmiotu?",
+      "type": "frequency",
+      "required": false,
+      "recall_window_days": 14,
+      "construct": "voluntary_routine_participation",
+      "notes": "Opisuj tylko osobiście zaobserwowane sytuacje. Brak okazji oznacza „nie dotyczy”, brak wiedzy oznacza „nie wiem”. Nie wywołuj sytuacji na potrzeby odpowiedzi.",
+      "options": [
+        {
+          "value": "never_observed",
+          "label": "Nigdy w obserwowanych sytuacjach"
+        },
+        {
+          "value": "rarely",
+          "label": "Rzadko w obserwowanych sytuacjach"
+        },
+        {
+          "value": "sometimes",
+          "label": "Czasami w obserwowanych sytuacjach"
+        },
+        {
+          "value": "often",
+          "label": "Często w obserwowanych sytuacjach"
+        },
+        {
+          "value": "almost_always",
+          "label": "Prawie zawsze w obserwowanych sytuacjach"
+        },
+        {
+          "value": "unknown",
+          "label": "Nie wiem / nie mam wystarczającej obserwacji"
+        },
+        {
+          "value": "not_applicable",
+          "label": "Nie dotyczy / sytuacja nie wystąpiła"
+        }
+      ]
+    },
+    {
+      "id": "q065",
+      "section_id": "learning_preferences",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "prompt": "Jak często zwierzę korzystało z wcześniej znanego prostego sposobu uzyskania dostępnej nagrody, bez dodatkowego naprowadzania?",
+      "type": "frequency",
+      "required": false,
+      "recall_window_days": 14,
+      "construct": "familiar_task_repetition",
+      "notes": "Nie podnoś trudności, nie ograniczaj dostępu do wody i nie pomijaj posiłków dla testu. To nie pomiar inteligencji.",
+      "options": [
+        {
+          "value": "never_observed",
+          "label": "Nigdy w obserwowanych sytuacjach"
+        },
+        {
+          "value": "rarely",
+          "label": "Rzadko w obserwowanych sytuacjach"
+        },
+        {
+          "value": "sometimes",
+          "label": "Czasami w obserwowanych sytuacjach"
+        },
+        {
+          "value": "often",
+          "label": "Często w obserwowanych sytuacjach"
+        },
+        {
+          "value": "almost_always",
+          "label": "Prawie zawsze w obserwowanych sytuacjach"
+        },
+        {
+          "value": "unknown",
+          "label": "Nie wiem / nie mam wystarczającej obserwacji"
+        },
+        {
+          "value": "not_applicable",
+          "label": "Nie dotyczy / sytuacja nie wystąpiła"
+        }
+      ]
+    },
+    {
+      "id": "q066",
+      "section_id": "learning_preferences",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "prompt": "Jakie dostępne nagrody zwierzę faktycznie przyjmowało podczas znanych aktywności?",
+      "type": "multi_choice",
+      "required": false,
+      "recall_window_days": 14,
+      "construct": "observed_reward_acceptance",
+      "notes": "Przyjęcie nagrody zależy od kontekstu i zdrowia; nie wyznacza uniwersalnej preferencji. Nie oferuj produktów sprzecznych z zaleceniem lekarza.",
+      "options": [
+        {
+          "value": "regular_food",
+          "label": "Porcja zwykłej karmy"
+        },
+        {
+          "value": "suitable_treat",
+          "label": "Odpowiedni dla zwierzęcia przysmak"
+        },
+        {
+          "value": "toy",
+          "label": "Znana zabawka"
+        },
+        {
+          "value": "touch_when_chosen",
+          "label": "Kontakt dotykowy wybrany przez zwierzę"
+        },
+        {
+          "value": "space_or_access",
+          "label": "Dostęp do znanej aktywności lub przestrzeni"
+        },
+        {
+          "value": "varied",
+          "label": "Zależało to od sytuacji"
+        },
+        {
+          "value": "unknown",
+          "label": "Nie wiem / nie mam wystarczającej obserwacji"
+        },
+        {
+          "value": "not_applicable",
+          "label": "Nie dotyczy / sytuacja nie wystąpiła"
+        }
+      ]
+    },
+    {
+      "id": "q067",
+      "section_id": "learning_preferences",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "prompt": "Jak często zwierzę wracało do znanej dobrowolnej aktywności po zwykłej krótkiej przerwie, gdy miało inne dostępne możliwości?",
+      "type": "frequency",
+      "required": false,
+      "recall_window_days": 14,
+      "construct": "activity_return_choice",
+      "notes": "Opisuj tylko osobiście zaobserwowane sytuacje. Brak okazji oznacza „nie dotyczy”, brak wiedzy oznacza „nie wiem”. Nie wywołuj sytuacji na potrzeby odpowiedzi.",
+      "options": [
+        {
+          "value": "never_observed",
+          "label": "Nigdy w obserwowanych sytuacjach"
+        },
+        {
+          "value": "rarely",
+          "label": "Rzadko w obserwowanych sytuacjach"
+        },
+        {
+          "value": "sometimes",
+          "label": "Czasami w obserwowanych sytuacjach"
+        },
+        {
+          "value": "often",
+          "label": "Często w obserwowanych sytuacjach"
+        },
+        {
+          "value": "almost_always",
+          "label": "Prawie zawsze w obserwowanych sytuacjach"
+        },
+        {
+          "value": "unknown",
+          "label": "Nie wiem / nie mam wystarczającej obserwacji"
+        },
+        {
+          "value": "not_applicable",
+          "label": "Nie dotyczy / sytuacja nie wystąpiła"
+        }
+      ]
+    },
+    {
+      "id": "q068",
+      "section_id": "ordinary_events",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "prompt": "Jak często zwierzę obracało głowę w stronę zwykłego dźwięku domowego, który wystąpił bez Twojego celowego działania?",
+      "type": "frequency",
+      "required": false,
+      "recall_window_days": 14,
+      "construct": "ordinary_sound_orientation",
+      "notes": "Nie odtwarzaj dźwięków, nie stukaj i nie zwiększaj głośności. Brak zdarzenia lub brak widoczności to odpowiednio not_applicable lub unknown.",
+      "options": [
+        {
+          "value": "never_observed",
+          "label": "Nigdy w obserwowanych sytuacjach"
+        },
+        {
+          "value": "rarely",
+          "label": "Rzadko w obserwowanych sytuacjach"
+        },
+        {
+          "value": "sometimes",
+          "label": "Czasami w obserwowanych sytuacjach"
+        },
+        {
+          "value": "often",
+          "label": "Często w obserwowanych sytuacjach"
+        },
+        {
+          "value": "almost_always",
+          "label": "Prawie zawsze w obserwowanych sytuacjach"
+        },
+        {
+          "value": "unknown",
+          "label": "Nie wiem / nie mam wystarczającej obserwacji"
+        },
+        {
+          "value": "not_applicable",
+          "label": "Nie dotyczy / sytuacja nie wystąpiła"
+        }
+      ]
+    },
+    {
+      "id": "q069",
+      "section_id": "ordinary_events",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "prompt": "Jak często zwierzę samo oglądało lub obwąchiwało nieszkodliwy przedmiot, który pojawił się w ramach zwykłej rutyny domowej?",
+      "type": "frequency",
+      "required": false,
+      "recall_window_days": 14,
+      "construct": "ordinary_object_exploration",
+      "notes": "Nie wprowadzaj nowości dla testu i nie przesuwaj przedmiotu w stronę zwierzęcia. Przedmiot musi być bezpieczny i nie blokować odejścia.",
+      "options": [
+        {
+          "value": "never_observed",
+          "label": "Nigdy w obserwowanych sytuacjach"
+        },
+        {
+          "value": "rarely",
+          "label": "Rzadko w obserwowanych sytuacjach"
+        },
+        {
+          "value": "sometimes",
+          "label": "Czasami w obserwowanych sytuacjach"
+        },
+        {
+          "value": "often",
+          "label": "Często w obserwowanych sytuacjach"
+        },
+        {
+          "value": "almost_always",
+          "label": "Prawie zawsze w obserwowanych sytuacjach"
+        },
+        {
+          "value": "unknown",
+          "label": "Nie wiem / nie mam wystarczającej obserwacji"
+        },
+        {
+          "value": "not_applicable",
+          "label": "Nie dotyczy / sytuacja nie wystąpiła"
+        }
+      ]
+    },
+    {
+      "id": "q070",
+      "section_id": "ordinary_events",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "prompt": "Jak często zwierzę oddalało się po zwykłym, naturalnie występującym zdarzeniu domowym?",
+      "type": "frequency",
+      "required": false,
+      "recall_window_days": 14,
+      "construct": "ordinary_event_withdrawal",
+      "notes": "Opisz zdarzenie w notatce; nie zakładaj strachu. Nie powtarzaj bodźca i nie blokuj odejścia.",
+      "options": [
+        {
+          "value": "never_observed",
+          "label": "Nigdy w obserwowanych sytuacjach"
+        },
+        {
+          "value": "rarely",
+          "label": "Rzadko w obserwowanych sytuacjach"
+        },
+        {
+          "value": "sometimes",
+          "label": "Czasami w obserwowanych sytuacjach"
+        },
+        {
+          "value": "often",
+          "label": "Często w obserwowanych sytuacjach"
+        },
+        {
+          "value": "almost_always",
+          "label": "Prawie zawsze w obserwowanych sytuacjach"
+        },
+        {
+          "value": "unknown",
+          "label": "Nie wiem / nie mam wystarczającej obserwacji"
+        },
+        {
+          "value": "not_applicable",
+          "label": "Nie dotyczy / sytuacja nie wystąpiła"
+        }
+      ]
+    },
+    {
+      "id": "q071",
+      "section_id": "ordinary_events",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "prompt": "Jeśli zwykłe zdarzenie przerwało odpoczynek, kiedy zwierzę wracało do swojej wcześniejszej aktywności lub wybierało spokojne miejsce?",
+      "type": "single_choice",
+      "required": false,
+      "recall_window_days": 14,
+      "construct": "observed_routine_resumption",
+      "notes": "Przybliżenie obserwacji, bez progu klinicznego. not_seen_return nie oznacza, że zwierzę nie wróciło później; zapisz długość obserwacji.",
+      "options": [
+        {
+          "value": "under_1_min",
+          "label": "Zwykle przed upływem około minuty"
+        },
+        {
+          "value": "1_to_5_min",
+          "label": "Zwykle w ciągu około 1–5 minut"
+        },
+        {
+          "value": "over_5_min",
+          "label": "Zwykle później niż po około 5 minutach"
+        },
+        {
+          "value": "not_seen_return",
+          "label": "Nie widziałem/widziałam powrotu w czasie obserwacji"
+        },
+        {
+          "value": "variable",
+          "label": "Bardzo różnie zależnie od zdarzenia"
+        },
+        {
+          "value": "unknown",
+          "label": "Nie wiem / nie mam wystarczającej obserwacji"
+        },
+        {
+          "value": "not_applicable",
+          "label": "Nie dotyczy / sytuacja nie wystąpiła"
+        }
+      ]
+    },
+    {
+      "id": "q072",
+      "section_id": "ordinary_events",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "prompt": "Czy reakcje na podobne zwykłe zdarzenie różniły się między dniami lub miejscami?",
+      "type": "single_choice",
+      "required": false,
+      "recall_window_days": 14,
+      "construct": "cross_context_variation",
+      "notes": "Opisuj tylko osobiście zaobserwowane sytuacje. Brak okazji oznacza „nie dotyczy”, brak wiedzy oznacza „nie wiem”. Nie wywołuj sytuacji na potrzeby odpowiedzi.",
+      "options": [
+        {
+          "value": "similar",
+          "label": "Wyglądały podobnie"
+        },
+        {
+          "value": "different",
+          "label": "Wyraźnie się różniły"
+        },
+        {
+          "value": "insufficient_comparison",
+          "label": "Zdarzenie wystąpiło, ale nie mam porównywalnych przykładów"
+        },
+        {
+          "value": "unknown",
+          "label": "Nie wiem / nie mam wystarczającej obserwacji"
+        },
+        {
+          "value": "not_applicable",
+          "label": "Nie dotyczy / sytuacja nie wystąpiła"
+        }
+      ]
+    },
+    {
+      "id": "q073",
+      "section_id": "dog_context",
+      "species": [
+        "dog"
+      ],
+      "prompt": "Jakie aktywności pies sam wybierał podczas zwykłych bezpiecznych spacerów, gdy miał możliwość wyboru?",
+      "type": "multi_choice",
+      "required": false,
+      "recall_window_days": 14,
+      "construct": "dog_walk_activity_choice",
+      "notes": "Opisuj tylko osobiście zaobserwowane sytuacje. Brak okazji oznacza „nie dotyczy”, brak wiedzy oznacza „nie wiem”. Nie wywołuj sytuacji na potrzeby odpowiedzi.",
+      "options": [
+        {
+          "value": "sniff",
+          "label": "Węszenie"
+        },
+        {
+          "value": "walk",
+          "label": "Spokojny marsz"
+        },
+        {
+          "value": "pause",
+          "label": "Zatrzymywanie się"
+        },
+        {
+          "value": "look",
+          "label": "Obserwowanie otoczenia z dystansu"
+        },
+        {
+          "value": "familiar_play",
+          "label": "Znana dobrowolna zabawa"
+        },
+        {
+          "value": "return",
+          "label": "Kierowanie się z powrotem do domu"
+        },
+        {
+          "value": "unknown",
+          "label": "Nie wiem / nie mam wystarczającej obserwacji"
+        },
+        {
+          "value": "not_applicable",
+          "label": "Nie dotyczy / sytuacja nie wystąpiła"
+        }
+      ]
+    },
+    {
+      "id": "q074",
+      "section_id": "dog_context",
+      "species": [
+        "dog"
+      ],
+      "prompt": "Jak często pies zatrzymywał się, aby węszyć w miejscach dostępnych podczas zwykłego spaceru?",
+      "type": "frequency",
+      "required": false,
+      "recall_window_days": 14,
+      "construct": "dog_spontaneous_sniffing",
+      "notes": "Opisuj tylko osobiście zaobserwowane sytuacje. Brak okazji oznacza „nie dotyczy”, brak wiedzy oznacza „nie wiem”. Nie wywołuj sytuacji na potrzeby odpowiedzi.",
+      "options": [
+        {
+          "value": "never_observed",
+          "label": "Nigdy w obserwowanych sytuacjach"
+        },
+        {
+          "value": "rarely",
+          "label": "Rzadko w obserwowanych sytuacjach"
+        },
+        {
+          "value": "sometimes",
+          "label": "Czasami w obserwowanych sytuacjach"
+        },
+        {
+          "value": "often",
+          "label": "Często w obserwowanych sytuacjach"
+        },
+        {
+          "value": "almost_always",
+          "label": "Prawie zawsze w obserwowanych sytuacjach"
+        },
+        {
+          "value": "unknown",
+          "label": "Nie wiem / nie mam wystarczającej obserwacji"
+        },
+        {
+          "value": "not_applicable",
+          "label": "Nie dotyczy / sytuacja nie wystąpiła"
+        }
+      ]
+    },
+    {
+      "id": "q075",
+      "section_id": "dog_context",
+      "species": [
+        "dog"
+      ],
+      "prompt": "Jak często podczas spokojnych fragmentów spaceru pies szedł z luźną smyczą, bez jej napinania?",
+      "type": "frequency",
+      "required": false,
+      "recall_window_days": 14,
+      "construct": "dog_leash_context",
+      "notes": "Uwzględnij długość smyczy, trasę i ograniczenia ruchowe. Brak spacerów na smyczy oznacza not_applicable; to nie wynik posłuszeństwa.",
+      "options": [
+        {
+          "value": "never_observed",
+          "label": "Nigdy w obserwowanych sytuacjach"
+        },
+        {
+          "value": "rarely",
+          "label": "Rzadko w obserwowanych sytuacjach"
+        },
+        {
+          "value": "sometimes",
+          "label": "Czasami w obserwowanych sytuacjach"
+        },
+        {
+          "value": "often",
+          "label": "Często w obserwowanych sytuacjach"
+        },
+        {
+          "value": "almost_always",
+          "label": "Prawie zawsze w obserwowanych sytuacjach"
+        },
+        {
+          "value": "unknown",
+          "label": "Nie wiem / nie mam wystarczającej obserwacji"
+        },
+        {
+          "value": "not_applicable",
+          "label": "Nie dotyczy / sytuacja nie wystąpiła"
+        }
+      ]
+    },
+    {
+      "id": "q076",
+      "section_id": "dog_context",
+      "species": [
+        "dog"
+      ],
+      "prompt": "Jak często pies sam zwiększał dystans od przechodzącej osoby lub zwierzęcia, gdy miał bezpieczną możliwość odejścia?",
+      "type": "frequency",
+      "required": false,
+      "recall_window_days": 14,
+      "construct": "dog_outdoor_distance_choice",
+      "notes": "Nie zbliżaj psa do obcych ani nie aranżuj spotkań. Zapisz rzeczywistą możliwość wyboru i napięcie smyczy.",
+      "options": [
+        {
+          "value": "never_observed",
+          "label": "Nigdy w obserwowanych sytuacjach"
+        },
+        {
+          "value": "rarely",
+          "label": "Rzadko w obserwowanych sytuacjach"
+        },
+        {
+          "value": "sometimes",
+          "label": "Czasami w obserwowanych sytuacjach"
+        },
+        {
+          "value": "often",
+          "label": "Często w obserwowanych sytuacjach"
+        },
+        {
+          "value": "almost_always",
+          "label": "Prawie zawsze w obserwowanych sytuacjach"
+        },
+        {
+          "value": "unknown",
+          "label": "Nie wiem / nie mam wystarczającej obserwacji"
+        },
+        {
+          "value": "not_applicable",
+          "label": "Nie dotyczy / sytuacja nie wystąpiła"
+        }
+      ]
+    },
+    {
+      "id": "q077",
+      "section_id": "dog_context",
+      "species": [
+        "dog"
+      ],
+      "prompt": "Jak często po zwykłym spacerze pies sam układał się do odpoczynku w domu?",
+      "type": "frequency",
+      "required": false,
+      "recall_window_days": 14,
+      "construct": "dog_post_walk_rest",
+      "notes": "Opisuj tylko osobiście zaobserwowane sytuacje. Brak okazji oznacza „nie dotyczy”, brak wiedzy oznacza „nie wiem”. Nie wywołuj sytuacji na potrzeby odpowiedzi.",
+      "options": [
+        {
+          "value": "never_observed",
+          "label": "Nigdy w obserwowanych sytuacjach"
+        },
+        {
+          "value": "rarely",
+          "label": "Rzadko w obserwowanych sytuacjach"
+        },
+        {
+          "value": "sometimes",
+          "label": "Czasami w obserwowanych sytuacjach"
+        },
+        {
+          "value": "often",
+          "label": "Często w obserwowanych sytuacjach"
+        },
+        {
+          "value": "almost_always",
+          "label": "Prawie zawsze w obserwowanych sytuacjach"
+        },
+        {
+          "value": "unknown",
+          "label": "Nie wiem / nie mam wystarczającej obserwacji"
+        },
+        {
+          "value": "not_applicable",
+          "label": "Nie dotyczy / sytuacja nie wystąpiła"
+        }
+      ]
+    },
+    {
+      "id": "q078",
+      "section_id": "dog_context",
+      "species": [
+        "dog"
+      ],
+      "prompt": "Jak często pies orientował się na dobrze znany spokojny sygnał opiekuna podczas zwykłego spaceru?",
+      "type": "frequency",
+      "required": false,
+      "recall_window_days": 14,
+      "construct": "dog_familiar_outdoor_signal",
+      "notes": "Nie testuj przywołania w niebezpiecznym miejscu. To obserwacja orientacji w konkretnych warunkach, bez rankingu wyszkolenia.",
+      "options": [
+        {
+          "value": "never_observed",
+          "label": "Nigdy w obserwowanych sytuacjach"
+        },
+        {
+          "value": "rarely",
+          "label": "Rzadko w obserwowanych sytuacjach"
+        },
+        {
+          "value": "sometimes",
+          "label": "Czasami w obserwowanych sytuacjach"
+        },
+        {
+          "value": "often",
+          "label": "Często w obserwowanych sytuacjach"
+        },
+        {
+          "value": "almost_always",
+          "label": "Prawie zawsze w obserwowanych sytuacjach"
+        },
+        {
+          "value": "unknown",
+          "label": "Nie wiem / nie mam wystarczającej obserwacji"
+        },
+        {
+          "value": "not_applicable",
+          "label": "Nie dotyczy / sytuacja nie wystąpiła"
+        }
+      ]
+    },
+    {
+      "id": "q079",
+      "section_id": "dog_context",
+      "species": [
+        "dog"
+      ],
+      "prompt": "Jak często pies obniżał przód ciała przy uniesionym tyle podczas swojej znanej dobrowolnej zabawy?",
+      "type": "frequency",
+      "required": false,
+      "recall_window_days": 14,
+      "construct": "dog_observed_play_posture",
+      "notes": "Zapisuj kształt ruchu i kontekst. Samą pozycją nie potwierdzaj jednej emocji.",
+      "options": [
+        {
+          "value": "never_observed",
+          "label": "Nigdy w obserwowanych sytuacjach"
+        },
+        {
+          "value": "rarely",
+          "label": "Rzadko w obserwowanych sytuacjach"
+        },
+        {
+          "value": "sometimes",
+          "label": "Czasami w obserwowanych sytuacjach"
+        },
+        {
+          "value": "often",
+          "label": "Często w obserwowanych sytuacjach"
+        },
+        {
+          "value": "almost_always",
+          "label": "Prawie zawsze w obserwowanych sytuacjach"
+        },
+        {
+          "value": "unknown",
+          "label": "Nie wiem / nie mam wystarczającej obserwacji"
+        },
+        {
+          "value": "not_applicable",
+          "label": "Nie dotyczy / sytuacja nie wystąpiła"
+        }
+      ]
+    },
+    {
+      "id": "q080",
+      "section_id": "dog_context",
+      "species": [
+        "dog"
+      ],
+      "prompt": "Opisz jeden zwykły spacer: trasę ogólnie, dostępny dystans, smycz, zdarzenie i widoczne zachowanie psa. Pomiń adresy i dane przechodniów.",
+      "type": "free_text",
+      "required": false,
+      "recall_window_days": 14,
+      "construct": "dog_walk_example",
+      "notes": "Opisuj tylko osobiście zaobserwowane sytuacje. Brak okazji oznacza „nie dotyczy”, brak wiedzy oznacza „nie wiem”. Nie wywołuj sytuacji na potrzeby odpowiedzi."
+    },
+    {
+      "id": "q081",
+      "section_id": "dog_context",
+      "species": [
+        "dog"
+      ],
+      "prompt": "Jak pies zachowywał się wobec wcześniej używanego sprzętu spacerowego podczas zwykłych przygotowań?",
+      "type": "multi_choice",
+      "required": false,
+      "recall_window_days": 14,
+      "construct": "dog_existing_equipment_context",
+      "notes": "not_used jest wyłączne. Nie zakładaj nowego sprzętu dla testu i nie przytrzymuj zwierzęcia, aby uzyskać nagranie.",
+      "options": [
+        {
+          "value": "approached",
+          "label": "Sam podchodził"
+        },
+        {
+          "value": "stayed",
+          "label": "Pozostawał w miejscu"
+        },
+        {
+          "value": "moved_away",
+          "label": "Oddalał się"
+        },
+        {
+          "value": "different_by_item",
+          "label": "Zachowanie zależało od elementu sprzętu"
+        },
+        {
+          "value": "not_used",
+          "label": "Nie używano sprzętu"
+        },
+        {
+          "value": "unknown",
+          "label": "Nie wiem / nie mam wystarczającej obserwacji"
+        },
+        {
+          "value": "not_applicable",
+          "label": "Nie dotyczy / sytuacja nie wystąpiła"
+        }
+      ]
+    },
+    {
+      "id": "q082",
+      "section_id": "cat_context",
+      "species": [
+        "cat"
+      ],
+      "prompt": "Jak często kot sam korzystał z dostępnego bezpiecznego podwyższonego miejsca?",
+      "type": "frequency",
+      "required": false,
+      "recall_window_days": 14,
+      "construct": "cat_elevated_space_use",
+      "notes": "Opisuj tylko osobiście zaobserwowane sytuacje. Brak okazji oznacza „nie dotyczy”, brak wiedzy oznacza „nie wiem”. Nie wywołuj sytuacji na potrzeby odpowiedzi.",
+      "options": [
+        {
+          "value": "never_observed",
+          "label": "Nigdy w obserwowanych sytuacjach"
+        },
+        {
+          "value": "rarely",
+          "label": "Rzadko w obserwowanych sytuacjach"
+        },
+        {
+          "value": "sometimes",
+          "label": "Czasami w obserwowanych sytuacjach"
+        },
+        {
+          "value": "often",
+          "label": "Często w obserwowanych sytuacjach"
+        },
+        {
+          "value": "almost_always",
+          "label": "Prawie zawsze w obserwowanych sytuacjach"
+        },
+        {
+          "value": "unknown",
+          "label": "Nie wiem / nie mam wystarczającej obserwacji"
+        },
+        {
+          "value": "not_applicable",
+          "label": "Nie dotyczy / sytuacja nie wystąpiła"
+        }
+      ]
+    },
+    {
+      "id": "q083",
+      "section_id": "cat_context",
+      "species": [
+        "cat"
+      ],
+      "prompt": "Jak często kot sam wybierał dostępną kryjówkę lub osłonięte miejsce podczas zwykłej aktywności domowników?",
+      "type": "frequency",
+      "required": false,
+      "recall_window_days": 14,
+      "construct": "cat_cover_choice",
+      "notes": "Korzystanie z kryjówki samo w sobie nie potwierdza lęku. Nie wyciągaj kota i nie usuwaj osłony dla obserwacji.",
+      "options": [
+        {
+          "value": "never_observed",
+          "label": "Nigdy w obserwowanych sytuacjach"
+        },
+        {
+          "value": "rarely",
+          "label": "Rzadko w obserwowanych sytuacjach"
+        },
+        {
+          "value": "sometimes",
+          "label": "Czasami w obserwowanych sytuacjach"
+        },
+        {
+          "value": "often",
+          "label": "Często w obserwowanych sytuacjach"
+        },
+        {
+          "value": "almost_always",
+          "label": "Prawie zawsze w obserwowanych sytuacjach"
+        },
+        {
+          "value": "unknown",
+          "label": "Nie wiem / nie mam wystarczającej obserwacji"
+        },
+        {
+          "value": "not_applicable",
+          "label": "Nie dotyczy / sytuacja nie wystąpiła"
+        }
+      ]
+    },
+    {
+      "id": "q084",
+      "section_id": "cat_context",
+      "species": [
+        "cat"
+      ],
+      "prompt": "Jak często kot drapał dostępne znane powierzchnie przeznaczone do drapania?",
+      "type": "frequency",
+      "required": false,
+      "recall_window_days": 14,
+      "construct": "cat_scratching_resource_use",
+      "notes": "Opisuj tylko osobiście zaobserwowane sytuacje. Brak okazji oznacza „nie dotyczy”, brak wiedzy oznacza „nie wiem”. Nie wywołuj sytuacji na potrzeby odpowiedzi.",
+      "options": [
+        {
+          "value": "never_observed",
+          "label": "Nigdy w obserwowanych sytuacjach"
+        },
+        {
+          "value": "rarely",
+          "label": "Rzadko w obserwowanych sytuacjach"
+        },
+        {
+          "value": "sometimes",
+          "label": "Czasami w obserwowanych sytuacjach"
+        },
+        {
+          "value": "often",
+          "label": "Często w obserwowanych sytuacjach"
+        },
+        {
+          "value": "almost_always",
+          "label": "Prawie zawsze w obserwowanych sytuacjach"
+        },
+        {
+          "value": "unknown",
+          "label": "Nie wiem / nie mam wystarczającej obserwacji"
+        },
+        {
+          "value": "not_applicable",
+          "label": "Nie dotyczy / sytuacja nie wystąpiła"
+        }
+      ]
+    },
+    {
+      "id": "q085",
+      "section_id": "cat_context",
+      "species": [
+        "cat"
+      ],
+      "prompt": "Czy zmieniło się obserwowane korzystanie kota z jego zwykłej kuwety względem wcześniejszej rutyny?",
+      "type": "single_choice",
+      "required": false,
+      "recall_window_days": 14,
+      "construct": "cat_reported_litter_routine_change",
+      "notes": "Zapisz konkretną zmianę w notatce, bez rozpoznawania jej przyczyny. Nie ograniczaj kuwet i nie przestawiaj ich dla testu.",
+      "options": [
+        {
+          "value": "similar",
+          "label": "Wyglądało podobnie"
+        },
+        {
+          "value": "changed",
+          "label": "Zauważyłem/zauważyłam zmianę"
+        },
+        {
+          "value": "setup_changed",
+          "label": "Zmieniono kuwetę lub podłoże i trudno porównać"
+        },
+        {
+          "value": "not_visible",
+          "label": "Nie mogłem/mogłam bezpośrednio tego obserwować"
+        },
+        {
+          "value": "unknown",
+          "label": "Nie wiem / nie mam wystarczającej obserwacji"
+        },
+        {
+          "value": "not_applicable",
+          "label": "Nie dotyczy / sytuacja nie wystąpiła"
+        }
+      ]
+    },
+    {
+      "id": "q086",
+      "section_id": "cat_context",
+      "species": [
+        "cat"
+      ],
+      "prompt": "Jakie elementy pojawiały się w dobrowolnej zabawie kota ze znaną bezpieczną zabawką?",
+      "type": "multi_choice",
+      "required": false,
+      "recall_window_days": 14,
+      "construct": "cat_play_sequence",
+      "notes": "To etogram zabawy, bez wniosku o stosunku do żywych zwierząt. Nie używaj żywej ofiary ani dłoni jako zabawki.",
+      "options": [
+        {
+          "value": "watch",
+          "label": "Obserwowanie zabawki"
+        },
+        {
+          "value": "crouch",
+          "label": "Przykucnięcie przed ruchem"
+        },
+        {
+          "value": "follow",
+          "label": "Podążanie za zabawką"
+        },
+        {
+          "value": "pounce",
+          "label": "Skok w stronę zabawki"
+        },
+        {
+          "value": "paw",
+          "label": "Dotknięcie łapą"
+        },
+        {
+          "value": "hold",
+          "label": "Przytrzymanie zabawki"
+        },
+        {
+          "value": "pause",
+          "label": "Samodzielne przerwanie zabawy"
+        },
+        {
+          "value": "unknown",
+          "label": "Nie wiem / nie mam wystarczającej obserwacji"
+        },
+        {
+          "value": "not_applicable",
+          "label": "Nie dotyczy / sytuacja nie wystąpiła"
+        }
+      ]
+    },
+    {
+      "id": "q087",
+      "section_id": "cat_context",
+      "species": [
+        "cat"
+      ],
+      "prompt": "Jak często kot przerywał zwykłą aktywność, aby przez chwilę czyścić sierść?",
+      "type": "frequency",
+      "required": false,
+      "recall_window_days": 14,
+      "construct": "cat_observed_grooming",
+      "notes": "Częstość nie oznacza zaburzenia ani stanu emocjonalnego. Uwzględnij czas obserwacji, części ciała i znany stan zdrowia.",
+      "options": [
+        {
+          "value": "never_observed",
+          "label": "Nigdy w obserwowanych sytuacjach"
+        },
+        {
+          "value": "rarely",
+          "label": "Rzadko w obserwowanych sytuacjach"
+        },
+        {
+          "value": "sometimes",
+          "label": "Czasami w obserwowanych sytuacjach"
+        },
+        {
+          "value": "often",
+          "label": "Często w obserwowanych sytuacjach"
+        },
+        {
+          "value": "almost_always",
+          "label": "Prawie zawsze w obserwowanych sytuacjach"
+        },
+        {
+          "value": "unknown",
+          "label": "Nie wiem / nie mam wystarczającej obserwacji"
+        },
+        {
+          "value": "not_applicable",
+          "label": "Nie dotyczy / sytuacja nie wystąpiła"
+        }
+      ]
+    },
+    {
+      "id": "q088",
+      "section_id": "cat_context",
+      "species": [
+        "cat"
+      ],
+      "prompt": "Jak często kot sam wchodził do znanego otwartego transportera, jeśli był on już dostępny w codziennej przestrzeni?",
+      "type": "frequency",
+      "required": false,
+      "recall_window_days": 14,
+      "construct": "cat_existing_carrier_choice",
+      "notes": "Nie zamykaj transportera, nie wkładaj kota do środka i nie aranżuj podróży dla testu. Brak transportera w przestrzeni oznacza not_applicable.",
+      "options": [
+        {
+          "value": "never_observed",
+          "label": "Nigdy w obserwowanych sytuacjach"
+        },
+        {
+          "value": "rarely",
+          "label": "Rzadko w obserwowanych sytuacjach"
+        },
+        {
+          "value": "sometimes",
+          "label": "Czasami w obserwowanych sytuacjach"
+        },
+        {
+          "value": "often",
+          "label": "Często w obserwowanych sytuacjach"
+        },
+        {
+          "value": "almost_always",
+          "label": "Prawie zawsze w obserwowanych sytuacjach"
+        },
+        {
+          "value": "unknown",
+          "label": "Nie wiem / nie mam wystarczającej obserwacji"
+        },
+        {
+          "value": "not_applicable",
+          "label": "Nie dotyczy / sytuacja nie wystąpiła"
+        }
+      ]
+    },
+    {
+      "id": "q089",
+      "section_id": "cat_context",
+      "species": [
+        "cat"
+      ],
+      "prompt": "Jak często kot sam ocierał głowę lub bok ciała o spokojnie obecnego opiekuna?",
+      "type": "frequency",
+      "required": false,
+      "recall_window_days": 14,
+      "construct": "cat_voluntary_rubbing",
+      "notes": "Opisuj tylko osobiście zaobserwowane sytuacje. Brak okazji oznacza „nie dotyczy”, brak wiedzy oznacza „nie wiem”. Nie wywołuj sytuacji na potrzeby odpowiedzi.",
+      "options": [
+        {
+          "value": "never_observed",
+          "label": "Nigdy w obserwowanych sytuacjach"
+        },
+        {
+          "value": "rarely",
+          "label": "Rzadko w obserwowanych sytuacjach"
+        },
+        {
+          "value": "sometimes",
+          "label": "Czasami w obserwowanych sytuacjach"
+        },
+        {
+          "value": "often",
+          "label": "Często w obserwowanych sytuacjach"
+        },
+        {
+          "value": "almost_always",
+          "label": "Prawie zawsze w obserwowanych sytuacjach"
+        },
+        {
+          "value": "unknown",
+          "label": "Nie wiem / nie mam wystarczającej obserwacji"
+        },
+        {
+          "value": "not_applicable",
+          "label": "Nie dotyczy / sytuacja nie wystąpiła"
+        }
+      ]
+    },
+    {
+      "id": "q090",
+      "section_id": "cat_context",
+      "species": [
+        "cat"
+      ],
+      "prompt": "Jak często kot sam podchodził do znanego współmieszkającego zwierzęcia i pozostawał blisko bez blokowania mu drogi?",
+      "type": "frequency",
+      "required": false,
+      "recall_window_days": 14,
+      "construct": "cat_familiar_animal_approach",
+      "notes": "Nie organizuj zapoznawania ani zbliżania zwierząt. Odległość i przebieg spotkania zapisuj, bez etykiety dominacji.",
+      "options": [
+        {
+          "value": "never_observed",
+          "label": "Nigdy w obserwowanych sytuacjach"
+        },
+        {
+          "value": "rarely",
+          "label": "Rzadko w obserwowanych sytuacjach"
+        },
+        {
+          "value": "sometimes",
+          "label": "Czasami w obserwowanych sytuacjach"
+        },
+        {
+          "value": "often",
+          "label": "Często w obserwowanych sytuacjach"
+        },
+        {
+          "value": "almost_always",
+          "label": "Prawie zawsze w obserwowanych sytuacjach"
+        },
+        {
+          "value": "unknown",
+          "label": "Nie wiem / nie mam wystarczającej obserwacji"
+        },
+        {
+          "value": "not_applicable",
+          "label": "Nie dotyczy / sytuacja nie wystąpiła"
+        }
+      ]
+    },
+    {
+      "id": "q091",
+      "section_id": "examples_followup",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "prompt": "Opisz jedno zdarzenie z ostatnich 14 dni: data lub przybliżenie, sytuacja przed, widoczne zachowanie, sytuacja po oraz czas obserwacji.",
+      "type": "free_text",
+      "required": false,
+      "recall_window_days": 14,
+      "construct": "dated_behavior_example",
+      "notes": "Używaj opisu faktów, np. „odszedł dwa kroki”, a nie pewnego odczytu „był zazdrosny”. Interpretację możesz zapisać osobno jako hipotezę opiekuna."
+    },
+    {
+      "id": "q092",
+      "section_id": "examples_followup",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "prompt": "Opisz przykład, w którym zwierzę zachowało się inaczej niż zwykle w podobnej sytuacji. Co różniło się w otoczeniu?",
+      "type": "free_text",
+      "required": false,
+      "recall_window_days": 14,
+      "construct": "counterexample_context",
+      "notes": "Opisuj tylko osobiście zaobserwowane sytuacje. Brak okazji oznacza „nie dotyczy”, brak wiedzy oznacza „nie wiem”. Nie wywołuj sytuacji na potrzeby odpowiedzi."
+    },
+    {
+      "id": "q093",
+      "section_id": "examples_followup",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "prompt": "Jakie obszary chcesz lepiej poznać poprzez dalsze spokojne obserwacje?",
+      "type": "multi_choice",
+      "required": false,
+      "recall_window_days": null,
+      "construct": "owner_information_goals",
+      "notes": "To preferencja opiekuna, nie cecha zwierzęcia. Nie obiecuj odczytania myśli, emocji z pewnością ani skutecznej porady klinicznej.",
+      "options": [
+        {
+          "value": "rest",
+          "label": "Odpoczynek"
+        },
+        {
+          "value": "play",
+          "label": "Dobrowolna zabawa"
+        },
+        {
+          "value": "contact",
+          "label": "Sposób wybierania kontaktu"
+        },
+        {
+          "value": "signals",
+          "label": "Kontekst ruchów i głosu"
+        },
+        {
+          "value": "routine",
+          "label": "Rutyna i zmiany"
+        },
+        {
+          "value": "resources",
+          "label": "Korzystanie z dostępnych zasobów"
+        },
+        {
+          "value": "other",
+          "label": "Inny obszar"
+        },
+        {
+          "value": "unknown",
+          "label": "Nie wiem / nie mam wystarczającej obserwacji"
+        },
+        {
+          "value": "not_applicable",
+          "label": "Nie dotyczy / sytuacja nie wystąpiła"
+        }
+      ]
+    },
+    {
+      "id": "q094",
+      "section_id": "examples_followup",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "prompt": "Po przejrzeniu formularza, jak oceniasz możliwość poparcia odpowiedzi konkretnymi obserwacjami z tego okresu?",
+      "type": "single_choice",
+      "required": false,
+      "recall_window_days": 14,
+      "construct": "self_reported_evidence_quality",
+      "notes": "Samoocena pewności opiekuna nie jest dowodem trafności. W razie luki zachowaj unknown zamiast zgadywać.",
+      "options": [
+        {
+          "value": "many_examples",
+          "label": "Większość mogę poprzeć konkretnymi przykładami"
+        },
+        {
+          "value": "some_examples",
+          "label": "Część mogę poprzeć przykładami, a część jest ogólnym wrażeniem"
+        },
+        {
+          "value": "few_examples",
+          "label": "Mam niewiele konkretnych przykładów"
+        },
+        {
+          "value": "unknown",
+          "label": "Nie wiem / nie mam wystarczającej obserwacji"
+        },
+        {
+          "value": "not_applicable",
+          "label": "Nie dotyczy / sytuacja nie wystąpiła"
+        }
+      ]
+    }
+  ]
+}

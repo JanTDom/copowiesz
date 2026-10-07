@@ -1,0 +1,3368 @@
+[
+  {
+    "id": "dog_v2_repeated_odour",
+    "species": [
+      "dog"
+    ],
+    "topic": "olfaction",
+    "title": "Historia kontaktu z zapachem",
+    "observation": "Pies ponownie węszy znajomy przedmiot.",
+    "possible_interpretations": [
+      "Możliwa zmiana zainteresowania po poznaniu."
+    ],
+    "confounders": [
+      "Nowość, kolejność ekspozycji."
+    ],
+    "safe_next_steps": [
+      "Zapisuj wcześniejszy kontakt z bodźcem."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "dog_src_v2_nostril_2011"
+    ],
+    "limitations": "Nozdrze nie jest detektorem emocji.",
+    "tags": [
+      "olfaction",
+      "context",
+      "expert_review_pending"
+    ],
+    "claims": [
+      {
+        "id": "dog_v2_repeated_odour_finding",
+        "text": "Przy powtórzeniach nieawersyjnych zapachów zmieniała się preferencja nozdrza.",
+        "basis": "source_finding",
+        "source_ids": [
+          "dog_src_v2_nostril_2011"
+        ],
+        "locator": "Abstrakt",
+        "uncertainty": "Specyficzna próba."
+      },
+      {
+        "id": "dog_v2_repeated_odour_action",
+        "text": "Zapisuj wcześniejszy kontakt z bodźcem.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "dog_src_v2_nostril_2011"
+        ],
+        "locator": "Reguła projektu; do walidacji.",
+        "uncertainty": "Zalecenie nie było przedmiotem tego badania."
+      }
+    ]
+  },
+  {
+    "id": "dog_v2_odour_category",
+    "species": [
+      "dog"
+    ],
+    "topic": "olfaction",
+    "title": "Różne zapachy, różne odpowiedzi",
+    "observation": "Węszenie zmienia się między miejscami.",
+    "possible_interpretations": [
+      "Możliwa reakcja na rodzaj zapachu."
+    ],
+    "confounders": [
+      "Inne bodźce, dostępność."
+    ],
+    "safe_next_steps": [
+      "Rejestruj otoczenie i cały przebieg węszenia."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "dog_src_v2_nostril_2011"
+    ],
+    "limitations": "Nie identyfikuj zapachu z filmu.",
+    "tags": [
+      "olfaction",
+      "context",
+      "expert_review_pending"
+    ],
+    "claims": [
+      {
+        "id": "dog_v2_odour_category_finding",
+        "text": "Lateralizacja węszenia różniła się zależnie od bodźca.",
+        "basis": "source_finding",
+        "source_ids": [
+          "dog_src_v2_nostril_2011"
+        ],
+        "locator": "Abstrakt",
+        "uncertainty": "Warunki eksperymentalne."
+      },
+      {
+        "id": "dog_v2_odour_category_action",
+        "text": "Rejestruj otoczenie i cały przebieg węszenia.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "dog_src_v2_nostril_2011"
+        ],
+        "locator": "Reguła projektu; do walidacji.",
+        "uncertainty": "Zalecenie nie było przedmiotem tego badania."
+      }
+    ]
+  },
+  {
+    "id": "dog_v2_smell_quantity",
+    "species": [
+      "dog"
+    ],
+    "topic": "olfaction",
+    "title": "Węszenie nie mierzy ilości",
+    "observation": "Pies wybiera jedną miskę.",
+    "possible_interpretations": [
+      "Możliwa preferencja niezależna od ilości."
+    ],
+    "confounders": [
+      "Głód, zapach, wzrok."
+    ],
+    "safe_next_steps": [
+      "Zapisuj zawartość i dostępne wskazówki."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "dog_src_v2_olfactory_quantity_2013"
+    ],
+    "limitations": "Brak treningu zmienia porównywalność.",
+    "tags": [
+      "olfaction",
+      "context",
+      "expert_review_pending"
+    ],
+    "claims": [
+      {
+        "id": "dog_v2_smell_quantity_finding",
+        "text": "Psy nie wybierały niezawodnie większej ilości jedzenia samym węchem.",
+        "basis": "source_finding",
+        "source_ids": [
+          "dog_src_v2_olfactory_quantity_2013"
+        ],
+        "locator": "Abstrakt: wyniki",
+        "uncertainty": "Zadanie laboratoryjne."
+      },
+      {
+        "id": "dog_v2_smell_quantity_action",
+        "text": "Zapisuj zawartość i dostępne wskazówki.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "dog_src_v2_olfactory_quantity_2013"
+        ],
+        "locator": "Reguła projektu; do walidacji.",
+        "uncertainty": "Zalecenie nie było przedmiotem tego badania."
+      }
+    ]
+  },
+  {
+    "id": "dog_v2_odour_food_choice",
+    "species": [
+      "dog"
+    ],
+    "topic": "olfaction",
+    "title": "Zapach może zmienić wybór",
+    "observation": "Pies omija większą porcję.",
+    "possible_interpretations": [
+      "Możliwy wpływ jakości bodźca."
+    ],
+    "confounders": [
+      "Zapach, doświadczenie pokarmowe."
+    ],
+    "safe_next_steps": [
+      "Porównuj naturalne wybory bez dodawania zapachów."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "dog_src_v2_olfactory_quantity_2013"
+    ],
+    "limitations": "Preferencja nie oznacza choroby.",
+    "tags": [
+      "olfaction",
+      "context",
+      "expert_review_pending"
+    ],
+    "claims": [
+      {
+        "id": "dog_v2_odour_food_choice_finding",
+        "text": "Dodany silny zapach zmieniał wybór widocznych porcji pokarmu.",
+        "basis": "source_finding",
+        "source_ids": [
+          "dog_src_v2_olfactory_quantity_2013"
+        ],
+        "locator": "Abstrakt: wyniki",
+        "uncertainty": "Warunek eksperymentalny."
+      },
+      {
+        "id": "dog_v2_odour_food_choice_action",
+        "text": "Porównuj naturalne wybory bez dodawania zapachów.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "dog_src_v2_olfactory_quantity_2013"
+        ],
+        "locator": "Reguła projektu; do walidacji.",
+        "uncertainty": "Zalecenie nie było przedmiotem tego badania."
+      }
+    ]
+  },
+  {
+    "id": "dog_v2_familiar_human_odour",
+    "species": [
+      "dog"
+    ],
+    "topic": "olfaction",
+    "title": "Znajomy zapach człowieka",
+    "observation": "Pies sprawdza ubranie opiekuna.",
+    "possible_interpretations": [
+      "Możliwe rozpoznanie znajomego bodźca."
+    ],
+    "confounders": [
+      "Historia, otoczenie."
+    ],
+    "safe_next_steps": [
+      "Zapisuj osobę oraz historię znajomości."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "dog_src_v2_familiar_scent_2015"
+    ],
+    "limitations": "fMRI nie tłumaczy myśli.",
+    "tags": [
+      "olfaction",
+      "context",
+      "expert_review_pending"
+    ],
+    "claims": [
+      {
+        "id": "dog_v2_familiar_human_odour_finding",
+        "text": "Jądro ogoniaste reagowało najmocniej na zapach znajomego człowieka.",
+        "basis": "source_finding",
+        "source_ids": [
+          "dog_src_v2_familiar_scent_2015"
+        ],
+        "locator": "Abstrakt: wyniki",
+        "uncertainty": "12 przygotowanych psów."
+      },
+      {
+        "id": "dog_v2_familiar_human_odour_action",
+        "text": "Zapisuj osobę oraz historię znajomości.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "dog_src_v2_familiar_scent_2015"
+        ],
+        "locator": "Reguła projektu; do walidacji.",
+        "uncertainty": "Zalecenie nie było przedmiotem tego badania."
+      }
+    ]
+  },
+  {
+    "id": "dog_v2_olfactory_brain_channels",
+    "species": [
+      "dog"
+    ],
+    "topic": "olfaction",
+    "title": "Wyczucie i skojarzenie to różne procesy",
+    "observation": "Pies węszy bez widocznego zbliżenia.",
+    "possible_interpretations": [
+      "Możliwe wykrywanie bez poszukiwania kontaktu."
+    ],
+    "confounders": [
+      "Odległość, ograniczenie ruchu."
+    ],
+    "safe_next_steps": [
+      "Oddzielaj węszenie od podejścia i kontaktu."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "dog_src_v2_familiar_scent_2015"
+    ],
+    "limitations": "Kamera nie mierzy aktywności mózgu.",
+    "tags": [
+      "olfaction",
+      "context",
+      "expert_review_pending"
+    ],
+    "claims": [
+      {
+        "id": "dog_v2_olfactory_brain_channels_finding",
+        "text": "Aktywacja opuszki węchowej była podobna między badanymi zapachami.",
+        "basis": "source_finding",
+        "source_ids": [
+          "dog_src_v2_familiar_scent_2015"
+        ],
+        "locator": "Abstrakt: wyniki",
+        "uncertainty": "Mała, wytrenowana próba."
+      },
+      {
+        "id": "dog_v2_olfactory_brain_channels_action",
+        "text": "Oddzielaj węszenie od podejścia i kontaktu.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "dog_src_v2_familiar_scent_2015"
+        ],
+        "locator": "Reguła projektu; do walidacji.",
+        "uncertainty": "Zalecenie nie było przedmiotem tego badania."
+      }
+    ]
+  },
+  {
+    "id": "dog_v2_invisible_human_context",
+    "species": [
+      "dog"
+    ],
+    "topic": "olfaction",
+    "title": "Zapach jako niewidoczny kontekst",
+    "observation": "Pies reaguje przy spokojnym obrazie.",
+    "possible_interpretations": [
+      "Możliwa wskazówka poza kadrem."
+    ],
+    "confounders": [
+      "Zapach człowieka, dźwięk."
+    ],
+    "safe_next_steps": [
+      "Notuj warunki poza obrazem."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "dog_src_v2_human_stress_odour_2022"
+    ],
+    "limitations": "Film nie rozpoznaje chemii zapachu.",
+    "tags": [
+      "olfaction",
+      "context",
+      "expert_review_pending"
+    ],
+    "claims": [
+      {
+        "id": "dog_v2_invisible_human_context_finding",
+        "text": "Wytrenowane psy rozróżniały próbki po stresie i wyjściowe.",
+        "basis": "source_finding",
+        "source_ids": [
+          "dog_src_v2_human_stress_odour_2022"
+        ],
+        "locator": "Abstrakt: wyniki",
+        "uncertainty": "Cztery psy."
+      },
+      {
+        "id": "dog_v2_invisible_human_context_action",
+        "text": "Notuj warunki poza obrazem.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "dog_src_v2_human_stress_odour_2022"
+        ],
+        "locator": "Reguła projektu; do walidacji.",
+        "uncertainty": "Zalecenie nie było przedmiotem tego badania."
+      }
+    ]
+  },
+  {
+    "id": "dog_v2_odour_detection_training",
+    "species": [
+      "dog"
+    ],
+    "topic": "olfaction",
+    "title": "Trening detekcyjny ma znaczenie",
+    "observation": "Pies wybiera próbkę w zadaniu.",
+    "possible_interpretations": [
+      "Możliwa wyuczona dyskryminacja."
+    ],
+    "confounders": [
+      "Nagrody, wcześniejsze treningi."
+    ],
+    "safe_next_steps": [
+      "Zapisuj trening; unikaj etykiety czytania emocji."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "dog_src_v2_human_stress_odour_2022"
+    ],
+    "limitations": "Nie uogólniaj na niewytrenowanego psa.",
+    "tags": [
+      "olfaction",
+      "context",
+      "expert_review_pending"
+    ],
+    "claims": [
+      {
+        "id": "dog_v2_odour_detection_training_finding",
+        "text": "Dyskryminację zapachów stresu uzyskano w zadaniu wymuszonego wyboru.",
+        "basis": "source_finding",
+        "source_ids": [
+          "dog_src_v2_human_stress_odour_2022"
+        ],
+        "locator": "Metody i wyniki",
+        "uncertainty": "Przygotowane psy."
+      },
+      {
+        "id": "dog_v2_odour_detection_training_action",
+        "text": "Zapisuj trening; unikaj etykiety czytania emocji.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "dog_src_v2_human_stress_odour_2022"
+        ],
+        "locator": "Reguła projektu; do walidacji.",
+        "uncertainty": "Zalecenie nie było przedmiotem tego badania."
+      }
+    ]
+  },
+  {
+    "id": "dog_v2_recorded_owner_voice",
+    "species": [
+      "dog"
+    ],
+    "topic": "auditory",
+    "title": "Tożsamość głosu",
+    "observation": "Pies orientuje się na nagranie.",
+    "possible_interpretations": [
+      "Możliwe rozpoznanie mówcy."
+    ],
+    "confounders": [
+      "Głośnik, znajomość nagrania."
+    ],
+    "safe_next_steps": [
+      "Zapisuj mówcę oddzielnie od treści."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "dog_src_v2_voice_identity_2022"
+    ],
+    "limitations": "Uwaga nie potwierdza rozumienia.",
+    "tags": [
+      "auditory",
+      "context",
+      "expert_review_pending"
+    ],
+    "claims": [
+      {
+        "id": "dog_v2_recorded_owner_voice_finding",
+        "text": "Psy rozróżniały nagrany głos opiekuna i obcych.",
+        "basis": "source_finding",
+        "source_ids": [
+          "dog_src_v2_voice_identity_2022"
+        ],
+        "locator": "Abstrakt",
+        "uncertainty": "28 zakwalifikowanych psów."
+      },
+      {
+        "id": "dog_v2_recorded_owner_voice_action",
+        "text": "Zapisuj mówcę oddzielnie od treści.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "dog_src_v2_voice_identity_2022"
+        ],
+        "locator": "Reguła projektu; do walidacji.",
+        "uncertainty": "Zalecenie nie było przedmiotem tego badania."
+      }
+    ]
+  },
+  {
+    "id": "dog_v2_voice_acoustics",
+    "species": [
+      "dog"
+    ],
+    "topic": "auditory",
+    "title": "Brzmienie mówcy",
+    "observation": "Reakcje różnią się między głosami.",
+    "possible_interpretations": [
+      "Możliwy wpływ cech akustycznych."
+    ],
+    "confounders": [
+      "Głośność, urządzenie."
+    ],
+    "safe_next_steps": [
+      "Notuj mówcę i warunki odtwarzania."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "dog_src_v2_voice_identity_2022"
+    ],
+    "limitations": "Nie przypisuj znaczenia samemu tonowi.",
+    "tags": [
+      "auditory",
+      "context",
+      "expert_review_pending"
+    ],
+    "claims": [
+      {
+        "id": "dog_v2_voice_acoustics_finding",
+        "text": "Wysokość podstawowa i jitter wiązały się z wyborem głosu.",
+        "basis": "source_finding",
+        "source_ids": [
+          "dog_src_v2_voice_identity_2022"
+        ],
+        "locator": "Wyniki: analiza akustyczna",
+        "uncertainty": "Ograniczona próba nagrań."
+      },
+      {
+        "id": "dog_v2_voice_acoustics_action",
+        "text": "Notuj mówcę i warunki odtwarzania.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "dog_src_v2_voice_identity_2022"
+        ],
+        "locator": "Reguła projektu; do walidacji.",
+        "uncertainty": "Zalecenie nie było przedmiotem tego badania."
+      }
+    ]
+  },
+  {
+    "id": "dog_v2_similar_word_sounds",
+    "species": [
+      "dog"
+    ],
+    "topic": "auditory",
+    "title": "Podobne brzmienie komend",
+    "observation": "Pies odpowiada na podobne słowa.",
+    "possible_interpretations": [
+      "Możliwe uogólnienie sygnału."
+    ],
+    "confounders": [
+      "Gest, rutyna."
+    ],
+    "safe_next_steps": [
+      "Utrzymuj wyraźne, konsekwentne wskazówki."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "dog_src_v2_phonetic_erp_2020"
+    ],
+    "limitations": "EEG nie ocenia polskiego języka.",
+    "tags": [
+      "auditory",
+      "context",
+      "expert_review_pending"
+    ],
+    "claims": [
+      {
+        "id": "dog_v2_similar_word_sounds_finding",
+        "text": "ERP nie rozróżniały słów znanych i podobnych fonetycznie.",
+        "basis": "source_finding",
+        "source_ids": [
+          "dog_src_v2_phonetic_erp_2020"
+        ],
+        "locator": "Abstrakt: wyniki",
+        "uncertainty": "17 psów."
+      },
+      {
+        "id": "dog_v2_similar_word_sounds_action",
+        "text": "Utrzymuj wyraźne, konsekwentne wskazówki.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "dog_src_v2_phonetic_erp_2020"
+        ],
+        "locator": "Reguła projektu; do walidacji.",
+        "uncertainty": "Zalecenie nie było przedmiotem tego badania."
+      }
+    ]
+  },
+  {
+    "id": "dog_v2_command_exposure_history",
+    "species": [
+      "dog"
+    ],
+    "topic": "auditory",
+    "title": "Historia słyszenia komendy",
+    "observation": "Odpowiedź zmienia się z doświadczeniem.",
+    "possible_interpretations": [
+      "Możliwy efekt uczenia."
+    ],
+    "confounders": [
+      "Częstość, nagroda."
+    ],
+    "safe_next_steps": [
+      "Zapisuj częstość i kontekst wskazówki."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "dog_src_v2_phonetic_erp_2020"
+    ],
+    "limitations": "Nie ustala umiejętności rozmowy.",
+    "tags": [
+      "auditory",
+      "context",
+      "expert_review_pending"
+    ],
+    "claims": [
+      {
+        "id": "dog_v2_command_exposure_history_finding",
+        "text": "Efekty ERP zależały od częstości słyszenia znanych komend.",
+        "basis": "source_finding",
+        "source_ids": [
+          "dog_src_v2_phonetic_erp_2020"
+        ],
+        "locator": "Abstrakt: wyniki",
+        "uncertainty": "Eksperymentalny zestaw słów."
+      },
+      {
+        "id": "dog_v2_command_exposure_history_action",
+        "text": "Zapisuj częstość i kontekst wskazówki.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "dog_src_v2_phonetic_erp_2020"
+        ],
+        "locator": "Reguła projektu; do walidacji.",
+        "uncertainty": "Zalecenie nie było przedmiotem tego badania."
+      }
+    ]
+  },
+  {
+    "id": "dog_v2_puppy_voice_attention",
+    "species": [
+      "dog"
+    ],
+    "topic": "development",
+    "title": "Uwaga szczenięcia na prozodię",
+    "observation": "Szczenię orientuje się na głos.",
+    "possible_interpretations": [
+      "Możliwe zwiększenie uwagi."
+    ],
+    "confounders": [
+      "Wiek, osoba."
+    ],
+    "safe_next_steps": [
+      "Notuj wiek i reakcję na głos."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "dog_src_v2_puppy_prosody_2017"
+    ],
+    "limitations": "Uwaga nie oznacza rozumienia.",
+    "tags": [
+      "development",
+      "context",
+      "expert_review_pending"
+    ],
+    "claims": [
+      {
+        "id": "dog_v2_puppy_voice_attention_finding",
+        "text": "Szczenięta silniej reagowały na mowę kierowaną do psów.",
+        "basis": "source_finding",
+        "source_ids": [
+          "dog_src_v2_puppy_prosody_2017"
+        ],
+        "locator": "Abstrakt: wyniki",
+        "uncertainty": "Dziesięć szczeniąt."
+      },
+      {
+        "id": "dog_v2_puppy_voice_attention_action",
+        "text": "Notuj wiek i reakcję na głos.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "dog_src_v2_puppy_prosody_2017"
+        ],
+        "locator": "Reguła projektu; do walidacji.",
+        "uncertainty": "Zalecenie nie było przedmiotem tego badania."
+      }
+    ]
+  },
+  {
+    "id": "dog_v2_adult_playback_context",
+    "species": [
+      "dog"
+    ],
+    "topic": "development",
+    "title": "Dorosły pies i odtwarzany głos",
+    "observation": "Dorosły pies ignoruje nagranie.",
+    "possible_interpretations": [
+      "Możliwy brak znaczenia tego kontekstu."
+    ],
+    "confounders": [
+      "Obcy mówca, skrypt."
+    ],
+    "safe_next_steps": [
+      "Porównuj kontekst żywej interakcji i nagrania."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "dog_src_v2_puppy_prosody_2017"
+    ],
+    "limitations": "Brak reakcji nie wyjaśnia więzi.",
+    "tags": [
+      "development",
+      "context",
+      "expert_review_pending"
+    ],
+    "claims": [
+      {
+        "id": "dog_v2_adult_playback_context_finding",
+        "text": "Dorosłe psy nie preferowały takiej mowy w tym odtwarzaniu.",
+        "basis": "source_finding",
+        "source_ids": [
+          "dog_src_v2_puppy_prosody_2017"
+        ],
+        "locator": "Abstrakt: wyniki",
+        "uncertainty": "Mała grupa, procedura."
+      },
+      {
+        "id": "dog_v2_adult_playback_context_action",
+        "text": "Porównuj kontekst żywej interakcji i nagrania.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "dog_src_v2_puppy_prosody_2017"
+        ],
+        "locator": "Reguła projektu; do walidacji.",
+        "uncertainty": "Zalecenie nie było przedmiotem tego badania."
+      }
+    ]
+  },
+  {
+    "id": "dog_v2_natural_dog_speech",
+    "species": [
+      "dog"
+    ],
+    "topic": "auditory",
+    "title": "Naturalna wypowiedź do psa",
+    "observation": "Pies zostaje bliżej mówcy.",
+    "possible_interpretations": [
+      "Możliwa preferencja całej interakcji."
+    ],
+    "confounders": [
+      "Treść, prozodia."
+    ],
+    "safe_next_steps": [
+      "Oddzielaj uwagę od wykonania prośby."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "dog_src_v2_natural_speech_2018"
+    ],
+    "limitations": "Treść i ton współwystępowały.",
+    "tags": [
+      "auditory",
+      "context",
+      "expert_review_pending"
+    ],
+    "claims": [
+      {
+        "id": "dog_v2_natural_dog_speech_finding",
+        "text": "Dorosłe psy preferowały naturalną mowę kierowaną do psów.",
+        "basis": "source_finding",
+        "source_ids": [
+          "dog_src_v2_natural_speech_2018"
+        ],
+        "locator": "Abstrakt",
+        "uncertainty": "Ograniczony eksperyment."
+      },
+      {
+        "id": "dog_v2_natural_dog_speech_action",
+        "text": "Oddzielaj uwagę od wykonania prośby.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "dog_src_v2_natural_speech_2018"
+        ],
+        "locator": "Reguła projektu; do walidacji.",
+        "uncertainty": "Zalecenie nie było przedmiotem tego badania."
+      }
+    ]
+  },
+  {
+    "id": "dog_v2_prosody_content_match",
+    "species": [
+      "dog"
+    ],
+    "topic": "auditory",
+    "title": "Treść i ton razem",
+    "observation": "Preferencja zmienia się z wypowiedzią.",
+    "possible_interpretations": [
+      "Możliwy wpływ zgodności wskazówek."
+    ],
+    "confounders": [
+      "Słowa, melodia."
+    ],
+    "safe_next_steps": [
+      "Zapisuj pełną wypowiedź i kontekst."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "dog_src_v2_natural_speech_2018"
+    ],
+    "limitations": "Nie ustala rozumienia zdań.",
+    "tags": [
+      "auditory",
+      "context",
+      "expert_review_pending"
+    ],
+    "claims": [
+      {
+        "id": "dog_v2_prosody_content_match_finding",
+        "text": "Przy zamienionej prozodii preferencja nie była istotna.",
+        "basis": "source_finding",
+        "source_ids": [
+          "dog_src_v2_natural_speech_2018"
+        ],
+        "locator": "Abstrakt; eksperyment 2",
+        "uncertainty": "Brak efektu nie dowodzi równoważności."
+      },
+      {
+        "id": "dog_v2_prosody_content_match_action",
+        "text": "Zapisuj pełną wypowiedź i kontekst.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "dog_src_v2_natural_speech_2018"
+        ],
+        "locator": "Reguła projektu; do walidacji.",
+        "uncertainty": "Zalecenie nie było przedmiotem tego badania."
+      }
+    ]
+  },
+  {
+    "id": "dog_v2_apparent_sleep",
+    "species": [
+      "dog"
+    ],
+    "topic": "sleep",
+    "title": "Pozorny sen i pomiar",
+    "observation": "Pies leży z zamkniętymi oczami.",
+    "possible_interpretations": [
+      "Możliwy sen lub odpoczynek."
+    ],
+    "confounders": [
+      "Widoczność, chwilowe pobudzenie."
+    ],
+    "safe_next_steps": [
+      "Opisuj pozorny sen, bez faz EEG."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "dog_src_v2_sleep_method_2014"
+    ],
+    "limitations": "Wideo nie wyznacza faz snu.",
+    "tags": [
+      "sleep",
+      "context",
+      "expert_review_pending"
+    ],
+    "claims": [
+      {
+        "id": "dog_v2_apparent_sleep_finding",
+        "text": "Nieinwazyjna polisomnografia pozwalała opisywać psie fazy snu.",
+        "basis": "source_finding",
+        "source_ids": [
+          "dog_src_v2_sleep_method_2014"
+        ],
+        "locator": "Abstrakt",
+        "uncertainty": "22 psy."
+      },
+      {
+        "id": "dog_v2_apparent_sleep_action",
+        "text": "Opisuj pozorny sen, bez faz EEG.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "dog_src_v2_sleep_method_2014"
+        ],
+        "locator": "Reguła projektu; do walidacji.",
+        "uncertainty": "Zalecenie nie było przedmiotem tego badania."
+      }
+    ]
+  },
+  {
+    "id": "dog_v2_preceding_day_sleep",
+    "species": [
+      "dog"
+    ],
+    "topic": "sleep",
+    "title": "Dzień poprzedzający odpoczynek",
+    "observation": "Wzorzec odpoczynku zmienia się.",
+    "possible_interpretations": [
+      "Możliwy wpływ wcześniejszego dnia."
+    ],
+    "confounders": [
+      "Nowość, aktywność."
+    ],
+    "safe_next_steps": [
+      "Notuj poprzedni dzień; zapewnij odpoczynek."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "dog_src_v2_sleep_method_2014"
+    ],
+    "limitations": "Nie pozbawiaj psa snu.",
+    "tags": [
+      "sleep",
+      "context",
+      "expert_review_pending"
+    ],
+    "claims": [
+      {
+        "id": "dog_v2_preceding_day_sleep_finding",
+        "text": "Obciążenie dnia wpływało na późniejszy sen EEG.",
+        "basis": "source_finding",
+        "source_ids": [
+          "dog_src_v2_sleep_method_2014"
+        ],
+        "locator": "Abstrakt: wyniki",
+        "uncertainty": "Siedem ponownie badanych psów."
+      },
+      {
+        "id": "dog_v2_preceding_day_sleep_action",
+        "text": "Notuj poprzedni dzień; zapewnij odpoczynek.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "dog_src_v2_sleep_method_2014"
+        ],
+        "locator": "Reguła projektu; do walidacji.",
+        "uncertainty": "Zalecenie nie było przedmiotem tego badania."
+      }
+    ]
+  },
+  {
+    "id": "dog_v2_fast_sleep_after_event",
+    "species": [
+      "dog"
+    ],
+    "topic": "sleep",
+    "title": "Szybkie zaśnięcie po zdarzeniu",
+    "observation": "Pies szybko zasypia po wydarzeniu.",
+    "possible_interpretations": [
+      "Możliwa reakcja na wcześniejsze doświadczenie."
+    ],
+    "confounders": [
+      "Zmęczenie, nowość."
+    ],
+    "safe_next_steps": [
+      "Nie uznawaj szybkości zasypiania za komfort."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "dog_src_v2_sleep_social_2017"
+    ],
+    "limitations": "Brak indywidualnej normy.",
+    "tags": [
+      "sleep",
+      "context",
+      "expert_review_pending"
+    ],
+    "claims": [
+      {
+        "id": "dog_v2_fast_sleep_after_event_finding",
+        "text": "Po negatywnym warunku psy zasypiały szybciej.",
+        "basis": "source_finding",
+        "source_ids": [
+          "dog_src_v2_sleep_social_2017"
+        ],
+        "locator": "Abstrakt: wyniki",
+        "uncertainty": "16 psów."
+      },
+      {
+        "id": "dog_v2_fast_sleep_after_event_action",
+        "text": "Nie uznawaj szybkości zasypiania za komfort.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "dog_src_v2_sleep_social_2017"
+        ],
+        "locator": "Reguła projektu; do walidacji.",
+        "uncertainty": "Zalecenie nie było przedmiotem tego badania."
+      }
+    ]
+  },
+  {
+    "id": "dog_v2_sleep_context_record",
+    "species": [
+      "dog"
+    ],
+    "topic": "sleep",
+    "title": "Kontekst przed snem",
+    "observation": "Odpoczynek różni się między dniami.",
+    "possible_interpretations": [
+      "Możliwy wpływ interakcji."
+    ],
+    "confounders": [
+      "Ruch, otoczenie."
+    ],
+    "safe_next_steps": [
+      "Zapisuj spokojne zdarzenia poprzedzające odpoczynek."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "dog_src_v2_sleep_social_2017"
+    ],
+    "limitations": "Nie prowokuj warunków stresowych.",
+    "tags": [
+      "sleep",
+      "context",
+      "expert_review_pending"
+    ],
+    "claims": [
+      {
+        "id": "dog_v2_sleep_context_record_finding",
+        "text": "Interakcje przed snem zmieniały rozkład faz snu.",
+        "basis": "source_finding",
+        "source_ids": [
+          "dog_src_v2_sleep_social_2017"
+        ],
+        "locator": "Abstrakt: wyniki",
+        "uncertainty": "Warunki laboratoryjne."
+      },
+      {
+        "id": "dog_v2_sleep_context_record_action",
+        "text": "Zapisuj spokojne zdarzenia poprzedzające odpoczynek.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "dog_src_v2_sleep_social_2017"
+        ],
+        "locator": "Reguła projektu; do walidacji.",
+        "uncertainty": "Zalecenie nie było przedmiotem tego badania."
+      }
+    ]
+  },
+  {
+    "id": "dog_v2_rest_after_learning",
+    "species": [
+      "dog"
+    ],
+    "topic": "learning",
+    "title": "Odpoczynek po nauce",
+    "observation": "Wykonanie wskazówki zmienia się później.",
+    "possible_interpretations": [
+      "Możliwe utrwalanie uczenia."
+    ],
+    "confounders": [
+      "Czas próby, motywacja."
+    ],
+    "safe_next_steps": [
+      "Zapewnij odpoczynek; porównuj odroczone wykonanie."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "dog_src_v2_sleep_learning_2017"
+    ],
+    "limitations": "Brak zalecanej liczby godzin.",
+    "tags": [
+      "learning",
+      "context",
+      "expert_review_pending"
+    ],
+    "claims": [
+      {
+        "id": "dog_v2_rest_after_learning_finding",
+        "text": "Nauka nowych komend zmieniała widmo późniejszego EEG.",
+        "basis": "source_finding",
+        "source_ids": [
+          "dog_src_v2_sleep_learning_2017"
+        ],
+        "locator": "Wyniki: eksperyment 1",
+        "uncertainty": "15 psów."
+      },
+      {
+        "id": "dog_v2_rest_after_learning_action",
+        "text": "Zapewnij odpoczynek; porównuj odroczone wykonanie.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "dog_src_v2_sleep_learning_2017"
+        ],
+        "locator": "Reguła projektu; do walidacji.",
+        "uncertainty": "Zalecenie nie było przedmiotem tego badania."
+      }
+    ]
+  },
+  {
+    "id": "dog_v2_interference_training",
+    "species": [
+      "dog"
+    ],
+    "topic": "learning",
+    "title": "Kolejne zadania a utrwalenie",
+    "observation": "Po wielu zadaniach odpowiedź słabnie.",
+    "possible_interpretations": [
+      "Możliwa interferencja uczenia."
+    ],
+    "confounders": [
+      "Zmęczenie, nagrody."
+    ],
+    "safe_next_steps": [
+      "Rozdzielaj nowe zadania i obserwuj retencję."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "dog_src_v2_sleep_learning_2017"
+    ],
+    "limitations": "Nie wyznacza harmonogramu szkolenia.",
+    "tags": [
+      "learning",
+      "context",
+      "expert_review_pending"
+    ],
+    "claims": [
+      {
+        "id": "dog_v2_interference_training_finding",
+        "text": "Uczenie innego zadania po pierwszym wiązało się z gorszą retencją.",
+        "basis": "source_finding",
+        "source_ids": [
+          "dog_src_v2_sleep_learning_2017"
+        ],
+        "locator": "Wyniki: eksperyment 2",
+        "uncertainty": "Krótki eksperyment."
+      },
+      {
+        "id": "dog_v2_interference_training_action",
+        "text": "Rozdzielaj nowe zadania i obserwuj retencję.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "dog_src_v2_sleep_learning_2017"
+        ],
+        "locator": "Reguła projektu; do walidacji.",
+        "uncertainty": "Zalecenie nie było przedmiotem tego badania."
+      }
+    ]
+  },
+  {
+    "id": "dog_v2_early_experience_history",
+    "species": [
+      "dog"
+    ],
+    "topic": "development",
+    "title": "Historia wczesnych doświadczeń",
+    "observation": "Opiekun zgłasza unikanie nowości.",
+    "possible_interpretations": [
+      "Możliwe znaczenie historii rozwoju."
+    ],
+    "confounders": [
+      "Retrospekcja, genetyka."
+    ],
+    "safe_next_steps": [
+      "Zapisuj dostępne doświadczenia bez obwiniania opiekuna."
+    ],
+    "escalation": "behaviorist",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "dog_src_v2_early_environment_2015"
+    ],
+    "limitations": "Korelacja nie ustala przyczyny.",
+    "tags": [
+      "development",
+      "context",
+      "expert_review_pending"
+    ],
+    "claims": [
+      {
+        "id": "dog_v2_early_experience_history_finding",
+        "text": "Lękliwość wiązała się z mniejszą socjalizacją szczenięcą.",
+        "basis": "source_finding",
+        "source_ids": [
+          "dog_src_v2_early_environment_2015"
+        ],
+        "locator": "Abstrakt: wyniki",
+        "uncertainty": "Ankieta przekrojowa."
+      },
+      {
+        "id": "dog_v2_early_experience_history_action",
+        "text": "Zapisuj dostępne doświadczenia bez obwiniania opiekuna.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "dog_src_v2_early_environment_2015"
+        ],
+        "locator": "Reguła projektu; do walidacji.",
+        "uncertainty": "Zalecenie nie było przedmiotem tego badania."
+      }
+    ]
+  },
+  {
+    "id": "dog_v2_activity_anxiety_context",
+    "species": [
+      "dog"
+    ],
+    "topic": "development",
+    "title": "Aktywność w kontekście lęku",
+    "observation": "Pies mało wychodzi i unika.",
+    "possible_interpretations": [
+      "Możliwa wzajemna zależność."
+    ],
+    "confounders": [
+      "Zdrowie, ograniczenia spaceru."
+    ],
+    "safe_next_steps": [
+      "Dostosuj bezpieczny ruch; konsultuj utrzymujący lęk."
+    ],
+    "escalation": "behaviorist",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "dog_src_v2_early_environment_2015"
+    ],
+    "limitations": "Więcej ruchu nie gwarantuje leczenia.",
+    "tags": [
+      "development",
+      "context",
+      "expert_review_pending"
+    ],
+    "claims": [
+      {
+        "id": "dog_v2_activity_anxiety_context_finding",
+        "text": "Mniejsza aktywność wiązała się z lękiem hałasowym i separacyjnym.",
+        "basis": "source_finding",
+        "source_ids": [
+          "dog_src_v2_early_environment_2015"
+        ],
+        "locator": "Abstrakt: wyniki",
+        "uncertainty": "Możliwa odwrotna przyczynowość."
+      },
+      {
+        "id": "dog_v2_activity_anxiety_context_action",
+        "text": "Dostosuj bezpieczny ruch; konsultuj utrzymujący lęk.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "dog_src_v2_early_environment_2015"
+        ],
+        "locator": "Reguła projektu; do walidacji.",
+        "uncertainty": "Zalecenie nie było przedmiotem tego badania."
+      }
+    ]
+  },
+  {
+    "id": "dog_v2_early_point_following",
+    "species": [
+      "dog"
+    ],
+    "topic": "development",
+    "title": "Wczesna reakcja na wskazanie",
+    "observation": "Szczenię podąża za gestem.",
+    "possible_interpretations": [
+      "Możliwa wrażliwość społeczna."
+    ],
+    "confounders": [
+      "Doświadczenie, selekcja."
+    ],
+    "safe_next_steps": [
+      "Zapisuj reakcję bez oceny inteligencji."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "dog_src_v2_puppy_communication_2021"
+    ],
+    "limitations": "Nie prognozuje całej osobowości.",
+    "tags": [
+      "development",
+      "context",
+      "expert_review_pending"
+    ],
+    "claims": [
+      {
+        "id": "dog_v2_early_point_following_finding",
+        "text": "Szczenięta wcześnie korzystały z ludzkich gestów.",
+        "basis": "source_finding",
+        "source_ids": [
+          "dog_src_v2_puppy_communication_2021"
+        ],
+        "locator": "Abstrakt: wyniki",
+        "uncertainty": "Psy programu asystującego."
+      },
+      {
+        "id": "dog_v2_early_point_following_action",
+        "text": "Zapisuj reakcję bez oceny inteligencji.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "dog_src_v2_puppy_communication_2021"
+        ],
+        "locator": "Reguła projektu; do walidacji.",
+        "uncertainty": "Zalecenie nie było przedmiotem tego badania."
+      }
+    ]
+  },
+  {
+    "id": "dog_v2_heritability_population",
+    "species": [
+      "dog"
+    ],
+    "topic": "development",
+    "title": "Dziedziczność a konkretne szczenię",
+    "observation": "Rodzeństwo reaguje różnie.",
+    "possible_interpretations": [
+      "Możliwe różnice indywidualne."
+    ],
+    "confounders": [
+      "Środowisko, rozwój."
+    ],
+    "safe_next_steps": [
+      "Buduj opis każdego psa osobno."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "dog_src_v2_puppy_communication_2021"
+    ],
+    "limitations": "Dziedziczność dotyczy populacji.",
+    "tags": [
+      "development",
+      "context",
+      "expert_review_pending"
+    ],
+    "claims": [
+      {
+        "id": "dog_v2_heritability_population_finding",
+        "text": "Część zmienności reakcji społecznych wiązała się z rodowodem.",
+        "basis": "source_finding",
+        "source_ids": [
+          "dog_src_v2_puppy_communication_2021"
+        ],
+        "locator": "Abstrakt: wyniki",
+        "uncertainty": "Specyficzny program hodowlany."
+      },
+      {
+        "id": "dog_v2_heritability_population_action",
+        "text": "Buduj opis każdego psa osobno.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "dog_src_v2_puppy_communication_2021"
+        ],
+        "locator": "Reguła projektu; do walidacji.",
+        "uncertainty": "Zalecenie nie było przedmiotem tego badania."
+      }
+    ]
+  },
+  {
+    "id": "dog_v2_human_odour_risk_choice",
+    "species": [
+      "dog"
+    ],
+    "topic": "olfaction",
+    "title": "Zapach człowieka a wybór",
+    "observation": "Pies zwleka z podejściem.",
+    "possible_interpretations": [
+      "Możliwy wpływ niewidocznego bodźca."
+    ],
+    "confounders": [
+      "Zapach, nagroda."
+    ],
+    "safe_next_steps": [
+      "Zapisuj zapachowy kontekst naturalnego wyboru."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "dog_src_v2_stress_bias_2024"
+    ],
+    "limitations": "Nie określa nastroju z opóźnienia.",
+    "tags": [
+      "olfaction",
+      "context",
+      "expert_review_pending"
+    ],
+    "claims": [
+      {
+        "id": "dog_v2_human_odour_risk_choice_finding",
+        "text": "Zapach stresu ograniczał podejście do jednej niejednoznacznej lokalizacji.",
+        "basis": "source_finding",
+        "source_ids": [
+          "dog_src_v2_stress_bias_2024"
+        ],
+        "locator": "Abstrakt; near-negative",
+        "uncertainty": "Tylko trzecia sesja."
+      },
+      {
+        "id": "dog_v2_human_odour_risk_choice_action",
+        "text": "Zapisuj zapachowy kontekst naturalnego wyboru.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "dog_src_v2_stress_bias_2024"
+        ],
+        "locator": "Reguła projektu; do walidacji.",
+        "uncertainty": "Zalecenie nie było przedmiotem tego badania."
+      }
+    ]
+  },
+  {
+    "id": "dog_v2_odour_learning_order",
+    "species": [
+      "dog"
+    ],
+    "topic": "olfaction",
+    "title": "Zapach i kolejność prób",
+    "observation": "Reakcja zmienia się po powtórzeniu.",
+    "possible_interpretations": [
+      "Możliwy efekt uczenia i kontekstu."
+    ],
+    "confounders": [
+      "Sesja, kolejność."
+    ],
+    "safe_next_steps": [
+      "Notuj kolejność wcześniejszych doświadczeń."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "dog_src_v2_stress_bias_2024"
+    ],
+    "limitations": "Brak ogólnego dekodera emocji.",
+    "tags": [
+      "olfaction",
+      "context",
+      "expert_review_pending"
+    ],
+    "claims": [
+      {
+        "id": "dog_v2_odour_learning_order_finding",
+        "text": "Wpływ zapachu na uczenie zależał od sesji.",
+        "basis": "source_finding",
+        "source_ids": [
+          "dog_src_v2_stress_bias_2024"
+        ],
+        "locator": "Wyniki: training locations",
+        "uncertainty": "18 psów; trzy osoby."
+      },
+      {
+        "id": "dog_v2_odour_learning_order_action",
+        "text": "Notuj kolejność wcześniejszych doświadczeń.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "dog_src_v2_stress_bias_2024"
+        ],
+        "locator": "Reguła projektu; do walidacji.",
+        "uncertainty": "Zalecenie nie było przedmiotem tego badania."
+      }
+    ]
+  },
+  {
+    "id": "dog_v2_adolescent_responsiveness",
+    "species": [
+      "dog"
+    ],
+    "topic": "development",
+    "title": "Zmiana odpowiedzi w dorastaniu",
+    "observation": "Młody pies słabiej reaguje opiekunowi.",
+    "possible_interpretations": [
+      "Możliwy etap rozwoju."
+    ],
+    "confounders": [
+      "Osoba, sytuacja, zdrowie."
+    ],
+    "safe_next_steps": [
+      "Zapisuj wiek i kontekst; zmniejsz presję."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "dog_src_v2_adolescence_2020"
+    ],
+    "limitations": "Nie nazywaj tego złośliwością.",
+    "tags": [
+      "development",
+      "context",
+      "expert_review_pending"
+    ],
+    "claims": [
+      {
+        "id": "dog_v2_adolescent_responsiveness_finding",
+        "text": "W adolescencji wystąpił przejściowy spadek reagowania opiekunowi.",
+        "basis": "source_finding",
+        "source_ids": [
+          "dog_src_v2_adolescence_2020"
+        ],
+        "locator": "Abstrakt: wyniki",
+        "uncertainty": "Psy przyszłych przewodników."
+      },
+      {
+        "id": "dog_v2_adolescent_responsiveness_action",
+        "text": "Zapisuj wiek i kontekst; zmniejsz presję.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "dog_src_v2_adolescence_2020"
+        ],
+        "locator": "Reguła projektu; do walidacji.",
+        "uncertainty": "Zalecenie nie było przedmiotem tego badania."
+      }
+    ]
+  },
+  {
+    "id": "dog_v2_adolescent_person_context",
+    "species": [
+      "dog"
+    ],
+    "topic": "development",
+    "title": "Ten sam pies, różni ludzie",
+    "observation": "Pies inaczej odpowiada innym osobom.",
+    "possible_interpretations": [
+      "Możliwa zależność relacyjna."
+    ],
+    "confounders": [
+      "Historia wskazówek, nagrody."
+    ],
+    "safe_next_steps": [
+      "Porównuj osoby w spokojnych sytuacjach."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "dog_src_v2_adolescence_2020"
+    ],
+    "limitations": "Nie ustala hierarchii ani więzi.",
+    "tags": [
+      "development",
+      "context",
+      "expert_review_pending"
+    ],
+    "claims": [
+      {
+        "id": "dog_v2_adolescent_person_context_finding",
+        "text": "Spadek reagowania był specyficzny dla opiekuna.",
+        "basis": "source_finding",
+        "source_ids": [
+          "dog_src_v2_adolescence_2020"
+        ],
+        "locator": "Abstrakt; dyskusja",
+        "uncertainty": "Ograniczona populacja."
+      },
+      {
+        "id": "dog_v2_adolescent_person_context_action",
+        "text": "Porównuj osoby w spokojnych sytuacjach.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "dog_src_v2_adolescence_2020"
+        ],
+        "locator": "Reguła projektu; do walidacji.",
+        "uncertainty": "Zalecenie nie było przedmiotem tego badania."
+      }
+    ]
+  },
+  {
+    "id": "dog_v2_social_exposure_variety",
+    "species": [
+      "dog"
+    ],
+    "topic": "development",
+    "title": "Różnorodność spokojnych doświadczeń",
+    "observation": "Szczenię poznaje różne otoczenia.",
+    "possible_interpretations": [
+      "Możliwa stopniowa adaptacja."
+    ],
+    "confounders": [
+      "Jakość, intensywność."
+    ],
+    "safe_next_steps": [
+      "Notuj doświadczenia; zapewniaj wybór odejścia."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "dog_src_v2_puppy_classes_2017"
+    ],
+    "limitations": "Liczba ekspozycji nie mierzy jakości.",
+    "tags": [
+      "development",
+      "context",
+      "expert_review_pending"
+    ],
+    "claims": [
+      {
+        "id": "dog_v2_social_exposure_variety_finding",
+        "text": "Uczestnicy zajęć deklarowali szersze doświadczenia swoich szczeniąt.",
+        "basis": "source_finding",
+        "source_ids": [
+          "dog_src_v2_puppy_classes_2017"
+        ],
+        "locator": "Abstrakt: wyniki",
+        "uncertainty": "Brak losowego przydziału."
+      },
+      {
+        "id": "dog_v2_social_exposure_variety_action",
+        "text": "Notuj doświadczenia; zapewniaj wybór odejścia.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "dog_src_v2_puppy_classes_2017"
+        ],
+        "locator": "Reguła projektu; do walidacji.",
+        "uncertainty": "Zalecenie nie było przedmiotem tego badania."
+      }
+    ]
+  },
+  {
+    "id": "dog_v2_class_label_quality",
+    "species": [
+      "dog"
+    ],
+    "topic": "development",
+    "title": "Nazwa kursu nie opisuje doświadczenia",
+    "observation": "Opiekun zgłasza ukończony kurs.",
+    "possible_interpretations": [
+      "Możliwe różne sposoby socjalizacji."
+    ],
+    "confounders": [
+      "Program, prowadzący."
+    ],
+    "safe_next_steps": [
+      "Zapisuj metody i reakcje, nie samą nazwę."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "dog_src_v2_puppy_classes_2017"
+    ],
+    "limitations": "Kurs nie gwarantuje odporności.",
+    "tags": [
+      "development",
+      "context",
+      "expert_review_pending"
+    ],
+    "claims": [
+      {
+        "id": "dog_v2_class_label_quality_finding",
+        "text": "Struktura zajęć szczenięcych różniła się między respondentami.",
+        "basis": "source_finding",
+        "source_ids": [
+          "dog_src_v2_puppy_classes_2017"
+        ],
+        "locator": "Abstrakt: wyniki",
+        "uncertainty": "Relacje opiekunów."
+      },
+      {
+        "id": "dog_v2_class_label_quality_action",
+        "text": "Zapisuj metody i reakcje, nie samą nazwę.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "dog_src_v2_puppy_classes_2017"
+        ],
+        "locator": "Reguła projektu; do walidacji.",
+        "uncertainty": "Zalecenie nie było przedmiotem tego badania."
+      }
+    ]
+  },
+  {
+    "id": "dog_v2_play_partner_orientation",
+    "species": [
+      "dog"
+    ],
+    "topic": "play",
+    "title": "Orientacja partnera w zabawie",
+    "observation": "Pies ukłania się widzącemu partnerowi.",
+    "possible_interpretations": [
+      "Możliwa propozycja kontynuacji."
+    ],
+    "confounders": [
+      "Widoczność, poprzednia sekwencja."
+    ],
+    "safe_next_steps": [
+      "Opisuj oba psy i kolejność sygnałów."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "dog_src_v2_play_attention_2009"
+    ],
+    "limitations": "Nie ustala intencji pojedynczego ukłonu.",
+    "tags": [
+      "play",
+      "context",
+      "expert_review_pending"
+    ],
+    "claims": [
+      {
+        "id": "dog_v2_play_partner_orientation_finding",
+        "text": "Sygnały zabawowe kierowano prawie wyłącznie do partnera zwróconego przodem.",
+        "basis": "source_finding",
+        "source_ids": [
+          "dog_src_v2_play_attention_2009"
+        ],
+        "locator": "Abstrakt: wyniki",
+        "uncertainty": "Obserwacja naturalna."
+      },
+      {
+        "id": "dog_v2_play_partner_orientation_action",
+        "text": "Opisuj oba psy i kolejność sygnałów.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "dog_src_v2_play_attention_2009"
+        ],
+        "locator": "Reguła projektu; do walidacji.",
+        "uncertainty": "Zalecenie nie było przedmiotem tego badania."
+      }
+    ]
+  },
+  {
+    "id": "dog_v2_play_attention_getting",
+    "species": [
+      "dog"
+    ],
+    "topic": "play",
+    "title": "Przywołanie uwagi w zabawie",
+    "observation": "Pies dotyka odwróconego partnera.",
+    "possible_interpretations": [
+      "Możliwa próba wznowienia kontaktu."
+    ],
+    "confounders": [
+      "Dystans, zainteresowanie partnera."
+    ],
+    "safe_next_steps": [
+      "Notuj odpowiedź partnera i możliwość odejścia."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "dog_src_v2_play_attention_2009"
+    ],
+    "limitations": "Kontakt nie dowodzi zgody.",
+    "tags": [
+      "play",
+      "context",
+      "expert_review_pending"
+    ],
+    "claims": [
+      {
+        "id": "dog_v2_play_attention_getting_finding",
+        "text": "Zachowania przyciągające uwagę częściej poprzedzały zabawę przy odwróconym partnerze.",
+        "basis": "source_finding",
+        "source_ids": [
+          "dog_src_v2_play_attention_2009"
+        ],
+        "locator": "Abstrakt: wyniki",
+        "uncertainty": "Związek sekwencyjny."
+      },
+      {
+        "id": "dog_v2_play_attention_getting_action",
+        "text": "Notuj odpowiedź partnera i możliwość odejścia.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "dog_src_v2_play_attention_2009"
+        ],
+        "locator": "Reguła projektu; do walidacji.",
+        "uncertainty": "Zalecenie nie było przedmiotem tego badania."
+      }
+    ]
+  },
+  {
+    "id": "dog_v2_play_matching_signal",
+    "species": [
+      "dog"
+    ],
+    "topic": "play",
+    "title": "Podobna odpowiedź zabawowa",
+    "observation": "Partner odpowiada podobnym ukłonem.",
+    "possible_interpretations": [
+      "Możliwa wspólna motywacja zabawowa."
+    ],
+    "confounders": [
+      "Orientacja, znajomość."
+    ],
+    "safe_next_steps": [
+      "Obserwuj wzajemność, przerwy i zakończenie."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "dog_src_v2_play_mimicry_2015"
+    ],
+    "limitations": "Nie jest pomiarem empatii.",
+    "tags": [
+      "play",
+      "context",
+      "expert_review_pending"
+    ],
+    "claims": [
+      {
+        "id": "dog_v2_play_matching_signal_finding",
+        "text": "W zabawie występowało szybkie naśladowanie ukłonów i otwartego pyska.",
+        "basis": "source_finding",
+        "source_ids": [
+          "dog_src_v2_play_mimicry_2015"
+        ],
+        "locator": "Abstrakt: wyniki",
+        "uncertainty": "Obserwacja korelacyjna."
+      },
+      {
+        "id": "dog_v2_play_matching_signal_action",
+        "text": "Obserwuj wzajemność, przerwy i zakończenie.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "dog_src_v2_play_mimicry_2015"
+        ],
+        "locator": "Reguła projektu; do walidacji.",
+        "uncertainty": "Zalecenie nie było przedmiotem tego badania."
+      }
+    ]
+  },
+  {
+    "id": "dog_v2_familiar_play_pair",
+    "species": [
+      "dog"
+    ],
+    "topic": "play",
+    "title": "Znajomość pary zabawowej",
+    "observation": "Znajome psy wymieniają sygnały.",
+    "possible_interpretations": [
+      "Możliwa utrwalona komunikacja pary."
+    ],
+    "confounders": [
+      "Historia, dobór nagrań."
+    ],
+    "safe_next_steps": [
+      "Zapisuj tożsamość i historię partnerów."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "dog_src_v2_play_mimicry_2015"
+    ],
+    "limitations": "Nie gwarantuje bezpiecznej interakcji.",
+    "tags": [
+      "play",
+      "context",
+      "expert_review_pending"
+    ],
+    "claims": [
+      {
+        "id": "dog_v2_familiar_play_pair_finding",
+        "text": "Naśladownictwo było częstsze u bardziej znajomych par.",
+        "basis": "source_finding",
+        "source_ids": [
+          "dog_src_v2_play_mimicry_2015"
+        ],
+        "locator": "Abstrakt: wyniki",
+        "uncertainty": "Związek bez ustalonej przyczynowości."
+      },
+      {
+        "id": "dog_v2_familiar_play_pair_action",
+        "text": "Zapisuj tożsamość i historię partnerów.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "dog_src_v2_play_mimicry_2015"
+        ],
+        "locator": "Reguła projektu; do walidacji.",
+        "uncertainty": "Zalecenie nie było przedmiotem tego badania."
+      }
+    ]
+  },
+  {
+    "id": "dog_v2_puppy_play_restart",
+    "species": [
+      "dog"
+    ],
+    "topic": "play",
+    "title": "Ukłon po przerwie",
+    "observation": "Szczenię ukłania się po pauzie.",
+    "possible_interpretations": [
+      "Możliwe wznowienie zabawy."
+    ],
+    "confounders": [
+      "Partner, poprzednie zachowania."
+    ],
+    "safe_next_steps": [
+      "Zapisuj pauzę i odpowiedź partnera."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "dog_src_v2_puppy_play_bow_2016"
+    ],
+    "limitations": "Ukłon nie rozstrzyga całej sekwencji.",
+    "tags": [
+      "play",
+      "context",
+      "expert_review_pending"
+    ],
+    "claims": [
+      {
+        "id": "dog_v2_puppy_play_restart_finding",
+        "text": "U szczeniąt psów ukłony często następowały po przerwie.",
+        "basis": "source_finding",
+        "source_ids": [
+          "dog_src_v2_puppy_play_bow_2016"
+        ],
+        "locator": "Abstrakt: wyniki",
+        "uncertainty": "Młode zwierzęta."
+      },
+      {
+        "id": "dog_v2_puppy_play_restart_action",
+        "text": "Zapisuj pauzę i odpowiedź partnera.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "dog_src_v2_puppy_play_bow_2016"
+        ],
+        "locator": "Reguła projektu; do walidacji.",
+        "uncertainty": "Zalecenie nie było przedmiotem tego badania."
+      }
+    ]
+  },
+  {
+    "id": "dog_v2_wolf_not_dog_model",
+    "species": [
+      "dog"
+    ],
+    "topic": "play",
+    "title": "Pies i wilk w porównaniu",
+    "observation": "System porównuje zachowania psowatych.",
+    "possible_interpretations": [
+      "Możliwe różnice gatunkowe."
+    ],
+    "confounders": [
+      "Wiek, utrzymanie."
+    ],
+    "safe_next_steps": [
+      "Interpretuj psa na podstawie danych psów."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "dog_src_v2_puppy_play_bow_2016"
+    ],
+    "limitations": "Nie przenoś etogramu wilka automatycznie.",
+    "tags": [
+      "play",
+      "context",
+      "expert_review_pending"
+    ],
+    "claims": [
+      {
+        "id": "dog_v2_wolf_not_dog_model_finding",
+        "text": "Ukłony nie wznawiały zabawy wilków tak jak psów.",
+        "basis": "source_finding",
+        "source_ids": [
+          "dog_src_v2_puppy_play_bow_2016"
+        ],
+        "locator": "Abstrakt: wyniki",
+        "uncertainty": "Warunki badania."
+      },
+      {
+        "id": "dog_v2_wolf_not_dog_model_action",
+        "text": "Interpretuj psa na podstawie danych psów.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "dog_src_v2_puppy_play_bow_2016"
+        ],
+        "locator": "Reguła projektu; do walidacji.",
+        "uncertainty": "Zalecenie nie było przedmiotem tego badania."
+      }
+    ]
+  },
+  {
+    "id": "dog_v2_touch_body_region",
+    "species": [
+      "dog"
+    ],
+    "topic": "handling",
+    "title": "Miejsce dotyku",
+    "observation": "Pies zmienia postawę przy dotyku.",
+    "possible_interpretations": [
+      "Możliwy zależny od miejsca dyskomfort."
+    ],
+    "confounders": [
+      "Zdrowie, ruch dłoni."
+    ],
+    "safe_next_steps": [
+      "Przerwij nacisk; zapisuj dotykany obszar."
+    ],
+    "escalation": "behaviorist",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "dog_src_v2_petting_2014"
+    ],
+    "limitations": "Nie powtarzaj reakcji dla testu.",
+    "tags": [
+      "handling",
+      "context",
+      "expert_review_pending"
+    ],
+    "claims": [
+      {
+        "id": "dog_v2_touch_body_region_finding",
+        "text": "Reakcje różniły się zależnie od dotykanego obszaru.",
+        "basis": "source_finding",
+        "source_ids": [
+          "dog_src_v2_petting_2014"
+        ],
+        "locator": "Dyskusja",
+        "uncertainty": "24 psy."
+      },
+      {
+        "id": "dog_v2_touch_body_region_action",
+        "text": "Przerwij nacisk; zapisuj dotykany obszar.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "dog_src_v2_petting_2014"
+        ],
+        "locator": "Reguła projektu; do walidacji.",
+        "uncertainty": "Zalecenie nie było przedmiotem tego badania."
+      }
+    ]
+  },
+  {
+    "id": "dog_v2_touch_familiar_person",
+    "species": [
+      "dog"
+    ],
+    "topic": "handling",
+    "title": "Znajomość dotykającej osoby",
+    "observation": "Reakcje różnią się między osobami.",
+    "possible_interpretations": [
+      "Możliwy wpływ doświadczenia kontaktu."
+    ],
+    "confounders": [
+      "Miejsce, sposób dotyku."
+    ],
+    "safe_next_steps": [
+      "Pozwalaj odejść; zapisuj osobę i sekwencję."
+    ],
+    "escalation": "behaviorist",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "dog_src_v2_petting_2014"
+    ],
+    "limitations": "Znajomość nie gwarantuje komfortu.",
+    "tags": [
+      "handling",
+      "context",
+      "expert_review_pending"
+    ],
+    "claims": [
+      {
+        "id": "dog_v2_touch_familiar_person_finding",
+        "text": "Reakcje behawioralne i sercowe zależały od znajomości człowieka.",
+        "basis": "source_finding",
+        "source_ids": [
+          "dog_src_v2_petting_2014"
+        ],
+        "locator": "Abstrakt; dyskusja",
+        "uncertainty": "Narzucone interakcje."
+      },
+      {
+        "id": "dog_v2_touch_familiar_person_action",
+        "text": "Pozwalaj odejść; zapisuj osobę i sekwencję.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "dog_src_v2_petting_2014"
+        ],
+        "locator": "Reguła projektu; do walidacji.",
+        "uncertainty": "Zalecenie nie było przedmiotem tego badania."
+      }
+    ]
+  },
+  {
+    "id": "dog_v2_resource_event_record",
+    "species": [
+      "dog"
+    ],
+    "topic": "conflict",
+    "title": "Zapis konfliktu przy zasobie",
+    "observation": "Pies napina się przy przedmiocie.",
+    "possible_interpretations": [
+      "Możliwa obrona dostępu."
+    ],
+    "confounders": [
+      "Podejście, odległość."
+    ],
+    "safe_next_steps": [
+      "Nie odbieraj dla testu; zapisz naturalne zdarzenie."
+    ],
+    "escalation": "behaviorist",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "dog_src_v2_possession_manipulation_2017"
+    ],
+    "limitations": "Nie ustala dominacji.",
+    "tags": [
+      "conflict",
+      "context",
+      "expert_review_pending"
+    ],
+    "claims": [
+      {
+        "id": "dog_v2_resource_event_record_finding",
+        "text": "Zachowanie przy kości wiązało się z ankietową agresją wobec opiekuna.",
+        "basis": "source_finding",
+        "source_ids": [
+          "dog_src_v2_possession_manipulation_2017"
+        ],
+        "locator": "Abstrakt: wyniki",
+        "uncertainty": "Test prowokacyjny."
+      },
+      {
+        "id": "dog_v2_resource_event_record_action",
+        "text": "Nie odbieraj dla testu; zapisz naturalne zdarzenie.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "dog_src_v2_possession_manipulation_2017"
+        ],
+        "locator": "Reguła projektu; do walidacji.",
+        "uncertainty": "Zalecenie nie było przedmiotem tego badania."
+      }
+    ]
+  },
+  {
+    "id": "dog_v2_manipulation_event_record",
+    "species": [
+      "dog"
+    ],
+    "topic": "conflict",
+    "title": "Sprzeciw przy manipulacji",
+    "observation": "Pies opiera się przemieszczeniu.",
+    "possible_interpretations": [
+      "Możliwy dyskomfort tej sytuacji."
+    ],
+    "confounders": [
+      "Ból, wcześniejsze doświadczenia."
+    ],
+    "safe_next_steps": [
+      "Zatrzymaj manipulację; uzgodnij bezpieczne postępowanie."
+    ],
+    "escalation": "veterinarian",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "dog_src_v2_possession_manipulation_2017"
+    ],
+    "limitations": "Nie odtwarzaj przewracania psa.",
+    "tags": [
+      "conflict",
+      "context",
+      "expert_review_pending"
+    ],
+    "claims": [
+      {
+        "id": "dog_v2_manipulation_event_record_finding",
+        "text": "Opór w próbie manipulacji wiązał się z ocenami kwestionariusza.",
+        "basis": "source_finding",
+        "source_ids": [
+          "dog_src_v2_possession_manipulation_2017"
+        ],
+        "locator": "Abstrakt: wyniki",
+        "uncertainty": "Korelacja, nie diagnoza."
+      },
+      {
+        "id": "dog_v2_manipulation_event_record_action",
+        "text": "Zatrzymaj manipulację; uzgodnij bezpieczne postępowanie.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "dog_src_v2_possession_manipulation_2017"
+        ],
+        "locator": "Reguła projektu; do walidacji.",
+        "uncertainty": "Zalecenie nie było przedmiotem tego badania."
+      }
+    ]
+  },
+  {
+    "id": "dog_v2_vet_training_progress",
+    "species": [
+      "dog"
+    ],
+    "topic": "handling",
+    "title": "Przygotowanie do obsługi",
+    "observation": "Pies toleruje stopniowy kontakt.",
+    "possible_interpretations": [
+      "Możliwy postęp uczenia."
+    ],
+    "confounders": [
+      "Tempo, regularność."
+    ],
+    "safe_next_steps": [
+      "Uzgodnij spokojne etapy z zespołem gabinetu."
+    ],
+    "escalation": "veterinarian",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "dog_src_v2_vet_training_2019"
+    ],
+    "limitations": "Efekt nie dotyczył wszystkich miar.",
+    "tags": [
+      "handling",
+      "context",
+      "expert_review_pending"
+    ],
+    "claims": [
+      {
+        "id": "dog_v2_vet_training_progress_finding",
+        "text": "Program treningowy obniżał niektóre oceny lęku.",
+        "basis": "source_finding",
+        "source_ids": [
+          "dog_src_v2_vet_training_2019"
+        ],
+        "locator": "Abstrakt: wyniki",
+        "uncertainty": "Niewielka analizowana próba."
+      },
+      {
+        "id": "dog_v2_vet_training_progress_action",
+        "text": "Uzgodnij spokojne etapy z zespołem gabinetu.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "dog_src_v2_vet_training_2019"
+        ],
+        "locator": "Reguła projektu; do walidacji.",
+        "uncertainty": "Zalecenie nie było przedmiotem tego badania."
+      }
+    ]
+  },
+  {
+    "id": "dog_v2_handling_plan_feasibility",
+    "species": [
+      "dog"
+    ],
+    "topic": "handling",
+    "title": "Wykonalność programu",
+    "observation": "Opiekun nie realizuje wszystkich etapów.",
+    "possible_interpretations": [
+      "Możliwe zbyt duże obciążenie planem."
+    ],
+    "confounders": [
+      "Czas, trudność."
+    ],
+    "safe_next_steps": [
+      "Dostosuj plan i zapisuj wykonane etapy."
+    ],
+    "escalation": "veterinarian",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "dog_src_v2_vet_training_2019"
+    ],
+    "limitations": "Brak wykonania nie oznacza porażki psa.",
+    "tags": [
+      "handling",
+      "context",
+      "expert_review_pending"
+    ],
+    "claims": [
+      {
+        "id": "dog_v2_handling_plan_feasibility_finding",
+        "text": "Wielu opiekunów nie realizowało przydzielonego programu.",
+        "basis": "source_finding",
+        "source_ids": [
+          "dog_src_v2_vet_training_2019"
+        ],
+        "locator": "Abstrakt: wyniki",
+        "uncertainty": "Wyselekcjonowani ochotnicy."
+      },
+      {
+        "id": "dog_v2_handling_plan_feasibility_action",
+        "text": "Dostosuj plan i zapisuj wykonane etapy.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "dog_src_v2_vet_training_2019"
+        ],
+        "locator": "Reguła projektu; do walidacji.",
+        "uncertainty": "Zalecenie nie było przedmiotem tego badania."
+      }
+    ]
+  },
+  {
+    "id": "dog_v2_owner_at_exam",
+    "species": [
+      "dog"
+    ],
+    "topic": "handling",
+    "title": "Obecność opiekuna przy badaniu",
+    "observation": "Pies wokalizuje podczas obsługi.",
+    "possible_interpretations": [
+      "Możliwy wpływ wsparcia znajomej osoby."
+    ],
+    "confounders": [
+      "Faza badania, osoba."
+    ],
+    "safe_next_steps": [
+      "Uzgodnij obecność opiekuna z lekarzem."
+    ],
+    "escalation": "veterinarian",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "dog_src_v2_vet_owner_presence_2020"
+    ],
+    "limitations": "Wpływ zależy od procedury.",
+    "tags": [
+      "handling",
+      "context",
+      "expert_review_pending"
+    ],
+    "claims": [
+      {
+        "id": "dog_v2_owner_at_exam_finding",
+        "text": "Psy z obecnym opiekunem rzadziej wokalizowały.",
+        "basis": "source_finding",
+        "source_ids": [
+          "dog_src_v2_vet_owner_presence_2020"
+        ],
+        "locator": "Abstrakt: wyniki",
+        "uncertainty": "32 psy."
+      },
+      {
+        "id": "dog_v2_owner_at_exam_action",
+        "text": "Uzgodnij obecność opiekuna z lekarzem.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "dog_src_v2_vet_owner_presence_2020"
+        ],
+        "locator": "Reguła projektu; do walidacji.",
+        "uncertainty": "Zalecenie nie było przedmiotem tego badania."
+      }
+    ]
+  },
+  {
+    "id": "dog_v2_exam_phase_sequence",
+    "species": [
+      "dog"
+    ],
+    "topic": "handling",
+    "title": "Etap badania jako kontekst",
+    "observation": "Pies unika przy konkretnej czynności.",
+    "possible_interpretations": [
+      "Możliwy dyskomfort danego etapu."
+    ],
+    "confounders": [
+      "Obszar dotyku, zdrowie."
+    ],
+    "safe_next_steps": [
+      "Zapisuj czynność i poprzedzające reakcje."
+    ],
+    "escalation": "veterinarian",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "dog_src_v2_vet_owner_presence_2020"
+    ],
+    "limitations": "Pojedynczy sygnał nie ustala lęku.",
+    "tags": [
+      "handling",
+      "context",
+      "expert_review_pending"
+    ],
+    "claims": [
+      {
+        "id": "dog_v2_exam_phase_sequence_finding",
+        "text": "Unikanie i ucieczka zależały od fazy badania.",
+        "basis": "source_finding",
+        "source_ids": [
+          "dog_src_v2_vet_owner_presence_2020"
+        ],
+        "locator": "Abstrakt: wyniki",
+        "uncertainty": "Rutynowe badania."
+      },
+      {
+        "id": "dog_v2_exam_phase_sequence_action",
+        "text": "Zapisuj czynność i poprzedzające reakcje.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "dog_src_v2_vet_owner_presence_2020"
+        ],
+        "locator": "Reguła projektu; do walidacji.",
+        "uncertainty": "Zalecenie nie było przedmiotem tego badania."
+      }
+    ]
+  },
+  {
+    "id": "dog_v2_noise_recovery_record",
+    "species": [
+      "dog"
+    ],
+    "topic": "noise",
+    "title": "Powrót do zwykłego zachowania",
+    "observation": "Po hałasie pies długo odpoczywa.",
+    "possible_interpretations": [
+      "Możliwy utrzymujący wpływ zdarzenia."
+    ],
+    "confounders": [
+      "Rutyna, sen."
+    ],
+    "safe_next_steps": [
+      "Notuj przebieg powrotu i ogranicz kolejne bodźce."
+    ],
+    "escalation": "behaviorist",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "dog_src_v2_noise_progression_2019"
+    ],
+    "limitations": "Nie ustala czasu klinicznego.",
+    "tags": [
+      "noise",
+      "context",
+      "expert_review_pending"
+    ],
+    "claims": [
+      {
+        "id": "dog_v2_noise_recovery_record_finding",
+        "text": "Czas powrotu po fajerwerkach bardzo różnił się między psami.",
+        "basis": "source_finding",
+        "source_ids": [
+          "dog_src_v2_noise_progression_2019"
+        ],
+        "locator": "Abstrakt: wyniki",
+        "uncertainty": "Relacje retrospektywne."
+      },
+      {
+        "id": "dog_v2_noise_recovery_record_action",
+        "text": "Notuj przebieg powrotu i ogranicz kolejne bodźce.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "dog_src_v2_noise_progression_2019"
+        ],
+        "locator": "Reguła projektu; do walidacji.",
+        "uncertainty": "Zalecenie nie było przedmiotem tego badania."
+      }
+    ]
+  },
+  {
+    "id": "dog_v2_noise_course_not_fixed",
+    "species": [
+      "dog"
+    ],
+    "topic": "noise",
+    "title": "Przebieg reakcji na hałas",
+    "observation": "Reakcje różnią się między latami.",
+    "possible_interpretations": [
+      "Możliwa zmiana doświadczeń lub stanu."
+    ],
+    "confounders": [
+      "Zdrowie, ekspozycja."
+    ],
+    "safe_next_steps": [
+      "Porównuj podobne zdarzenia z ich kontekstem."
+    ],
+    "escalation": "behaviorist",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "dog_src_v2_noise_progression_2019"
+    ],
+    "limitations": "Brak reakcji nie dowodzi wyleczenia.",
+    "tags": [
+      "noise",
+      "context",
+      "expert_review_pending"
+    ],
+    "claims": [
+      {
+        "id": "dog_v2_noise_course_not_fixed_finding",
+        "text": "Respondenci zgłaszali poprawę oraz pogorszenie lęku fajerwerkowego.",
+        "basis": "source_finding",
+        "source_ids": [
+          "dog_src_v2_noise_progression_2019"
+        ],
+        "locator": "Abstrakt: wyniki",
+        "uncertainty": "Samodzielny dobór próby."
+      },
+      {
+        "id": "dog_v2_noise_course_not_fixed_action",
+        "text": "Porównuj podobne zdarzenia z ich kontekstem.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "dog_src_v2_noise_progression_2019"
+        ],
+        "locator": "Reguła projektu; do walidacji.",
+        "uncertainty": "Zalecenie nie było przedmiotem tego badania."
+      }
+    ]
+  },
+  {
+    "id": "dog_v2_noise_food_play_support",
+    "species": [
+      "dog"
+    ],
+    "topic": "noise",
+    "title": "Dobrowolny pokarm podczas hałasu",
+    "observation": "Pies przyjmuje jedzenie przy odgłosach.",
+    "possible_interpretations": [
+      "Możliwy dostęp do pozytywnej aktywności."
+    ],
+    "confounders": [
+      "Głód, intensywność."
+    ],
+    "safe_next_steps": [
+      "Oferuj dobrowolnie; nie zatrzymuj psa w hałasie."
+    ],
+    "escalation": "behaviorist",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "dog_src_v2_noise_treatment_2020"
+    ],
+    "limitations": "Brak jedzenia nie mierzy poziomu lęku.",
+    "tags": [
+      "noise",
+      "context",
+      "expert_review_pending"
+    ],
+    "claims": [
+      {
+        "id": "dog_v2_noise_food_play_support_finding",
+        "text": "Karmienie lub zabawa wiązały się z poprawą zgłaszaną przez opiekuna.",
+        "basis": "source_finding",
+        "source_ids": [
+          "dog_src_v2_noise_treatment_2020"
+        ],
+        "locator": "Abstrakt: wyniki",
+        "uncertainty": "Ankieta, nie randomizacja."
+      },
+      {
+        "id": "dog_v2_noise_food_play_support_action",
+        "text": "Oferuj dobrowolnie; nie zatrzymuj psa w hałasie.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "dog_src_v2_noise_treatment_2020"
+        ],
+        "locator": "Reguła projektu; do walidacji.",
+        "uncertainty": "Zalecenie nie było przedmiotem tego badania."
+      }
+    ]
+  },
+  {
+    "id": "dog_v2_noise_perceived_efficacy",
+    "species": [
+      "dog"
+    ],
+    "topic": "noise",
+    "title": "Postrzegany efekt działania",
+    "observation": "Opiekun zgłasza poprawę po interwencji.",
+    "possible_interpretations": [
+      "Możliwe działanie lub zmiana ekspozycji."
+    ],
+    "confounders": [
+      "Oczekiwania, inne działania."
+    ],
+    "safe_next_steps": [
+      "Zapisuj ekspozycję oraz zmiany działań."
+    ],
+    "escalation": "behaviorist",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "dog_src_v2_noise_treatment_2020"
+    ],
+    "limitations": "Nie przeliczaj ankiety na szansę leczenia.",
+    "tags": [
+      "noise",
+      "context",
+      "expert_review_pending"
+    ],
+    "claims": [
+      {
+        "id": "dog_v2_noise_perceived_efficacy_finding",
+        "text": "Przeciwwarunkowanie opiekunowie oceniali jako skuteczną technikę.",
+        "basis": "source_finding",
+        "source_ids": [
+          "dog_src_v2_noise_treatment_2020"
+        ],
+        "locator": "Abstrakt: wyniki",
+        "uncertainty": "Selekcja interwencji."
+      },
+      {
+        "id": "dog_v2_noise_perceived_efficacy_action",
+        "text": "Zapisuj ekspozycję oraz zmiany działań.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "dog_src_v2_noise_treatment_2020"
+        ],
+        "locator": "Reguła projektu; do walidacji.",
+        "uncertainty": "Zalecenie nie było przedmiotem tego badania."
+      }
+    ]
+  },
+  {
+    "id": "dog_v2_noise_personal_baseline",
+    "species": [
+      "dog"
+    ],
+    "topic": "noise",
+    "title": "Własny spokojny wieczór jako odniesienie",
+    "observation": "Pozycja uszu zmienia się przy hałasie.",
+    "possible_interpretations": [
+      "Możliwa reakcja sytuacyjna."
+    ],
+    "confounders": [
+      "Kształt uszu, inne bodźce."
+    ],
+    "safe_next_steps": [
+      "Porównuj tego psa w podobnym spokojnym kontekście."
+    ],
+    "escalation": "behaviorist",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "dog_src_v2_noise_video_2020"
+    ],
+    "limitations": "Uszy nie określają emocji samodzielnie.",
+    "tags": [
+      "noise",
+      "context",
+      "expert_review_pending"
+    ],
+    "claims": [
+      {
+        "id": "dog_v2_noise_personal_baseline_finding",
+        "text": "Przy fajerwerkach częściej kierowano nasadę uszu wstecz.",
+        "basis": "source_finding",
+        "source_ids": [
+          "dog_src_v2_noise_video_2020"
+        ],
+        "locator": "Abstrakt; wyniki",
+        "uncertainty": "36 wybranych psów."
+      },
+      {
+        "id": "dog_v2_noise_personal_baseline_action",
+        "text": "Porównuj tego psa w podobnym spokojnym kontekście.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "dog_src_v2_noise_video_2020"
+        ],
+        "locator": "Reguła projektu; do walidacji.",
+        "uncertainty": "Zalecenie nie było przedmiotem tego badania."
+      }
+    ]
+  },
+  {
+    "id": "dog_v2_stress_signal_missing",
+    "species": [
+      "dog"
+    ],
+    "topic": "noise",
+    "title": "Brak popularnego sygnału",
+    "observation": "Pies nie ziewa przy hałasie.",
+    "possible_interpretations": [
+      "Możliwy inny wzorzec reakcji."
+    ],
+    "confounders": [
+      "Widoczność, cechy jednostki."
+    ],
+    "safe_next_steps": [
+      "Oceniaj całą sekwencję i otoczenie."
+    ],
+    "escalation": "behaviorist",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "dog_src_v2_noise_video_2020"
+    ],
+    "limitations": "Brak sygnału nie potwierdza spokoju.",
+    "tags": [
+      "noise",
+      "context",
+      "expert_review_pending"
+    ],
+    "claims": [
+      {
+        "id": "dog_v2_stress_signal_missing_finding",
+        "text": "Oblizywanie i ziewanie nie wzrosły istotnie podczas fajerwerków.",
+        "basis": "source_finding",
+        "source_ids": [
+          "dog_src_v2_noise_video_2020"
+        ],
+        "locator": "Abstrakt",
+        "uncertainty": "Specyficzna próba."
+      },
+      {
+        "id": "dog_v2_stress_signal_missing_action",
+        "text": "Oceniaj całą sekwencję i otoczenie.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "dog_src_v2_noise_video_2020"
+        ],
+        "locator": "Reguła projektu; do walidacji.",
+        "uncertainty": "Zalecenie nie było przedmiotem tego badania."
+      }
+    ]
+  },
+  {
+    "id": "dog_v2_travel_transfer_stages",
+    "species": [
+      "dog"
+    ],
+    "topic": "travel",
+    "title": "Etapy przemieszczania",
+    "observation": "Pies napina się przy przenoszeniu.",
+    "possible_interpretations": [
+      "Możliwy wpływ załadunku lub otoczenia."
+    ],
+    "confounders": [
+      "Hałas, sprzęt."
+    ],
+    "safe_next_steps": [
+      "Notuj osobno przenoszenie, załadunek i przejazd."
+    ],
+    "escalation": "behaviorist",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "dog_src_v2_air_transport_2002"
+    ],
+    "limitations": "Historyczna próba jednej rasy.",
+    "tags": [
+      "travel",
+      "context",
+      "expert_review_pending"
+    ],
+    "claims": [
+      {
+        "id": "dog_v2_travel_transfer_stages_finding",
+        "text": "Załadunek i wyładunek powodowały największy wzrost tętna.",
+        "basis": "source_finding",
+        "source_ids": [
+          "dog_src_v2_air_transport_2002"
+        ],
+        "locator": "Abstrakt: wyniki",
+        "uncertainty": "24 beagle."
+      },
+      {
+        "id": "dog_v2_travel_transfer_stages_action",
+        "text": "Notuj osobno przenoszenie, załadunek i przejazd.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "dog_src_v2_air_transport_2002"
+        ],
+        "locator": "Reguła projektu; do walidacji.",
+        "uncertainty": "Zalecenie nie było przedmiotem tego badania."
+      }
+    ]
+  },
+  {
+    "id": "dog_v2_inactive_travel_not_calm",
+    "species": [
+      "dog"
+    ],
+    "topic": "travel",
+    "title": "Bezruch w podróży",
+    "observation": "Pies przez podróż leży.",
+    "possible_interpretations": [
+      "Możliwy odpoczynek albo zahamowanie."
+    ],
+    "confounders": [
+      "Ograniczenie przestrzeni, zdrowie."
+    ],
+    "safe_next_steps": [
+      "Opisuj ruch bez automatycznej etykiety komfortu."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "dog_src_v2_air_transport_2002"
+    ],
+    "limitations": "Brak ruchu nie wyklucza stresu.",
+    "tags": [
+      "travel",
+      "context",
+      "expert_review_pending"
+    ],
+    "claims": [
+      {
+        "id": "dog_v2_inactive_travel_not_calm_finding",
+        "text": "Psy pozostawały często nieaktywne mimo fizjologicznych reakcji transportowych.",
+        "basis": "source_finding",
+        "source_ids": [
+          "dog_src_v2_air_transport_2002"
+        ],
+        "locator": "Abstrakt: wyniki",
+        "uncertainty": "Warunki badania."
+      },
+      {
+        "id": "dog_v2_inactive_travel_not_calm_action",
+        "text": "Opisuj ruch bez automatycznej etykiety komfortu.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "dog_src_v2_air_transport_2002"
+        ],
+        "locator": "Reguła projektu; do walidacji.",
+        "uncertainty": "Zalecenie nie było przedmiotem tego badania."
+      }
+    ]
+  },
+  {
+    "id": "dog_v2_separation_demand_context",
+    "species": [
+      "dog"
+    ],
+    "topic": "separation",
+    "title": "Rozłąka i dostęp do zasobów",
+    "observation": "Pies szczeka przy zamkniętych drzwiach.",
+    "possible_interpretations": [
+      "Możliwa frustracja lub inne pobudzenie."
+    ],
+    "confounders": [
+      "Miejsce, wcześniejsze zdarzenia."
+    ],
+    "safe_next_steps": [
+      "Zapisuj kontekst; nie wydłużaj rozłąki dla testu."
+    ],
+    "escalation": "behaviorist",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "dog_src_v2_separation_context_2021"
+    ],
+    "limitations": "Szczekanie nie rozstrzyga etiologii.",
+    "tags": [
+      "separation",
+      "context",
+      "expert_review_pending"
+    ],
+    "claims": [
+      {
+        "id": "dog_v2_separation_demand_context_finding",
+        "text": "Zachowania wymagające dostępu wiązały się ze szczekaniem przy rozłące.",
+        "basis": "source_finding",
+        "source_ids": [
+          "dog_src_v2_separation_context_2021"
+        ],
+        "locator": "Abstrakt; wyniki",
+        "uncertainty": "Korelacyjny wynik."
+      },
+      {
+        "id": "dog_v2_separation_demand_context_action",
+        "text": "Zapisuj kontekst; nie wydłużaj rozłąki dla testu.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "dog_src_v2_separation_context_2021"
+        ],
+        "locator": "Reguła projektu; do walidacji.",
+        "uncertainty": "Zalecenie nie było przedmiotem tego badania."
+      }
+    ]
+  },
+  {
+    "id": "dog_v2_separation_fear_context",
+    "species": [
+      "dog"
+    ],
+    "topic": "separation",
+    "title": "Rozłąka i historia lękowa",
+    "observation": "Pies skomli podczas nieobecności.",
+    "possible_interpretations": [
+      "Możliwy lęk lub inny dyskomfort."
+    ],
+    "confounders": [
+      "Obce miejsce, zdrowie."
+    ],
+    "safe_next_steps": [
+      "Zapisuj współwystępujące sytuacje lękowe."
+    ],
+    "escalation": "behaviorist",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "dog_src_v2_separation_context_2021"
+    ],
+    "limitations": "Wokalizacja nie jest diagnozą.",
+    "tags": [
+      "separation",
+      "context",
+      "expert_review_pending"
+    ],
+    "claims": [
+      {
+        "id": "dog_v2_separation_fear_context_finding",
+        "text": "Ankietowa lękliwość wiązała się ze skomleniem w próbie rozłąki.",
+        "basis": "source_finding",
+        "source_ids": [
+          "dog_src_v2_separation_context_2021"
+        ],
+        "locator": "Abstrakt; wyniki",
+        "uncertainty": "Kontekst laboratoryjny."
+      },
+      {
+        "id": "dog_v2_separation_fear_context_action",
+        "text": "Zapisuj współwystępujące sytuacje lękowe.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "dog_src_v2_separation_context_2021"
+        ],
+        "locator": "Reguła projektu; do walidacji.",
+        "uncertainty": "Zalecenie nie było przedmiotem tego badania."
+      }
+    ]
+  },
+  {
+    "id": "dog_v2_repetitive_bout_responsiveness",
+    "species": [
+      "dog"
+    ],
+    "topic": "repetitive_behavior",
+    "title": "Reakcja podczas powtarzalnego epizodu",
+    "observation": "Pies wielokrotnie krąży za ogonem.",
+    "possible_interpretations": [
+      "Możliwy problem wymagający różnicowania."
+    ],
+    "confounders": [
+      "Świąd, ból, otoczenie."
+    ],
+    "safe_next_steps": [
+      "Zapisz naturalny epizod; skonsultuj z lekarzem."
+    ],
+    "escalation": "veterinarian",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "dog_src_v2_tail_chasing_2012"
+    ],
+    "limitations": "Nie rozpoznaje kompulsji z wideo.",
+    "tags": [
+      "repetitive_behavior",
+      "context",
+      "expert_review_pending"
+    ],
+    "claims": [
+      {
+        "id": "dog_v2_repetitive_bout_responsiveness_finding",
+        "text": "Część psów miała słabszą responsywność podczas gonienia ogona.",
+        "basis": "source_finding",
+        "source_ids": [
+          "dog_src_v2_tail_chasing_2012"
+        ],
+        "locator": "Abstrakt: wyniki",
+        "uncertainty": "Ankieta czterech ras."
+      },
+      {
+        "id": "dog_v2_repetitive_bout_responsiveness_action",
+        "text": "Zapisz naturalny epizod; skonsultuj z lekarzem.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "dog_src_v2_tail_chasing_2012"
+        ],
+        "locator": "Reguła projektu; do walidacji.",
+        "uncertainty": "Zalecenie nie było przedmiotem tego badania."
+      }
+    ]
+  },
+  {
+    "id": "dog_v2_repetitive_behaviour_pattern",
+    "species": [
+      "dog"
+    ],
+    "topic": "repetitive_behavior",
+    "title": "Wzorzec zachowań powtarzalnych",
+    "observation": "Opiekun zgłasza kilka powtarzalnych czynności.",
+    "possible_interpretations": [
+      "Możliwe współwystępowanie problemów."
+    ],
+    "confounders": [
+      "Zdrowie, uczenie."
+    ],
+    "safe_next_steps": [
+      "Zapisuj różne czynności i kontekst dla lekarza."
+    ],
+    "escalation": "veterinarian",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "dog_src_v2_tail_chasing_2012"
+    ],
+    "limitations": "Nie zakładaj jednej przyczyny.",
+    "tags": [
+      "repetitive_behavior",
+      "context",
+      "expert_review_pending"
+    ],
+    "claims": [
+      {
+        "id": "dog_v2_repetitive_behaviour_pattern_finding",
+        "text": "Goniące ogon psy częściej miały inne zachowania kompulsyjne.",
+        "basis": "source_finding",
+        "source_ids": [
+          "dog_src_v2_tail_chasing_2012"
+        ],
+        "locator": "Abstrakt: wyniki",
+        "uncertainty": "Opis kwestionariuszowy."
+      },
+      {
+        "id": "dog_v2_repetitive_behaviour_pattern_action",
+        "text": "Zapisuj różne czynności i kontekst dla lekarza.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "dog_src_v2_tail_chasing_2012"
+        ],
+        "locator": "Reguła projektu; do walidacji.",
+        "uncertainty": "Zalecenie nie było przedmiotem tego badania."
+      }
+    ]
+  },
+  {
+    "id": "dog_v2_senior_activity_association",
+    "species": [
+      "dog"
+    ],
+    "topic": "senior",
+    "title": "Aktywność starszego psa",
+    "observation": "Starszy pies ogranicza aktywności.",
+    "possible_interpretations": [
+      "Możliwa zmiana zdrowia lub funkcjonowania."
+    ],
+    "confounders": [
+      "Ból, zmysły."
+    ],
+    "safe_next_steps": [
+      "Uzgodnij z lekarzem aktywność i dalszą obserwację."
+    ],
+    "escalation": "veterinarian",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "dog_src_v2_senior_activity_2023"
+    ],
+    "limitations": "Nie dowodzi przyczyny ani leczenia.",
+    "tags": [
+      "senior",
+      "context",
+      "expert_review_pending"
+    ],
+    "claims": [
+      {
+        "id": "dog_v2_senior_activity_association_finding",
+        "text": "Wyższa aktywność wiązała się z lepszymi wynikami poznawczymi.",
+        "basis": "source_finding",
+        "source_ids": [
+          "dog_src_v2_senior_activity_2023"
+        ],
+        "locator": "Abstrakt: wyniki",
+        "uncertainty": "Badanie przekrojowe."
+      },
+      {
+        "id": "dog_v2_senior_activity_association_action",
+        "text": "Uzgodnij z lekarzem aktywność i dalszą obserwację.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "dog_src_v2_senior_activity_2023"
+        ],
+        "locator": "Reguła projektu; do walidacji.",
+        "uncertainty": "Zalecenie nie było przedmiotem tego badania."
+      }
+    ]
+  },
+  {
+    "id": "dog_v2_senior_sensory_context",
+    "species": [
+      "dog"
+    ],
+    "topic": "senior",
+    "title": "Zmysły w ocenie seniora",
+    "observation": "Starszy pies nie reaguje jak dawniej.",
+    "possible_interpretations": [
+      "Możliwa zmiana zmysłów lub poznania."
+    ],
+    "confounders": [
+      "Otoczenie, zdrowie."
+    ],
+    "safe_next_steps": [
+      "Zapisuj dostępne wskazówki i skonsultuj zmianę."
+    ],
+    "escalation": "veterinarian",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "dog_src_v2_senior_activity_2023"
+    ],
+    "limitations": "Nie diagnozuje otępienia.",
+    "tags": [
+      "senior",
+      "context",
+      "expert_review_pending"
+    ],
+    "claims": [
+      {
+        "id": "dog_v2_senior_sensory_context_finding",
+        "text": "Deficyty zmysłów wiązały się z gorszymi ocenami poznawczymi.",
+        "basis": "source_finding",
+        "source_ids": [
+          "dog_src_v2_senior_activity_2023"
+        ],
+        "locator": "Dyskusja: medical covariates",
+        "uncertainty": "Relacje opiekunów."
+      },
+      {
+        "id": "dog_v2_senior_sensory_context_action",
+        "text": "Zapisuj dostępne wskazówki i skonsultuj zmianę.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "dog_src_v2_senior_activity_2023"
+        ],
+        "locator": "Reguła projektu; do walidacji.",
+        "uncertainty": "Zalecenie nie było przedmiotem tego badania."
+      }
+    ]
+  },
+  {
+    "id": "dog_v2_dog_cat_indifference",
+    "species": [
+      "dog"
+    ],
+    "topic": "interspecies",
+    "title": "Neutralność między psem a kotem",
+    "observation": "Pies i kot przebywają osobno.",
+    "possible_interpretations": [
+      "Możliwa tolerancja bez wspólnej zabawy."
+    ],
+    "confounders": [
+      "Przestrzeń, zasoby."
+    ],
+    "safe_next_steps": [
+      "Zapewnij niezależne miejsca i drogi odejścia."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "dog_src_v2_dog_cat_home_2008"
+    ],
+    "limitations": "Brak kontaktu nie oznacza konfliktu.",
+    "tags": [
+      "interspecies",
+      "context",
+      "expert_review_pending"
+    ],
+    "claims": [
+      {
+        "id": "dog_v2_dog_cat_indifference_finding",
+        "text": "W ankietach występowały także obojętne relacje psa i kota.",
+        "basis": "source_finding",
+        "source_ids": [
+          "dog_src_v2_dog_cat_home_2008"
+        ],
+        "locator": "Wyniki: Questionnaire",
+        "uncertainty": "Dobór wspólnych gospodarstw."
+      },
+      {
+        "id": "dog_v2_dog_cat_indifference_action",
+        "text": "Zapewnij niezależne miejsca i drogi odejścia.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "dog_src_v2_dog_cat_home_2008"
+        ],
+        "locator": "Reguła projektu; do walidacji.",
+        "uncertainty": "Zalecenie nie było przedmiotem tego badania."
+      }
+    ]
+  },
+  {
+    "id": "dog_v2_dog_cat_history",
+    "species": [
+      "dog"
+    ],
+    "topic": "interspecies",
+    "title": "Historia poznania gatunków",
+    "observation": "Pies spotyka domowego kota.",
+    "possible_interpretations": [
+      "Możliwy wpływ wcześniejszych doświadczeń."
+    ],
+    "confounders": [
+      "Wiek, kolejność przyjęcia."
+    ],
+    "safe_next_steps": [
+      "Zapisuj historię; nadzoruj spokojne kontakty."
+    ],
+    "escalation": "behaviorist",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "dog_src_v2_dog_cat_home_2008"
+    ],
+    "limitations": "Wiek nie gwarantuje zgodności.",
+    "tags": [
+      "interspecies",
+      "context",
+      "expert_review_pending"
+    ],
+    "claims": [
+      {
+        "id": "dog_v2_dog_cat_history_finding",
+        "text": "Wczesne poznanie wiązało się z bardziej przyjaznymi relacjami.",
+        "basis": "source_finding",
+        "source_ids": [
+          "dog_src_v2_dog_cat_home_2008"
+        ],
+        "locator": "Abstrakt",
+        "uncertainty": "Obserwacyjny związek."
+      },
+      {
+        "id": "dog_v2_dog_cat_history_action",
+        "text": "Zapisuj historię; nadzoruj spokojne kontakty.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "dog_src_v2_dog_cat_home_2008"
+        ],
+        "locator": "Reguła projektu; do walidacji.",
+        "uncertainty": "Zalecenie nie było przedmiotem tego badania."
+      }
+    ]
+  },
+  {
+    "id": "dog_v2_controllable_reward",
+    "species": [
+      "dog"
+    ],
+    "topic": "agency",
+    "title": "Możliwość wpływania na wynik",
+    "observation": "Pies rozwiązuje prostą układankę.",
+    "possible_interpretations": [
+      "Możliwa satysfakcja lub pobudzenie."
+    ],
+    "confounders": [
+      "Trudność, motywacja."
+    ],
+    "safe_next_steps": [
+      "Oferuj łatwe, dobrowolne zadania z przerwami."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "dog_src_v2_problem_solving_2014"
+    ],
+    "limitations": "Ruch ogona nie rozstrzyga emocji.",
+    "tags": [
+      "agency",
+      "context",
+      "expert_review_pending"
+    ],
+    "claims": [
+      {
+        "id": "dog_v2_controllable_reward_finding",
+        "text": "Kontrola uzyskania nagrody wiązała się z innymi reakcjami niż bierne oczekiwanie.",
+        "basis": "source_finding",
+        "source_ids": [
+          "dog_src_v2_problem_solving_2014"
+        ],
+        "locator": "Abstrakt: wyniki",
+        "uncertainty": "Dwanaście beagli."
+      },
+      {
+        "id": "dog_v2_controllable_reward_action",
+        "text": "Oferuj łatwe, dobrowolne zadania z przerwami.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "dog_src_v2_problem_solving_2014"
+        ],
+        "locator": "Reguła projektu; do walidacji.",
+        "uncertainty": "Zalecenie nie było przedmiotem tego badania."
+      }
+    ]
+  },
+  {
+    "id": "dog_v2_reward_individual_choice",
+    "species": [
+      "dog"
+    ],
+    "topic": "agency",
+    "title": "Rodzaj nagrody",
+    "observation": "Pies wybiera różne aktywności.",
+    "possible_interpretations": [
+      "Możliwe odmienne wartości nagród."
+    ],
+    "confounders": [
+      "Głód, partner."
+    ],
+    "safe_next_steps": [
+      "Obserwuj dobrowolne preferencje konkretnego psa."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "dog_src_v2_problem_solving_2014"
+    ],
+    "limitations": "Nie narzuca hierarchii nagród.",
+    "tags": [
+      "agency",
+      "context",
+      "expert_review_pending"
+    ],
+    "claims": [
+      {
+        "id": "dog_v2_reward_individual_choice_finding",
+        "text": "Reakcja po rozwiązaniu zadania zależała od rodzaju nagrody.",
+        "basis": "source_finding",
+        "source_ids": [
+          "dog_src_v2_problem_solving_2014"
+        ],
+        "locator": "Abstrakt: wyniki",
+        "uncertainty": "Specyficzne zadania."
+      },
+      {
+        "id": "dog_v2_reward_individual_choice_action",
+        "text": "Obserwuj dobrowolne preferencje konkretnego psa.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "dog_src_v2_problem_solving_2014"
+        ],
+        "locator": "Reguła projektu; do walidacji.",
+        "uncertainty": "Zalecenie nie było przedmiotem tego badania."
+      }
+    ]
+  },
+  {
+    "id": "dog_v2_repeatable_tendency",
+    "species": [
+      "dog"
+    ],
+    "topic": "temperament",
+    "title": "Powtarzalna tendencja",
+    "observation": "Pies podobnie zachowuje się ponownie.",
+    "possible_interpretations": [
+      "Możliwa względnie stabilna tendencja."
+    ],
+    "confounders": [
+      "Kontekst, rozwój."
+    ],
+    "safe_next_steps": [
+      "Porównuj wiele spokojnych obserwacji."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "dog_src_v2_temperament_repeatability_2005"
+    ],
+    "limitations": "Nie daje stałej etykiety osobowości.",
+    "tags": [
+      "temperament",
+      "context",
+      "expert_review_pending"
+    ],
+    "claims": [
+      {
+        "id": "dog_v2_repeatable_tendency_finding",
+        "text": "Kolejność indywidualnych wyników cech korelowała między testami.",
+        "basis": "source_finding",
+        "source_ids": [
+          "dog_src_v2_temperament_repeatability_2005"
+        ],
+        "locator": "Abstrakt: wyniki",
+        "uncertainty": "Młode dorosłe psy."
+      },
+      {
+        "id": "dog_v2_repeatable_tendency_action",
+        "text": "Porównuj wiele spokojnych obserwacji.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "dog_src_v2_temperament_repeatability_2005"
+        ],
+        "locator": "Reguła projektu; do walidacji.",
+        "uncertainty": "Zalecenie nie było przedmiotem tego badania."
+      }
+    ]
+  },
+  {
+    "id": "dog_v2_novelty_habituation_trait",
+    "species": [
+      "dog"
+    ],
+    "topic": "temperament",
+    "title": "Nowość a wynik cechy",
+    "observation": "Pies eksploruje bardziej przy powtórzeniu.",
+    "possible_interpretations": [
+      "Możliwa habituacja, nie zmiana charakteru."
+    ],
+    "confounders": [
+      "Znajomość, odstęp."
+    ],
+    "safe_next_steps": [
+      "Zapisuj nowość i powtórzenia kontekstu."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "dog_src_v2_temperament_repeatability_2005"
+    ],
+    "limitations": "Nie odtwarzaj prowokacyjnych prób.",
+    "tags": [
+      "temperament",
+      "context",
+      "expert_review_pending"
+    ],
+    "claims": [
+      {
+        "id": "dog_v2_novelty_habituation_trait_finding",
+        "text": "Przy kolejnych testach rosła eksploracja, a malały reakcje lękowe.",
+        "basis": "source_finding",
+        "source_ids": [
+          "dog_src_v2_temperament_repeatability_2005"
+        ],
+        "locator": "Abstrakt: wyniki",
+        "uncertainty": "Testy laboratoryjne."
+      },
+      {
+        "id": "dog_v2_novelty_habituation_trait_action",
+        "text": "Zapisuj nowość i powtórzenia kontekstu.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "dog_src_v2_temperament_repeatability_2005"
+        ],
+        "locator": "Reguła projektu; do walidacji.",
+        "uncertainty": "Zalecenie nie było przedmiotem tego badania."
+      }
+    ]
+  }
+]

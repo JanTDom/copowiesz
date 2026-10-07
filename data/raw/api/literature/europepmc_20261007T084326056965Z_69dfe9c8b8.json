@@ -1,0 +1,57 @@
+{
+  "provider": "europepmc",
+  "query": "canine behavior questionnaire",
+  "requested_limit": 3,
+  "retrieved_at": "2026-10-07T08:43:26.056748+00:00",
+  "record_count": 3,
+  "contains_full_text": false,
+  "contains_abstracts": false,
+  "review_status": "not_reviewed",
+  "records": [
+    {
+      "provider_id": "42626406",
+      "provider_source": "MED",
+      "title": "Measuring canine impulsivity: translation and validation of a German dog impulsivity assessment scale.",
+      "authors": "Kero D, Dolezal M, Affenzeller N.",
+      "year": "2026",
+      "doi": "10.3389/fvets.2026.1869578",
+      "pmid": "42626406",
+      "pmcid": "PMC13491426",
+      "journal": "Front Vet Sci",
+      "is_open_access": "Y",
+      "url": "https://europepmc.org/article/MED/42626406",
+      "license_status": "not_verified",
+      "review_status": "candidate_not_behavioral_evidence"
+    },
+    {
+      "provider_id": "42425940",
+      "provider_source": "MED",
+      "title": "A Systematic Review of the Characterization of Behavior in Canine Behavioral Questionnaires.",
+      "authors": "A J, K S, J F, D SL.",
+      "year": "2026",
+      "doi": "10.1080/10888705.2026.2693645",
+      "pmid": "42425940",
+      "pmcid": null,
+      "journal": "J Appl Anim Welf Sci",
+      "is_open_access": "N",
+      "url": "https://europepmc.org/article/MED/42425940",
+      "license_status": "not_verified",
+      "review_status": "candidate_not_behavioral_evidence"
+    },
+    {
+      "provider_id": "42806282",
+      "provider_source": "MED",
+      "title": "The relationship between urinalysis abnormalities, soiling behavior, and cognitive decline in aging dogs.",
+      "authors": "Rafatpanah Baigi S, Yang CC, Mondino A, Fefer G, Panek WK, Case BC, Griffith EH, Gruen ME, Olby NJ.",
+      "year": "2026",
+      "doi": "10.1093/jvimsj/aalag208",
+      "pmid": "42806282",
+      "pmcid": "PMC13619339",
+      "journal": "J Vet Intern Med",
+      "is_open_access": "Y",
+      "url": "https://europepmc.org/article/MED/42806282",
+      "license_status": "not_verified",
+      "review_status": "candidate_not_behavioral_evidence"
+    }
+  ]
+}

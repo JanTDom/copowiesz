@@ -1,0 +1,1167 @@
+[
+  {
+    "id": "dog_stress_sequence",
+    "species": [
+      "dog"
+    ],
+    "topic": "stress",
+    "title": "Sekwencja ważniejsza niż pojedynczy gest",
+    "observation": "Pies kolejno odwraca głowę, napina ciało i zwiększa dystans.",
+    "possible_interpretations": [
+      "Możliwy dyskomfort w tej interakcji.",
+      "Możliwa reakcja na inne bodźce."
+    ],
+    "confounders": [
+      "Dotyk, hałas, historia uczenia."
+    ],
+    "safe_next_steps": [
+      "Przerwij nacisk; zapewnij drogę odejścia.",
+      "Zapisz bodziec i kolejność reakcji."
+    ],
+    "escalation": "behaviorist",
+    "evidence_level": "guideline",
+    "source_ids": [
+      "dog_src_aaha_behavior_2015"
+    ],
+    "limitations": "Sekwencja nie ustala samodzielnie emocji ani diagnozy.",
+    "tags": [
+      "stress",
+      "body_language",
+      "context"
+    ]
+  },
+  {
+    "id": "dog_clinic_context",
+    "species": [
+      "dog"
+    ],
+    "topic": "stress",
+    "title": "Zachowanie w gabinecie ma swój kontekst",
+    "observation": "Pies w gabinecie zamiera lub unika kontaktu.",
+    "possible_interpretations": [
+      "Możliwy lęk sytuacyjny.",
+      "Możliwy ból lub wcześniejsze nieprzyjemne doświadczenie."
+    ],
+    "confounders": [
+      "Obce zapachy, unieruchomienie, transport."
+    ],
+    "safe_next_steps": [
+      "Poinformuj lekarza; pozwól zespołowi dostosować obsługę."
+    ],
+    "escalation": "veterinarian",
+    "evidence_level": "guideline",
+    "source_ids": [
+      "dog_src_aaha_behavior_2015"
+    ],
+    "limitations": "Brak oporu nie potwierdza komfortu.",
+    "tags": [
+      "stress",
+      "handling",
+      "freeze"
+    ]
+  },
+  {
+    "id": "dog_new_aggression",
+    "species": [
+      "dog"
+    ],
+    "topic": "health_behavior",
+    "title": "Nowa drażliwość wymaga oceny",
+    "observation": "Dotąd tolerowany kontakt zaczyna wywoływać napięcie lub warczenie.",
+    "possible_interpretations": [
+      "Możliwy problem zdrowotny.",
+      "Możliwa zmiana poczucia bezpieczeństwa."
+    ],
+    "confounders": [
+      "Zmiana otoczenia, sen, leki."
+    ],
+    "safe_next_steps": [
+      "Ogranicz konflikt i skonsultuj zmianę z lekarzem."
+    ],
+    "escalation": "veterinarian",
+    "evidence_level": "guideline",
+    "source_ids": [
+      "dog_src_aaha_behavior_2015"
+    ],
+    "limitations": "Nie prowokuj ponownej reakcji dla nagrania.",
+    "tags": [
+      "health_behavior",
+      "aggression",
+      "change"
+    ]
+  },
+  {
+    "id": "dog_reward_training",
+    "species": [
+      "dog"
+    ],
+    "topic": "learning",
+    "title": "Uczenie wspierane nagrodą",
+    "observation": "Po określonym zachowaniu pies otrzymuje wybraną nagrodę.",
+    "possible_interpretations": [
+      "Możliwe uczenie związku zachowania z konsekwencją."
+    ],
+    "confounders": [
+      "Wartość nagrody, opóźnienie, rozproszenia."
+    ],
+    "safe_next_steps": [
+      "Nagradzaj małe osiągalne kroki; obserwuj komfort."
+    ],
+    "escalation": "none",
+    "evidence_level": "guideline",
+    "source_ids": [
+      "dog_src_avsab_training_2021"
+    ],
+    "limitations": "Skuteczność oceniaj przez zmianę zachowania, nie intencję trenera.",
+    "tags": [
+      "learning",
+      "reinforcement"
+    ]
+  },
+  {
+    "id": "dog_aversive_tools",
+    "species": [
+      "dog"
+    ],
+    "topic": "learning",
+    "title": "Siła i ból nie są domyślnym planem",
+    "observation": "W planie szkolenia pojawia się szarpanie lub narzędzie wywołujące dyskomfort.",
+    "possible_interpretations": [
+      "Możliwe ryzyko pogorszenia dobrostanu i relacji."
+    ],
+    "confounders": [
+      "Różne sposoby stosowania, wcześniejsze problemy."
+    ],
+    "safe_next_steps": [
+      "Wybierz specjalistę stosującego nagrody i zarządzanie otoczeniem."
+    ],
+    "escalation": "behaviorist",
+    "evidence_level": "guideline",
+    "source_ids": [
+      "dog_src_avsab_training_2021"
+    ],
+    "limitations": "Stanowisko AVSAB zaleca metody oparte na nagrodach.",
+    "tags": [
+      "learning",
+      "welfare",
+      "training"
+    ]
+  },
+  {
+    "id": "dog_training_stress",
+    "species": [
+      "dog"
+    ],
+    "topic": "learning",
+    "title": "Oceniaj dobrostan podczas nauki",
+    "observation": "W sesjach szkoleniowych narastają napięcie, dyszenie i unikanie.",
+    "possible_interpretations": [
+      "Możliwy stres związany z metodą lub otoczeniem."
+    ],
+    "confounders": [
+      "Wysiłek, temperatura, bodźce, zdrowie."
+    ],
+    "safe_next_steps": [
+      "Skróć sesję; zwiększ łatwość zadania i możliwość przerwy."
+    ],
+    "escalation": "behaviorist",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "dog_src_castro_training_2020"
+    ],
+    "limitations": "Badanie szkół nie pozwala przypisać każdej reakcji jednej przyczynie.",
+    "tags": [
+      "learning",
+      "stress",
+      "video"
+    ]
+  },
+  {
+    "id": "dog_lick_yawn_context",
+    "species": [
+      "dog"
+    ],
+    "topic": "communication",
+    "title": "Oblizywanie i ziewanie wymagają kontekstu",
+    "observation": "Podczas interakcji powtarza się oblizywanie nosa lub ziewanie.",
+    "possible_interpretations": [
+      "Możliwy składnik reakcji stresowej.",
+      "Możliwa zwykła czynność fizjologiczna."
+    ],
+    "confounders": [
+      "Jedzenie, zmęczenie, temperatura."
+    ],
+    "safe_next_steps": [
+      "Zapisz częstotliwość razem z napięciem ciała i bodźcem."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "dog_src_castro_training_2020"
+    ],
+    "limitations": "Pojedynczy gest nie jest uniwersalnym wskaźnikiem stresu.",
+    "tags": [
+      "communication",
+      "ethogram"
+    ]
+  },
+  {
+    "id": "dog_ecollar_risk",
+    "species": [
+      "dog"
+    ],
+    "topic": "learning",
+    "title": "Efekt szkolenia i dobrostan to osobne wyniki",
+    "observation": "Zachowanie zmienia się po treningu z obrożą elektryczną.",
+    "possible_interpretations": [
+      "Możliwe uczenie przy jednoczesnym koszcie dobrostanu."
+    ],
+    "confounders": [
+      "Trener, kontekst, ocena opiekuna."
+    ],
+    "safe_next_steps": [
+      "Stosuj plan oparty na nagrodach; oceniaj również napięcie i unikanie."
+    ],
+    "escalation": "behaviorist",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "dog_src_cooper_ecollars_2014"
+    ],
+    "limitations": "Badanie nie wykazało konsekwentnej przewagi takich obroży.",
+    "tags": [
+      "learning",
+      "aversive",
+      "welfare"
+    ]
+  },
+  {
+    "id": "dog_puppy_socialization",
+    "species": [
+      "dog"
+    ],
+    "topic": "socialization",
+    "title": "Wczesne doświadczenia mają znaczenie",
+    "observation": "Szczeniak poznaje nowych ludzi, miejsca i zwierzęta.",
+    "possible_interpretations": [
+      "Możliwe budowanie bezpiecznych skojarzeń.",
+      "Możliwe przeciążenie zbyt intensywnym kontaktem."
+    ],
+    "confounders": [
+      "Zdrowie, historia doświadczeń, intensywność bodźca."
+    ],
+    "safe_next_steps": [
+      "Planuj krótkie pozytywne kontakty; warunki zdrowotne ustal z lekarzem."
+    ],
+    "escalation": "none",
+    "evidence_level": "guideline",
+    "source_ids": [
+      "dog_src_avsab_socialization_2008"
+    ],
+    "limitations": "Socjalizacja nie polega na przymusowym kontakcie.",
+    "tags": [
+      "socialization",
+      "puppy"
+    ]
+  },
+  {
+    "id": "dog_puppy_fear",
+    "species": [
+      "dog"
+    ],
+    "topic": "socialization",
+    "title": "Strach szczeniaka zmienia plan kontaktu",
+    "observation": "Szczeniak wycofuje się i nie wraca dobrowolnie do bodźca.",
+    "possible_interpretations": [
+      "Możliwa intensywność przekraczająca aktualną tolerancję."
+    ],
+    "confounders": [
+      "Nowe miejsce, zmęczenie, zdrowie."
+    ],
+    "safe_next_steps": [
+      "Oddal bodziec; przy utrzymującym się lęku poproś o pomoc."
+    ],
+    "escalation": "veterinarian",
+    "evidence_level": "guideline",
+    "source_ids": [
+      "dog_src_avsab_socialization_2008"
+    ],
+    "limitations": "Nie zwiększaj ekspozycji tylko dla ukończenia testu.",
+    "tags": [
+      "socialization",
+      "fear",
+      "choice"
+    ]
+  },
+  {
+    "id": "dog_pain_posture",
+    "species": [
+      "dog"
+    ],
+    "topic": "pain",
+    "title": "Postawa może wspierać ocenę bólu",
+    "observation": "Pies zmienia pozycję odpoczynku i unika zwykłych ruchów.",
+    "possible_interpretations": [
+      "Możliwy dyskomfort lub ból.",
+      "Możliwa inna przyczyna ograniczenia aktywności."
+    ],
+    "confounders": [
+      "Podłoże, pogoda, wysiłek, leki."
+    ],
+    "safe_next_steps": [
+      "Przekaż lekarzowi nagranie i opis zmian."
+    ],
+    "escalation": "veterinarian",
+    "evidence_level": "guideline",
+    "source_ids": [
+      "dog_src_wsava_pain_2022"
+    ],
+    "limitations": "Nagranie nie lokalizuje przyczyny bólu.",
+    "tags": [
+      "pain",
+      "mobility"
+    ]
+  },
+  {
+    "id": "dog_pain_severe",
+    "species": [
+      "dog"
+    ],
+    "topic": "pain",
+    "title": "Nagłe silne cierpienie wymaga pilnej pomocy",
+    "observation": "Pies nagle nie może wstać i wyraźnie cierpi.",
+    "possible_interpretations": [
+      "Możliwy stan wymagający pilnej oceny medycznej."
+    ],
+    "confounders": [
+      "Uraz, choroba, leki; przyczyna pozostaje nieznana."
+    ],
+    "safe_next_steps": [
+      "Skontaktuj się pilnie z lekarzem; ogranicz poruszanie i testy."
+    ],
+    "escalation": "urgent_veterinarian",
+    "evidence_level": "guideline",
+    "source_ids": [
+      "dog_src_wsava_pain_2022"
+    ],
+    "limitations": "Jest to konserwatywna reguła bezpieczeństwa projektu, nie diagnoza.",
+    "tags": [
+      "pain",
+      "urgent",
+      "no_provocation"
+    ]
+  },
+  {
+    "id": "dog_pain_gait",
+    "species": [
+      "dog"
+    ],
+    "topic": "pain",
+    "title": "Zmiana chodu względem własnej normy",
+    "observation": "Pies skraca krok lub inaczej siada niż wcześniej.",
+    "possible_interpretations": [
+      "Możliwa próba ograniczenia dyskomfortu."
+    ],
+    "confounders": [
+      "Śliskie podłoże, zmęczenie, zmiana tempa."
+    ],
+    "safe_next_steps": [
+      "Porównaj naturalne nagrania z podobnego miejsca; skonsultuj zmianę."
+    ],
+    "escalation": "veterinarian",
+    "evidence_level": "guideline",
+    "source_ids": [
+      "dog_src_aaha_pain_2022"
+    ],
+    "limitations": "Nie wymuszaj ruchów ani skoków w celu sprawdzenia bólu.",
+    "tags": [
+      "pain",
+      "baseline",
+      "movement"
+    ]
+  },
+  {
+    "id": "dog_pain_daily_function",
+    "species": [
+      "dog"
+    ],
+    "topic": "pain",
+    "title": "Codzienne funkcje pomagają śledzić zmianę",
+    "observation": "Pies rzadziej wykonuje wcześniej swobodną czynność.",
+    "possible_interpretations": [
+      "Możliwa zmiana komfortu lub sprawności.",
+      "Możliwa zmiana motywacji."
+    ],
+    "confounders": [
+      "Zdrowie, dostępność zasobu, pora dnia."
+    ],
+    "safe_next_steps": [
+      "Notuj konkretne czynności i daty; omów trend z lekarzem."
+    ],
+    "escalation": "veterinarian",
+    "evidence_level": "guideline",
+    "source_ids": [
+      "dog_src_aaha_pain_2022"
+    ],
+    "limitations": "Poprawa po interwencji nie dowodzi jednej przyczyny.",
+    "tags": [
+      "pain",
+      "longitudinal"
+    ]
+  },
+  {
+    "id": "dog_senior_disorientation",
+    "species": [
+      "dog"
+    ],
+    "topic": "senior",
+    "title": "Dezorientacja seniora wymaga różnicowania",
+    "observation": "Starszy pies gubi się w domu i zmienia rytm snu.",
+    "possible_interpretations": [
+      "Możliwe zaburzenie poznawcze.",
+      "Możliwy ból lub inna choroba."
+    ],
+    "confounders": [
+      "Wzrok, słuch, leki, zmiana domu."
+    ],
+    "safe_next_steps": [
+      "Zapisz początek i przebieg; umów ocenę weterynaryjną."
+    ],
+    "escalation": "veterinarian",
+    "evidence_level": "guideline",
+    "source_ids": [
+      "dog_src_aaha_senior_2023"
+    ],
+    "limitations": "Zachowania podobne występują w różnych chorobach.",
+    "tags": [
+      "senior",
+      "cognition",
+      "sleep"
+    ]
+  },
+  {
+    "id": "dog_senior_housesoiling",
+    "species": [
+      "dog"
+    ],
+    "topic": "senior",
+    "title": "Utrata czystości nie określa osobowości",
+    "observation": "Starszy pies zaczyna załatwiać się w domu.",
+    "possible_interpretations": [
+      "Możliwa choroba, ograniczenie sprawności lub zmiana poznawcza."
+    ],
+    "confounders": [
+      "Dostęp do wyjścia, rytm dnia, leki."
+    ],
+    "safe_next_steps": [
+      "Sprawdź dostępność wyjścia i skonsultuj nowy objaw."
+    ],
+    "escalation": "veterinarian",
+    "evidence_level": "guideline",
+    "source_ids": [
+      "dog_src_aaha_senior_2023"
+    ],
+    "limitations": "Nie przypisuj zdarzeniu złośliwości; konieczny jest wywiad.",
+    "tags": [
+      "senior",
+      "health",
+      "elimination"
+    ]
+  },
+  {
+    "id": "dog_cbarq_instrument",
+    "species": [
+      "dog"
+    ],
+    "topic": "assessment",
+    "title": "Kwestionariusz wymaga oznaczonego instrumentu",
+    "observation": "Opiekun przekazuje wynik C-BARQ.",
+    "possible_interpretations": [
+      "Możliwy opis określonych domen zachowania."
+    ],
+    "confounders": [
+      "Wersja, język, brak obserwacji."
+    ],
+    "safe_next_steps": [
+      "Zachowaj nazwę, wersję, datę i źródło wyniku."
+    ],
+    "escalation": "none",
+    "evidence_level": "technical_documentation",
+    "source_ids": [
+      "dog_src_cbarq_official"
+    ],
+    "limitations": "C-BARQ i autorski wywiad projektu nie są zamienne.",
+    "tags": [
+      "assessment",
+      "questionnaire",
+      "provenance"
+    ]
+  },
+  {
+    "id": "dog_cbarq_access",
+    "species": [
+      "dog"
+    ],
+    "topic": "assessment",
+    "title": "Opis publiczny nie udziela licencji",
+    "observation": "Projekt chce osadzić kwestionariusz lub dane C-BARQ.",
+    "possible_interpretations": [
+      "Możliwa integracja po uzgodnieniu praw i warunków."
+    ],
+    "confounders": [
+      "Prawa instrumentu, tłumaczenia i bazy są odrębne."
+    ],
+    "safe_next_steps": [
+      "Najpierw ustal zgodę; tymczasem korzystaj z oficjalnego serwisu."
+    ],
+    "escalation": "none",
+    "evidence_level": "technical_documentation",
+    "source_ids": [
+      "dog_src_cbarq_official"
+    ],
+    "limitations": "To reguła zarządzania prawami, nie rezultat walidacji.",
+    "tags": [
+      "assessment",
+      "license",
+      "integration"
+    ]
+  },
+  {
+    "id": "dog_profile_domains",
+    "species": [
+      "dog"
+    ],
+    "topic": "personality",
+    "title": "Profil obejmuje wiele domen",
+    "observation": "Opiekun opisuje odmienne reakcje psa w różnych sytuacjach.",
+    "possible_interpretations": [
+      "Możliwe zróżnicowane skłonności zamiast jednej etykiety charakteru."
+    ],
+    "confounders": [
+      "Pamięć opiekuna, okazje do obserwacji."
+    ],
+    "safe_next_steps": [
+      "Zachowaj opis sytuacji i osobne wyniki domen."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "dog_src_hsu_serpell_2003"
+    ],
+    "limitations": "Walidacja kwestionariusza nie dowodzi odczytu całej osobowości.",
+    "tags": [
+      "personality",
+      "temperament"
+    ]
+  },
+  {
+    "id": "dog_owner_report_limits",
+    "species": [
+      "dog"
+    ],
+    "topic": "assessment",
+    "title": "Raport opiekuna jest odrębnym pomiarem",
+    "observation": "Raport ankietowy różni się od konkretnego nagrania.",
+    "possible_interpretations": [
+      "Możliwa różnica kontekstu lub zakresu obserwacji.",
+      "Możliwy błąd pamięci."
+    ],
+    "confounders": [
+      "Czas obserwacji, osoba oceniająca, bodziec."
+    ],
+    "safe_next_steps": [
+      "Zachowaj oba pomiary; dopisz kontekst i nie uśredniaj automatycznie."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "dog_src_hsu_serpell_2003"
+    ],
+    "limitations": "Pojedynczy klip nie unieważnia raportu ani go nie potwierdza.",
+    "tags": [
+      "assessment",
+      "uncertainty",
+      "video"
+    ]
+  },
+  {
+    "id": "dog_short_form_validation",
+    "species": [
+      "dog"
+    ],
+    "topic": "assessment",
+    "title": "Skrócenie pytań wymaga walidacji",
+    "observation": "Produkt chce skrócić istniejący kwestionariusz.",
+    "possible_interpretations": [
+      "Możliwa oszczędność czasu przy zmienionych własnościach pomiaru."
+    ],
+    "confounders": [
+      "Dobór pozycji, populacja, język."
+    ],
+    "safe_next_steps": [
+      "Sprawdź zgodność domen i rzetelność w nowej populacji."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "dog_src_cbarq_short_2024"
+    ],
+    "limitations": "Zgodność wersji badanych nie waliduje dowolnego skrótu.",
+    "tags": [
+      "assessment",
+      "psychometrics"
+    ]
+  },
+  {
+    "id": "dog_item_domain_difference",
+    "species": [
+      "dog"
+    ],
+    "topic": "assessment",
+    "title": "Zgodność domen nie oznacza identyczności pozycji",
+    "observation": "Dwie wersje narzędzia dają zbliżone wyniki domen.",
+    "possible_interpretations": [
+      "Możliwa użyteczność na poziomie agregacji."
+    ],
+    "confounders": [
+      "Różna treść, odstęp czasu, rozkład odpowiedzi."
+    ],
+    "safe_next_steps": [
+      "Oznacz wersję; oceniaj zgodność pozycji i domen oddzielnie."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "dog_src_cbarq_short_2024"
+    ],
+    "limitations": "Badanie amerykańskiej próby nie waliduje polskiego przekładu.",
+    "tags": [
+      "assessment",
+      "validation",
+      "translation"
+    ]
+  },
+  {
+    "id": "dog_breed_not_destiny",
+    "species": [
+      "dog"
+    ],
+    "topic": "personality",
+    "title": "Rasa nie determinuje charakteru jednostki",
+    "observation": "Profil ma opierać się głównie na rozpoznanej rasie.",
+    "possible_interpretations": [
+      "Możliwe predyspozycje populacyjne przy dużej zmienności indywidualnej."
+    ],
+    "confounders": [
+      "Historia życia, środowisko, stereotyp opiekuna."
+    ],
+    "safe_next_steps": [
+      "Buduj profil z obserwacji tego psa w wielu sytuacjach."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "dog_src_morrill_ancestry_2022"
+    ],
+    "limitations": "Dziedziczność cechy nie daje pewnej prognozy konkretnego psa.",
+    "tags": [
+      "personality",
+      "breed",
+      "individual"
+    ]
+  },
+  {
+    "id": "dog_appearance_not_personality",
+    "species": [
+      "dog"
+    ],
+    "topic": "personality",
+    "title": "Wygląd nie zastępuje danych zachowania",
+    "observation": "Model określa cechy charakteru z samego zdjęcia.",
+    "possible_interpretations": [
+      "Możliwa pomyłka przez stereotyp wyglądu lub rasy."
+    ],
+    "confounders": [
+      "Mieszane pochodzenie, stronniczość ocen."
+    ],
+    "safe_next_steps": [
+      "Ogranicz zdjęcie do identyfikacji; charakter opisuj oddzielnie."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "dog_src_morrill_ancestry_2022"
+    ],
+    "limitations": "Badanie genomiki nie waliduje klasyfikatora osobowości ze zdjęcia.",
+    "tags": [
+      "personality",
+      "biometrics",
+      "bias"
+    ]
+  },
+  {
+    "id": "dog_age_training_association",
+    "species": [
+      "dog"
+    ],
+    "topic": "personality",
+    "title": "Wiek i doświadczenie współwystępują z cechami",
+    "observation": "Raportowana pobudliwość lub podatność na naukę zmienia się z wiekiem.",
+    "possible_interpretations": [
+      "Możliwe zmiany rozwojowe.",
+      "Możliwy wpływ doświadczenia lub warunków życia."
+    ],
+    "confounders": [
+      "Zdrowie, szkolenie, dobór ankietowanych."
+    ],
+    "safe_next_steps": [
+      "Notuj historię i porównuj psa z jego wcześniejszym profilem."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "dog_src_kubinyi_personality_2009"
+    ],
+    "limitations": "Zależności przekrojowe nie dowodzą przebiegu zmian jednostki.",
+    "tags": [
+      "personality",
+      "age",
+      "correlation"
+    ]
+  },
+  {
+    "id": "dog_separation_video",
+    "species": [
+      "dog"
+    ],
+    "topic": "separation",
+    "title": "Nagranie nieobecności uzupełnia wywiad",
+    "observation": "Podczas wyjścia opiekuna pojawiają się wokalizacje i chodzenie.",
+    "possible_interpretations": [
+      "Możliwy problem związany z separacją.",
+      "Możliwa reakcja na bodźce zewnętrzne."
+    ],
+    "confounders": [
+      "Dźwięki, godzina, długość nieobecności."
+    ],
+    "safe_next_steps": [
+      "Nagraj zwykłą sytuację bez przedłużania cierpienia; skonsultuj powtarzalny wzorzec."
+    ],
+    "escalation": "behaviorist",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "dog_src_palestrini_separation_2010"
+    ],
+    "limitations": "Mała próba kliniczna nie ustala uniwersalnych progów czasu.",
+    "tags": [
+      "separation",
+      "audio",
+      "home_alone"
+    ]
+  },
+  {
+    "id": "dog_separation_latency",
+    "species": [
+      "dog"
+    ],
+    "topic": "separation",
+    "title": "Czas od wyjścia jest informacją",
+    "observation": "Niepokój rozpoczyna się po wyjściu i zmienia w czasie.",
+    "possible_interpretations": [
+      "Możliwa zależność reakcji od nieobecności."
+    ],
+    "confounders": [
+      "Zdarzenia za oknem, montaż filmu, rutyna."
+    ],
+    "safe_next_steps": [
+      "Zapisz czas wyjścia, pierwszy objaw i dalszą sekwencję."
+    ],
+    "escalation": "behaviorist",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "dog_src_palestrini_separation_2010"
+    ],
+    "limitations": "Sam moment rozpoczęcia objawu nie określa rozpoznania.",
+    "tags": [
+      "separation",
+      "timeline",
+      "context"
+    ]
+  },
+  {
+    "id": "dog_separation_differentials",
+    "species": [
+      "dog"
+    ],
+    "topic": "separation",
+    "title": "Problemy separacyjne mogą mieć różne mechanizmy",
+    "observation": "Niszczenie, wokalizacja lub nieczystość występują pod nieobecność opiekuna.",
+    "possible_interpretations": [
+      "Możliwy udział lęku, frustracji lub reakcji na inne bodźce."
+    ],
+    "confounders": [
+      "Choroba, ograniczenie dostępu, hałas."
+    ],
+    "safe_next_steps": [
+      "Omów pełny wzorzec z lekarzem lub specjalistą."
+    ],
+    "escalation": "veterinarian",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "dog_src_assis_separation_2020"
+    ],
+    "limitations": "Klaster ankietowy nie jest samodzielną diagnozą emocji.",
+    "tags": [
+      "separation",
+      "differential"
+    ]
+  },
+  {
+    "id": "dog_separation_attachment",
+    "species": [
+      "dog"
+    ],
+    "topic": "separation",
+    "title": "Bliskość opiekuna nie rozstrzyga przyczyny",
+    "observation": "Pies często podąża za człowiekiem i źle znosi niektóre nieobecności.",
+    "possible_interpretations": [
+      "Możliwy problem separacyjny.",
+      "Możliwe różne mechanizmy zależne od sytuacji."
+    ],
+    "confounders": [
+      "Rutyna, dostęp do zasobów, reakcje domowników."
+    ],
+    "safe_next_steps": [
+      "Porównaj rodzaje nieobecności i zapisz zdarzenia poprzedzające objawy."
+    ],
+    "escalation": "behaviorist",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "dog_src_assis_separation_2020"
+    ],
+    "limitations": "Nie utożsamiaj bliskości z rozpoznaniem nadmiernego przywiązania.",
+    "tags": [
+      "separation",
+      "attachment"
+    ]
+  },
+  {
+    "id": "dog_alone_rest",
+    "species": [
+      "dog"
+    ],
+    "topic": "separation",
+    "title": "Odpoczynek podczas nieobecności bywa zwykłym zachowaniem",
+    "observation": "Pies większość nagrania spokojnie leży.",
+    "possible_interpretations": [
+      "Możliwy odpoczynek.",
+      "Możliwy stan wymagający innych danych."
+    ],
+    "confounders": [
+      "Pora snu, widoczność, stan zdrowia."
+    ],
+    "safe_next_steps": [
+      "Porównaj z własną normą aktywności i reakcją po powrocie."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "dog_src_scaglia_home_alone_2013"
+    ],
+    "limitations": "Brak ruchu nie dowodzi ani dobrostanu, ani cierpienia.",
+    "tags": [
+      "separation",
+      "baseline",
+      "rest"
+    ]
+  },
+  {
+    "id": "dog_face_attention",
+    "species": [
+      "dog"
+    ],
+    "topic": "communication",
+    "title": "Mimika zależy również od uwagi człowieka",
+    "observation": "Ruchy twarzy nasilają się, gdy człowiek patrzy na psa.",
+    "possible_interpretations": [
+      "Możliwy komponent komunikacyjny.",
+      "Możliwa wyuczona odpowiedź na uwagę."
+    ],
+    "confounders": [
+      "Uwaga odbiorcy, historia nagradzania, pobudzenie."
+    ],
+    "safe_next_steps": [
+      "Oznacz obecność i kierunek uwagi człowieka."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "dog_src_kaminski_face_2017"
+    ],
+    "limitations": "Nie przypisuj ruchowi brwi konkretnego zdania ani emocji.",
+    "tags": [
+      "communication",
+      "face",
+      "audience"
+    ]
+  },
+  {
+    "id": "dog_face_video_bias",
+    "species": [
+      "dog"
+    ],
+    "topic": "assessment",
+    "title": "Osoba filmująca może zmieniać obserwację",
+    "observation": "Pies zachowuje się inaczej podczas bliskiego filmowania.",
+    "possible_interpretations": [
+      "Możliwy wpływ uwagi człowieka na zachowanie."
+    ],
+    "confounders": [
+      "Odległość, kontakt wzrokowy, smakołyki."
+    ],
+    "safe_next_steps": [
+      "Zapisz warunki nagrania; korzystaj też z naturalnych epizodów."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "dog_src_kaminski_face_2017"
+    ],
+    "limitations": "To projektowy wniosek o kontroli kontekstu, nie walidacja kamery.",
+    "tags": [
+      "assessment",
+      "observer_effect"
+    ]
+  },
+  {
+    "id": "dog_gaze_object",
+    "species": [
+      "dog"
+    ],
+    "topic": "communication",
+    "title": "Naprzemienne spojrzenia mogą wskazywać cel",
+    "observation": "Pies przenosi spojrzenie między człowiekiem a drzwiami lub przedmiotem.",
+    "possible_interpretations": [
+      "Możliwa próba skierowania uwagi na cel."
+    ],
+    "confounders": [
+      "Widoczny bodziec, trening, pozycja człowieka."
+    ],
+    "safe_next_steps": [
+      "Obserwuj powtarzanie i rezultat bez prowokowania frustracji."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "dog_src_worsley_gestures_2018"
+    ],
+    "limitations": "Sam kierunek spojrzenia nie wystarcza do rozpoznania prośby.",
+    "tags": [
+      "communication",
+      "gaze",
+      "sequence"
+    ]
+  },
+  {
+    "id": "dog_gesture_outcome",
+    "species": [
+      "dog"
+    ],
+    "topic": "communication",
+    "title": "Rezultat pomaga interpretować gest",
+    "observation": "Pies ponawia gest, a po określonej reakcji człowieka go przerywa.",
+    "possible_interpretations": [
+      "Możliwy gest skierowany na osiągnięcie celu.",
+      "Możliwe wcześniej wyuczone zachowanie."
+    ],
+    "confounders": [
+      "Zwyczaje pary, kilka dostępnych nagród."
+    ],
+    "safe_next_steps": [
+      "Zapisz gest, kontekst i rezultat jako hipotezę preferencji."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "dog_src_worsley_gestures_2018"
+    ],
+    "limitations": "To obserwacyjna zależność, nie słownik tłumaczeń gestów.",
+    "tags": [
+      "communication",
+      "memory",
+      "preferences"
+    ]
+  },
+  {
+    "id": "dog_multimodal_emotion",
+    "species": [
+      "dog"
+    ],
+    "topic": "communication",
+    "title": "Twarz i głos człowieka współtworzą kontekst",
+    "observation": "Pies reaguje na połączenie tonu głosu i mimiki człowieka.",
+    "possible_interpretations": [
+      "Możliwe wykorzystanie wskazówek o zabarwieniu emocjonalnym."
+    ],
+    "confounders": [
+      "Znajomość osoby, głośność, wcześniejsze skojarzenia."
+    ],
+    "safe_next_steps": [
+      "Uwzględnij dźwięk i zachowanie ludzi w opisie sytuacji."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "dog_src_albuquerque_emotions_2016"
+    ],
+    "limitations": "Wynik eksperymentu nie dowodzi rozumienia zdań ani czytania myśli.",
+    "tags": [
+      "communication",
+      "audio",
+      "human"
+    ]
+  },
+  {
+    "id": "dog_puppy_gestures",
+    "species": [
+      "dog"
+    ],
+    "topic": "communication",
+    "title": "Wskazówka gestem to osobna umiejętność",
+    "observation": "Szczeniak podąża za wskazaniem człowieka w prostym zadaniu.",
+    "possible_interpretations": [
+      "Możliwa wczesna zdolność korzystania z gestów społecznych."
+    ],
+    "confounders": [
+      "Motywacja, wcześniejsze doświadczenie, rodzaj zadania."
+    ],
+    "safe_next_steps": [
+      "Obserwuj dobrowolne naturalne interakcje i indywidualną zmienność."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "dog_src_salomons_communication_2021"
+    ],
+    "limitations": "Sukces w zadaniu nie oznacza znajomości polskiego ani pełnej inteligencji.",
+    "tags": [
+      "communication",
+      "development",
+      "cognition"
+    ]
+  },
+  {
+    "id": "dog_welfare_needs",
+    "species": [
+      "dog"
+    ],
+    "topic": "welfare",
+    "title": "Dobrostan obejmuje codzienne potrzeby",
+    "observation": "Pies ma mało możliwości ruchu, odpoczynku i zachowań właściwych gatunkowi.",
+    "possible_interpretations": [
+      "Możliwe ograniczenie dobrostanu."
+    ],
+    "confounders": [
+      "Zdrowie, bezpieczeństwo, indywidualne preferencje."
+    ],
+    "safe_next_steps": [
+      "Zadbaj o odpowiednie środowisko, odpoczynek, aktywność i opiekę zdrowotną."
+    ],
+    "escalation": "none",
+    "evidence_level": "guideline",
+    "source_ids": [
+      "dog_src_wsava_welfare_2018"
+    ],
+    "limitations": "Jedna aktywność ani brak objawów nie mierzą całego dobrostanu.",
+    "tags": [
+      "welfare",
+      "environment"
+    ]
+  },
+  {
+    "id": "dog_social_individual",
+    "species": [
+      "dog"
+    ],
+    "topic": "welfare",
+    "title": "Towarzystwo innego psa wymaga oceny jednostki",
+    "observation": "Pies unika współlokatora lub konkurencji o zasoby.",
+    "possible_interpretations": [
+      "Możliwa niezgodność potrzeb społecznych lub warunków."
+    ],
+    "confounders": [
+      "Zasoby, zdrowie, wcześniejsze doświadczenia."
+    ],
+    "safe_next_steps": [
+      "Zapewnij oddzielne zasoby i bezpieczny dystans; przy konflikcie skonsultuj specjalistę."
+    ],
+    "escalation": "behaviorist",
+    "evidence_level": "guideline",
+    "source_ids": [
+      "dog_src_wsava_welfare_2018"
+    ],
+    "limitations": "Drugi pies nie jest uniwersalnym sposobem poprawy dobrostanu.",
+    "tags": [
+      "welfare",
+      "multidog",
+      "choice"
+    ]
+  },
+  {
+    "id": "dog_guilty_look",
+    "species": [
+      "dog"
+    ],
+    "topic": "communication",
+    "title": "Wygląd przypisywany winie nie dowodzi winy",
+    "observation": "Po reprymendzie pies opuszcza ciało lub odwraca wzrok.",
+    "possible_interpretations": [
+      "Możliwa odpowiedź na sygnały człowieka.",
+      "Możliwy stres w tej interakcji."
+    ],
+    "confounders": [
+      "Ton, postura człowieka, wcześniejsze uczenie."
+    ],
+    "safe_next_steps": [
+      "Przerwij reprymendę; opisuj obserwację bez przypisywania intencji."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "dog_src_horowitz_guilty_2009"
+    ],
+    "limitations": "Mały eksperyment nie rozstrzyga, jakich wszystkich emocji doświadczają psy.",
+    "tags": [
+      "communication",
+      "anthropomorphism"
+    ]
+  },
+  {
+    "id": "dog_nosework_welfare",
+    "species": [
+      "dog"
+    ],
+    "topic": "welfare",
+    "title": "Węszenie jest kandydatem na wzbogacenie",
+    "observation": "Pies dobrowolnie angażuje się w spokojne wyszukiwanie zapachu.",
+    "possible_interpretations": [
+      "Możliwe zaspokajanie potrzeb węchowych i wspieranie dobrostanu."
+    ],
+    "confounders": [
+      "Trudność, nagroda, zdrowie, frustracja."
+    ],
+    "safe_next_steps": [
+      "Dopasuj łatwe bezpieczne zadanie; pozwól przerwać i śledź indywidualną reakcję."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "dog_src_duranton_nosework_2019"
+    ],
+    "limitations": "Pośredni wskaźnik afektu nie gwarantuje poprawy każdego psa.",
+    "tags": [
+      "welfare",
+      "enrichment",
+      "olfaction"
+    ]
+  }
+]

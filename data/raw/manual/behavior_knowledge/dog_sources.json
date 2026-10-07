@@ -1,0 +1,352 @@
+[
+  {
+    "id": "dog_src_aaha_behavior_2015",
+    "title": "2015 AAHA Canine and Feline Behavior Management Guidelines",
+    "url": "https://www.aaha.org/resources/2015-aaha-canine-and-feline-behavior-management-guidelines/behavior-management-home-2/",
+    "publisher": "American Animal Hospital Association (AAHA)",
+    "year": 2015,
+    "kind": "guideline",
+    "species": [
+      "dog",
+      "cat"
+    ],
+    "evidence_level": "guideline",
+    "license_status": "unverified — publiczny dostęp nie potwierdza praw do redystrybucji; zapisano wyłącznie metadane i własne streszczenia",
+    "reviewed_at": "2026-10-07",
+    "notes": "Kliniczna ocena zachowania i ograniczanie lęku; wytyczna łączy badania z konsensusem ekspertów."
+  },
+  {
+    "id": "dog_src_avsab_training_2021",
+    "title": "AVSAB Position Statement on Humane Dog Training",
+    "url": "https://avsab.org/wp-content/uploads/2021/08/AVSAB-Humane-Dog-Training-Position-Statement-2021.pdf",
+    "publisher": "American Veterinary Society of Animal Behavior (AVSAB)",
+    "year": 2021,
+    "kind": "guideline",
+    "species": [
+      "dog"
+    ],
+    "evidence_level": "guideline",
+    "license_status": "unverified — publiczny dostęp nie potwierdza praw do redystrybucji; zapisano wyłącznie metadane i własne streszczenia",
+    "reviewed_at": "2026-10-07",
+    "notes": "Oficjalna strona stanowisk potwierdza aktualność dokumentu z 2021; podstawą zaleceń są metody oparte na nagrodach."
+  },
+  {
+    "id": "dog_src_castro_training_2020",
+    "title": "Does training method matter? Evidence for the negative impact of aversive-based methods on companion dog welfare",
+    "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0225023",
+    "publisher": "Vieira de Castro et al.; PLOS ONE",
+    "year": 2020,
+    "kind": "study",
+    "species": [
+      "dog"
+    ],
+    "evidence_level": "primary_study",
+    "license_status": "verified CC BY — deklaracja na stronie artykułu; atrybucja: Vieira de Castro et al. (2020), DOI 10.1371/journal.pone.0225023",
+    "reviewed_at": "2026-10-07",
+    "notes": "Badanie quasi-eksperymentalne 92 psów; dobór szkół i brak randomizacji ograniczają wnioskowanie przyczynowe."
+  },
+  {
+    "id": "dog_src_cooper_ecollars_2014",
+    "title": "The Welfare Consequences and Efficacy of Training Pet Dogs with Remote Electronic Training Collars in Comparison to Reward Based Training",
+    "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0102722",
+    "publisher": "Cooper et al.; PLOS ONE",
+    "year": 2014,
+    "kind": "study",
+    "species": [
+      "dog"
+    ],
+    "evidence_level": "primary_study",
+    "license_status": "verified CC BY — deklaracja na stronie artykułu; atrybucja: Cooper et al. (2014), DOI 10.1371/journal.pone.0102722",
+    "reviewed_at": "2026-10-07",
+    "notes": "Porównanie metod u 63 psów; opublikowana korekta dotyczy informacji o finansowaniu, DOI 10.1371/journal.pone.0110931."
+  },
+  {
+    "id": "dog_src_avsab_socialization_2008",
+    "title": "AVSAB Position Statement on Puppy Socialization",
+    "url": "https://avsab.org/wp-content/uploads/2019/01/Puppy-Socialization-Position-Statement-FINAL.pdf",
+    "publisher": "American Veterinary Society of Animal Behavior (AVSAB)",
+    "year": 2008,
+    "kind": "guideline",
+    "species": [
+      "dog"
+    ],
+    "evidence_level": "guideline",
+    "license_status": "unverified — publiczny dostęp nie potwierdza praw do redystrybucji; zapisano wyłącznie metadane i własne streszczenia",
+    "reviewed_at": "2026-10-07",
+    "notes": "Rok pochodzi ze stopki dokumentu; 2019 w adresie jest datą publikacji pliku na serwerze."
+  },
+  {
+    "id": "dog_src_wsava_pain_2022",
+    "title": "2022 WSAVA guidelines for the recognition, assessment and treatment of pain",
+    "url": "https://onlinelibrary.wiley.com/doi/10.1111/jsap.13566",
+    "publisher": "Monteiro et al.; WSAVA / Journal of Small Animal Practice",
+    "year": 2023,
+    "kind": "guideline",
+    "species": [
+      "dog",
+      "cat"
+    ],
+    "evidence_level": "guideline",
+    "license_status": "unverified — publiczny dostęp nie potwierdza praw do redystrybucji; zapisano wyłącznie metadane i własne streszczenia",
+    "reviewed_at": "2026-10-07",
+    "notes": "Wytyczne noszą datę 2022, tom czasopisma 2023; obserwacje behawioralne wspierają kliniczną ocenę bólu."
+  },
+  {
+    "id": "dog_src_aaha_pain_2022",
+    "title": "2022 AAHA Pain Management Guidelines for Dogs and Cats",
+    "url": "https://www.aaha.org/resources/2022-aaha-pain-management-guidelines-for-dogs-and-cats/home-3/",
+    "publisher": "American Animal Hospital Association (AAHA)",
+    "year": 2022,
+    "kind": "guideline",
+    "species": [
+      "dog",
+      "cat"
+    ],
+    "evidence_level": "guideline",
+    "license_status": "unverified — publiczny dostęp nie potwierdza praw do redystrybucji; zapisano wyłącznie metadane i własne streszczenia",
+    "reviewed_at": "2026-10-07",
+    "notes": "Ocena, leczenie i ponowna ocena bólu; uwzględniają obserwacje opiekuna oraz zmiany funkcjonalne."
+  },
+  {
+    "id": "dog_src_aaha_senior_2023",
+    "title": "2023 AAHA Senior Care Guidelines for Dogs and Cats — Managing Cognitive Dysfunction and Behavioral Anxiety",
+    "url": "https://www.aaha.org/resources/2023-aaha-senior-care-guidelines-for-dogs-and-cats/managing-cognitive-dysfunction-and-behavioral-anxiety/",
+    "publisher": "American Animal Hospital Association (AAHA)",
+    "year": 2023,
+    "kind": "guideline",
+    "species": [
+      "dog",
+      "cat"
+    ],
+    "evidence_level": "guideline",
+    "license_status": "unverified — publiczny dostęp nie potwierdza praw do redystrybucji; zapisano wyłącznie metadane i własne streszczenia",
+    "reviewed_at": "2026-10-07",
+    "notes": "Zmiany poznawcze wymagają diagnostyki różnicowej; sama starość nie wyjaśnia choroby ani nowej zmiany zachowania."
+  },
+  {
+    "id": "dog_src_cbarq_official",
+    "title": "About the C-BARQ",
+    "url": "https://vetapps.vet.upenn.edu/cbarq/about.cfm",
+    "publisher": "University of Pennsylvania, School of Veterinary Medicine",
+    "year": null,
+    "kind": "official_documentation",
+    "species": [
+      "dog"
+    ],
+    "evidence_level": "technical_documentation",
+    "license_status": "unverified — publiczny dostęp nie potwierdza praw do redystrybucji; zapisano wyłącznie metadane i własne streszczenia",
+    "reviewed_at": "2026-10-07",
+    "notes": "Oficjalny opis instrumentu i współpracy badawczej; nie stanowi zgody na kopiowanie pozycji, danych ani tłumaczenie."
+  },
+  {
+    "id": "dog_src_hsu_serpell_2003",
+    "title": "Development and validation of a questionnaire for measuring behavior and temperament traits in pet dogs",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/14621216/",
+    "publisher": "Hsu & Serpell; Journal of the American Veterinary Medical Association",
+    "year": 2003,
+    "kind": "study",
+    "species": [
+      "dog"
+    ],
+    "evidence_level": "primary_study",
+    "license_status": "unverified — publiczny dostęp nie potwierdza praw do redystrybucji; zapisano wyłącznie metadane i własne streszczenia",
+    "reviewed_at": "2026-10-07",
+    "notes": "Pierwotna walidacja C-BARQ; badanie przekrojowe raportów opiekunów. DOI 10.2460/javma.2003.223.1293."
+  },
+  {
+    "id": "dog_src_cbarq_short_2024",
+    "title": "Validation of the shortened version of the Canine Behavioral Assessment and Research Questionnaire (C-BARQ) using participants from the Dog Aging Project",
+    "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0299973",
+    "publisher": "Wilkins et al.; PLOS ONE",
+    "year": 2024,
+    "kind": "study",
+    "species": [
+      "dog"
+    ],
+    "evidence_level": "primary_study",
+    "license_status": "verified CC BY — deklaracja na stronie artykułu; atrybucja: Wilkins et al. (2024), DOI 10.1371/journal.pone.0299973; prawa do samego instrumentu odrębne",
+    "reviewed_at": "2026-10-07",
+    "notes": "Porównanie wersji krótkiej i długiej u 435 par opiekun–pies; zgodność pozycji i domen nie jest identyczna."
+  },
+  {
+    "id": "dog_src_morrill_ancestry_2022",
+    "title": "Ancestry-inclusive dog genomics challenges popular breed stereotypes",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/35482869/",
+    "publisher": "Morrill et al.; Science",
+    "year": 2022,
+    "kind": "study",
+    "species": [
+      "dog"
+    ],
+    "evidence_level": "primary_study",
+    "license_status": "unverified — publiczny dostęp nie potwierdza praw do redystrybucji; zapisano wyłącznie metadane i własne streszczenia",
+    "reviewed_at": "2026-10-07",
+    "notes": "Ankiety 18 385 psów i genotypowanie 2155; rasa miała ograniczoną wartość przewidywania zachowania jednostki. DOI 10.1126/science.abk0639."
+  },
+  {
+    "id": "dog_src_kubinyi_personality_2009",
+    "title": "Dog and owner demographic characteristics and dog personality trait associations",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0376635709001065",
+    "publisher": "Kubinyi, Turcsán & Miklósi; Behavioural Processes / Elsevier",
+    "year": 2009,
+    "kind": "study",
+    "species": [
+      "dog"
+    ],
+    "evidence_level": "primary_study",
+    "license_status": "unverified — publiczny dostęp nie potwierdza praw do redystrybucji; zapisano wyłącznie metadane i własne streszczenia",
+    "reviewed_at": "2026-10-07",
+    "notes": "Ankiety dotyczące 14 004 psów; związki demografii i cech nie ustalają przyczyn. DOI 10.1016/j.beproc.2009.04.004."
+  },
+  {
+    "id": "dog_src_palestrini_separation_2010",
+    "title": "Video analysis of dogs with separation-related behaviors",
+    "url": "https://www.sciencedirect.com/science/article/abs/pii/S0168159110000377",
+    "publisher": "Palestrini et al.; Applied Animal Behaviour Science / Elsevier",
+    "year": 2010,
+    "kind": "study",
+    "species": [
+      "dog"
+    ],
+    "evidence_level": "primary_study",
+    "license_status": "unverified — publiczny dostęp nie potwierdza praw do redystrybucji; zapisano wyłącznie metadane i własne streszczenia",
+    "reviewed_at": "2026-10-07",
+    "notes": "Obserwacja 23 psów podczas nieobecności opiekuna; niewielka próba kliniczna. DOI 10.1016/j.applanim.2010.01.014."
+  },
+  {
+    "id": "dog_src_assis_separation_2020",
+    "title": "Developing Diagnostic Frameworks in Veterinary Behavioral Medicine: Disambiguating Separation Related Problems in Dogs",
+    "url": "https://www.frontiersin.org/journals/veterinary-science/articles/10.3389/fvets.2019.00499/full",
+    "publisher": "de Assis et al.; Frontiers in Veterinary Science",
+    "year": 2020,
+    "kind": "study",
+    "species": [
+      "dog"
+    ],
+    "evidence_level": "primary_study",
+    "license_status": "verified CC BY — deklaracja na stronie artykułu; atrybucja: de Assis et al. (2020), DOI 10.3389/fvets.2019.00499",
+    "reviewed_at": "2026-10-07",
+    "notes": "Analiza ankiet i klastrów objawów; stany psychologiczne pozostają hipotezami. Publikacja ze stycznia 2020, DOI oznaczony 2019."
+  },
+  {
+    "id": "dog_src_scaglia_home_alone_2013",
+    "title": "Video analysis of adult dogs when left home alone",
+    "url": "https://www.sciencedirect.com/science/article/pii/S1558787813000993",
+    "publisher": "Scaglia et al.; Journal of Veterinary Behavior / Elsevier",
+    "year": 2013,
+    "kind": "study",
+    "species": [
+      "dog"
+    ],
+    "evidence_level": "primary_study",
+    "license_status": "unverified — publiczny dostęp nie potwierdza praw do redystrybucji; zapisano wyłącznie metadane i własne streszczenia",
+    "reviewed_at": "2026-10-07",
+    "notes": "Badanie zachowania dorosłych psów bez rozpoznanych problemów separacyjnych; opis próby, nie norma dla wszystkich. DOI 10.1016/j.jveb.2013.04.065."
+  },
+  {
+    "id": "dog_src_kaminski_face_2017",
+    "title": "Human attention affects facial expressions in domestic dogs",
+    "url": "https://www.nature.com/articles/s41598-017-12781-x",
+    "publisher": "Kaminski, Hynds, Morris & Waller; Scientific Reports",
+    "year": 2017,
+    "kind": "study",
+    "species": [
+      "dog"
+    ],
+    "evidence_level": "primary_study",
+    "license_status": "verified CC BY 4.0 — https://creativecommons.org/licenses/by/4.0/; atrybucja: Kaminski et al. (2017), DOI 10.1038/s41598-017-12781-x; streszczenia po polsku",
+    "reviewed_at": "2026-10-07",
+    "notes": "Eksperyment obejmował 24 psy; uwaga człowieka wpływała na ruchy twarzy, bez dowodu konkretnej treści myśli."
+  },
+  {
+    "id": "dog_src_worsley_gestures_2018",
+    "title": "Cross-species referential signalling events in domestic dogs (Canis familiaris)",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6004278/",
+    "publisher": "Worsley & O’Hara; Animal Cognition / Springer",
+    "year": 2018,
+    "kind": "study",
+    "species": [
+      "dog"
+    ],
+    "evidence_level": "primary_study",
+    "license_status": "verified CC BY 4.0 — https://creativecommons.org/licenses/by/4.0/; atrybucja: Worsley & O’Hara (2018), DOI 10.1007/s10071-018-1181-3; streszczenia po polsku",
+    "reviewed_at": "2026-10-07",
+    "notes": "Obserwacyjne nagrania 37 psów; gesty rozpatrywano w całych epizodach interakcji i względem rezultatu."
+  },
+  {
+    "id": "dog_src_albuquerque_emotions_2016",
+    "title": "Dogs recognize dog and human emotions",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/26763220/",
+    "publisher": "Albuquerque et al.; Biology Letters / Royal Society",
+    "year": 2016,
+    "kind": "study",
+    "species": [
+      "dog"
+    ],
+    "evidence_level": "primary_study",
+    "license_status": "unverified — publiczny dostęp nie potwierdza praw do redystrybucji; zapisano wyłącznie metadane i własne streszczenia",
+    "reviewed_at": "2026-10-07",
+    "notes": "Eksperyment integracji bodźców wizualnych i dźwiękowych; nie testował rozmów ani tłumaczenia myśli. DOI 10.1098/rsbl.2015.0883."
+  },
+  {
+    "id": "dog_src_salomons_communication_2021",
+    "title": "Cooperative Communication with Humans Evolved to Emerge Early in Domestic Dogs",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/34256018/",
+    "publisher": "Salomons et al.; Current Biology / Cell Press",
+    "year": 2021,
+    "kind": "study",
+    "species": [
+      "dog"
+    ],
+    "evidence_level": "primary_study",
+    "license_status": "unverified — publiczny dostęp nie potwierdza praw do redystrybucji; zapisano wyłącznie metadane i własne streszczenia",
+    "reviewed_at": "2026-10-07",
+    "notes": "Porównano 44 szczenięta psów i 37 wilków; zadania społeczne różniły się od pamięci i hamowania. DOI 10.1016/j.cub.2021.06.051."
+  },
+  {
+    "id": "dog_src_wsava_welfare_2018",
+    "title": "WSAVA Animal Welfare Guidelines",
+    "url": "https://wsava.org/wp-content/uploads/2019/12/WSAVA-Animal-Welfare-Guidelines-2018.pdf",
+    "publisher": "World Small Animal Veterinary Association (WSAVA)",
+    "year": 2018,
+    "kind": "guideline",
+    "species": [
+      "dog",
+      "cat"
+    ],
+    "evidence_level": "guideline",
+    "license_status": "unverified — publiczny dostęp nie potwierdza praw do redystrybucji; zapisano wyłącznie metadane i własne streszczenia",
+    "reviewed_at": "2026-10-07",
+    "notes": "Dobrostan obejmuje zdrowie, środowisko i potrzeby behawioralne oraz pozytywne doświadczenia; nie tylko brak objawów."
+  },
+  {
+    "id": "dog_src_horowitz_guilty_2009",
+    "title": "Disambiguating the 'guilty look': salient prompts to a familiar dog behaviour",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/19520245/",
+    "publisher": "Alexandra Horowitz; Behavioural Processes / Elsevier",
+    "year": 2009,
+    "kind": "study",
+    "species": [
+      "dog"
+    ],
+    "evidence_level": "primary_study",
+    "license_status": "unverified — publiczny dostęp nie potwierdza praw do redystrybucji; zapisano wyłącznie metadane i własne streszczenia",
+    "reviewed_at": "2026-10-07",
+    "notes": "Eksperyment 14 psów; wygląd przypisywany winie zależał od sygnałów człowieka. Nie rozstrzyga wszystkich zdolności emocjonalnych. DOI 10.1016/j.beproc.2009.03.014."
+  },
+  {
+    "id": "dog_src_duranton_nosework_2019",
+    "title": "Let me sniff! Nosework induces positive judgment bias in pet dogs",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0168159118304325",
+    "publisher": "Duranton & Horowitz; Applied Animal Behaviour Science / Elsevier",
+    "year": 2019,
+    "kind": "study",
+    "species": [
+      "dog"
+    ],
+    "evidence_level": "primary_study",
+    "license_status": "unverified — publiczny dostęp nie potwierdza praw do redystrybucji; zapisano wyłącznie metadane i własne streszczenia",
+    "reviewed_at": "2026-10-07",
+    "notes": "Interwencja węchowa i zadanie osądu niejednoznacznego bodźca; pośredni wskaźnik stanu afektywnego. DOI 10.1016/j.applanim.2018.12.009."
+  }
+]

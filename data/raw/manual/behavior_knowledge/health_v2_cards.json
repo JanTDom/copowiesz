@@ -1,0 +1,2505 @@
+[
+  {
+    "id": "health_v2_cat_open_mouth",
+    "species": [
+      "cat"
+    ],
+    "domain": "health",
+    "topic": "oddech",
+    "title": "Kot oddycha przez otwarty pysk w spoczynku",
+    "observation": "Otwarty pysk, praca brzucha i wyciąganie szyi podczas oddychania.",
+    "possible_interpretations": [
+      "Astma lub inna choroba dróg oddechowych.",
+      "Niewydolność serca lub płyn w klatce piersiowej."
+    ],
+    "confounders": [
+      "Światło, perspektywa i relacja opiekuna mogą zniekształcać obraz."
+    ],
+    "safe_next_steps": [
+      "Natychmiast skontaktuj się z dyżurną lecznicą; nie opóźniaj pomocy nagrywaniem."
+    ],
+    "escalation": "urgent_veterinarian",
+    "evidence_level": "clinical_reference",
+    "source_ids": [
+      "health_src_v2_dyspnea"
+    ],
+    "limitations": "Sygnał nieswoisty. Rozpoznanie wymaga badania; film nie wyklucza choroby.",
+    "tags": [
+      "oddech",
+      "oddycha",
+      "duszność",
+      "pysk",
+      "otwarty",
+      "oddychanie",
+      "zipie"
+    ],
+    "not_diagnostic": true,
+    "review_status": "editorial_screened_expert_pending",
+    "owner_questions": [
+      "Od kiedy?",
+      "Co zmieniło się względem normy tego zwierzęcia?"
+    ],
+    "claims": [
+      {
+        "id": "cat_open_mouth_finding",
+        "text": "Cornell opisuje duszność jako pilny objaw wielu chorób, nie rozpoznanie.",
+        "basis": "source_finding",
+        "source_ids": [
+          "health_src_v2_dyspnea"
+        ],
+        "locator": "Opis objawów i przyczyn duszności",
+        "uncertainty": "Powiązanie opisane w źródle nie rozpoznaje indywidualnego przypadku."
+      },
+      {
+        "id": "cat_open_mouth_project",
+        "text": "Zastosowanie projektu: Natychmiast skontaktuj się z dyżurną lecznicą; nie opóźniaj pomocy nagrywaniem.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "health_src_v2_dyspnea"
+        ],
+        "locator": "Autorski krok oparty na kontekście źródła; wymaga przeglądu klinicznego",
+        "uncertainty": "Pilność karty nie jest automatycznym triage ani sprawdzonym algorytmem."
+      }
+    ],
+    "interpretations_status": "Przykłady do różnicowania przez lekarza, bez rankingu i prawdopodobieństw."
+  },
+  {
+    "id": "health_v2_cyanosis",
+    "species": [
+      "dog",
+      "cat"
+    ],
+    "domain": "health",
+    "topic": "oddech",
+    "title": "Sinawy język lub dziąsła i trudny oddech",
+    "observation": "Widać sinawy/szary kolor śluzówek z wysiłkiem oddechowym.",
+    "possible_interpretations": [
+      "Niedotlenienie przy chorobie oddechowej.",
+      "Zaburzenia krążenia wymagające oceny."
+    ],
+    "confounders": [
+      "Światło, perspektywa i relacja opiekuna mogą zniekształcać obraz."
+    ],
+    "safe_next_steps": [
+      "Natychmiast skontaktuj się z dyżurną lecznicą; nie opóźniaj pomocy nagrywaniem."
+    ],
+    "escalation": "urgent_veterinarian",
+    "evidence_level": "clinical_reference",
+    "source_ids": [
+      "health_src_v2_resp"
+    ],
+    "limitations": "Sygnał nieswoisty. Rozpoznanie wymaga badania; film nie wyklucza choroby.",
+    "tags": [
+      "sinica",
+      "sinawy",
+      "język",
+      "dziąsła",
+      "duszność"
+    ],
+    "not_diagnostic": true,
+    "review_status": "editorial_screened_expert_pending",
+    "owner_questions": [
+      "Od kiedy?",
+      "Co zmieniło się względem normy tego zwierzęcia?"
+    ],
+    "claims": [
+      {
+        "id": "cyanosis_finding",
+        "text": "Oddech przez otwarty pysk i sinica są opisanymi oznakami ciężkich trudności oddechowych.",
+        "basis": "source_finding",
+        "source_ids": [
+          "health_src_v2_resp"
+        ],
+        "locator": "Clinical signs",
+        "uncertainty": "Powiązanie opisane w źródle nie rozpoznaje indywidualnego przypadku."
+      },
+      {
+        "id": "cyanosis_project",
+        "text": "Zastosowanie projektu: Natychmiast skontaktuj się z dyżurną lecznicą; nie opóźniaj pomocy nagrywaniem.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "health_src_v2_resp"
+        ],
+        "locator": "Autorski krok oparty na kontekście źródła; wymaga przeglądu klinicznego",
+        "uncertainty": "Pilność karty nie jest automatycznym triage ani sprawdzonym algorytmem."
+      }
+    ],
+    "interpretations_status": "Przykłady do różnicowania przez lekarza, bez rankingu i prawdopodobieństw."
+  },
+  {
+    "id": "health_v2_collapse",
+    "species": [
+      "dog",
+      "cat"
+    ],
+    "domain": "health",
+    "topic": "krążenie",
+    "title": "Nagłe zasłabnięcie i słaba reakcja",
+    "observation": "Zwierzę upada, ma trudność z wstaniem lub słabo reaguje.",
+    "possible_interpretations": [
+      "Wstrząs lub niewydolność krążenia.",
+      "Problem neurologiczny albo metaboliczny."
+    ],
+    "confounders": [
+      "Światło, perspektywa i relacja opiekuna mogą zniekształcać obraz."
+    ],
+    "safe_next_steps": [
+      "Natychmiast skontaktuj się z dyżurną lecznicą; nie opóźniaj pomocy nagrywaniem."
+    ],
+    "escalation": "urgent_veterinarian",
+    "evidence_level": "clinical_reference",
+    "source_ids": [
+      "health_src_v2_triage"
+    ],
+    "limitations": "Sygnał nieswoisty. Rozpoznanie wymaga badania; film nie wyklucza choroby.",
+    "tags": [
+      "upada",
+      "omdlenie",
+      "zasłabnięcie",
+      "słabość",
+      "nieprzytomny"
+    ],
+    "not_diagnostic": true,
+    "review_status": "editorial_screened_expert_pending",
+    "owner_questions": [
+      "Od kiedy?",
+      "Co zmieniło się względem normy tego zwierzęcia?"
+    ],
+    "claims": [
+      {
+        "id": "collapse_finding",
+        "text": "Ocena ratunkowa obejmuje świadomość, śluzówki, krążenie i oddech.",
+        "basis": "source_finding",
+        "source_ids": [
+          "health_src_v2_triage"
+        ],
+        "locator": "Ocena pacjenta ratunkowego",
+        "uncertainty": "Powiązanie opisane w źródle nie rozpoznaje indywidualnego przypadku."
+      },
+      {
+        "id": "collapse_project",
+        "text": "Zastosowanie projektu: Natychmiast skontaktuj się z dyżurną lecznicą; nie opóźniaj pomocy nagrywaniem.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "health_src_v2_triage"
+        ],
+        "locator": "Autorski krok oparty na kontekście źródła; wymaga przeglądu klinicznego",
+        "uncertainty": "Pilność karty nie jest automatycznym triage ani sprawdzonym algorytmem."
+      }
+    ],
+    "interpretations_status": "Przykłady do różnicowania przez lekarza, bez rankingu i prawdopodobieństw."
+  },
+  {
+    "id": "health_v2_pale_cat",
+    "species": [
+      "cat"
+    ],
+    "domain": "health",
+    "topic": "śluzówki",
+    "title": "Bardzo blade dziąsła i osłabienie kota",
+    "observation": "Opiekun zauważa jaśniejsze śluzówki oraz mniejszą energię.",
+    "possible_interpretations": [
+      "Niedokrwistość z utraty lub rozpadu krwinek.",
+      "Zmniejszone wytwarzanie krwinek, np. przy chorobie nerek."
+    ],
+    "confounders": [
+      "Światło, perspektywa i relacja opiekuna mogą zniekształcać obraz."
+    ],
+    "safe_next_steps": [
+      "Natychmiast skontaktuj się z dyżurną lecznicą; nie opóźniaj pomocy nagrywaniem."
+    ],
+    "escalation": "urgent_veterinarian",
+    "evidence_level": "clinical_reference",
+    "source_ids": [
+      "health_src_v2_anemia"
+    ],
+    "limitations": "Sygnał nieswoisty. Rozpoznanie wymaga badania; film nie wyklucza choroby.",
+    "tags": [
+      "bladość",
+      "blade",
+      "dziąsła",
+      "anemia",
+      "osłabienie"
+    ],
+    "not_diagnostic": true,
+    "review_status": "editorial_screened_expert_pending",
+    "owner_questions": [
+      "Od kiedy?",
+      "Co zmieniło się względem normy tego zwierzęcia?"
+    ],
+    "claims": [
+      {
+        "id": "pale_cat_finding",
+        "text": "Cornell opisuje bladość i letarg przy niedokrwistości; potwierdzenie wymaga krwi.",
+        "basis": "source_finding",
+        "source_ids": [
+          "health_src_v2_anemia"
+        ],
+        "locator": "Clinical Signs / Causes / Diagnosis",
+        "uncertainty": "Powiązanie opisane w źródle nie rozpoznaje indywidualnego przypadku."
+      },
+      {
+        "id": "pale_cat_project",
+        "text": "Zastosowanie projektu: Natychmiast skontaktuj się z dyżurną lecznicą; nie opóźniaj pomocy nagrywaniem.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "health_src_v2_anemia"
+        ],
+        "locator": "Autorski krok oparty na kontekście źródła; wymaga przeglądu klinicznego",
+        "uncertainty": "Pilność karty nie jest automatycznym triage ani sprawdzonym algorytmem."
+      }
+    ],
+    "interpretations_status": "Przykłady do różnicowania przez lekarza, bez rankingu i prawdopodobieństw."
+  },
+  {
+    "id": "health_v2_jaundice",
+    "species": [
+      "dog",
+      "cat"
+    ],
+    "domain": "health",
+    "topic": "śluzówki",
+    "title": "Żółtawe dziąsła lub białka oczu",
+    "observation": "Zażółcenie widocznych śluzówek albo tkanek oka.",
+    "possible_interpretations": [
+      "Choroba wątroby lub utrudniony odpływ żółci.",
+      "Rozpad krwinek czerwonych."
+    ],
+    "confounders": [
+      "Światło, perspektywa i relacja opiekuna mogą zniekształcać obraz."
+    ],
+    "safe_next_steps": [
+      "Skontaktuj się z lekarzem tego samego dnia; osłabienie lub duszność wymagają pomocy natychmiast."
+    ],
+    "escalation": "veterinarian",
+    "evidence_level": "clinical_reference",
+    "source_ids": [
+      "health_src_v2_jaundice"
+    ],
+    "limitations": "Sygnał nieswoisty. Rozpoznanie wymaga badania; film nie wyklucza choroby.",
+    "tags": [
+      "żółtaczka",
+      "żółty",
+      "oczy",
+      "dziąsła"
+    ],
+    "not_diagnostic": true,
+    "review_status": "editorial_screened_expert_pending",
+    "owner_questions": [
+      "Od kiedy?",
+      "Co zmieniło się względem normy tego zwierzęcia?"
+    ],
+    "claims": [
+      {
+        "id": "jaundice_finding",
+        "text": "Żółtaczka może mieć przyczynę przedwątrobową, wątrobową lub pozawątrobową.",
+        "basis": "source_finding",
+        "source_ids": [
+          "health_src_v2_jaundice"
+        ],
+        "locator": "Jaundice in Small Animals",
+        "uncertainty": "Powiązanie opisane w źródle nie rozpoznaje indywidualnego przypadku."
+      },
+      {
+        "id": "jaundice_project",
+        "text": "Zastosowanie projektu: Skontaktuj się z lekarzem tego samego dnia; osłabienie lub duszność wymagają pomocy natychmiast.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "health_src_v2_jaundice"
+        ],
+        "locator": "Autorski krok oparty na kontekście źródła; wymaga przeglądu klinicznego",
+        "uncertainty": "Pilność karty nie jest automatycznym triage ani sprawdzonym algorytmem."
+      }
+    ],
+    "interpretations_status": "Przykłady do różnicowania przez lekarza, bez rankingu i prawdopodobieństw."
+  },
+  {
+    "id": "health_v2_thirst_weight",
+    "species": [
+      "dog",
+      "cat"
+    ],
+    "domain": "health",
+    "topic": "pragnienie",
+    "title": "Więcej pije i oddaje mocz, jednocześnie chudnie",
+    "observation": "Rosną relacjonowane picie i ilość moczu; masa ciała spada.",
+    "possible_interpretations": [
+      "Cukrzyca.",
+      "Choroba nerek lub inne zaburzenie hormonalne."
+    ],
+    "confounders": [
+      "Światło, perspektywa i relacja opiekuna mogą zniekształcać obraz."
+    ],
+    "safe_next_steps": [
+      "Umów ocenę weterynaryjną; zanotuj początek i przebieg zmiany."
+    ],
+    "escalation": "veterinarian",
+    "evidence_level": "clinical_reference",
+    "source_ids": [
+      "health_src_v2_diabetes",
+      "health_src_v2_renal"
+    ],
+    "limitations": "Sygnał nieswoisty. Rozpoznanie wymaga badania; film nie wyklucza choroby.",
+    "tags": [
+      "pragnienie",
+      "pije",
+      "mocz",
+      "sika",
+      "chudnie",
+      "cukrzyca"
+    ],
+    "not_diagnostic": true,
+    "review_status": "editorial_screened_expert_pending",
+    "owner_questions": [
+      "Ile pije i czy pomiar obejmuje kilka zwierząt?",
+      "Jaka jest zmierzona masa i apetyt?"
+    ],
+    "claims": [
+      {
+        "id": "thirst_weight_finding",
+        "text": "Wielomocz, pragnienie i chudnięcie należą do opisanych objawów cukrzycy.",
+        "basis": "source_finding",
+        "source_ids": [
+          "health_src_v2_diabetes",
+          "health_src_v2_renal"
+        ],
+        "locator": "Clinical findings",
+        "uncertainty": "Powiązanie opisane w źródle nie rozpoznaje indywidualnego przypadku."
+      },
+      {
+        "id": "thirst_weight_project",
+        "text": "Zastosowanie projektu: Umów ocenę weterynaryjną; zanotuj początek i przebieg zmiany.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "health_src_v2_diabetes",
+          "health_src_v2_renal"
+        ],
+        "locator": "Autorski krok oparty na kontekście źródła; wymaga przeglądu klinicznego",
+        "uncertainty": "Pilność karty nie jest automatycznym triage ani sprawdzonym algorytmem."
+      }
+    ],
+    "interpretations_status": "Przykłady do różnicowania przez lekarza, bez rankingu i prawdopodobieństw."
+  },
+  {
+    "id": "health_v2_cat_plantigrade",
+    "species": [
+      "cat"
+    ],
+    "domain": "health",
+    "topic": "chód",
+    "title": "Kot zaczyna chodzić na obniżonych stawach skokowych",
+    "observation": "Tylne stopy przylegają do podłoża inaczej niż zwykle.",
+    "possible_interpretations": [
+      "Neuropatia związana z cukrzycą.",
+      "Inne zaburzenie nerwowo-mięśniowe lub ortopedyczne."
+    ],
+    "confounders": [
+      "Światło, perspektywa i relacja opiekuna mogą zniekształcać obraz."
+    ],
+    "safe_next_steps": [
+      "Umów ocenę weterynaryjną; zanotuj początek i przebieg zmiany."
+    ],
+    "escalation": "veterinarian",
+    "evidence_level": "clinical_reference",
+    "source_ids": [
+      "health_src_v2_diabetes"
+    ],
+    "limitations": "Postawa nie potwierdza cukrzycy. Nagły niedowład wymaga pomocy ratunkowej.",
+    "tags": [
+      "stopochodność",
+      "skoki",
+      "tylne",
+      "łapy",
+      "chód"
+    ],
+    "not_diagnostic": true,
+    "review_status": "editorial_screened_expert_pending",
+    "owner_questions": [
+      "Od kiedy?",
+      "Co zmieniło się względem normy tego zwierzęcia?"
+    ],
+    "claims": [
+      {
+        "id": "cat_plantigrade_finding",
+        "text": "Neuropatia cukrzycowa kota może powodować postawę stopochodną.",
+        "basis": "source_finding",
+        "source_ids": [
+          "health_src_v2_diabetes"
+        ],
+        "locator": "Diabetic neuropathy",
+        "uncertainty": "Powiązanie opisane w źródle nie rozpoznaje indywidualnego przypadku."
+      },
+      {
+        "id": "cat_plantigrade_project",
+        "text": "Zastosowanie projektu: Umów ocenę weterynaryjną; zanotuj początek i przebieg zmiany.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "health_src_v2_diabetes"
+        ],
+        "locator": "Autorski krok oparty na kontekście źródła; wymaga przeglądu klinicznego",
+        "uncertainty": "Pilność karty nie jest automatycznym triage ani sprawdzonym algorytmem."
+      }
+    ],
+    "interpretations_status": "Przykłady do różnicowania przez lekarza, bez rankingu i prawdopodobieństw."
+  },
+  {
+    "id": "health_v2_renal_change",
+    "species": [
+      "dog",
+      "cat"
+    ],
+    "domain": "health",
+    "topic": "mocz",
+    "title": "Zmiana ilości moczu z wymiotami i apatią",
+    "observation": "Moczu jest zauważalnie mniej/więcej; zwierzę nie je i słabnie.",
+    "possible_interpretations": [
+      "Ostre lub przewlekłe zaburzenie nerek.",
+      "Zaburzenie odpływu moczu lub choroba ogólna."
+    ],
+    "confounders": [
+      "Światło, perspektywa i relacja opiekuna mogą zniekształcać obraz."
+    ],
+    "safe_next_steps": [
+      "Natychmiast skontaktuj się z dyżurną lecznicą; nie opóźniaj pomocy nagrywaniem."
+    ],
+    "escalation": "urgent_veterinarian",
+    "evidence_level": "clinical_reference",
+    "source_ids": [
+      "health_src_v2_renal",
+      "health_src_v2_urolith"
+    ],
+    "limitations": "Sygnał nieswoisty. Rozpoznanie wymaga badania; film nie wyklucza choroby.",
+    "tags": [
+      "nerki",
+      "mocz",
+      "apatia",
+      "wymioty",
+      "nie sika"
+    ],
+    "not_diagnostic": true,
+    "review_status": "editorial_screened_expert_pending",
+    "owner_questions": [
+      "Od kiedy?",
+      "Co zmieniło się względem normy tego zwierzęcia?"
+    ],
+    "claims": [
+      {
+        "id": "renal_change_finding",
+        "text": "Zaburzeniom nerek mogą towarzyszyć nieprawidłowe oddawanie moczu i objawy ogólne.",
+        "basis": "source_finding",
+        "source_ids": [
+          "health_src_v2_renal",
+          "health_src_v2_urolith"
+        ],
+        "locator": "Renal dysfunction / Clinical findings",
+        "uncertainty": "Powiązanie opisane w źródle nie rozpoznaje indywidualnego przypadku."
+      },
+      {
+        "id": "renal_change_project",
+        "text": "Zastosowanie projektu: Natychmiast skontaktuj się z dyżurną lecznicą; nie opóźniaj pomocy nagrywaniem.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "health_src_v2_renal",
+          "health_src_v2_urolith"
+        ],
+        "locator": "Autorski krok oparty na kontekście źródła; wymaga przeglądu klinicznego",
+        "uncertainty": "Pilność karty nie jest automatycznym triage ani sprawdzonym algorytmem."
+      }
+    ],
+    "interpretations_status": "Przykłady do różnicowania przez lekarza, bez rankingu i prawdopodobieństw."
+  },
+  {
+    "id": "health_v2_dog_thyroid",
+    "species": [
+      "dog"
+    ],
+    "domain": "health",
+    "topic": "hormony",
+    "title": "Tyje, słabnie i zmienia się sierść psa",
+    "observation": "Przy podobnej racji pies tyje i jest mniej aktywny; okrywa się zmienia.",
+    "possible_interpretations": [
+      "Niedoczynność tarczycy jako jedna z możliwości.",
+      "Inna choroba, dieta lub zmiana aktywności."
+    ],
+    "confounders": [
+      "Światło, perspektywa i relacja opiekuna mogą zniekształcać obraz."
+    ],
+    "safe_next_steps": [
+      "Umów ocenę weterynaryjną; zanotuj początek i przebieg zmiany."
+    ],
+    "escalation": "veterinarian",
+    "evidence_level": "clinical_reference",
+    "source_ids": [
+      "health_src_v2_hypothyroid"
+    ],
+    "limitations": "Sygnał nieswoisty. Rozpoznanie wymaga badania; film nie wyklucza choroby.",
+    "tags": [
+      "tarczyca",
+      "tyje",
+      "sierść",
+      "ospały"
+    ],
+    "not_diagnostic": true,
+    "review_status": "editorial_screened_expert_pending",
+    "owner_questions": [
+      "Od kiedy?",
+      "Co zmieniło się względem normy tego zwierzęcia?"
+    ],
+    "claims": [
+      {
+        "id": "dog_thyroid_finding",
+        "text": "Objawy niedoczynności są nieswoiste; samo niskie T4 nie wystarcza.",
+        "basis": "source_finding",
+        "source_ids": [
+          "health_src_v2_hypothyroid"
+        ],
+        "locator": "Clinical Signs / Diagnosis",
+        "uncertainty": "Powiązanie opisane w źródle nie rozpoznaje indywidualnego przypadku."
+      },
+      {
+        "id": "dog_thyroid_project",
+        "text": "Zastosowanie projektu: Umów ocenę weterynaryjną; zanotuj początek i przebieg zmiany.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "health_src_v2_hypothyroid"
+        ],
+        "locator": "Autorski krok oparty na kontekście źródła; wymaga przeglądu klinicznego",
+        "uncertainty": "Pilność karty nie jest automatycznym triage ani sprawdzonym algorytmem."
+      }
+    ],
+    "interpretations_status": "Przykłady do różnicowania przez lekarza, bez rankingu i prawdopodobieństw."
+  },
+  {
+    "id": "health_v2_cat_thyroid",
+    "species": [
+      "cat"
+    ],
+    "domain": "health",
+    "topic": "hormony",
+    "title": "Kot chudnie mimo dobrego apetytu i częściej wokalizuje",
+    "observation": "Utrata masy, większa aktywność i miauczenie różnią się od normy kota.",
+    "possible_interpretations": [
+      "Nadczynność tarczycy.",
+      "Inna choroba powodująca chudnięcie lub pobudzenie."
+    ],
+    "confounders": [
+      "Światło, perspektywa i relacja opiekuna mogą zniekształcać obraz."
+    ],
+    "safe_next_steps": [
+      "Umów ocenę weterynaryjną; zanotuj początek i przebieg zmiany."
+    ],
+    "escalation": "veterinarian",
+    "evidence_level": "clinical_reference",
+    "source_ids": [
+      "health_src_v2_hyperthyroid"
+    ],
+    "limitations": "Sygnał nieswoisty. Rozpoznanie wymaga badania; film nie wyklucza choroby.",
+    "tags": [
+      "tarczyca",
+      "chudnie",
+      "miauczy",
+      "apetyt"
+    ],
+    "not_diagnostic": true,
+    "review_status": "editorial_screened_expert_pending",
+    "owner_questions": [
+      "Od kiedy?",
+      "Co zmieniło się względem normy tego zwierzęcia?"
+    ],
+    "claims": [
+      {
+        "id": "cat_thyroid_finding",
+        "text": "Nadczynność może łączyć chudnięcie, apetyt i wokalizację; konieczne są badania.",
+        "basis": "source_finding",
+        "source_ids": [
+          "health_src_v2_hyperthyroid"
+        ],
+        "locator": "Clinical Findings / Diagnosis",
+        "uncertainty": "Powiązanie opisane w źródle nie rozpoznaje indywidualnego przypadku."
+      },
+      {
+        "id": "cat_thyroid_project",
+        "text": "Zastosowanie projektu: Umów ocenę weterynaryjną; zanotuj początek i przebieg zmiany.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "health_src_v2_hyperthyroid"
+        ],
+        "locator": "Autorski krok oparty na kontekście źródła; wymaga przeglądu klinicznego",
+        "uncertainty": "Pilność karty nie jest automatycznym triage ani sprawdzonym algorytmem."
+      }
+    ],
+    "interpretations_status": "Przykłady do różnicowania przez lekarza, bez rankingu i prawdopodobieństw."
+  },
+  {
+    "id": "health_v2_dog_cushing",
+    "species": [
+      "dog"
+    ],
+    "domain": "health",
+    "topic": "hormony",
+    "title": "Większy brzuch, pragnienie i przerzedzenie sierści psa",
+    "observation": "Zmiana sylwetki, picia i sierści rozwija się stopniowo.",
+    "possible_interpretations": [
+      "Hiperkortyzolizm jako jedna z możliwości.",
+      "Inne zaburzenia metaboliczne lub następstwa leków."
+    ],
+    "confounders": [
+      "Światło, perspektywa i relacja opiekuna mogą zniekształcać obraz."
+    ],
+    "safe_next_steps": [
+      "Umów ocenę weterynaryjną; zanotuj początek i przebieg zmiany."
+    ],
+    "escalation": "veterinarian",
+    "evidence_level": "clinical_reference",
+    "source_ids": [
+      "health_src_v2_cushing"
+    ],
+    "limitations": "Sygnał nieswoisty. Rozpoznanie wymaga badania; film nie wyklucza choroby.",
+    "tags": [
+      "Cushing",
+      "brzuch",
+      "sierść",
+      "pije"
+    ],
+    "not_diagnostic": true,
+    "review_status": "editorial_screened_expert_pending",
+    "owner_questions": [
+      "Jakie leki otrzymuje?",
+      "Kiedy zmieniły się apetyt i picie?"
+    ],
+    "claims": [
+      {
+        "id": "dog_cushing_finding",
+        "text": "U psów z hiperkortyzolizmem opisano pragnienie, obwisły brzuch i zmiany skóry.",
+        "basis": "source_finding",
+        "source_ids": [
+          "health_src_v2_cushing"
+        ],
+        "locator": "Clinical findings",
+        "uncertainty": "Powiązanie opisane w źródle nie rozpoznaje indywidualnego przypadku."
+      },
+      {
+        "id": "dog_cushing_project",
+        "text": "Zastosowanie projektu: Umów ocenę weterynaryjną; zanotuj początek i przebieg zmiany.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "health_src_v2_cushing"
+        ],
+        "locator": "Autorski krok oparty na kontekście źródła; wymaga przeglądu klinicznego",
+        "uncertainty": "Pilność karty nie jest automatycznym triage ani sprawdzonym algorytmem."
+      }
+    ],
+    "interpretations_status": "Przykłady do różnicowania przez lekarza, bez rankingu i prawdopodobieństw."
+  },
+  {
+    "id": "health_v2_dog_gdv",
+    "species": [
+      "dog"
+    ],
+    "domain": "health",
+    "topic": "brzuch",
+    "title": "Pies bezskutecznie próbuje wymiotować i ma większy brzuch",
+    "observation": "Powtarzane puste odruchy wymiotne, ślinienie, niepokój i powiększenie brzucha.",
+    "possible_interpretations": [
+      "Rozszerzenie lub skręt żołądka.",
+      "Inna przyczyna ostrego problemu brzusznego."
+    ],
+    "confounders": [
+      "Światło, perspektywa i relacja opiekuna mogą zniekształcać obraz."
+    ],
+    "safe_next_steps": [
+      "Natychmiast skontaktuj się z dyżurną lecznicą; nie opóźniaj pomocy nagrywaniem."
+    ],
+    "escalation": "urgent_veterinarian",
+    "evidence_level": "clinical_reference",
+    "source_ids": [
+      "health_src_v2_gdv"
+    ],
+    "limitations": "Sygnał nieswoisty. Rozpoznanie wymaga badania; film nie wyklucza choroby.",
+    "tags": [
+      "skręt",
+      "żołądek",
+      "wymioty",
+      "puste",
+      "brzuch",
+      "rozdęty"
+    ],
+    "not_diagnostic": true,
+    "review_status": "editorial_screened_expert_pending",
+    "owner_questions": [
+      "Od kiedy?",
+      "Co zmieniło się względem normy tego zwierzęcia?"
+    ],
+    "claims": [
+      {
+        "id": "dog_gdv_finding",
+        "text": "GDV może powodować bezproduktywne odruchy i rozdęcie; potrzebna jest natychmiastowa pomoc.",
+        "basis": "source_finding",
+        "source_ids": [
+          "health_src_v2_gdv"
+        ],
+        "locator": "Clinical Findings / Diagnosis",
+        "uncertainty": "Powiązanie opisane w źródle nie rozpoznaje indywidualnego przypadku."
+      },
+      {
+        "id": "dog_gdv_project",
+        "text": "Zastosowanie projektu: Natychmiast skontaktuj się z dyżurną lecznicą; nie opóźniaj pomocy nagrywaniem.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "health_src_v2_gdv"
+        ],
+        "locator": "Autorski krok oparty na kontekście źródła; wymaga przeglądu klinicznego",
+        "uncertainty": "Pilność karty nie jest automatycznym triage ani sprawdzonym algorytmem."
+      }
+    ],
+    "interpretations_status": "Przykłady do różnicowania przez lekarza, bez rankingu i prawdopodobieństw."
+  },
+  {
+    "id": "health_v2_urine_block",
+    "species": [
+      "dog",
+      "cat"
+    ],
+    "domain": "health",
+    "topic": "mocz",
+    "title": "Próby oddania moczu bez widocznego strumienia",
+    "observation": "Wielokrotne parcie, brak lub skąpa ilość moczu i dyskomfort.",
+    "possible_interpretations": [
+      "Niedrożność cewki, m.in. związana z kamieniami.",
+      "Inny bolesny problem dróg moczowych."
+    ],
+    "confounders": [
+      "Światło, perspektywa i relacja opiekuna mogą zniekształcać obraz."
+    ],
+    "safe_next_steps": [
+      "Natychmiast skontaktuj się z dyżurną lecznicą; nie opóźniaj pomocy nagrywaniem."
+    ],
+    "escalation": "urgent_veterinarian",
+    "evidence_level": "clinical_reference",
+    "source_ids": [
+      "health_src_v2_urolith"
+    ],
+    "limitations": "Sygnał nieswoisty. Rozpoznanie wymaga badania; film nie wyklucza choroby.",
+    "tags": [
+      "mocz",
+      "sika",
+      "sikanie",
+      "wysikać",
+      "cewka",
+      "kuweta",
+      "parcie",
+      "nie może",
+      "siusiać",
+      "siusia"
+    ],
+    "not_diagnostic": true,
+    "review_status": "editorial_screened_expert_pending",
+    "owner_questions": [
+      "Od kiedy?",
+      "Co zmieniło się względem normy tego zwierzęcia?"
+    ],
+    "claims": [
+      {
+        "id": "urine_block_finding",
+        "text": "Niedrożność cewki jest stanem nagłym; parcie nie rozpoznaje przyczyny.",
+        "basis": "source_finding",
+        "source_ids": [
+          "health_src_v2_urolith"
+        ],
+        "locator": "Clinical Findings",
+        "uncertainty": "Powiązanie opisane w źródle nie rozpoznaje indywidualnego przypadku."
+      },
+      {
+        "id": "urine_block_project",
+        "text": "Zastosowanie projektu: Natychmiast skontaktuj się z dyżurną lecznicą; nie opóźniaj pomocy nagrywaniem.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "health_src_v2_urolith"
+        ],
+        "locator": "Autorski krok oparty na kontekście źródła; wymaga przeglądu klinicznego",
+        "uncertainty": "Pilność karty nie jest automatycznym triage ani sprawdzonym algorytmem."
+      }
+    ],
+    "interpretations_status": "Przykłady do różnicowania przez lekarza, bez rankingu i prawdopodobieństw."
+  },
+  {
+    "id": "health_v2_urine_blood",
+    "species": [
+      "dog",
+      "cat"
+    ],
+    "domain": "health",
+    "topic": "mocz",
+    "title": "Krew w moczu i częstsze bolesne oddawanie moczu",
+    "observation": "Mocz jest czerwonawy; oddawanie powtarza się z dyskomfortem.",
+    "possible_interpretations": [
+      "Kamienie lub zapalenie dróg moczowych.",
+      "Inna przyczyna krwiomoczu wymagająca badania."
+    ],
+    "confounders": [
+      "Światło, perspektywa i relacja opiekuna mogą zniekształcać obraz."
+    ],
+    "safe_next_steps": [
+      "Skontaktuj się z lekarzem tego samego dnia; brak moczu oznacza pomoc natychmiast."
+    ],
+    "escalation": "veterinarian",
+    "evidence_level": "clinical_reference",
+    "source_ids": [
+      "health_src_v2_urolith"
+    ],
+    "limitations": "Sygnał nieswoisty. Rozpoznanie wymaga badania; film nie wyklucza choroby.",
+    "tags": [
+      "krwiomocz",
+      "krew",
+      "mocz",
+      "sika"
+    ],
+    "not_diagnostic": true,
+    "review_status": "editorial_screened_expert_pending",
+    "owner_questions": [
+      "Od kiedy?",
+      "Co zmieniło się względem normy tego zwierzęcia?"
+    ],
+    "claims": [
+      {
+        "id": "urine_blood_finding",
+        "text": "Kamica może powodować krwiomocz i bolesne parcie; potrzebna jest diagnostyka.",
+        "basis": "source_finding",
+        "source_ids": [
+          "health_src_v2_urolith"
+        ],
+        "locator": "Clinical Findings / Diagnosis",
+        "uncertainty": "Powiązanie opisane w źródle nie rozpoznaje indywidualnego przypadku."
+      },
+      {
+        "id": "urine_blood_project",
+        "text": "Zastosowanie projektu: Skontaktuj się z lekarzem tego samego dnia; brak moczu oznacza pomoc natychmiast.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "health_src_v2_urolith"
+        ],
+        "locator": "Autorski krok oparty na kontekście źródła; wymaga przeglądu klinicznego",
+        "uncertainty": "Pilność karty nie jest automatycznym triage ani sprawdzonym algorytmem."
+      }
+    ],
+    "interpretations_status": "Przykłady do różnicowania przez lekarza, bez rankingu i prawdopodobieństw."
+  },
+  {
+    "id": "health_v2_dental",
+    "species": [
+      "dog",
+      "cat"
+    ],
+    "domain": "health",
+    "topic": "jama ustna",
+    "title": "Nieświeży oddech i zaczerwienione dziąsła",
+    "observation": "Zapach z pyska, widoczny osad lub krwawienie dziąseł.",
+    "possible_interpretations": [
+      "Choroba przyzębia.",
+      "Inna choroba jamy ustnej."
+    ],
+    "confounders": [
+      "Światło, perspektywa i relacja opiekuna mogą zniekształcać obraz."
+    ],
+    "safe_next_steps": [
+      "Umów ocenę weterynaryjną; zanotuj początek i przebieg zmiany."
+    ],
+    "escalation": "veterinarian",
+    "evidence_level": "clinical_reference",
+    "source_ids": [
+      "health_src_v2_dental"
+    ],
+    "limitations": "Sygnał nieswoisty. Rozpoznanie wymaga badania; film nie wyklucza choroby.",
+    "tags": [
+      "zęby",
+      "dziąsła",
+      "zapach",
+      "pysk",
+      "halitoza"
+    ],
+    "not_diagnostic": true,
+    "review_status": "editorial_screened_expert_pending",
+    "owner_questions": [
+      "Od kiedy?",
+      "Co zmieniło się względem normy tego zwierzęcia?"
+    ],
+    "claims": [
+      {
+        "id": "dental_finding",
+        "text": "Ocena przyzębia wymaga sondowania i obrazowania; wygląd korony nie pokazuje całej choroby.",
+        "basis": "source_finding",
+        "source_ids": [
+          "health_src_v2_dental"
+        ],
+        "locator": "Clinical Findings / Diagnosis",
+        "uncertainty": "Powiązanie opisane w źródle nie rozpoznaje indywidualnego przypadku."
+      },
+      {
+        "id": "dental_project",
+        "text": "Zastosowanie projektu: Umów ocenę weterynaryjną; zanotuj początek i przebieg zmiany.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "health_src_v2_dental"
+        ],
+        "locator": "Autorski krok oparty na kontekście źródła; wymaga przeglądu klinicznego",
+        "uncertainty": "Pilność karty nie jest automatycznym triage ani sprawdzonym algorytmem."
+      }
+    ],
+    "interpretations_status": "Przykłady do różnicowania przez lekarza, bez rankingu i prawdopodobieństw."
+  },
+  {
+    "id": "health_v2_ear",
+    "species": [
+      "dog",
+      "cat"
+    ],
+    "domain": "health",
+    "topic": "uszy",
+    "title": "Potrząsa głową i drapie ucho",
+    "observation": "Potrząsanie, pocieranie i widoczna wydzielina lub zaczerwienienie ucha.",
+    "possible_interpretations": [
+      "Zapalenie przewodu zewnętrznego; tło alergiczne, pasożytnicze lub zakaźne.",
+      "Ciało obce lub inna choroba ucha."
+    ],
+    "confounders": [
+      "Światło, perspektywa i relacja opiekuna mogą zniekształcać obraz."
+    ],
+    "safe_next_steps": [
+      "Umów ocenę weterynaryjną; zanotuj początek i przebieg zmiany."
+    ],
+    "escalation": "veterinarian",
+    "evidence_level": "clinical_reference",
+    "source_ids": [
+      "health_src_v2_ear"
+    ],
+    "limitations": "Sygnał nieswoisty. Rozpoznanie wymaga badania; film nie wyklucza choroby.",
+    "tags": [
+      "uszy",
+      "ucho",
+      "potrząsa",
+      "głowa",
+      "wydzielina"
+    ],
+    "not_diagnostic": true,
+    "review_status": "editorial_screened_expert_pending",
+    "owner_questions": [
+      "Od kiedy?",
+      "Co zmieniło się względem normy tego zwierzęcia?"
+    ],
+    "claims": [
+      {
+        "id": "ear_finding",
+        "text": "Rozpoznanie otitis externa wymaga otoskopii i oceny cytologicznej.",
+        "basis": "source_finding",
+        "source_ids": [
+          "health_src_v2_ear"
+        ],
+        "locator": "Clinical Findings / Diagnosis",
+        "uncertainty": "Powiązanie opisane w źródle nie rozpoznaje indywidualnego przypadku."
+      },
+      {
+        "id": "ear_project",
+        "text": "Zastosowanie projektu: Umów ocenę weterynaryjną; zanotuj początek i przebieg zmiany.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "health_src_v2_ear"
+        ],
+        "locator": "Autorski krok oparty na kontekście źródła; wymaga przeglądu klinicznego",
+        "uncertainty": "Pilność karty nie jest automatycznym triage ani sprawdzonym algorytmem."
+      }
+    ],
+    "interpretations_status": "Przykłady do różnicowania przez lekarza, bez rankingu i prawdopodobieństw."
+  },
+  {
+    "id": "health_v2_eye_pain",
+    "species": [
+      "dog",
+      "cat"
+    ],
+    "domain": "health",
+    "topic": "oczy",
+    "title": "Mruży czerwone lub nagle mętne oko",
+    "observation": "Mrużenie, zaczerwienienie i zmętnienie z pogorszeniem widzenia.",
+    "possible_interpretations": [
+      "Ostra jaskra.",
+      "Zapalenie błony naczyniowej lub inny bolesny problem oka."
+    ],
+    "confounders": [
+      "Światło, perspektywa i relacja opiekuna mogą zniekształcać obraz."
+    ],
+    "safe_next_steps": [
+      "Natychmiast skontaktuj się z dyżurną lecznicą; nie opóźniaj pomocy nagrywaniem."
+    ],
+    "escalation": "urgent_veterinarian",
+    "evidence_level": "clinical_reference",
+    "source_ids": [
+      "health_src_v2_glaucoma",
+      "health_src_v2_uvea"
+    ],
+    "limitations": "Sygnał nieswoisty. Rozpoznanie wymaga badania; film nie wyklucza choroby.",
+    "tags": [
+      "oko",
+      "oczy",
+      "mruży",
+      "czerwone",
+      "mętne",
+      "jaskra"
+    ],
+    "not_diagnostic": true,
+    "review_status": "editorial_screened_expert_pending",
+    "owner_questions": [
+      "Od kiedy?",
+      "Co zmieniło się względem normy tego zwierzęcia?"
+    ],
+    "claims": [
+      {
+        "id": "eye_pain_finding",
+        "text": "Ostra jaskra jest pilnym stanem okulistycznym i wymaga pomiaru ciśnienia.",
+        "basis": "source_finding",
+        "source_ids": [
+          "health_src_v2_glaucoma",
+          "health_src_v2_uvea"
+        ],
+        "locator": "Acute glaucoma / Diagnosis",
+        "uncertainty": "Powiązanie opisane w źródle nie rozpoznaje indywidualnego przypadku."
+      },
+      {
+        "id": "eye_pain_project",
+        "text": "Zastosowanie projektu: Natychmiast skontaktuj się z dyżurną lecznicą; nie opóźniaj pomocy nagrywaniem.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "health_src_v2_glaucoma",
+          "health_src_v2_uvea"
+        ],
+        "locator": "Autorski krok oparty na kontekście źródła; wymaga przeglądu klinicznego",
+        "uncertainty": "Pilność karty nie jest automatycznym triage ani sprawdzonym algorytmem."
+      }
+    ],
+    "interpretations_status": "Przykłady do różnicowania przez lekarza, bez rankingu i prawdopodobieństw."
+  },
+  {
+    "id": "health_v2_uvea",
+    "species": [
+      "dog",
+      "cat"
+    ],
+    "domain": "health",
+    "topic": "oczy",
+    "title": "Zmiana wyglądu wnętrza oka",
+    "observation": "Nowa zmiana w źrenicy lub strukturach oka z dyskomfortem.",
+    "possible_interpretations": [
+      "Zapalenie błony naczyniowej o różnych przyczynach.",
+      "Inna choroba oka wymagająca oceny."
+    ],
+    "confounders": [
+      "Światło, perspektywa i relacja opiekuna mogą zniekształcać obraz."
+    ],
+    "safe_next_steps": [
+      "Natychmiast skontaktuj się z dyżurną lecznicą; nie opóźniaj pomocy nagrywaniem."
+    ],
+    "escalation": "urgent_veterinarian",
+    "evidence_level": "clinical_reference",
+    "source_ids": [
+      "health_src_v2_uvea"
+    ],
+    "limitations": "Sygnał nieswoisty. Rozpoznanie wymaga badania; film nie wyklucza choroby.",
+    "tags": [
+      "źrenica",
+      "oko",
+      "zapalenie",
+      "oczy"
+    ],
+    "not_diagnostic": true,
+    "review_status": "editorial_screened_expert_pending",
+    "owner_questions": [
+      "Od kiedy?",
+      "Co zmieniło się względem normy tego zwierzęcia?"
+    ],
+    "claims": [
+      {
+        "id": "uvea_finding",
+        "text": "Zapalenie błony naczyniowej ma różne przyczyny i może prowadzić do powikłań.",
+        "basis": "source_finding",
+        "source_ids": [
+          "health_src_v2_uvea"
+        ],
+        "locator": "Uveitis",
+        "uncertainty": "Powiązanie opisane w źródle nie rozpoznaje indywidualnego przypadku."
+      },
+      {
+        "id": "uvea_project",
+        "text": "Zastosowanie projektu: Natychmiast skontaktuj się z dyżurną lecznicą; nie opóźniaj pomocy nagrywaniem.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "health_src_v2_uvea"
+        ],
+        "locator": "Autorski krok oparty na kontekście źródła; wymaga przeglądu klinicznego",
+        "uncertainty": "Pilność karty nie jest automatycznym triage ani sprawdzonym algorytmem."
+      }
+    ],
+    "interpretations_status": "Przykłady do różnicowania przez lekarza, bez rankingu i prawdopodobieństw."
+  },
+  {
+    "id": "health_v2_alopecia_dog",
+    "species": [
+      "dog"
+    ],
+    "domain": "health",
+    "topic": "skóra",
+    "title": "Nowe wyłysienia psa",
+    "observation": "Pojawiają się obszary bez włosów, z drapaniem lub bez.",
+    "possible_interpretations": [
+      "Problem skórny lub świąd.",
+      "Zaburzenie wzrostu włosa, np. hormonalne."
+    ],
+    "confounders": [
+      "Światło, perspektywa i relacja opiekuna mogą zniekształcać obraz."
+    ],
+    "safe_next_steps": [
+      "Umów ocenę weterynaryjną; zanotuj początek i przebieg zmiany."
+    ],
+    "escalation": "veterinarian",
+    "evidence_level": "clinical_reference",
+    "source_ids": [
+      "health_src_v2_alopecia"
+    ],
+    "limitations": "Sygnał nieswoisty. Rozpoznanie wymaga badania; film nie wyklucza choroby.",
+    "tags": [
+      "wyłysienie",
+      "sierść",
+      "włosy",
+      "łysieje"
+    ],
+    "not_diagnostic": true,
+    "review_status": "editorial_screened_expert_pending",
+    "owner_questions": [
+      "Od kiedy?",
+      "Co zmieniło się względem normy tego zwierzęcia?"
+    ],
+    "claims": [
+      {
+        "id": "alopecia_dog_finding",
+        "text": "Wyłysienie wymaga ustalenia przyczyny; przy drapaniu trzeba uwzględnić świąd.",
+        "basis": "source_finding",
+        "source_ids": [
+          "health_src_v2_alopecia"
+        ],
+        "locator": "Hair Loss / Diagnosis",
+        "uncertainty": "Powiązanie opisane w źródle nie rozpoznaje indywidualnego przypadku."
+      },
+      {
+        "id": "alopecia_dog_project",
+        "text": "Zastosowanie projektu: Umów ocenę weterynaryjną; zanotuj początek i przebieg zmiany.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "health_src_v2_alopecia"
+        ],
+        "locator": "Autorski krok oparty na kontekście źródła; wymaga przeglądu klinicznego",
+        "uncertainty": "Pilność karty nie jest automatycznym triage ani sprawdzonym algorytmem."
+      }
+    ],
+    "interpretations_status": "Przykłady do różnicowania przez lekarza, bez rankingu i prawdopodobieństw."
+  },
+  {
+    "id": "health_v2_itch",
+    "species": [
+      "dog",
+      "cat"
+    ],
+    "domain": "health",
+    "topic": "skóra",
+    "title": "Uporczywe lizanie, gryzienie lub drapanie skóry",
+    "observation": "Powtarzalne zachowanie wiąże się z uszkodzeniami lub przerzedzeniem sierści.",
+    "possible_interpretations": [
+      "Świąd przy pasożytach, alergii lub zakażeniu.",
+      "Inny problem skóry; przyczyna behawioralna wymaga oceny."
+    ],
+    "confounders": [
+      "Światło, perspektywa i relacja opiekuna mogą zniekształcać obraz."
+    ],
+    "safe_next_steps": [
+      "Umów ocenę weterynaryjną; zanotuj początek i przebieg zmiany."
+    ],
+    "escalation": "veterinarian",
+    "evidence_level": "clinical_reference",
+    "source_ids": [
+      "health_src_v2_skin"
+    ],
+    "limitations": "Sygnał nieswoisty. Rozpoznanie wymaga badania; film nie wyklucza choroby.",
+    "tags": [
+      "świąd",
+      "drapie",
+      "liże",
+      "skóra",
+      "wygryza"
+    ],
+    "not_diagnostic": true,
+    "review_status": "editorial_screened_expert_pending",
+    "owner_questions": [
+      "Od kiedy?",
+      "Co zmieniło się względem normy tego zwierzęcia?"
+    ],
+    "claims": [
+      {
+        "id": "itch_finding",
+        "text": "Lizanie może oznaczać świąd; podobne zmiany skóry wymagają wywiadu i badań.",
+        "basis": "source_finding",
+        "source_ids": [
+          "health_src_v2_skin"
+        ],
+        "locator": "History / Physical examination",
+        "uncertainty": "Powiązanie opisane w źródle nie rozpoznaje indywidualnego przypadku."
+      },
+      {
+        "id": "itch_project",
+        "text": "Zastosowanie projektu: Umów ocenę weterynaryjną; zanotuj początek i przebieg zmiany.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "health_src_v2_skin"
+        ],
+        "locator": "Autorski krok oparty na kontekście źródła; wymaga przeglądu klinicznego",
+        "uncertainty": "Pilność karty nie jest automatycznym triage ani sprawdzonym algorytmem."
+      }
+    ],
+    "interpretations_status": "Przykłady do różnicowania przez lekarza, bez rankingu i prawdopodobieństw."
+  },
+  {
+    "id": "health_v2_lameness",
+    "species": [
+      "dog",
+      "cat"
+    ],
+    "domain": "health",
+    "topic": "ruch",
+    "title": "Utyka i zmienia sposób obciążania łapy",
+    "observation": "Krótszy krok, odciążenie kończyny lub sztywność.",
+    "possible_interpretations": [
+      "Ból lub dysfunkcja układu ruchu.",
+      "Uraz albo choroba stawów/tkanek miękkich."
+    ],
+    "confounders": [
+      "Światło, perspektywa i relacja opiekuna mogą zniekształcać obraz."
+    ],
+    "safe_next_steps": [
+      "Ogranicz wymuszony wysiłek i umów ocenę; silny ból lub brak możliwości wstania wymaga pilnej pomocy."
+    ],
+    "escalation": "veterinarian",
+    "evidence_level": "clinical_reference",
+    "source_ids": [
+      "health_src_v2_lameness"
+    ],
+    "limitations": "Sygnał nieswoisty. Rozpoznanie wymaga badania; film nie wyklucza choroby.",
+    "tags": [
+      "kulawizna",
+      "utyka",
+      "łapa",
+      "chód",
+      "sztywność"
+    ],
+    "not_diagnostic": true,
+    "review_status": "editorial_screened_expert_pending",
+    "owner_questions": [
+      "Od kiedy?",
+      "Co zmieniło się względem normy tego zwierzęcia?"
+    ],
+    "claims": [
+      {
+        "id": "lameness_finding",
+        "text": "Kulawizna jest oznaką bólu lub dysfunkcji; ataksja wymaga oceny neurologicznej.",
+        "basis": "source_finding",
+        "source_ids": [
+          "health_src_v2_lameness"
+        ],
+        "locator": "Overview / Diagnosis",
+        "uncertainty": "Powiązanie opisane w źródle nie rozpoznaje indywidualnego przypadku."
+      },
+      {
+        "id": "lameness_project",
+        "text": "Zastosowanie projektu: Ogranicz wymuszony wysiłek i umów ocenę; silny ból lub brak możliwości wstania wymaga pilnej pomocy.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "health_src_v2_lameness"
+        ],
+        "locator": "Autorski krok oparty na kontekście źródła; wymaga przeglądu klinicznego",
+        "uncertainty": "Pilność karty nie jest automatycznym triage ani sprawdzonym algorytmem."
+      }
+    ],
+    "interpretations_status": "Przykłady do różnicowania przez lekarza, bez rankingu i prawdopodobieństw."
+  },
+  {
+    "id": "health_v2_ataxia",
+    "species": [
+      "dog",
+      "cat"
+    ],
+    "domain": "health",
+    "topic": "ruch",
+    "title": "Chwieje się lub traci równowagę",
+    "observation": "Niestabilny chód różni się od odciążania jednej kończyny.",
+    "possible_interpretations": [
+      "Zaburzenie neurologiczne.",
+      "Problem metaboliczny lub toksyczny wymagający oceny."
+    ],
+    "confounders": [
+      "Światło, perspektywa i relacja opiekuna mogą zniekształcać obraz."
+    ],
+    "safe_next_steps": [
+      "Natychmiast skontaktuj się z dyżurną lecznicą; nie opóźniaj pomocy nagrywaniem."
+    ],
+    "escalation": "urgent_veterinarian",
+    "evidence_level": "clinical_reference",
+    "source_ids": [
+      "health_src_v2_lameness",
+      "health_src_v2_triage"
+    ],
+    "limitations": "Sygnał nieswoisty. Rozpoznanie wymaga badania; film nie wyklucza choroby.",
+    "tags": [
+      "ataksja",
+      "chwieje",
+      "równowaga",
+      "zatacza"
+    ],
+    "not_diagnostic": true,
+    "review_status": "editorial_screened_expert_pending",
+    "owner_questions": [
+      "Od kiedy?",
+      "Co zmieniło się względem normy tego zwierzęcia?"
+    ],
+    "claims": [
+      {
+        "id": "ataxia_finding",
+        "text": "Ataksja przy nieprawidłowym chodzie wskazuje na potrzebę oceny neurologicznej.",
+        "basis": "source_finding",
+        "source_ids": [
+          "health_src_v2_lameness",
+          "health_src_v2_triage"
+        ],
+        "locator": "Overview of Lameness / emergency assessment",
+        "uncertainty": "Powiązanie opisane w źródle nie rozpoznaje indywidualnego przypadku."
+      },
+      {
+        "id": "ataxia_project",
+        "text": "Zastosowanie projektu: Natychmiast skontaktuj się z dyżurną lecznicą; nie opóźniaj pomocy nagrywaniem.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "health_src_v2_lameness",
+          "health_src_v2_triage"
+        ],
+        "locator": "Autorski krok oparty na kontekście źródła; wymaga przeglądu klinicznego",
+        "uncertainty": "Pilność karty nie jest automatycznym triage ani sprawdzonym algorytmem."
+      }
+    ],
+    "interpretations_status": "Przykłady do różnicowania przez lekarza, bez rankingu i prawdopodobieństw."
+  },
+  {
+    "id": "health_v2_fate",
+    "species": [
+      "cat"
+    ],
+    "domain": "health",
+    "topic": "ruch",
+    "title": "Nagły bolesny niedowład tylnych łap kota",
+    "observation": "Kot nagle wlecze tył ciała, wokalizuje lub nie może stanąć.",
+    "possible_interpretations": [
+      "Zator tętniczy jako ważna możliwość.",
+      "Inny ostry problem neurologiczny lub ortopedyczny."
+    ],
+    "confounders": [
+      "Światło, perspektywa i relacja opiekuna mogą zniekształcać obraz."
+    ],
+    "safe_next_steps": [
+      "Natychmiast skontaktuj się z dyżurną lecznicą; nie opóźniaj pomocy nagrywaniem."
+    ],
+    "escalation": "urgent_veterinarian",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "health_src_v2_fate"
+    ],
+    "limitations": "Mała seria kliniczna nie daje częstości ani rozpoznania z filmu.",
+    "tags": [
+      "niedowład",
+      "tylne",
+      "łapy",
+      "paraliż",
+      "zator"
+    ],
+    "not_diagnostic": true,
+    "review_status": "editorial_screened_expert_pending",
+    "owner_questions": [
+      "Od kiedy?",
+      "Co zmieniło się względem normy tego zwierzęcia?"
+    ],
+    "claims": [
+      {
+        "id": "fate_finding",
+        "text": "Seria 15 przypadków FATE opisywała nagły niedowład, ból i wokalizację.",
+        "basis": "source_finding",
+        "source_ids": [
+          "health_src_v2_fate"
+        ],
+        "locator": "Abstract: Methods / Results",
+        "uncertainty": "Powiązanie opisane w źródle nie rozpoznaje indywidualnego przypadku."
+      },
+      {
+        "id": "fate_project",
+        "text": "Zastosowanie projektu: Natychmiast skontaktuj się z dyżurną lecznicą; nie opóźniaj pomocy nagrywaniem.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "health_src_v2_fate"
+        ],
+        "locator": "Autorski krok oparty na kontekście źródła; wymaga przeglądu klinicznego",
+        "uncertainty": "Pilność karty nie jest automatycznym triage ani sprawdzonym algorytmem."
+      }
+    ],
+    "interpretations_status": "Przykłady do różnicowania przez lekarza, bez rankingu i prawdopodobieństw."
+  },
+  {
+    "id": "health_v2_dog_seizure",
+    "species": [
+      "dog"
+    ],
+    "domain": "health",
+    "topic": "neurologia",
+    "title": "Epizod drgawek lub nagłej utraty kontaktu u psa",
+    "observation": "Nagły epizod niekontrolowanych lub rytmicznych ruchów, upadku albo wyraźnego zaburzenia kontaktu.",
+    "possible_interpretations": [
+      "Napad padaczkowy o różnej przyczynie.",
+      "Omdlenie, zaburzenie ruchowe lub przedsionkowe."
+    ],
+    "confounders": [
+      "Światło, perspektywa i relacja opiekuna mogą zniekształcać obraz."
+    ],
+    "safe_next_steps": [
+      "Skontaktuj się pilnie z lekarzem, zabezpiecz otoczenie; nie wkładaj ręki do pyska."
+    ],
+    "escalation": "urgent_veterinarian",
+    "evidence_level": "guideline",
+    "source_ids": [
+      "health_src_v2_epilepsy"
+    ],
+    "limitations": "Sygnał nieswoisty. Rozpoznanie wymaga badania; film nie wyklucza choroby.",
+    "tags": [
+      "drgawki",
+      "napad",
+      "padaczka",
+      "omdlenie"
+    ],
+    "not_diagnostic": true,
+    "review_status": "editorial_screened_expert_pending",
+    "owner_questions": [
+      "Jak długo trwał epizod i czy się powtarzał?",
+      "Jak wyglądał początek i powrót do zwykłego zachowania?"
+    ],
+    "claims": [
+      {
+        "id": "dog_seizure_finding",
+        "text": "Konsensus odróżnia napady od epizodów o podobnym wyglądzie; potrzebny wywiad i badanie.",
+        "basis": "source_finding",
+        "source_ids": [
+          "health_src_v2_epilepsy"
+        ],
+        "locator": "Differential diagnosis of epileptic seizures",
+        "uncertainty": "Powiązanie opisane w źródle nie rozpoznaje indywidualnego przypadku."
+      },
+      {
+        "id": "dog_seizure_project",
+        "text": "Zastosowanie projektu: Skontaktuj się pilnie z lekarzem, zabezpiecz otoczenie; nie wkładaj ręki do pyska.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "health_src_v2_epilepsy"
+        ],
+        "locator": "Autorski krok oparty na kontekście źródła; wymaga przeglądu klinicznego",
+        "uncertainty": "Pilność karty nie jest automatycznym triage ani sprawdzonym algorytmem."
+      }
+    ],
+    "interpretations_status": "Przykłady do różnicowania przez lekarza, bez rankingu i prawdopodobieństw."
+  },
+  {
+    "id": "health_v2_heat",
+    "species": [
+      "dog",
+      "cat"
+    ],
+    "domain": "health",
+    "topic": "temperatura",
+    "title": "Dyszenie i osłabienie podczas upału lub wysiłku",
+    "observation": "Upał/wysiłek towarzyszy nieustępującemu dyszeniu i pogorszeniu reakcji.",
+    "possible_interpretations": [
+      "Choroba związana z przegrzaniem.",
+      "Inna przyczyna duszności lub osłabienia."
+    ],
+    "confounders": [
+      "Światło, perspektywa i relacja opiekuna mogą zniekształcać obraz."
+    ],
+    "safe_next_steps": [
+      "Przerwij wysiłek, rozpocznij bezpieczne chłodzenie chłodną bieżącą wodą i organizuj natychmiastowy transport. Telefon do lecznicy nie powinien opóźniać działania."
+    ],
+    "escalation": "urgent_veterinarian",
+    "evidence_level": "guideline",
+    "source_ids": [
+      "health_src_v2_recover"
+    ],
+    "limitations": "Sygnał nieswoisty. Rozpoznanie wymaga badania; film nie wyklucza choroby.",
+    "tags": [
+      "upał",
+      "przegrzanie",
+      "dyszy",
+      "udar"
+    ],
+    "not_diagnostic": true,
+    "review_status": "editorial_screened_expert_pending",
+    "owner_questions": [
+      "Od kiedy?",
+      "Co zmieniło się względem normy tego zwierzęcia?"
+    ],
+    "claims": [
+      {
+        "id": "heat_finding",
+        "text": "RECOVER opisuje przegrzanie jako stan potencjalnie śmiertelny; dane kota są skromniejsze.",
+        "basis": "source_finding",
+        "source_ids": [
+          "health_src_v2_recover"
+        ],
+        "locator": "Section 3.4 / Box 2",
+        "uncertainty": "Powiązanie opisane w źródle nie rozpoznaje indywidualnego przypadku."
+      },
+      {
+        "id": "heat_project",
+        "text": "Zastosowanie projektu: Przerwij wysiłek, rozpocznij bezpieczne chłodzenie chłodną bieżącą wodą i organizuj natychmiastowy transport. Telefon do lecznicy nie powinien opóźniać działania.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "health_src_v2_recover"
+        ],
+        "locator": "Autorski krok oparty na kontekście źródła; wymaga przeglądu klinicznego",
+        "uncertainty": "Pilność karty nie jest automatycznym triage ani sprawdzonym algorytmem."
+      }
+    ],
+    "interpretations_status": "Przykłady do różnicowania przez lekarza, bez rankingu i prawdopodobieństw."
+  },
+  {
+    "id": "health_v2_cat_no_food",
+    "species": [
+      "cat"
+    ],
+    "domain": "health",
+    "topic": "apetyt",
+    "title": "Kot przestaje jeść i chudnie",
+    "observation": "Rzeczywiście maleje ilość zjadanej karmy i masa.",
+    "possible_interpretations": [
+      "Choroba powodująca brak apetytu.",
+      "Stres środowiskowy; wtórne ryzyko stłuszczenia wątroby."
+    ],
+    "confounders": [
+      "Światło, perspektywa i relacja opiekuna mogą zniekształcać obraz."
+    ],
+    "safe_next_steps": [
+      "Szybko skontaktuj się z lekarzem; nie traktuj niejedzenia jako planu odchudzania."
+    ],
+    "escalation": "veterinarian",
+    "evidence_level": "clinical_reference",
+    "source_ids": [
+      "health_src_v2_lipid"
+    ],
+    "limitations": "Sygnał nieswoisty. Rozpoznanie wymaga badania; film nie wyklucza choroby.",
+    "tags": [
+      "nie je",
+      "apetyt",
+      "stłuszczenie",
+      "wątroba"
+    ],
+    "not_diagnostic": true,
+    "review_status": "editorial_screened_expert_pending",
+    "owner_questions": [
+      "Od kiedy?",
+      "Co zmieniło się względem normy tego zwierzęcia?"
+    ],
+    "claims": [
+      {
+        "id": "cat_no_food_finding",
+        "text": "Niejedzenie i mobilizacja tłuszczu mogą poprzedzać stłuszczenie wątroby kota.",
+        "basis": "source_finding",
+        "source_ids": [
+          "health_src_v2_lipid"
+        ],
+        "locator": "Etiology",
+        "uncertainty": "Powiązanie opisane w źródle nie rozpoznaje indywidualnego przypadku."
+      },
+      {
+        "id": "cat_no_food_project",
+        "text": "Zastosowanie projektu: Szybko skontaktuj się z lekarzem; nie traktuj niejedzenia jako planu odchudzania.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "health_src_v2_lipid"
+        ],
+        "locator": "Autorski krok oparty na kontekście źródła; wymaga przeglądu klinicznego",
+        "uncertainty": "Pilność karty nie jest automatycznym triage ani sprawdzonym algorytmem."
+      }
+    ],
+    "interpretations_status": "Przykłady do różnicowania przez lekarza, bez rankingu i prawdopodobieństw."
+  },
+  {
+    "id": "health_v2_dog_regurg",
+    "species": [
+      "dog"
+    ],
+    "domain": "health",
+    "topic": "przełykanie",
+    "title": "Pies ulewa jedzenie lub ma trudność z połykaniem",
+    "observation": "Pokarm wraca z pyska; obserwuj, czy było parcie brzuchem.",
+    "possible_interpretations": [
+      "Choroba przełyku.",
+      "Problem z połykaniem lub inna przyczyna zwracania."
+    ],
+    "confounders": [
+      "Światło, perspektywa i relacja opiekuna mogą zniekształcać obraz."
+    ],
+    "safe_next_steps": [
+      "Umów ocenę weterynaryjną; zanotuj początek i przebieg zmiany."
+    ],
+    "escalation": "veterinarian",
+    "evidence_level": "clinical_reference",
+    "source_ids": [
+      "health_src_v2_esoph_dog"
+    ],
+    "limitations": "Relacja może mylić regurgitację z wymiotami. Duszność wymaga pilnej pomocy.",
+    "tags": [
+      "ulewa",
+      "regurgitacja",
+      "przełyk",
+      "połykanie"
+    ],
+    "not_diagnostic": true,
+    "review_status": "editorial_screened_expert_pending",
+    "owner_questions": [
+      "Od kiedy?",
+      "Co zmieniło się względem normy tego zwierzęcia?"
+    ],
+    "claims": [
+      {
+        "id": "dog_regurg_finding",
+        "text": "Regurgitacja i trudność połykania mogą towarzyszyć chorobom przełyku.",
+        "basis": "source_finding",
+        "source_ids": [
+          "health_src_v2_esoph_dog"
+        ],
+        "locator": "Signs of esophageal disease",
+        "uncertainty": "Powiązanie opisane w źródle nie rozpoznaje indywidualnego przypadku."
+      },
+      {
+        "id": "dog_regurg_project",
+        "text": "Zastosowanie projektu: Umów ocenę weterynaryjną; zanotuj początek i przebieg zmiany.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "health_src_v2_esoph_dog"
+        ],
+        "locator": "Autorski krok oparty na kontekście źródła; wymaga przeglądu klinicznego",
+        "uncertainty": "Pilność karty nie jest automatycznym triage ani sprawdzonym algorytmem."
+      }
+    ],
+    "interpretations_status": "Przykłady do różnicowania przez lekarza, bez rankingu i prawdopodobieństw."
+  },
+  {
+    "id": "health_v2_cat_regurg",
+    "species": [
+      "cat"
+    ],
+    "domain": "health",
+    "topic": "przełykanie",
+    "title": "Kot zwraca jedzenie i wielokrotnie przełyka",
+    "observation": "Pokarm wraca; ślinienie lub powtarzane połykanie różnią się od normy.",
+    "possible_interpretations": [
+      "Zapalenie lub inna choroba przełyku.",
+      "Inna przyczyna trudności połykania."
+    ],
+    "confounders": [
+      "Światło, perspektywa i relacja opiekuna mogą zniekształcać obraz."
+    ],
+    "safe_next_steps": [
+      "Umów ocenę weterynaryjną; zanotuj początek i przebieg zmiany."
+    ],
+    "escalation": "veterinarian",
+    "evidence_level": "clinical_reference",
+    "source_ids": [
+      "health_src_v2_esoph_cat"
+    ],
+    "limitations": "Sygnał nieswoisty. Rozpoznanie wymaga badania; film nie wyklucza choroby.",
+    "tags": [
+      "ulewa",
+      "regurgitacja",
+      "przełyk",
+      "ślini",
+      "połyka"
+    ],
+    "not_diagnostic": true,
+    "review_status": "editorial_screened_expert_pending",
+    "owner_questions": [
+      "Od kiedy?",
+      "Co zmieniło się względem normy tego zwierzęcia?"
+    ],
+    "claims": [
+      {
+        "id": "cat_regurg_finding",
+        "text": "Przy chorobach przełyku kota opisano regurgitację, ślinienie i trudność połykania.",
+        "basis": "source_finding",
+        "source_ids": [
+          "health_src_v2_esoph_cat"
+        ],
+        "locator": "Signs of esophageal disease",
+        "uncertainty": "Powiązanie opisane w źródle nie rozpoznaje indywidualnego przypadku."
+      },
+      {
+        "id": "cat_regurg_project",
+        "text": "Zastosowanie projektu: Umów ocenę weterynaryjną; zanotuj początek i przebieg zmiany.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "health_src_v2_esoph_cat"
+        ],
+        "locator": "Autorski krok oparty na kontekście źródła; wymaga przeglądu klinicznego",
+        "uncertainty": "Pilność karty nie jest automatycznym triage ani sprawdzonym algorytmem."
+      }
+    ],
+    "interpretations_status": "Przykłady do różnicowania przez lekarza, bez rankingu i prawdopodobieństw."
+  },
+  {
+    "id": "health_v2_parasites_cat",
+    "species": [
+      "cat"
+    ],
+    "domain": "health",
+    "topic": "przewód pokarmowy",
+    "title": "Kot chudnie i ma luźny kał lub wymioty",
+    "observation": "Utrata masy i powtarzane objawy pokarmowe.",
+    "possible_interpretations": [
+      "Pasożyty przewodu pokarmowego.",
+      "Inna choroba jelit lub choroba ogólna."
+    ],
+    "confounders": [
+      "Światło, perspektywa i relacja opiekuna mogą zniekształcać obraz."
+    ],
+    "safe_next_steps": [
+      "Umów ocenę weterynaryjną; zanotuj początek i przebieg zmiany."
+    ],
+    "escalation": "veterinarian",
+    "evidence_level": "clinical_reference",
+    "source_ids": [
+      "health_src_v2_parasites_cat"
+    ],
+    "limitations": "Sygnał nieswoisty. Rozpoznanie wymaga badania; film nie wyklucza choroby.",
+    "tags": [
+      "pasożyty",
+      "robaki",
+      "chudnie",
+      "kał",
+      "biegunka"
+    ],
+    "not_diagnostic": true,
+    "review_status": "editorial_screened_expert_pending",
+    "owner_questions": [
+      "Od kiedy?",
+      "Co zmieniło się względem normy tego zwierzęcia?"
+    ],
+    "claims": [
+      {
+        "id": "parasites_cat_finding",
+        "text": "Pasożyty mogą powodować objawy pokarmowe, lecz zakażenie bywa bezobjawowe.",
+        "basis": "source_finding",
+        "source_ids": [
+          "health_src_v2_parasites_cat"
+        ],
+        "locator": "Gastrointestinal parasites",
+        "uncertainty": "Powiązanie opisane w źródle nie rozpoznaje indywidualnego przypadku."
+      },
+      {
+        "id": "parasites_cat_project",
+        "text": "Zastosowanie projektu: Umów ocenę weterynaryjną; zanotuj początek i przebieg zmiany.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "health_src_v2_parasites_cat"
+        ],
+        "locator": "Autorski krok oparty na kontekście źródła; wymaga przeglądu klinicznego",
+        "uncertainty": "Pilność karty nie jest automatycznym triage ani sprawdzonym algorytmem."
+      }
+    ],
+    "interpretations_status": "Przykłady do różnicowania przez lekarza, bez rankingu i prawdopodobieństw."
+  },
+  {
+    "id": "health_v2_parasites_dog",
+    "species": [
+      "dog"
+    ],
+    "domain": "health",
+    "topic": "przewód pokarmowy",
+    "title": "Pies chudnie i ma objawy pokarmowe",
+    "observation": "Masa spada; pojawiają się powtarzane objawy jelitowe.",
+    "possible_interpretations": [
+      "Pasożyty przewodu pokarmowego.",
+      "Inna przyczyna pokarmowa lub ogólna."
+    ],
+    "confounders": [
+      "Światło, perspektywa i relacja opiekuna mogą zniekształcać obraz."
+    ],
+    "safe_next_steps": [
+      "Umów ocenę weterynaryjną; zanotuj początek i przebieg zmiany."
+    ],
+    "escalation": "veterinarian",
+    "evidence_level": "clinical_reference",
+    "source_ids": [
+      "health_src_v2_parasites_dog"
+    ],
+    "limitations": "Sygnał nieswoisty. Rozpoznanie wymaga badania; film nie wyklucza choroby.",
+    "tags": [
+      "pasożyty",
+      "robaki",
+      "chudnie",
+      "biegunka"
+    ],
+    "not_diagnostic": true,
+    "review_status": "editorial_screened_expert_pending",
+    "owner_questions": [
+      "Od kiedy?",
+      "Co zmieniło się względem normy tego zwierzęcia?"
+    ],
+    "claims": [
+      {
+        "id": "parasites_dog_finding",
+        "text": "Objawy pasożytnicze różnią się między gatunkami pasożytów; potrzebna jest diagnostyka.",
+        "basis": "source_finding",
+        "source_ids": [
+          "health_src_v2_parasites_dog"
+        ],
+        "locator": "Gastrointestinal parasites",
+        "uncertainty": "Powiązanie opisane w źródle nie rozpoznaje indywidualnego przypadku."
+      },
+      {
+        "id": "parasites_dog_project",
+        "text": "Zastosowanie projektu: Umów ocenę weterynaryjną; zanotuj początek i przebieg zmiany.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "health_src_v2_parasites_dog"
+        ],
+        "locator": "Autorski krok oparty na kontekście źródła; wymaga przeglądu klinicznego",
+        "uncertainty": "Pilność karty nie jest automatycznym triage ani sprawdzonym algorytmem."
+      }
+    ],
+    "interpretations_status": "Przykłady do różnicowania przez lekarza, bez rankingu i prawdopodobieństw."
+  },
+  {
+    "id": "health_v2_vomiting",
+    "species": [
+      "dog",
+      "cat"
+    ],
+    "domain": "health",
+    "topic": "przewód pokarmowy",
+    "title": "Powtarzane wymioty",
+    "observation": "Treść wydalana jest z aktywnymi ruchami tułowia.",
+    "possible_interpretations": [
+      "Choroba przewodu pokarmowego.",
+      "Choroba pozajelitowa, np. nerek lub wątroby."
+    ],
+    "confounders": [
+      "Światło, perspektywa i relacja opiekuna mogą zniekształcać obraz."
+    ],
+    "safe_next_steps": [
+      "Skontaktuj się z lekarzem; krew, silny ból, osłabienie lub brak utrzymywania płynów wymaga pilnej pomocy."
+    ],
+    "escalation": "veterinarian",
+    "evidence_level": "clinical_reference",
+    "source_ids": [
+      "health_src_v2_gi"
+    ],
+    "limitations": "Sygnał nieswoisty. Rozpoznanie wymaga badania; film nie wyklucza choroby.",
+    "tags": [
+      "wymioty",
+      "wymiotuje",
+      "wymiotowanie"
+    ],
+    "not_diagnostic": true,
+    "review_status": "editorial_screened_expert_pending",
+    "owner_questions": [
+      "Od kiedy?",
+      "Co zmieniło się względem normy tego zwierzęcia?"
+    ],
+    "claims": [
+      {
+        "id": "vomiting_finding",
+        "text": "Wymioty mogą mieć przyczynę pokarmową i pozapokarmową.",
+        "basis": "source_finding",
+        "source_ids": [
+          "health_src_v2_gi"
+        ],
+        "locator": "Clinical Findings",
+        "uncertainty": "Powiązanie opisane w źródle nie rozpoznaje indywidualnego przypadku."
+      },
+      {
+        "id": "vomiting_project",
+        "text": "Zastosowanie projektu: Skontaktuj się z lekarzem; krew, silny ból, osłabienie lub brak utrzymywania płynów wymaga pilnej pomocy.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "health_src_v2_gi"
+        ],
+        "locator": "Autorski krok oparty na kontekście źródła; wymaga przeglądu klinicznego",
+        "uncertainty": "Pilność karty nie jest automatycznym triage ani sprawdzonym algorytmem."
+      }
+    ],
+    "interpretations_status": "Przykłady do różnicowania przez lekarza, bez rankingu i prawdopodobieństw."
+  },
+  {
+    "id": "health_v2_diarrhea",
+    "species": [
+      "dog",
+      "cat"
+    ],
+    "domain": "health",
+    "topic": "przewód pokarmowy",
+    "title": "Powtarzany luźny lub wodnisty kał",
+    "observation": "Zmieniają się konsystencja i liczba wypróżnień.",
+    "possible_interpretations": [
+      "Zaburzenie jelit o różnych mechanizmach.",
+      "Pasożyty, zakażenie lub inna przyczyna."
+    ],
+    "confounders": [
+      "Światło, perspektywa i relacja opiekuna mogą zniekształcać obraz."
+    ],
+    "safe_next_steps": [
+      "Umów ocenę; krew z osłabieniem, młody wiek lub nasilanie wymagają szybkiego kontaktu."
+    ],
+    "escalation": "veterinarian",
+    "evidence_level": "clinical_reference",
+    "source_ids": [
+      "health_src_v2_gi"
+    ],
+    "limitations": "Sygnał nieswoisty. Rozpoznanie wymaga badania; film nie wyklucza choroby.",
+    "tags": [
+      "biegunka",
+      "kał",
+      "stolec",
+      "wodnisty"
+    ],
+    "not_diagnostic": true,
+    "review_status": "editorial_screened_expert_pending",
+    "owner_questions": [
+      "Od kiedy?",
+      "Co zmieniło się względem normy tego zwierzęcia?"
+    ],
+    "claims": [
+      {
+        "id": "diarrhea_finding",
+        "text": "Biegunka ma wiele mechanizmów; jej wygląd sam nie ustala etiologii.",
+        "basis": "source_finding",
+        "source_ids": [
+          "health_src_v2_gi"
+        ],
+        "locator": "Pathophysiology / Clinical Findings",
+        "uncertainty": "Powiązanie opisane w źródle nie rozpoznaje indywidualnego przypadku."
+      },
+      {
+        "id": "diarrhea_project",
+        "text": "Zastosowanie projektu: Umów ocenę; krew z osłabieniem, młody wiek lub nasilanie wymagają szybkiego kontaktu.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "health_src_v2_gi"
+        ],
+        "locator": "Autorski krok oparty na kontekście źródła; wymaga przeglądu klinicznego",
+        "uncertainty": "Pilność karty nie jest automatycznym triage ani sprawdzonym algorytmem."
+      }
+    ],
+    "interpretations_status": "Przykłady do różnicowania przez lekarza, bez rankingu i prawdopodobieństw."
+  },
+  {
+    "id": "health_v2_gi_blood",
+    "species": [
+      "dog",
+      "cat"
+    ],
+    "domain": "health",
+    "topic": "przewód pokarmowy",
+    "title": "Smolisty kał lub krew w wymiotach",
+    "observation": "Kał staje się czarny/smolisty albo treść wymiotna zawiera krew.",
+    "possible_interpretations": [
+      "Krwawienie z przewodu pokarmowego.",
+      "Inna przyczyna zabarwienia, którą musi ocenić lekarz."
+    ],
+    "confounders": [
+      "Światło, perspektywa i relacja opiekuna mogą zniekształcać obraz."
+    ],
+    "safe_next_steps": [
+      "Natychmiast skontaktuj się z dyżurną lecznicą; nie opóźniaj pomocy nagrywaniem."
+    ],
+    "escalation": "urgent_veterinarian",
+    "evidence_level": "clinical_reference",
+    "source_ids": [
+      "health_src_v2_gi"
+    ],
+    "limitations": "Sygnał nieswoisty. Rozpoznanie wymaga badania; film nie wyklucza choroby.",
+    "tags": [
+      "smolisty",
+      "czarny",
+      "krew",
+      "kał",
+      "wymioty"
+    ],
+    "not_diagnostic": true,
+    "review_status": "editorial_screened_expert_pending",
+    "owner_questions": [
+      "Od kiedy?",
+      "Co zmieniło się względem normy tego zwierzęcia?"
+    ],
+    "claims": [
+      {
+        "id": "gi_blood_finding",
+        "text": "Wrzód lub zmiana krwawiąca mogą powodować krew albo treść jak fusy.",
+        "basis": "source_finding",
+        "source_ids": [
+          "health_src_v2_gi"
+        ],
+        "locator": "Clinical Findings",
+        "uncertainty": "Powiązanie opisane w źródle nie rozpoznaje indywidualnego przypadku."
+      },
+      {
+        "id": "gi_blood_project",
+        "text": "Zastosowanie projektu: Natychmiast skontaktuj się z dyżurną lecznicą; nie opóźniaj pomocy nagrywaniem.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "health_src_v2_gi"
+        ],
+        "locator": "Autorski krok oparty na kontekście źródła; wymaga przeglądu klinicznego",
+        "uncertainty": "Pilność karty nie jest automatycznym triage ani sprawdzonym algorytmem."
+      }
+    ],
+    "interpretations_status": "Przykłady do różnicowania przez lekarza, bez rankingu i prawdopodobieństw."
+  },
+  {
+    "id": "health_v2_cat_cough",
+    "species": [
+      "cat"
+    ],
+    "domain": "health",
+    "topic": "oddech",
+    "title": "Kot kaszle w niskiej pozycji z wyciągniętą szyją",
+    "observation": "Powtarzane kaszlnięcia/świsty; opiekun może uważać je za kłaczki.",
+    "possible_interpretations": [
+      "Astma.",
+      "Zapalenie oskrzeli, pasożyty płuc lub inna choroba oddechowa."
+    ],
+    "confounders": [
+      "Światło, perspektywa i relacja opiekuna mogą zniekształcać obraz."
+    ],
+    "safe_next_steps": [
+      "Umów ocenę; wysiłek oddechowy lub otwarty pysk w spoczynku wymagają natychmiastowej pomocy."
+    ],
+    "escalation": "veterinarian",
+    "evidence_level": "clinical_reference",
+    "source_ids": [
+      "health_src_v2_asthma"
+    ],
+    "limitations": "Sygnał nieswoisty. Rozpoznanie wymaga badania; film nie wyklucza choroby.",
+    "tags": [
+      "kaszel",
+      "kaszle",
+      "astma",
+      "szyja",
+      "kłaczki"
+    ],
+    "not_diagnostic": true,
+    "review_status": "editorial_screened_expert_pending",
+    "owner_questions": [
+      "Od kiedy?",
+      "Co zmieniło się względem normy tego zwierzęcia?"
+    ],
+    "claims": [
+      {
+        "id": "cat_cough_finding",
+        "text": "Cornell opisuje podobny kaszel przy astmie i innych chorobach.",
+        "basis": "source_finding",
+        "source_ids": [
+          "health_src_v2_asthma"
+        ],
+        "locator": "Clinical signs / differential diagnosis",
+        "uncertainty": "Powiązanie opisane w źródle nie rozpoznaje indywidualnego przypadku."
+      },
+      {
+        "id": "cat_cough_project",
+        "text": "Zastosowanie projektu: Umów ocenę; wysiłek oddechowy lub otwarty pysk w spoczynku wymagają natychmiastowej pomocy.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "health_src_v2_asthma"
+        ],
+        "locator": "Autorski krok oparty na kontekście źródła; wymaga przeglądu klinicznego",
+        "uncertainty": "Pilność karty nie jest automatycznym triage ani sprawdzonym algorytmem."
+      }
+    ],
+    "interpretations_status": "Przykłady do różnicowania przez lekarza, bez rankingu i prawdopodobieństw."
+  },
+  {
+    "id": "health_v2_lilies",
+    "species": [
+      "cat"
+    ],
+    "domain": "health",
+    "topic": "narażenie",
+    "title": "Kot miał kontakt z lilią, także bez objawów",
+    "observation": "Możliwe zjedzenie rośliny, pyłku lub wypicie wody z wazonu.",
+    "possible_interpretations": [
+      "Potencjalna ekspozycja toksyczna na Lilium/Hemerocallis.",
+      "Inny gatunek rośliny; identyfikacja nazwy potocznej może być błędna."
+    ],
+    "confounders": [
+      "Światło, perspektywa i relacja opiekuna mogą zniekształcać obraz."
+    ],
+    "safe_next_steps": [
+      "Dzwoń natychmiast do lecznicy, pokaż nazwę/zdjęcie rośliny; nie czekaj na objawy."
+    ],
+    "escalation": "urgent_veterinarian",
+    "evidence_level": "clinical_reference",
+    "source_ids": [
+      "health_src_v2_lilies"
+    ],
+    "limitations": "Sygnał nieswoisty. Rozpoznanie wymaga badania; film nie wyklucza choroby.",
+    "tags": [
+      "lilia",
+      "lilie",
+      "pyłek",
+      "wazon",
+      "zatrucie"
+    ],
+    "not_diagnostic": true,
+    "review_status": "editorial_screened_expert_pending",
+    "owner_questions": [
+      "Od kiedy?",
+      "Co zmieniło się względem normy tego zwierzęcia?"
+    ],
+    "claims": [
+      {
+        "id": "lilies_finding",
+        "text": "FDA zaleca natychmiastowy kontakt po podejrzeniu ekspozycji kota na toksyczne lilie.",
+        "basis": "source_finding",
+        "source_ids": [
+          "health_src_v2_lilies"
+        ],
+        "locator": "Advice after exposure",
+        "uncertainty": "Powiązanie opisane w źródle nie rozpoznaje indywidualnego przypadku."
+      },
+      {
+        "id": "lilies_project",
+        "text": "Zastosowanie projektu: Dzwoń natychmiast do lecznicy, pokaż nazwę/zdjęcie rośliny; nie czekaj na objawy.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "health_src_v2_lilies"
+        ],
+        "locator": "Autorski krok oparty na kontekście źródła; wymaga przeglądu klinicznego",
+        "uncertainty": "Pilność karty nie jest automatycznym triage ani sprawdzonym algorytmem."
+      }
+    ],
+    "interpretations_status": "Przykłady do różnicowania przez lekarza, bez rankingu i prawdopodobieństw."
+  },
+  {
+    "id": "health_v2_xylitol",
+    "species": [
+      "dog"
+    ],
+    "domain": "health",
+    "topic": "narażenie",
+    "title": "Pies mógł zjeść ksylitol",
+    "observation": "Dostęp do gumy, słodyczy lub innego produktu z ksylitolem.",
+    "possible_interpretations": [
+      "Narażenie na toksyczny dla psa ksylitol.",
+      "Inne składniki produktu też wymagają sprawdzenia."
+    ],
+    "confounders": [
+      "Światło, perspektywa i relacja opiekuna mogą zniekształcać obraz."
+    ],
+    "safe_next_steps": [
+      "Dzwoń od razu do lecznicy, zachowaj opakowanie; nie czekaj na osłabienie."
+    ],
+    "escalation": "urgent_veterinarian",
+    "evidence_level": "clinical_reference",
+    "source_ids": [
+      "health_src_v2_xylitol"
+    ],
+    "limitations": "Sygnał nieswoisty. Rozpoznanie wymaga badania; film nie wyklucza choroby.",
+    "tags": [
+      "ksylitol",
+      "guma",
+      "zatrucie"
+    ],
+    "not_diagnostic": true,
+    "review_status": "editorial_screened_expert_pending",
+    "owner_questions": [
+      "Od kiedy?",
+      "Co zmieniło się względem normy tego zwierzęcia?"
+    ],
+    "claims": [
+      {
+        "id": "xylitol_finding",
+        "text": "FDA opisuje wymioty, osłabienie, niezborność i drgawki po ksylitolu.",
+        "basis": "source_finding",
+        "source_ids": [
+          "health_src_v2_xylitol"
+        ],
+        "locator": "Symptoms / action after suspected exposure",
+        "uncertainty": "Powiązanie opisane w źródle nie rozpoznaje indywidualnego przypadku."
+      },
+      {
+        "id": "xylitol_project",
+        "text": "Zastosowanie projektu: Dzwoń od razu do lecznicy, zachowaj opakowanie; nie czekaj na osłabienie.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "health_src_v2_xylitol"
+        ],
+        "locator": "Autorski krok oparty na kontekście źródła; wymaga przeglądu klinicznego",
+        "uncertainty": "Pilność karty nie jest automatycznym triage ani sprawdzonym algorytmem."
+      }
+    ],
+    "interpretations_status": "Przykłady do różnicowania przez lekarza, bez rankingu i prawdopodobieństw."
+  },
+  {
+    "id": "health_v2_anal",
+    "species": [
+      "dog",
+      "cat"
+    ],
+    "domain": "health",
+    "topic": "okolica odbytu",
+    "title": "Saneczkowanie i lizanie okolicy odbytu",
+    "observation": "Przesuwanie zadu po podłodze lub dyskomfort przy wypróżnianiu.",
+    "possible_interpretations": [
+      "Problem zatok okołoodbytowych: zaleganie, zapalenie lub ropień.",
+      "Inne miejscowe podrażnienie."
+    ],
+    "confounders": [
+      "Światło, perspektywa i relacja opiekuna mogą zniekształcać obraz."
+    ],
+    "safe_next_steps": [
+      "Umów ocenę; opisz ból i wypływ, nie próbuj wyciskać bolesnej okolicy."
+    ],
+    "escalation": "veterinarian",
+    "evidence_level": "clinical_reference",
+    "source_ids": [
+      "health_src_v2_anal"
+    ],
+    "limitations": "Sygnał nieswoisty. Rozpoznanie wymaga badania; film nie wyklucza choroby.",
+    "tags": [
+      "saneczkuje",
+      "saneczkowanie",
+      "odbyt",
+      "zatoki"
+    ],
+    "not_diagnostic": true,
+    "review_status": "editorial_screened_expert_pending",
+    "owner_questions": [
+      "Od kiedy?",
+      "Co zmieniło się względem normy tego zwierzęcia?"
+    ],
+    "claims": [
+      {
+        "id": "anal_finding",
+        "text": "Saneczkowanie i bolesne wypróżnianie opisano przy chorobach zatok okołoodbytowych.",
+        "basis": "source_finding",
+        "source_ids": [
+          "health_src_v2_anal"
+        ],
+        "locator": "Clinical Findings",
+        "uncertainty": "Powiązanie opisane w źródle nie rozpoznaje indywidualnego przypadku."
+      },
+      {
+        "id": "anal_project",
+        "text": "Zastosowanie projektu: Umów ocenę; opisz ból i wypływ, nie próbuj wyciskać bolesnej okolicy.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "health_src_v2_anal"
+        ],
+        "locator": "Autorski krok oparty na kontekście źródła; wymaga przeglądu klinicznego",
+        "uncertainty": "Pilność karty nie jest automatycznym triage ani sprawdzonym algorytmem."
+      }
+    ],
+    "interpretations_status": "Przykłady do różnicowania przez lekarza, bez rankingu i prawdopodobieństw."
+  },
+  {
+    "id": "health_v2_sleep_breathing",
+    "species": [
+      "dog",
+      "cat"
+    ],
+    "domain": "health",
+    "topic": "oddech",
+    "title": "Oddycha wyraźnie szybciej podczas snu niż wcześniej",
+    "observation": "Spokojne nagrania snu wskazują powtarzaną zmianę oddechu.",
+    "possible_interpretations": [
+      "Zaburzenie oddechowe.",
+      "Niewydolność serca lub inna przyczyna przyspieszenia oddechu."
+    ],
+    "confounders": [
+      "Światło, perspektywa i relacja opiekuna mogą zniekształcać obraz."
+    ],
+    "safe_next_steps": [
+      "Skontaktuj się szybko z lekarzem i przekaż obserwacje; wysiłek oddechowy oznacza pomoc natychmiast."
+    ],
+    "escalation": "veterinarian",
+    "evidence_level": "clinical_reference",
+    "source_ids": [
+      "health_src_v2_heart"
+    ],
+    "limitations": "Sygnał nieswoisty. Rozpoznanie wymaga badania; film nie wyklucza choroby.",
+    "tags": [
+      "sen",
+      "oddech",
+      "szybciej",
+      "serce"
+    ],
+    "not_diagnostic": true,
+    "review_status": "editorial_screened_expert_pending",
+    "owner_questions": [
+      "Od kiedy?",
+      "Co zmieniło się względem normy tego zwierzęcia?"
+    ],
+    "claims": [
+      {
+        "id": "sleep_breathing_finding",
+        "text": "Tempo oddechu podczas snu pomaga ocenie, lecz nie odróżnia samo chorób serca i płuc.",
+        "basis": "source_finding",
+        "source_ids": [
+          "health_src_v2_heart"
+        ],
+        "locator": "Clinical Signs / Congestive heart failure",
+        "uncertainty": "Powiązanie opisane w źródle nie rozpoznaje indywidualnego przypadku."
+      },
+      {
+        "id": "sleep_breathing_project",
+        "text": "Zastosowanie projektu: Skontaktuj się szybko z lekarzem i przekaż obserwacje; wysiłek oddechowy oznacza pomoc natychmiast.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "health_src_v2_heart"
+        ],
+        "locator": "Autorski krok oparty na kontekście źródła; wymaga przeglądu klinicznego",
+        "uncertainty": "Pilność karty nie jest automatycznym triage ani sprawdzonym algorytmem."
+      }
+    ],
+    "interpretations_status": "Przykłady do różnicowania przez lekarza, bez rankingu i prawdopodobieństw."
+  },
+  {
+    "id": "health_v2_pyometra",
+    "species": [
+      "dog",
+      "cat"
+    ],
+    "domain": "health",
+    "topic": "rozród",
+    "title": "Osłabienie samicy i nietypowy wypływ po cyklu",
+    "observation": "Niekastrowana samica gorzej je, słabnie lub ma nietypowy wypływ.",
+    "possible_interpretations": [
+      "Ropomacicze.",
+      "Inna choroba rozrodcza lub ogólna."
+    ],
+    "confounders": [
+      "Światło, perspektywa i relacja opiekuna mogą zniekształcać obraz."
+    ],
+    "safe_next_steps": [
+      "Natychmiast skontaktuj się z dyżurną lecznicą; nie opóźniaj pomocy nagrywaniem."
+    ],
+    "escalation": "urgent_veterinarian",
+    "evidence_level": "clinical_reference",
+    "source_ids": [
+      "health_src_v2_pyometra"
+    ],
+    "limitations": "Sygnał nieswoisty. Rozpoznanie wymaga badania; film nie wyklucza choroby.",
+    "tags": [
+      "ropomacicze",
+      "wypływ",
+      "suka",
+      "kotka",
+      "cieczka"
+    ],
+    "not_diagnostic": true,
+    "review_status": "editorial_screened_expert_pending",
+    "owner_questions": [
+      "Kiedy był ostatni cykl?",
+      "Czy samica jest po zabiegu i jakie przyjmuje leki?"
+    ],
+    "claims": [
+      {
+        "id": "pyometra_finding",
+        "text": "ACVS wskazuje ropomacicze jako stan nagły; przy zamkniętej szyjce wypływu może nie być.",
+        "basis": "source_finding",
+        "source_ids": [
+          "health_src_v2_pyometra"
+        ],
+        "locator": "Pyometra / signs and emergency",
+        "uncertainty": "Powiązanie opisane w źródle nie rozpoznaje indywidualnego przypadku."
+      },
+      {
+        "id": "pyometra_project",
+        "text": "Zastosowanie projektu: Natychmiast skontaktuj się z dyżurną lecznicą; nie opóźniaj pomocy nagrywaniem.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "health_src_v2_pyometra"
+        ],
+        "locator": "Autorski krok oparty na kontekście źródła; wymaga przeglądu klinicznego",
+        "uncertainty": "Pilność karty nie jest automatycznym triage ani sprawdzonym algorytmem."
+      }
+    ],
+    "interpretations_status": "Przykłady do różnicowania przez lekarza, bez rankingu i prawdopodobieństw."
+  },
+  {
+    "id": "health_v2_skin_mass",
+    "species": [
+      "dog",
+      "cat"
+    ],
+    "domain": "health",
+    "topic": "skóra",
+    "title": "Nowy guzek lub powiększająca się zmiana skóry",
+    "observation": "Zauważono zmianę wielkości, powierzchni lub liczbę guzków.",
+    "possible_interpretations": [
+      "Zmiana nowotworowa łagodna albo złośliwa.",
+      "Zmiana zapalna lub inne zgrubienie."
+    ],
+    "confounders": [
+      "Światło, perspektywa i relacja opiekuna mogą zniekształcać obraz."
+    ],
+    "safe_next_steps": [
+      "Umów ocenę weterynaryjną; zanotuj początek i przebieg zmiany."
+    ],
+    "escalation": "veterinarian",
+    "evidence_level": "clinical_reference",
+    "source_ids": [
+      "health_src_v2_mass"
+    ],
+    "limitations": "Abstrakt przeglądu nie potwierdza rozpoznania; wygląd nie ustala złośliwości.",
+    "tags": [
+      "guz",
+      "guzek",
+      "skóra",
+      "nowotwór"
+    ],
+    "not_diagnostic": true,
+    "review_status": "editorial_screened_expert_pending",
+    "owner_questions": [
+      "Od kiedy?",
+      "Co zmieniło się względem normy tego zwierzęcia?"
+    ],
+    "claims": [
+      {
+        "id": "skin_mass_finding",
+        "text": "Przegląd wskazuje cytologię jako element diagnostyki mas skóry.",
+        "basis": "source_finding",
+        "source_ids": [
+          "health_src_v2_mass"
+        ],
+        "locator": "Abstract",
+        "uncertainty": "Powiązanie opisane w źródle nie rozpoznaje indywidualnego przypadku."
+      },
+      {
+        "id": "skin_mass_project",
+        "text": "Zastosowanie projektu: Umów ocenę weterynaryjną; zanotuj początek i przebieg zmiany.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "health_src_v2_mass"
+        ],
+        "locator": "Autorski krok oparty na kontekście źródła; wymaga przeglądu klinicznego",
+        "uncertainty": "Pilność karty nie jest automatycznym triage ani sprawdzonym algorytmem."
+      }
+    ],
+    "interpretations_status": "Przykłady do różnicowania przez lekarza, bez rankingu i prawdopodobieństw."
+  }
+]

@@ -1,0 +1,3266 @@
+[
+  {
+    "id": "cat_v2_name_orientation",
+    "species": [
+      "cat"
+    ],
+    "topic": "słuch_uczenie",
+    "title": "Imię i orientacja",
+    "observation": "Po imieniu kot porusza uszami.",
+    "possible_interpretations": [
+      "Możliwe różnicowanie znajomego dźwięku."
+    ],
+    "confounders": [
+      "Sen; hałas; intonacja."
+    ],
+    "safe_next_steps": [
+      "Zapisuj sekwencję bez wymuszania podejścia."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "cat_src_v2_own_name"
+    ],
+    "limitations": "Wymaga kontekstu i sekwencji.",
+    "tags": [
+      "słuch_uczenie",
+      "kontekst",
+      "ekspert_oczekiwany"
+    ],
+    "claims": [
+      {
+        "id": "cat_v2_name_orientation_finding",
+        "text": "Koty domowe odróżniały imię od rzeczowników także przy obcym głosie.",
+        "basis": "source_finding",
+        "source_ids": [
+          "cat_src_v2_own_name"
+        ],
+        "locator": "Abstract",
+        "uncertainty": "Różnicowanie nie dowodzi rozumienia pojęć."
+      },
+      {
+        "id": "cat_v2_name_orientation_recommendation",
+        "text": "Zapisuj sekwencję bez wymuszania podejścia.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "cat_src_v2_own_name"
+        ],
+        "locator": "Wniosek projektowy",
+        "uncertainty": "Nie jest wynikiem eksperymentu."
+      }
+    ]
+  },
+  {
+    "id": "cat_v2_name_group_context",
+    "species": [
+      "cat"
+    ],
+    "topic": "słuch_uczenie",
+    "title": "Imiona w grupie",
+    "observation": "Kot reaguje na kilka imion.",
+    "possible_interpretations": [
+      "Możliwe wspólne skojarzenia dźwięków."
+    ],
+    "confounders": [
+      "Karmienie grupy; podobne imiona."
+    ],
+    "safe_next_steps": [
+      "Notuj historię używania imion."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "cat_src_v2_own_name"
+    ],
+    "limitations": "Wymaga kontekstu i sekwencji.",
+    "tags": [
+      "słuch_uczenie",
+      "kontekst",
+      "ekspert_oczekiwany"
+    ],
+    "claims": [
+      {
+        "id": "cat_v2_name_group_context_finding",
+        "text": "Koty kawiarniane nie różnicowały własnego imienia i imion współmieszkańców.",
+        "basis": "source_finding",
+        "source_ids": [
+          "cat_src_v2_own_name"
+        ],
+        "locator": "Abstract",
+        "uncertainty": "Wynik ograniczony do badanej grupy."
+      },
+      {
+        "id": "cat_v2_name_group_context_recommendation",
+        "text": "Notuj historię używania imion.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "cat_src_v2_own_name"
+        ],
+        "locator": "Wniosek projektowy",
+        "uncertainty": "Nie jest wynikiem eksperymentu."
+      }
+    ]
+  },
+  {
+    "id": "cat_v2_familiar_cat_names",
+    "species": [
+      "cat"
+    ],
+    "topic": "relacje_kot_kot",
+    "title": "Nazwa znajomego kota",
+    "observation": "Kot patrzy po usłyszeniu imienia towarzysza.",
+    "possible_interpretations": [
+      "Możliwe wyuczone skojarzenie."
+    ],
+    "confounders": [
+      "Ton głosu; widoczność drugiego kota."
+    ],
+    "safe_next_steps": [
+      "Łącz relację z naturalnym kontekstem."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "cat_src_v2_friend_names"
+    ],
+    "limitations": "Wymaga kontekstu i sekwencji.",
+    "tags": [
+      "relacje_kot_kot",
+      "kontekst",
+      "ekspert_oczekiwany"
+    ],
+    "claims": [
+      {
+        "id": "cat_v2_familiar_cat_names_finding",
+        "text": "W domach dłużej oglądano fotografię niezgodną z usłyszanym imieniem kota.",
+        "basis": "source_finding",
+        "source_ids": [
+          "cat_src_v2_friend_names"
+        ],
+        "locator": "Abstract",
+        "uncertainty": "Patrzenie nie ujawnia dokładnej reprezentacji."
+      },
+      {
+        "id": "cat_v2_familiar_cat_names_recommendation",
+        "text": "Łącz relację z naturalnym kontekstem.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "cat_src_v2_friend_names"
+        ],
+        "locator": "Wniosek projektowy",
+        "uncertainty": "Nie jest wynikiem eksperymentu."
+      }
+    ]
+  },
+  {
+    "id": "cat_v2_family_name_exposure",
+    "species": [
+      "cat"
+    ],
+    "topic": "relacje_ludzie",
+    "title": "Nazwy domowników i doświadczenie",
+    "observation": "Reakcje na imiona domowników różnią się.",
+    "possible_interpretations": [
+      "Możliwy wpływ wspólnych doświadczeń."
+    ],
+    "confounders": [
+      "Wiek; czas wspólnego mieszkania."
+    ],
+    "safe_next_steps": [
+      "Zapisuj ekspozycję zamiast oceniać inteligencję."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "cat_src_v2_friend_names"
+    ],
+    "limitations": "Wymaga kontekstu i sekwencji.",
+    "tags": [
+      "relacje_ludzie",
+      "kontekst",
+      "ekspert_oczekiwany"
+    ],
+    "claims": [
+      {
+        "id": "cat_v2_family_name_exposure_finding",
+        "text": "Efekt niezgodności imion ludzi wiązał się z wielkością rodziny i wspólnym mieszkaniem.",
+        "basis": "source_finding",
+        "source_ids": [
+          "cat_src_v2_friend_names"
+        ],
+        "locator": "Abstract",
+        "uncertainty": "Wiek i ekspozycja współzmienne."
+      },
+      {
+        "id": "cat_v2_family_name_exposure_recommendation",
+        "text": "Zapisuj ekspozycję zamiast oceniać inteligencję.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "cat_src_v2_friend_names"
+        ],
+        "locator": "Wniosek projektowy",
+        "uncertainty": "Nie jest wynikiem eksperymentu."
+      }
+    ]
+  },
+  {
+    "id": "cat_v2_owner_voice_location",
+    "species": [
+      "cat"
+    ],
+    "topic": "słuch_przestrzeń",
+    "title": "Głos opiekuna i miejsce",
+    "observation": "Kot orientuje się ku głosowi.",
+    "possible_interpretations": [
+      "Możliwe oczekiwanie lokalizacji opiekuna."
+    ],
+    "confounders": [
+      "Akustyka; ruch; inne osoby."
+    ],
+    "safe_next_steps": [
+      "Opisuj źródło głosu i otoczenie."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "cat_src_v2_voice_location"
+    ],
+    "limitations": "Wymaga kontekstu i sekwencji.",
+    "tags": [
+      "słuch_przestrzeń",
+      "kontekst",
+      "ekspert_oczekiwany"
+    ],
+    "claims": [
+      {
+        "id": "cat_v2_owner_voice_location_finding",
+        "text": "Najsilniejszą reakcję obserwowano, gdy głos tego samego opiekuna zmieniał miejsce.",
+        "basis": "source_finding",
+        "source_ids": [
+          "cat_src_v2_voice_location"
+        ],
+        "locator": "Abstract",
+        "uncertainty": "Operacyjna miara zaskoczenia."
+      },
+      {
+        "id": "cat_v2_owner_voice_location_recommendation",
+        "text": "Opisuj źródło głosu i otoczenie.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "cat_src_v2_voice_location"
+        ],
+        "locator": "Wniosek projektowy",
+        "uncertainty": "Nie jest wynikiem eksperymentu."
+      }
+    ]
+  },
+  {
+    "id": "cat_v2_sound_identity_controls",
+    "species": [
+      "cat"
+    ],
+    "topic": "słuch_przestrzeń",
+    "title": "Nie każdy dźwięk działa podobnie",
+    "observation": "Kot inaczej reaguje na różne dźwięki.",
+    "possible_interpretations": [
+      "Możliwe znaczenie znajomości bodźca."
+    ],
+    "confounders": [
+      "Głośność; przyzwyczajenie; aktualna aktywność."
+    ],
+    "safe_next_steps": [
+      "Porównuj naturalne reakcje tego kota."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "cat_src_v2_voice_location"
+    ],
+    "limitations": "Wymaga kontekstu i sekwencji.",
+    "tags": [
+      "słuch_przestrzeń",
+      "kontekst",
+      "ekspert_oczekiwany"
+    ],
+    "claims": [
+      {
+        "id": "cat_v2_sound_identity_controls_finding",
+        "text": "Kontrole z kocim głosem i dźwiękami niewokalnymi nie dały analogicznego wyniku.",
+        "basis": "source_finding",
+        "source_ids": [
+          "cat_src_v2_voice_location"
+        ],
+        "locator": "Abstract",
+        "uncertainty": "Brak uniwersalnego kodu dźwięków."
+      },
+      {
+        "id": "cat_v2_sound_identity_controls_recommendation",
+        "text": "Porównuj naturalne reakcje tego kota.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "cat_src_v2_voice_location"
+        ],
+        "locator": "Wniosek projektowy",
+        "uncertainty": "Nie jest wynikiem eksperymentu."
+      }
+    ]
+  },
+  {
+    "id": "cat_v2_odor_novelty",
+    "species": [
+      "cat"
+    ],
+    "topic": "węch_eksploracja",
+    "title": "Dłuższe węszenie obcego zapachu",
+    "observation": "Kot dłużej wącha rzecz gościa.",
+    "possible_interpretations": [
+      "Możliwa nowość, nie niechęć."
+    ],
+    "confounders": [
+      "Perfumy; materiał; wcześniejszy kontakt."
+    ],
+    "safe_next_steps": [
+      "Zapewnij dobrowolne węszenie i odejście."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "cat_src_v2_human_odor"
+    ],
+    "limitations": "Wymaga kontekstu i sekwencji.",
+    "tags": [
+      "węch_eksploracja",
+      "kontekst",
+      "ekspert_oczekiwany"
+    ],
+    "claims": [
+      {
+        "id": "cat_v2_odor_novelty_finding",
+        "text": "Koty dłużej węszyły próbki obcych ludzi niż zapach opiekuna.",
+        "basis": "source_finding",
+        "source_ids": [
+          "cat_src_v2_human_odor"
+        ],
+        "locator": "Abstract",
+        "uncertainty": "Nie ustala emocji ani rozpoznania osoby."
+      },
+      {
+        "id": "cat_v2_odor_novelty_recommendation",
+        "text": "Zapewnij dobrowolne węszenie i odejście.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "cat_src_v2_human_odor"
+        ],
+        "locator": "Wniosek projektowy",
+        "uncertainty": "Nie jest wynikiem eksperymentu."
+      }
+    ]
+  },
+  {
+    "id": "cat_v2_odor_rubbing_sequence",
+    "species": [
+      "cat"
+    ],
+    "topic": "węch_eksploracja",
+    "title": "Tarcie po węszeniu",
+    "observation": "Po obwąchaniu kot ociera głowę.",
+    "possible_interpretations": [
+      "Możliwe powiązanie eksploracji i znakowania."
+    ],
+    "confounders": [
+      "Zapach; powierzchnia; sekwencja kontaktu."
+    ],
+    "safe_next_steps": [
+      "Zapisuj czynności przed tarciem."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "cat_src_v2_human_odor"
+    ],
+    "limitations": "Wymaga kontekstu i sekwencji.",
+    "tags": [
+      "węch_eksploracja",
+      "kontekst",
+      "ekspert_oczekiwany"
+    ],
+    "claims": [
+      {
+        "id": "cat_v2_odor_rubbing_sequence_finding",
+        "text": "Obserwowano tarcie twarzą o przedmiot bezpośrednio po węszeniu.",
+        "basis": "source_finding",
+        "source_ids": [
+          "cat_src_v2_human_odor"
+        ],
+        "locator": "Abstract",
+        "uncertainty": "Funkcja związku wymaga dalszych badań."
+      },
+      {
+        "id": "cat_v2_odor_rubbing_sequence_recommendation",
+        "text": "Zapisuj czynności przed tarciem.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "cat_src_v2_human_odor"
+        ],
+        "locator": "Wniosek projektowy",
+        "uncertainty": "Nie jest wynikiem eksperymentu."
+      }
+    ]
+  },
+  {
+    "id": "cat_v2_catnip_nonresponse",
+    "species": [
+      "cat"
+    ],
+    "topic": "węch_wzbogacenie",
+    "title": "Brak reakcji na kocimiętkę",
+    "observation": "Kot pomija znany bodziec zapachowy.",
+    "possible_interpretations": [
+      "Możliwa indywidualna różnica reaktywności."
+    ],
+    "confounders": [
+      "Materiał; świeżość; chwilowy stan."
+    ],
+    "safe_next_steps": [
+      "Nie oceniaj osobowości po jednym zapachu."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "cat_src_v2_plant_variation"
+    ],
+    "limitations": "Wymaga kontekstu i sekwencji.",
+    "tags": [
+      "węch_wzbogacenie",
+      "kontekst",
+      "ekspert_oczekiwany"
+    ],
+    "claims": [
+      {
+        "id": "cat_v2_catnip_nonresponse_finding",
+        "text": "Część kotów nie reagowała na kocimiętkę.",
+        "basis": "source_finding",
+        "source_ids": [
+          "cat_src_v2_plant_variation"
+        ],
+        "locator": "Abstract",
+        "uncertainty": "Jedna roślina nie opisuje reaktywności."
+      },
+      {
+        "id": "cat_v2_catnip_nonresponse_recommendation",
+        "text": "Nie oceniaj osobowości po jednym zapachu.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "cat_src_v2_plant_variation"
+        ],
+        "locator": "Wniosek projektowy",
+        "uncertainty": "Nie jest wynikiem eksperymentu."
+      }
+    ]
+  },
+  {
+    "id": "cat_v2_plant_specific_choice",
+    "species": [
+      "cat"
+    ],
+    "topic": "węch_wzbogacenie",
+    "title": "Preferencje zależne od rośliny",
+    "observation": "Kot interesuje się jednym dostępnym zapachem.",
+    "possible_interpretations": [
+      "Możliwa preferencja bodźca."
+    ],
+    "confounders": [
+      "Postać rośliny; wcześniejsza ekspozycja."
+    ],
+    "safe_next_steps": [
+      "Stosuj bezpieczne materiały z możliwością odejścia."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "cat_src_v2_plant_variation"
+    ],
+    "limitations": "Wymaga kontekstu i sekwencji.",
+    "tags": [
+      "węch_wzbogacenie",
+      "kontekst",
+      "ekspert_oczekiwany"
+    ],
+    "claims": [
+      {
+        "id": "cat_v2_plant_specific_choice_finding",
+        "text": "Niektóre koty niereagujące na kocimiętkę reagowały na matatabi.",
+        "basis": "source_finding",
+        "source_ids": [
+          "cat_src_v2_plant_variation"
+        ],
+        "locator": "Abstract",
+        "uncertainty": "Nie potwierdza bezpieczeństwa ekstraktów."
+      },
+      {
+        "id": "cat_v2_plant_specific_choice_recommendation",
+        "text": "Stosuj bezpieczne materiały z możliwością odejścia.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "cat_src_v2_plant_variation"
+        ],
+        "locator": "Wniosek projektowy",
+        "uncertainty": "Nie jest wynikiem eksperymentu."
+      }
+    ]
+  },
+  {
+    "id": "cat_v2_plant_self_anointing",
+    "species": [
+      "cat"
+    ],
+    "topic": "węch_funkcja",
+    "title": "Tarcie o roślinę",
+    "observation": "Kot ociera głowę o roślinny materiał.",
+    "possible_interpretations": [
+      "Możliwa odpowiedź na irydoidy."
+    ],
+    "confounders": [
+      "Skład; ilość; bezpieczeństwo materiału."
+    ],
+    "safe_next_steps": [
+      "Opisuj bodziec zamiast nazywać euforią."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "cat_src_v2_plant_iridoids"
+    ],
+    "limitations": "Wymaga kontekstu i sekwencji.",
+    "tags": [
+      "węch_funkcja",
+      "kontekst",
+      "ekspert_oczekiwany"
+    ],
+    "claims": [
+      {
+        "id": "cat_v2_plant_self_anointing_finding",
+        "text": "Tarcie przenosiło nepetalaktol na twarz i głowę kotów.",
+        "basis": "source_finding",
+        "source_ids": [
+          "cat_src_v2_plant_iridoids"
+        ],
+        "locator": "Abstract",
+        "uncertainty": "Mechanizm nie ujawnia subiektywnego przeżycia."
+      },
+      {
+        "id": "cat_v2_plant_self_anointing_recommendation",
+        "text": "Opisuj bodziec zamiast nazywać euforią.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "cat_src_v2_plant_iridoids"
+        ],
+        "locator": "Wniosek projektowy",
+        "uncertainty": "Nie jest wynikiem eksperymentu."
+      }
+    ]
+  },
+  {
+    "id": "cat_v2_repellent_translation_limits",
+    "species": [
+      "cat"
+    ],
+    "topic": "węch_funkcja",
+    "title": "Od badania do produktu",
+    "observation": "Opiekun przypisuje roślinie ochronę przeciw pasożytom.",
+    "possible_interpretations": [
+      "Możliwa nadinterpretacja mechanizmu."
+    ],
+    "confounders": [
+      "Preparat; stężenie; gatunek owada."
+    ],
+    "safe_next_steps": [
+      "Profilaktykę ustalaj z lekarzem weterynarii."
+    ],
+    "escalation": "veterinarian",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "cat_src_v2_plant_iridoids"
+    ],
+    "limitations": "Wymaga kontekstu i sekwencji.",
+    "tags": [
+      "węch_funkcja",
+      "kontekst",
+      "ekspert_oczekiwany"
+    ],
+    "claims": [
+      {
+        "id": "cat_v2_repellent_translation_limits_finding",
+        "text": "Nepetalaktol na sierści odstraszał badany gatunek komara.",
+        "basis": "source_finding",
+        "source_ids": [
+          "cat_src_v2_plant_iridoids"
+        ],
+        "locator": "Abstract",
+        "uncertainty": "Brak dowodu profilaktyki chorób."
+      },
+      {
+        "id": "cat_v2_repellent_translation_limits_recommendation",
+        "text": "Profilaktykę ustalaj z lekarzem weterynarii.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "cat_src_v2_plant_iridoids"
+        ],
+        "locator": "Wniosek projektowy",
+        "uncertainty": "Nie jest wynikiem eksperymentu."
+      }
+    ]
+  },
+  {
+    "id": "cat_v2_music_interest",
+    "species": [
+      "cat"
+    ],
+    "topic": "słuch_wzbogacenie",
+    "title": "Zainteresowanie muzyką",
+    "observation": "Kot zbliża się do cichego nagrania.",
+    "possible_interpretations": [
+      "Możliwa preferencja akustyczna."
+    ],
+    "confounders": [
+      "Głośność; nowość; pora dnia."
+    ],
+    "safe_next_steps": [
+      "Pozostaw możliwość wyjścia i ciszy."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "cat_src_v2_species_music"
+    ],
+    "limitations": "Wymaga kontekstu i sekwencji.",
+    "tags": [
+      "słuch_wzbogacenie",
+      "kontekst",
+      "ekspert_oczekiwany"
+    ],
+    "claims": [
+      {
+        "id": "cat_v2_music_interest_finding",
+        "text": "Koty silniej interesowały się muzyką gatunkową niż badanymi utworami ludzkimi.",
+        "basis": "source_finding",
+        "source_ids": [
+          "cat_src_v2_species_music"
+        ],
+        "locator": "Abstract",
+        "uncertainty": "Zainteresowanie nie oznacza odprężenia."
+      },
+      {
+        "id": "cat_v2_music_interest_recommendation",
+        "text": "Pozostaw możliwość wyjścia i ciszy.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "cat_src_v2_species_music"
+        ],
+        "locator": "Wniosek projektowy",
+        "uncertainty": "Nie jest wynikiem eksperymentu."
+      }
+    ]
+  },
+  {
+    "id": "cat_v2_music_age_variation",
+    "species": [
+      "cat"
+    ],
+    "topic": "słuch_wzbogacenie",
+    "title": "Muzyka i wiek",
+    "observation": "Kontakt z nagraniem jest zmienny.",
+    "possible_interpretations": [
+      "Możliwy wpływ wieku i doświadczenia."
+    ],
+    "confounders": [
+      "Słuch; zdrowie; dobór utworów."
+    ],
+    "safe_next_steps": [
+      "Porównuj reakcje bez oceniania gustu."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "cat_src_v2_species_music"
+    ],
+    "limitations": "Wymaga kontekstu i sekwencji.",
+    "tags": [
+      "słuch_wzbogacenie",
+      "kontekst",
+      "ekspert_oczekiwany"
+    ],
+    "claims": [
+      {
+        "id": "cat_v2_music_age_variation_finding",
+        "text": "Reakcje na muzykę gatunkową różniły się między grupami wieku.",
+        "basis": "source_finding",
+        "source_ids": [
+          "cat_src_v2_species_music"
+        ],
+        "locator": "Results",
+        "uncertainty": "Mała próba i ograniczone utwory."
+      },
+      {
+        "id": "cat_v2_music_age_variation_recommendation",
+        "text": "Porównuj reakcje bez oceniania gustu.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "cat_src_v2_species_music"
+        ],
+        "locator": "Wniosek projektowy",
+        "uncertainty": "Nie jest wynikiem eksperymentu."
+      }
+    ]
+  },
+  {
+    "id": "cat_v2_human_audio_visual",
+    "species": [
+      "cat"
+    ],
+    "topic": "komunikacja_wielozmysłowa",
+    "title": "Głos razem z twarzą",
+    "observation": "Kot orientuje się podczas rozmowy.",
+    "possible_interpretations": [
+      "Możliwe łączenie kanałów informacji."
+    ],
+    "confounders": [
+      "Ruch; głośność; znajomość osoby."
+    ],
+    "safe_next_steps": [
+      "Notuj głos, ruch i otoczenie."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "cat_src_v2_cross_modal"
+    ],
+    "limitations": "Wymaga kontekstu i sekwencji.",
+    "tags": [
+      "komunikacja_wielozmysłowa",
+      "kontekst",
+      "ekspert_oczekiwany"
+    ],
+    "claims": [
+      {
+        "id": "cat_v2_human_audio_visual_finding",
+        "text": "Koty dopasowywały wybrane ludzkie fotografie i odpowiadające im wokalizacje.",
+        "basis": "source_finding",
+        "source_ids": [
+          "cat_src_v2_cross_modal"
+        ],
+        "locator": "Abstract",
+        "uncertainty": "Dziesięć kotów; uproszczone bodźce."
+      },
+      {
+        "id": "cat_v2_human_audio_visual_recommendation",
+        "text": "Notuj głos, ruch i otoczenie.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "cat_src_v2_cross_modal"
+        ],
+        "locator": "Wniosek projektowy",
+        "uncertainty": "Nie jest wynikiem eksperymentu."
+      }
+    ]
+  },
+  {
+    "id": "cat_v2_hiss_multichannel",
+    "species": [
+      "cat"
+    ],
+    "topic": "komunikacja_wielozmysłowa",
+    "title": "Syczenie z otoczeniem",
+    "observation": "Kot orientuje się na syczącego towarzysza.",
+    "possible_interpretations": [
+      "Możliwa reakcja na zestaw sygnałów."
+    ],
+    "confounders": [
+      "Dystans; droga odwrotu; wcześniejszy konflikt."
+    ],
+    "safe_next_steps": [
+      "Nie odtwarzaj syczenia jako testu."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "cat_src_v2_cross_modal"
+    ],
+    "limitations": "Wymaga kontekstu i sekwencji.",
+    "tags": [
+      "komunikacja_wielozmysłowa",
+      "kontekst",
+      "ekspert_oczekiwany"
+    ],
+    "claims": [
+      {
+        "id": "cat_v2_hiss_multichannel_finding",
+        "text": "W badaniu wykazano dopasowanie obrazu kociego syczenia do dźwięku.",
+        "basis": "source_finding",
+        "source_ids": [
+          "cat_src_v2_cross_modal"
+        ],
+        "locator": "Conclusions",
+        "uncertainty": "Nie tłumaczy wszystkich emocji kota."
+      },
+      {
+        "id": "cat_v2_hiss_multichannel_recommendation",
+        "text": "Nie odtwarzaj syczenia jako testu.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "cat_src_v2_cross_modal"
+        ],
+        "locator": "Wniosek projektowy",
+        "uncertainty": "Nie jest wynikiem eksperymentu."
+      }
+    ]
+  },
+  {
+    "id": "cat_v2_reunion_purring",
+    "species": [
+      "cat"
+    ],
+    "topic": "relacje_nieobecność",
+    "title": "Powitanie po nieobecności",
+    "observation": "Po powrocie opiekuna kot mruczy.",
+    "possible_interpretations": [
+      "Możliwa zmiana kontaktu po rozłące."
+    ],
+    "confounders": [
+      "Karmienie; przebudzenie; rutyna powrotu."
+    ],
+    "safe_next_steps": [
+      "Zapisuj naturalne powitania i kontekst."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "cat_src_v2_reunion"
+    ],
+    "limitations": "Wymaga kontekstu i sekwencji.",
+    "tags": [
+      "relacje_nieobecność",
+      "kontekst",
+      "ekspert_oczekiwany"
+    ],
+    "claims": [
+      {
+        "id": "cat_v2_reunion_purring_finding",
+        "text": "Po dłuższej badanej nieobecności koty więcej mruczały i przeciągały się.",
+        "basis": "source_finding",
+        "source_ids": [
+          "cat_src_v2_reunion"
+        ],
+        "locator": "Abstract",
+        "uncertainty": "Nie mierzy tęsknoty ani lęku."
+      },
+      {
+        "id": "cat_v2_reunion_purring_recommendation",
+        "text": "Zapisuj naturalne powitania i kontekst.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "cat_src_v2_reunion"
+        ],
+        "locator": "Wniosek projektowy",
+        "uncertainty": "Nie jest wynikiem eksperymentu."
+      }
+    ]
+  },
+  {
+    "id": "cat_v2_separation_window",
+    "species": [
+      "cat"
+    ],
+    "topic": "relacje_nieobecność",
+    "title": "Moment obserwacji samotności",
+    "observation": "Krótki klip pokazuje spokojne leżenie.",
+    "possible_interpretations": [
+      "Możliwy zwykły odpoczynek."
+    ],
+    "confounders": [
+      "Wybrany fragment; wcześniejsza aktywność."
+    ],
+    "safe_next_steps": [
+      "Porównuj kilka naturalnych okresów."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "cat_src_v2_reunion"
+    ],
+    "limitations": "Wymaga kontekstu i sekwencji.",
+    "tags": [
+      "relacje_nieobecność",
+      "kontekst",
+      "ekspert_oczekiwany"
+    ],
+    "claims": [
+      {
+        "id": "cat_v2_separation_window_finding",
+        "text": "Pod koniec badanych nieobecności nie wykazano różnic zachowania między warunkami.",
+        "basis": "source_finding",
+        "source_ids": [
+          "cat_src_v2_reunion"
+        ],
+        "locator": "Abstract",
+        "uncertainty": "Nie określa bezpiecznej długości samotności."
+      },
+      {
+        "id": "cat_v2_separation_window_recommendation",
+        "text": "Porównuj kilka naturalnych okresów.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "cat_src_v2_reunion"
+        ],
+        "locator": "Wniosek projektowy",
+        "uncertainty": "Nie jest wynikiem eksperymentu."
+      }
+    ]
+  },
+  {
+    "id": "cat_v2_daytime_activity_context",
+    "species": [
+      "cat"
+    ],
+    "topic": "rytmy_aktywność",
+    "title": "Rytm zależny od domu",
+    "observation": "Kot aktywizuje się przy domownikach.",
+    "possible_interpretations": [
+      "Możliwe dostosowanie do warunków."
+    ],
+    "confounders": [
+      "Dostęp do ogrodu; pora roku."
+    ],
+    "safe_next_steps": [
+      "Notuj rutynę i aktywność przez dni."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "cat_src_v2_daily_rhythm"
+    ],
+    "limitations": "Wymaga kontekstu i sekwencji.",
+    "tags": [
+      "rytmy_aktywność",
+      "kontekst",
+      "ekspert_oczekiwany"
+    ],
+    "claims": [
+      {
+        "id": "cat_v2_daytime_activity_context_finding",
+        "text": "Koty z większym kontaktem domowym były bardziej aktywne w dzień.",
+        "basis": "source_finding",
+        "source_ids": [
+          "cat_src_v2_daily_rhythm"
+        ],
+        "locator": "Abstract",
+        "uncertainty": "Warunki i kontakt nie były rozdzielone."
+      },
+      {
+        "id": "cat_v2_daytime_activity_context_recommendation",
+        "text": "Notuj rutynę i aktywność przez dni.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "cat_src_v2_daily_rhythm"
+        ],
+        "locator": "Wniosek projektowy",
+        "uncertainty": "Nie jest wynikiem eksperymentu."
+      }
+    ]
+  },
+  {
+    "id": "cat_v2_movement_not_sleep",
+    "species": [
+      "cat"
+    ],
+    "topic": "rytmy_sen",
+    "title": "Bezruch i sen",
+    "observation": "Czujnik rejestruje mało ruchu.",
+    "possible_interpretations": [
+      "Możliwy odpoczynek lub spokojna czujność."
+    ],
+    "confounders": [
+      "Pozycja urządzenia; brak widoku oczu."
+    ],
+    "safe_next_steps": [
+      "Oddzielaj pomiar ruchu od opisu snu."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "cat_src_v2_daily_rhythm"
+    ],
+    "limitations": "Wymaga kontekstu i sekwencji.",
+    "tags": [
+      "rytmy_sen",
+      "kontekst",
+      "ekspert_oczekiwany"
+    ],
+    "claims": [
+      {
+        "id": "cat_v2_movement_not_sleep_finding",
+        "text": "Badanie mierzyło całkowitą aktywność, nie fazy snu.",
+        "basis": "source_finding",
+        "source_ids": [
+          "cat_src_v2_daily_rhythm"
+        ],
+        "locator": "Methods",
+        "uncertainty": "Nie jest badaniem polisomnografii."
+      },
+      {
+        "id": "cat_v2_movement_not_sleep_recommendation",
+        "text": "Oddzielaj pomiar ruchu od opisu snu.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "cat_src_v2_daily_rhythm"
+        ],
+        "locator": "Wniosek projektowy",
+        "uncertainty": "Nie jest wynikiem eksperymentu."
+      }
+    ]
+  },
+  {
+    "id": "cat_v2_night_activity_resources",
+    "species": [
+      "cat"
+    ],
+    "topic": "rytmy_środowisko",
+    "title": "Nocna aktywność i zasoby",
+    "observation": "Kot wychodzący przemieszcza się nocą.",
+    "possible_interpretations": [
+      "Możliwy wpływ sposobu utrzymania."
+    ],
+    "confounders": [
+      "Pokarm; zagrożenia; dostępność schronienia."
+    ],
+    "safe_next_steps": [
+      "Opisuj środowisko bez etykiety nocnego charakteru."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "cat_src_v2_free_roaming"
+    ],
+    "limitations": "Wymaga kontekstu i sekwencji.",
+    "tags": [
+      "rytmy_środowisko",
+      "kontekst",
+      "ekspert_oczekiwany"
+    ],
+    "claims": [
+      {
+        "id": "cat_v2_night_activity_resources_finding",
+        "text": "Koty bez opiekuna były bardziej nocne i aktywne niż koty z opiekunem.",
+        "basis": "source_finding",
+        "source_ids": [
+          "cat_src_v2_free_roaming"
+        ],
+        "locator": "Abstract",
+        "uncertainty": "Terenowe grupy nie były randomizowane."
+      },
+      {
+        "id": "cat_v2_night_activity_resources_recommendation",
+        "text": "Opisuj środowisko bez etykiety nocnego charakteru.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "cat_src_v2_free_roaming"
+        ],
+        "locator": "Wniosek projektowy",
+        "uncertainty": "Nie jest wynikiem eksperymentu."
+      }
+    ]
+  },
+  {
+    "id": "cat_v2_exploration_home_range",
+    "species": [
+      "cat"
+    ],
+    "topic": "eksploracja_przestrzeń",
+    "title": "Przestrzeń eksploracji",
+    "observation": "Zasięg przemieszczania kota zmienia się.",
+    "possible_interpretations": [
+      "Możliwy wpływ zasobów i otoczenia."
+    ],
+    "confounders": [
+      "Sezon; sąsiednie koty; bezpieczeństwo."
+    ],
+    "safe_next_steps": [
+      "Nie traktuj zasięgu jako oceny śmiałości."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "cat_src_v2_free_roaming"
+    ],
+    "limitations": "Wymaga kontekstu i sekwencji.",
+    "tags": [
+      "eksploracja_przestrzeń",
+      "kontekst",
+      "ekspert_oczekiwany"
+    ],
+    "claims": [
+      {
+        "id": "cat_v2_exploration_home_range_finding",
+        "text": "Koty z opiekunem miały mniejsze areały niż koty bez opiekuna.",
+        "basis": "source_finding",
+        "source_ids": [
+          "cat_src_v2_free_roaming"
+        ],
+        "locator": "Abstract",
+        "uncertainty": "Jeden region; brak wniosku indywidualnego."
+      },
+      {
+        "id": "cat_v2_exploration_home_range_recommendation",
+        "text": "Nie traktuj zasięgu jako oceny śmiałości.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "cat_src_v2_free_roaming"
+        ],
+        "locator": "Wniosek projektowy",
+        "uncertainty": "Nie jest wynikiem eksperymentu."
+      }
+    ]
+  },
+  {
+    "id": "cat_v2_kitten_positive_exposure",
+    "species": [
+      "cat"
+    ],
+    "topic": "rozwój_socjalizacja",
+    "title": "Dodatkowe spokojne kontakty kociąt",
+    "observation": "Kocię dobrowolnie zbliża się do ludzi.",
+    "possible_interpretations": [
+      "Możliwy wpływ wcześniejszych doświadczeń."
+    ],
+    "confounders": [
+      "Temperament; warunki adopcji; zdrowie."
+    ],
+    "safe_next_steps": [
+      "Pozwalaj na krótki kontakt i wycofanie."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "cat_src_v2_kitten_socialization"
+    ],
+    "limitations": "Wymaga kontekstu i sekwencji.",
+    "tags": [
+      "rozwój_socjalizacja",
+      "kontekst",
+      "ekspert_oczekiwany"
+    ],
+    "claims": [
+      {
+        "id": "cat_v2_kitten_positive_exposure_finding",
+        "text": "Po dodatkowej socjalizacji raportowano mniej obawy przed ludźmi.",
+        "basis": "source_finding",
+        "source_ids": [
+          "cat_src_v2_kitten_socialization"
+        ],
+        "locator": "Abstract",
+        "uncertainty": "Mała próba; późniejszy raport opiekuna."
+      },
+      {
+        "id": "cat_v2_kitten_positive_exposure_recommendation",
+        "text": "Pozwalaj na krótki kontakt i wycofanie.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "cat_src_v2_kitten_socialization"
+        ],
+        "locator": "Wniosek projektowy",
+        "uncertainty": "Nie jest wynikiem eksperymentu."
+      }
+    ]
+  },
+  {
+    "id": "cat_v2_adoption_followup",
+    "species": [
+      "cat"
+    ],
+    "topic": "rozwój_adopcja",
+    "title": "Obserwacja po adopcji",
+    "observation": "Reakcje kocięcia zmieniają się w domu.",
+    "possible_interpretations": [
+      "Możliwy wpływ nowego środowiska."
+    ],
+    "confounders": [
+      "Opiekun; zasoby; jakość kontaktu."
+    ],
+    "safe_next_steps": [
+      "Aktualizuj profil po spokojnej adaptacji."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "cat_src_v2_kitten_socialization"
+    ],
+    "limitations": "Wymaga kontekstu i sekwencji.",
+    "tags": [
+      "rozwój_adopcja",
+      "kontekst",
+      "ekspert_oczekiwany"
+    ],
+    "claims": [
+      {
+        "id": "cat_v2_adoption_followup_finding",
+        "text": "Kocięta porównywano także przez wywiady z opiekunami około roku później.",
+        "basis": "source_finding",
+        "source_ids": [
+          "cat_src_v2_kitten_socialization"
+        ],
+        "locator": "Abstract",
+        "uncertainty": "Nie gwarantuje wyniku konkretnej adopcji."
+      },
+      {
+        "id": "cat_v2_adoption_followup_recommendation",
+        "text": "Aktualizuj profil po spokojnej adaptacji.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "cat_src_v2_kitten_socialization"
+        ],
+        "locator": "Wniosek projektowy",
+        "uncertainty": "Nie jest wynikiem eksperymentu."
+      }
+    ]
+  },
+  {
+    "id": "cat_v2_early_history",
+    "species": [
+      "cat"
+    ],
+    "topic": "rozwój_wychowanie",
+    "title": "Historia oddzielenia od rodziny",
+    "observation": "Opiekun opisuje wczesne oddzielenie.",
+    "possible_interpretations": [
+      "Możliwy czynnik historii zachowania."
+    ],
+    "confounders": [
+      "Pamięć; warunki hodowli; inne doświadczenia."
+    ],
+    "safe_next_steps": [
+      "Zapisuj wiek z oznaczeniem niepewności."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "cat_src_v2_weaning"
+    ],
+    "limitations": "Wymaga kontekstu i sekwencji.",
+    "tags": [
+      "rozwój_wychowanie",
+      "kontekst",
+      "ekspert_oczekiwany"
+    ],
+    "claims": [
+      {
+        "id": "cat_v2_early_history_finding",
+        "text": "W ankiecie wcześniejsze oddzielenie wiązało się z częstszą agresją.",
+        "basis": "source_finding",
+        "source_ids": [
+          "cat_src_v2_weaning"
+        ],
+        "locator": "Abstract",
+        "uncertainty": "Związek obserwacyjny; brak przeznaczenia."
+      },
+      {
+        "id": "cat_v2_early_history_recommendation",
+        "text": "Zapisuj wiek z oznaczeniem niepewności.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "cat_src_v2_weaning"
+        ],
+        "locator": "Wniosek projektowy",
+        "uncertainty": "Nie jest wynikiem eksperymentu."
+      }
+    ]
+  },
+  {
+    "id": "cat_v2_grooming_development_context",
+    "species": [
+      "cat"
+    ],
+    "topic": "zachowania_powtarzalne",
+    "title": "Pielęgnowanie i historia rozwoju",
+    "observation": "Opiekun zauważa powtarzalne wylizywanie.",
+    "possible_interpretations": [
+      "Możliwy wpływ wielu czynników."
+    ],
+    "confounders": [
+      "Świąd; ból; pamięć wieku oddzielenia."
+    ],
+    "safe_next_steps": [
+      "Najpierw uwzględnij ocenę weterynaryjną."
+    ],
+    "escalation": "veterinarian",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "cat_src_v2_weaning"
+    ],
+    "limitations": "Wymaga kontekstu i sekwencji.",
+    "tags": [
+      "zachowania_powtarzalne",
+      "kontekst",
+      "ekspert_oczekiwany"
+    ],
+    "claims": [
+      {
+        "id": "cat_v2_grooming_development_context_finding",
+        "text": "Wiek oddzielenia był związany z raportowanym nadmiernym pielęgnowaniem.",
+        "basis": "source_finding",
+        "source_ids": [
+          "cat_src_v2_weaning"
+        ],
+        "locator": "Abstract",
+        "uncertainty": "Ankieta nie ustala przyczyny medycznej."
+      },
+      {
+        "id": "cat_v2_grooming_development_context_recommendation",
+        "text": "Najpierw uwzględnij ocenę weterynaryjną.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "cat_src_v2_weaning"
+        ],
+        "locator": "Wniosek projektowy",
+        "uncertainty": "Nie jest wynikiem eksperymentu."
+      }
+    ]
+  },
+  {
+    "id": "cat_v2_breed_distribution",
+    "species": [
+      "cat"
+    ],
+    "topic": "osobowość_populacja",
+    "title": "Rasa i rozkład zachowania",
+    "observation": "Kot odbiega od opisu swojej rasy.",
+    "possible_interpretations": [
+      "Możliwa zwykła różnica osobnicza."
+    ],
+    "confounders": [
+      "Selekcja próby; wychowanie; reporter."
+    ],
+    "safe_next_steps": [
+      "Opisuj osobnika zamiast kopiować średnią."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "cat_src_v2_breed_heritability"
+    ],
+    "limitations": "Wymaga kontekstu i sekwencji.",
+    "tags": [
+      "osobowość_populacja",
+      "kontekst",
+      "ekspert_oczekiwany"
+    ],
+    "claims": [
+      {
+        "id": "cat_v2_breed_distribution_finding",
+        "text": "Badanie wykazało różnice średnich zachowań między grupami ras.",
+        "basis": "source_finding",
+        "source_ids": [
+          "cat_src_v2_breed_heritability"
+        ],
+        "locator": "Results",
+        "uncertainty": "Średnia nie jest diagnozą osobnika."
+      },
+      {
+        "id": "cat_v2_breed_distribution_recommendation",
+        "text": "Opisuj osobnika zamiast kopiować średnią.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "cat_src_v2_breed_heritability"
+        ],
+        "locator": "Wniosek projektowy",
+        "uncertainty": "Nie jest wynikiem eksperymentu."
+      }
+    ]
+  },
+  {
+    "id": "cat_v2_heritability_population",
+    "species": [
+      "cat"
+    ],
+    "topic": "osobowość_populacja",
+    "title": "Znaczenie dziedziczności",
+    "observation": "Opiekun przypisuje całe zachowanie genom.",
+    "possible_interpretations": [
+      "Możliwa nadinterpretacja wskaźnika populacyjnego."
+    ],
+    "confounders": [
+      "Populacja; środowisko; rodowód."
+    ],
+    "safe_next_steps": [
+      "Zachowaj historię środowiska i doświadczeń."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "cat_src_v2_breed_heritability"
+    ],
+    "limitations": "Wymaga kontekstu i sekwencji.",
+    "tags": [
+      "osobowość_populacja",
+      "kontekst",
+      "ekspert_oczekiwany"
+    ],
+    "claims": [
+      {
+        "id": "cat_v2_heritability_population_finding",
+        "text": "W trzech rasach oszacowano dziedziczność wybranych cech behawioralnych.",
+        "basis": "source_finding",
+        "source_ids": [
+          "cat_src_v2_breed_heritability"
+        ],
+        "locator": "Methods",
+        "uncertainty": "Nie określa genetycznego udziału jednostki."
+      },
+      {
+        "id": "cat_v2_heritability_population_recommendation",
+        "text": "Zachowaj historię środowiska i doświadczeń.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "cat_src_v2_breed_heritability"
+        ],
+        "locator": "Wniosek projektowy",
+        "uncertainty": "Nie jest wynikiem eksperymentu."
+      }
+    ]
+  },
+  {
+    "id": "cat_v2_attachment_variety",
+    "species": [
+      "cat"
+    ],
+    "topic": "relacje_przywiązanie",
+    "title": "Różne wzorce relacji",
+    "observation": "Kontakt zmienia się przy rozstaniu i powrocie.",
+    "possible_interpretations": [
+      "Możliwy indywidualny wzorzec relacji."
+    ],
+    "confounders": [
+      "Nowe miejsce; zdrowie; wcześniejszy kontakt."
+    ],
+    "safe_next_steps": [
+      "Opisuj powtarzalne zachowania bez etykietowania."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "cat_src_v2_attachment_styles"
+    ],
+    "limitations": "Wymaga kontekstu i sekwencji.",
+    "tags": [
+      "relacje_przywiązanie",
+      "kontekst",
+      "ekspert_oczekiwany"
+    ],
+    "claims": [
+      {
+        "id": "cat_v2_attachment_variety_finding",
+        "text": "Autorzy raportowali odmienne style przywiązania kotów do opiekunów.",
+        "basis": "source_finding",
+        "source_ids": [
+          "cat_src_v2_attachment_styles"
+        ],
+        "locator": "Abstract",
+        "uncertainty": "Kryteria adaptowane; dostęp do abstraktu."
+      },
+      {
+        "id": "cat_v2_attachment_variety_recommendation",
+        "text": "Opisuj powtarzalne zachowania bez etykietowania.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "cat_src_v2_attachment_styles"
+        ],
+        "locator": "Wniosek projektowy",
+        "uncertainty": "Nie jest wynikiem eksperymentu."
+      }
+    ]
+  },
+  {
+    "id": "cat_v2_attachment_operationalization",
+    "species": [
+      "cat"
+    ],
+    "topic": "relacje_przywiązanie",
+    "title": "Etykieta badawcza i dom",
+    "observation": "Opiekun chce jednego typu więzi.",
+    "possible_interpretations": [
+      "Możliwa redukcja złożonej relacji."
+    ],
+    "confounders": [
+      "Dobór testu; kontekst; obserwator."
+    ],
+    "safe_next_steps": [
+      "Profil relacji oprzyj na naturalnych sekwencjach."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "cat_src_v2_attachment_styles"
+    ],
+    "limitations": "Wymaga kontekstu i sekwencji.",
+    "tags": [
+      "relacje_przywiązanie",
+      "kontekst",
+      "ekspert_oczekiwany"
+    ],
+    "claims": [
+      {
+        "id": "cat_v2_attachment_operationalization_finding",
+        "text": "W badaniu zastosowano kryteria behawioralne z literatury przywiązania dzieci.",
+        "basis": "source_finding",
+        "source_ids": [
+          "cat_src_v2_attachment_styles"
+        ],
+        "locator": "Abstract",
+        "uncertainty": "To nie walidacja diagnozy domowej."
+      },
+      {
+        "id": "cat_v2_attachment_operationalization_recommendation",
+        "text": "Profil relacji oprzyj na naturalnych sekwencjach.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "cat_src_v2_attachment_styles"
+        ],
+        "locator": "Wniosek projektowy",
+        "uncertainty": "Nie jest wynikiem eksperymentu."
+      }
+    ]
+  },
+  {
+    "id": "cat_v2_attachment_order",
+    "species": [
+      "cat"
+    ],
+    "topic": "relacje_metoda",
+    "title": "Kolejność wpływa na ocenę",
+    "observation": "Dwa nagrania dają odmienne obrazy kontaktu.",
+    "possible_interpretations": [
+      "Możliwa zależność od kolejności zdarzeń."
+    ],
+    "confounders": [
+      "Habituacja; pomieszczenie; zmęczenie."
+    ],
+    "safe_next_steps": [
+      "Notuj historię poprzedzającą nagranie."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "cat_src_v2_attachment_controls"
+    ],
+    "limitations": "Wymaga kontekstu i sekwencji.",
+    "tags": [
+      "relacje_metoda",
+      "kontekst",
+      "ekspert_oczekiwany"
+    ],
+    "claims": [
+      {
+        "id": "cat_v2_attachment_order_finding",
+        "text": "Część zachowań była niestabilna między dwiema wersjami testu.",
+        "basis": "source_finding",
+        "source_ids": [
+          "cat_src_v2_attachment_controls"
+        ],
+        "locator": "Results",
+        "uncertainty": "Mała próba; specyficzna procedura."
+      },
+      {
+        "id": "cat_v2_attachment_order_recommendation",
+        "text": "Notuj historię poprzedzającą nagranie.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "cat_src_v2_attachment_controls"
+        ],
+        "locator": "Wniosek projektowy",
+        "uncertainty": "Nie jest wynikiem eksperymentu."
+      }
+    ]
+  },
+  {
+    "id": "cat_v2_vocal_separation_interpretation",
+    "species": [
+      "cat"
+    ],
+    "topic": "relacje_przywiązanie",
+    "title": "Miauczenie nie rozstrzyga o więzi",
+    "observation": "Kot wokalizuje po odejściu człowieka.",
+    "possible_interpretations": [
+      "Możliwe oczekiwanie kontaktu lub zasobu."
+    ],
+    "confounders": [
+      "Rutyna; nowe miejsce; obecność obcej osoby."
+    ],
+    "safe_next_steps": [
+      "Interpretuj serię zachowań i kontekst."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "cat_src_v2_attachment_controls"
+    ],
+    "limitations": "Wymaga kontekstu i sekwencji.",
+    "tags": [
+      "relacje_przywiązanie",
+      "kontekst",
+      "ekspert_oczekiwany"
+    ],
+    "claims": [
+      {
+        "id": "cat_v2_vocal_separation_interpretation_finding",
+        "text": "Więcej wokalizacji po odejściu opiekuna nie wystarczyło do potwierdzenia bezpiecznej więzi.",
+        "basis": "source_finding",
+        "source_ids": [
+          "cat_src_v2_attachment_controls"
+        ],
+        "locator": "Abstract",
+        "uncertainty": "Brak dowodu nie oznacza braku relacji."
+      },
+      {
+        "id": "cat_v2_vocal_separation_interpretation_recommendation",
+        "text": "Interpretuj serię zachowań i kontekst.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "cat_src_v2_attachment_controls"
+        ],
+        "locator": "Wniosek projektowy",
+        "uncertainty": "Nie jest wynikiem eksperymentu."
+      }
+    ]
+  },
+  {
+    "id": "cat_v2_attentive_person",
+    "species": [
+      "cat"
+    ],
+    "topic": "relacje_ludzie",
+    "title": "Uwaga człowieka zmienia kontakt",
+    "observation": "Kot podchodzi podczas spokojnego zainteresowania.",
+    "possible_interpretations": [
+      "Możliwa odpowiedź na zachowanie człowieka."
+    ],
+    "confounders": [
+      "Postawa; wcześniejsze nagrody; sytuacja."
+    ],
+    "safe_next_steps": [
+      "Zapisuj także zachowanie opiekuna."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "cat_src_v2_human_attention"
+    ],
+    "limitations": "Wymaga kontekstu i sekwencji.",
+    "tags": [
+      "relacje_ludzie",
+      "kontekst",
+      "ekspert_oczekiwany"
+    ],
+    "claims": [
+      {
+        "id": "cat_v2_attentive_person_finding",
+        "text": "Koty spędzały więcej czasu blisko człowieka, gdy był uważny.",
+        "basis": "source_finding",
+        "source_ids": [
+          "cat_src_v2_human_attention"
+        ],
+        "locator": "Abstract",
+        "uncertainty": "Krótka próba nie ustala stałej potrzeby."
+      },
+      {
+        "id": "cat_v2_attentive_person_recommendation",
+        "text": "Zapisuj także zachowanie opiekuna.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "cat_src_v2_human_attention"
+        ],
+        "locator": "Wniosek projektowy",
+        "uncertainty": "Nie jest wynikiem eksperymentu."
+      }
+    ]
+  },
+  {
+    "id": "cat_v2_shelter_home_sociability",
+    "species": [
+      "cat"
+    ],
+    "topic": "relacje_adaptacja",
+    "title": "Środowisko i towarzyskość",
+    "observation": "Kontakt w schronisku różni się od domowego.",
+    "possible_interpretations": [
+      "Możliwy wpływ populacji i sytuacji."
+    ],
+    "confounders": [
+      "Wcześniejsze doświadczenia; dobór kotów."
+    ],
+    "safe_next_steps": [
+      "Aktualizuj obserwacje po zmianie środowiska."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "cat_src_v2_human_attention"
+    ],
+    "limitations": "Wymaga kontekstu i sekwencji.",
+    "tags": [
+      "relacje_adaptacja",
+      "kontekst",
+      "ekspert_oczekiwany"
+    ],
+    "claims": [
+      {
+        "id": "cat_v2_shelter_home_sociability_finding",
+        "text": "Koty schroniskowe i domowe różniły się kontaktem przy nieuważnym człowieku.",
+        "basis": "source_finding",
+        "source_ids": [
+          "cat_src_v2_human_attention"
+        ],
+        "locator": "Abstract",
+        "uncertainty": "Różnica grupowa nie wyznacza osobowości."
+      },
+      {
+        "id": "cat_v2_shelter_home_sociability_recommendation",
+        "text": "Aktualizuj obserwacje po zmianie środowiska.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "cat_src_v2_human_attention"
+        ],
+        "locator": "Wniosek projektowy",
+        "uncertainty": "Nie jest wynikiem eksperymentu."
+      }
+    ]
+  },
+  {
+    "id": "cat_v2_social_reward_choice",
+    "species": [
+      "cat"
+    ],
+    "topic": "uczenie_preferencje",
+    "title": "Kontakt jako możliwa nagroda",
+    "observation": "Kot wybiera kontakt spośród dostępnych aktywności.",
+    "possible_interpretations": [
+      "Możliwa chwilowa preferencja społeczna."
+    ],
+    "confounders": [
+      "Głód; rodzaj kontaktu; dostępne opcje."
+    ],
+    "safe_next_steps": [
+      "Pozwalaj wybierać bez wymuszonego dotyku."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "cat_src_v2_reward_preferences"
+    ],
+    "limitations": "Wymaga kontekstu i sekwencji.",
+    "tags": [
+      "uczenie_preferencje",
+      "kontekst",
+      "ekspert_oczekiwany"
+    ],
+    "claims": [
+      {
+        "id": "cat_v2_social_reward_choice_finding",
+        "text": "W badanej próbie najczęściej preferowano interakcję społeczną, potem pokarm.",
+        "basis": "source_finding",
+        "source_ids": [
+          "cat_src_v2_reward_preferences"
+        ],
+        "locator": "Abstract",
+        "uncertainty": "Ranking nie dotyczy każdego kota."
+      },
+      {
+        "id": "cat_v2_social_reward_choice_recommendation",
+        "text": "Pozwalaj wybierać bez wymuszonego dotyku.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "cat_src_v2_reward_preferences"
+        ],
+        "locator": "Wniosek projektowy",
+        "uncertainty": "Nie jest wynikiem eksperymentu."
+      }
+    ]
+  },
+  {
+    "id": "cat_v2_reward_individualization",
+    "species": [
+      "cat"
+    ],
+    "topic": "uczenie_preferencje",
+    "title": "Nagroda zależy od osobnika",
+    "observation": "Dwa koty wybierają inne aktywności.",
+    "possible_interpretations": [
+      "Możliwa różnica aktualnych preferencji."
+    ],
+    "confounders": [
+      "Sytuacja; bodźce; wcześniejsza ekspozycja."
+    ],
+    "safe_next_steps": [
+      "Dobieraj nagrodę do aktualnej reakcji."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "cat_src_v2_reward_preferences"
+    ],
+    "limitations": "Wymaga kontekstu i sekwencji.",
+    "tags": [
+      "uczenie_preferencje",
+      "kontekst",
+      "ekspert_oczekiwany"
+    ],
+    "claims": [
+      {
+        "id": "cat_v2_reward_individualization_finding",
+        "text": "Badanie preferencji wykazało szerokie różnice indywidualne.",
+        "basis": "source_finding",
+        "source_ids": [
+          "cat_src_v2_reward_preferences"
+        ],
+        "locator": "Abstract",
+        "uncertainty": "Nie mierzy niezmiennej motywacji."
+      },
+      {
+        "id": "cat_v2_reward_individualization_recommendation",
+        "text": "Dobieraj nagrodę do aktualnej reakcji.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "cat_src_v2_reward_preferences"
+        ],
+        "locator": "Wniosek projektowy",
+        "uncertainty": "Nie jest wynikiem eksperymentu."
+      }
+    ]
+  },
+  {
+    "id": "cat_v2_absence_time_link",
+    "species": [
+      "cat"
+    ],
+    "topic": "relacje_nieobecność",
+    "title": "Związek z nieobecnością",
+    "observation": "Problem powtarza się podczas zwykłych wyjść.",
+    "possible_interpretations": [
+      "Możliwy związek z rozłąką."
+    ],
+    "confounders": [
+      "Hałas; ból; rytm karmienia."
+    ],
+    "safe_next_steps": [
+      "Zapisuj czas i naturalne nieobecności."
+    ],
+    "escalation": "behaviorist",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "cat_src_v2_separation_survey"
+    ],
+    "limitations": "Wymaga kontekstu i sekwencji.",
+    "tags": [
+      "relacje_nieobecność",
+      "kontekst",
+      "ekspert_oczekiwany"
+    ],
+    "claims": [
+      {
+        "id": "cat_v2_absence_time_link_finding",
+        "text": "Ankieta identyfikowała zachowania spełniające wstępne kryteria problemów związanych z rozłąką.",
+        "basis": "source_finding",
+        "source_ids": [
+          "cat_src_v2_separation_survey"
+        ],
+        "locator": "Abstract",
+        "uncertainty": "Przesiew nie jest diagnozą lęku."
+      },
+      {
+        "id": "cat_v2_absence_time_link_recommendation",
+        "text": "Zapisuj czas i naturalne nieobecności.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "cat_src_v2_separation_survey"
+        ],
+        "locator": "Wniosek projektowy",
+        "uncertainty": "Nie jest wynikiem eksperymentu."
+      }
+    ]
+  },
+  {
+    "id": "cat_v2_second_cat_not_cure",
+    "species": [
+      "cat"
+    ],
+    "topic": "relacje_nieobecność",
+    "title": "Towarzysz nie jest automatycznym rozwiązaniem",
+    "observation": "Opiekun rozważa drugie zwierzę po problemach.",
+    "possible_interpretations": [
+      "Możliwa nadinterpretacja korelacji."
+    ],
+    "confounders": [
+      "Dopasowanie; konflikt; zasoby; zdrowie."
+    ],
+    "safe_next_steps": [
+      "Dobór towarzysza omów ze specjalistą."
+    ],
+    "escalation": "behaviorist",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "cat_src_v2_separation_survey"
+    ],
+    "limitations": "Wymaga kontekstu i sekwencji.",
+    "tags": [
+      "relacje_nieobecność",
+      "kontekst",
+      "ekspert_oczekiwany"
+    ],
+    "claims": [
+      {
+        "id": "cat_v2_second_cat_not_cure_finding",
+        "text": "Brak innego zwierzęcia wiązał się z ankietowymi kryteriami problemów rozłąkowych.",
+        "basis": "source_finding",
+        "source_ids": [
+          "cat_src_v2_separation_survey"
+        ],
+        "locator": "Abstract",
+        "uncertainty": "Korelacja nie dowodzi skuteczności adopcji."
+      },
+      {
+        "id": "cat_v2_second_cat_not_cure_recommendation",
+        "text": "Dobór towarzysza omów ze specjalistą.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "cat_src_v2_separation_survey"
+        ],
+        "locator": "Wniosek projektowy",
+        "uncertainty": "Nie jest wynikiem eksperymentu."
+      }
+    ]
+  },
+  {
+    "id": "cat_v2_dog_cat_neutrality",
+    "species": [
+      "cat"
+    ],
+    "topic": "relacje_pies_kot",
+    "title": "Spokojne mijanie psa",
+    "observation": "Kot pomija psa bez eskalacji.",
+    "possible_interpretations": [
+      "Możliwa neutralna współobecność."
+    ],
+    "confounders": [
+      "Drogi odejścia; zasoby; wcześniejszy konflikt."
+    ],
+    "safe_next_steps": [
+      "Oceniaj parę z bezpiecznego dystansu."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "cat_src_v2_dog_cat_household"
+    ],
+    "limitations": "Wymaga kontekstu i sekwencji.",
+    "tags": [
+      "relacje_pies_kot",
+      "kontekst",
+      "ekspert_oczekiwany"
+    ],
+    "claims": [
+      {
+        "id": "cat_v2_dog_cat_neutrality_finding",
+        "text": "W ankiecie często raportowano spokojne współżycie kotów i psów.",
+        "basis": "source_finding",
+        "source_ids": [
+          "cat_src_v2_dog_cat_household"
+        ],
+        "locator": "Abstract",
+        "uncertainty": "Opiekunowie mogą przeoczyć subtelne napięcie."
+      },
+      {
+        "id": "cat_v2_dog_cat_neutrality_recommendation",
+        "text": "Oceniaj parę z bezpiecznego dystansu.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "cat_src_v2_dog_cat_household"
+        ],
+        "locator": "Wniosek projektowy",
+        "uncertainty": "Nie jest wynikiem eksperymentu."
+      }
+    ]
+  },
+  {
+    "id": "cat_v2_species_social_comparison",
+    "species": [
+      "cat"
+    ],
+    "topic": "relacje_pies_kot",
+    "title": "Porównywanie kota i psa",
+    "observation": "Kot rzadziej inicjuje kontakt niż pies.",
+    "possible_interpretations": [
+      "Możliwe różne wzorce w tej parze."
+    ],
+    "confounders": [
+      "Gatunek; osoba; sytuacja; reporter."
+    ],
+    "safe_next_steps": [
+      "Oddzielaj porównanie od etykiety niechęci."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "cat_src_v2_dog_cat_household"
+    ],
+    "limitations": "Wymaga kontekstu i sekwencji.",
+    "tags": [
+      "relacje_pies_kot",
+      "kontekst",
+      "ekspert_oczekiwany"
+    ],
+    "claims": [
+      {
+        "id": "cat_v2_species_social_comparison_finding",
+        "text": "Raporty wykazały gatunkowe różnice w podejściu do ludzi i towarzyszy.",
+        "basis": "source_finding",
+        "source_ids": [
+          "cat_src_v2_dog_cat_household"
+        ],
+        "locator": "Abstract",
+        "uncertainty": "Ankieta nie ustala normy jednostki."
+      },
+      {
+        "id": "cat_v2_species_social_comparison_recommendation",
+        "text": "Oddzielaj porównanie od etykiety niechęci.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "cat_src_v2_dog_cat_household"
+        ],
+        "locator": "Wniosek projektowy",
+        "uncertainty": "Nie jest wynikiem eksperymentu."
+      }
+    ]
+  },
+  {
+    "id": "cat_v2_easy_food_choice",
+    "species": [
+      "cat"
+    ],
+    "topic": "żywienie_wybór",
+    "title": "Wybór łatwego pokarmu",
+    "observation": "Kot wybiera miskę zamiast układanki.",
+    "possible_interpretations": [
+      "Możliwa preferencja dostępności."
+    ],
+    "confounders": [
+      "Trudność; kształt; głód; wcześniejszy trening."
+    ],
+    "safe_next_steps": [
+      "Zachowaj łatwy dostęp do pokarmu."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "cat_src_v2_contrafreeloading"
+    ],
+    "limitations": "Wymaga kontekstu i sekwencji.",
+    "tags": [
+      "żywienie_wybór",
+      "kontekst",
+      "ekspert_oczekiwany"
+    ],
+    "claims": [
+      {
+        "id": "cat_v2_easy_food_choice_finding",
+        "text": "Koty zjadały więcej pokarmu z tacy niż z układanki.",
+        "basis": "source_finding",
+        "source_ids": [
+          "cat_src_v2_contrafreeloading"
+        ],
+        "locator": "Results",
+        "uncertainty": "Jeden typ urządzenia; mała próba."
+      },
+      {
+        "id": "cat_v2_easy_food_choice_recommendation",
+        "text": "Zachowaj łatwy dostęp do pokarmu.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "cat_src_v2_contrafreeloading"
+        ],
+        "locator": "Wniosek projektowy",
+        "uncertainty": "Nie jest wynikiem eksperymentu."
+      }
+    ]
+  },
+  {
+    "id": "cat_v2_puzzle_activity_independence",
+    "species": [
+      "cat"
+    ],
+    "topic": "żywienie_aktywność",
+    "title": "Ruchliwość nie przewiduje układanki",
+    "observation": "Aktywny kot pomija karmnik zadaniowy.",
+    "possible_interpretations": [
+      "Możliwa niezależność dwóch zachowań."
+    ],
+    "confounders": [
+      "Motywacja pokarmowa; konstrukcja; doświadczenie."
+    ],
+    "safe_next_steps": [
+      "Oceniaj wybór oddzielnie od ruchliwości."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "cat_src_v2_contrafreeloading"
+    ],
+    "limitations": "Wymaga kontekstu i sekwencji.",
+    "tags": [
+      "żywienie_aktywność",
+      "kontekst",
+      "ekspert_oczekiwany"
+    ],
+    "claims": [
+      {
+        "id": "cat_v2_puzzle_activity_independence_finding",
+        "text": "Nie wykazano korelacji aktywności z preferowaniem pokarmu wymagającego wysiłku.",
+        "basis": "source_finding",
+        "source_ids": [
+          "cat_src_v2_contrafreeloading"
+        ],
+        "locator": "Results",
+        "uncertainty": "Brak korelacji nie wyklucza innych urządzeń."
+      },
+      {
+        "id": "cat_v2_puzzle_activity_independence_recommendation",
+        "text": "Oceniaj wybór oddzielnie od ruchliwości.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "cat_src_v2_contrafreeloading"
+        ],
+        "locator": "Wniosek projektowy",
+        "uncertainty": "Nie jest wynikiem eksperymentu."
+      }
+    ]
+  },
+  {
+    "id": "cat_v2_box_turning_space",
+    "species": [
+      "cat"
+    ],
+    "topic": "eliminacja_wybór",
+    "title": "Przestrzeń w kuwecie",
+    "observation": "Kot wybiera większą dostępną kuwetę.",
+    "possible_interpretations": [
+      "Możliwa preferencja przestrzeni."
+    ],
+    "confounders": [
+      "Lokalizacja; podłoże; dostęp; ból."
+    ],
+    "safe_next_steps": [
+      "Obserwuj wejście, obrót i wyjście."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "cat_src_v2_litter_size"
+    ],
+    "limitations": "Wymaga kontekstu i sekwencji.",
+    "tags": [
+      "eliminacja_wybór",
+      "kontekst",
+      "ekspert_oczekiwany"
+    ],
+    "claims": [
+      {
+        "id": "cat_v2_box_turning_space_finding",
+        "text": "Większa kuweta była częściej używana po obu ustawieniach miejsc.",
+        "basis": "source_finding",
+        "source_ids": [
+          "cat_src_v2_litter_size"
+        ],
+        "locator": "Abstract",
+        "uncertainty": "Nie określa jednego wymiaru dla wszystkich."
+      },
+      {
+        "id": "cat_v2_box_turning_space_recommendation",
+        "text": "Obserwuj wejście, obrót i wyjście.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "cat_src_v2_litter_size"
+        ],
+        "locator": "Wniosek projektowy",
+        "uncertainty": "Nie jest wynikiem eksperymentu."
+      }
+    ]
+  },
+  {
+    "id": "cat_v2_litter_location_carryover",
+    "species": [
+      "cat"
+    ],
+    "topic": "eliminacja_metoda",
+    "title": "Miejsce i historia kuwety",
+    "observation": "Po przesunięciu kot wraca do wcześniejszego miejsca.",
+    "possible_interpretations": [
+      "Możliwy wpływ poprzedniej lokalizacji."
+    ],
+    "confounders": [
+      "Zapach; dostęp; przyzwyczajenie; inne koty."
+    ],
+    "safe_next_steps": [
+      "Przy zmianach zachowaj dostępne znane miejsce."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "cat_src_v2_litter_size"
+    ],
+    "limitations": "Wymaga kontekstu i sekwencji.",
+    "tags": [
+      "eliminacja_metoda",
+      "kontekst",
+      "ekspert_oczekiwany"
+    ],
+    "claims": [
+      {
+        "id": "cat_v2_litter_location_carryover_finding",
+        "text": "Po zamianie lokalizacji występował przejściowy efekt poprzedniego miejsca.",
+        "basis": "source_finding",
+        "source_ids": [
+          "cat_src_v2_litter_size"
+        ],
+        "locator": "Abstract",
+        "uncertainty": "Wynik dotyczący konkretnych ustawień."
+      },
+      {
+        "id": "cat_v2_litter_location_carryover_recommendation",
+        "text": "Przy zmianach zachowaj dostępne znane miejsce.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "cat_src_v2_litter_size"
+        ],
+        "locator": "Wniosek projektowy",
+        "uncertainty": "Nie jest wynikiem eksperymentu."
+      }
+    ]
+  },
+  {
+    "id": "cat_v2_multimodal_environment",
+    "species": [
+      "cat"
+    ],
+    "topic": "środowisko_kontekst",
+    "title": "Pakiet zmian środowiska",
+    "observation": "Opiekun raportuje poprawę po kilku zmianach.",
+    "possible_interpretations": [
+      "Możliwy łączny wpływ opieki."
+    ],
+    "confounders": [
+      "Leczenie; samoistna zmienność; relacja opiekuna."
+    ],
+    "safe_next_steps": [
+      "Dokumentuj skład pakietu z lekarzem."
+    ],
+    "escalation": "veterinarian",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "cat_src_v2_memo"
+    ],
+    "limitations": "Wymaga kontekstu i sekwencji.",
+    "tags": [
+      "środowisko_kontekst",
+      "kontekst",
+      "ekspert_oczekiwany"
+    ],
+    "claims": [
+      {
+        "id": "cat_v2_multimodal_environment_finding",
+        "text": "Po MEMO raportowano mniej objawów ze strony dolnych dróg moczowych.",
+        "basis": "source_finding",
+        "source_ids": [
+          "cat_src_v2_memo"
+        ],
+        "locator": "Abstract",
+        "uncertainty": "Brak kontrolnej grupy; nie dowód leczenia."
+      },
+      {
+        "id": "cat_v2_multimodal_environment_recommendation",
+        "text": "Dokumentuj skład pakietu z lekarzem.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "cat_src_v2_memo"
+        ],
+        "locator": "Wniosek projektowy",
+        "uncertainty": "Nie jest wynikiem eksperymentu."
+      }
+    ]
+  },
+  {
+    "id": "cat_v2_environment_component_attribution",
+    "species": [
+      "cat"
+    ],
+    "topic": "środowisko_metoda",
+    "title": "Nieprzypisywanie poprawy jednej zmianie",
+    "observation": "Poprawę przypisuje się nowej kuwecie.",
+    "possible_interpretations": [
+      "Możliwe współdziałanie kilku czynników."
+    ],
+    "confounders": [
+      "Dieta; kontakt; zasoby; leki."
+    ],
+    "safe_next_steps": [
+      "Zapisuj wszystkie równoległe interwencje."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "cat_src_v2_memo"
+    ],
+    "limitations": "Wymaga kontekstu i sekwencji.",
+    "tags": [
+      "środowisko_metoda",
+      "kontekst",
+      "ekspert_oczekiwany"
+    ],
+    "claims": [
+      {
+        "id": "cat_v2_environment_component_attribution_finding",
+        "text": "W badaniu MEMO opiekunowie stosowali różne kombinacje zmian.",
+        "basis": "source_finding",
+        "source_ids": [
+          "cat_src_v2_memo"
+        ],
+        "locator": "Results",
+        "uncertainty": "Nie wyizolowano skuteczności pojedynczego składnika."
+      },
+      {
+        "id": "cat_v2_environment_component_attribution_recommendation",
+        "text": "Zapisuj wszystkie równoległe interwencje.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "cat_src_v2_memo"
+        ],
+        "locator": "Wniosek projektowy",
+        "uncertainty": "Nie jest wynikiem eksperymentu."
+      }
+    ]
+  },
+  {
+    "id": "cat_v2_routine_event_log",
+    "species": [
+      "cat"
+    ],
+    "topic": "stres_rutyna",
+    "title": "Nietypowe zdarzenie i zachowanie",
+    "observation": "Zachowanie zmienia się po zakłóceniu rutyny.",
+    "possible_interpretations": [
+      "Możliwy wpływ kontekstu."
+    ],
+    "confounders": [
+      "Zdrowie; wiek; opieka; obserwator."
+    ],
+    "safe_next_steps": [
+      "Łącz dziennik zdarzeń z obserwacją."
+    ],
+    "escalation": "veterinarian",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "cat_src_v2_unusual_events"
+    ],
+    "limitations": "Wymaga kontekstu i sekwencji.",
+    "tags": [
+      "stres_rutyna",
+      "kontekst",
+      "ekspert_oczekiwany"
+    ],
+    "claims": [
+      {
+        "id": "cat_v2_routine_event_log_finding",
+        "text": "Nietypowe zdarzenia zwiększały zachowania chorobowe u zdrowych i chorych kotów.",
+        "basis": "source_finding",
+        "source_ids": [
+          "cat_src_v2_unusual_events"
+        ],
+        "locator": "Abstract",
+        "uncertainty": "Nie rozstrzyga przyczyny indywidualnego objawu."
+      },
+      {
+        "id": "cat_v2_routine_event_log_recommendation",
+        "text": "Łącz dziennik zdarzeń z obserwacją.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "cat_src_v2_unusual_events"
+        ],
+        "locator": "Wniosek projektowy",
+        "uncertainty": "Nie jest wynikiem eksperymentu."
+      }
+    ]
+  },
+  {
+    "id": "cat_v2_health_context_nonexclusive",
+    "species": [
+      "cat"
+    ],
+    "topic": "stres_rutyna",
+    "title": "Kontekst również przy chorobie",
+    "observation": "Zmianę kota wyjaśnia się tylko rozpoznaniem.",
+    "possible_interpretations": [
+      "Możliwy równoległy wpływ środowiska."
+    ],
+    "confounders": [
+      "Rutyna; leczenie; wiek."
+    ],
+    "safe_next_steps": [
+      "Przekazuj lekarzowi także historię zdarzeń."
+    ],
+    "escalation": "veterinarian",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "cat_src_v2_unusual_events"
+    ],
+    "limitations": "Wymaga kontekstu i sekwencji.",
+    "tags": [
+      "stres_rutyna",
+      "kontekst",
+      "ekspert_oczekiwany"
+    ],
+    "claims": [
+      {
+        "id": "cat_v2_health_context_nonexclusive_finding",
+        "text": "W badaniu zdarzenia i wiek przewidywały łączne zachowania lepiej niż status choroby.",
+        "basis": "source_finding",
+        "source_ids": [
+          "cat_src_v2_unusual_events"
+        ],
+        "locator": "Abstract",
+        "uncertainty": "Wiwarium nie odzwierciedla wszystkich domów."
+      },
+      {
+        "id": "cat_v2_health_context_nonexclusive_recommendation",
+        "text": "Przekazuj lekarzowi także historię zdarzeń.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "cat_src_v2_unusual_events"
+        ],
+        "locator": "Wniosek projektowy",
+        "uncertainty": "Nie jest wynikiem eksperymentu."
+      }
+    ]
+  },
+  {
+    "id": "cat_v2_predictability_bundle",
+    "species": [
+      "cat"
+    ],
+    "topic": "stres_przewidywalność",
+    "title": "Przewidywalność opieki",
+    "observation": "Reakcje zmieniają się przy nieregularnej opiece.",
+    "possible_interpretations": [
+      "Możliwy wpływ nieprzewidywalnych zdarzeń."
+    ],
+    "confounders": [
+      "Osoba opiekuna; utrata zabawy; zdrowie."
+    ],
+    "safe_next_steps": [
+      "Zapisuj zmiany i przywracaj spokojną rutynę."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "cat_src_v2_stressors"
+    ],
+    "limitations": "Wymaga kontekstu i sekwencji.",
+    "tags": [
+      "stres_przewidywalność",
+      "kontekst",
+      "ekspert_oczekiwany"
+    ],
+    "claims": [
+      {
+        "id": "cat_v2_predictability_bundle_finding",
+        "text": "Pakiet nieprzewidywalnych zmian nasilał zachowania chorobowe w obu grupach.",
+        "basis": "source_finding",
+        "source_ids": [
+          "cat_src_v2_stressors"
+        ],
+        "locator": "Abstract",
+        "uncertainty": "Wiele stresorów jednocześnie."
+      },
+      {
+        "id": "cat_v2_predictability_bundle_recommendation",
+        "text": "Zapisuj zmiany i przywracaj spokojną rutynę.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "cat_src_v2_stressors"
+        ],
+        "locator": "Wniosek projektowy",
+        "uncertainty": "Nie jest wynikiem eksperymentu."
+      }
+    ]
+  },
+  {
+    "id": "cat_v2_physiology_behavior_gap",
+    "species": [
+      "cat"
+    ],
+    "topic": "stres_pomiar",
+    "title": "Miary nie muszą się pokrywać",
+    "observation": "Opis zachowania różni się od biomarkera.",
+    "possible_interpretations": [
+      "Możliwe różne okna i mechanizmy pomiaru."
+    ],
+    "confounders": [
+      "Czas pobrania; choroba; metoda."
+    ],
+    "safe_next_steps": [
+      "Zachowaj miary jako osobne obserwacje."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "cat_src_v2_stressors"
+    ],
+    "limitations": "Wymaga kontekstu i sekwencji.",
+    "tags": [
+      "stres_pomiar",
+      "kontekst",
+      "ekspert_oczekiwany"
+    ],
+    "claims": [
+      {
+        "id": "cat_v2_physiology_behavior_gap_finding",
+        "text": "Wybrane zmiany leukocytów wystąpiły tylko u kotów z zapaleniem pęcherza.",
+        "basis": "source_finding",
+        "source_ids": [
+          "cat_src_v2_stressors"
+        ],
+        "locator": "Abstract",
+        "uncertainty": "Nie pozwala wykluczyć stresu pojedynczą miarą."
+      },
+      {
+        "id": "cat_v2_physiology_behavior_gap_recommendation",
+        "text": "Zachowaj miary jako osobne obserwacje.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "cat_src_v2_stressors"
+        ],
+        "locator": "Wniosek projektowy",
+        "uncertainty": "Nie jest wynikiem eksperymentu."
+      }
+    ]
+  },
+  {
+    "id": "cat_v2_handling_sequence_aversion",
+    "species": [
+      "cat"
+    ],
+    "topic": "obsługa_wybór",
+    "title": "Reakcja podczas unieruchomienia",
+    "observation": "Kot próbuje odejść przy ograniczaniu ruchu.",
+    "possible_interpretations": [
+      "Możliwa reakcja awersyjna."
+    ],
+    "confounders": [
+      "Ból; obcy człowiek; zakres chwytu."
+    ],
+    "safe_next_steps": [
+      "W domu nie odtwarzaj siłowych prób."
+    ],
+    "escalation": "behaviorist",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "cat_src_v2_restraint"
+    ],
+    "limitations": "Wymaga kontekstu i sekwencji.",
+    "tags": [
+      "obsługa_wybór",
+      "kontekst",
+      "ekspert_oczekiwany"
+    ],
+    "claims": [
+      {
+        "id": "cat_v2_handling_sequence_aversion_finding",
+        "text": "Pełne unieruchomienie zwiększało opór i wybrane reakcje względem biernego ograniczenia.",
+        "basis": "source_finding",
+        "source_ids": [
+          "cat_src_v2_restraint"
+        ],
+        "locator": "Abstract",
+        "uncertainty": "Nie koduje dokładnej emocji."
+      },
+      {
+        "id": "cat_v2_handling_sequence_aversion_recommendation",
+        "text": "W domu nie odtwarzaj siłowych prób.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "cat_src_v2_restraint"
+        ],
+        "locator": "Wniosek projektowy",
+        "uncertainty": "Nie jest wynikiem eksperymentu."
+      }
+    ]
+  },
+  {
+    "id": "cat_v2_post_handling_departure",
+    "species": [
+      "cat"
+    ],
+    "topic": "obsługa_sekwencja",
+    "title": "Odejście po kontakcie",
+    "observation": "Kot odchodzi po zwolnieniu chwytu.",
+    "possible_interpretations": [
+      "Możliwy skutek poprzedzającej obsługi."
+    ],
+    "confounders": [
+      "Ból; wysokość; droga odwrotu."
+    ],
+    "safe_next_steps": [
+      "Zapisuj także okres po kontakcie."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "cat_src_v2_restraint"
+    ],
+    "limitations": "Wymaga kontekstu i sekwencji.",
+    "tags": [
+      "obsługa_sekwencja",
+      "kontekst",
+      "ekspert_oczekiwany"
+    ],
+    "claims": [
+      {
+        "id": "cat_v2_post_handling_departure_finding",
+        "text": "Po pełnym unieruchomieniu koty częściej opuszczały stół badania.",
+        "basis": "source_finding",
+        "source_ids": [
+          "cat_src_v2_restraint"
+        ],
+        "locator": "Abstract",
+        "uncertainty": "Odejście ma również inne przyczyny."
+      },
+      {
+        "id": "cat_v2_post_handling_departure_recommendation",
+        "text": "Zapisuj także okres po kontakcie.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "cat_src_v2_restraint"
+        ],
+        "locator": "Wniosek projektowy",
+        "uncertainty": "Nie jest wynikiem eksperymentu."
+      }
+    ]
+  },
+  {
+    "id": "cat_v2_carrier_learning_history",
+    "species": [
+      "cat"
+    ],
+    "topic": "obsługa_transport",
+    "title": "Historia oswajania transportera",
+    "observation": "Kot dobrowolnie wchodzi do transportera.",
+    "possible_interpretations": [
+      "Możliwy wpływ uczenia i znajomości."
+    ],
+    "confounders": [
+      "Zapach; nagroda; bieżący stan."
+    ],
+    "safe_next_steps": [
+      "Ćwicz dobrowolne wejście z nagrodą."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "cat_src_v2_carrier_training"
+    ],
+    "limitations": "Wymaga kontekstu i sekwencji.",
+    "tags": [
+      "obsługa_transport",
+      "kontekst",
+      "ekspert_oczekiwany"
+    ],
+    "claims": [
+      {
+        "id": "cat_v2_carrier_learning_history_finding",
+        "text": "Trening nagrodami zmniejszał badane zachowania stresowe podczas przejazdu.",
+        "basis": "source_finding",
+        "source_ids": [
+          "cat_src_v2_carrier_training"
+        ],
+        "locator": "Abstract",
+        "uncertainty": "Mała próba; konkretny program."
+      },
+      {
+        "id": "cat_v2_carrier_learning_history_recommendation",
+        "text": "Ćwicz dobrowolne wejście z nagrodą.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "cat_src_v2_carrier_training"
+        ],
+        "locator": "Wniosek projektowy",
+        "uncertainty": "Nie jest wynikiem eksperymentu."
+      }
+    ]
+  },
+  {
+    "id": "cat_v2_vet_training_generalization",
+    "species": [
+      "cat"
+    ],
+    "topic": "obsługa_wizyta",
+    "title": "Trening i przebieg wizyty",
+    "observation": "Wizyta przebiega inaczej po oswajaniu.",
+    "possible_interpretations": [
+      "Możliwa generalizacja wcześniejszego treningu."
+    ],
+    "confounders": [
+      "Zespół kliniki; zdrowie; procedura."
+    ],
+    "safe_next_steps": [
+      "Poinformuj klinikę o historii treningu."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "cat_src_v2_carrier_training"
+    ],
+    "limitations": "Wymaga kontekstu i sekwencji.",
+    "tags": [
+      "obsługa_wizyta",
+      "kontekst",
+      "ekspert_oczekiwany"
+    ],
+    "claims": [
+      {
+        "id": "cat_v2_vet_training_generalization_finding",
+        "text": "Po treningu badanie weterynaryjne trwało krócej niż w grupie kontrolnej.",
+        "basis": "source_finding",
+        "source_ids": [
+          "cat_src_v2_carrier_training"
+        ],
+        "locator": "Abstract",
+        "uncertainty": "Czas badania nie mierzy całego dobrostanu."
+      },
+      {
+        "id": "cat_v2_vet_training_generalization_recommendation",
+        "text": "Poinformuj klinikę o historii treningu.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "cat_src_v2_carrier_training"
+        ],
+        "locator": "Wniosek projektowy",
+        "uncertainty": "Nie jest wynikiem eksperymentu."
+      }
+    ]
+  },
+  {
+    "id": "cat_v2_clinic_acoustic_context",
+    "species": [
+      "cat"
+    ],
+    "topic": "słuch_wizyta",
+    "title": "Dźwięk jako element wizyty",
+    "observation": "Reakcje kota zmieniają się w klinice.",
+    "possible_interpretations": [
+      "Możliwy wpływ warunków akustycznych."
+    ],
+    "confounders": [
+      "Obsługa; choroba; głośność; znajomość miejsca."
+    ],
+    "safe_next_steps": [
+      "Omów ciche warunki z kliniką."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "cat_src_v2_clinic_music"
+    ],
+    "limitations": "Wymaga kontekstu i sekwencji.",
+    "tags": [
+      "słuch_wizyta",
+      "kontekst",
+      "ekspert_oczekiwany"
+    ],
+    "claims": [
+      {
+        "id": "cat_v2_clinic_acoustic_context_finding",
+        "text": "Muzyka kocia wiązała się z niższymi ocenami zachowań stresowych.",
+        "basis": "source_finding",
+        "source_ids": [
+          "cat_src_v2_clinic_music"
+        ],
+        "locator": "Abstract",
+        "uncertainty": "Wybrane warunki badania klinicznego."
+      },
+      {
+        "id": "cat_v2_clinic_acoustic_context_recommendation",
+        "text": "Omów ciche warunki z kliniką.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "cat_src_v2_clinic_music"
+        ],
+        "locator": "Wniosek projektowy",
+        "uncertainty": "Nie jest wynikiem eksperymentu."
+      }
+    ]
+  },
+  {
+    "id": "cat_v2_music_biomarker_difference",
+    "species": [
+      "cat"
+    ],
+    "topic": "słuch_pomiar",
+    "title": "Zachowanie i fizjologia muzyki",
+    "observation": "Ocena zachowania sugeruje korzyść dźwięku.",
+    "possible_interpretations": [
+      "Możliwy efekt ograniczony do części miar."
+    ],
+    "confounders": [
+      "Czas; biomarker; sposób obsługi."
+    ],
+    "safe_next_steps": [
+      "Nie ogłaszaj pełnej redukcji stresu."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "cat_src_v2_clinic_music"
+    ],
+    "limitations": "Wymaga kontekstu i sekwencji.",
+    "tags": [
+      "słuch_pomiar",
+      "kontekst",
+      "ekspert_oczekiwany"
+    ],
+    "claims": [
+      {
+        "id": "cat_v2_music_biomarker_difference_finding",
+        "text": "Muzyka nie zmieniła mierzonego stosunku neutrofili do limfocytów.",
+        "basis": "source_finding",
+        "source_ids": [
+          "cat_src_v2_clinic_music"
+        ],
+        "locator": "Abstract",
+        "uncertainty": "Brak różnicy jednego biomarkera."
+      },
+      {
+        "id": "cat_v2_music_biomarker_difference_recommendation",
+        "text": "Nie ogłaszaj pełnej redukcji stresu.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "cat_src_v2_clinic_music"
+        ],
+        "locator": "Wniosek projektowy",
+        "uncertainty": "Nie jest wynikiem eksperymentu."
+      }
+    ]
+  },
+  {
+    "id": "cat_v2_senior_contact_change",
+    "species": [
+      "cat"
+    ],
+    "topic": "senior_relacje",
+    "title": "Zmiana kontaktu u seniora",
+    "observation": "Starszy kot szuka więcej kontaktu.",
+    "possible_interpretations": [
+      "Możliwa zmiana potrzeb lub zdrowia."
+    ],
+    "confounders": [
+      "Choroba; rutyna; sprawność; reporter."
+    ],
+    "safe_next_steps": [
+      "Notuj początek zmiany i omów zdrowie."
+    ],
+    "escalation": "veterinarian",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "cat_src_v2_senior_cohorts"
+    ],
+    "limitations": "Wymaga kontekstu i sekwencji.",
+    "tags": [
+      "senior_relacje",
+      "kontekst",
+      "ekspert_oczekiwany"
+    ],
+    "claims": [
+      {
+        "id": "cat_v2_senior_contact_change_finding",
+        "text": "W obu kohortach raportowano wzrost kontaktu z opiekunem u części seniorów.",
+        "basis": "source_finding",
+        "source_ids": [
+          "cat_src_v2_senior_cohorts"
+        ],
+        "locator": "Abstract",
+        "uncertainty": "Nie oznacza wyłącznie zmiany osobowości."
+      },
+      {
+        "id": "cat_v2_senior_contact_change_recommendation",
+        "text": "Notuj początek zmiany i omów zdrowie.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "cat_src_v2_senior_cohorts"
+        ],
+        "locator": "Wniosek projektowy",
+        "uncertainty": "Nie jest wynikiem eksperymentu."
+      }
+    ]
+  },
+  {
+    "id": "cat_v2_senior_cohort_comparison",
+    "species": [
+      "cat"
+    ],
+    "topic": "senior_metoda",
+    "title": "Porównywanie historycznych seniorów",
+    "observation": "Profil seniora porównuje się z dawną normą.",
+    "possible_interpretations": [
+      "Możliwy wpływ okresu i rozpoznawania chorób."
+    ],
+    "confounders": [
+      "Opieka; dobór próby; pamięć."
+    ],
+    "safe_next_steps": [
+      "Używaj indywidualnej historii jako punktu odniesienia."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "cat_src_v2_senior_cohorts"
+    ],
+    "limitations": "Wymaga kontekstu i sekwencji.",
+    "tags": [
+      "senior_metoda",
+      "kontekst",
+      "ekspert_oczekiwany"
+    ],
+    "claims": [
+      {
+        "id": "cat_v2_senior_cohort_comparison_finding",
+        "text": "Rozpoznania chorób raportowano częściej w późniejszej kohorcie.",
+        "basis": "source_finding",
+        "source_ids": [
+          "cat_src_v2_senior_cohorts"
+        ],
+        "locator": "Abstract",
+        "uncertainty": "Dwie populacje; brak diagnozy poznawczej."
+      },
+      {
+        "id": "cat_v2_senior_cohort_comparison_recommendation",
+        "text": "Używaj indywidualnej historii jako punktu odniesienia.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "cat_src_v2_senior_cohorts"
+        ],
+        "locator": "Wniosek projektowy",
+        "uncertainty": "Nie jest wynikiem eksperymentu."
+      }
+    ]
+  },
+  {
+    "id": "cat_v2_shared_reporter",
+    "species": [
+      "cat"
+    ],
+    "topic": "osobowość_obserwator",
+    "title": "Wspólne źródło oceny",
+    "observation": "Opiekun opisuje kota i własne emocje.",
+    "possible_interpretations": [
+      "Możliwy wpływ sposobu raportowania."
+    ],
+    "confounders": [
+      "Środowisko; selekcja; pamięć."
+    ],
+    "safe_next_steps": [
+      "Oddzielaj relację opiekuna od nagrania."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "cat_src_v2_owner_personality"
+    ],
+    "limitations": "Wymaga kontekstu i sekwencji.",
+    "tags": [
+      "osobowość_obserwator",
+      "kontekst",
+      "ekspert_oczekiwany"
+    ],
+    "claims": [
+      {
+        "id": "cat_v2_shared_reporter_finding",
+        "text": "Osobowość opiekuna korelowała z raportowanymi zachowaniami i dobrostanem kota.",
+        "basis": "source_finding",
+        "source_ids": [
+          "cat_src_v2_owner_personality"
+        ],
+        "locator": "Abstract",
+        "uncertainty": "Wspólny reporter; brak przyczynowości."
+      },
+      {
+        "id": "cat_v2_shared_reporter_recommendation",
+        "text": "Oddzielaj relację opiekuna od nagrania.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "cat_src_v2_owner_personality"
+        ],
+        "locator": "Wniosek projektowy",
+        "uncertainty": "Nie jest wynikiem eksperymentu."
+      }
+    ]
+  },
+  {
+    "id": "cat_v2_owner_environment_covariation",
+    "species": [
+      "cat"
+    ],
+    "topic": "osobowość_środowisko",
+    "title": "Opiekun i warunki życia",
+    "observation": "Opis cech kota towarzyszy określonej opiece.",
+    "possible_interpretations": [
+      "Możliwe współwystępowanie środowiska i raportu."
+    ],
+    "confounders": [
+      "Dobór kota; styl opieki; reporter."
+    ],
+    "safe_next_steps": [
+      "Zapisuj warunki bez obwiniania człowieka."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "cat_src_v2_owner_personality"
+    ],
+    "limitations": "Wymaga kontekstu i sekwencji.",
+    "tags": [
+      "osobowość_środowisko",
+      "kontekst",
+      "ekspert_oczekiwany"
+    ],
+    "claims": [
+      {
+        "id": "cat_v2_owner_environment_covariation_finding",
+        "text": "Cechy opiekuna wiązały się także z raportowanym sposobem utrzymania kota.",
+        "basis": "source_finding",
+        "source_ids": [
+          "cat_src_v2_owner_personality"
+        ],
+        "locator": "Abstract",
+        "uncertainty": "Kierunek zależności pozostaje nieustalony."
+      },
+      {
+        "id": "cat_v2_owner_environment_covariation_recommendation",
+        "text": "Zapisuj warunki bez obwiniania człowieka.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "cat_src_v2_owner_personality"
+        ],
+        "locator": "Wniosek projektowy",
+        "uncertainty": "Nie jest wynikiem eksperymentu."
+      }
+    ]
+  },
+  {
+    "id": "cat_v2_face_reading_uncertainty",
+    "species": [
+      "cat"
+    ],
+    "topic": "obserwator_twarz",
+    "title": "Niepewna ocena twarzy",
+    "observation": "Opiekun nadaje emocję krótkiej mimice.",
+    "possible_interpretations": [
+      "Możliwa interpretacja zależna od obserwatora."
+    ],
+    "confounders": [
+      "Kadr; aktywność; operacyjne etykiety."
+    ],
+    "safe_next_steps": [
+      "Zapisuj ruchy i kontekst przed hipotezą."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "cat_src_v2_face_observers"
+    ],
+    "limitations": "Wymaga kontekstu i sekwencji.",
+    "tags": [
+      "obserwator_twarz",
+      "kontekst",
+      "ekspert_oczekiwany"
+    ],
+    "claims": [
+      {
+        "id": "cat_v2_face_reading_uncertainty_finding",
+        "text": "Średnie rozpoznawanie walencji klipów było niskie, choć ponad losowym.",
+        "basis": "source_finding",
+        "source_ids": [
+          "cat_src_v2_face_observers"
+        ],
+        "locator": "Abstract",
+        "uncertainty": "Etykiety sytuacji nie ujawniają przeżyć."
+      },
+      {
+        "id": "cat_v2_face_reading_uncertainty_recommendation",
+        "text": "Zapisuj ruchy i kontekst przed hipotezą.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "cat_src_v2_face_observers"
+        ],
+        "locator": "Wniosek projektowy",
+        "uncertainty": "Nie jest wynikiem eksperymentu."
+      }
+    ]
+  },
+  {
+    "id": "cat_v2_experience_not_certainty",
+    "species": [
+      "cat"
+    ],
+    "topic": "obserwator_twarz",
+    "title": "Znajomość kota i trafność",
+    "observation": "Opiekun jest pewny odczytu obcego kota.",
+    "possible_interpretations": [
+      "Możliwa nadmierna pewność oceny."
+    ],
+    "confounders": [
+      "Doświadczenie; materiał; różnice osobnicze."
+    ],
+    "safe_next_steps": [
+      "Zachowuj alternatywne interpretacje krótkich klipów."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "cat_src_v2_face_observers"
+    ],
+    "limitations": "Wymaga kontekstu i sekwencji.",
+    "tags": [
+      "obserwator_twarz",
+      "kontekst",
+      "ekspert_oczekiwany"
+    ],
+    "claims": [
+      {
+        "id": "cat_v2_experience_not_certainty_finding",
+        "text": "Doświadczenie zawodowe pomagało; posiadanie kota miało mały wpływ na wynik.",
+        "basis": "source_finding",
+        "source_ids": [
+          "cat_src_v2_face_observers"
+        ],
+        "locator": "Abstract",
+        "uncertainty": "Wynik testu nie waliduje każdej interpretacji."
+      },
+      {
+        "id": "cat_v2_experience_not_certainty_recommendation",
+        "text": "Zachowuj alternatywne interpretacje krótkich klipów.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "cat_src_v2_face_observers"
+        ],
+        "locator": "Wniosek projektowy",
+        "uncertainty": "Nie jest wynikiem eksperymentu."
+      }
+    ]
+  },
+  {
+    "id": "cat_v2_moving_toy_preference",
+    "species": [
+      "cat"
+    ],
+    "topic": "zabawa_bodźce",
+    "title": "Ruch zabawki jako zmienna",
+    "observation": "Kot wybiera ruchomy przedmiot.",
+    "possible_interpretations": [
+      "Możliwa preferencja sposobu prezentacji."
+    ],
+    "confounders": [
+      "Tempo; wielkość; poprzednia zabawa."
+    ],
+    "safe_next_steps": [
+      "Zapisuj ruch zamiast cechy łowcy."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "cat_src_v2_odor_toys"
+    ],
+    "limitations": "Wymaga kontekstu i sekwencji.",
+    "tags": [
+      "zabawa_bodźce",
+      "kontekst",
+      "ekspert_oczekiwany"
+    ],
+    "claims": [
+      {
+        "id": "cat_v2_moving_toy_preference_finding",
+        "text": "W badaniu dłużej kontaktowano się z zabawkami ruchomymi niż nieruchomymi bez zapachu.",
+        "basis": "source_finding",
+        "source_ids": [
+          "cat_src_v2_odor_toys"
+        ],
+        "locator": "Abstract",
+        "uncertainty": "Krótki wybór nie mierzy polowania."
+      },
+      {
+        "id": "cat_v2_moving_toy_preference_recommendation",
+        "text": "Zapisuj ruch zamiast cechy łowcy.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "cat_src_v2_odor_toys"
+        ],
+        "locator": "Wniosek projektowy",
+        "uncertainty": "Nie jest wynikiem eksperymentu."
+      }
+    ]
+  },
+  {
+    "id": "cat_v2_stationary_scent_interaction",
+    "species": [
+      "cat"
+    ],
+    "topic": "zabawa_węch",
+    "title": "Zapach pomaga tylko w części warunków",
+    "observation": "Kot wraca do nieruchomej zabawki zapachowej.",
+    "possible_interpretations": [
+      "Możliwa interakcja zapachu i prezentacji."
+    ],
+    "confounders": [
+      "Preferowany zapach; nowość; zmęczenie."
+    ],
+    "safe_next_steps": [
+      "Porównuj bezpieczne opcje z możliwością odejścia."
+    ],
+    "escalation": "none",
+    "evidence_level": "primary_study",
+    "source_ids": [
+      "cat_src_v2_odor_toys"
+    ],
+    "limitations": "Wymaga kontekstu i sekwencji.",
+    "tags": [
+      "zabawa_węch",
+      "kontekst",
+      "ekspert_oczekiwany"
+    ],
+    "claims": [
+      {
+        "id": "cat_v2_stationary_scent_interaction_finding",
+        "text": "Preferowany zapach zwiększał kontakt z nieruchomą zabawką, ale nie ruchomą.",
+        "basis": "source_finding",
+        "source_ids": [
+          "cat_src_v2_odor_toys"
+        ],
+        "locator": "Abstract",
+        "uncertainty": "Jeden zestaw bodźców;31 kotów."
+      },
+      {
+        "id": "cat_v2_stationary_scent_interaction_recommendation",
+        "text": "Porównuj bezpieczne opcje z możliwością odejścia.",
+        "basis": "project_recommendation",
+        "source_ids": [
+          "cat_src_v2_odor_toys"
+        ],
+        "locator": "Wniosek projektowy",
+        "uncertainty": "Nie jest wynikiem eksperymentu."
+      }
+    ]
+  }
+]

@@ -1,0 +1,45 @@
+"use client";
+import { useEffect, useRef, useState } from "react";
+import { MessageCircle, ClipboardList, Camera, Heart, BookOpen, Settings, Plus, Menu, X, ChevronDown, ArrowRight, Check, LoaderCircle, ShieldCheck } from "lucide-react";
+import type { PetRecord, Workspace } from "@/lib/types";
+import { createDemoRecord, getReadiness } from "@/lib/domain";
+import { emptyWorkspace, loadWorkspace, saveWorkspace, deleteClipBlob } from "@/lib/local-store";
+import { Welcome } from "./welcome";
+import { PetDialog } from "./pet-dialog";
+import { ChatView } from "./chat-view";
+import { QuestionnaireView } from "./questionnaire-view";
+import { CaptureView } from "./capture-view";
+import { MemoryView } from "./memory-view";
+import { KnowledgeView } from "./knowledge-view";
+import { SettingsView } from "./settings-view";
+import { EmptyState, PetAvatar } from "./ui";
+
+type View="welcome"|"chat"|"test"|"capture"|"memory"|"knowledge"|"settings";
+const navigation=[{id:"chat" as View,title:"Rozmowa",icon:MessageCircle},{id:"test" as View,title:"Poznajmy się",icon:ClipboardList},{id:"capture" as View,title:"Nagrania",icon:Camera},{id:"memory" as View,title:"Wasza historia",icon:Heart},{id:"knowledge" as View,title:"Odkryj i zrozum",icon:BookOpen}];
+
+export function CopowieszApp(){
+  const [workspace,setWorkspace]=useState<Workspace>(emptyWorkspace);const [loaded,setLoaded]=useState(false);const [view,setView]=useState<View>("welcome");const [create,setCreate]=useState(false);const [menu,setMenu]=useState(false);const [storageError,setStorageError]=useState("");const [saving,setSaving]=useState(false);const [storageReady,setStorageReady]=useState(false);const saves=useRef<Promise<void>>(Promise.resolve());
+  const active=workspace.pets.find(r=>r.pet.id===workspace.activePetId);const readiness=active?getReadiness(active):null;
+  useEffect(()=>{let cancelled=false;loadWorkspace().then(data=>{if(cancelled)return;setWorkspace(data);setStorageReady(true);if(data.pets.length)setView("chat");}).catch(()=>setStorageError("Ta przeglądarka nie pozwala zapisać danych lokalnie. Włącz przechowywanie danych lub otwórz aplikację w zwykłym oknie." )).finally(()=>{if(!cancelled)setLoaded(true);});return()=>{cancelled=true;};},[]);
+  useEffect(()=>{if(!loaded||!storageReady)return;setSaving(true);saves.current=saves.current.catch(()=>{}).then(()=>saveWorkspace(workspace)).then(()=>{setStorageError("");setSaving(false);}).catch(()=>{setStorageError("Zapis się nie powiódł. Pobierz kopię danych w ustawieniach i sprawdź wolne miejsce w przeglądarce.");setSaving(false);});},[workspace,loaded,storageReady]);
+  function update(record:PetRecord){setWorkspace(previous=>({...previous,pets:previous.pets.map(r=>r.pet.id===record.pet.id?record:r)}));}
+  function mergeCapture(base:PetRecord,next:PetRecord){const changed=next.clips.filter(clip=>JSON.stringify(clip)!==JSON.stringify(base.clips.find(item=>item.id===clip.id)));const added=next.memories.filter(memory=>!base.memories.some(item=>item.id===memory.id));setWorkspace(previous=>({...previous,pets:previous.pets.map(record=>record.pet.id!==next.pet.id?record:{...record,clips:[...record.clips.filter(clip=>!changed.some(item=>item.id===clip.id)),...changed],memories:[...record.memories,...added.filter(memory=>!record.memories.some(item=>item.id===memory.id))]})}));}
+  function mergeChat(base:PetRecord,next:PetRecord){const added=next.messages.filter(message=>!base.messages.some(item=>item.id===message.id));setWorkspace(previous=>({...previous,pets:previous.pets.map(record=>record.pet.id!==next.pet.id?record:{...record,messages:[...record.messages,...added.filter(message=>!record.messages.some(item=>item.id===message.id))]})}));}
+  function navigate(next:View){setView(next);setMenu(false);window.scrollTo({top:0});}
+  function add(record:PetRecord){setWorkspace(previous=>({...previous,pets:[...previous.pets,record],activePetId:record.pet.id}));setCreate(false);navigate("test");}
+  function demo(){const existing=workspace.pets.find(r=>r.isDemo);if(existing)setWorkspace(previous=>({...previous,activePetId:existing.pet.id}));else{const record=createDemoRecord("cat");setWorkspace(previous=>({...previous,pets:[...previous.pets,record],activePetId:record.pet.id}));}navigate("chat");}
+  function remove(id:string){const target=workspace.pets.find(r=>r.pet.id===id);setWorkspace(previous=>{const pets=previous.pets.filter(r=>r.pet.id!==id);return {...previous,pets,activePetId:previous.activePetId===id?pets[0]?.pet.id??null:previous.activePetId};});for(const clip of target?.clips??[])void deleteClipBlob(clip.id).catch(()=>setStorageError("Profil usunięto, lecz nie udało się usunąć jednego z lokalnych filmów. Spróbuj ponownie po odświeżeniu."));}
+  if(!loaded)return <div className="app-loading"><img src="/brand/logo.png" alt="COPOWIESZ"/><LoaderCircle className="spin"/><p>Otwieramy Wasz wspólny świat…</p></div>;
+  return <div className="app-shell"><a className="skip-link" href="#main">Przejdź do treści</a>{menu&&<button className="sidebar-overlay" aria-label="Zamknij menu" onClick={()=>setMenu(false)}/>}
+    <aside className={`sidebar ${menu?"open":""}`}><button className="brand" onClick={()=>navigate("welcome")} aria-label="COPOWIESZ — strona startowa"><img src="/brand/logo.png" alt=""/><span>copowiesz<small>Wasza historia ma głos.</small></span></button><button className="mobile-close icon-button" aria-label="Zamknij menu" onClick={()=>setMenu(false)}><X/></button>
+      {workspace.pets.length>0?<div className="pet-switcher"><PetAvatar pet={active?.pet??workspace.pets[0].pet}/><div><label htmlFor="pet-select">Twój towarzysz</label><select id="pet-select" value={workspace.activePetId??""} onChange={e=>{setWorkspace(previous=>({...previous,activePetId:e.target.value}));navigate("chat");}}>{workspace.pets.map(r=><option key={r.pet.id} value={r.pet.id}>{r.pet.name}{r.isDemo?" · demo":""}</option>)}</select></div><ChevronDown size={16}/></div>:<div className="sidebar-welcome"><span>Mały krok.</span><p>Cały jego świat.</p></div>}
+      <nav aria-label="Główna nawigacja">{navigation.map(item=><button className={view===item.id?"active":""} key={item.id} onClick={()=>navigate(item.id)}><item.icon size={20}/><span>{item.title}</span>{item.id==="test"&&readiness&&!active?.isDemo&&<small>{readiness.answered}/{readiness.total}</small>}</button>)}</nav>
+      {active&&!active.isDemo&&!readiness?.ready&&<div className="sidebar-progress"><span>Poznajemy {active.pet.name}</span><div className="progress-track"><span style={{width:`${100*(readiness?.answered??0)/(readiness?.total??85)}%`}}/></div><p>{readiness?.answered}/{readiness?.total} pytań · {readiness?.clips}/{readiness?.totalClips} nagrań</p><button className="text-button" onClick={()=>navigate(readiness?.answered===readiness?.total?"capture":"test")}>Kontynuuj<ArrowRight size={14}/></button></div>}
+      <div className="sidebar-bottom"><button className={`settings-nav ${view==="settings"?"active":""}`} onClick={()=>navigate("settings")}><Settings size={20}/>Ustawienia</button><p className="local-status">{saving?<LoaderCircle size={14} className="spin"/>:storageError?<ShieldCheck size={14}/>:<Check size={14}/>} {saving?"Zapisuję…":storageError?"Sprawdź zapis":"Zapis lokalny"}</p></div>
+    </aside>
+    <div className="main-shell"><header className="topbar"><button className="mobile-menu icon-button" aria-label="Otwórz menu" onClick={()=>setMenu(true)}><Menu/></button><button className="mobile-brand" onClick={()=>navigate("welcome")}><img src="/brand/logo.png" alt=""/>copowiesz</button><span className="topbar-note">Wasz mały, wspólny świat.</span><button className="button outline compact" onClick={()=>setCreate(true)}><Plus size={17}/><span>Dodaj zwierzaka</span></button></header>
+      <main id="main" className={`main-content view-${view}`} tabIndex={-1}>{storageError&&<div className="error storage-error" role="alert">{storageError}</div>}
+        {view==="welcome"?<Welcome onCreate={()=>setCreate(true)} onDemo={demo}/>:view==="settings"?<SettingsView workspace={workspace} onReplace={setWorkspace} onDelete={remove}/>:!active?<EmptyState title="Najpierw poznajmy Twojego zwierzaka" text="Dodaj psa lub kota. Będziemy poznawać jego codzienność, a potem porozmawiacie po polsku." action="Dodaj zwierzaka" onAction={()=>setCreate(true)}/>:view==="chat"?<ChatView key={active.pet.id} record={active} onUpdate={next=>mergeChat(active,next)} onTest={()=>navigate("test")} onCapture={()=>navigate("capture")} onSettings={()=>navigate("settings")}/>:view==="test"?<QuestionnaireView key={active.pet.id} record={active} update={update} onCapture={()=>navigate("capture")}/>:view==="capture"?<CaptureView key={active.pet.id} record={active} onUpdate={next=>mergeCapture(active,next)} onSettings={()=>navigate("settings")} onChat={()=>navigate("chat")}/>:view==="memory"?<MemoryView key={active.pet.id} record={active} onUpdate={update}/>:<KnowledgeView key={active.pet.id} record={active} onUpdate={update}/>}
+      </main>
+    </div>{create&&<PetDialog onClose={()=>setCreate(false)} onCreate={add}/>}</div>;
+}

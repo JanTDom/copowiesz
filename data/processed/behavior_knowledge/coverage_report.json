@@ -1,0 +1,170 @@
+{
+  "format_version": "1.0",
+  "reviewed_at": "2026-10-07",
+  "status": "structural_audit_not_expert_or_clinical_validation",
+  "card_count": 290,
+  "source_record_count": 173,
+  "distinct_source_urls": 173,
+  "source_identity_candidates": 170,
+  "identity_meaning": "DOI gdy podany, inaczej znormalizowany tytuł; nie potwierdza unikalności badania/próby ani nie rozwiązuje wersji.",
+  "domain_counts": {
+    "behavior": 210,
+    "health": 40,
+    "methods": 40
+  },
+  "species_card_counts": {
+    "dog": 166,
+    "cat": 162
+  },
+  "shared_cards": 38,
+  "evidence_types": {
+    "primary_study": 110,
+    "guideline": 26,
+    "technical_documentation": 5,
+    "clinical_reference": 32
+  },
+  "source_access": {
+    "abstract": 52,
+    "full_text_sections": 47,
+    "legacy_not_structured": 53,
+    "publisher_record": 14,
+    "official_guideline": 7
+  },
+  "source_review_status": {
+    "editorial_screened_expert_pending": 120,
+    "legacy_editorial_only": 53
+  },
+  "retraction_check_status": {
+    "not_checked": 120,
+    "legacy_not_structured": 53
+  },
+  "claim_count": 420,
+  "cards_with_claims": 210,
+  "legacy_cards_pending_claim_review": [
+    "cat_resources",
+    "cat_scent",
+    "cat_hiding",
+    "cat_separate_feeding",
+    "cat_foraging",
+    "cat_scratching_function",
+    "cat_scratching_preferences",
+    "cat_slow_blink",
+    "cat_blink_context",
+    "cat_meow_context",
+    "cat_meow_personalization",
+    "cat_purr_solicitation",
+    "cat_speech_response",
+    "cat_mutual_play",
+    "cat_mixed_play",
+    "cat_blocking",
+    "cat_introductions",
+    "cat_redirected_arousal",
+    "cat_contact_choice",
+    "cat_freezing",
+    "cat_petting_pause",
+    "cat_carrier_environment",
+    "cat_urine_outside",
+    "cat_spraying",
+    "cat_litter_choice",
+    "cat_urinary_emergency",
+    "cat_urinary_uncertainty",
+    "cat_overgrooming",
+    "cat_fgs_face",
+    "cat_fgs_visibility",
+    "cat_acute_pain_silence",
+    "cat_jumping_change",
+    "cat_pain_baseline",
+    "cat_senior_night",
+    "cat_inappetence",
+    "cat_personality_stability",
+    "cat_febarq_validity",
+    "cat_proxy_report",
+    "cat_traits_and_symptoms",
+    "cat_reward_training",
+    "dog_stress_sequence",
+    "dog_clinic_context",
+    "dog_new_aggression",
+    "dog_reward_training",
+    "dog_aversive_tools",
+    "dog_training_stress",
+    "dog_lick_yawn_context",
+    "dog_ecollar_risk",
+    "dog_puppy_socialization",
+    "dog_puppy_fear",
+    "dog_pain_posture",
+    "dog_pain_severe",
+    "dog_pain_gait",
+    "dog_pain_daily_function",
+    "dog_senior_disorientation",
+    "dog_senior_housesoiling",
+    "dog_cbarq_instrument",
+    "dog_cbarq_access",
+    "dog_profile_domains",
+    "dog_owner_report_limits",
+    "dog_short_form_validation",
+    "dog_item_domain_difference",
+    "dog_breed_not_destiny",
+    "dog_appearance_not_personality",
+    "dog_age_training_association",
+    "dog_separation_video",
+    "dog_separation_latency",
+    "dog_separation_differentials",
+    "dog_separation_attachment",
+    "dog_alone_rest",
+    "dog_face_attention",
+    "dog_face_video_bias",
+    "dog_gaze_object",
+    "dog_gesture_outcome",
+    "dog_multimodal_emotion",
+    "dog_puppy_gestures",
+    "dog_welfare_needs",
+    "dog_social_individual",
+    "dog_guilty_look",
+    "dog_nosework_welfare"
+  ],
+  "sources_unused_by_cards": [],
+  "possible_duplicate_identities": [
+    {
+      "identity": "title:2022 aaha pain management guidelines for dogs and cats",
+      "source_ids": [
+        "cat_src_aaha_pain",
+        "dog_src_aaha_pain_2022"
+      ]
+    },
+    {
+      "identity": "title:2022 wsava guidelines for the recognition assessment and treatment of pain",
+      "source_ids": [
+        "cat_src_wsava_pain",
+        "dog_src_wsava_pain_2022"
+      ]
+    },
+    {
+      "identity": "title:2015 aaha canine and feline behavior management guidelines",
+      "source_ids": [
+        "cat_src_behavior_management",
+        "dog_src_aaha_behavior_2015"
+      ]
+    }
+  ],
+  "health": {
+    "cards": 40,
+    "urgent_card_metadata": 17,
+    "is_automatic_triage": false,
+    "diagnostic_accuracy_measured": false
+  },
+  "ethogram": {
+    "behaviors": 80,
+    "status": "unvalidated_project_operational_definitions"
+  },
+  "retrieval_regression_cases": 11,
+  "known_gaps": [
+    "Brak niezależnego przeglądu wszystkich kart przez behawiorystę i lekarza weterynarii.",
+    "Nie przeprowadzono kompletnego sprawdzenia korekt i retrakcji; jedna odczytana korekta VIDOPET nie jest audytem bibliografii.",
+    "80 kart pierwotnej wersji wymaga dokładniejszych cytowań na poziomie twierdzeń.",
+    "Część źródeł odczytano jako abstrakt lub publiczny fragment; nie pełny artykuł/rozdział.",
+    "Brak zwalidowanego polskiego kwestionariusza, norm osobowości i danych długoterminowych konkretnych zwierząt.",
+    "Brak walidacji video, emocji, pilności medycznej i rzeczywistego dialogu.",
+    "Wyszukiwanie leksykalne nie rozumie negacji, współwystępowania ani czasu objawu.",
+    "Znalezienie repozytorium HF nie potwierdza licencji, gatunku, jakości ani wdrożenia modelu."
+  ]
+}

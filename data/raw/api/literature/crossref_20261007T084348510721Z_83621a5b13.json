@@ -1,0 +1,160 @@
+{
+  "provider": "crossref",
+  "query": "feline personality",
+  "requested_limit": 3,
+  "retrieved_at": "2026-10-07T08:43:48.510537+00:00",
+  "record_count": 3,
+  "contains_full_text": false,
+  "contains_abstracts": false,
+  "review_status": "not_reviewed",
+  "records": [
+    {
+      "doi": "10.1016/b978-0-323-22652-3.00094-3",
+      "title": "Feline Social Behavior and Personality",
+      "authors": [
+        {
+          "given": "Jacqui",
+          "family": "Ley"
+        }
+      ],
+      "publication_date": [
+        [
+          2016
+        ]
+      ],
+      "publisher": "Elsevier",
+      "type": "book-chapter",
+      "url": "https://doi.org/10.1016/b978-0-323-22652-3.00094-3",
+      "declared_licenses": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2016,
+                1,
+                1
+              ]
+            ],
+            "date-time": "2016-01-01T00:00:00Z",
+            "timestamp": 1451606400000
+          },
+          "content-version": "tdm",
+          "delay-in-days": 0,
+          "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+        },
+        {
+          "start": {
+            "date-parts": [
+              [
+                2016,
+                1,
+                1
+              ]
+            ],
+            "date-time": "2016-01-01T00:00:00Z",
+            "timestamp": 1451606400000
+          },
+          "content-version": "tdm",
+          "delay-in-days": 0,
+          "URL": "https://www.elsevier.com/legal/tdmrep-license"
+        }
+      ],
+      "license_status": "requires_version_and_rights_review",
+      "review_status": "candidate_not_behavioral_evidence"
+    },
+    {
+      "doi": "10.1177/1098612x251349718",
+      "title": "Effects of feline personality on pain assessment with two validated behaviour-based scales",
+      "authors": [
+        {
+          "given": "Ana",
+          "family": "Cadariu"
+        },
+        {
+          "given": "Chiara",
+          "family": "Adami",
+          "ORCID": "https://orcid.org/0000-0003-1909-5807"
+        }
+      ],
+      "publication_date": [
+        [
+          2025,
+          7
+        ]
+      ],
+      "publisher": "SAGE Publications",
+      "type": "journal-article",
+      "url": "https://doi.org/10.1177/1098612x251349718",
+      "declared_licenses": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                7,
+                1
+              ]
+            ],
+            "date-time": "2025-07-01T00:00:00Z",
+            "timestamp": 1751328000000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+        },
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                7,
+                1
+              ]
+            ],
+            "date-time": "2025-07-01T00:00:00Z",
+            "timestamp": 1751328000000
+          },
+          "content-version": "tdm",
+          "delay-in-days": 0,
+          "URL": "https://journals.sagepub.com/page/policies/text-and-data-mining-license"
+        }
+      ],
+      "license_status": "requires_version_and_rights_review",
+      "review_status": "candidate_not_behavioral_evidence"
+    },
+    {
+      "doi": "10.1136/vr.j4464",
+      "title": "Feline playful: personality traits of the cat discovered",
+      "authors": [],
+      "publication_date": [
+        [
+          2017,
+          9
+        ]
+      ],
+      "publisher": "Wiley",
+      "type": "journal-article",
+      "url": "https://doi.org/10.1136/vr.j4464",
+      "declared_licenses": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2017,
+                9,
+                30
+              ]
+            ],
+            "date-time": "2017-09-30T00:00:00Z",
+            "timestamp": 1506729600000
+          },
+          "content-version": "vor",
+          "delay-in-days": 29,
+          "URL": "http://onlinelibrary.wiley.com/termsAndConditions#vor"
+        }
+      ],
+      "license_status": "requires_version_and_rights_review",
+      "review_status": "candidate_not_behavioral_evidence"
+    }
+  ]
+}

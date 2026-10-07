@@ -1,0 +1,89 @@
+{
+  "provider": "huggingface_public_hub",
+  "catalog": "models",
+  "query": "VideoMAE",
+  "requested_limit": 2,
+  "request_url": "https://huggingface.co/api/models?search=VideoMAE&limit=2&expand%5B%5D=author&expand%5B%5D=createdAt&expand%5B%5D=lastModified&expand%5B%5D=downloads&expand%5B%5D=likes&expand%5B%5D=private&expand%5B%5D=gated&expand%5B%5D=tags&expand%5B%5D=cardData&expand%5B%5D=pipeline_tag",
+  "http_method": "GET",
+  "authentication": "none",
+  "retrieved_at": "2026-10-07T09:35:22.024864+00:00",
+  "record_count": 2,
+  "contains_model_weights": false,
+  "contains_dataset_examples": false,
+  "contains_card_text": false,
+  "license_status": "not_verified",
+  "review_status": "not_reviewed",
+  "records": [
+    {
+      "provider_id": "MCG-NJU/videomae-base",
+      "catalog": "models",
+      "url": "https://huggingface.co/MCG-NJU/videomae-base",
+      "author": "MCG-NJU",
+      "created_at": "2022-08-03T09:27:59.000Z",
+      "last_modified": "2024-03-29T08:02:16.000Z",
+      "downloads": 354207,
+      "likes": 59,
+      "private": false,
+      "gated": false,
+      "tags": [
+        "transformers",
+        "pytorch",
+        "safetensors",
+        "videomae",
+        "pretraining",
+        "vision",
+        "video-classification",
+        "arxiv:2203.12602",
+        "arxiv:2111.06377",
+        "license:cc-by-nc-4.0",
+        "endpoints_compatible",
+        "region:us"
+      ],
+      "declared_licenses": [
+        "cc-by-nc-4.0"
+      ],
+      "declared_license_name": null,
+      "declared_license_link": null,
+      "declared_license_tags": [
+        "license:cc-by-nc-4.0"
+      ],
+      "license_status": "not_verified",
+      "review_status": "candidate_not_behavioral_evidence",
+      "pipeline_tag": "video-classification"
+    },
+    {
+      "provider_id": "picantitoo/videomae_ucf_crime_finetuned",
+      "catalog": "models",
+      "url": "https://huggingface.co/picantitoo/videomae_ucf_crime_finetuned",
+      "author": "picantitoo",
+      "created_at": "2026-10-05T00:39:15.000Z",
+      "last_modified": "2026-10-05T01:06:58.000Z",
+      "downloads": 0,
+      "likes": 1,
+      "private": false,
+      "gated": false,
+      "tags": [
+        "onnxruntime",
+        "onnx",
+        "videomae",
+        "video-classification",
+        "action-recognition",
+        "ucf-crime",
+        "continuous-inference",
+        "license:other",
+        "region:us"
+      ],
+      "declared_licenses": [
+        "other"
+      ],
+      "declared_license_name": null,
+      "declared_license_link": null,
+      "declared_license_tags": [
+        "license:other"
+      ],
+      "license_status": "not_verified",
+      "review_status": "candidate_not_behavioral_evidence",
+      "pipeline_tag": "video-classification"
+    }
+  ]
+}

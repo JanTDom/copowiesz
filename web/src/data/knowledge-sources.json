@@ -1,0 +1,3384 @@
+[
+  {
+    "id": "cat_src_v2_own_name",
+    "title": "Domestic cats (Felis catus) discriminate their names from other words",
+    "url": "https://www.nature.com/articles/s41598-019-40616-4",
+    "publisher": "Scientific Reports / Springer Nature",
+    "year": 2019,
+    "kind": "study",
+    "species": [
+      "cat"
+    ],
+    "evidence_level": "primary_study",
+    "license_status": "unverified",
+    "reviewed_at": "2026-10-07",
+    "notes": "Rekord zawiera korektę autorów.",
+    "doi": "10.1038/s41598-019-40616-4",
+    "study_design": "Eksperymenty habituacji i odnowienia reakcji",
+    "population": "Koty domowe i kawiarniane",
+    "access_basis": "abstract",
+    "review_status": "editorial_screened_expert_pending",
+    "retraction_check": "not_checked"
+  },
+  {
+    "id": "cat_src_v2_friend_names",
+    "title": "Cats learn the names of their friend cats in their daily lives",
+    "url": "https://www.nature.com/articles/s41598-022-10261-5",
+    "publisher": "Scientific Reports / Springer Nature",
+    "year": 2022,
+    "kind": "study",
+    "species": [
+      "cat"
+    ],
+    "evidence_level": "primary_study",
+    "license_status": "unverified",
+    "reviewed_at": "2026-10-07",
+    "notes": "Odnotowano korektę ilustracji w 2023.",
+    "doi": "10.1038/s41598-022-10261-5",
+    "study_design": "Eksperyment zgodności nazwy i fotografii",
+    "population": "Koty domowe i kawiarniane",
+    "access_basis": "abstract",
+    "review_status": "editorial_screened_expert_pending",
+    "retraction_check": "not_checked"
+  },
+  {
+    "id": "cat_src_v2_voice_location",
+    "title": "Socio-spatial cognition in cats: Mentally mapping owner’s location from voice",
+    "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0257611",
+    "publisher": "PLOS ONE",
+    "year": 2021,
+    "kind": "study",
+    "species": [
+      "cat"
+    ],
+    "evidence_level": "primary_study",
+    "license_status": "unverified",
+    "reviewed_at": "2026-10-07",
+    "notes": "Nie badano świadomości.",
+    "doi": "10.1371/journal.pone.0257611",
+    "study_design": "Eksperyment odtwarzania głosu z dwóch miejsc",
+    "population": "Koty domowe i kawiarniane",
+    "access_basis": "abstract",
+    "review_status": "editorial_screened_expert_pending",
+    "retraction_check": "not_checked"
+  },
+  {
+    "id": "cat_src_v2_human_odor",
+    "title": "Behavioral responses of domestic cats to human odor",
+    "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0324016",
+    "publisher": "PLOS ONE",
+    "year": 2025,
+    "kind": "study",
+    "species": [
+      "cat"
+    ],
+    "evidence_level": "primary_study",
+    "license_status": "unverified",
+    "reviewed_at": "2026-10-07",
+    "notes": "Rozpoznanie konkretnej osoby pozostaje hipotezą.",
+    "doi": "10.1371/journal.pone.0324016",
+    "study_design": "Eksperyment węchowy z kontrolą i losowaniem pozycji",
+    "population": "30 kotów domowych",
+    "access_basis": "full_text_sections",
+    "review_status": "editorial_screened_expert_pending",
+    "retraction_check": "not_checked"
+  },
+  {
+    "id": "cat_src_v2_plant_variation",
+    "title": "Responsiveness of cats (Felidae) to silver vine (Actinidia polygama), Tatarian honeysuckle (Lonicera tatarica), valerian (Valeriana officinalis) and catnip (Nepeta cataria)",
+    "url": "https://link.springer.com/article/10.1186/s12917-017-0987-6",
+    "publisher": "BMC Veterinary Research / Springer Nature",
+    "year": 2017,
+    "kind": "study",
+    "species": [
+      "cat"
+    ],
+    "evidence_level": "primary_study",
+    "license_status": "unverified",
+    "reviewed_at": "2026-10-07",
+    "notes": "Karty dotyczą wyłącznie kota domowego.",
+    "doi": "10.1186/s12917-017-0987-6",
+    "study_design": "Powtarzane porównanie roślin i kontroli",
+    "population": "100 kotów domowych; dodatkowa próba tygrysów",
+    "access_basis": "abstract",
+    "review_status": "editorial_screened_expert_pending",
+    "retraction_check": "not_checked"
+  },
+  {
+    "id": "cat_src_v2_plant_iridoids",
+    "title": "The characteristic response of domestic cats to plant iridoids allows them to gain chemical defense against mosquitoes",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/33523929/",
+    "publisher": "Science Advances / AAAS",
+    "year": 2021,
+    "kind": "study",
+    "species": [
+      "cat"
+    ],
+    "evidence_level": "primary_study",
+    "license_status": "unverified",
+    "reviewed_at": "2026-10-07",
+    "notes": "Nie jest badaniem profilaktyki klinicznej.",
+    "doi": "10.1126/sciadv.abd9135",
+    "study_design": "Eksperymenty chemiczne i behawioralne",
+    "population": "Koty domowe i inne kotowate",
+    "access_basis": "abstract",
+    "review_status": "editorial_screened_expert_pending",
+    "retraction_check": "not_checked"
+  },
+  {
+    "id": "cat_src_v2_species_music",
+    "title": "Cats prefer species-appropriate music",
+    "url": "https://www.sciencedirect.com/science/article/pii/S016815911500060X",
+    "publisher": "Applied Animal Behaviour Science / Elsevier",
+    "year": 2015,
+    "kind": "study",
+    "species": [
+      "cat"
+    ],
+    "evidence_level": "primary_study",
+    "license_status": "unverified",
+    "reviewed_at": "2026-10-07",
+    "notes": "Mierzono zainteresowanie, nie leczenie stresu.",
+    "doi": "10.1016/j.applanim.2015.02.012",
+    "study_design": "Porównanie muzyki z równoważeniem kolejności",
+    "population": "47 kotów domowych",
+    "access_basis": "full_text_sections",
+    "review_status": "editorial_screened_expert_pending",
+    "retraction_check": "not_checked"
+  },
+  {
+    "id": "cat_src_v2_cross_modal",
+    "title": "Emotion Recognition in Cats",
+    "url": "https://www.mdpi.com/2076-2615/10/7/1107",
+    "publisher": "Animals / MDPI",
+    "year": 2020,
+    "kind": "study",
+    "species": [
+      "cat"
+    ],
+    "evidence_level": "primary_study",
+    "license_status": "unverified",
+    "reviewed_at": "2026-10-07",
+    "notes": "Operacyjne etykiety emocji wymagają ostrożności.",
+    "doi": "10.3390/ani10071107",
+    "study_design": "Eksperyment łączenia fotografii z dźwiękiem",
+    "population": "10 kotów domowych",
+    "access_basis": "full_text_sections",
+    "review_status": "editorial_screened_expert_pending",
+    "retraction_check": "not_checked"
+  },
+  {
+    "id": "cat_src_v2_reunion",
+    "title": "Cats and owners interact more with each other after a longer duration of separation",
+    "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0185599",
+    "publisher": "PLOS ONE",
+    "year": 2017,
+    "kind": "study",
+    "species": [
+      "cat"
+    ],
+    "evidence_level": "primary_study",
+    "license_status": "unverified",
+    "reviewed_at": "2026-10-07",
+    "notes": "Wykluczono znane problemy behawioralne.",
+    "doi": "10.1371/journal.pone.0185599",
+    "study_design": "Porównanie dwóch nieobecności u tych samych kotów",
+    "population": "14 kotów mieszkających pojedynczo",
+    "access_basis": "full_text_sections",
+    "review_status": "editorial_screened_expert_pending",
+    "retraction_check": "not_checked"
+  },
+  {
+    "id": "cat_src_v2_daily_rhythm",
+    "title": "Daily rhythm of total activity pattern in domestic cats (Felis silvestris catus) maintained in two different housing conditions",
+    "url": "https://www.sciencedirect.com/science/article/pii/S1558787812001220",
+    "publisher": "Journal of Veterinary Behavior / Elsevier",
+    "year": 2013,
+    "kind": "study",
+    "species": [
+      "cat"
+    ],
+    "evidence_level": "primary_study",
+    "license_status": "unverified",
+    "reviewed_at": "2026-10-07",
+    "notes": "Warunki i kontakt z opiekunem współzmienne.",
+    "doi": "10.1016/j.jveb.2012.09.004",
+    "study_design": "Obserwacja aktywności w dwóch warunkach utrzymania",
+    "population": "10 dorosłych kotów; po 5 w grupie",
+    "access_basis": "full_text_sections",
+    "review_status": "editorial_screened_expert_pending",
+    "retraction_check": "not_checked"
+  },
+  {
+    "id": "cat_src_v2_free_roaming",
+    "title": "Home Range, Habitat Use, and Activity Patterns of Free-Roaming Domestic Cats",
+    "url": "https://wildlife.onlinelibrary.wiley.com/doi/abs/10.1002/jwmg.145",
+    "publisher": "The Journal of Wildlife Management / Wiley",
+    "year": 2011,
+    "kind": "study",
+    "species": [
+      "cat"
+    ],
+    "evidence_level": "primary_study",
+    "license_status": "unverified",
+    "reviewed_at": "2026-10-07",
+    "notes": "Badanie terenowe jednego regionu.",
+    "doi": "10.1002/jwmg.145",
+    "study_design": "Telemetria i czujniki aktywności",
+    "population": "11 kotów z opiekunem; 16 bez opiekuna; Illinois",
+    "access_basis": "abstract",
+    "review_status": "editorial_screened_expert_pending",
+    "retraction_check": "not_checked"
+  },
+  {
+    "id": "cat_src_v2_kitten_socialization",
+    "title": "The effects of additional socialisation for kittens in a rescue centre on their behaviour and suitability as a pet",
+    "url": "https://www.sciencedirect.com/science/article/abs/pii/S0168159108000051",
+    "publisher": "Applied Animal Behaviour Science / Elsevier",
+    "year": 2008,
+    "kind": "study",
+    "species": [
+      "cat"
+    ],
+    "evidence_level": "primary_study",
+    "license_status": "unverified",
+    "reviewed_at": "2026-10-07",
+    "notes": "Późniejsze wyniki relacjonowali opiekunowie.",
+    "doi": "10.1016/j.applanim.2008.01.003",
+    "study_design": "Porównanie dodatkowej i standardowej socjalizacji; obserwacja po adopcji",
+    "population": "37 kociąt z trzech ośrodków",
+    "access_basis": "abstract",
+    "review_status": "editorial_screened_expert_pending",
+    "retraction_check": "not_checked"
+  },
+  {
+    "id": "cat_src_v2_weaning",
+    "title": "Early weaning increases aggression and stereotypic behaviour in cats",
+    "url": "https://www.nature.com/articles/s41598-017-11173-5",
+    "publisher": "Scientific Reports / Springer Nature",
+    "year": 2017,
+    "kind": "study",
+    "species": [
+      "cat"
+    ],
+    "evidence_level": "primary_study",
+    "license_status": "unverified",
+    "reviewed_at": "2026-10-07",
+    "notes": "Tytuł przyczynowy; projekt obserwacyjny.",
+    "doi": "10.1038/s41598-017-11173-5",
+    "study_design": "Przekrojowe badanie ankietowe",
+    "population": "5726 kotów domowych; 40 ras",
+    "access_basis": "abstract",
+    "review_status": "editorial_screened_expert_pending",
+    "retraction_check": "not_checked"
+  },
+  {
+    "id": "cat_src_v2_breed_heritability",
+    "title": "Breed differences of heritable behaviour traits in cats",
+    "url": "https://www.nature.com/articles/s41598-019-44324-x",
+    "publisher": "Scientific Reports / Springer Nature",
+    "year": 2019,
+    "kind": "study",
+    "species": [
+      "cat"
+    ],
+    "evidence_level": "primary_study",
+    "license_status": "unverified",
+    "reviewed_at": "2026-10-07",
+    "notes": "Dziedziczność jest właściwością populacji.",
+    "doi": "10.1038/s41598-019-44324-x",
+    "study_design": "Ankieta populacyjna i analiza rodowodów",
+    "population": "Około 5700 kotów; dziedziczność w trzech rasach",
+    "access_basis": "full_text_sections",
+    "review_status": "editorial_screened_expert_pending",
+    "retraction_check": "not_checked"
+  },
+  {
+    "id": "cat_src_v2_attachment_styles",
+    "title": "Attachment bonds between domestic cats and humans",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/31550468/",
+    "publisher": "Current Biology / Elsevier",
+    "year": 2019,
+    "kind": "study",
+    "species": [
+      "cat"
+    ],
+    "evidence_level": "primary_study",
+    "license_status": "unverified",
+    "reviewed_at": "2026-10-07",
+    "notes": "Dostęp oceniony na poziomie abstraktu.",
+    "doi": "10.1016/j.cub.2019.08.036",
+    "study_design": "Badanie zachowania według kryteriów przywiązania",
+    "population": "Koty i ich opiekunowie",
+    "access_basis": "abstract",
+    "review_status": "editorial_screened_expert_pending",
+    "retraction_check": "not_checked"
+  },
+  {
+    "id": "cat_src_v2_attachment_controls",
+    "title": "Domestic Cats (Felis silvestris catus) Do Not Show Signs of Secure Attachment to Their Owners",
+    "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0135109",
+    "publisher": "PLOS ONE",
+    "year": 2015,
+    "kind": "study",
+    "species": [
+      "cat"
+    ],
+    "evidence_level": "primary_study",
+    "license_status": "unverified",
+    "reviewed_at": "2026-10-07",
+    "notes": "Nie rozstrzyga o wszystkich więziach.",
+    "doi": "10.1371/journal.pone.0135109",
+    "study_design": "Krzyżowy eksperyment z równoważeniem kolejności",
+    "population": "20 par; 18 kotów w analizie",
+    "access_basis": "full_text_sections",
+    "review_status": "editorial_screened_expert_pending",
+    "retraction_check": "not_checked"
+  },
+  {
+    "id": "cat_src_v2_human_attention",
+    "title": "The quality of being sociable: The influence of human attentional state, population, and human familiarity on domestic cat sociability",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0376635718300998",
+    "publisher": "Behavioural Processes / Elsevier",
+    "year": 2019,
+    "kind": "study",
+    "species": [
+      "cat"
+    ],
+    "evidence_level": "primary_study",
+    "license_status": "unverified",
+    "reviewed_at": "2026-10-07",
+    "notes": "Ważne różnice między osobnikami.",
+    "doi": "10.1016/j.beproc.2018.10.026",
+    "study_design": "Dwa eksperymenty kontaktu z człowiekiem",
+    "population": "Koty domowe i schroniskowe",
+    "access_basis": "abstract",
+    "review_status": "editorial_screened_expert_pending",
+    "retraction_check": "not_checked"
+  },
+  {
+    "id": "cat_src_v2_reward_preferences",
+    "title": "Social interaction, food, scent or toys? A formal assessment of domestic pet and shelter cat (Felis silvestris catus) preferences",
+    "url": "https://www.sciencedirect.com/science/article/abs/pii/S0376635716303424",
+    "publisher": "Behavioural Processes / Elsevier",
+    "year": 2017,
+    "kind": "study",
+    "species": [
+      "cat"
+    ],
+    "evidence_level": "primary_study",
+    "license_status": "unverified",
+    "reviewed_at": "2026-10-07",
+    "notes": "Preferencja dotyczyła dostępnych bodźców.",
+    "doi": "10.1016/j.beproc.2017.03.016",
+    "study_design": "Swobodny wybór bodźców w czterech kategoriach",
+    "population": "Dorosłe koty domowe i schroniskowe",
+    "access_basis": "abstract",
+    "review_status": "editorial_screened_expert_pending",
+    "retraction_check": "not_checked"
+  },
+  {
+    "id": "cat_src_v2_separation_survey",
+    "title": "Identification of separation-related problems in domestic cats: A questionnaire survey",
+    "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0230999",
+    "publisher": "PLOS ONE",
+    "year": 2020,
+    "kind": "study",
+    "species": [
+      "cat"
+    ],
+    "evidence_level": "primary_study",
+    "license_status": "unverified",
+    "reviewed_at": "2026-10-07",
+    "notes": "Narzędzie wstępne; brak diagnozy klinicznej.",
+    "doi": "10.1371/journal.pone.0230999",
+    "study_design": "Przekrojowa ankieta i analiza zależności",
+    "population": "223 koty; 130 opiekunów",
+    "access_basis": "abstract",
+    "review_status": "editorial_screened_expert_pending",
+    "retraction_check": "not_checked"
+  },
+  {
+    "id": "cat_src_v2_dog_cat_household",
+    "title": "Cats and dogs: Best friends or deadly enemies? What the owners of cats and dogs living in the same household think about their relationship with people and other pets",
+    "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0237822",
+    "publisher": "PLOS ONE",
+    "year": 2020,
+    "kind": "study",
+    "species": [
+      "dog",
+      "cat"
+    ],
+    "evidence_level": "primary_study",
+    "license_status": "unverified",
+    "reviewed_at": "2026-10-07",
+    "notes": "Relacje oceniano przez opiekunów.",
+    "doi": "10.1371/journal.pone.0237822",
+    "study_design": "Przekrojowa ankieta wspólnych gospodarstw",
+    "population": "1270 opiekunów psów i kotów",
+    "access_basis": "abstract",
+    "review_status": "editorial_screened_expert_pending",
+    "retraction_check": "not_checked"
+  },
+  {
+    "id": "cat_src_v2_contrafreeloading",
+    "title": "Domestic cats (Felis catus) prefer freely available food over food that requires effort",
+    "url": "https://link.springer.com/article/10.1007/s10071-021-01530-3",
+    "publisher": "Animal Cognition / Springer Nature",
+    "year": 2022,
+    "kind": "study",
+    "species": [
+      "cat"
+    ],
+    "evidence_level": "primary_study",
+    "license_status": "unverified",
+    "reviewed_at": "2026-10-07",
+    "notes": "Online 2021; wydanie 2022; odnotowano korektę.",
+    "doi": "10.1007/s10071-021-01530-3",
+    "study_design": "Powtarzany wybór miski i układanki; filmowanie",
+    "population": "17 kotów domowych niewychodzących",
+    "access_basis": "full_text_sections",
+    "review_status": "editorial_screened_expert_pending",
+    "retraction_check": "not_checked"
+  },
+  {
+    "id": "cat_src_v2_litter_size",
+    "title": "Litterbox size preference in domestic cats (Felis catus)",
+    "url": "https://www.sciencedirect.com/science/article/pii/S1558787814000033",
+    "publisher": "Journal of Veterinary Behavior / Elsevier",
+    "year": 2014,
+    "kind": "study",
+    "species": [
+      "cat"
+    ],
+    "evidence_level": "primary_study",
+    "license_status": "unverified",
+    "reviewed_at": "2026-10-07",
+    "notes": "Liczenie depozytów przez opiekunów.",
+    "doi": "10.1016/j.jveb.2013.11.001",
+    "study_design": "Domowe porównanie kuwet ze zmianą miejsc",
+    "population": "74 koty w 43 gospodarstwach",
+    "access_basis": "abstract",
+    "review_status": "editorial_screened_expert_pending",
+    "retraction_check": "not_checked"
+  },
+  {
+    "id": "cat_src_v2_memo",
+    "title": "Clinical evaluation of multimodal environmental modification (MEMO) in the management of cats with idiopathic cystitis",
+    "url": "https://journals.sagepub.com/doi/10.1016/j.jfms.2006.02.002",
+    "publisher": "Journal of Feline Medicine and Surgery",
+    "year": 2006,
+    "kind": "study",
+    "species": [
+      "cat"
+    ],
+    "evidence_level": "primary_study",
+    "license_status": "unverified",
+    "reviewed_at": "2026-10-07",
+    "notes": "Wiele zmian jednocześnie; część kotów leczona.",
+    "doi": "10.1016/j.jfms.2006.02.002",
+    "study_design": "Prospektywne badanie obserwacyjne bez grupy kontrolnej",
+    "population": "46 kotów domowych z idiopatycznym zapaleniem pęcherza",
+    "access_basis": "full_text_sections",
+    "review_status": "editorial_screened_expert_pending",
+    "retraction_check": "not_checked"
+  },
+  {
+    "id": "cat_src_v2_unusual_events",
+    "title": "Sickness behaviors in response to unusual external events in healthy cats and cats with feline interstitial cystitis",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/21194324/",
+    "publisher": "Journal of the American Veterinary Medical Association",
+    "year": 2011,
+    "kind": "study",
+    "species": [
+      "cat"
+    ],
+    "evidence_level": "primary_study",
+    "license_status": "unverified",
+    "reviewed_at": "2026-10-07",
+    "notes": "Warunki wiwarium; jeden obserwator.",
+    "doi": "10.2460/javma.238.1.67",
+    "study_design": "Prospektywna obserwacja przez 77 tygodni",
+    "population": "12 zdrowych kotów; 20 z zapaleniem pęcherza",
+    "access_basis": "abstract",
+    "review_status": "editorial_screened_expert_pending",
+    "retraction_check": "not_checked"
+  },
+  {
+    "id": "cat_src_v2_stressors",
+    "title": "Effects of stressors on the behavior and physiology of domestic cats",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0168159112003097",
+    "publisher": "Applied Animal Behaviour Science / Elsevier",
+    "year": 2013,
+    "kind": "study",
+    "species": [
+      "cat"
+    ],
+    "evidence_level": "primary_study",
+    "license_status": "unverified",
+    "reviewed_at": "2026-10-07",
+    "notes": "Nie powielać stresorów w projekcie.",
+    "doi": "10.1016/j.applanim.2012.10.014",
+    "study_design": "Eksperyment z pakietem nieprzewidywalnych zmian",
+    "population": "10 zdrowych kotów; 18 z zapaleniem pęcherza",
+    "access_basis": "abstract",
+    "review_status": "editorial_screened_expert_pending",
+    "retraction_check": "not_checked"
+  },
+  {
+    "id": "cat_src_v2_restraint",
+    "title": "Can you handle it? Validating negative responses to restraint in cats",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0168159118301904",
+    "publisher": "Applied Animal Behaviour Science / Elsevier",
+    "year": 2018,
+    "kind": "study",
+    "species": [
+      "cat"
+    ],
+    "evidence_level": "primary_study",
+    "license_status": "unverified",
+    "reviewed_at": "2026-10-07",
+    "notes": "Nie odtwarzać procedur siłowych w domu.",
+    "doi": "10.1016/j.applanim.2018.04.012",
+    "study_design": "Porównanie ograniczania ruchu podczas badania",
+    "population": "22 koty: ograniczenie bierne; 25: całego ciała",
+    "access_basis": "abstract",
+    "review_status": "editorial_screened_expert_pending",
+    "retraction_check": "not_checked"
+  },
+  {
+    "id": "cat_src_v2_carrier_training",
+    "title": "Carrier training cats reduces stress on transport to a veterinary practice",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0168159118302703",
+    "publisher": "Applied Animal Behaviour Science / Elsevier",
+    "year": 2018,
+    "kind": "study",
+    "species": [
+      "cat"
+    ],
+    "evidence_level": "primary_study",
+    "license_status": "unverified",
+    "reviewed_at": "2026-10-07",
+    "notes": "Trening trwał sześć tygodni.",
+    "doi": "10.1016/j.applanim.2018.05.025",
+    "study_design": "Zaślepione randomizowane badanie dwóch wizyt",
+    "population": "22 koty; po 11 na grupę",
+    "access_basis": "abstract",
+    "review_status": "editorial_screened_expert_pending",
+    "retraction_check": "not_checked"
+  },
+  {
+    "id": "cat_src_v2_clinic_music",
+    "title": "Effects of music on behavior and physiological stress response of domestic cats in a veterinary clinic",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/30744475/",
+    "publisher": "Journal of Feline Medicine and Surgery",
+    "year": 2020,
+    "kind": "study",
+    "species": [
+      "cat"
+    ],
+    "evidence_level": "primary_study",
+    "license_status": "unverified",
+    "reviewed_at": "2026-10-07",
+    "notes": "Online 2019; wydanie 2020.",
+    "doi": "10.1177/1098612X19828131",
+    "study_design": "Krzyżowe porównanie trzech warunków dźwiękowych",
+    "population": "Koty podczas trzech badań klinicznych",
+    "access_basis": "abstract",
+    "review_status": "editorial_screened_expert_pending",
+    "retraction_check": "not_checked"
+  },
+  {
+    "id": "cat_src_v2_senior_cohorts",
+    "title": "Prevalence of Disease and Age-Related Behavioural Changes in Cats: Past and Present",
+    "url": "https://www.mdpi.com/2306-7381/7/3/85",
+    "publisher": "Veterinary Sciences / MDPI",
+    "year": 2020,
+    "kind": "study",
+    "species": [
+      "cat"
+    ],
+    "evidence_level": "primary_study",
+    "license_status": "unverified",
+    "reviewed_at": "2026-10-07",
+    "notes": "Inne okresy i rozpoznawalność chorób.",
+    "doi": "10.3390/vetsci7030085",
+    "study_design": "Dwie historyczne ankiety populacyjne",
+    "population": "1236 i 883 koty; wiek co najmniej 11 lat",
+    "access_basis": "abstract",
+    "review_status": "editorial_screened_expert_pending",
+    "retraction_check": "not_checked"
+  },
+  {
+    "id": "cat_src_v2_owner_personality",
+    "title": "Owner personality and the wellbeing of their cats share parallels with the parent-child relationship",
+    "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0211862",
+    "publisher": "PLOS ONE",
+    "year": 2019,
+    "kind": "study",
+    "species": [
+      "cat"
+    ],
+    "evidence_level": "primary_study",
+    "license_status": "unverified",
+    "reviewed_at": "2026-10-07",
+    "notes": "Dobrowolna próba; wspólne źródło raportów.",
+    "doi": "10.1371/journal.pone.0211862",
+    "study_design": "Przekrojowa ankieta internetowa",
+    "population": "3331 opiekunów",
+    "access_basis": "abstract",
+    "review_status": "editorial_screened_expert_pending",
+    "retraction_check": "not_checked"
+  },
+  {
+    "id": "cat_src_v2_face_observers",
+    "title": "Humans can identify cats’ affective states from subtle facial expressions",
+    "url": "https://www.cambridge.org/core/journals/animal-welfare/article/abs/humans-can-identify-cats-affective-states-from-subtle-facial-expressions/AC3942FBE101A240694349890B12553F",
+    "publisher": "Animal Welfare / UFAW",
+    "year": 2019,
+    "kind": "study",
+    "species": [
+      "cat"
+    ],
+    "evidence_level": "primary_study",
+    "license_status": "unverified",
+    "reviewed_at": "2026-10-07",
+    "notes": "Rekord Cambridge opublikowany ponownie w 2023.",
+    "doi": "10.7120/09627286.28.4.519",
+    "study_design": "Internetowe rozpoznawanie walencji nagrań",
+    "population": "6329 osób; 20 klipów na osobę",
+    "access_basis": "abstract",
+    "review_status": "editorial_screened_expert_pending",
+    "retraction_check": "not_checked"
+  },
+  {
+    "id": "cat_src_v2_odor_toys",
+    "title": "Sniffing for fun: Evaluating the effect of olfactory enrichment on cats’ toy preference and interaction",
+    "url": "https://www.sciencedirect.com/science/article/abs/pii/S0168159125000905",
+    "publisher": "Applied Animal Behaviour Science / Elsevier",
+    "year": 2025,
+    "kind": "study",
+    "species": [
+      "cat"
+    ],
+    "evidence_level": "primary_study",
+    "license_status": "unverified",
+    "reviewed_at": "2026-10-07",
+    "notes": "Mierzono czas kontaktu, nie długotrwały dobrostan.",
+    "doi": "10.1016/j.applanim.2025.106592",
+    "study_design": "Swobodny wybór zapachu; porównanie ruchu i zapachu zabawek",
+    "population": "31 kotów domowych",
+    "access_basis": "abstract",
+    "review_status": "editorial_screened_expert_pending",
+    "retraction_check": "not_checked"
+  },
+  {
+    "id": "cat_src_environment",
+    "title": "AAFP and ISFM Feline Environmental Needs Guidelines",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11383066/",
+    "publisher": "AAFP/ISFM; Journal of Feline Medicine and Surgery",
+    "year": 2013,
+    "kind": "guideline",
+    "species": [
+      "cat"
+    ],
+    "evidence_level": "guideline",
+    "license_status": "unverified",
+    "reviewed_at": "2026-10-07",
+    "notes": "Pięć potrzeb środowiskowych; konsensus i dostępne badania. Publiczny dostęp nie potwierdza prawa do hurtowego kopiowania."
+  },
+  {
+    "id": "cat_src_hiding_box",
+    "title": "The effect of a hiding box on stress levels and body weight in Dutch shelter cats; a randomized controlled trial",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6791553/",
+    "publisher": "PLOS ONE",
+    "year": 2019,
+    "kind": "study",
+    "species": [
+      "cat"
+    ],
+    "evidence_level": "primary_study",
+    "license_status": "unverified",
+    "reviewed_at": "2026-10-07",
+    "notes": "Randomizowane badanie w jednym schronisku; ograniczona możliwość przeniesienia wyników na dom."
+  },
+  {
+    "id": "cat_src_feeding",
+    "title": "Feline feeding programs: Addressing behavioural needs to improve feline health and wellbeing",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11343346/",
+    "publisher": "AAFP; Journal of Feline Medicine and Surgery",
+    "year": 2018,
+    "kind": "guideline",
+    "species": [
+      "cat"
+    ],
+    "evidence_level": "guideline",
+    "license_status": "unverified",
+    "reviewed_at": "2026-10-07",
+    "notes": "Oświadczenie konsensusowe o organizacji karmienia; nie jest indywidualnym planem diety."
+  },
+  {
+    "id": "cat_src_scratching",
+    "title": "Unwanted Scratching Behavior in Cats: Influence of Management Strategies and Cat and Owner Characteristics",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9559527/",
+    "publisher": "Animals (MDPI)",
+    "year": 2022,
+    "kind": "study",
+    "species": [
+      "cat"
+    ],
+    "evidence_level": "primary_study",
+    "license_status": "CC-BY-4.0-verified",
+    "reviewed_at": "2026-10-07",
+    "notes": "Ankieta przekrojowa 2465 opiekunów; zależności nie potwierdzają przyczynowości. Licencja artykułu potwierdzona w informacji wydawcy."
+  },
+  {
+    "id": "cat_src_slow_blink",
+    "title": "The role of cat eye narrowing movements in cat-human communication",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/33020542/",
+    "publisher": "Scientific Reports (Springer Nature)",
+    "year": 2020,
+    "kind": "study",
+    "species": [
+      "cat"
+    ],
+    "evidence_level": "primary_study",
+    "license_status": "unverified",
+    "reviewed_at": "2026-10-07",
+    "notes": "Eksperymenty dotyczące odpowiedzi na wolne mruganie; identyfikator DOI 10.1038/s41598-020-73426-0."
+  },
+  {
+    "id": "cat_src_directed_speech",
+    "title": "Discrimination of cat-directed speech from human-directed speech in a population of indoor companion cats (Felis catus)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/36280656/",
+    "publisher": "Animal Cognition (Springer Nature)",
+    "year": 2022,
+    "kind": "study",
+    "species": [
+      "cat"
+    ],
+    "evidence_level": "primary_study",
+    "license_status": "unverified",
+    "reviewed_at": "2026-10-07",
+    "notes": "Publikacja online 2022, zeszyt 2023; mała próba 16 kotów. Rozróżnianie rejestru głosu nie jest tłumaczeniem zdań."
+  },
+  {
+    "id": "cat_src_meow",
+    "title": "What’s in a Meow? A Study on Human Classification and Interpretation of Domestic Cat Vocalizations",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7765146/",
+    "publisher": "Animals (MDPI)",
+    "year": 2020,
+    "kind": "study",
+    "species": [
+      "cat"
+    ],
+    "evidence_level": "primary_study",
+    "license_status": "unverified",
+    "reviewed_at": "2026-10-07",
+    "notes": "Badanie ocen ludzi: ograniczone rozpoznawanie kontekstu miauknięć; nie waliduje translatora."
+  },
+  {
+    "id": "cat_src_purr",
+    "title": "The cry embedded within the purr",
+    "url": "https://sussex.figshare.com/articles/journal_contribution/The_cry_embedded_within_the_purr/23325722",
+    "publisher": "Current Biology (Elsevier); repozytorium University of Sussex",
+    "year": 2009,
+    "kind": "study",
+    "species": [
+      "cat"
+    ],
+    "evidence_level": "primary_study",
+    "license_status": "unverified",
+    "reviewed_at": "2026-10-07",
+    "notes": "Badanie mruczenia w kontekście zabiegania o jedzenie; rekord repozytorium opublikowany później niż artykuł."
+  },
+  {
+    "id": "cat_src_play",
+    "title": "An ethological analysis of close-contact inter-cat interactions determining if cats are playing, fighting, or something in between",
+    "url": "https://www.nature.com/articles/s41598-022-26121-1",
+    "publisher": "Scientific Reports (Springer Nature)",
+    "year": 2023,
+    "kind": "study",
+    "species": [
+      "cat"
+    ],
+    "evidence_level": "primary_study",
+    "license_status": "unverified",
+    "reviewed_at": "2026-10-07",
+    "notes": "105 interakcji par kotów; obserwacje filmów i porównanie ocen ekspertów, bez domowej walidacji diagnostycznej."
+  },
+  {
+    "id": "cat_src_intercat",
+    "title": "2024 AAFP intercat tension guidelines: recognition, prevention and management",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11292941/",
+    "publisher": "AAFP; Journal of Feline Medicine and Surgery",
+    "year": 2024,
+    "kind": "guideline",
+    "species": [
+      "cat"
+    ],
+    "evidence_level": "guideline",
+    "license_status": "unverified",
+    "reviewed_at": "2026-10-07",
+    "notes": "Napięcie społeczne, mapa relacji i stopniowe wprowadzanie kotów; źródło obejmuje też materiały dla opiekunów."
+  },
+  {
+    "id": "cat_src_interaction",
+    "title": "2022 AAFP/ISFM Cat Friendly Veterinary Interaction Guidelines: Approach and Handling Techniques",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10845437/",
+    "publisher": "AAFP/ISFM; Journal of Feline Medicine and Surgery",
+    "year": 2022,
+    "kind": "guideline",
+    "species": [
+      "cat"
+    ],
+    "evidence_level": "guideline",
+    "license_status": "unverified",
+    "reviewed_at": "2026-10-07",
+    "notes": "Wytyczne interakcji i obchodzenia się z kotami; część zaleceń wymaga zespołu weterynaryjnego."
+  },
+  {
+    "id": "cat_src_handling_study",
+    "title": "Providing Humans With Practical, Best Practice Handling Guidelines During Human-Cat Interactions Increases Cats' Affiliative Behaviour and Reduces Aggression and Signs of Conflict",
+    "url": "https://www.frontiersin.org/journals/veterinary-science/articles/10.3389/fvets.2021.714143/full",
+    "publisher": "Frontiers in Veterinary Science",
+    "year": 2021,
+    "kind": "study",
+    "species": [
+      "cat"
+    ],
+    "evidence_level": "primary_study",
+    "license_status": "unverified",
+    "reviewed_at": "2026-10-07",
+    "notes": "Badanie interwencji obejmujące 535 obserwacji; zasady wyboru, uwagi na sygnały i odpowiednich miejsc dotyku."
+  },
+  {
+    "id": "cat_src_vet_environment",
+    "title": "2022 ISFM/AAFP Cat Friendly Veterinary Environment Guidelines",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10845436/",
+    "publisher": "ISFM/AAFP; Journal of Feline Medicine and Surgery",
+    "year": 2022,
+    "kind": "guideline",
+    "species": [
+      "cat"
+    ],
+    "evidence_level": "guideline",
+    "license_status": "unverified",
+    "reviewed_at": "2026-10-07",
+    "notes": "Transport i środowisko gabinetu; obserwacje kliniczne nie muszą reprezentować zachowania domowego."
+  },
+  {
+    "id": "cat_src_house_soiling",
+    "title": "AAFP and ISFM Guidelines for Diagnosing and Solving House-Soiling Behavior in Cats",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11148882/",
+    "publisher": "AAFP/ISFM; Journal of Feline Medicine and Surgery",
+    "year": 2014,
+    "kind": "guideline",
+    "species": [
+      "cat"
+    ],
+    "evidence_level": "guideline",
+    "license_status": "unverified",
+    "reviewed_at": "2026-10-07",
+    "notes": "Eliminacja i znakowanie mają możliwe przyczyny medyczne, środowiskowe i społeczne; część zaleceń wynika z doświadczenia klinicznego."
+  },
+  {
+    "id": "cat_src_covered_litter",
+    "title": "Litter box preference in domestic cats: covered versus uncovered",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10816757/",
+    "publisher": "Journal of Feline Medicine and Surgery",
+    "year": 2013,
+    "kind": "study",
+    "species": [
+      "cat"
+    ],
+    "evidence_level": "primary_study",
+    "license_status": "unverified",
+    "reviewed_at": "2026-10-07",
+    "notes": "Badanie preferencji kuwet u 28 kotów bez niedawnych zaburzeń eliminacji; indywidualne preferencje różniły się."
+  },
+  {
+    "id": "cat_src_urinary",
+    "title": "2025 iCatCare consensus guidelines on the diagnosis and management of lower urinary tract diseases in cats",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11816079/",
+    "publisher": "iCatCare Veterinary Society; Journal of Feline Medicine and Surgery",
+    "year": 2025,
+    "kind": "guideline",
+    "species": [
+      "cat"
+    ],
+    "evidence_level": "guideline",
+    "license_status": "unverified",
+    "reviewed_at": "2026-10-07",
+    "notes": "Aktualny konsensus LUT; niedrożność cewki wymaga natychmiastowej pomocy, przyczyny objawów nie są rozpoznawalne z samego filmu."
+  },
+  {
+    "id": "cat_src_alopecia",
+    "title": "Underlying medical conditions in cats with presumptive psychogenic alopecia",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/16740071/",
+    "publisher": "Journal of the American Veterinary Medical Association",
+    "year": 2006,
+    "kind": "study",
+    "species": [
+      "cat"
+    ],
+    "evidence_level": "primary_study",
+    "license_status": "unverified",
+    "reviewed_at": "2026-10-07",
+    "notes": "Seria 21 przypadków skierowanych; częste medyczne przyczyny świądu. Nie jest badaniem częstości w populacji."
+  },
+  {
+    "id": "cat_src_fgs",
+    "title": "Facial expressions of pain in cats: the development and validation of a Feline Grimace Scale",
+    "url": "https://www.nature.com/articles/s41598-019-55693-8",
+    "publisher": "Scientific Reports (Springer Nature)",
+    "year": 2019,
+    "kind": "study",
+    "species": [
+      "cat"
+    ],
+    "evidence_level": "primary_study",
+    "license_status": "CC-BY-4.0-verified",
+    "reviewed_at": "2026-10-07",
+    "notes": "Walidacja ostrego bólu, pięć jednostek mimicznych. Licencja artykułu potwierdzona, materiały osób trzecich mogą mieć odrębne prawa."
+  },
+  {
+    "id": "cat_src_fgs_official",
+    "title": "Feline Grimace Scale — official educational website",
+    "url": "https://www.felinegrimacescale.com/",
+    "publisher": "Feline Grimace Scale research group",
+    "year": null,
+    "kind": "official_documentation",
+    "species": [
+      "cat"
+    ],
+    "evidence_level": "technical_documentation",
+    "license_status": "unverified",
+    "reviewed_at": "2026-10-07",
+    "notes": "Oficjalne szkolenie i skala ostrego bólu; licencję witryny, grafik i komercyjnej integracji trzeba sprawdzić odrębnie."
+  },
+  {
+    "id": "cat_src_acute_pain",
+    "title": "2022 ISFM Consensus Guidelines on the Management of Acute Pain in Cats",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10845386/",
+    "publisher": "ISFM; Journal of Feline Medicine and Surgery",
+    "year": 2022,
+    "kind": "guideline",
+    "species": [
+      "cat"
+    ],
+    "evidence_level": "guideline",
+    "license_status": "unverified",
+    "reviewed_at": "2026-10-07",
+    "notes": "Ból oceniany narzędziami i w kontekście; leczenie należy do lekarza weterynarii."
+  },
+  {
+    "id": "cat_src_aaha_pain",
+    "title": "2022 AAHA Pain Management Guidelines for Dogs and Cats",
+    "url": "https://www.aaha.org/resources/2022-aaha-pain-management-guidelines-for-dogs-and-cats/",
+    "publisher": "AAHA",
+    "year": 2022,
+    "kind": "guideline",
+    "species": [
+      "dog",
+      "cat"
+    ],
+    "evidence_level": "guideline",
+    "license_status": "unverified",
+    "reviewed_at": "2026-10-07",
+    "notes": "Rozpoznawanie i ponowna ocena bólu; użyte również oficjalne podstrony Acute vs. Chronic Pain i An Evolving Philosophy of Pain Management."
+  },
+  {
+    "id": "cat_src_wsava_pain",
+    "title": "2022 WSAVA guidelines for the recognition, assessment and treatment of pain",
+    "url": "https://wsava.org/global-guidelines/pain-guidelines/",
+    "publisher": "WSAVA; Journal of Small Animal Practice",
+    "year": 2023,
+    "kind": "guideline",
+    "species": [
+      "dog",
+      "cat"
+    ],
+    "evidence_level": "guideline",
+    "license_status": "unverified",
+    "reviewed_at": "2026-10-07",
+    "notes": "Wytyczne nazwane 2022, opublikowane w czasopiśmie w 2023; DOI 10.1111/jsap.13566. Portal oficjalny."
+  },
+  {
+    "id": "cat_src_senior",
+    "title": "2021 AAFP Feline Senior Care Guidelines",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10812122/",
+    "publisher": "AAFP; Journal of Feline Medicine and Surgery",
+    "year": 2021,
+    "kind": "guideline",
+    "species": [
+      "cat"
+    ],
+    "evidence_level": "guideline",
+    "license_status": "unverified",
+    "reviewed_at": "2026-10-07",
+    "notes": "Indywidualna ocena seniora; uwzględnia zmianę zachowania. Wersja poprawiona po erratum z sierpnia 2021."
+  },
+  {
+    "id": "cat_src_inappetence",
+    "title": "2022 ISFM Consensus Guidelines on Management of the Inappetent Hospitalised Cat",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11107985/",
+    "publisher": "ISFM; Journal of Feline Medicine and Surgery",
+    "year": 2022,
+    "kind": "guideline",
+    "species": [
+      "cat"
+    ],
+    "evidence_level": "guideline",
+    "license_status": "unverified",
+    "reviewed_at": "2026-10-07",
+    "notes": "Dotyczy hospitalizacji: brak apetytu może wiązać się z chorobą, bólem i nudnościami; nie zaleca przymusowego karmienia."
+  },
+  {
+    "id": "cat_src_feline_five",
+    "title": "The ‘Feline Five’: An exploration of personality in pet cats (Felis catus)",
+    "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0183455",
+    "publisher": "PLOS ONE",
+    "year": 2017,
+    "kind": "study",
+    "species": [
+      "cat"
+    ],
+    "evidence_level": "primary_study",
+    "license_status": "CC-BY-4.0-verified",
+    "reviewed_at": "2026-10-07",
+    "notes": "2802 koty oceniane przez opiekunów, pięć czynników; licencja artykułu CC BY wskazana przez wydawcę. Nie skopiowano kwestionariusza."
+  },
+  {
+    "id": "cat_src_febarq_study",
+    "title": "Development and evaluation of the Fe-BARQ: A new survey instrument for measuring behavior in domestic cats (Felis s. catus)",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0376635716302947",
+    "publisher": "Behavioural Processes (Elsevier)",
+    "year": 2017,
+    "kind": "study",
+    "species": [
+      "cat"
+    ],
+    "evidence_level": "primary_study",
+    "license_status": "unverified",
+    "reviewed_at": "2026-10-07",
+    "notes": "DOI 10.1016/j.beproc.2017.02.010; 23 czynniki, 17 z odpowiednią lub wysoką spójnością. Rodzaj licencji CC i prawa formularza niezweryfikowane."
+  },
+  {
+    "id": "cat_src_febarq_official",
+    "title": "About the Fe-BARQ — Feline Behavioral Assessment & Research Questionnaire",
+    "url": "https://vetapps.vet.upenn.edu/febarq/about.cfm",
+    "publisher": "University of Pennsylvania School of Veterinary Medicine",
+    "year": null,
+    "kind": "official_documentation",
+    "species": [
+      "cat"
+    ],
+    "evidence_level": "technical_documentation",
+    "license_status": "unverified",
+    "reviewed_at": "2026-10-07",
+    "notes": "Oficjalne objaśnienie narzędzia i obszarów zachowania; nie potwierdzono prawa do integracji, tłumaczenia ani użycia komercyjnego."
+  },
+  {
+    "id": "cat_src_seven_traits",
+    "title": "Reliability and Validity of Seven Feline Behavior and Personality Traits",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8300181/",
+    "publisher": "Animals (MDPI)",
+    "year": 2021,
+    "kind": "study",
+    "species": [
+      "cat"
+    ],
+    "evidence_level": "primary_study",
+    "license_status": "CC-BY-4.0-verified",
+    "reviewed_at": "2026-10-07",
+    "notes": "4316 kotów; spójność wewnętrzna, test–retest i zgodność opiekunów. CC BY 4.0 potwierdzona w artykule; bez importu pozycji."
+  },
+  {
+    "id": "cat_src_behavior_management",
+    "title": "2015 AAHA Canine and Feline Behavior Management Guidelines",
+    "url": "https://www.aaha.org/resources/2015-aaha-canine-and-feline-behavior-management-guidelines/",
+    "publisher": "AAHA",
+    "year": 2015,
+    "kind": "guideline",
+    "species": [
+      "dog",
+      "cat"
+    ],
+    "evidence_level": "guideline",
+    "license_status": "unverified",
+    "reviewed_at": "2026-10-07",
+    "notes": "Data wytycznych 2015 mimo późniejszej daty portalu; użyto też oficjalnej podstrony Changing behaviors."
+  },
+  {
+    "id": "cat_src_life_stage_senior",
+    "title": "2021 AAHA/AAFP Feline Life Stage Guidelines — Behavior and Environmental Needs: Senior Cats",
+    "url": "https://www.aaha.org/resources/2021-aaha-aafp-feline-life-stage-guidelines/behavior-and-environmental-needs-senior-cats/",
+    "publisher": "AAHA/AAFP",
+    "year": 2021,
+    "kind": "guideline",
+    "species": [
+      "cat"
+    ],
+    "evidence_level": "guideline",
+    "license_status": "unverified",
+    "reviewed_at": "2026-10-07",
+    "notes": "Oficjalna część wytycznych dotycząca nowej wokalizacji, zmian ruchu i dostępności zasobów u seniorów."
+  },
+  {
+    "id": "dog_src_v2_nostril_2011",
+    "title": "Sniffing with the right nostril: lateralization of response to odour stimuli by dogs",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0003347211002284",
+    "publisher": "Animal Behaviour / Elsevier",
+    "year": 2011,
+    "kind": "study",
+    "species": [
+      "dog"
+    ],
+    "evidence_level": "primary_study",
+    "license_status": "unverified; publiczny dostęp nie oznacza zgody na import pełnego tekstu",
+    "reviewed_at": "2026-10-07",
+    "notes": "Użycie nozdrzy zależało od bodźca i powtórzeń; mała, specyficzna próba.",
+    "doi": "10.1016/j.anbehav.2011.05.020",
+    "study_design": "Powtarzane prezentacje zapachów; obserwacja użycia nozdrzy.",
+    "population": "30 wykastrowanych psów mieszańców w hodowli.",
+    "access_basis": "full_text_sections",
+    "review_status": "editorial_screened_expert_pending",
+    "retraction_check": "not_checked"
+  },
+  {
+    "id": "dog_src_v2_olfactory_quantity_2013",
+    "title": "Smelling more or less: Investigating the olfactory experience of the domestic dog",
+    "url": "https://www.sciencedirect.com/science/article/abs/pii/S0023969013000234",
+    "publisher": "Learning and Motivation / Elsevier",
+    "year": 2013,
+    "kind": "study",
+    "species": [
+      "dog"
+    ],
+    "evidence_level": "primary_study",
+    "license_status": "unverified; publiczny dostęp nie oznacza zgody na import pełnego tekstu",
+    "reviewed_at": "2026-10-07",
+    "notes": "Zapach wpływał na wybór; samo węszenie nie zapewniało oceny ilości.",
+    "doi": "10.1016/j.lmot.2013.02.002",
+    "study_design": "Eksperymentalne wybory pokarmu z informacją zapachową i wzrokową.",
+    "population": "Niewytrenowane psy domowe; kilka warunków eksperymentalnych.",
+    "access_basis": "abstract",
+    "review_status": "editorial_screened_expert_pending",
+    "retraction_check": "not_checked"
+  },
+  {
+    "id": "dog_src_v2_familiar_scent_2015",
+    "title": "Scent of the familiar: an fMRI study of canine brain responses to familiar and unfamiliar human and dog odors",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/24607363/",
+    "publisher": "Behavioural Processes / Elsevier",
+    "year": 2015,
+    "kind": "study",
+    "species": [
+      "dog"
+    ],
+    "evidence_level": "primary_study",
+    "license_status": "unverified; publiczny dostęp nie oznacza zgody na import pełnego tekstu",
+    "reviewed_at": "2026-10-07",
+    "notes": "Silniejsza odpowiedź jądra ogoniastego na znajomego człowieka; nie pomiar myśli.",
+    "doi": "10.1016/j.beproc.2014.02.011",
+    "study_design": "fMRI przytomnych, przygotowanych psów; pięć kategorii zapachów.",
+    "population": "12 psów wytrenowanych do nieruchomego badania.",
+    "access_basis": "abstract",
+    "review_status": "editorial_screened_expert_pending",
+    "retraction_check": "not_checked"
+  },
+  {
+    "id": "dog_src_v2_human_stress_odour_2022",
+    "title": "Dogs can discriminate between human baseline and psychological stress condition odours",
+    "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0274143",
+    "publisher": "PLOS ONE",
+    "year": 2022,
+    "kind": "study",
+    "species": [
+      "dog"
+    ],
+    "evidence_level": "primary_study",
+    "license_status": "verified_CC_BY; importowane wyłącznie metadane i własna synteza",
+    "reviewed_at": "2026-10-07",
+    "notes": "Wykazano wyuczoną dyskryminację; nie spontaniczne rozumienie emocji.",
+    "doi": "10.1371/journal.pone.0274143",
+    "study_design": "Podwójnie zaślepione zadanie wyboru zapachów oddechu i potu.",
+    "population": "4 wytrenowane psy; próbki 36 osób.",
+    "access_basis": "full_text_sections",
+    "review_status": "editorial_screened_expert_pending",
+    "retraction_check": "not_checked"
+  },
+  {
+    "id": "dog_src_v2_voice_identity_2022",
+    "title": "The acoustic bases of human voice identity processing in dogs",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9334438/",
+    "publisher": "Animal Cognition / Springer Nature",
+    "year": 2022,
+    "kind": "study",
+    "species": [
+      "dog"
+    ],
+    "evidence_level": "primary_study",
+    "license_status": "unverified; publiczny dostęp nie oznacza zgody na import pełnego tekstu",
+    "reviewed_at": "2026-10-07",
+    "notes": "Rozpoznawanie mówcy nie dowodzi rozumienia treści zdania.",
+    "doi": "10.1007/s10071-022-01601-z",
+    "study_design": "Wybór nagranego głosu opiekuna i analiza akustyczna.",
+    "population": "28 psów rodzinnych zakwalifikowanych do zadania.",
+    "access_basis": "full_text_sections",
+    "review_status": "editorial_screened_expert_pending",
+    "retraction_check": "not_checked"
+  },
+  {
+    "id": "dog_src_v2_phonetic_erp_2020",
+    "title": "Event-related potentials reveal limited readiness to access phonetic details during word processing in dogs",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7813267/",
+    "publisher": "Royal Society Open Science",
+    "year": 2020,
+    "kind": "study",
+    "species": [
+      "dog"
+    ],
+    "evidence_level": "primary_study",
+    "license_status": "unverified; publiczny dostęp nie oznacza zgody na import pełnego tekstu",
+    "reviewed_at": "2026-10-07",
+    "notes": "ERP nie różnicowały wszystkich fonetycznie podobnych bodźców.",
+    "doi": "10.1098/rsos.200851",
+    "study_design": "EEG przy słowach znanych oraz podobnych i odmiennych fonetycznie.",
+    "population": "17 przytomnych psów.",
+    "access_basis": "abstract",
+    "review_status": "editorial_screened_expert_pending",
+    "retraction_check": "not_checked"
+  },
+  {
+    "id": "dog_src_v2_puppy_prosody_2017",
+    "title": "Dog-directed speech: why do we use it and do dogs pay attention to it?",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5247504/",
+    "publisher": "Proceedings of the Royal Society B",
+    "year": 2017,
+    "kind": "study",
+    "species": [
+      "dog"
+    ],
+    "evidence_level": "primary_study",
+    "license_status": "unverified; publiczny dostęp nie oznacza zgody na import pełnego tekstu",
+    "reviewed_at": "2026-10-07",
+    "notes": "Preferencja mowy kierowanej do psa zależała od wieku i procedury.",
+    "doi": "10.1098/rspb.2016.2429",
+    "study_design": "Nagrywanie wypowiedzi i eksperyment odtwarzania psom.",
+    "population": "10 szczeniąt i 20 dorosłych psów w eksperymencie odtwarzania.",
+    "access_basis": "full_text_sections",
+    "review_status": "editorial_screened_expert_pending",
+    "retraction_check": "not_checked"
+  },
+  {
+    "id": "dog_src_v2_natural_speech_2018",
+    "title": "‘Who’s a good boy?!’ Dogs prefer naturalistic dog-directed speech",
+    "url": "https://link.springer.com/article/10.1007/s10071-018-1172-4",
+    "publisher": "Animal Cognition / Springer Nature",
+    "year": 2018,
+    "kind": "study",
+    "species": [
+      "dog"
+    ],
+    "evidence_level": "primary_study",
+    "license_status": "unverified; publiczny dostęp nie oznacza zgody na import pełnego tekstu",
+    "reviewed_at": "2026-10-07",
+    "notes": "Preferencja naturalnej wypowiedzi nie izoluje znaczenia słów.",
+    "doi": "10.1007/s10071-018-1172-4",
+    "study_design": "Dwa eksperymenty odtwarzania, naturalna i odwrócona prozodia.",
+    "population": "Dorosłe psy; analizowane próby zależne od miary: 29–34.",
+    "access_basis": "full_text_sections",
+    "review_status": "editorial_screened_expert_pending",
+    "retraction_check": "not_checked"
+  },
+  {
+    "id": "dog_src_v2_sleep_method_2014",
+    "title": "Development of a non-invasive polysomnography technique for dogs (Canis familiaris)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/24726397/",
+    "publisher": "Physiology & Behavior / Elsevier",
+    "year": 2014,
+    "kind": "study",
+    "species": [
+      "dog"
+    ],
+    "evidence_level": "primary_study",
+    "license_status": "unverified; publiczny dostęp nie oznacza zgody na import pełnego tekstu",
+    "reviewed_at": "2026-10-07",
+    "notes": "Ocena faz snu wymagała fizjologicznych pomiarów.",
+    "doi": "10.1016/j.physbeh.2014.04.004",
+    "study_design": "Nieinwazyjna polisomnografia; porównanie aktywnego i spokojnego dnia.",
+    "population": "22 dorosłe psy; 7 powtórzyło sesje; 12 osób jako porównanie.",
+    "access_basis": "abstract",
+    "review_status": "editorial_screened_expert_pending",
+    "retraction_check": "not_checked"
+  },
+  {
+    "id": "dog_src_v2_sleep_social_2017",
+    "title": "Sleep macrostructure is modulated by positive and negative social experience in adult pet dogs",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/29070727/",
+    "publisher": "Proceedings of the Royal Society B",
+    "year": 2017,
+    "kind": "study",
+    "species": [
+      "dog"
+    ],
+    "evidence_level": "primary_study",
+    "license_status": "unverified; publiczny dostęp nie oznacza zgody na import pełnego tekstu",
+    "reviewed_at": "2026-10-07",
+    "notes": "Szybsze zaśnięcie wystąpiło po negatywnym warunku badawczym.",
+    "doi": "10.1098/rspb.2017.1883",
+    "study_design": "Porównanie wewnątrzosobnicze snu po różnych interakcjach.",
+    "population": "16 dorosłych psów rodzinnych.",
+    "access_basis": "full_text_sections",
+    "review_status": "editorial_screened_expert_pending",
+    "retraction_check": "not_checked"
+  },
+  {
+    "id": "dog_src_v2_sleep_learning_2017",
+    "title": "The interrelated effect of sleep and learning in dogs (Canis familiaris); an EEG and behavioural study",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5292958/",
+    "publisher": "Scientific Reports / Springer Nature",
+    "year": 2017,
+    "kind": "study",
+    "species": [
+      "dog"
+    ],
+    "evidence_level": "primary_study",
+    "license_status": "verified_CC_BY_4.0; importowane wyłącznie metadane i własna synteza",
+    "reviewed_at": "2026-10-07",
+    "notes": "Wynik uczenia zależał od aktywności i terminu ponownej próby.",
+    "doi": "10.1038/srep41873",
+    "study_design": "EEG po uczeniu; osobny eksperyment aktywności w okresie retencji.",
+    "population": "15 psów w EEG; 53 w eksperymencie retencji.",
+    "access_basis": "full_text_sections",
+    "review_status": "editorial_screened_expert_pending",
+    "retraction_check": "not_checked"
+  },
+  {
+    "id": "dog_src_v2_early_environment_2015",
+    "title": "Early Life Experiences and Exercise Associate with Canine Anxieties",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/26528555/",
+    "publisher": "PLOS ONE",
+    "year": 2015,
+    "kind": "study",
+    "species": [
+      "dog"
+    ],
+    "evidence_level": "primary_study",
+    "license_status": "unverified; publiczny dostęp nie oznacza zgody na import pełnego tekstu",
+    "reviewed_at": "2026-10-07",
+    "notes": "Związki środowiskowe są korelacjami; możliwa odwrotna przyczynowość.",
+    "doi": "10.1371/journal.pone.0141907",
+    "study_design": "Przekrojowy kwestionariusz czynników środowiskowych.",
+    "population": "3264 psy rodzinne z Finlandii.",
+    "access_basis": "abstract",
+    "review_status": "editorial_screened_expert_pending",
+    "retraction_check": "not_checked"
+  },
+  {
+    "id": "dog_src_v2_puppy_communication_2021",
+    "title": "Early-emerging and highly heritable sensitivity to human communication in dogs",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/34087106/",
+    "publisher": "Current Biology / Elsevier",
+    "year": 2021,
+    "kind": "study",
+    "species": [
+      "dog"
+    ],
+    "evidence_level": "primary_study",
+    "license_status": "unverified; publiczny dostęp nie oznacza zgody na import pełnego tekstu",
+    "reviewed_at": "2026-10-07",
+    "notes": "Dziedziczność dotyczy zmienności badanej populacji.",
+    "doi": "10.1016/j.cub.2021.04.055",
+    "study_design": "Testy społecznego poznania i analiza rodowodowa.",
+    "population": "375 ośmiotygodniowych szczeniąt z programu psów asystujących.",
+    "access_basis": "abstract",
+    "review_status": "editorial_screened_expert_pending",
+    "retraction_check": "not_checked"
+  },
+  {
+    "id": "dog_src_v2_stress_bias_2024",
+    "title": "The odour of an unfamiliar stressed or relaxed person affects dogs’ responses to a cognitive bias test",
+    "url": "https://doi.org/10.1038/s41598-024-66147-1",
+    "publisher": "Scientific Reports / Springer Nature",
+    "year": 2024,
+    "kind": "study",
+    "species": [
+      "dog"
+    ],
+    "evidence_level": "primary_study",
+    "license_status": "unverified; publiczny dostęp nie oznacza zgody na import pełnego tekstu",
+    "reviewed_at": "2026-10-07",
+    "notes": "Efekt zależał od sesji i lokalizacji.",
+    "doi": "10.1038/s41598-024-66147-1",
+    "study_design": "Zaślepione porównanie wewnątrzosobnicze zapachów i wyboru misek.",
+    "population": "18 psów; zapachy 3 nieznajomych ludzi.",
+    "access_basis": "full_text_sections",
+    "review_status": "editorial_screened_expert_pending",
+    "retraction_check": "not_checked"
+  },
+  {
+    "id": "dog_src_v2_adolescence_2020",
+    "title": "Teenage dogs? Evidence for adolescent-phase conflict behaviour and an association between attachment to humans and pubertal timing in the domestic dog",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/32396785/",
+    "publisher": "Biology Letters / Royal Society",
+    "year": 2020,
+    "kind": "study",
+    "species": [
+      "dog"
+    ],
+    "evidence_level": "primary_study",
+    "license_status": "verified_CC_BY; importowane wyłącznie metadane i własna synteza",
+    "reviewed_at": "2026-10-07",
+    "notes": "Relacja i etap rozwoju modyfikowały zachowanie.",
+    "doi": "10.1098/rsbl.2020.0097",
+    "study_design": "Podłużne ankiety i próby reagowania na komendę.",
+    "population": "Młode psy z programu szkolenia przewodników.",
+    "access_basis": "abstract",
+    "review_status": "editorial_screened_expert_pending",
+    "retraction_check": "not_checked"
+  },
+  {
+    "id": "dog_src_v2_puppy_classes_2017",
+    "title": "Puppy socialization practices of a sample of dog owners from across Canada and the United States",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/29190195/",
+    "publisher": "JAVMA / AVMA",
+    "year": 2017,
+    "kind": "study",
+    "species": [
+      "dog"
+    ],
+    "evidence_level": "primary_study",
+    "license_status": "unverified; publiczny dostęp nie oznacza zgody na import pełnego tekstu",
+    "reviewed_at": "2026-10-07",
+    "notes": "Udział w zajęciach nie był losowany.",
+    "doi": "10.2460/javma.251.12.1415",
+    "study_design": "Ankiety przy rekrutacji i wieku 20 tygodni; porównanie uczestnictwa.",
+    "population": "296 opiekunów szczeniąt.",
+    "access_basis": "abstract",
+    "review_status": "editorial_screened_expert_pending",
+    "retraction_check": "not_checked"
+  },
+  {
+    "id": "dog_src_v2_play_attention_2009",
+    "title": "Attention to attention in domestic dog (Canis familiaris) dyadic play",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/18679727/",
+    "publisher": "Animal Cognition / Springer",
+    "year": 2009,
+    "kind": "study",
+    "species": [
+      "dog"
+    ],
+    "evidence_level": "primary_study",
+    "license_status": "unverified; publiczny dostęp nie oznacza zgody na import pełnego tekstu",
+    "reviewed_at": "2026-10-07",
+    "notes": "Orientacja partnera wiązała się z sygnalizacją.",
+    "doi": "10.1007/s10071-008-0175-y",
+    "study_design": "Sekwencyjna obserwacja naturalnej zabawy dwóch psów.",
+    "population": "Psy podczas spontanicznych interakcji zabawowych.",
+    "access_basis": "abstract",
+    "review_status": "editorial_screened_expert_pending",
+    "retraction_check": "not_checked"
+  },
+  {
+    "id": "dog_src_v2_play_mimicry_2015",
+    "title": "Rapid mimicry and emotional contagion in domestic dogs",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/27019737/",
+    "publisher": "Royal Society Open Science",
+    "year": 2015,
+    "kind": "study",
+    "species": [
+      "dog"
+    ],
+    "evidence_level": "primary_study",
+    "license_status": "unverified; publiczny dostęp nie oznacza zgody na import pełnego tekstu",
+    "reviewed_at": "2026-10-07",
+    "notes": "Naśladownictwo nie jest bezpośrednim pomiarem empatii.",
+    "doi": "10.1098/rsos.150505",
+    "study_design": "Obserwacja swobodnej zabawy i zgodności następujących sygnałów.",
+    "population": "Pary psów o różnym stopniu znajomości.",
+    "access_basis": "full_text_sections",
+    "review_status": "editorial_screened_expert_pending",
+    "retraction_check": "not_checked"
+  },
+  {
+    "id": "dog_src_v2_puppy_play_bow_2016",
+    "title": "Investigating the Function of Play Bows in Dog and Wolf Puppies (Canis lupus familiaris, Canis lupus occidentalis)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/28033358/",
+    "publisher": "PLOS ONE",
+    "year": 2016,
+    "kind": "study",
+    "species": [
+      "dog"
+    ],
+    "evidence_level": "primary_study",
+    "license_status": "unverified; publiczny dostęp nie oznacza zgody na import pełnego tekstu",
+    "reviewed_at": "2026-10-07",
+    "notes": "Psy i wilki różniły się wznowieniem zabawy.",
+    "doi": "10.1371/journal.pone.0168570",
+    "study_design": "Kodowanie zachowania przed i po ukłonie zabawowym.",
+    "population": "Szczenięta psów 2–5 miesięcy; wilki jako porównanie.",
+    "access_basis": "abstract",
+    "review_status": "editorial_screened_expert_pending",
+    "retraction_check": "not_checked"
+  },
+  {
+    "id": "dog_src_v2_petting_2014",
+    "title": "Emotions in dogs being petted by a familiar or unfamiliar person: Validating behavioural indicators of emotional states using heart rate variability",
+    "url": "https://www.sciencedirect.com/science/article/abs/pii/S0168159114002548",
+    "publisher": "Applied Animal Behaviour Science / Elsevier",
+    "year": 2014,
+    "kind": "study",
+    "species": [
+      "dog"
+    ],
+    "evidence_level": "primary_study",
+    "license_status": "unverified; publiczny dostęp nie oznacza zgody na import pełnego tekstu",
+    "reviewed_at": "2026-10-07",
+    "notes": "Znajomość i obszar dotyku miały znaczenie.",
+    "doi": "10.1016/j.applanim.2014.09.020",
+    "study_design": "Dziewięć interakcji dotykowych; zachowanie i pomiary serca.",
+    "population": "24 psy domowe.",
+    "access_basis": "full_text_sections",
+    "review_status": "editorial_screened_expert_pending",
+    "retraction_check": "not_checked"
+  },
+  {
+    "id": "dog_src_v2_possession_manipulation_2017",
+    "title": "Assessment of owner-directed aggressive behavioural tendencies of dogs in situations of possession and manipulation",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/29134099/",
+    "publisher": "Royal Society Open Science",
+    "year": 2017,
+    "kind": "study",
+    "species": [
+      "dog"
+    ],
+    "evidence_level": "primary_study",
+    "license_status": "unverified; publiczny dostęp nie oznacza zgody na import pełnego tekstu",
+    "reviewed_at": "2026-10-07",
+    "notes": "Protokoły prowokacyjne nie są zaleceniem domowym.",
+    "doi": "10.1098/rsos.171040",
+    "study_design": "Porównanie kwestionariusza z dwoma testami zachowania.",
+    "population": "93 psy; sytuacje posiadania i manipulacji.",
+    "access_basis": "abstract",
+    "review_status": "editorial_screened_expert_pending",
+    "retraction_check": "not_checked"
+  },
+  {
+    "id": "dog_src_v2_vet_training_2019",
+    "title": "Effect of a Standardized Four-Week Desensitization and Counter-Conditioning Training Program on Pre-Existing Veterinary Fear in Companion Dogs",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/31591343/",
+    "publisher": "Animals / MDPI",
+    "year": 2019,
+    "kind": "study",
+    "species": [
+      "dog"
+    ],
+    "evidence_level": "primary_study",
+    "license_status": "unverified; publiczny dostęp nie oznacza zgody na import pełnego tekstu",
+    "reviewed_at": "2026-10-07",
+    "notes": "Efekt umiarkowany; duży problem wykonywania programu.",
+    "doi": "10.3390/ani9100767",
+    "study_design": "Losowy przydział; ocena lęku przed i po treningu.",
+    "population": "W analizie 15 psów trenowanych i 22 kontrolne.",
+    "access_basis": "abstract",
+    "review_status": "editorial_screened_expert_pending",
+    "retraction_check": "not_checked"
+  },
+  {
+    "id": "dog_src_v2_vet_owner_presence_2020",
+    "title": "Evaluation of associations between owner presence and indicators of fear in dogs during routine veterinary examinations",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/33135972/",
+    "publisher": "JAVMA / AVMA",
+    "year": 2020,
+    "kind": "study",
+    "species": [
+      "dog"
+    ],
+    "evidence_level": "primary_study",
+    "license_status": "unverified; publiczny dostęp nie oznacza zgody na import pełnego tekstu",
+    "reviewed_at": "2026-10-07",
+    "notes": "Różne zachowania nie zmieniały się jednakowo.",
+    "doi": "10.2460/javma.2020.257.10.1031",
+    "study_design": "Losowe porównanie badania z opiekunem i bez niego.",
+    "population": "32 psy klientów gabinetu.",
+    "access_basis": "abstract",
+    "review_status": "editorial_screened_expert_pending",
+    "retraction_check": "not_checked"
+  },
+  {
+    "id": "dog_src_v2_noise_progression_2019",
+    "title": "Not a one-way road—Severity, progression and prevention of firework fears in dogs",
+    "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0218150",
+    "publisher": "PLOS ONE",
+    "year": 2019,
+    "kind": "study",
+    "species": [
+      "dog"
+    ],
+    "evidence_level": "primary_study",
+    "license_status": "verified_CC_BY; importowane wyłącznie metadane i własna synteza",
+    "reviewed_at": "2026-10-07",
+    "notes": "Ta sama ankieta co noise_treatment_2020; nie niezależna replikacja.",
+    "doi": "10.1371/journal.pone.0218150",
+    "study_design": "Retrospektywna ankieta internetowa przebiegu lęku.",
+    "population": "1225 opiekunów psów powyżej roku.",
+    "access_basis": "full_text_sections",
+    "review_status": "editorial_screened_expert_pending",
+    "retraction_check": "not_checked"
+  },
+  {
+    "id": "dog_src_v2_noise_treatment_2020",
+    "title": "Effectiveness of treatments for firework fears in dogs",
+    "url": "https://www.sciencedirect.com/science/article/pii/S155878782030037X",
+    "publisher": "Journal of Veterinary Behavior / Elsevier",
+    "year": 2020,
+    "kind": "study",
+    "species": [
+      "dog"
+    ],
+    "evidence_level": "primary_study",
+    "license_status": "unverified; publiczny dostęp nie oznacza zgody na import pełnego tekstu",
+    "reviewed_at": "2026-10-07",
+    "notes": "Wspólna ankieta z noise_progression_2019; brak randomizacji.",
+    "doi": "10.1016/j.jveb.2020.04.005",
+    "study_design": "Ankieta postrzeganej skuteczności sposobów postępowania.",
+    "population": "1225 respondentów; podgrupy zależne od interwencji.",
+    "access_basis": "abstract",
+    "review_status": "editorial_screened_expert_pending",
+    "retraction_check": "not_checked"
+  },
+  {
+    "id": "dog_src_v2_noise_video_2020",
+    "title": "Fear expressions of dogs during New Year fireworks: a video analysis",
+    "url": "https://www.nature.com/articles/s41598-020-72841-7",
+    "publisher": "Scientific Reports / Springer Nature",
+    "year": 2020,
+    "kind": "study",
+    "species": [
+      "dog"
+    ],
+    "evidence_level": "primary_study",
+    "license_status": "verified_CC_BY; importowane wyłącznie metadane i własna synteza",
+    "reviewed_at": "2026-10-07",
+    "notes": "Nie wszystkie przewidywane sygnały rosły podczas hałasu.",
+    "doi": "10.1038/s41598-020-72841-7",
+    "study_design": "Porównanie nagrań tego samego psa podczas fajerwerków i wieczoru kontrolnego.",
+    "population": "36 psów bez leków przeciwlękowych.",
+    "access_basis": "full_text_sections",
+    "review_status": "editorial_screened_expert_pending",
+    "retraction_check": "not_checked"
+  },
+  {
+    "id": "dog_src_v2_air_transport_2002",
+    "title": "Physiology and behavior of dogs during air transport",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/12146895/",
+    "publisher": "Canadian Journal of Veterinary Research",
+    "year": 2002,
+    "kind": "study",
+    "species": [
+      "dog"
+    ],
+    "evidence_level": "primary_study",
+    "license_status": "unverified; publiczny dostęp nie oznacza zgody na import pełnego tekstu",
+    "reviewed_at": "2026-10-07",
+    "notes": "Historyczna próba nie ustala dzisiejszego leczenia.",
+    "doi": null,
+    "study_design": "Transport drogowy i lotniczy; wideo oraz fizjologia.",
+    "population": "24 beagle; grupy sedowane i kontrolne.",
+    "access_basis": "abstract",
+    "review_status": "editorial_screened_expert_pending",
+    "retraction_check": "not_checked"
+  },
+  {
+    "id": "dog_src_v2_separation_context_2021",
+    "title": "Separation-related behavior of dogs shows association with their reactions to everyday situations that may elicit frustration or fear",
+    "url": "https://www.nature.com/articles/s41598-021-98526-3",
+    "publisher": "Scientific Reports / Springer Nature",
+    "year": 2021,
+    "kind": "study",
+    "species": [
+      "dog"
+    ],
+    "evidence_level": "primary_study",
+    "license_status": "verified_CC_BY; importowane wyłącznie metadane i własna synteza",
+    "reviewed_at": "2026-10-07",
+    "notes": "Związki nie ustalają jednej etiologii.",
+    "doi": "10.1038/s41598-021-98526-3",
+    "study_design": "Kwestionariusz i próba rozłąki; analiza związków zachowań.",
+    "population": "167 psów w materiale testu; próby analityczne zależne od danych.",
+    "access_basis": "full_text_sections",
+    "review_status": "editorial_screened_expert_pending",
+    "retraction_check": "not_checked"
+  },
+  {
+    "id": "dog_src_v2_tail_chasing_2012",
+    "title": "Environmental Effects on Compulsive Tail Chasing in Dogs",
+    "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0041684",
+    "publisher": "PLOS ONE",
+    "year": 2012,
+    "kind": "study",
+    "species": [
+      "dog"
+    ],
+    "evidence_level": "primary_study",
+    "license_status": "verified_CC_BY; importowane wyłącznie metadane i własna synteza",
+    "reviewed_at": "2026-10-07",
+    "notes": "Badanie korelacyjne nie uzasadnia suplementacji.",
+    "doi": "10.1371/journal.pone.0041684",
+    "study_design": "Ankieta środowiska i zachowań; analiza genetyczna części próby.",
+    "population": "368 psów z czterech ras.",
+    "access_basis": "abstract",
+    "review_status": "editorial_screened_expert_pending",
+    "retraction_check": "not_checked"
+  },
+  {
+    "id": "dog_src_v2_senior_activity_2023",
+    "title": "Associations between physical activity and cognitive dysfunction in older companion dogs: results from the Dog Aging Project",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/36129565/",
+    "publisher": "GeroScience / Springer Nature",
+    "year": 2023,
+    "kind": "study",
+    "species": [
+      "dog"
+    ],
+    "evidence_level": "primary_study",
+    "license_status": "unverified; publiczny dostęp nie oznacza zgody na import pełnego tekstu",
+    "reviewed_at": "2026-10-07",
+    "notes": "Online 2022, tom 2023; odwrotna przyczynowość możliwa.",
+    "doi": "10.1007/s11357-022-00655-8",
+    "study_design": "Przekrojowa ankieta; modele wielozmiennowe.",
+    "population": "11574 psy domowe w wieku 6–18 lat.",
+    "access_basis": "full_text_sections",
+    "review_status": "editorial_screened_expert_pending",
+    "retraction_check": "not_checked"
+  },
+  {
+    "id": "dog_src_v2_dog_cat_home_2008",
+    "title": "Interrelationships of dogs (Canis familiaris) and cats (Felis catus L.) living under the same roof",
+    "url": "https://www.sciencedirect.com/science/article/abs/pii/S0168159107003590",
+    "publisher": "Applied Animal Behaviour Science / Elsevier",
+    "year": 2008,
+    "kind": "study",
+    "species": [
+      "dog",
+      "cat"
+    ],
+    "evidence_level": "primary_study",
+    "license_status": "unverified; publiczny dostęp nie oznacza zgody na import pełnego tekstu",
+    "reviewed_at": "2026-10-07",
+    "notes": "Wspólny dom nie gwarantuje przyjaźni.",
+    "doi": "10.1016/j.applanim.2007.10.010",
+    "study_design": "Ankieta i domowe obserwacje; osobne etogramy gatunków.",
+    "population": "170 ankiet; wybrana podpróba obserwacyjna.",
+    "access_basis": "full_text_sections",
+    "review_status": "editorial_screened_expert_pending",
+    "retraction_check": "not_checked"
+  },
+  {
+    "id": "dog_src_v2_problem_solving_2014",
+    "title": "Positive affect and learning: exploring the \"Eureka Effect\" in dogs",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/24096703/",
+    "publisher": "Animal Cognition / Springer",
+    "year": 2014,
+    "kind": "study",
+    "species": [
+      "dog"
+    ],
+    "evidence_level": "primary_study",
+    "license_status": "unverified; publiczny dostęp nie oznacza zgody na import pełnego tekstu",
+    "reviewed_at": "2026-10-07",
+    "notes": "Kontrola nagrody i jej rodzaj wpływały na reakcję.",
+    "doi": "10.1007/s10071-013-0688-x",
+    "study_design": "Eksperyment sparowanej kontroli dostępu do nagród.",
+    "population": "12 beagli.",
+    "access_basis": "abstract",
+    "review_status": "editorial_screened_expert_pending",
+    "retraction_check": "not_checked"
+  },
+  {
+    "id": "dog_src_v2_temperament_repeatability_2005",
+    "title": "Consistency of personality traits in dogs",
+    "url": "https://www.sciencedirect.com/science/article/abs/pii/S0003347204003392",
+    "publisher": "Animal Behaviour / Elsevier",
+    "year": 2005,
+    "kind": "study",
+    "species": [
+      "dog"
+    ],
+    "evidence_level": "primary_study",
+    "license_status": "unverified; publiczny dostęp nie oznacza zgody na import pełnego tekstu",
+    "reviewed_at": "2026-10-07",
+    "notes": "Powtarzalność i wpływ nowości współwystępowały.",
+    "doi": "10.1016/j.anbehav.2004.04.011",
+    "study_design": "Powtarzane testy behawioralne na trzech okazjach.",
+    "population": "Psy w wieku 1–2 lat z różnych ras.",
+    "access_basis": "full_text_sections",
+    "review_status": "editorial_screened_expert_pending",
+    "retraction_check": "not_checked"
+  },
+  {
+    "id": "dog_src_aaha_behavior_2015",
+    "title": "2015 AAHA Canine and Feline Behavior Management Guidelines",
+    "url": "https://www.aaha.org/resources/2015-aaha-canine-and-feline-behavior-management-guidelines/behavior-management-home-2/",
+    "publisher": "American Animal Hospital Association (AAHA)",
+    "year": 2015,
+    "kind": "guideline",
+    "species": [
+      "dog",
+      "cat"
+    ],
+    "evidence_level": "guideline",
+    "license_status": "unverified — publiczny dostęp nie potwierdza praw do redystrybucji; zapisano wyłącznie metadane i własne streszczenia",
+    "reviewed_at": "2026-10-07",
+    "notes": "Kliniczna ocena zachowania i ograniczanie lęku; wytyczna łączy badania z konsensusem ekspertów."
+  },
+  {
+    "id": "dog_src_avsab_training_2021",
+    "title": "AVSAB Position Statement on Humane Dog Training",
+    "url": "https://avsab.org/wp-content/uploads/2021/08/AVSAB-Humane-Dog-Training-Position-Statement-2021.pdf",
+    "publisher": "American Veterinary Society of Animal Behavior (AVSAB)",
+    "year": 2021,
+    "kind": "guideline",
+    "species": [
+      "dog"
+    ],
+    "evidence_level": "guideline",
+    "license_status": "unverified — publiczny dostęp nie potwierdza praw do redystrybucji; zapisano wyłącznie metadane i własne streszczenia",
+    "reviewed_at": "2026-10-07",
+    "notes": "Oficjalna strona stanowisk potwierdza aktualność dokumentu z 2021; podstawą zaleceń są metody oparte na nagrodach."
+  },
+  {
+    "id": "dog_src_castro_training_2020",
+    "title": "Does training method matter? Evidence for the negative impact of aversive-based methods on companion dog welfare",
+    "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0225023",
+    "publisher": "Vieira de Castro et al.; PLOS ONE",
+    "year": 2020,
+    "kind": "study",
+    "species": [
+      "dog"
+    ],
+    "evidence_level": "primary_study",
+    "license_status": "verified CC BY — deklaracja na stronie artykułu; atrybucja: Vieira de Castro et al. (2020), DOI 10.1371/journal.pone.0225023",
+    "reviewed_at": "2026-10-07",
+    "notes": "Badanie quasi-eksperymentalne 92 psów; dobór szkół i brak randomizacji ograniczają wnioskowanie przyczynowe."
+  },
+  {
+    "id": "dog_src_cooper_ecollars_2014",
+    "title": "The Welfare Consequences and Efficacy of Training Pet Dogs with Remote Electronic Training Collars in Comparison to Reward Based Training",
+    "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0102722",
+    "publisher": "Cooper et al.; PLOS ONE",
+    "year": 2014,
+    "kind": "study",
+    "species": [
+      "dog"
+    ],
+    "evidence_level": "primary_study",
+    "license_status": "verified CC BY — deklaracja na stronie artykułu; atrybucja: Cooper et al. (2014), DOI 10.1371/journal.pone.0102722",
+    "reviewed_at": "2026-10-07",
+    "notes": "Porównanie metod u 63 psów; opublikowana korekta dotyczy informacji o finansowaniu, DOI 10.1371/journal.pone.0110931."
+  },
+  {
+    "id": "dog_src_avsab_socialization_2008",
+    "title": "AVSAB Position Statement on Puppy Socialization",
+    "url": "https://avsab.org/wp-content/uploads/2019/01/Puppy-Socialization-Position-Statement-FINAL.pdf",
+    "publisher": "American Veterinary Society of Animal Behavior (AVSAB)",
+    "year": 2008,
+    "kind": "guideline",
+    "species": [
+      "dog"
+    ],
+    "evidence_level": "guideline",
+    "license_status": "unverified — publiczny dostęp nie potwierdza praw do redystrybucji; zapisano wyłącznie metadane i własne streszczenia",
+    "reviewed_at": "2026-10-07",
+    "notes": "Rok pochodzi ze stopki dokumentu; 2019 w adresie jest datą publikacji pliku na serwerze."
+  },
+  {
+    "id": "dog_src_wsava_pain_2022",
+    "title": "2022 WSAVA guidelines for the recognition, assessment and treatment of pain",
+    "url": "https://onlinelibrary.wiley.com/doi/10.1111/jsap.13566",
+    "publisher": "Monteiro et al.; WSAVA / Journal of Small Animal Practice",
+    "year": 2023,
+    "kind": "guideline",
+    "species": [
+      "dog",
+      "cat"
+    ],
+    "evidence_level": "guideline",
+    "license_status": "unverified — publiczny dostęp nie potwierdza praw do redystrybucji; zapisano wyłącznie metadane i własne streszczenia",
+    "reviewed_at": "2026-10-07",
+    "notes": "Wytyczne noszą datę 2022, tom czasopisma 2023; obserwacje behawioralne wspierają kliniczną ocenę bólu."
+  },
+  {
+    "id": "dog_src_aaha_pain_2022",
+    "title": "2022 AAHA Pain Management Guidelines for Dogs and Cats",
+    "url": "https://www.aaha.org/resources/2022-aaha-pain-management-guidelines-for-dogs-and-cats/home-3/",
+    "publisher": "American Animal Hospital Association (AAHA)",
+    "year": 2022,
+    "kind": "guideline",
+    "species": [
+      "dog",
+      "cat"
+    ],
+    "evidence_level": "guideline",
+    "license_status": "unverified — publiczny dostęp nie potwierdza praw do redystrybucji; zapisano wyłącznie metadane i własne streszczenia",
+    "reviewed_at": "2026-10-07",
+    "notes": "Ocena, leczenie i ponowna ocena bólu; uwzględniają obserwacje opiekuna oraz zmiany funkcjonalne."
+  },
+  {
+    "id": "dog_src_aaha_senior_2023",
+    "title": "2023 AAHA Senior Care Guidelines for Dogs and Cats — Managing Cognitive Dysfunction and Behavioral Anxiety",
+    "url": "https://www.aaha.org/resources/2023-aaha-senior-care-guidelines-for-dogs-and-cats/managing-cognitive-dysfunction-and-behavioral-anxiety/",
+    "publisher": "American Animal Hospital Association (AAHA)",
+    "year": 2023,
+    "kind": "guideline",
+    "species": [
+      "dog",
+      "cat"
+    ],
+    "evidence_level": "guideline",
+    "license_status": "unverified — publiczny dostęp nie potwierdza praw do redystrybucji; zapisano wyłącznie metadane i własne streszczenia",
+    "reviewed_at": "2026-10-07",
+    "notes": "Zmiany poznawcze wymagają diagnostyki różnicowej; sama starość nie wyjaśnia choroby ani nowej zmiany zachowania."
+  },
+  {
+    "id": "dog_src_cbarq_official",
+    "title": "About the C-BARQ",
+    "url": "https://vetapps.vet.upenn.edu/cbarq/about.cfm",
+    "publisher": "University of Pennsylvania, School of Veterinary Medicine",
+    "year": null,
+    "kind": "official_documentation",
+    "species": [
+      "dog"
+    ],
+    "evidence_level": "technical_documentation",
+    "license_status": "unverified — publiczny dostęp nie potwierdza praw do redystrybucji; zapisano wyłącznie metadane i własne streszczenia",
+    "reviewed_at": "2026-10-07",
+    "notes": "Oficjalny opis instrumentu i współpracy badawczej; nie stanowi zgody na kopiowanie pozycji, danych ani tłumaczenie."
+  },
+  {
+    "id": "dog_src_hsu_serpell_2003",
+    "title": "Development and validation of a questionnaire for measuring behavior and temperament traits in pet dogs",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/14621216/",
+    "publisher": "Hsu & Serpell; Journal of the American Veterinary Medical Association",
+    "year": 2003,
+    "kind": "study",
+    "species": [
+      "dog"
+    ],
+    "evidence_level": "primary_study",
+    "license_status": "unverified — publiczny dostęp nie potwierdza praw do redystrybucji; zapisano wyłącznie metadane i własne streszczenia",
+    "reviewed_at": "2026-10-07",
+    "notes": "Pierwotna walidacja C-BARQ; badanie przekrojowe raportów opiekunów. DOI 10.2460/javma.2003.223.1293."
+  },
+  {
+    "id": "dog_src_cbarq_short_2024",
+    "title": "Validation of the shortened version of the Canine Behavioral Assessment and Research Questionnaire (C-BARQ) using participants from the Dog Aging Project",
+    "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0299973",
+    "publisher": "Wilkins et al.; PLOS ONE",
+    "year": 2024,
+    "kind": "study",
+    "species": [
+      "dog"
+    ],
+    "evidence_level": "primary_study",
+    "license_status": "verified CC BY — deklaracja na stronie artykułu; atrybucja: Wilkins et al. (2024), DOI 10.1371/journal.pone.0299973; prawa do samego instrumentu odrębne",
+    "reviewed_at": "2026-10-07",
+    "notes": "Porównanie wersji krótkiej i długiej u 435 par opiekun–pies; zgodność pozycji i domen nie jest identyczna."
+  },
+  {
+    "id": "dog_src_morrill_ancestry_2022",
+    "title": "Ancestry-inclusive dog genomics challenges popular breed stereotypes",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/35482869/",
+    "publisher": "Morrill et al.; Science",
+    "year": 2022,
+    "kind": "study",
+    "species": [
+      "dog"
+    ],
+    "evidence_level": "primary_study",
+    "license_status": "unverified — publiczny dostęp nie potwierdza praw do redystrybucji; zapisano wyłącznie metadane i własne streszczenia",
+    "reviewed_at": "2026-10-07",
+    "notes": "Ankiety 18 385 psów i genotypowanie 2155; rasa miała ograniczoną wartość przewidywania zachowania jednostki. DOI 10.1126/science.abk0639."
+  },
+  {
+    "id": "dog_src_kubinyi_personality_2009",
+    "title": "Dog and owner demographic characteristics and dog personality trait associations",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0376635709001065",
+    "publisher": "Kubinyi, Turcsán & Miklósi; Behavioural Processes / Elsevier",
+    "year": 2009,
+    "kind": "study",
+    "species": [
+      "dog"
+    ],
+    "evidence_level": "primary_study",
+    "license_status": "unverified — publiczny dostęp nie potwierdza praw do redystrybucji; zapisano wyłącznie metadane i własne streszczenia",
+    "reviewed_at": "2026-10-07",
+    "notes": "Ankiety dotyczące 14 004 psów; związki demografii i cech nie ustalają przyczyn. DOI 10.1016/j.beproc.2009.04.004."
+  },
+  {
+    "id": "dog_src_palestrini_separation_2010",
+    "title": "Video analysis of dogs with separation-related behaviors",
+    "url": "https://www.sciencedirect.com/science/article/abs/pii/S0168159110000377",
+    "publisher": "Palestrini et al.; Applied Animal Behaviour Science / Elsevier",
+    "year": 2010,
+    "kind": "study",
+    "species": [
+      "dog"
+    ],
+    "evidence_level": "primary_study",
+    "license_status": "unverified — publiczny dostęp nie potwierdza praw do redystrybucji; zapisano wyłącznie metadane i własne streszczenia",
+    "reviewed_at": "2026-10-07",
+    "notes": "Obserwacja 23 psów podczas nieobecności opiekuna; niewielka próba kliniczna. DOI 10.1016/j.applanim.2010.01.014."
+  },
+  {
+    "id": "dog_src_assis_separation_2020",
+    "title": "Developing Diagnostic Frameworks in Veterinary Behavioral Medicine: Disambiguating Separation Related Problems in Dogs",
+    "url": "https://www.frontiersin.org/journals/veterinary-science/articles/10.3389/fvets.2019.00499/full",
+    "publisher": "de Assis et al.; Frontiers in Veterinary Science",
+    "year": 2020,
+    "kind": "study",
+    "species": [
+      "dog"
+    ],
+    "evidence_level": "primary_study",
+    "license_status": "verified CC BY — deklaracja na stronie artykułu; atrybucja: de Assis et al. (2020), DOI 10.3389/fvets.2019.00499",
+    "reviewed_at": "2026-10-07",
+    "notes": "Analiza ankiet i klastrów objawów; stany psychologiczne pozostają hipotezami. Publikacja ze stycznia 2020, DOI oznaczony 2019."
+  },
+  {
+    "id": "dog_src_scaglia_home_alone_2013",
+    "title": "Video analysis of adult dogs when left home alone",
+    "url": "https://www.sciencedirect.com/science/article/pii/S1558787813000993",
+    "publisher": "Scaglia et al.; Journal of Veterinary Behavior / Elsevier",
+    "year": 2013,
+    "kind": "study",
+    "species": [
+      "dog"
+    ],
+    "evidence_level": "primary_study",
+    "license_status": "unverified — publiczny dostęp nie potwierdza praw do redystrybucji; zapisano wyłącznie metadane i własne streszczenia",
+    "reviewed_at": "2026-10-07",
+    "notes": "Badanie zachowania dorosłych psów bez rozpoznanych problemów separacyjnych; opis próby, nie norma dla wszystkich. DOI 10.1016/j.jveb.2013.04.065."
+  },
+  {
+    "id": "dog_src_kaminski_face_2017",
+    "title": "Human attention affects facial expressions in domestic dogs",
+    "url": "https://www.nature.com/articles/s41598-017-12781-x",
+    "publisher": "Kaminski, Hynds, Morris & Waller; Scientific Reports",
+    "year": 2017,
+    "kind": "study",
+    "species": [
+      "dog"
+    ],
+    "evidence_level": "primary_study",
+    "license_status": "verified CC BY 4.0 — https://creativecommons.org/licenses/by/4.0/; atrybucja: Kaminski et al. (2017), DOI 10.1038/s41598-017-12781-x; streszczenia po polsku",
+    "reviewed_at": "2026-10-07",
+    "notes": "Eksperyment obejmował 24 psy; uwaga człowieka wpływała na ruchy twarzy, bez dowodu konkretnej treści myśli."
+  },
+  {
+    "id": "dog_src_worsley_gestures_2018",
+    "title": "Cross-species referential signalling events in domestic dogs (Canis familiaris)",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6004278/",
+    "publisher": "Worsley & O’Hara; Animal Cognition / Springer",
+    "year": 2018,
+    "kind": "study",
+    "species": [
+      "dog"
+    ],
+    "evidence_level": "primary_study",
+    "license_status": "verified CC BY 4.0 — https://creativecommons.org/licenses/by/4.0/; atrybucja: Worsley & O’Hara (2018), DOI 10.1007/s10071-018-1181-3; streszczenia po polsku",
+    "reviewed_at": "2026-10-07",
+    "notes": "Obserwacyjne nagrania 37 psów; gesty rozpatrywano w całych epizodach interakcji i względem rezultatu."
+  },
+  {
+    "id": "dog_src_albuquerque_emotions_2016",
+    "title": "Dogs recognize dog and human emotions",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/26763220/",
+    "publisher": "Albuquerque et al.; Biology Letters / Royal Society",
+    "year": 2016,
+    "kind": "study",
+    "species": [
+      "dog"
+    ],
+    "evidence_level": "primary_study",
+    "license_status": "unverified — publiczny dostęp nie potwierdza praw do redystrybucji; zapisano wyłącznie metadane i własne streszczenia",
+    "reviewed_at": "2026-10-07",
+    "notes": "Eksperyment integracji bodźców wizualnych i dźwiękowych; nie testował rozmów ani tłumaczenia myśli. DOI 10.1098/rsbl.2015.0883."
+  },
+  {
+    "id": "dog_src_salomons_communication_2021",
+    "title": "Cooperative Communication with Humans Evolved to Emerge Early in Domestic Dogs",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/34256018/",
+    "publisher": "Salomons et al.; Current Biology / Cell Press",
+    "year": 2021,
+    "kind": "study",
+    "species": [
+      "dog"
+    ],
+    "evidence_level": "primary_study",
+    "license_status": "unverified — publiczny dostęp nie potwierdza praw do redystrybucji; zapisano wyłącznie metadane i własne streszczenia",
+    "reviewed_at": "2026-10-07",
+    "notes": "Porównano 44 szczenięta psów i 37 wilków; zadania społeczne różniły się od pamięci i hamowania. DOI 10.1016/j.cub.2021.06.051."
+  },
+  {
+    "id": "dog_src_wsava_welfare_2018",
+    "title": "WSAVA Animal Welfare Guidelines",
+    "url": "https://wsava.org/wp-content/uploads/2019/12/WSAVA-Animal-Welfare-Guidelines-2018.pdf",
+    "publisher": "World Small Animal Veterinary Association (WSAVA)",
+    "year": 2018,
+    "kind": "guideline",
+    "species": [
+      "dog",
+      "cat"
+    ],
+    "evidence_level": "guideline",
+    "license_status": "unverified — publiczny dostęp nie potwierdza praw do redystrybucji; zapisano wyłącznie metadane i własne streszczenia",
+    "reviewed_at": "2026-10-07",
+    "notes": "Dobrostan obejmuje zdrowie, środowisko i potrzeby behawioralne oraz pozytywne doświadczenia; nie tylko brak objawów."
+  },
+  {
+    "id": "dog_src_horowitz_guilty_2009",
+    "title": "Disambiguating the 'guilty look': salient prompts to a familiar dog behaviour",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/19520245/",
+    "publisher": "Alexandra Horowitz; Behavioural Processes / Elsevier",
+    "year": 2009,
+    "kind": "study",
+    "species": [
+      "dog"
+    ],
+    "evidence_level": "primary_study",
+    "license_status": "unverified — publiczny dostęp nie potwierdza praw do redystrybucji; zapisano wyłącznie metadane i własne streszczenia",
+    "reviewed_at": "2026-10-07",
+    "notes": "Eksperyment 14 psów; wygląd przypisywany winie zależał od sygnałów człowieka. Nie rozstrzyga wszystkich zdolności emocjonalnych. DOI 10.1016/j.beproc.2009.03.014."
+  },
+  {
+    "id": "dog_src_duranton_nosework_2019",
+    "title": "Let me sniff! Nosework induces positive judgment bias in pet dogs",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0168159118304325",
+    "publisher": "Duranton & Horowitz; Applied Animal Behaviour Science / Elsevier",
+    "year": 2019,
+    "kind": "study",
+    "species": [
+      "dog"
+    ],
+    "evidence_level": "primary_study",
+    "license_status": "unverified — publiczny dostęp nie potwierdza praw do redystrybucji; zapisano wyłącznie metadane i własne streszczenia",
+    "reviewed_at": "2026-10-07",
+    "notes": "Interwencja węchowa i zadanie osądu niejednoznacznego bodźca; pośredni wskaźnik stanu afektywnego. DOI 10.1016/j.applanim.2018.12.009."
+  },
+  {
+    "id": "health_src_v2_resp",
+    "title": "Clinical Signs of Respiratory Disease in Animals",
+    "url": "https://www.merckvetmanual.com/respiratory-system/respiratory-system-introduction/clinical-signs-of-respiratory-disease-in-animals",
+    "publisher": "MSD/Merck Veterinary Manual",
+    "year": null,
+    "kind": "official_documentation",
+    "species": [
+      "dog",
+      "cat"
+    ],
+    "evidence_level": "clinical_reference",
+    "license_status": "Nie ustalono prawa do importu pełnego tekstu; zapisano metadane i krótką autorską syntezę",
+    "reviewed_at": "2026-10-07",
+    "notes": "Przegląd redakcyjny źródła; karty wymagają niezależnej oceny weterynaryjnej. Brak walidacji na nagraniach. Odczyt publicznego opisu/fragmentu indeksowanego przez wyszukiwarkę; pełny rozdział nie był podstawą lektury.",
+    "doi": null,
+    "study_design": "Autorski przegląd kliniczny; nie eksperyment i nie walidacja klasyfikatora",
+    "population": "Psy i koty opisane w materiale klinicznym",
+    "access_basis": "publisher_record",
+    "review_status": "editorial_screened_expert_pending",
+    "retraction_check": "not_checked"
+  },
+  {
+    "id": "health_src_v2_triage",
+    "title": "Initial Triage and Resuscitation of Small Animal Emergency Patients",
+    "url": "https://www.msdvetmanual.com/emergency-medicine-and-critical-care/evaluation-and-initial-treatment-of-small-animal-emergency-patients/initial-triage-and-resuscitation-of-small-animal-emergency-patients?ruleredirectid=445",
+    "publisher": "MSD/Merck Veterinary Manual",
+    "year": null,
+    "kind": "official_documentation",
+    "species": [
+      "dog",
+      "cat"
+    ],
+    "evidence_level": "clinical_reference",
+    "license_status": "Nie ustalono prawa do importu pełnego tekstu; zapisano metadane i krótką autorską syntezę",
+    "reviewed_at": "2026-10-07",
+    "notes": "Przegląd redakcyjny źródła; karty wymagają niezależnej oceny weterynaryjnej. Brak walidacji na nagraniach. Odczyt publicznego opisu/fragmentu indeksowanego przez wyszukiwarkę; pełny rozdział nie był podstawą lektury.",
+    "doi": null,
+    "study_design": "Autorski przegląd kliniczny; nie eksperyment i nie walidacja klasyfikatora",
+    "population": "Psy i koty opisane w materiale klinicznym",
+    "access_basis": "publisher_record",
+    "review_status": "editorial_screened_expert_pending",
+    "retraction_check": "not_checked"
+  },
+  {
+    "id": "health_src_v2_diabetes",
+    "title": "Diabetes Mellitus in Dogs and Cats",
+    "url": "https://www.msdvetmanual.com/endocrine-system/the-pancreas/diabetes-mellitus-in-dogs-and-cats",
+    "publisher": "MSD/Merck Veterinary Manual",
+    "year": 2026,
+    "kind": "official_documentation",
+    "species": [
+      "dog",
+      "cat"
+    ],
+    "evidence_level": "clinical_reference",
+    "license_status": "Nie ustalono prawa do importu pełnego tekstu; zapisano metadane i krótką autorską syntezę",
+    "reviewed_at": "2026-10-07",
+    "notes": "Przegląd redakcyjny źródła; karty wymagają niezależnej oceny weterynaryjnej. Brak walidacji na nagraniach.",
+    "doi": null,
+    "study_design": "Autorski przegląd kliniczny; nie eksperyment i nie walidacja klasyfikatora",
+    "population": "Psy i koty opisane w materiale klinicznym",
+    "access_basis": "full_text_sections",
+    "review_status": "editorial_screened_expert_pending",
+    "retraction_check": "not_checked"
+  },
+  {
+    "id": "health_src_v2_renal",
+    "title": "Renal Dysfunction in Dogs and Cats",
+    "url": "https://www.msdvetmanual.com/urinary-system/noninfectious-diseases-of-the-urinary-system-in-small-animals/renal-dysfunction-in-dogs-and-cats",
+    "publisher": "MSD/Merck Veterinary Manual",
+    "year": null,
+    "kind": "official_documentation",
+    "species": [
+      "dog",
+      "cat"
+    ],
+    "evidence_level": "clinical_reference",
+    "license_status": "Nie ustalono prawa do importu pełnego tekstu; zapisano metadane i krótką autorską syntezę",
+    "reviewed_at": "2026-10-07",
+    "notes": "Przegląd redakcyjny źródła; karty wymagają niezależnej oceny weterynaryjnej. Brak walidacji na nagraniach. Odczyt publicznego opisu/fragmentu indeksowanego przez wyszukiwarkę; pełny rozdział nie był podstawą lektury.",
+    "doi": null,
+    "study_design": "Autorski przegląd kliniczny; nie eksperyment i nie walidacja klasyfikatora",
+    "population": "Psy i koty opisane w materiale klinicznym",
+    "access_basis": "publisher_record",
+    "review_status": "editorial_screened_expert_pending",
+    "retraction_check": "not_checked"
+  },
+  {
+    "id": "health_src_v2_jaundice",
+    "title": "Jaundice in Small Animals",
+    "url": "https://www.merckvetmanual.com/digestive-system/pathophysiology-of-hepatic-disease-in-small-animals/jaundice-in-small-animals",
+    "publisher": "MSD/Merck Veterinary Manual",
+    "year": null,
+    "kind": "official_documentation",
+    "species": [
+      "dog",
+      "cat"
+    ],
+    "evidence_level": "clinical_reference",
+    "license_status": "Nie ustalono prawa do importu pełnego tekstu; zapisano metadane i krótką autorską syntezę",
+    "reviewed_at": "2026-10-07",
+    "notes": "Przegląd redakcyjny źródła; karty wymagają niezależnej oceny weterynaryjnej. Brak walidacji na nagraniach.",
+    "doi": null,
+    "study_design": "Autorski przegląd kliniczny; nie eksperyment i nie walidacja klasyfikatora",
+    "population": "Psy i koty opisane w materiale klinicznym",
+    "access_basis": "full_text_sections",
+    "review_status": "editorial_screened_expert_pending",
+    "retraction_check": "not_checked"
+  },
+  {
+    "id": "health_src_v2_hypothyroid",
+    "title": "Hypothyroidism in Animals",
+    "url": "https://www.msdvetmanual.com/endocrine-system/the-thyroid-gland/hypothyroidism-in-animals?autoredirectid=11881",
+    "publisher": "MSD/Merck Veterinary Manual",
+    "year": 2025,
+    "kind": "official_documentation",
+    "species": [
+      "dog"
+    ],
+    "evidence_level": "clinical_reference",
+    "license_status": "Nie ustalono prawa do importu pełnego tekstu; zapisano metadane i krótką autorską syntezę",
+    "reviewed_at": "2026-10-07",
+    "notes": "Przegląd redakcyjny źródła; karty wymagają niezależnej oceny weterynaryjnej. Brak walidacji na nagraniach.",
+    "doi": null,
+    "study_design": "Autorski przegląd kliniczny; nie eksperyment i nie walidacja klasyfikatora",
+    "population": "Głównie psy; karta ograniczona do psa",
+    "access_basis": "full_text_sections",
+    "review_status": "editorial_screened_expert_pending",
+    "retraction_check": "not_checked"
+  },
+  {
+    "id": "health_src_v2_hyperthyroid",
+    "title": "Hyperthyroidism in Animals",
+    "url": "https://www.msdvetmanual.com/endocrine-system/the-thyroid-gland/hyperthyroidism-in-animals",
+    "publisher": "MSD/Merck Veterinary Manual",
+    "year": 2024,
+    "kind": "official_documentation",
+    "species": [
+      "cat"
+    ],
+    "evidence_level": "clinical_reference",
+    "license_status": "Nie ustalono prawa do importu pełnego tekstu; zapisano metadane i krótką autorską syntezę",
+    "reviewed_at": "2026-10-07",
+    "notes": "Przegląd redakcyjny źródła; karty wymagają niezależnej oceny weterynaryjnej. Brak walidacji na nagraniach.",
+    "doi": null,
+    "study_design": "Autorski przegląd kliniczny; nie eksperyment i nie walidacja klasyfikatora",
+    "population": "Karta wykorzystuje część dotyczącą kotów",
+    "access_basis": "full_text_sections",
+    "review_status": "editorial_screened_expert_pending",
+    "retraction_check": "not_checked"
+  },
+  {
+    "id": "health_src_v2_cushing",
+    "title": "Cushing Syndrome (Hyperadrenocorticism) in Animals",
+    "url": "https://www.merckvetmanual.com/endocrine-system/the-adrenal-glands/cushing-syndrome-hyperadrenocorticism-in-animals?autoredirectid=24722",
+    "publisher": "MSD/Merck Veterinary Manual",
+    "year": null,
+    "kind": "official_documentation",
+    "species": [
+      "dog"
+    ],
+    "evidence_level": "clinical_reference",
+    "license_status": "Nie ustalono prawa do importu pełnego tekstu; zapisano metadane i krótką autorską syntezę",
+    "reviewed_at": "2026-10-07",
+    "notes": "Przegląd redakcyjny źródła; karty wymagają niezależnej oceny weterynaryjnej. Brak walidacji na nagraniach. Odczyt publicznego opisu/fragmentu indeksowanego przez wyszukiwarkę; pełny rozdział nie był podstawą lektury.",
+    "doi": null,
+    "study_design": "Autorski przegląd kliniczny; nie eksperyment i nie walidacja klasyfikatora",
+    "population": "Część dotycząca klinicznych objawów u psów",
+    "access_basis": "publisher_record",
+    "review_status": "editorial_screened_expert_pending",
+    "retraction_check": "not_checked"
+  },
+  {
+    "id": "health_src_v2_gdv",
+    "title": "Gastric Dilation and Volvulus in Small Animals",
+    "url": "https://www.msdvetmanual.com/digestive-system/surgical-problems-of-the-gastrointestinal-tract-in-small-animals/gastric-dilation-and-volvulus-in-small-animals",
+    "publisher": "MSD/Merck Veterinary Manual",
+    "year": 2025,
+    "kind": "official_documentation",
+    "species": [
+      "dog"
+    ],
+    "evidence_level": "clinical_reference",
+    "license_status": "Nie ustalono prawa do importu pełnego tekstu; zapisano metadane i krótką autorską syntezę",
+    "reviewed_at": "2026-10-07",
+    "notes": "Przegląd redakcyjny źródła; karty wymagają niezależnej oceny weterynaryjnej. Brak walidacji na nagraniach.",
+    "doi": null,
+    "study_design": "Autorski przegląd kliniczny; nie eksperyment i nie walidacja klasyfikatora",
+    "population": "Głównie psy, szczególnie duże; opis nie wyklucza innych psów",
+    "access_basis": "full_text_sections",
+    "review_status": "editorial_screened_expert_pending",
+    "retraction_check": "not_checked"
+  },
+  {
+    "id": "health_src_v2_urolith",
+    "title": "Overview of Urolithiasis in Small Animals",
+    "url": "https://www.msdvetmanual.com/urinary-system/urolithiasis-in-small-animals/overview-of-urolithiasis-in-small-animals",
+    "publisher": "MSD/Merck Veterinary Manual",
+    "year": null,
+    "kind": "official_documentation",
+    "species": [
+      "dog",
+      "cat"
+    ],
+    "evidence_level": "clinical_reference",
+    "license_status": "Nie ustalono prawa do importu pełnego tekstu; zapisano metadane i krótką autorską syntezę",
+    "reviewed_at": "2026-10-07",
+    "notes": "Przegląd redakcyjny źródła; karty wymagają niezależnej oceny weterynaryjnej. Brak walidacji na nagraniach.",
+    "doi": null,
+    "study_design": "Autorski przegląd kliniczny; nie eksperyment i nie walidacja klasyfikatora",
+    "population": "Psy i koty opisane w materiale klinicznym",
+    "access_basis": "full_text_sections",
+    "review_status": "editorial_screened_expert_pending",
+    "retraction_check": "not_checked"
+  },
+  {
+    "id": "health_src_v2_dental",
+    "title": "Periodontal Disease in Small Animals",
+    "url": "https://www.msdvetmanual.com/digestive-system/dentistry-in-small-animals/periodontal-disease-in-small-animals",
+    "publisher": "MSD/Merck Veterinary Manual",
+    "year": 2024,
+    "kind": "official_documentation",
+    "species": [
+      "dog",
+      "cat"
+    ],
+    "evidence_level": "clinical_reference",
+    "license_status": "Nie ustalono prawa do importu pełnego tekstu; zapisano metadane i krótką autorską syntezę",
+    "reviewed_at": "2026-10-07",
+    "notes": "Przegląd redakcyjny źródła; karty wymagają niezależnej oceny weterynaryjnej. Brak walidacji na nagraniach.",
+    "doi": null,
+    "study_design": "Autorski przegląd kliniczny; nie eksperyment i nie walidacja klasyfikatora",
+    "population": "Psy i koty opisane w materiale klinicznym",
+    "access_basis": "full_text_sections",
+    "review_status": "editorial_screened_expert_pending",
+    "retraction_check": "not_checked"
+  },
+  {
+    "id": "health_src_v2_ear",
+    "title": "Otitis Externa in Animals",
+    "url": "https://www.msdvetmanual.com/ear-disorders/otitis-externa/otitis-externa-in-animals",
+    "publisher": "MSD/Merck Veterinary Manual",
+    "year": 2026,
+    "kind": "official_documentation",
+    "species": [
+      "dog",
+      "cat"
+    ],
+    "evidence_level": "clinical_reference",
+    "license_status": "Nie ustalono prawa do importu pełnego tekstu; zapisano metadane i krótką autorską syntezę",
+    "reviewed_at": "2026-10-07",
+    "notes": "Przegląd redakcyjny źródła; karty wymagają niezależnej oceny weterynaryjnej. Brak walidacji na nagraniach.",
+    "doi": null,
+    "study_design": "Autorski przegląd kliniczny; nie eksperyment i nie walidacja klasyfikatora",
+    "population": "Psy i koty opisane w materiale klinicznym",
+    "access_basis": "full_text_sections",
+    "review_status": "editorial_screened_expert_pending",
+    "retraction_check": "not_checked"
+  },
+  {
+    "id": "health_src_v2_glaucoma",
+    "title": "Acute Glaucoma in Small Animals",
+    "url": "https://www.msdvetmanual.com/emergency-medicine-and-critical-care/ophthalmic-emergencies-in-small-animals/acute-glaucoma-in-small-animals",
+    "publisher": "MSD/Merck Veterinary Manual",
+    "year": 2024,
+    "kind": "official_documentation",
+    "species": [
+      "dog",
+      "cat"
+    ],
+    "evidence_level": "clinical_reference",
+    "license_status": "Nie ustalono prawa do importu pełnego tekstu; zapisano metadane i krótką autorską syntezę",
+    "reviewed_at": "2026-10-07",
+    "notes": "Przegląd redakcyjny źródła; karty wymagają niezależnej oceny weterynaryjnej. Brak walidacji na nagraniach.",
+    "doi": null,
+    "study_design": "Autorski przegląd kliniczny; nie eksperyment i nie walidacja klasyfikatora",
+    "population": "Psy i koty opisane w materiale klinicznym",
+    "access_basis": "full_text_sections",
+    "review_status": "editorial_screened_expert_pending",
+    "retraction_check": "not_checked"
+  },
+  {
+    "id": "health_src_v2_uvea",
+    "title": "The Anterior Uvea in Animals",
+    "url": "https://www.msdvetmanual.com/eye-diseases-and-disorders/ophthalmology/the-anterior-uvea-in-animals",
+    "publisher": "MSD/Merck Veterinary Manual",
+    "year": null,
+    "kind": "official_documentation",
+    "species": [
+      "dog",
+      "cat"
+    ],
+    "evidence_level": "clinical_reference",
+    "license_status": "Nie ustalono prawa do importu pełnego tekstu; zapisano metadane i krótką autorską syntezę",
+    "reviewed_at": "2026-10-07",
+    "notes": "Przegląd redakcyjny źródła; karty wymagają niezależnej oceny weterynaryjnej. Brak walidacji na nagraniach. Odczyt publicznego opisu/fragmentu indeksowanego przez wyszukiwarkę; pełny rozdział nie był podstawą lektury.",
+    "doi": null,
+    "study_design": "Autorski przegląd kliniczny; nie eksperyment i nie walidacja klasyfikatora",
+    "population": "Psy i koty opisane w materiale klinicznym",
+    "access_basis": "publisher_record",
+    "review_status": "editorial_screened_expert_pending",
+    "retraction_check": "not_checked"
+  },
+  {
+    "id": "health_src_v2_alopecia",
+    "title": "Hair Loss (Alopecia) in Dogs",
+    "url": "https://www.merckvetmanual.com/dog-owners/skin-disorders-of-dogs/hair-loss-alopecia-in-dogs",
+    "publisher": "MSD/Merck Veterinary Manual",
+    "year": null,
+    "kind": "official_documentation",
+    "species": [
+      "dog"
+    ],
+    "evidence_level": "clinical_reference",
+    "license_status": "Nie ustalono prawa do importu pełnego tekstu; zapisano metadane i krótką autorską syntezę",
+    "reviewed_at": "2026-10-07",
+    "notes": "Przegląd redakcyjny źródła; karty wymagają niezależnej oceny weterynaryjnej. Brak walidacji na nagraniach. Odczyt publicznego opisu/fragmentu indeksowanego przez wyszukiwarkę; pełny rozdział nie był podstawą lektury.",
+    "doi": null,
+    "study_design": "Autorski przegląd kliniczny; nie eksperyment i nie walidacja klasyfikatora",
+    "population": "Psy; wersja dla opiekunów",
+    "access_basis": "publisher_record",
+    "review_status": "editorial_screened_expert_pending",
+    "retraction_check": "not_checked"
+  },
+  {
+    "id": "health_src_v2_skin",
+    "title": "Diagnosis of Skin Diseases in Small Animals",
+    "url": "https://www.merckvetmanual.com/integumentary-system/integumentary-system-introduction/diagnosis-of-skin-diseases-in-small-animals",
+    "publisher": "MSD/Merck Veterinary Manual",
+    "year": 2025,
+    "kind": "official_documentation",
+    "species": [
+      "dog",
+      "cat"
+    ],
+    "evidence_level": "clinical_reference",
+    "license_status": "Nie ustalono prawa do importu pełnego tekstu; zapisano metadane i krótką autorską syntezę",
+    "reviewed_at": "2026-10-07",
+    "notes": "Przegląd redakcyjny źródła; karty wymagają niezależnej oceny weterynaryjnej. Brak walidacji na nagraniach.",
+    "doi": null,
+    "study_design": "Autorski przegląd kliniczny; nie eksperyment i nie walidacja klasyfikatora",
+    "population": "Psy i koty opisane w materiale klinicznym",
+    "access_basis": "full_text_sections",
+    "review_status": "editorial_screened_expert_pending",
+    "retraction_check": "not_checked"
+  },
+  {
+    "id": "health_src_v2_lameness",
+    "title": "Overview of Lameness in Small Animals",
+    "url": "https://www.merckvetmanual.com/musculoskeletal-system/lameness-in-small-animals/overview-of-lameness-in-small-animals",
+    "publisher": "MSD/Merck Veterinary Manual",
+    "year": 2026,
+    "kind": "official_documentation",
+    "species": [
+      "dog",
+      "cat"
+    ],
+    "evidence_level": "clinical_reference",
+    "license_status": "Nie ustalono prawa do importu pełnego tekstu; zapisano metadane i krótką autorską syntezę",
+    "reviewed_at": "2026-10-07",
+    "notes": "Przegląd redakcyjny źródła; karty wymagają niezależnej oceny weterynaryjnej. Brak walidacji na nagraniach.",
+    "doi": null,
+    "study_design": "Autorski przegląd kliniczny; nie eksperyment i nie walidacja klasyfikatora",
+    "population": "Psy i koty opisane w materiale klinicznym",
+    "access_basis": "full_text_sections",
+    "review_status": "editorial_screened_expert_pending",
+    "retraction_check": "not_checked"
+  },
+  {
+    "id": "health_src_v2_fate",
+    "title": "Feline aortic thromboembolism: Presentation, diagnosis, and treatment outcomes of 15 cats",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7703610/",
+    "publisher": "Open Veterinary Journal / PMC",
+    "year": 2020,
+    "kind": "study",
+    "species": [
+      "cat"
+    ],
+    "evidence_level": "primary_study",
+    "license_status": "Nie ustalono prawa do importu pełnego tekstu; zapisano metadane i krótką autorską syntezę",
+    "reviewed_at": "2026-10-07",
+    "notes": "Przegląd redakcyjny źródła; karty wymagają niezależnej oceny weterynaryjnej. Brak walidacji na nagraniach.",
+    "doi": "10.4314/ovj.v10i3.13",
+    "study_design": "Seria 15 klinicznych przypadków; brak reprezentatywnej próby i grupy kontrolnej",
+    "population": "15 dorosłych kotów skierowanych do kliniki w Kairze 2017–2019",
+    "access_basis": "full_text_sections",
+    "review_status": "editorial_screened_expert_pending",
+    "retraction_check": "not_checked"
+  },
+  {
+    "id": "health_src_v2_epilepsy",
+    "title": "International veterinary epilepsy task force consensus proposal: diagnostic approach to epilepsy in dogs",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4552251/",
+    "publisher": "BMC Veterinary Research / PMC",
+    "year": 2015,
+    "kind": "guideline",
+    "species": [
+      "dog"
+    ],
+    "evidence_level": "guideline",
+    "license_status": "Nie ustalono prawa do importu pełnego tekstu; zapisano metadane i krótką autorską syntezę",
+    "reviewed_at": "2026-10-07",
+    "notes": "Przegląd redakcyjny źródła; karty wymagają niezależnej oceny weterynaryjnej. Brak walidacji na nagraniach.",
+    "doi": null,
+    "study_design": "Konsensus zespołu ekspertów",
+    "population": "Psy z podejrzeniem napadów; wykluczanie przyczyn podobnych epizodów",
+    "access_basis": "official_guideline",
+    "review_status": "editorial_screened_expert_pending",
+    "retraction_check": "not_checked"
+  },
+  {
+    "id": "health_src_v2_recover",
+    "title": "RECOVER Guidelines: First Aid for Dogs and Cats. Clinical Guidelines",
+    "url": "https://onlinelibrary.wiley.com/doi/full/10.1111/vec.70138",
+    "publisher": "Journal of Veterinary Emergency and Critical Care / Wiley",
+    "year": 2026,
+    "kind": "guideline",
+    "species": [
+      "dog",
+      "cat"
+    ],
+    "evidence_level": "guideline",
+    "license_status": "Nie ustalono prawa do importu pełnego tekstu; zapisano metadane i krótką autorską syntezę",
+    "reviewed_at": "2026-10-07",
+    "notes": "Przegląd redakcyjny źródła; karty wymagają niezależnej oceny weterynaryjnej. Brak walidacji na nagraniach.",
+    "doi": "10.1111/vec.70138",
+    "study_design": "Wytyczne konsensusu; siła dowodów zależy od zalecenia",
+    "population": "Psy i koty opisane w materiale klinicznym",
+    "access_basis": "official_guideline",
+    "review_status": "editorial_screened_expert_pending",
+    "retraction_check": "not_checked"
+  },
+  {
+    "id": "health_src_v2_lipid",
+    "title": "Feline Hepatic Lipidosis",
+    "url": "https://www.msdvetmanual.com/digestive-system/hepatic-diseases-of-small-animals/feline-hepatic-lipidosis",
+    "publisher": "MSD/Merck Veterinary Manual",
+    "year": 2025,
+    "kind": "official_documentation",
+    "species": [
+      "cat"
+    ],
+    "evidence_level": "clinical_reference",
+    "license_status": "Nie ustalono prawa do importu pełnego tekstu; zapisano metadane i krótką autorską syntezę",
+    "reviewed_at": "2026-10-07",
+    "notes": "Przegląd redakcyjny źródła; karty wymagają niezależnej oceny weterynaryjnej. Brak walidacji na nagraniach.",
+    "doi": null,
+    "study_design": "Autorski przegląd kliniczny; nie eksperyment i nie walidacja klasyfikatora",
+    "population": "Koty; stłuszczenie wątroby i przyczyny niejedzenia",
+    "access_basis": "full_text_sections",
+    "review_status": "editorial_screened_expert_pending",
+    "retraction_check": "not_checked"
+  },
+  {
+    "id": "health_src_v2_esoph_dog",
+    "title": "Disorders of the Esophagus in Dogs",
+    "url": "https://www.msdvetmanual.com/dog-owners/digestive-disorders-of-dogs/disorders-of-the-esophagus-in-dogs",
+    "publisher": "MSD/Merck Veterinary Manual",
+    "year": null,
+    "kind": "official_documentation",
+    "species": [
+      "dog"
+    ],
+    "evidence_level": "clinical_reference",
+    "license_status": "Nie ustalono prawa do importu pełnego tekstu; zapisano metadane i krótką autorską syntezę",
+    "reviewed_at": "2026-10-07",
+    "notes": "Przegląd redakcyjny źródła; karty wymagają niezależnej oceny weterynaryjnej. Brak walidacji na nagraniach. Odczyt publicznego opisu/fragmentu indeksowanego przez wyszukiwarkę; pełny rozdział nie był podstawą lektury.",
+    "doi": null,
+    "study_design": "Autorski przegląd kliniczny; nie eksperyment i nie walidacja klasyfikatora",
+    "population": "Psy; wersja dla opiekunów",
+    "access_basis": "publisher_record",
+    "review_status": "editorial_screened_expert_pending",
+    "retraction_check": "not_checked"
+  },
+  {
+    "id": "health_src_v2_esoph_cat",
+    "title": "Disorders of the Esophagus in Cats",
+    "url": "https://www.merckvetmanual.com/cat-owners/digestive-disorders-of-cats/disorders-of-the-esophagus-in-cats?ruleredirectid=20",
+    "publisher": "MSD/Merck Veterinary Manual",
+    "year": null,
+    "kind": "official_documentation",
+    "species": [
+      "cat"
+    ],
+    "evidence_level": "clinical_reference",
+    "license_status": "Nie ustalono prawa do importu pełnego tekstu; zapisano metadane i krótką autorską syntezę",
+    "reviewed_at": "2026-10-07",
+    "notes": "Przegląd redakcyjny źródła; karty wymagają niezależnej oceny weterynaryjnej. Brak walidacji na nagraniach. Odczyt publicznego opisu/fragmentu indeksowanego przez wyszukiwarkę; pełny rozdział nie był podstawą lektury.",
+    "doi": null,
+    "study_design": "Autorski przegląd kliniczny; nie eksperyment i nie walidacja klasyfikatora",
+    "population": "Koty; wersja dla opiekunów",
+    "access_basis": "publisher_record",
+    "review_status": "editorial_screened_expert_pending",
+    "retraction_check": "not_checked"
+  },
+  {
+    "id": "health_src_v2_anemia",
+    "title": "Anemia",
+    "url": "https://www.vet.cornell.edu/departments-centers-and-institutes/cornell-feline-health-center/health-information/feline-health-topics/anemia",
+    "publisher": "Cornell University College of Veterinary Medicine",
+    "year": 2021,
+    "kind": "official_documentation",
+    "species": [
+      "cat"
+    ],
+    "evidence_level": "clinical_reference",
+    "license_status": "Nie ustalono prawa do importu pełnego tekstu; zapisano metadane i krótką autorską syntezę",
+    "reviewed_at": "2026-10-07",
+    "notes": "Przegląd redakcyjny źródła; karty wymagają niezależnej oceny weterynaryjnej. Brak walidacji na nagraniach.",
+    "doi": null,
+    "study_design": "Autorski przegląd kliniczny; nie eksperyment i nie walidacja klasyfikatora",
+    "population": "Koty; informacja edukacyjna dla opiekunów",
+    "access_basis": "full_text_sections",
+    "review_status": "editorial_screened_expert_pending",
+    "retraction_check": "not_checked"
+  },
+  {
+    "id": "health_src_v2_parasites_cat",
+    "title": "Gastrointestinal Parasites of Cats",
+    "url": "https://www.vet.cornell.edu/departments-centers-and-institutes/cornell-feline-health-center/health-information/feline-health-topics/gastrointestinal-parasites-cats",
+    "publisher": "Cornell University College of Veterinary Medicine",
+    "year": null,
+    "kind": "official_documentation",
+    "species": [
+      "cat"
+    ],
+    "evidence_level": "clinical_reference",
+    "license_status": "Nie ustalono prawa do importu pełnego tekstu; zapisano metadane i krótką autorską syntezę",
+    "reviewed_at": "2026-10-07",
+    "notes": "Przegląd redakcyjny źródła; karty wymagają niezależnej oceny weterynaryjnej. Brak walidacji na nagraniach. Odczyt publicznego opisu/fragmentu indeksowanego przez wyszukiwarkę; pełny rozdział nie był podstawą lektury.",
+    "doi": null,
+    "study_design": "Autorski przegląd kliniczny; nie eksperyment i nie walidacja klasyfikatora",
+    "population": "Koty; informacja edukacyjna dla opiekunów",
+    "access_basis": "publisher_record",
+    "review_status": "editorial_screened_expert_pending",
+    "retraction_check": "not_checked"
+  },
+  {
+    "id": "health_src_v2_parasites_dog",
+    "title": "Gastrointestinal Parasites of Dogs",
+    "url": "https://www.msdvetmanual.com/dog-owners/digestive-disorders-of-dogs/gastrointestinal-parasites-of-dogs?ruleredirectid=458",
+    "publisher": "MSD/Merck Veterinary Manual",
+    "year": null,
+    "kind": "official_documentation",
+    "species": [
+      "dog"
+    ],
+    "evidence_level": "clinical_reference",
+    "license_status": "Nie ustalono prawa do importu pełnego tekstu; zapisano metadane i krótką autorską syntezę",
+    "reviewed_at": "2026-10-07",
+    "notes": "Przegląd redakcyjny źródła; karty wymagają niezależnej oceny weterynaryjnej. Brak walidacji na nagraniach. Odczyt publicznego opisu/fragmentu indeksowanego przez wyszukiwarkę; pełny rozdział nie był podstawą lektury.",
+    "doi": null,
+    "study_design": "Autorski przegląd kliniczny; nie eksperyment i nie walidacja klasyfikatora",
+    "population": "Psy; wersja dla opiekunów",
+    "access_basis": "publisher_record",
+    "review_status": "editorial_screened_expert_pending",
+    "retraction_check": "not_checked"
+  },
+  {
+    "id": "health_src_v2_gi",
+    "title": "The Digestive System in Animals",
+    "url": "https://www.msdvetmanual.com/digestive-system/digestive-system-introduction/the-digestive-system-in-animals",
+    "publisher": "MSD/Merck Veterinary Manual",
+    "year": 2026,
+    "kind": "official_documentation",
+    "species": [
+      "dog",
+      "cat"
+    ],
+    "evidence_level": "clinical_reference",
+    "license_status": "Nie ustalono prawa do importu pełnego tekstu; zapisano metadane i krótką autorską syntezę",
+    "reviewed_at": "2026-10-07",
+    "notes": "Przegląd redakcyjny źródła; karty wymagają niezależnej oceny weterynaryjnej. Brak walidacji na nagraniach.",
+    "doi": null,
+    "study_design": "Autorski przegląd kliniczny; nie eksperyment i nie walidacja klasyfikatora",
+    "population": "Wiele gatunków; karty używają wyłącznie fragmentów o psach/kotach i objawach GI",
+    "access_basis": "full_text_sections",
+    "review_status": "editorial_screened_expert_pending",
+    "retraction_check": "not_checked"
+  },
+  {
+    "id": "health_src_v2_asthma",
+    "title": "Feline Asthma: What You Need To Know",
+    "url": "https://www.vet.cornell.edu/departments-centers-and-institutes/cornell-feline-health-center/health-information/feline-health-topics/feline-asthma-what-you-need-know",
+    "publisher": "Cornell University College of Veterinary Medicine",
+    "year": null,
+    "kind": "official_documentation",
+    "species": [
+      "cat"
+    ],
+    "evidence_level": "clinical_reference",
+    "license_status": "Nie ustalono prawa do importu pełnego tekstu; zapisano metadane i krótką autorską syntezę",
+    "reviewed_at": "2026-10-07",
+    "notes": "Przegląd redakcyjny źródła; karty wymagają niezależnej oceny weterynaryjnej. Brak walidacji na nagraniach. Odczyt publicznego opisu/fragmentu indeksowanego przez wyszukiwarkę; pełny rozdział nie był podstawą lektury.",
+    "doi": null,
+    "study_design": "Autorski przegląd kliniczny; nie eksperyment i nie walidacja klasyfikatora",
+    "population": "Koty; edukacja dotycząca astmy i chorób podobnych",
+    "access_basis": "publisher_record",
+    "review_status": "editorial_screened_expert_pending",
+    "retraction_check": "not_checked"
+  },
+  {
+    "id": "health_src_v2_dyspnea",
+    "title": "Dyspnea (Difficulty Breathing)",
+    "url": "https://www.vet.cornell.edu/departments-centers-and-institutes/cornell-feline-health-center/health-information/feline-health-topics/dyspnea-difficulty-breathing",
+    "publisher": "Cornell University College of Veterinary Medicine",
+    "year": null,
+    "kind": "official_documentation",
+    "species": [
+      "cat"
+    ],
+    "evidence_level": "clinical_reference",
+    "license_status": "Nie ustalono prawa do importu pełnego tekstu; zapisano metadane i krótką autorską syntezę",
+    "reviewed_at": "2026-10-07",
+    "notes": "Przegląd redakcyjny źródła; karty wymagają niezależnej oceny weterynaryjnej. Brak walidacji na nagraniach.",
+    "doi": null,
+    "study_design": "Autorski przegląd kliniczny; nie eksperyment i nie walidacja klasyfikatora",
+    "population": "Koty; edukacja dotycząca objawu duszności",
+    "access_basis": "full_text_sections",
+    "review_status": "editorial_screened_expert_pending",
+    "retraction_check": "not_checked"
+  },
+  {
+    "id": "health_src_v2_lilies",
+    "title": "Lovely Lilies and Curious Cats: A Dangerous Combination",
+    "url": "https://www.fda.gov/animal-veterinary/animal-health-literacy/lovely-lilies-and-curious-cats-dangerous-combination",
+    "publisher": "US Food and Drug Administration",
+    "year": null,
+    "kind": "official_documentation",
+    "species": [
+      "cat"
+    ],
+    "evidence_level": "clinical_reference",
+    "license_status": "Nie ustalono prawa do importu pełnego tekstu; zapisano metadane i krótką autorską syntezę",
+    "reviewed_at": "2026-10-07",
+    "notes": "Przegląd redakcyjny źródła; karty wymagają niezależnej oceny weterynaryjnej. Brak walidacji na nagraniach. Odczyt publicznego opisu/fragmentu indeksowanego przez wyszukiwarkę; pełny rozdział nie był podstawą lektury.",
+    "doi": null,
+    "study_design": "Oficjalny komunikat o toksyczności",
+    "population": "Koty po potencjalnym narażeniu na Lilium/Hemerocallis",
+    "access_basis": "publisher_record",
+    "review_status": "editorial_screened_expert_pending",
+    "retraction_check": "not_checked"
+  },
+  {
+    "id": "health_src_v2_xylitol",
+    "title": "Paws Off Xylitol; It's Dangerous for Dogs",
+    "url": "https://www.fda.gov/consumers/consumer-updates/paws-xylitol-its-dangerous-dogs",
+    "publisher": "US Food and Drug Administration",
+    "year": 2026,
+    "kind": "official_documentation",
+    "species": [
+      "dog"
+    ],
+    "evidence_level": "clinical_reference",
+    "license_status": "Nie ustalono prawa do importu pełnego tekstu; zapisano metadane i krótką autorską syntezę",
+    "reviewed_at": "2026-10-07",
+    "notes": "Przegląd redakcyjny źródła; karty wymagają niezależnej oceny weterynaryjnej. Brak walidacji na nagraniach. Odczyt publicznego opisu/fragmentu indeksowanego przez wyszukiwarkę; pełny rozdział nie był podstawą lektury.",
+    "doi": null,
+    "study_design": "Oficjalny komunikat o toksyczności",
+    "population": "Psy po potencjalnym spożyciu ksylitolu",
+    "access_basis": "publisher_record",
+    "review_status": "editorial_screened_expert_pending",
+    "retraction_check": "not_checked"
+  },
+  {
+    "id": "health_src_v2_anal",
+    "title": "Anal Sac Disease in Dogs and Cats",
+    "url": "https://www.merckvetmanual.com/digestive-system/diseases-of-the-rectum-and-anus/anal-sac-disease-in-dogs-and-cats",
+    "publisher": "MSD/Merck Veterinary Manual",
+    "year": 2025,
+    "kind": "official_documentation",
+    "species": [
+      "dog",
+      "cat"
+    ],
+    "evidence_level": "clinical_reference",
+    "license_status": "Nie ustalono prawa do importu pełnego tekstu; zapisano metadane i krótką autorską syntezę",
+    "reviewed_at": "2026-10-07",
+    "notes": "Przegląd redakcyjny źródła; karty wymagają niezależnej oceny weterynaryjnej. Brak walidacji na nagraniach.",
+    "doi": null,
+    "study_design": "Autorski przegląd kliniczny; nie eksperyment i nie walidacja klasyfikatora",
+    "population": "Psy i koty opisane w materiale klinicznym",
+    "access_basis": "full_text_sections",
+    "review_status": "editorial_screened_expert_pending",
+    "retraction_check": "not_checked"
+  },
+  {
+    "id": "health_src_v2_heart",
+    "title": "Heart Failure in Dogs and Cats",
+    "url": "https://www.merckvetmanual.com/circulatory-system/heart-failure-in-dogs-and-cats/heart-failure-in-dogs-and-cats",
+    "publisher": "MSD/Merck Veterinary Manual",
+    "year": null,
+    "kind": "official_documentation",
+    "species": [
+      "dog",
+      "cat"
+    ],
+    "evidence_level": "clinical_reference",
+    "license_status": "Nie ustalono prawa do importu pełnego tekstu; zapisano metadane i krótką autorską syntezę",
+    "reviewed_at": "2026-10-07",
+    "notes": "Przegląd redakcyjny źródła; karty wymagają niezależnej oceny weterynaryjnej. Brak walidacji na nagraniach.",
+    "doi": null,
+    "study_design": "Autorski przegląd kliniczny; nie eksperyment i nie walidacja klasyfikatora",
+    "population": "Psy i koty opisane w materiale klinicznym",
+    "access_basis": "full_text_sections",
+    "review_status": "editorial_screened_expert_pending",
+    "retraction_check": "not_checked"
+  },
+  {
+    "id": "health_src_v2_pyometra",
+    "title": "Pyometra",
+    "url": "https://www.acvs.org/small-animal/pyometra/",
+    "publisher": "American College of Veterinary Surgeons",
+    "year": null,
+    "kind": "official_documentation",
+    "species": [
+      "dog",
+      "cat"
+    ],
+    "evidence_level": "clinical_reference",
+    "license_status": "Nie ustalono prawa do importu pełnego tekstu; zapisano metadane i krótką autorską syntezę",
+    "reviewed_at": "2026-10-07",
+    "notes": "Przegląd redakcyjny źródła; karty wymagają niezależnej oceny weterynaryjnej. Brak walidacji na nagraniach. Odczyt publicznego opisu/fragmentu indeksowanego przez wyszukiwarkę; pełny rozdział nie był podstawą lektury.",
+    "doi": null,
+    "study_design": "Informacja kliniczna towarzystwa specjalistów",
+    "population": "Samice psów i kotów; ropomacicze i brak wypływu przy zamkniętej szyjce",
+    "access_basis": "publisher_record",
+    "review_status": "editorial_screened_expert_pending",
+    "retraction_check": "not_checked"
+  },
+  {
+    "id": "health_src_v2_mass",
+    "title": "Cytology of Skin Neoplasms",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/27531041/",
+    "publisher": "Veterinary Clinics of North America: Small Animal Practice / PubMed",
+    "year": 2016,
+    "kind": "review",
+    "species": [
+      "dog",
+      "cat"
+    ],
+    "evidence_level": "clinical_reference",
+    "license_status": "Nie ustalono prawa do importu pełnego tekstu; zapisano metadane i krótką autorską syntezę",
+    "reviewed_at": "2026-10-07",
+    "notes": "Przegląd redakcyjny źródła; karty wymagają niezależnej oceny weterynaryjnej. Brak walidacji na nagraniach.",
+    "doi": null,
+    "study_design": "Autorski przegląd metod cytologii; abstrakt",
+    "population": "Diagnostyka guzów skóry małych zwierząt",
+    "access_basis": "abstract",
+    "review_status": "editorial_screened_expert_pending",
+    "retraction_check": "not_checked"
+  },
+  {
+    "id": "methods_src_v2_vidopet",
+    "title": "Personality traits in companion dogs—Results from the VIDOPET",
+    "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0195448",
+    "publisher": "PLOS ONE",
+    "year": 2018,
+    "kind": "study",
+    "species": [
+      "dog"
+    ],
+    "evidence_level": "primary_study",
+    "license_status": "Publiczny bezpłatny odczyt wskazanej treści; nie importowano pełnego tekstu, danych, mediów, narzędzi ani wag. Ich prawa sprawdza się oddzielnie.",
+    "reviewed_at": "2026-10-07",
+    "notes": "Odczytano abstrakt, metodologię walidacji i dyskusję. Nie odtwarzamy stresujących podtestów; korekta 2019 dotyczy dostępności danych.",
+    "doi": "10.1371/journal.pone.0195448",
+    "study_design": "Walidacja wielozadaniowa, zgodność oceniających i ponowny pomiar.",
+    "population": "217 psów domowych; podpróba ponownego pomiaru.",
+    "access_basis": "full_text_sections",
+    "review_status": "editorial_screened_expert_pending",
+    "retraction_check": "not_checked",
+    "species_scope_basis": "Zakres badania/narzędzia obejmuje wskazany gatunek; brak rozszerzania na drugi gatunek.",
+    "correction_notice": {
+      "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0224199",
+      "checked_at": "2026-10-07",
+      "scope": "Korekta Data Availability; nie wykonano pełnego audytu retrakcji."
+    }
+  },
+  {
+    "id": "methods_src_v2_gosling",
+    "title": "A dog’s got personality: a cross-species comparative approach to personality judgments in dogs and humans",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/14674821/",
+    "publisher": "Journal of Personality and Social Psychology",
+    "year": 2003,
+    "kind": "study",
+    "species": [
+      "dog"
+    ],
+    "evidence_level": "primary_study",
+    "license_status": "Publiczny bezpłatny odczyt wskazanej treści; nie importowano pełnego tekstu, danych, mediów, narzędzi ani wag. Ich prawa sprawdza się oddzielnie.",
+    "reviewed_at": "2026-10-07",
+    "notes": "Dostęp do abstraktu, bez pełnej oceny próby; porównanie z ludźmi nie obejmuje kotów.",
+    "doi": "10.1037/0022-3514.85.6.1161",
+    "study_design": "Porównawcza ocena zgodności i trafności sądów o osobowości.",
+    "population": "Psy i ludzie; liczebności nie ustalono z odczytanego abstraktu.",
+    "access_basis": "abstract",
+    "review_status": "editorial_screened_expert_pending",
+    "retraction_check": "not_checked",
+    "species_scope_basis": "Zakres badania/narzędzia obejmuje wskazany gatunek; brak rozszerzania na drugi gatunek."
+  },
+  {
+    "id": "methods_src_v2_cat_temperament",
+    "title": "Validation of a temperament test for domestic cats",
+    "url": "https://www.tandfonline.com/doi/abs/10.2752/089279303786991982",
+    "publisher": "Anthrozoös",
+    "year": 2003,
+    "kind": "study",
+    "species": [
+      "cat"
+    ],
+    "evidence_level": "primary_study",
+    "license_status": "Publiczny bezpłatny odczyt wskazanej treści; nie importowano pełnego tekstu, danych, mediów, narzędzi ani wag. Ich prawa sprawdza się oddzielnie.",
+    "reviewed_at": "2026-10-07",
+    "notes": "Dostęp do publicznego abstraktu; nie kupowano pełnego tekstu i nie reprodukujemy testu.",
+    "doi": "10.2752/089279303786991982",
+    "study_design": "Walidacja temperamentu, pomiary powtarzane i porównanie z obserwacjami.",
+    "population": "Koty dorosłe; dokładnej liczebności nie ustalono z abstraktu.",
+    "access_basis": "abstract",
+    "review_status": "editorial_screened_expert_pending",
+    "retraction_check": "not_checked",
+    "species_scope_basis": "Zakres badania/narzędzia obejmuje wskazany gatunek; brak rozszerzania na drugi gatunek."
+  },
+  {
+    "id": "methods_src_v2_dogfacs_official",
+    "title": "DogFACS — official observational tool documentation",
+    "url": "https://animalfacs.github.io/AnimalFACS/DogFACS",
+    "publisher": "AnimalFACS, twórcy DogFACS",
+    "year": null,
+    "kind": "official_documentation",
+    "species": [
+      "dog"
+    ],
+    "evidence_level": "technical_documentation",
+    "license_status": "Publiczny bezpłatny odczyt wskazanej treści; nie importowano pełnego tekstu, danych, mediów, narzędzi ani wag. Ich prawa sprawdza się oddzielnie.",
+    "reviewed_at": "2026-10-07",
+    "notes": "Opis rozróżnia ruchy i emocje. Bezpłatny dostęp do instrukcji nie daje uprawnienia do ponownego użycia filmów.",
+    "doi": null,
+    "study_design": "Oficjalny opis narzędzia kodowania ruchów twarzy.",
+    "population": "Psy; dokumentacja, bez nowego eksperymentu.",
+    "access_basis": "official_guideline",
+    "review_status": "editorial_screened_expert_pending",
+    "retraction_check": "not_checked",
+    "species_scope_basis": "Zakres badania/narzędzia obejmuje wskazany gatunek; brak rozszerzania na drugi gatunek."
+  },
+  {
+    "id": "methods_src_v2_catfacs",
+    "title": "Development and application of CatFACS: Are human cat adopters influenced by cat facial expressions?",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0168159117300102",
+    "publisher": "Applied Animal Behaviour Science",
+    "year": 2017,
+    "kind": "study",
+    "species": [
+      "cat"
+    ],
+    "evidence_level": "primary_study",
+    "license_status": "Publiczny bezpłatny odczyt wskazanej treści; nie importowano pełnego tekstu, danych, mediów, narzędzi ani wag. Ich prawa sprawdza się oddzielnie.",
+    "reviewed_at": "2026-10-07",
+    "notes": "Abstrakt i rekord wydawcy; nie kopiujemy jednostek ani materiałów instrukcji CatFACS.",
+    "doi": "10.1016/j.applanim.2017.01.005",
+    "study_design": "Rozwój narzędzia oraz obserwacja zachowania przy adopcji.",
+    "population": "106 kotów z trzech schronisk.",
+    "access_basis": "abstract",
+    "review_status": "editorial_screened_expert_pending",
+    "retraction_check": "not_checked",
+    "species_scope_basis": "Zakres badania/narzędzia obejmuje wskazany gatunek; brak rozszerzania na drugi gatunek."
+  },
+  {
+    "id": "methods_src_v2_dog_context_affect",
+    "title": "Evaluating the accuracy of facial expressions as emotion indicators across contexts in dogs",
+    "url": "https://link.springer.com/article/10.1007/s10071-021-01532-1",
+    "publisher": "Animal Cognition",
+    "year": 2022,
+    "kind": "study",
+    "species": [
+      "dog"
+    ],
+    "evidence_level": "primary_study",
+    "license_status": "Publiczny bezpłatny odczyt wskazanej treści; nie importowano pełnego tekstu, danych, mediów, narzędzi ani wag. Ich prawa sprawdza się oddzielnie.",
+    "reviewed_at": "2026-10-07",
+    "notes": "Odczytano abstrakt i dyskusję. Nie zlecamy procedur wywołujących frustrację; wyniki nie są domowym dekoderem emocji.",
+    "doi": "10.1007/s10071-021-01532-1",
+    "study_design": "Eksperymentalne porównanie kontekstów i miar trafności wskaźników.",
+    "population": "Psy, dwa rodzaje nagród; dokładnej próby nie potwierdzono w odczytanych sekcjach.",
+    "access_basis": "full_text_sections",
+    "review_status": "editorial_screened_expert_pending",
+    "retraction_check": "not_checked",
+    "species_scope_basis": "Zakres badania/narzędzia obejmuje wskazany gatunek; brak rozszerzania na drugi gatunek."
+  },
+  {
+    "id": "methods_src_v2_cat_affect_hypotheses",
+    "title": "Facial correlates of emotional behaviour in the domestic cat (Felis catus)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/28341145/",
+    "publisher": "Behavioural Processes",
+    "year": 2017,
+    "kind": "study",
+    "species": [
+      "cat"
+    ],
+    "evidence_level": "primary_study",
+    "license_status": "Publiczny bezpłatny odczyt wskazanej treści; nie importowano pełnego tekstu, danych, mediów, narzędzi ani wag. Ich prawa sprawdza się oddzielnie.",
+    "reviewed_at": "2026-10-07",
+    "notes": "Autorzy opisują generowanie hipotez o stanie emocjonalnym. Nie przenosimy etykiet wprost na domowe nagrania.",
+    "doi": "10.1016/j.beproc.2017.03.011",
+    "study_design": "Kodowanie twarzy i zachowania w kontekście ograniczonej przestrzeni.",
+    "population": "Koty; dokładnej próby nie ustalono z abstraktu.",
+    "access_basis": "abstract",
+    "review_status": "editorial_screened_expert_pending",
+    "retraction_check": "not_checked",
+    "species_scope_basis": "Zakres badania/narzędzia obejmuje wskazany gatunek; brak rozszerzania na drugi gatunek."
+  },
+  {
+    "id": "methods_src_v2_cat_social_faces",
+    "title": "Feline faces: Unraveling the social function of domestic cat facial signals",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0376635723001419",
+    "publisher": "Behavioural Processes",
+    "year": 2023,
+    "kind": "study",
+    "species": [
+      "cat"
+    ],
+    "evidence_level": "primary_study",
+    "license_status": "Publiczny bezpłatny odczyt wskazanej treści; nie importowano pełnego tekstu, danych, mediów, narzędzi ani wag. Ich prawa sprawdza się oddzielnie.",
+    "reviewed_at": "2026-10-07",
+    "notes": "Abstrakt i dostępne sekcje w rekordzie wydawcy; ograniczona domena społeczna i miejsce.",
+    "doi": "10.1016/j.beproc.2023.104959",
+    "study_design": "Obserwacja interakcji i zestawień ruchów twarzy.",
+    "population": "53 dorosłe koty krótkowłose w jednej kawiarni dla kotów.",
+    "access_basis": "abstract",
+    "review_status": "editorial_screened_expert_pending",
+    "retraction_check": "not_checked",
+    "species_scope_basis": "Zakres badania/narzędzia obejmuje wskazany gatunek; brak rozszerzania na drugi gatunek."
+  },
+  {
+    "id": "methods_src_v2_catflw",
+    "title": "CatFLW: Cat Facial Landmarks in the Wild Dataset",
+    "url": "https://arxiv.org/abs/2305.04232",
+    "publisher": "arXiv, autorzy badania",
+    "year": 2023,
+    "kind": "dataset",
+    "species": [
+      "cat"
+    ],
+    "evidence_level": "primary_study",
+    "license_status": "Publiczny bezpłatny odczyt wskazanej treści; nie importowano pełnego tekstu, danych, mediów, narzędzi ani wag. Ich prawa sprawdza się oddzielnie.",
+    "reviewed_at": "2026-10-07",
+    "notes": "Preprint; dane według abstraktu dostępne na prośbę. Nie pobrano zbioru i nie potwierdzono praw do treningu.",
+    "doi": null,
+    "study_design": "Prototyp zbioru punktów twarzy i anotacja z udziałem człowieka.",
+    "population": "2016 zdjęć twarzy kotów; 48 punktów.",
+    "access_basis": "abstract",
+    "review_status": "editorial_screened_expert_pending",
+    "retraction_check": "not_checked",
+    "species_scope_basis": "Zakres badania/narzędzia obejmuje wskazany gatunek; brak rozszerzania na drugi gatunek."
+  },
+  {
+    "id": "methods_src_v2_dogflw",
+    "title": "DogFLW: Dog Facial Landmarks in the Wild Dataset",
+    "url": "https://arxiv.org/abs/2405.11501",
+    "publisher": "arXiv, autorzy badania",
+    "year": 2024,
+    "kind": "dataset",
+    "species": [
+      "dog"
+    ],
+    "evidence_level": "primary_study",
+    "license_status": "Publiczny bezpłatny odczyt wskazanej treści; nie importowano pełnego tekstu, danych, mediów, narzędzi ani wag. Ich prawa sprawdza się oddzielnie.",
+    "reviewed_at": "2026-10-07",
+    "notes": "Preprint; dane według abstraktu dostępne na uzasadnioną prośbę. Nie pobrano obrazów ani wag.",
+    "doi": null,
+    "study_design": "Prototyp zbioru punktów twarzy psa.",
+    "population": "3274 zdjęcia psów; 46 punktów.",
+    "access_basis": "abstract",
+    "review_status": "editorial_screened_expert_pending",
+    "retraction_check": "not_checked",
+    "species_scope_basis": "Zakres badania/narzędzia obejmuje wskazany gatunek; brak rozszerzania na drugi gatunek."
+  },
+  {
+    "id": "methods_src_v2_ap10k",
+    "title": "AP-10K: A Benchmark for Animal Pose Estimation in the Wild",
+    "url": "https://arxiv.org/abs/2108.12617",
+    "publisher": "NeurIPS Datasets and Benchmarks / arXiv",
+    "year": 2021,
+    "kind": "dataset",
+    "species": [
+      "dog",
+      "cat"
+    ],
+    "evidence_level": "primary_study",
+    "license_status": "Publiczny bezpłatny odczyt wskazanej treści; nie importowano pełnego tekstu, danych, mediów, narzędzi ani wag. Ich prawa sprawdza się oddzielnie.",
+    "reviewed_at": "2026-10-07",
+    "notes": "Cel dotyczy punktów ciała. Nie rozstrzygnięto sprzecznych opisów praw danych; niczego nie importowano.",
+    "doi": null,
+    "study_design": "Benchmark pozy i transferu między gatunkami.",
+    "population": "10015 zdjęć ssaków; 54 gatunki, w tym pies i kot.",
+    "access_basis": "abstract",
+    "review_status": "editorial_screened_expert_pending",
+    "retraction_check": "not_checked",
+    "species_scope_basis": "Zbiór obejmuje oba gatunki; wnioski dotyczą technicznego celu punktów ciała, nie ich psychologii.",
+    "supplementary_urls": [
+      "https://github.com/AlexTheBad/AP-10K"
+    ]
+  },
+  {
+    "id": "methods_src_v2_oxford_pet",
+    "title": "Cats and Dogs — Oxford-IIIT Pet Dataset",
+    "url": "https://www.robots.ox.ac.uk/~vgg/publications/2012/parkhi12a/",
+    "publisher": "University of Oxford / IEEE CVPR",
+    "year": 2012,
+    "kind": "dataset",
+    "species": [
+      "dog",
+      "cat"
+    ],
+    "evidence_level": "primary_study",
+    "license_status": "Publiczny bezpłatny odczyt wskazanej treści; nie importowano pełnego tekstu, danych, mediów, narzędzi ani wag. Ich prawa sprawdza się oddzielnie.",
+    "reviewed_at": "2026-10-07",
+    "notes": "Oficjalny opis autorów i abstrakt; nie jest bazą zachowania ani tożsamości osobniczej.",
+    "doi": null,
+    "study_design": "Klasyfikacja wyglądu oraz segmentacja obrazów.",
+    "population": "37 ras psów i kotów w zbiorze zdjęć.",
+    "access_basis": "abstract",
+    "review_status": "editorial_screened_expert_pending",
+    "retraction_check": "not_checked",
+    "species_scope_basis": "Wprost obejmuje psy i koty; zakres dowodów dotyczy wyglądu i klasyfikacji."
+  },
+  {
+    "id": "methods_src_v2_animal_kingdom",
+    "title": "Animal Kingdom: A Large and Diverse Dataset for Animal Behavior Understanding",
+    "url": "https://arxiv.org/abs/2204.08129",
+    "publisher": "IEEE CVPR / arXiv",
+    "year": 2022,
+    "kind": "dataset",
+    "species": [
+      "dog",
+      "cat"
+    ],
+    "evidence_level": "primary_study",
+    "license_status": "Publiczny bezpłatny odczyt wskazanej treści; nie importowano pełnego tekstu, danych, mediów, narzędzi ani wag. Ich prawa sprawdza się oddzielnie.",
+    "reviewed_at": "2026-10-07",
+    "notes": "Przejrzano abstrakt i opis grup w suplemencie. Brak importu klipów lub potwierdzenia praw każdego nagrania.",
+    "doi": null,
+    "study_design": "Benchmark czynności, pozy i lokalizacji zdarzeń w wideo.",
+    "population": "850 gatunków; suplement zawiera grupy kota i psa.",
+    "access_basis": "abstract",
+    "review_status": "editorial_screened_expert_pending",
+    "retraction_check": "not_checked",
+    "species_scope_basis": "Suplement obejmuje Cat i Dog; brak osobnej walidacji polskich domowych profili obu gatunków.",
+    "supplementary_urls": [
+      "https://openaccess.thecvf.com/content/CVPR2022/supplemental/Ng_Animal_Kingdom_A_CVPR_2022_supplemental.pdf"
+    ]
+  },
+  {
+    "id": "methods_src_v2_arrive",
+    "title": "The ARRIVE guidelines 2.0: Updated guidelines for reporting animal research",
+    "url": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3000410",
+    "publisher": "PLOS Biology / NC3Rs",
+    "year": 2020,
+    "kind": "guideline",
+    "species": [
+      "dog",
+      "cat"
+    ],
+    "evidence_level": "guideline",
+    "license_status": "Publiczny bezpłatny odczyt wskazanej treści; nie importowano pełnego tekstu, danych, mediów, narzędzi ani wag. Ich prawa sprawdza się oddzielnie.",
+    "reviewed_at": "2026-10-07",
+    "notes": "Wytyczne raportowania nie są akceptacją etyczną ani walidacją naszego projektu.",
+    "doi": "10.1371/journal.pbio.3000410",
+    "study_design": "Wytyczne raportowania, priorytetyzowane procesem Delphi.",
+    "population": "Badania żywych zwierząt; ogólna metodologia obejmuje psa i kota.",
+    "access_basis": "official_guideline",
+    "review_status": "editorial_screened_expert_pending",
+    "retraction_check": "not_checked",
+    "species_scope_basis": "Oficjalny zakres: wszystkie obszary badań żywych zwierząt; zasady metod, bez wniosków gatunkowych."
+  },
+  {
+    "id": "methods_src_v2_arrive_e",
+    "title": "Reporting animal research: Explanation and elaboration for the ARRIVE guidelines 2.0",
+    "url": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3000411",
+    "publisher": "PLOS Biology / NC3Rs",
+    "year": 2020,
+    "kind": "guideline",
+    "species": [
+      "dog",
+      "cat"
+    ],
+    "evidence_level": "guideline",
+    "license_status": "Publiczny bezpłatny odczyt wskazanej treści; nie importowano pełnego tekstu, danych, mediów, narzędzi ani wag. Ich prawa sprawdza się oddzielnie.",
+    "reviewed_at": "2026-10-07",
+    "notes": "Odwołania do objaśnień, bez odtwarzania przykładów i bez zalecania eksperymentów na opiekunach lub zwierzętach.",
+    "doi": "10.1371/journal.pbio.3000411",
+    "study_design": "Objaśnienia projektowania, jednostki, braków i raportowania.",
+    "population": "Badania żywych zwierząt, wprost wszystkie obszary i gatunki.",
+    "access_basis": "official_guideline",
+    "review_status": "editorial_screened_expert_pending",
+    "retraction_check": "not_checked",
+    "species_scope_basis": "Zakres wprowadzenia obejmuje wszystkie żywe zwierzęta; własne zasady zapisu odnosimy do obu gatunków."
+  },
+  {
+    "id": "methods_src_v2_nist_gai",
+    "title": "Artificial Intelligence Risk Management Framework: Generative Artificial Intelligence Profile",
+    "url": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf",
+    "publisher": "National Institute of Standards and Technology",
+    "year": 2024,
+    "kind": "official_documentation",
+    "species": [
+      "dog",
+      "cat"
+    ],
+    "evidence_level": "technical_documentation",
+    "license_status": "Publiczny bezpłatny odczyt wskazanej treści; nie importowano pełnego tekstu, danych, mediów, narzędzi ani wag. Ich prawa sprawdza się oddzielnie.",
+    "reviewed_at": "2026-10-07",
+    "notes": "Sekcje 2.2, 2.7 i 2.8. Oba gatunki oznaczają zakres produktu, nie dowody o osobowości zwierząt.",
+    "doi": "10.6028/NIST.AI.600-1",
+    "study_design": "Międzysektorowy oficjalny profil zarządzania ryzykiem generatywnej AI.",
+    "population": "Systemy generatywne i ludzie, bez badania zwierząt.",
+    "access_basis": "official_guideline",
+    "review_status": "editorial_screened_expert_pending",
+    "retraction_check": "not_checked",
+    "species_scope_basis": "general_ai_methodology_not_animal_evidence: międzysektorowy dokument dotyczy generatora głosu obu gatunków."
+  },
+  {
+    "id": "methods_src_v2_coco",
+    "title": "Microsoft COCO: Common Objects in Context",
+    "url": "https://arxiv.org/abs/1405.0312",
+    "publisher": "ECCV / arXiv",
+    "year": 2014,
+    "kind": "dataset",
+    "species": [
+      "dog",
+      "cat"
+    ],
+    "evidence_level": "primary_study",
+    "license_status": "Publiczny bezpłatny odczyt wskazanej treści; nie importowano pełnego tekstu, danych, mediów, narzędzi ani wag. Ich prawa sprawdza się oddzielnie.",
+    "reviewed_at": "2026-10-07",
+    "notes": "Odczytano abstrakt i opis zadania autorów. Kategoria obiektu nie jest etykietą czynności ani emocji.",
+    "doi": "10.1007/978-3-319-10602-1_48",
+    "study_design": "Benchmark detekcji i segmentacji obiektów.",
+    "population": "Obrazy obiektów, m.in. dog i cat.",
+    "access_basis": "abstract",
+    "review_status": "editorial_screened_expert_pending",
+    "retraction_check": "not_checked",
+    "species_scope_basis": "Oba gatunki są kategoriami; zakres dowodów techniczny, bez psychologii."
+  },
+  {
+    "id": "methods_src_v2_woah_welfare",
+    "title": "Terrestrial Animal Health Code, Chapter 7.1: Introduction to the recommendations for animal welfare — 2024 PDF",
+    "url": "https://www.woah.org/fileadmin/Home/eng/Health_standards/tahc/2023/chapitre_aw_introduction.pdf",
+    "publisher": "World Organisation for Animal Health",
+    "year": 2024,
+    "kind": "guideline",
+    "species": [
+      "dog",
+      "cat"
+    ],
+    "evidence_level": "guideline",
+    "license_status": "Publiczny bezpłatny odczyt wskazanej treści; nie importowano pełnego tekstu, danych, mediów, narzędzi ani wag. Ich prawa sprawdza się oddzielnie.",
+    "reviewed_at": "2026-10-07",
+    "notes": "Sprawdzono PDF z nadrukiem 2024, art. 7.1.1–7.1.4. Nie deklarujemy najnowszej wersji standardu.",
+    "doi": null,
+    "study_design": "Oficjalne ogólne zasady dobrostanu.",
+    "population": "Zwierzęta; zasady ogólne obejmują również zwierzęta towarzyszące.",
+    "access_basis": "official_guideline",
+    "review_status": "editorial_screened_expert_pending",
+    "retraction_check": "not_checked",
+    "species_scope_basis": "Ogólna definicja dobrostanu obejmuje oba gatunki; nie używamy zaleceń produkcyjnych jako porad dla psa/kota."
+  },
+  {
+    "id": "methods_src_v2_dog_inhibition",
+    "title": "Measures of Dogs’ Inhibitory Control Abilities Do Not Correlate across Tasks",
+    "url": "https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2017.00849/full",
+    "publisher": "Frontiers in Psychology",
+    "year": 2017,
+    "kind": "study",
+    "species": [
+      "dog"
+    ],
+    "evidence_level": "primary_study",
+    "license_status": "Publiczny bezpłatny odczyt wskazanej treści; nie importowano pełnego tekstu, danych, mediów, narzędzi ani wag. Ich prawa sprawdza się oddzielnie.",
+    "reviewed_at": "2026-10-07",
+    "notes": "Odczytano abstrakt, wyniki i dyskusję. Nie odtwarzamy procedur ograniczania dostępu do nagrody.",
+    "doi": "10.3389/fpsyg.2017.00849",
+    "study_design": "Pięć zadań poznawczych i kwestionariusz.",
+    "population": "67 psów; liczba ocen w zadaniach różna.",
+    "access_basis": "full_text_sections",
+    "review_status": "editorial_screened_expert_pending",
+    "retraction_check": "not_checked",
+    "species_scope_basis": "Zakres badania/narzędzia obejmuje wskazany gatunek; brak rozszerzania na drugi gatunek."
+  },
+  {
+    "id": "methods_src_v2_dogfacs_study",
+    "title": "Paedomorphic Facial Expressions Give Dogs a Selective Advantage",
+    "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0082686",
+    "publisher": "PLOS ONE",
+    "year": 2013,
+    "kind": "study",
+    "species": [
+      "dog"
+    ],
+    "evidence_level": "primary_study",
+    "license_status": "Publiczny bezpłatny odczyt wskazanej treści; nie importowano pełnego tekstu, danych, mediów, narzędzi ani wag. Ich prawa sprawdza się oddzielnie.",
+    "reviewed_at": "2026-10-07",
+    "notes": "Odczytano wprowadzenie i metody. Związek wyboru ludzi nie dowodzi stanu emocjonalnego psa.",
+    "doi": "10.1371/journal.pone.0082686",
+    "study_design": "Rozwój kodowania twarzy i obserwacja wyboru adopcyjnego.",
+    "population": "Psy schroniskowe; nie utożsamiamy szybkości adopcji z temperamentem.",
+    "access_basis": "full_text_sections",
+    "review_status": "editorial_screened_expert_pending",
+    "retraction_check": "not_checked",
+    "species_scope_basis": "Zakres badania/narzędzia obejmuje wskazany gatunek; brak rozszerzania na drugi gatunek."
+  }
+]

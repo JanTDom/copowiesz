@@ -1,0 +1,456 @@
+[
+  {
+    "id": "cat_src_environment",
+    "title": "AAFP and ISFM Feline Environmental Needs Guidelines",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11383066/",
+    "publisher": "AAFP/ISFM; Journal of Feline Medicine and Surgery",
+    "year": 2013,
+    "kind": "guideline",
+    "species": [
+      "cat"
+    ],
+    "evidence_level": "guideline",
+    "license_status": "unverified",
+    "reviewed_at": "2026-10-07",
+    "notes": "Pięć potrzeb środowiskowych; konsensus i dostępne badania. Publiczny dostęp nie potwierdza prawa do hurtowego kopiowania."
+  },
+  {
+    "id": "cat_src_hiding_box",
+    "title": "The effect of a hiding box on stress levels and body weight in Dutch shelter cats; a randomized controlled trial",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6791553/",
+    "publisher": "PLOS ONE",
+    "year": 2019,
+    "kind": "study",
+    "species": [
+      "cat"
+    ],
+    "evidence_level": "primary_study",
+    "license_status": "unverified",
+    "reviewed_at": "2026-10-07",
+    "notes": "Randomizowane badanie w jednym schronisku; ograniczona możliwość przeniesienia wyników na dom."
+  },
+  {
+    "id": "cat_src_feeding",
+    "title": "Feline feeding programs: Addressing behavioural needs to improve feline health and wellbeing",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11343346/",
+    "publisher": "AAFP; Journal of Feline Medicine and Surgery",
+    "year": 2018,
+    "kind": "guideline",
+    "species": [
+      "cat"
+    ],
+    "evidence_level": "guideline",
+    "license_status": "unverified",
+    "reviewed_at": "2026-10-07",
+    "notes": "Oświadczenie konsensusowe o organizacji karmienia; nie jest indywidualnym planem diety."
+  },
+  {
+    "id": "cat_src_scratching",
+    "title": "Unwanted Scratching Behavior in Cats: Influence of Management Strategies and Cat and Owner Characteristics",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9559527/",
+    "publisher": "Animals (MDPI)",
+    "year": 2022,
+    "kind": "study",
+    "species": [
+      "cat"
+    ],
+    "evidence_level": "primary_study",
+    "license_status": "CC-BY-4.0-verified",
+    "reviewed_at": "2026-10-07",
+    "notes": "Ankieta przekrojowa 2465 opiekunów; zależności nie potwierdzają przyczynowości. Licencja artykułu potwierdzona w informacji wydawcy."
+  },
+  {
+    "id": "cat_src_slow_blink",
+    "title": "The role of cat eye narrowing movements in cat-human communication",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/33020542/",
+    "publisher": "Scientific Reports (Springer Nature)",
+    "year": 2020,
+    "kind": "study",
+    "species": [
+      "cat"
+    ],
+    "evidence_level": "primary_study",
+    "license_status": "unverified",
+    "reviewed_at": "2026-10-07",
+    "notes": "Eksperymenty dotyczące odpowiedzi na wolne mruganie; identyfikator DOI 10.1038/s41598-020-73426-0."
+  },
+  {
+    "id": "cat_src_directed_speech",
+    "title": "Discrimination of cat-directed speech from human-directed speech in a population of indoor companion cats (Felis catus)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/36280656/",
+    "publisher": "Animal Cognition (Springer Nature)",
+    "year": 2022,
+    "kind": "study",
+    "species": [
+      "cat"
+    ],
+    "evidence_level": "primary_study",
+    "license_status": "unverified",
+    "reviewed_at": "2026-10-07",
+    "notes": "Publikacja online 2022, zeszyt 2023; mała próba 16 kotów. Rozróżnianie rejestru głosu nie jest tłumaczeniem zdań."
+  },
+  {
+    "id": "cat_src_meow",
+    "title": "What’s in a Meow? A Study on Human Classification and Interpretation of Domestic Cat Vocalizations",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7765146/",
+    "publisher": "Animals (MDPI)",
+    "year": 2020,
+    "kind": "study",
+    "species": [
+      "cat"
+    ],
+    "evidence_level": "primary_study",
+    "license_status": "unverified",
+    "reviewed_at": "2026-10-07",
+    "notes": "Badanie ocen ludzi: ograniczone rozpoznawanie kontekstu miauknięć; nie waliduje translatora."
+  },
+  {
+    "id": "cat_src_purr",
+    "title": "The cry embedded within the purr",
+    "url": "https://sussex.figshare.com/articles/journal_contribution/The_cry_embedded_within_the_purr/23325722",
+    "publisher": "Current Biology (Elsevier); repozytorium University of Sussex",
+    "year": 2009,
+    "kind": "study",
+    "species": [
+      "cat"
+    ],
+    "evidence_level": "primary_study",
+    "license_status": "unverified",
+    "reviewed_at": "2026-10-07",
+    "notes": "Badanie mruczenia w kontekście zabiegania o jedzenie; rekord repozytorium opublikowany później niż artykuł."
+  },
+  {
+    "id": "cat_src_play",
+    "title": "An ethological analysis of close-contact inter-cat interactions determining if cats are playing, fighting, or something in between",
+    "url": "https://www.nature.com/articles/s41598-022-26121-1",
+    "publisher": "Scientific Reports (Springer Nature)",
+    "year": 2023,
+    "kind": "study",
+    "species": [
+      "cat"
+    ],
+    "evidence_level": "primary_study",
+    "license_status": "unverified",
+    "reviewed_at": "2026-10-07",
+    "notes": "105 interakcji par kotów; obserwacje filmów i porównanie ocen ekspertów, bez domowej walidacji diagnostycznej."
+  },
+  {
+    "id": "cat_src_intercat",
+    "title": "2024 AAFP intercat tension guidelines: recognition, prevention and management",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11292941/",
+    "publisher": "AAFP; Journal of Feline Medicine and Surgery",
+    "year": 2024,
+    "kind": "guideline",
+    "species": [
+      "cat"
+    ],
+    "evidence_level": "guideline",
+    "license_status": "unverified",
+    "reviewed_at": "2026-10-07",
+    "notes": "Napięcie społeczne, mapa relacji i stopniowe wprowadzanie kotów; źródło obejmuje też materiały dla opiekunów."
+  },
+  {
+    "id": "cat_src_interaction",
+    "title": "2022 AAFP/ISFM Cat Friendly Veterinary Interaction Guidelines: Approach and Handling Techniques",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10845437/",
+    "publisher": "AAFP/ISFM; Journal of Feline Medicine and Surgery",
+    "year": 2022,
+    "kind": "guideline",
+    "species": [
+      "cat"
+    ],
+    "evidence_level": "guideline",
+    "license_status": "unverified",
+    "reviewed_at": "2026-10-07",
+    "notes": "Wytyczne interakcji i obchodzenia się z kotami; część zaleceń wymaga zespołu weterynaryjnego."
+  },
+  {
+    "id": "cat_src_handling_study",
+    "title": "Providing Humans With Practical, Best Practice Handling Guidelines During Human-Cat Interactions Increases Cats' Affiliative Behaviour and Reduces Aggression and Signs of Conflict",
+    "url": "https://www.frontiersin.org/journals/veterinary-science/articles/10.3389/fvets.2021.714143/full",
+    "publisher": "Frontiers in Veterinary Science",
+    "year": 2021,
+    "kind": "study",
+    "species": [
+      "cat"
+    ],
+    "evidence_level": "primary_study",
+    "license_status": "unverified",
+    "reviewed_at": "2026-10-07",
+    "notes": "Badanie interwencji obejmujące 535 obserwacji; zasady wyboru, uwagi na sygnały i odpowiednich miejsc dotyku."
+  },
+  {
+    "id": "cat_src_vet_environment",
+    "title": "2022 ISFM/AAFP Cat Friendly Veterinary Environment Guidelines",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10845436/",
+    "publisher": "ISFM/AAFP; Journal of Feline Medicine and Surgery",
+    "year": 2022,
+    "kind": "guideline",
+    "species": [
+      "cat"
+    ],
+    "evidence_level": "guideline",
+    "license_status": "unverified",
+    "reviewed_at": "2026-10-07",
+    "notes": "Transport i środowisko gabinetu; obserwacje kliniczne nie muszą reprezentować zachowania domowego."
+  },
+  {
+    "id": "cat_src_house_soiling",
+    "title": "AAFP and ISFM Guidelines for Diagnosing and Solving House-Soiling Behavior in Cats",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11148882/",
+    "publisher": "AAFP/ISFM; Journal of Feline Medicine and Surgery",
+    "year": 2014,
+    "kind": "guideline",
+    "species": [
+      "cat"
+    ],
+    "evidence_level": "guideline",
+    "license_status": "unverified",
+    "reviewed_at": "2026-10-07",
+    "notes": "Eliminacja i znakowanie mają możliwe przyczyny medyczne, środowiskowe i społeczne; część zaleceń wynika z doświadczenia klinicznego."
+  },
+  {
+    "id": "cat_src_covered_litter",
+    "title": "Litter box preference in domestic cats: covered versus uncovered",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10816757/",
+    "publisher": "Journal of Feline Medicine and Surgery",
+    "year": 2013,
+    "kind": "study",
+    "species": [
+      "cat"
+    ],
+    "evidence_level": "primary_study",
+    "license_status": "unverified",
+    "reviewed_at": "2026-10-07",
+    "notes": "Badanie preferencji kuwet u 28 kotów bez niedawnych zaburzeń eliminacji; indywidualne preferencje różniły się."
+  },
+  {
+    "id": "cat_src_urinary",
+    "title": "2025 iCatCare consensus guidelines on the diagnosis and management of lower urinary tract diseases in cats",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11816079/",
+    "publisher": "iCatCare Veterinary Society; Journal of Feline Medicine and Surgery",
+    "year": 2025,
+    "kind": "guideline",
+    "species": [
+      "cat"
+    ],
+    "evidence_level": "guideline",
+    "license_status": "unverified",
+    "reviewed_at": "2026-10-07",
+    "notes": "Aktualny konsensus LUT; niedrożność cewki wymaga natychmiastowej pomocy, przyczyny objawów nie są rozpoznawalne z samego filmu."
+  },
+  {
+    "id": "cat_src_alopecia",
+    "title": "Underlying medical conditions in cats with presumptive psychogenic alopecia",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/16740071/",
+    "publisher": "Journal of the American Veterinary Medical Association",
+    "year": 2006,
+    "kind": "study",
+    "species": [
+      "cat"
+    ],
+    "evidence_level": "primary_study",
+    "license_status": "unverified",
+    "reviewed_at": "2026-10-07",
+    "notes": "Seria 21 przypadków skierowanych; częste medyczne przyczyny świądu. Nie jest badaniem częstości w populacji."
+  },
+  {
+    "id": "cat_src_fgs",
+    "title": "Facial expressions of pain in cats: the development and validation of a Feline Grimace Scale",
+    "url": "https://www.nature.com/articles/s41598-019-55693-8",
+    "publisher": "Scientific Reports (Springer Nature)",
+    "year": 2019,
+    "kind": "study",
+    "species": [
+      "cat"
+    ],
+    "evidence_level": "primary_study",
+    "license_status": "CC-BY-4.0-verified",
+    "reviewed_at": "2026-10-07",
+    "notes": "Walidacja ostrego bólu, pięć jednostek mimicznych. Licencja artykułu potwierdzona, materiały osób trzecich mogą mieć odrębne prawa."
+  },
+  {
+    "id": "cat_src_fgs_official",
+    "title": "Feline Grimace Scale — official educational website",
+    "url": "https://www.felinegrimacescale.com/",
+    "publisher": "Feline Grimace Scale research group",
+    "year": null,
+    "kind": "official_documentation",
+    "species": [
+      "cat"
+    ],
+    "evidence_level": "technical_documentation",
+    "license_status": "unverified",
+    "reviewed_at": "2026-10-07",
+    "notes": "Oficjalne szkolenie i skala ostrego bólu; licencję witryny, grafik i komercyjnej integracji trzeba sprawdzić odrębnie."
+  },
+  {
+    "id": "cat_src_acute_pain",
+    "title": "2022 ISFM Consensus Guidelines on the Management of Acute Pain in Cats",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10845386/",
+    "publisher": "ISFM; Journal of Feline Medicine and Surgery",
+    "year": 2022,
+    "kind": "guideline",
+    "species": [
+      "cat"
+    ],
+    "evidence_level": "guideline",
+    "license_status": "unverified",
+    "reviewed_at": "2026-10-07",
+    "notes": "Ból oceniany narzędziami i w kontekście; leczenie należy do lekarza weterynarii."
+  },
+  {
+    "id": "cat_src_aaha_pain",
+    "title": "2022 AAHA Pain Management Guidelines for Dogs and Cats",
+    "url": "https://www.aaha.org/resources/2022-aaha-pain-management-guidelines-for-dogs-and-cats/",
+    "publisher": "AAHA",
+    "year": 2022,
+    "kind": "guideline",
+    "species": [
+      "dog",
+      "cat"
+    ],
+    "evidence_level": "guideline",
+    "license_status": "unverified",
+    "reviewed_at": "2026-10-07",
+    "notes": "Rozpoznawanie i ponowna ocena bólu; użyte również oficjalne podstrony Acute vs. Chronic Pain i An Evolving Philosophy of Pain Management."
+  },
+  {
+    "id": "cat_src_wsava_pain",
+    "title": "2022 WSAVA guidelines for the recognition, assessment and treatment of pain",
+    "url": "https://wsava.org/global-guidelines/pain-guidelines/",
+    "publisher": "WSAVA; Journal of Small Animal Practice",
+    "year": 2023,
+    "kind": "guideline",
+    "species": [
+      "dog",
+      "cat"
+    ],
+    "evidence_level": "guideline",
+    "license_status": "unverified",
+    "reviewed_at": "2026-10-07",
+    "notes": "Wytyczne nazwane 2022, opublikowane w czasopiśmie w 2023; DOI 10.1111/jsap.13566. Portal oficjalny."
+  },
+  {
+    "id": "cat_src_senior",
+    "title": "2021 AAFP Feline Senior Care Guidelines",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10812122/",
+    "publisher": "AAFP; Journal of Feline Medicine and Surgery",
+    "year": 2021,
+    "kind": "guideline",
+    "species": [
+      "cat"
+    ],
+    "evidence_level": "guideline",
+    "license_status": "unverified",
+    "reviewed_at": "2026-10-07",
+    "notes": "Indywidualna ocena seniora; uwzględnia zmianę zachowania. Wersja poprawiona po erratum z sierpnia 2021."
+  },
+  {
+    "id": "cat_src_inappetence",
+    "title": "2022 ISFM Consensus Guidelines on Management of the Inappetent Hospitalised Cat",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11107985/",
+    "publisher": "ISFM; Journal of Feline Medicine and Surgery",
+    "year": 2022,
+    "kind": "guideline",
+    "species": [
+      "cat"
+    ],
+    "evidence_level": "guideline",
+    "license_status": "unverified",
+    "reviewed_at": "2026-10-07",
+    "notes": "Dotyczy hospitalizacji: brak apetytu może wiązać się z chorobą, bólem i nudnościami; nie zaleca przymusowego karmienia."
+  },
+  {
+    "id": "cat_src_feline_five",
+    "title": "The ‘Feline Five’: An exploration of personality in pet cats (Felis catus)",
+    "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0183455",
+    "publisher": "PLOS ONE",
+    "year": 2017,
+    "kind": "study",
+    "species": [
+      "cat"
+    ],
+    "evidence_level": "primary_study",
+    "license_status": "CC-BY-4.0-verified",
+    "reviewed_at": "2026-10-07",
+    "notes": "2802 koty oceniane przez opiekunów, pięć czynników; licencja artykułu CC BY wskazana przez wydawcę. Nie skopiowano kwestionariusza."
+  },
+  {
+    "id": "cat_src_febarq_study",
+    "title": "Development and evaluation of the Fe-BARQ: A new survey instrument for measuring behavior in domestic cats (Felis s. catus)",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0376635716302947",
+    "publisher": "Behavioural Processes (Elsevier)",
+    "year": 2017,
+    "kind": "study",
+    "species": [
+      "cat"
+    ],
+    "evidence_level": "primary_study",
+    "license_status": "unverified",
+    "reviewed_at": "2026-10-07",
+    "notes": "DOI 10.1016/j.beproc.2017.02.010; 23 czynniki, 17 z odpowiednią lub wysoką spójnością. Rodzaj licencji CC i prawa formularza niezweryfikowane."
+  },
+  {
+    "id": "cat_src_febarq_official",
+    "title": "About the Fe-BARQ — Feline Behavioral Assessment & Research Questionnaire",
+    "url": "https://vetapps.vet.upenn.edu/febarq/about.cfm",
+    "publisher": "University of Pennsylvania School of Veterinary Medicine",
+    "year": null,
+    "kind": "official_documentation",
+    "species": [
+      "cat"
+    ],
+    "evidence_level": "technical_documentation",
+    "license_status": "unverified",
+    "reviewed_at": "2026-10-07",
+    "notes": "Oficjalne objaśnienie narzędzia i obszarów zachowania; nie potwierdzono prawa do integracji, tłumaczenia ani użycia komercyjnego."
+  },
+  {
+    "id": "cat_src_seven_traits",
+    "title": "Reliability and Validity of Seven Feline Behavior and Personality Traits",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8300181/",
+    "publisher": "Animals (MDPI)",
+    "year": 2021,
+    "kind": "study",
+    "species": [
+      "cat"
+    ],
+    "evidence_level": "primary_study",
+    "license_status": "CC-BY-4.0-verified",
+    "reviewed_at": "2026-10-07",
+    "notes": "4316 kotów; spójność wewnętrzna, test–retest i zgodność opiekunów. CC BY 4.0 potwierdzona w artykule; bez importu pozycji."
+  },
+  {
+    "id": "cat_src_behavior_management",
+    "title": "2015 AAHA Canine and Feline Behavior Management Guidelines",
+    "url": "https://www.aaha.org/resources/2015-aaha-canine-and-feline-behavior-management-guidelines/",
+    "publisher": "AAHA",
+    "year": 2015,
+    "kind": "guideline",
+    "species": [
+      "dog",
+      "cat"
+    ],
+    "evidence_level": "guideline",
+    "license_status": "unverified",
+    "reviewed_at": "2026-10-07",
+    "notes": "Data wytycznych 2015 mimo późniejszej daty portalu; użyto też oficjalnej podstrony Changing behaviors."
+  },
+  {
+    "id": "cat_src_life_stage_senior",
+    "title": "2021 AAHA/AAFP Feline Life Stage Guidelines — Behavior and Environmental Needs: Senior Cats",
+    "url": "https://www.aaha.org/resources/2021-aaha-aafp-feline-life-stage-guidelines/behavior-and-environmental-needs-senior-cats/",
+    "publisher": "AAHA/AAFP",
+    "year": 2021,
+    "kind": "guideline",
+    "species": [
+      "cat"
+    ],
+    "evidence_level": "guideline",
+    "license_status": "unverified",
+    "reviewed_at": "2026-10-07",
+    "notes": "Oficjalna część wytycznych dotycząca nowej wokalizacji, zmian ruchu i dostępności zasobów u seniorów."
+  }
+]
+

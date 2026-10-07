@@ -1,0 +1,117 @@
+{
+  "created_at": "2026-10-07T08:46:53.466047+00:00",
+  "requested_per_topic": 10,
+  "topics": [
+    {
+      "topic": "dog_personality",
+      "species": "dog",
+      "record_count": 10,
+      "file": "europepmc_20261007T084603314095Z_94b90c5c81.json"
+    },
+    {
+      "topic": "dog_learning",
+      "species": "dog",
+      "record_count": 10,
+      "file": "europepmc_20261007T084604961174Z_311e1f1300.json"
+    },
+    {
+      "topic": "dog_separation",
+      "species": "dog",
+      "record_count": 10,
+      "file": "europepmc_20261007T084611801551Z_b629963377.json"
+    },
+    {
+      "topic": "dog_communication",
+      "species": "dog",
+      "record_count": 10,
+      "file": "europepmc_20261007T084613512358Z_7e1bd73119.json"
+    },
+    {
+      "topic": "dog_pain",
+      "species": "dog",
+      "record_count": 10,
+      "file": "europepmc_20261007T084615063501Z_f3ec26765d.json"
+    },
+    {
+      "topic": "dog_development",
+      "species": "dog",
+      "record_count": 10,
+      "file": "europepmc_20261007T084616600665Z_c003fb4506.json"
+    },
+    {
+      "topic": "dog_fear",
+      "species": "dog",
+      "record_count": 10,
+      "file": "europepmc_20261007T084618191536Z_3c006bd54d.json"
+    },
+    {
+      "topic": "dog_aging",
+      "species": "dog",
+      "record_count": 10,
+      "file": "europepmc_20261007T084619896519Z_bf068737c8.json"
+    },
+    {
+      "topic": "cat_personality",
+      "species": "cat",
+      "record_count": 10,
+      "file": "europepmc_20261007T084621338059Z_c97c5ce265.json"
+    },
+    {
+      "topic": "cat_environment",
+      "species": "cat",
+      "record_count": 10,
+      "file": "europepmc_20261007T084623472242Z_ce98411d8b.json"
+    },
+    {
+      "topic": "cat_relations",
+      "species": "cat",
+      "record_count": 10,
+      "file": "europepmc_20261007T084629547157Z_0bb5f07d7c.json"
+    },
+    {
+      "topic": "cat_elimination",
+      "species": "cat",
+      "record_count": 10,
+      "file": "europepmc_20261007T084631431094Z_9fea29617e.json"
+    },
+    {
+      "topic": "cat_pain",
+      "species": "cat",
+      "record_count": 10,
+      "file": "europepmc_20261007T084644412462Z_14125e7308.json"
+    },
+    {
+      "topic": "cat_communication",
+      "species": "cat",
+      "record_count": 10,
+      "file": "europepmc_20261007T084646349664Z_b4659a5090.json"
+    },
+    {
+      "topic": "cat_play",
+      "species": "cat",
+      "record_count": 10,
+      "file": "europepmc_20261007T084648223546Z_2d73d9724a.json"
+    },
+    {
+      "topic": "cat_aging",
+      "species": "cat",
+      "record_count": 10,
+      "file": "europepmc_20261007T084650072390Z_c47b45d62d.json"
+    },
+    {
+      "topic": "observer_bias",
+      "species": "both",
+      "record_count": 10,
+      "file": "europepmc_20261007T084651878684Z_9c87167aac.json"
+    },
+    {
+      "topic": "animal_video",
+      "species": "both",
+      "record_count": 10,
+      "file": "europepmc_20261007T084653464856Z_8810944fb2.json"
+    }
+  ],
+  "failures": [],
+  "review_status": "candidates_not_reviewed",
+  "record_count_with_duplicates": 180
+}

@@ -1,0 +1,24 @@
+{
+  "version": "1.0",
+  "purpose": "Candidate bibliographic records; manual review required",
+  "queries": [
+    {"id": "dog_personality", "species": "dog", "query": "(canine OR dog) AND (personality OR temperament) AND (validation OR repeatability)"},
+    {"id": "dog_learning", "species": "dog", "query": "(canine OR dog) AND training AND (reinforcement OR aversive) AND welfare"},
+    {"id": "dog_separation", "species": "dog", "query": "(canine OR dog) AND (separation anxiety OR separation-related behavior)"},
+    {"id": "dog_communication", "species": "dog", "query": "(canine OR dog) AND communication AND (gaze OR posture OR vocalization)"},
+    {"id": "dog_pain", "species": "dog", "query": "(canine OR dog) AND pain AND behavior AND assessment"},
+    {"id": "dog_development", "species": "dog", "query": "(canine OR puppy) AND (socialization OR development) AND behavior"},
+    {"id": "dog_fear", "species": "dog", "query": "(canine OR dog) AND (noise fear OR fearfulness)"},
+    {"id": "dog_aging", "species": "dog", "query": "(canine OR dog) AND (aging OR cognitive dysfunction) AND behavior"},
+    {"id": "cat_personality", "species": "cat", "query": "(feline OR cat) AND (personality OR temperament) AND (validation OR reliability)"},
+    {"id": "cat_environment", "species": "cat", "query": "(feline OR cat) AND (environmental needs OR enrichment) AND welfare"},
+    {"id": "cat_relations", "species": "cat", "query": "(feline OR cat) AND (intercat OR social behavior) AND household"},
+    {"id": "cat_elimination", "species": "cat", "query": "(feline OR cat) AND (house soiling OR litter box OR urine marking)"},
+    {"id": "cat_pain", "species": "cat", "query": "(feline OR cat) AND pain AND (grimace OR behavior)"},
+    {"id": "cat_communication", "species": "cat", "query": "(feline OR cat) AND (communication OR vocalization OR meow)"},
+    {"id": "cat_play", "species": "cat", "query": "(feline OR cat) AND (play OR predatory behavior) AND welfare"},
+    {"id": "cat_aging", "species": "cat", "query": "(feline OR cat) AND (aging OR cognitive dysfunction) AND behavior"},
+    {"id": "observer_bias", "species": "both", "query": "(canine OR feline) AND (owner report OR questionnaire) AND (observer OR bias OR reliability)"},
+    {"id": "animal_video", "species": "both", "query": "(canine OR feline) AND (pose estimation OR video behavior recognition)"}
+  ]
+}
