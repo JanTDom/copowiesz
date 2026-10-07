@@ -8,6 +8,11 @@ import { ViewHeading } from "./ui";
 
 type Domain = "all" | "behavior" | "methods" | "health";
 const domainLabels = { behavior: "Zachowanie", methods: "Jak poznajemy", health: "Sygnały zdrowotne" };
+const escalationLabels: Record<string, string> = {
+  veterinarian: "Konsultacja z lekarzem weterynarii.",
+  behaviorist: "Konsultacja ze specjalistą zachowania zwierząt.",
+  urgent_veterinarian: "Pilna pomoc weterynaryjna.",
+};
 
 export function KnowledgeView({ record }: { record: PetRecord; onUpdate: (record: PetRecord) => void }) {
   const [species, setSpecies] = useState<Species>(record.pet.species);
@@ -79,7 +84,7 @@ export function KnowledgeView({ record }: { record: PetRecord; onUpdate: (record
         <div className="knowledge-detail-section"><h3>Co można zaobserwować</h3><p>{selected.observation}</p></div>
         <div className="knowledge-detail-section"><h3>Możliwe interpretacje</h3><ul>{selected.possible_interpretations.map((item, index) => <li key={index}>{item}</li>)}</ul><p className="muted">Przykłady do sprawdzenia w kontekście; nie potwierdzają przyczyny u Twojego zwierzaka.</p></div>
         <div className="knowledge-detail-section"><h3>Bezpieczny następny krok</h3><ul>{selected.safe_next_steps.map((item, index) => <li key={index}>{item}</li>)}</ul></div>
-        {selected.escalation&&<div className="knowledge-detail-section"><h3>Kiedy szukać pomocy</h3><p>{selected.escalation}</p></div>}
+        {selected.escalation&&escalationLabels[selected.escalation]&&<div className="knowledge-detail-section"><h3>Kiedy szukać pomocy</h3><p>{escalationLabels[selected.escalation]}</p></div>}
         <div className="knowledge-detail-section"><h3>Co ogranicza wniosek</h3><p>{selected.limitations}</p>{selected.confounders.length > 0 && <ul>{selected.confounders.map((item, index) => <li key={index}>{item}</li>)}</ul>}</div>
         <div className="knowledge-detail-section"><h3>Źródła i podstawa</h3><div className="source-list">{selectedEvidence.map((evidence) => <article className="source-item" key={evidence.id}><h4>{evidence.title}</h4><p>{evidence.excerpt}</p>{evidence.url?.startsWith("https://") && <a href={evidence.url} target="_blank" rel="noopener noreferrer">Otwórz źródło<ExternalLink size={14} aria-hidden /></a>}</article>)}</div></div>
       </aside>
