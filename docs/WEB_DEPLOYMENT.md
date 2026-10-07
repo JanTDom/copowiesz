@@ -1,9 +1,12 @@
 # Aplikacja webowa — lokalnie i wdrożenie
 
-Stan konfiguracji: 7 października 2026. Aplikacja znajduje się w `web/`; publiczny fundament
-Python i dane źródłowe pozostają w katalogu głównym. Supabase utworzono i przetestowano w chmurze
-w oddzielnej organizacji Free; stan GitHub, Vercel i DNS należy potwierdzić w dalszych częściach
-dokumentu po zakończeniu tych niezależnych etapów wdrożenia.
+Stan konfiguracji: 7 października 2026. Aplikacja działa publicznie pod
+[copowiesz.pl](https://copowiesz.pl) i [copowiesz.vercel.app](https://copowiesz.vercel.app).
+Kod jest w repozytorium GitHub, pierwszy workflow CI zakończył się powodzeniem, a Vercel
+publikuje gałąź `main`. Supabase utworzono i przetestowano w oddzielnej organizacji Free.
+Aplikacja znajduje się w `web/`; publiczny fundament Python i dane źródłowe pozostają w
+katalogu głównym. Publiczna rejestracja nadal wymaga własnego SMTP; poniżej opisano zakres
+rzeczywistych sprawdzeń i pozostałe ograniczenia.
 
 ## Uruchomienie lokalne
 
@@ -65,8 +68,8 @@ COPOWIESZ `tzapzxvcpoixvhjyhvmw`. MCP potwierdził plan `free`, koszt utworzenia
 **0 USD miesięcznie**, a stan projektu `ACTIVE_HEALTHY`. Istniejąca organizacja Pro i jej
 projekty pozostały bez zmian. Nie używamy `service_role` ani klucza `sb_secret_`.
 
-Publiczne wartości zapisano w lokalnym `web/.env.local`, zachowując istniejący serwerowy
-klucz Gemini. W konfiguracji przyszłego środowiska wymagane są:
+Publiczne wartości zapisano w lokalnym `web/.env.local` oraz produkcyjnych zmiennych Vercel,
+zachowując istniejący serwerowy klucz Gemini. W konfiguracji środowiska wymagane są:
 
 ```dotenv
 NEXT_PUBLIC_SUPABASE_URL=https://mdcrccpfwztqovhipljw.supabase.co
@@ -150,36 +153,109 @@ nowego płatnego dostawcy poczty i nie wyłączono potwierdzania adresów jako o
 
 ## GitHub i CI
 
-Przygotowano `.github/workflows/ci.yml`: Node.js 24, Python 3.13, `npm ci`, odtwarzalność eksportu,
-testy domeny/API bez zewnętrznych kluczy, TypeScript i build, a także testy fundamentu Python.
-Workflow ma tylko `contents: read`, nie publikuje aplikacji, nie stosuje migracji i nie wymaga
-sekretów. Został przygotowany lokalnie; wykonanie na GitHub pozostaje niewdrożone.
+Kod opublikowano w istniejącym publicznym repozytorium [JanTDom/copowiesz](https://github.com/JanTDom/copowiesz)
+7 października 2026. Pierwszy push `main` ma SHA
+`1a4b29174b0e80faf3b75303527c78a4fb32e2ff`. Zawiera aplikację, lockfile, publiczny fundament
+i migrację. `web/.env.local`, pliki z sekretami, `data/private`, prawdziwe nagrania,
+`node_modules`, artefakty `.next` i lokalne metadane `.vercel` pozostają poza Git.
 
-Przy późniejszym zakładaniu repozytorium należy dodać kod, lockfile, publiczny fundament i
-migracje. `web/.env.local`, pozostałe pliki `.env` z sekretami, `data/private`, prawdziwe nagrania,
-`node_modules` oraz artefakty `.next` muszą pozostawać poza Git. Zdalnego repozytorium i push
-nie wykonano w tym etapie.
+Aktywny `.github/workflows/ci.yml` dodano w commicie
+`f88f3aedc48e34594480079a5d39a4ff1d41ef83`. Workflow używa Node.js 24 i Python 3.13; sprawdza
+`npm ci`, odtwarzalność eksportu, testy domeny/API bez zewnętrznych kluczy, TypeScript, build
+i testy fundamentu Python. Ma tylko `contents: read`, nie publikuje aplikacji, nie stosuje
+migracji i nie wymaga sekretów. Szablon `.github/ci.yml.example` pozostaje materiałem
+pomocniczym; wykonuje się plik w `workflows/`.
+
+[Pierwsze wykonanie CI](https://github.com/JanTDom/copowiesz/actions/runs/37682918902)
+zakończyło się `success`; obie prace `foundation` i `web` oraz wszystkie ich kroki przeszły.
+Git integration Vercel publikuje `main` niezależnie od tego workflow. Nie skonfigurowano
+Deployment Checks blokujących publikację do czasu zakończenia CI.
 
 ## Vercel
 
-Przyszły import repozytorium GitHub do Vercel powinien mieć **Root Directory: `web`**, framework
-Next.js, Node.js 24 i build `npm run build`. Publiczne JSON fundamentu są już w `web/src/data`,
-więc build nie wymaga dostępu do plików z nadrzędnego katalogu ani Pythona.
+Projekt [macieto/copowiesz](https://vercel.com/macieto/copowiesz) ma identyfikator
+`prj_o5OfN1Ww2JrCJD25fDFhURlAZq6V` i należy do istniejącego zespołu `macieto`
+`team_ac4C9KaiZW4ZFT9tQGusAJEv`. Zespół miał już aktywny plan **Pro**. Nie zmieniono planu,
+nie dodano płatnych miejsc, dodatków ani nowej integracji rozliczeniowej. Projekt nie jest
+wdrożeniem Hobby; wykorzystanie istniejącego Pro nie gwarantuje braku opłat za przekroczenie
+jego przydziałów. Nie zmieniano limitów wydatków ani zasobów innych projektów.
 
-`GEMINI_API_KEY` trafia wyłącznie do serwerowych Environment Variables Vercel, a publiczne
-Supabase URL/publishable key do wartości `NEXT_PUBLIC_`. W chmurze endpoint lokalnego zapisu
-klucza powinien być niedostępny. Wywołanie płynnej rozmowy wymaga zalogowania i sprawdzonego
-Bearer tokenu Supabase na serwerze. Same ograniczenia pamięci procesu nie zapewniają trwałych
-limitów pomiędzy instancjami serverless; przed publicznym pilotażem trzeba wdrożyć limit per konto
-i monitoring zużycia. Klucz i treści rozmów nie mogą trafiać do logów błędów.
+Potwierdzono **Root Directory: `web`**, framework Next.js, Node.js `24.x` i build
+`npm run build`. Maszyna budowania ma `buildMachineSelection=fixed`, `buildMachineType=basic`
+i wyłączoną elastyczną współbieżność. Funkcje działają w `fra1`, blisko Supabase Frankfurt,
+z limitem 60 sekund. Publiczne JSON fundamentu są w `web/src/data`, więc build nie wymaga
+Pythona ani plików poza katalogiem `web`.
+
+GitHub `JanTDom/copowiesz` jest połączony z projektem, a gałąź produkcyjna to `main`.
+Pierwsze wdrożenie SHA `1a4b29174b0e80faf3b75303527c78a4fb32e2ff` otrzymało stan `READY`.
+Następne, obejmujące dodanie CI, również ma `READY`: SHA
+`f88f3aedc48e34594480079a5d39a4ff1d41ef83`, deployment
+`dpl_GvM7mPWRP91vMYyhEuV3N9JkYfS9`, adres
+`https://copowiesz-9c1sjfo9n-macieto.vercel.app`. Indywidualne adresy deploymentów zachowują
+standardową ochronę logowaniem Vercel. Publiczne aliasy produkcyjne to
+[copowiesz.pl](https://copowiesz.pl) i [copowiesz.vercel.app](https://copowiesz.vercel.app).
+
+W środowisku **production** ustawiono `GEMINI_API_KEY` jako `sensitive`, model
+`gemini-3.1-flash-lite` oraz publiczne URL/publishable key Supabase. Sekretny klucz przeniesiono
+przez stdin; nie umieszczano wartości w argumentach procesu, logach, Git ani klienckim kodzie aplikacji.
+Nie kopiowano klucza do środowiska preview. Serwer uwierzytelnia Bearer token w Supabase
+z użyciem publishable key; starszy anon key ma jedynie zgodny fallback konfiguracji.
+
+Rzeczywisty `GET` metadanych modelu Gemini zwrócił HTTP 200 z skonfigurowanym kluczem.
+To potwierdza dostęp do modelu, nie dostępność darmowego limitu generowania. Anonimowy
+`/api/status` w produkcji celowo nie sprawdza klucza u Google: raportuje `configured=true`,
+`available=null`, `authenticationRequired=true` i `quotaVerified=false`. Rozmowa i analiza
+Gemini wymagają zweryfikowanej sesji Supabase. Analiza filmu wymaga dodatkowej jawnej zgody
+na przekazanie nagrania/klatek. Odpowiedź zdrowotna i kontrola techniczna bez zgody pozostają
+lokalne. Nie włączono zdalnego modelu Ollama.
+
+### Domeny i DNS
+
+Domeny `copowiesz.pl` oraz `www.copowiesz.pl` przypisano do tego projektu. Preferowane wartości
+odczytano z API konfiguracji domen z jawnym `projectIdOrName`; nie zakładano wspólnego adresu
+Vercel. W strefie nazwa.pl zapisano:
+
+| Nazwa | Typ | Wartość |
+|---|---|---|
+| `@` | A | `216.150.1.1` |
+| `@` | A | `216.150.16.1` |
+| `www` | CNAME | `a08db410f7d96a03.vercel-dns-016.com.` |
+
+Zachowano nameservery `ns1.nazwa.pl`, `ns2.nazwa.pl`, `ns3.nazwa.pl`, rekord MX z priorytetem 10,
+adres hosta pocztowego `85.128.144.44` oraz rekordy SPF i DMARC poczty. Vercel potwierdził
+`misconfigured=false` dla obu domen, `configuredBy=A` dla głównej i `configuredBy=CNAME` dla `www`. Żądanie HTTPS do `copowiesz.pl` zwróciło aplikację i HTTP 200 przy standardowej
+weryfikacji certyfikatu. HTTPS `www` zwraca 308 do `https://copowiesz.pl/`.
+[Dokumentacja konfiguracji domen](https://vercel.com/docs/domains/working-with-domains/add-a-domain).
+
+Ręczna strefa zachowuje publiczny klucz DKIM i DMARC z polityką `quarantine`. Zmiana strony
+wymagała skierowania MX na `mail.copowiesz.pl` z dotychczasowym adresem serwera oraz zastąpienia
+mechanizmu `a` w SPF jawnym adresem tego serwera, aby nie autoryzować serwerów Vercel do poczty.
+Nazwa.pl informuje, że przejście do ręcznej strefy wyłącza jej automatyczne zarządzanie
+DKIM/DMARC i może usuwać dawny zarządzany klucz po 14 dniach. Dostawy i podpisywania poczty
+nie testowano; własny SMTP wymaga osobnej weryfikacji.
+
+### Sprawdzenia produkcji i pozostały zakres
+
+Na rzeczywistej produkcji sprawdzono syntetyczne, nieutrwalane payloady. `/api/status` zwraca
+HTTP 200 i `setupAvailable=false`; zwykły czat i analiza Gemini bez Bearer tokenu zwracają 401;
+żądanie z obcym Origin zwraca 403; `/api/setup` zwraca 404. Moduł zdrowia zwraca 200 z
+`provider=local`, a analiza bez zgody modelu zwraca 200 z `source=technical` i
+`needsReview=true`. Powtórzono żądania POST pod własną domeną, potwierdzając poprawne
+sprawdzenie pochodzenia. Lokalnie przeszło 50/50 testów web, TypeScript i produkcyjny build.
+
+Te kontrole nie potwierdzają jeszcze pełnej rozmowy zalogowanego klienta na produkcji ani
+realnego filmu z telefonu. Publiczna rejestracja zachowuje opisane wyżej ograniczenie SMTP.
+Same ograniczenia pamięci procesu nie zapewniają trwałych limitów pomiędzy instancjami
+serverless; przed publicznym pilotażem trzeba wdrożyć limit per konto i monitoring zużycia.
+Klucz i treści rozmów nie mogą trafiać do logów błędów.
 
 Kamera wymaga HTTPS lub lokalnego bezpiecznego kontekstu. Po wdrożeniu należy sprawdzić Safari
 na iPhone i Chrome na Androidzie, odmowę dostępu, przerwanie nagrywania, przejście aplikacji w
 tło, błąd przesyłania i odzyskanie istniejącego klipu bez ponawiania reakcji.
 
-Nie aktywowano planów płatnych, triali ani automatycznego dokupowania. Vercel Hobby jest
-bezpłatny, ale dopuszcza **osobiste zastosowanie niekomercyjne**. Wymóg darmowego hostingu
-nie pokrywa przyszłego pobierania opłat od klientów na tym planie. Supabase Free i Gemini Free
-mają własne limity oraz warunki; ich dostępność należy sprawdzić dla wybranego projektu/modelu
-przed wdrożeniem. [Vercel Hobby](https://vercel.com/docs/plans/hobby),
+Nie aktywowano nowych planów płatnych, triali ani automatycznego dokupowania. Obecne wdrożenie
+korzysta z istniejącego Vercel Pro; Supabase jest Free, a model Gemini udostępnia darmowy limit.
+Gdyby projekt przenoszono do Hobby, ten plan dopuszcza **osobiste zastosowanie niekomercyjne**,
+co nie pokrywa przyszłego pobierania opłat od klientów. Limity i warunki dostawców obowiązują
+niezależnie od konfiguracji aplikacji. [Vercel Hobby](https://vercel.com/docs/plans/hobby),
 [Supabase Free](https://supabase.com/pricing), [Gemini API — ceny](https://ai.google.dev/gemini-api/docs/pricing).

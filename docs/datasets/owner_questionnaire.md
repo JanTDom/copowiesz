@@ -5,7 +5,7 @@ ani Fe-BARQ, nie ma klinicznej punktacji i nie przeszedł walidacji psychometryc
 
 Surowy plik: `data/raw/manual/questionnaires/owner_questionnaire_v1.json`.
 94 pytania, 12 sekcji; 76 wspólnych i po 9 specyficznych dla gatunku. Formularz jednego
-gatunku obejmuje 85 możliwych pytań; docelowy interfejs ma pokazywać je etapami.
+gatunku obejmuje 85 możliwych pytań; aplikacja webowa pokazuje je etapami.
 
 Pola: version, language, status, recall_window_days, scoring_policy, sections i questions.
 Każde pytanie ma id, section_id, species, prompt, type, optional/required, construct,
@@ -15,10 +15,11 @@ Kontrakt odpowiedzi i flagi jakości zapisano w tym samym pliku.
 Historia i metadane mogą mieć recall_window_days=null. Pytania o obserwację dotyczą 14 dni.
 „Nie wiem”, „nie dotyczy”, „pominięto” i „zero” muszą pozostać różnymi stanami.
 
-Nie istnieje jeszcze zbiór prawdziwych odpowiedzi ani adapter zapisujący te odpowiedzi do
-bazy. Po jego implementacji źródłowe odpowiedzi powinny trafiać do prywatnej pamięci,
-z wersją formularza, czasem, autorem i gatunkiem. Wyniki opisowe powinny być odtwarzalne,
-bez automatycznego nazywania ich osobowością lub diagnozą.
+Nie zebrano publicznego zbioru prawdziwych odpowiedzi. Adapter aplikacji webowej zapisuje
+odpowiedzi w prywatnej pamięci IndexedDB i, po jawnej synchronizacji, w Supabase. Zachowuje
+identyfikator pytania, czas, gatunek i odrębne stany braków danych. Fundament Python ma
+osobny magazyn; nie synchronizuje odpowiedzi aplikacji automatycznie. Wyniki opisowe
+powinny być odtwarzalne, bez nazywania ich osobowością lub diagnozą.
 
 Walidacja struktury jest objęta testami. Trafność pytań, powtarzalność, obciążenie opiekuna
 i polskie konstrukty wymagają osobnych badań. Instrukcja: `docs/QUESTIONNAIRES.md`.

@@ -31,7 +31,7 @@ reakcji według instrukcji aplikacji. Obie części są wymaganymi filarami przy
 osobistego profilu. Podzielić je na krótkie zapisywane etapy. Przed ich ukończeniem można
 pokazać oznaczoną demonstrację przyszłej rozmowy; nie deklarować gotowej personalizacji.
 Brak wiedzy, niewykonalne zadanie lub przerwanie z powodu komfortu pozostają jawnie brakami
-danych, bez wymuszania odpowiedzi i reakcji. To kierunek projektowy, nie istniejący interfejs.
+danych, bez wymuszania odpowiedzi i reakcji. Te zasady wdrożono w prototypie webowym 7 października 2026; bieżący stan i granice walidacji opisuje README.md.
 
 „Przeniesienie osobowości” oznacza w tym projekcie model indywidualnych, powtarzalnych tendencji,
 oparty na dostępnych danych. Nie ma tu metody przeniesienia świadomości ani dostępu do myśli.
