@@ -1,0 +1,58 @@
+name: Sprawdzenie COPOWIESZ
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  foundation:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.13'
+      - name: Odtwórz indeks wiedzy
+        run: python3 -m copowiesz build-kb
+      - name: Sprawdź fundament Python
+        run: python3 -m unittest discover -s tests -v
+
+  web:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    defaults:
+      run:
+        working-directory: web
+    env:
+      NEXT_TELEMETRY_DISABLED: '1'
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '24'
+          cache: npm
+          cache-dependency-path: web/package-lock.json
+      - name: Zainstaluj dokładne zależności
+        run: npm ci
+      - name: Sprawdź odtwarzalny eksport pełnego fundamentu
+        run: |
+          node scripts/export-foundation.mjs
+          git diff --exit-code -- src/data
+      - name: Testy domeny i API bez kluczy usług
+        run: node --import tsx --test tests/*.test.ts
+      - name: Sprawdź TypeScript
+        run: npm run typecheck
+      - name: Zbuduj aplikację
+        run: npm run build
