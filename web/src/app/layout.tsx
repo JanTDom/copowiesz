@@ -4,8 +4,10 @@ import "@fontsource/dm-serif-display/400.css";
 import "./globals.css";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://copowiesz.pl"),
   title: "COPOWIESZ — Twój zwierzak. Wasza rozmowa.",
-  description: "Poznaj swojego psa lub kota dzięki przekrojowemu testowi i prowadzonym nagraniom. Porozmawiaj z jego cyfrową reprezentacją po polsku."
+  description: "Porozmawiaj ze swoim zwierzakiem! Poznaj swojego psa lub kota dzięki przekrojowemu testowi i prowadzonym nagraniom. Cyfrowa rozmowa po polsku.",
+  openGraph: { siteName: "COPOWIESZ", locale: "pl_PL", type: "website", images: [{ url: "/images/pet-connection.png", width: 1672, height: 941, alt: "COPOWIESZ — pies, kot i Wasza rozmowa" }] },
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {

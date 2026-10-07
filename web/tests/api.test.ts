@@ -11,12 +11,12 @@ import { createPetRecord, getQuestions, getTasks } from "../src/lib/domain";
 import { getLocalModelConfig } from "../src/lib/server/ollama";
 import { claimProviderCall, providerCaller } from "../src/lib/server/access";
 import { assertSameOrigin, verifiedLocalBrowserRequest } from "../src/lib/server/http";
-import { getGeminiConfig } from "../src/lib/server/gemini";
+import { geminiAvailability, generateGeminiJson, generateGeminiReply, getGeminiConfig, isPublicGeminiAllowed } from "../src/lib/server/gemini";
 import type { Clip, PetRecord } from "../src/lib/types";
 
 const now = "2026-10-07T12:00:00.000Z";
 const fakeKey = "AIzaSyntheticFreeTierKeyForLocalTestsOnly";
-const envKeys = ["GEMINI_API_KEY", "GEMINI_MODEL", "OLLAMA_MODEL", "OLLAMA_VISION_MODEL", "OLLAMA_BASE_URL", "VERCEL", "NODE_ENV", "NEXT_PUBLIC_SUPABASE_URL", "NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY", "NEXT_PUBLIC_SUPABASE_ANON_KEY"];
+const envKeys = ["GEMINI_API_KEY", "GEMINI_MODEL", "GEMINI_PUBLIC_BILLING_CONFIRMED", "OLLAMA_MODEL", "OLLAMA_VISION_MODEL", "OLLAMA_BASE_URL", "VERCEL", "NODE_ENV", "NEXT_PUBLIC_SUPABASE_URL", "NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY", "NEXT_PUBLIC_SUPABASE_ANON_KEY"];
 
 async function isolated(run: () => Promise<void>) {
   const previous = Object.fromEntries(envKeys.map((key) => [key, process.env[key]]));
@@ -306,9 +306,112 @@ test("inlinevideo przyjmuje tylko ograniczone dane mp4/webm, nigdy zewnętrzne a
   }
 }));
 
+test("publiczna zgoda rozliczeniowa nie wynika z klucza ani nie wyłącza lokalnego Gemini", async () => isolated(async () => {
+  process.env.GEMINI_API_KEY = fakeKey;
+  process.env.GEMINI_PUBLIC_BILLING_CONFIRMED = "false";
+  assert.notEqual(getGeminiConfig(), null);
+  assert.equal(isPublicGeminiAllowed(), true);
+  process.env.VERCEL = "1";
+  for (const value of [undefined, "", "false", "TRUE", "1"]) {
+    if (value === undefined) delete process.env.GEMINI_PUBLIC_BILLING_CONFIRMED;
+    else process.env.GEMINI_PUBLIC_BILLING_CONFIRMED = value;
+    assert.equal(isPublicGeminiAllowed(), false);
+    assert.notEqual(getGeminiConfig(), null);
+  }
+  process.env.GEMINI_PUBLIC_BILLING_CONFIRMED = "true";
+  assert.equal(isPublicGeminiAllowed(), true);
+}));
+
+test("publiczny klucz bez potwierdzenia zwraca odpowiedź lokalną bez Auth i Google", async () => isolated(async () => {
+  process.env.GEMINI_API_KEY = fakeKey;
+  process.env.VERCEL = "1";
+  process.env.NEXT_PUBLIC_SUPABASE_URL = "https://synthetic-project.supabase.co";
+  process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY = "sb_publishable_synthetic_tests_only";
+  const calls: string[] = [];
+  globalThis.fetch = async (url) => { calls.push(String(url)); throw new Error("Publiczny model jest zablokowany"); };
+  for (const ready of [false, true]) {
+    const headers: Record<string, string> = { "Content-Type": "application/json", Origin: "https://copowiesz.example" };
+    if (ready) headers.Authorization = "Bearer synthetic.jwt.token-for-local-tests";
+    const response = await chat(new Request("https://copowiesz.example/api/chat", { method: "POST", headers, body: JSON.stringify({ record: record(ready), message: "W co lubisz się bawić?" }) }));
+    assert.equal(response.status, 200);
+    const data = await response.json();
+    assert.equal(data.provider, "local");
+    assert.equal(data.mode, ready ? "grounded" : "demo");
+    assert.match(data.notice, /Publiczny dostęp do Gemini jest wyłączony/);
+    assert(!JSON.stringify(data).includes(fakeKey));
+  }
+  assert.deepEqual(calls, []);
+}));
+
+test("zgoda na publiczny film nie omija blokady rozliczeń i nie wysyła materiału", async () => isolated(async () => {
+  process.env.GEMINI_API_KEY = fakeKey;
+  process.env.VERCEL = "1";
+  process.env.GEMINI_PUBLIC_BILLING_CONFIRMED = "false";
+  process.env.OLLAMA_VISION_MODEL = "synthetic-vision-model";
+  const calls: string[] = [];
+  globalThis.fetch = async (url) => { calls.push(String(url)); throw new Error("Materiał ma pozostać bez analizy modelu"); };
+  const value = record();
+  for (const material of [{ videoData: syntheticVideo() }, { frames: ["data:image/jpeg;base64,/9j/2Q=="], frameTimes: [1] }]) {
+    const response = await analyze(new Request("https://copowiesz.example/api/analyze", { method: "POST", headers: { "Content-Type": "application/json", Origin: "https://copowiesz.example", Authorization: "Bearer synthetic.jwt.token-for-local-tests" }, body: JSON.stringify({ record: value, clip: clip(value), ...material, geminiConsent: true }) }));
+    assert.equal(response.status, 200);
+    const data = await response.json();
+    assert.equal(data.analysis.source, "technical");
+    assert.equal(data.analysis.needsReview, true);
+    assert.deepEqual(data.analysis.observations, []);
+    assert.match(data.analysis.limitations.join(" "), /Publiczny dostęp do Gemini jest wyłączony/);
+    assert.match(data.analysis.limitations.join(" "), /nie zostały wysłane do Google/);
+    assert.equal(data.nextTaskId, "name");
+  }
+  assert.deepEqual(calls, []);
+}));
+
+test("zablokowany publiczny status nie sprawdza Auth ani Google także z Bearer", async () => isolated(async () => {
+  process.env.GEMINI_API_KEY = fakeKey;
+  process.env.VERCEL = "1";
+  process.env.NEXT_PUBLIC_SUPABASE_URL = "https://synthetic-project.supabase.co";
+  process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY = "sb_publishable_synthetic_tests_only";
+  const calls: string[] = [];
+  globalThis.fetch = async (url) => { calls.push(String(url)); throw new Error("Status zablokowanej usługi nie powinien sprawdzać dostawcy"); };
+  for (const authorization of [undefined, "Bearer synthetic.jwt.token-for-local-tests"]) {
+    const response = await status(new Request("https://copowiesz.example/api/status", { headers: authorization ? { Authorization: authorization } : {} }));
+    assert.equal(response.status, 200);
+    const data = await response.json();
+    assert.equal(data.chat.configured, true);
+    assert.equal(data.chat.available, false);
+    assert.equal(data.chat.publicAccessAllowed, false);
+    assert.equal(data.chat.authenticationRequired, false);
+    assert.equal(data.vision.available, false);
+    assert.equal(data.vision.mode, "technical");
+    assert.match(data.policyNotice, /Publiczny dostęp do Gemini jest wyłączony/);
+    assert.equal(data.chat.policyNotice, data.policyNotice);
+    assert(!JSON.stringify(data).includes(fakeKey));
+  }
+  assert.deepEqual(calls, []);
+}));
+
+test("bezpośrednie funkcje Gemini odmawiają publicznego wywołania również po buforowaniu dostępności", async () => isolated(async () => {
+  process.env.GEMINI_API_KEY = `${fakeKey}CachePolicy`;
+  process.env.VERCEL = "1";
+  let calls = 0;
+  globalThis.fetch = async () => { calls += 1; return Response.json({ name: "models/gemini-3.1-flash-lite" }); };
+  assert.equal(await geminiAvailability(), false);
+  assert.deepEqual(await generateGeminiJson("synthetic", [], {}, true), { output: null, reason: "public_policy_blocked" });
+  assert.deepEqual(await generateGeminiReply("synthetic", {}), { reply: null, reason: "public_policy_blocked" });
+  assert.equal(calls, 0);
+  process.env.GEMINI_PUBLIC_BILLING_CONFIRMED = "true";
+  assert.equal(await geminiAvailability(), true);
+  assert.equal(calls, 1);
+  const allowedCalls = calls;
+  delete process.env.GEMINI_PUBLIC_BILLING_CONFIRMED;
+  assert.equal(await geminiAvailability(), false);
+  assert.deepEqual(await generateGeminiJson("synthetic", [], {}), { output: null, reason: "public_policy_blocked" });
+  assert.equal(calls, allowedCalls);
+}));
+
 test("status nie ujawnia sekretów ani nie sprawdza klucza anonimowo na Vercel", async () => isolated(async () => {
   process.env.GEMINI_API_KEY = fakeKey;
   process.env.VERCEL = "1";
+  process.env.GEMINI_PUBLIC_BILLING_CONFIRMED = "true";
   process.env.NEXT_PUBLIC_SUPABASE_URL = "https://synthetic-project.supabase.co";
   process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY = "sb_publishable_synthetic_tests_only";
   process.env.OLLAMA_VISION_MODEL = "synthetic-vision-model";
@@ -334,6 +437,7 @@ test("status nie ujawnia sekretów ani nie sprawdza klucza anonimowo na Vercel",
 test("Vercel sprawdza sesję kluczem publishable przed rozmową Gemini, także w demonstracji", async () => isolated(async () => {
   process.env.GEMINI_API_KEY = fakeKey;
   process.env.VERCEL = "1";
+  process.env.GEMINI_PUBLIC_BILLING_CONFIRMED = "true";
   process.env.NEXT_PUBLIC_SUPABASE_URL = "https://synthetic-project.supabase.co";
   process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY = "sb_publishable_synthetic_tests_only";
   const token = "Bearer synthetic.jwt.token-for-local-tests";
@@ -363,6 +467,7 @@ test("Vercel sprawdza sesję kluczem publishable przed rozmową Gemini, także w
 test("nieważna sesja Supabase zatrzymuje rozmowę przed wywołaniem Google", async () => isolated(async () => {
   process.env.GEMINI_API_KEY = fakeKey;
   process.env.VERCEL = "1";
+  process.env.GEMINI_PUBLIC_BILLING_CONFIRMED = "true";
   process.env.NEXT_PUBLIC_SUPABASE_URL = "https://synthetic-project.supabase.co";
   process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY = "sb_publishable_synthetic_tests_only";
   let calls = 0;
@@ -378,6 +483,7 @@ test("nieważna sesja Supabase zatrzymuje rozmowę przed wywołaniem Google", as
 
 test("starszy anon key pozostaje obsługiwany, a publishable ma pierwszeństwo", async () => isolated(async () => {
   process.env.VERCEL = "1";
+  process.env.GEMINI_PUBLIC_BILLING_CONFIRMED = "true";
   process.env.NEXT_PUBLIC_SUPABASE_URL = "https://synthetic-project.supabase.co";
   process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY = "synthetic.legacy.anon.jwt-for-tests";
   const input = new Request("https://copowiesz.example/api/chat", { headers: { Authorization: "Bearer synthetic.jwt.token-for-local-tests" } });

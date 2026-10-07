@@ -2,8 +2,7 @@ import { z } from "zod";
 import { readBoundedText } from "./http";
 
 const defaultModel = "gemini-3.1-flash-lite";
-// This release supports the model whose free tier was checked in the deployment guide.
-// A billing-enabled key still belongs to the operator: the API cannot determine its billing tier.
+// A credential describes configuration, not permission for public use or billing status.
 export function getGeminiConfig(): { model: string; apiKey: string } | null {
   const apiKey = process.env.GEMINI_API_KEY?.trim();
   const model = process.env.GEMINI_MODEL?.trim() || defaultModel;
@@ -11,9 +10,17 @@ export function getGeminiConfig(): { model: string; apiKey: string } | null {
   return { model, apiKey };
 }
 
+export const geminiPublicPolicyNotice = "Publiczny dostęp do Gemini jest wyłączony. Wymaga zgodnej z warunkami Google konfiguracji rozliczeniowej potwierdzonej przez administratora. Sam klucz ani konto użytkownika nie wystarczają. Działa odpowiedź lokalna i kontrola techniczna nagrań.";
+
+// This explicit operator attestation never enables billing or verifies the Google project.
+export function isPublicGeminiAllowed(): boolean {
+  return !process.env.VERCEL || process.env.GEMINI_PUBLIC_BILLING_CONFIRMED === "true";
+}
+
 let cachedAvailability: { until: number; fingerprint: string; available: boolean } | null = null;
 
 export async function geminiAvailability(): Promise<boolean> {
+  if (!isPublicGeminiAllowed()) return false;
   const config = getGeminiConfig();
   if (!config) return false;
   const fingerprint = `${config.model}:${config.apiKey}`;
@@ -37,9 +44,10 @@ export const generatedReplySchema = z.object({
   evidenceIds: z.array(z.string().max(160)).max(12),
 });
 
-export type GeminiResult = { reply: z.infer<typeof generatedReplySchema> | null; reason?: "missing_config" | "quota" | "unavailable" | "invalid_output" };
+export type GeminiResult = { reply: z.infer<typeof generatedReplySchema> | null; reason?: "missing_config" | "quota" | "unavailable" | "invalid_output" | "public_policy_blocked" };
 
 export async function generateGeminiJson(system: string, parts: unknown[], responseSchema: unknown, vision = false): Promise<{ output: unknown | null; reason?: GeminiResult["reason"] }> {
+  if (!isPublicGeminiAllowed()) return { output: null, reason: "public_policy_blocked" };
   const config = getGeminiConfig();
   if (!config) return { output: null, reason: "missing_config" };
   try {

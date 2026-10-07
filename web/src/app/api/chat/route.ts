@@ -1,7 +1,7 @@
 import { buildProfileFacts, getReadiness } from "@/lib/domain";
 import { buildGroundedReply, isHealthQuestion } from "@/lib/knowledge";
 import { claimProviderCall, providerCaller } from "@/lib/server/access";
-import { generateGeminiReply, getGeminiConfig } from "@/lib/server/gemini";
+import { geminiPublicPolicyNotice, generateGeminiReply, getGeminiConfig, isPublicGeminiAllowed } from "@/lib/server/gemini";
 import { errorResult, jsonResult, readJson } from "@/lib/server/http";
 import { chatRequestSchema } from "@/lib/server/validation";
 
@@ -35,6 +35,7 @@ export async function POST(request: Request): Promise<Response> {
       mode: base.mode === "health" ? "health" : demo ? "demo" : "grounded",
       provider: "local",
     };
+    if (!isPublicGeminiAllowed()) return jsonResult({ ...fallback, notice: geminiPublicPolicyNotice });
     if (isHealthQuestion(message) || base.mode === "health") return jsonResult(fallback);
     if (!getGeminiConfig()) return jsonResult({ ...fallback, notice: "Gemini nie jest podłączone. Odpowiedź powstała lokalnie z zapisanych informacji." });
     const caller = await providerCaller(request);

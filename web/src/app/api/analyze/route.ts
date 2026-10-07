@@ -3,7 +3,7 @@ import { fold } from "@/lib/knowledge";
 import type { ClipAnalysis } from "@/lib/types";
 import { z } from "zod";
 import { claimProviderCall, providerCaller } from "@/lib/server/access";
-import { generateGeminiJson, getGeminiConfig } from "@/lib/server/gemini";
+import { geminiPublicPolicyNotice, generateGeminiJson, getGeminiConfig, isPublicGeminiAllowed } from "@/lib/server/gemini";
 import { ApiError, errorResult, jsonResult, readJson } from "@/lib/server/http";
 import { localChat } from "@/lib/server/ollama";
 import { analyzeRequestSchema, clipAnalysisSchema } from "@/lib/server/validation";
@@ -43,7 +43,9 @@ export async function POST(request: Request): Promise<Response> {
     let nextTaskReason: string | undefined;
     const ongoing = !['stopped', 'skipped'].includes(clip.status);
     const allowedTasks = guidedTasks.filter((item) => item.species.includes(record.pet.species) && !item.requiresKnownCue && item.id !== clip.taskId && !record.clips.some((old) => old.petId === record.pet.id && old.taskId === item.id));
-    if (ongoing && geminiConsent === true && getGeminiConfig() && (videoData || frames.length)) {
+    if (ongoing && geminiConsent === true && !isPublicGeminiAllowed()) {
+      analysis.limitations.unshift(geminiPublicPolicyNotice, "Film ani klatki nie zostały wysłane do Google; zachowanie pozostaje nieocenione automatycznie.");
+    } else if (ongoing && geminiConsent === true && getGeminiConfig() && (videoData || frames.length)) {
       const caller = await providerCaller(request);
       claimProviderCall(caller);
       const fullVideo = !!videoData;
@@ -81,7 +83,7 @@ Zwróć JSON {summary:string,observations:string[],limitations:string[],recommen
         suggestedTask = allowedTasks.some((item) => item.id === parsed.data.recommendedTaskId) ? parsed.data.recommendedTaskId : null;
         nextTaskReason = suggestedTask ? parsed.data.nextTaskReason : undefined;
       } else {
-        analysis.limitations.unshift(generated.reason === "quota" ? "Darmowy limit Gemini został osiągnięty. Nie przełączamy na płatny model." : "Gemini nie zwróciło użytecznego, poprawnego opisu. Zachowanie pozostaje nieocenione automatycznie.");
+        analysis.limitations.unshift(generated.reason === "quota" ? "Limit Gemini został osiągnięty. Nie przełączamy na płatny model." : "Gemini nie zwróciło użytecznego, poprawnego opisu. Zachowanie pozostaje nieocenione automatycznie.");
       }
     } else if (ongoing && frames.length && geminiConsent !== true) {
       const generated = await localChat("vision", [

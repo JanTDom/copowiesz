@@ -8,6 +8,34 @@ Aplikacja znajduje się w `web/`; publiczny fundament Python i dane źródłowe 
 katalogu głównym. Publiczna rejestracja nadal wymaga własnego SMTP; poniżej opisano zakres
 rzeczywistych sprawdzeń i pozostałe ograniczenia.
 
+## Uzupełnienie serwisu i płatności
+
+Nowa wersja dodaje hero „Porozmawiaj ze swoim zwierzakiem!”, rozbudowane podstawy projektu
+pod `/jak-to-dziala`, przeszukiwalną pomoc, dane Multinewsroom, kontakt, regulamin, prywatność
+oraz pobieralny wzór odstąpienia. Stopka używa `kontakt@copowiesz.pl` i copyright Multinewsroom.
+Publiczne metadane, sitemap i robots wskazują kanoniczne `https://copowiesz.pl`.
+
+Przygotowano serwerowy checkout Przelewy24, prywatne zamówienia z utrwalonym pełnym tekstem
+dokumentów i weryfikacją podpisu oraz niezależnego potwierdzenia operatora. Nie uruchomiono
+sprzedaży i nie pobrano pieniędzy. Cena, zakres oferty i klucze sprzedawcy nie są ustawione;
+produkcja pozostaje zablokowana także z samymi flagami, dopóki aplikacja nie egzekwuje
+zakupionych limitów. [Konfiguracja i pozostałe warunki](PAYMENTS_SETUP.md).
+
+Migracja płatności została zastosowana w istniejącym projekcie Free. Testy na rzeczywistym
+PostgreSQL: 43/43 asercje pgTAP, pełny ROLLBACK i potwierdzone zero syntetycznych kont,
+zamówień oraz uprawnień po teście. Security advisors nie zgłosił ostrzeżeń. Ten test jednej
+transakcji nie zastępuje dwóch równoległych sesji ani prawdziwego sandboxa P24.
+
+Końcowa weryfikacja kodu obejmuje 87/87 testów web, w tym 32 płatności, 33/33 Python,
+TypeScript, produkcyjny build Next i zgodność eksportu wiedzy. Osobny przegląd odtworzył
+odzyskanie zamówienia po niepewnej awarii bazy, bez drugiej rejestracji u operatora.
+
+W tej wersji publiczny `/api/status` podaje `publicAccessAllowed=false`, a odpowiedzi czatu
+używają `provider=local`; analiza pozostaje techniczna. Film ani klatki nie trafiają do
+Google, gdy publiczna bramka jest zamknięta. Lokalny serwer może nadal korzystać z klucza
+Gemini. Blokada wynika z poniżej opisanych warunków publicznej usługi w EOG, a nie z błędu
+klucza. Wcześniejsze wyniki produkcyjne opisano w dalszej części jako historyczne.
+
 ## Uruchomienie lokalne
 
 Wymagany Node.js 24 oraz npm. Biblioteka Supabase nie wspiera już Node.js 20; wersja 24 jest
@@ -34,6 +62,43 @@ filmu w Gemini wymaga odrębnej jawnej zgody przekazania nagrania/klatek. Wynik 
 niezweryfikowany i wymaga przeglądu; nie staje się automatycznie własną pamięcią ani diagnozą.
 Bez modelu aplikacja udostępnia oznaczoną odpowiedź opartą na zapisach oraz kontrolę techniczną
 klipów. Opcjonalny lokalny model wideo Ollama nie jest instalowany ani pobierany automatycznie.
+
+## Warunki publicznego Gemini i blokada w kodzie
+
+Warunki Google obowiązujące od 23 marca 2026 wymagają **Paid Services** dla publicznych
+klientów API udostępnianych w EOG, Szwajcarii i UK. Dla Gemini API oznacza to projekt Cloud
+z aktywnym kontem rozliczeniowym. Sam klucz Free lub sesja Supabase nie wystarczają.
+Gemini API jest przeznaczone dla osób 18+; nie należy kierować tych funkcji do osób młodszych.
+Zasady przetwarzania danych Paid Services dotyczą EOG/CH/UK również przy darmowych usługach
+i limitach. Nie wolno automatycznie przypisywać tym danym ogólnych zasad Unpaid Services.
+[Gemini API Additional Terms: Use Restrictions oraz How Google Uses Your Data](https://ai.google.dev/gemini-api/terms).
+
+Wymaganie użytkownika pozostaje Free: **nie aktywujemy Cloud Billing, płatnego planu ani
+automatycznego dokupowania**. Bieżący kod dodaje blokadę publicznych wywołań na Vercel:
+
+```dotenv
+GEMINI_PUBLIC_BILLING_CONFIRMED=false
+```
+
+Wartość pusta, brak zmiennej lub jakakolwiek wartość inna niż dokładne `true` blokuje dostawcę
+na Vercel. Flaga jest odrębną deklaracją operatora; nie weryfikuje planu Google i nie włącza
+rozliczeń. Ustawienie jej na true wymaga wcześniejszego spełnienia warunków i odrębnej
+autoryzacji użytkownika na zakres rozliczeniowy. Przykład konfiguracji pozostaje false.
+Lokalne uruchomienie bez `VERCEL` zachowuje adapter Gemini i konfigurację własnego klucza.
+
+`getGeminiConfig` nadal raportuje skonfigurowany klucz, a `isPublicGeminiAllowed` osobno
+określa dopuszczenie dostawcy. Zablokowany `/api/status` zwraca `configured=true` przy kluczu,
+`available=false`, `publicAccessAllowed=false` i `policyNotice`, bez sprawdzania Auth ani
+Google — także z tokenem Bearer. Rozmowa zwraca HTTP 200 z `provider=local` i wyjaśnieniem.
+Analiza po zgodzie zwraca `source=technical` i informację, że filmu/klatek nie wysłano.
+Niskie funkcje generowania oraz kontroli dostępności mają tę samą blokadę, również przed
+odczytem zapamiętanego wyniku dostępności. Konta i zgoda filmu nie omijają warunku.
+
+Zmianę sprawdzono lokalnie w 55 testach web oraz przez TypeScript. Nowe regresje nie używają
+realnych kluczy ani płatnych wywołań; dotychczasowe testy autoryzacji mają syntetyczne jawne
+potwierdzenie w swoich fixture. Ten etap nie zmienia produkcyjnych zmiennych środowiska,
+nie uruchamia rozliczeń i nie potwierdza jeszcze wdrożenia blokady pod publiczną domeną.
+Poniższe wcześniejsze wyniki produkcji należy odczytywać z tym rozróżnieniem.
 
 ## Sprawdzenia
 
@@ -201,7 +266,8 @@ przez stdin; nie umieszczano wartości w argumentach procesu, logach, Git ani kl
 Nie kopiowano klucza do środowiska preview. Serwer uwierzytelnia Bearer token w Supabase
 z użyciem publishable key; starszy anon key ma jedynie zgodny fallback konfiguracji.
 
-Rzeczywisty `GET` metadanych modelu Gemini zwrócił HTTP 200 z skonfigurowanym kluczem.
+We wcześniejszym wdrożeniu, przed dodaniem blokady publicznego dostawcy, rzeczywisty `GET`
+metadanych modelu Gemini zwrócił HTTP 200 z skonfigurowanym kluczem.
 To potwierdza dostęp do modelu, nie dostępność darmowego limitu generowania. Anonimowy
 `/api/status` w produkcji celowo nie sprawdza klucza u Google: raportuje `configured=true`,
 `available=null`, `authenticationRequired=true` i `quotaVerified=false`. Rozmowa i analiza
@@ -236,7 +302,8 @@ nie testowano; własny SMTP wymaga osobnej weryfikacji.
 
 ### Sprawdzenia produkcji i pozostały zakres
 
-Na rzeczywistej produkcji sprawdzono syntetyczne, nieutrwalane payloady. `/api/status` zwraca
+Przed dodaniem opisanej wyżej blokady na rzeczywistej produkcji sprawdzono syntetyczne,
+nieutrwalane payloady. `/api/status` zwracał
 HTTP 200 i `setupAvailable=false`; zwykły czat i analiza Gemini bez Bearer tokenu zwracają 401;
 żądanie z obcym Origin zwraca 403; `/api/setup` zwraca 404. Moduł zdrowia zwraca 200 z
 `provider=local`, a analiza bez zgody modelu zwraca 200 z `source=technical` i
@@ -254,7 +321,9 @@ na iPhone i Chrome na Androidzie, odmowę dostępu, przerwanie nagrywania, przej
 tło, błąd przesyłania i odzyskanie istniejącego klipu bez ponawiania reakcji.
 
 Nie aktywowano nowych planów płatnych, triali ani automatycznego dokupowania. Obecne wdrożenie
-korzysta z istniejącego Vercel Pro; Supabase jest Free, a model Gemini udostępnia darmowy limit.
+korzysta z istniejącego Vercel Pro; Supabase jest Free. Dostępny limit Gemini nie stanowi
+zgody na jego publiczne użycie w EOG. Przy wymaganiu Free publiczny dostęp do modelu
+pozostaje wyłączony.
 Gdyby projekt przenoszono do Hobby, ten plan dopuszcza **osobiste zastosowanie niekomercyjne**,
 co nie pokrywa przyszłego pobierania opłat od klientów. Limity i warunki dostawców obowiązują
 niezależnie od konfiguracji aplikacji. [Vercel Hobby](https://vercel.com/docs/plans/hobby),

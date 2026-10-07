@@ -12,6 +12,7 @@ import { ViewHeading } from "./ui";
 
 type CaptureState = "idle" | "recording" | "saving" | "analyzing";
 type AnalysisResult = { analysis: ClipAnalysis; nextTaskId?: string | null; nextTaskReason?: string };
+type AnalysisProviderStatus = { configured: boolean; available: boolean | null; publicAccessAllowed?: boolean; policyNotice?: string | null };
 
 function safeFileName(clip: Clip): string {
   return (clip.fileName || `copowiesz-${clip.id}.${clip.mimeType.includes("mp4") ? "mp4" : "webm"}`).replace(/[^\p{L}\p{N}_.-]/gu, "_").slice(0, 180);
@@ -37,7 +38,8 @@ export function CaptureView({ record, onUpdate, onSettings, onChat }: { record: 
   const [preview, setPreview] = useState<{ id: string; url: string } | null>(null);
   const [notes, setNotes] = useState<Record<string, string>>({});
   const [confirmed, setConfirmed] = useState<Record<string, boolean>>({});
-  const [provider, setProvider] = useState<{ configured: boolean; available: boolean | null } | null>(null);
+  const [provider, setProvider] = useState<AnalysisProviderStatus | null>(null);
+  const providerRef = useRef<AnalysisProviderStatus | null>(null);
   const [recovery, setRecovery] = useState<{ blob: Blob; name: string } | null>(null);
   const mounted = useRef(true);
   const recordRef = useRef(record); const updateRef = useRef(onUpdate);
@@ -48,6 +50,7 @@ export function CaptureView({ record, onUpdate, onSettings, onChat }: { record: 
   const previewUrl = useRef<string | null>(null);
   const cameraGeneration = useRef(0);
   const busy = state !== "idle" || cameraOpening;
+  const publicGeminiBlocked = provider?.publicAccessAllowed === false;
   const progress = getReadiness(record);
 
   recordRef.current = record; updateRef.current = onUpdate;
@@ -76,7 +79,12 @@ export function CaptureView({ record, onUpdate, onSettings, onChat }: { record: 
 
   useEffect(() => {
     mounted.current = true;
-    void apiFetch("/api/status").then((result) => { if (mounted.current) setProvider(result.chat); }).catch(() => { /* Recording also works without a connection. */ });
+    void apiFetch("/api/status").then((result) => {
+      if (!mounted.current) return;
+      providerRef.current = result.chat;
+      setProvider(result.chat);
+      if (result.chat.publicAccessAllowed === false) setGeminiConsent(false);
+    }).catch(() => { /* Recording also works without a connection. */ });
     return () => {
       mounted.current = false; cameraGeneration.current += 1; clearTimers(); stopped.current = true;
       if (recorder.current?.state === "recording") recorder.current.stop();
@@ -120,16 +128,20 @@ export function CaptureView({ record, onUpdate, onSettings, onChat }: { record: 
     setState("analyzing");
     let media: { videoData?: string; frames?: string[]; frameTimes?: number[] } = {};
     let preparationNotice = "";
-    if (consent && active()) {
+    if (consent && providerRef.current?.publicAccessAllowed !== false && active()) {
       const mime = saved.mimeType.split(";")[0].trim().toLowerCase();
       try {
         if (["video/webm", "video/mp4"].includes(mime) && blob.size <= 2 * 1024 * 1024) media = { videoData: await blobDataUrl(blob, mime) };
-        else { media = await extractVideoFrames(blob, saved.durationSec); preparationNotice = "Do modelu trafiło sześć klatek bez dźwięku. Cały film pozostaje na tym urządzeniu."; }
+        else { media = await extractVideoFrames(blob, saved.durationSec); preparationNotice = "Do analizy przygotowano do sześciu klatek bez dźwięku. Cały film pozostaje na tym urządzeniu."; }
       } catch {
         preparationNotice = "Nie udało się przygotować obrazu do analizy. Zachowano klip i sprawdzono tylko jego parametry; możesz obejrzeć film i dodać własną obserwację.";
       }
     }
     if (!active()) return;
+    if (providerRef.current?.publicAccessAllowed === false) {
+      media = {};
+      preparationNotice = "Nagranie zapisano lokalnie. Analiza Google jest obecnie niedostępna; film ani klatki nie zostały wysłane do Google. Możesz obejrzeć film i dodać własną obserwację.";
+    }
     const current = recordRef.current.pet.id === owner.pet.id ? recordRef.current : owner;
     const result = await apiFetch("/api/analyze", { record: apiRecord(current), clip: saved, ...media, geminiConsent: consent && !!(media.videoData || media.frames?.length) }) as AnalysisResult;
     const inherited = saved.analysis?.limitations.filter((limitation) => limitation.startsWith("Długość oszacowano")) ?? [];
@@ -254,8 +266,9 @@ export function CaptureView({ record, onUpdate, onSettings, onChat }: { record: 
           {state === "recording" && <span className="recording-time" role="status"><span />{elapsed}s / 30s</span>}
           {(state === "saving" || state === "analyzing") && <div className="camera-processing" role="status"><LoaderCircle className="spin" size={30} /><strong>{state === "saving" ? "Zapisujemy klip na urządzeniu…" : "Sprawdzamy zapisany materiał…"}</strong><p>Nie trzeba ponownie wywoływać reakcji zwierzaka.</p></div>}
         </div>
-        <div className="capture-options"><label><input type="checkbox" checked={audio} disabled={busy || cameraReady} onChange={(event) => setAudio(event.target.checked)} />Nagraj również dźwięk</label><label className="video-consent"><input type="checkbox" checked={geminiConsent} disabled={busy} onChange={(event) => setGeminiConsent(event.target.checked)} /><span>Chcę analizę tego nagrania przez Gemini<small>Film lub wybrane klatki zostaną wysłane do Google. Wynik modelu trzeba sprawdzić. Bez zaznaczenia zapisujemy klip lokalnie i jego parametry.</small></span></label></div>
-        {geminiConsent && !provider?.configured && <p className="info-box">Najpierw podłącz swój darmowy klucz Gemini. Film możesz już zapisać lokalnie.<button className="text-button" disabled={busy} onClick={onSettings}>Otwórz ustawienia<ChevronRight size={15} /></button></p>}
+        <div className="capture-options"><label><input type="checkbox" checked={audio} disabled={busy || cameraReady} onChange={(event) => setAudio(event.target.checked)} />Nagraj również dźwięk</label><label className="video-consent"><input type="checkbox" checked={geminiConsent && !publicGeminiBlocked} disabled={busy || publicGeminiBlocked} onChange={(event) => setGeminiConsent(event.target.checked)} /><span>{publicGeminiBlocked ? "Analiza Google (Gemini) obecnie niedostępna" : "Chcę analizę tego nagrania przez Gemini"}<small>{publicGeminiBlocked ? "Nagranie zapisujemy lokalnie i sprawdzamy jego parametry. Możesz je obejrzeć i dodać własną obserwację. Film ani klatki nie trafią do Google." : "Po zaznaczeniu zgody, przy dostępnym modelu i zgodnej konfiguracji, film lub wybrane klatki mogą zostać wysłane do Google. Wynik modelu trzeba sprawdzić. Bez zgody zapisujemy klip lokalnie i jego parametry."}</small></span></label></div>
+        {publicGeminiBlocked && <p className="info-box" role="status">{provider?.policyNotice || "Publiczna analiza Gemini jest wyłączona. Sam klucz ani konto nie odblokowują dostępu."} Nagrywanie i własne adnotacje pozostają dostępne.<button className="text-button" disabled={busy} onClick={onSettings}>Sprawdź dostęp w ustawieniach<ChevronRight size={15} /></button></p>}
+        {geminiConsent && !publicGeminiBlocked && !provider?.configured && <p className="info-box">Analiza Gemini wymaga konfiguracji i dostępnego modelu. Film możesz już zapisać lokalnie i opisać własnymi słowami.<button className="text-button" disabled={busy} onClick={onSettings}>Otwórz ustawienia<ChevronRight size={15} /></button></p>}
         <div className="capture-actions">{state === "recording" ? <><button className="button primary" onClick={() => stopRecording()}><Square size={17} />Zakończ nagranie</button><button className="button secondary" onClick={() => stopRecording(true)}><X size={17} />Przerwij dla komfortu</button></> : <><button className="button primary" disabled={busy} onClick={cameraReady ? startRecording : enableCamera}><Camera size={18} />{cameraOpening ? "Uruchamiamy kamerę…" : cameraReady ? "Rozpocznij nagranie" : "Włącz kamerę"}</button><button className="button secondary" disabled={busy} onClick={() => importRef.current?.click()}><Upload size={18} />Dodaj film z telefonu</button>{(cameraReady || cameraOpening) && <button className="text-button" onClick={releaseCamera}>{cameraOpening ? "Anuluj włączanie" : "Wyłącz kamerę"}</button>}</>}</div>
         <input ref={importRef} type="file" accept="video/mp4,video/webm,video/quicktime,video/ogg" className="hidden-input" aria-label="Dodaj film" onChange={(event) => { const file = event.target.files?.[0]; event.target.value = ""; if (file) { releaseCamera(); void saveRecording(file, recordRef.current, task, false); } }} />
         {!busy && <button className="text-button capture-skip" onClick={skipTask}>Pomiń — brak spokojnej okazji</button>}
@@ -265,7 +278,7 @@ export function CaptureView({ record, onUpdate, onSettings, onChat }: { record: 
         {!busy && !getNextTask(record) && !nextTask && <div className="completion-box"><Check /><div><strong>Przeszliśmy wszystkie konteksty.</strong><p>{progress.ready ? "Test i klipy są zapisane. Niezweryfikowane opisy oraz braki wiedzy nadal pozostają oznaczone." : "Przerwane lub pominięte próby pozostają brakami. Możesz wrócić do nich, kiedy pojawi się spokojna, naturalna okazja."}</p><button className="button primary" onClick={onChat}>Przejdź do rozmowy<ArrowRight size={17} /></button></div></div>}
       </section>
     </div>
-    <section className="clip-library"><ViewHeading title="Twoje nagrania" description="Model opisuje materiał. Ty możesz dopisać i potwierdzić własną obserwację." />
+    <section className="clip-library"><ViewHeading title="Twoje nagrania" description={publicGeminiBlocked ? "Obejrzyj lokalny film, dopisz i potwierdź własną obserwację. Analiza Google jest obecnie niedostępna." : "Dostępny model może zaproponować opis materiału. Ty możesz dopisać i potwierdzić własną obserwację."} />
       {!clips.length ? <div className="empty-state compact"><Video size={34} /><h3>Tu pojawi się pierwszy klip</h3><p>Krótka zwykła sytuacja jest bardziej przydatna niż wymuszona reakcja.</p></div> : clips.map((saved) => <details key={saved.id} className="clip-card" open={lastClipId === saved.id || preview?.id === saved.id}>
         <summary><Video size={20} /><div><strong>{tasks.find((item) => item.id === saved.taskId)?.title ?? "Nagranie"}</strong><small>{new Date(saved.createdAt).toLocaleString("pl-PL")} · {saved.durationSec > 0 ? `${saved.durationSec.toFixed(1)} s · ${saved.width} × ${saved.height}` : "Bez nagrania"}</small></div><span className="status-pill">{statusLabel(saved)}</span></summary>
         <div className="clip-content">{saved.durationSec > 0 && <div className="clip-controls"><button className="button secondary" disabled={busy} onClick={() => void showClip(saved)}><Play size={16} />Obejrzyj film</button><button className="button secondary" disabled={busy} onClick={() => void downloadClip(saved)}><Download size={16} />Pobierz</button>{!["stopped", "skipped"].includes(saved.status) && <button className="text-button" disabled={busy} onClick={() => void retryAnalysis(saved)}><RefreshCw size={15} />{saved.status === "pending" ? "Ponów sprawdzenie" : "Sprawdź ponownie"}</button>}</div>}

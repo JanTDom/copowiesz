@@ -1,12 +1,14 @@
 import Image from "next/image";
+import Link from "next/link";
 import { ArrowRight, Mic, Send, ClipboardList, Camera, MessageCircle } from "lucide-react";
 
 export function Welcome({ onCreate, onDemo }: { onCreate: () => void; onDemo: () => void }) {
   return <div className="welcome">
     <section className="hero">
       <div className="hero-image"><Image src="/images/pet-connection.png" alt="Ilustracja idei: pies i kot połączeni cyfrową rozmową" fill priority sizes="(max-width: 800px) 100vw, 65vw" /></div>
-      <div className="hero-copy"><h1>A gdyby tak<br /><em>porozmawiać?</em></h1><p>Z Twoim psem. Z Twoim kotem.<br />Tak po prostu. Po polsku.</p>
+      <div className="hero-copy"><span className="hero-origin">Jedyny w swoim rodzaju. Tworzony w Polsce.</span><h1>Porozmawiaj<br /><em>ze swoim zwierzakiem!</em></h1><p>Z Twoim psem. Z Twoim kotem.<br />Tak po prostu. Po polsku.</p>
         <div className="hero-actions"><button className="button primary" onClick={onCreate}>Poznajmy się <ArrowRight size={20} /></button><button className="button secondary" onClick={onDemo}>Zobacz rozmowę z Luną</button></div>
+        <div className="hero-info-links"><Link href="/jak-to-dziala">Poznaj podstawy projektu</Link><Link href="/pomoc">Jak zacząć?</Link></div>
       </div>
     </section>
     <section className="journey" aria-label="Jak poznajemy Twojego zwierzaka">

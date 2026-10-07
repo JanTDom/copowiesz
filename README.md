@@ -4,7 +4,7 @@
 zwierzaka na podstawie odpowiedzi opiekuna, wspólnej historii i kierowanych nagrań. Rozmowa
 jest głównym ekranem; przy każdej odpowiedzi można sprawdzić jej dostępną podstawę.
 
-Stan na 7 października 2026: działa aplikacja Next.js w `web/`, rozmowa Gemini, nagrywanie
+Stan na 7 października 2026: działa aplikacja Next.js w `web/`, rozmowa lokalna i adapter Gemini, nagrywanie
 w przeglądarce, lokalna pamięć i wyszukiwarka wiedzy. Prywatna baza Supabase została wdrożona
 w oddzielnej organizacji Free. Konfiguracja wdrożenia GitHub/Vercel i domeny `copowiesz.pl`
 jest opisana w [dokumencie wdrożenia](docs/WEB_DEPLOYMENT.md), który rozróżnia konfigurację,
@@ -18,17 +18,17 @@ formularza nie potwierdzają naukowej trafności modelu osobowości.
 
 | Element | Rzeczywisty stan |
 |---|---|
-| Rozmowa po polsku | Gemini `gemini-3.1-flash-lite`, źródła odpowiedzi, oznaczenie dostawcy i demonstracji; odpowiedź lokalna przy braku modelu lub limitach |
+| Rozmowa po polsku | Odpowiedź lokalna z zapisów i adapter Gemini `gemini-3.1-flash-lite`; publiczny Vercel blokuje model bez potwierdzenia operatora, z jawnym komunikatem |
 | Przygotowanie profilu | Pełne 85 pytań w 11 obszarach dla wybranego gatunku; zapis każdego kroku, odrębne „nie wiem”, „nie dotyczy”, pominięcie i zero |
 | Kierowane nagrania | Cztery spokojne konteksty: codzienność, znany głos i imię, znana zabawa, dobrowolny kontakt; instrukcje, przerwanie i pominięcie |
 | Kamera i import | `MediaRecorder`, import WebM/MP4/MOV odtwarzalnego przez przeglądarkę, metadane, podgląd, pobieranie i lokalny zapis filmu |
-| Analiza nagrania | Kontrola parametrów bez zgody na model; Gemini po osobnej zgodzie, z opisem wymagającym przeglądu |
+| Analiza nagrania | Kontrola parametrów; Gemini wymaga osobnej zgody i dopuszczonej konfiguracji dostawcy, a wynik wymaga przeglądu |
 | Pamięć | Jawne relacje opiekuna i potwierdzone adnotacje filmu; wyniki modelu pozostają osobno; lokalny eksport/import i usuwanie profilu |
 | Wiedza | 290 autorskich polskich kart i 173 źródła; filtry gatunku, domeny i wyszukiwania; źródła, ograniczenia i bezpieczne kroki |
 | Zdrowie | Informacje dla opiekuna poza fikcyjnym głosem; obserwowalne sygnały, przykładowe przyczyny i pilność konsultacji, bez diagnozy lub dawkowania |
 | Supabase | Projekt `copowiesz` w organizacji Free, Frankfurt; trzy prywatne tabele, prywatny bucket, RLS właściciela i klucze obce |
 | Fundament Python | Odtwarzalny indeks SQLite FTS5, pamięć opisowa, katalog źródeł, import metadanych Europe PMC/Crossref/Hugging Face |
-| Sprawdzenia | 50 testów web i 33 Python; 14 testów pgTAP na chmurowym PostgreSQL; 18 sprawdzeń interfejsu z syntetycznymi danymi |
+| Sprawdzenia | 55 testów web i 33 Python; 14 testów pgTAP na chmurowym PostgreSQL; 18 wcześniejszych sprawdzeń interfejsu z syntetycznymi danymi |
 
 Przygotowanie materiału obejmuje przejrzenie wszystkich 85 pytań oraz zapis czterech
 rzeczywistych krótkich klipów w wymaganych kontekstach. Przed tym aplikacja oznacza rozmowę
@@ -57,15 +57,24 @@ tej przeglądarki. Wyczyszczenie danych przeglądarki może je usunąć; eksport
 filmów są osobnymi operacjami.
 
 Bez klucza API działają formularz, pamięć, wiedza, kontrola techniczna nagrań oraz ograniczone
-odpowiedzi oparte na zapisach. Do płynnej rozmowy można podać własny klucz Gemini Free
-w lokalnych ustawieniach lub serwerowym `web/.env.local`; wzór zmiennych jest w `.env.example`.
+odpowiedzi oparte na zapisach. Lokalnie można skonfigurować klucz Gemini
+w ustawieniach lub serwerowym `web/.env.local`; wzór zmiennych jest w `web/.env.example`.
 Klucz ma nazwę `GEMINI_API_KEY`, bez prefiksu `NEXT_PUBLIC_`. Nie trafia do Git ani pamięci
 przeglądarki. Analiza wideo wymaga odrębnej zgody wysłania filmu lub klatek do Google.
 
-W chmurze API Gemini wymaga tokenu Supabase zweryfikowanego na serwerze. Potwierdzanie email
+W bieżącym kodzie publiczny Vercel nie wywołuje Gemini bez
+`GEMINI_PUBLIC_BILLING_CONFIRMED=true`. Przy wyłączonej fladze nawet z kluczem i zalogowanym
+kontem działa oznaczona odpowiedź lokalna oraz kontrola techniczna filmu. Nie ustawiono tej
+flagi na true ani nie aktywowano rozliczeń. Po dopuszczeniu dostawcy wymagany pozostaje
+token Supabase zweryfikowany na serwerze. Potwierdzanie email
 pozostaje włączone. Domyślny SMTP Supabase obsługuje wyłącznie adresy członków zespołu;
 rejestracja email dla innych użytkowników wymaga własnego SMTP. Konta anonimowe pozostają
 wyłączone. Sama konfiguracja Supabase nie przesyła automatycznie lokalnych profili ani filmów.
+
+Publiczne Gemini w EOG wymaga dopuszczonej konfiguracji rozliczeniowej; konto Free nie
+wystarcza. Funkcje Gemini są przeznaczone dla osób 18+. W EOG obowiązuje wyjątek dotyczący
+zasad przetwarzania danych. Szczegółowy zakres, źródło oraz stan wdrożenia blokady:
+[WEB_DEPLOYMENT.md](docs/WEB_DEPLOYMENT.md#warunki-publicznego-gemini-i-blokada-w-kodzie).
 
 ## Sprawdzenia i granice walidacji
 
@@ -142,8 +151,10 @@ planu lub triala. [Stan katalogu Hugging Face](docs/HUGGING_FACE_FREE.md).
 Użytkownik wymaga bezpłatnych funkcji. Nie aktywowano nowego planu płatnego, triala ani
 automatycznego dokupowania. Supabase COPOWIESZ ma plan Free. Vercel skonfigurowano w istniejącym
 zespole Pro użytkownika; **nie oznacza to gwarancji zerowego zużycia rozliczanego przez Vercel**.
-Gemini nie potrafi zweryfikować planu rozliczeniowego klucza; operator musi używać klucza
-projektu Free i kontrolować limity. Przy braku konfiguracji, błędzie lub limitach aplikacja
+Gemini nie potrafi zweryfikować planu rozliczeniowego klucza. Zachowując wymaganie Free,
+publiczny dostęp do modelu pozostaje zablokowany; lokalnej konfiguracji nie usunięto.
+Flaga potwierdzenia jest deklaracją operatora, nie automatycznym włączeniem rozliczeń.
+Przy niedopuszczonej konfiguracji, błędzie lub limitach aplikacja
 pokazuje oznaczoną odpowiedź lokalną, bez przełączania na płatny model. Szczegóły ograniczeń
 są w [WEB_DEPLOYMENT.md](docs/WEB_DEPLOYMENT.md).
 

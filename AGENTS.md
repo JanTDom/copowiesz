@@ -66,10 +66,14 @@ nie zalecaj leków/dawkowania i nie nadpisuj osobowości na podstawie choroby.
   pozostając brakiem wiedzy. Przerwane/pominięte klipy nie zaliczają kontekstu. Gotowość
   opisuje pokrycie materiału, a nie naukową jakość lub procent osobowości.
 - Rozmowa używa Gemini `gemini-3.1-flash-lite`. Przy niepełnym profilu pozostaje oznaczoną
-  demonstracją. Odpowiedź lokalna przy braku modelu lub limitach ma jawnego dostawcę `local`;
+  demonstracją. Publiczny Vercel dopuszcza Gemini tylko gdy operator świadomie ustawi
+  `GEMINI_PUBLIC_BILLING_CONFIRMED=true`; przy wymaganiu projektu Free pozostawić false.
+  Flaga nie włącza ani nie weryfikuje rozliczeń. `getGeminiConfig` opisuje tylko klucz.
+  Odpowiedź lokalna przy blokadzie, braku modelu lub limitach ma jawnego dostawcę `local`;
   nie oznaczaj jej jako Gemini. Głos i dyktowanie zależą od możliwości/uprawnień przeglądarki.
 - Kamera/import zapisują film lokalnie. Gemini analizuje nagranie dopiero po odrębnej zgodzie
-  wysłania filmu lub wybranych klatek do Google. Wynik zawsze wymaga przeglądu; same klatki
+  wysłania filmu lub wybranych klatek do Google i po dopuszczeniu publicznego dostawcy.
+  Zgoda filmu ani token konta nie omijają blokady. Wynik zawsze wymaga przeglądu; same klatki
   nie dowodzą ciągłego ruchu ani reakcji na dźwięk. Bez zgody działa kontrola parametrów.
   Obserwacja staje się relacją opiekuna dopiero po jego jawnym zapisie i potwierdzeniu.
 - Nie wytrenowano własnego modelu osobowości, biometrów ani klinicznie zwalidowanego modelu
@@ -87,8 +91,15 @@ nie zalecaj leków/dawkowania i nie nadpisuj osobowości na podstawie choroby.
 - Vercel skonfigurowano w istniejącym zespole Pro użytkownika, bez aktywacji nowego planu.
   To nie jest gwarancja zerowych rozliczeń za zużycie. Nie aktywuj płatnych dodatków, triali,
   automatycznego dokupowania ani fallbacku do płatnego modelu. Gemini API nie potwierdza
-  planu klucza; darmowy projekt i limity musi sprawdzić operator.
-- Zweryfikowano 50 testów web i 33 Python, TypeScript/build, 14 testów RLS oraz 18 sprawdzeń
+  planu klucza. Warunki Gemini wymagają Paid Services dla publicznych użytkowników EOG,
+  Szwajcarii i UK; funkcje Gemini są 18+. Zasady Paid Services dotyczą danych z EOG także
+  przy darmowym limicie. Nie przenosić ogólnego opisu Free na dane EOG. Źródło i szczegóły:
+  docs/WEB_DEPLOYMENT.md. Nie włączaj rozliczeń ani flagi true bez odrębnej autoryzacji.
+- Gate ma działać także w niskich funkcjach generowania i dostępności. Gdy zablokowany,
+  `/api/status` raportuje klucz jako configured, available=false, publicAccessAllowed=false
+  i policyNotice, bez zapytania do Auth/Google nawet z Bearer. Chat zwraca 200 local;
+  analiza z wyrażoną zgodą zwraca technical z informacją, że materiału nie wysłano.
+- Zweryfikowano 55 testów web i 33 Python, TypeScript oraz wcześniejszy build, 14 testów RLS oraz 18 sprawdzeń
   UI z syntetycznymi danymi. Nie deklaruj walidacji ekspertów ani testów na fizycznym telefonie.
 
 Stan wdrożenia GitHub/Vercel/DNS i ograniczenia usług sprawdzaj w docs/WEB_DEPLOYMENT.md;
