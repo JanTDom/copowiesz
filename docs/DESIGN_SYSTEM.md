@@ -62,6 +62,9 @@ nagranie pokazuje instrukcję, zgodę na model, zapis i bezpieczne przerwanie. K
 „demonstracja”, „kontrola parametrów” i „opis modelu do sprawdzenia” muszą pozostać czytelne
 przy wyniku, również w mobilnym układzie.
 
+Strona `/kontakt` ma prosty nagłówek „Kontakt”, adres e-mail i neutralne dane firmy oraz
+odnośniki do informacji. Nie umieszczać na niej adresu ulicznego ani zachęt do rozmowy.
+
 Historia ma trzy zakładki: zapisy, album i tydzień. Album zachowuje szerokość kolumn także
 przy pojedynczej chwili, aby zdjęcie nie wypychało podpisu i działań. Tematy oraz opis sytuacji
 wypełniają edytowalną wiadomość. Panel głosowy jasno rozdziela rozpoczęcie mikrofonu, odczyt

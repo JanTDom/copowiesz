@@ -1,8 +1,50 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowUpRight, Mail, MapPin, Building2 } from "lucide-react";
+import { ArrowUpRight, Building2, Mail } from "lucide-react";
 import { PublicInfoShell } from "@/components/public-info-shell";
 import { operator } from "@/content/legal";
 import styles from "@/components/public-info.module.css";
-export const metadata: Metadata = { title: "Kontakt i dane firmy — COPOWIESZ", description: "COPOWIESZ tworzy Multinewsroom Jan Domaniewski. Napisz: kontakt@copowiesz.pl." };
-export default function ContactPage(){return <PublicInfoShell compact activePath="/kontakt" eyebrow="Porozmawiajmy o COPOWIESZ" title="Jesteśmy po drugiej stronie." lead="Masz pytanie o aplikację, uwagę do źródła albo potrzebujesz pomocy ze swoim profilem? Napisz do nas." actions={<a className={styles.primaryLink} href="mailto:kontakt@copowiesz.pl"><Mail size={18}/>kontakt@copowiesz.pl</a>}><article className={styles.legalCopy}><section><h2><Building2 size={23}/> Kto tworzy projekt</h2><p><strong>{operator.name}</strong><br/>Działalność gospodarcza<br/>NIP {operator.nip} · REGON {operator.regon}</p><p><MapPin size={16}/> {operator.address}</p><p><a href="https://multinewsroom.pl" target="_blank" rel="noreferrer">Poznaj Multinewsroom <ArrowUpRight size={14}/></a></p></section><section><h2>Pomoc, która szybciej trafia w sedno</h2><p>Opisz, co próbujesz zrobić, na jakim urządzeniu i jaki komunikat widzisz. Jeśli chodzi o płatność, podaj numer zamówienia. Nie wysyłaj haseł, kluczy API ani filmów z osobami postronnymi. Nie musisz od razu przesyłać całej historii zwierzaka.</p><p><Link href="/pomoc">Najpierw zajrzyj do pomocy</Link> — znajdziesz tam pierwszy krok, nagrywanie, kopię danych i odpowiedzi na najczęstsze pytania.</p></section><section><h2>Reklamacje, prawa do danych i źródła</h2><p>Ten sam adres służy do reklamacji, odstąpienia i spraw prywatności. W temacie możesz wpisać «Reklamacja», «Odstąpienie», «Dane osobowe» albo «Uwaga do źródła». Reklamacje konsumentów rozpatrujemy z odpowiedzią w ciągu 14 dni.</p><p><Link href="/odstapienie">Wzór odstąpienia i wskazówki reklamacji</Link> · <Link href="/polityka-prywatnosci">Twoje dane i prawa</Link></p></section><section><h2>Sprawy zdrowia zwierzaka</h2><p>Kontakt do COPOWIESZ nie jest kanałem pilnej pomocy weterynaryjnej. W razie niepokojącego stanu skontaktuj się z lekarzem weterynarii. Nie czekaj na odpowiedź z aplikacji.</p></section></article></PublicInfoShell>}
+
+export const metadata: Metadata = {
+  title: "Kontakt — COPOWIESZ",
+  description: "Kontakt: kontakt@copowiesz.pl. Multinewsroom Jan Domaniewski.",
+};
+
+export default function ContactPage() {
+  return (
+    <PublicInfoShell
+      compact
+      activePath="/kontakt"
+      title="Kontakt"
+      actions={
+        <a className={styles.primaryLink} href="mailto:kontakt@copowiesz.pl">
+          <Mail size={18} aria-hidden="true" />
+          kontakt@copowiesz.pl
+        </a>
+      }
+    >
+      <article className={styles.legalCopy}>
+        <section>
+          <h2><Building2 size={23} aria-hidden="true" /> Dane firmy</h2>
+          <p>
+            <strong>{operator.name}</strong><br />
+            NIP {operator.nip} · REGON {operator.regon}
+          </p>
+          <p>
+            <a href="https://multinewsroom.pl" target="_blank" rel="noreferrer">
+              multinewsroom.pl <ArrowUpRight size={14} aria-hidden="true" />
+            </a>
+          </p>
+        </section>
+        <section>
+          <h2>Informacje</h2>
+          <p>
+            <Link href="/pomoc">Pomoc</Link> · {" "}
+            <Link href="/odstapienie">Odstąpienie i reklamacje</Link> · {" "}
+            <Link href="/polityka-prywatnosci">Polityka prywatności</Link>
+          </p>
+        </section>
+      </article>
+    </PublicInfoShell>
+  );
+}
