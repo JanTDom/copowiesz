@@ -64,6 +64,23 @@ export interface Message {
   evidence?: Evidence[];
   mode?: "grounded" | "gemini" | "ollama" | "health" | "demo";
   provider?: "gemini" | "local" | "ollama";
+  situation?: ConversationSituation;
+}
+
+export interface ConversationSituation {
+  description: string;
+  context?: string;
+  clipId?: string;
+}
+
+export interface Moment {
+  id: string;
+  title: string;
+  caption: string;
+  occurredAt: string;
+  createdAt: string;
+  photoId?: string;
+  clipId?: string;
 }
 
 export interface PetRecord {
@@ -73,6 +90,8 @@ export interface PetRecord {
   memories: Memory[];
   messages: Message[];
   isDemo?: boolean;
+  moments?: Moment[];
+  preferences?: { firstConversationCelebratedAt?: string };
 }
 
 export interface Workspace {

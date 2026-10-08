@@ -9,7 +9,7 @@ import { ViewHeading } from "./ui";
 const categoryLabels: Record<Memory["category"], string> = { preference: "Preferencja", routine: "Codzienny zwyczaj", event: "Wydarzenie", health: "Kontekst zdrowia", other: "Inna obserwacja" };
 function displayDate(value: string) { const date = new Date(value); return Number.isNaN(date.getTime()) ? "Data nieznana" : new Intl.DateTimeFormat("pl-PL", { day: "numeric", month: "long", year: "numeric" }).format(date); }
 
-export function MemoryView({ record, onUpdate }: { record: PetRecord; onUpdate: (record: PetRecord) => void }) {
+export function MemoryView({ record, onUpdate, embedded = false }: { record: PetRecord; onUpdate: (record: PetRecord) => void; embedded?: boolean }) {
   const [text, setText] = useState("");
   const [category, setCategory] = useState<Memory["category"]>("preference");
   const [saved, setSaved] = useState(false);
@@ -27,7 +27,7 @@ export function MemoryView({ record, onUpdate }: { record: PetRecord; onUpdate: 
   function deleteMemory(id: string) { onUpdate({ ...record, memories: record.memories.filter((memory) => memory.id !== id) }); setSaved(false); }
 
   return <section className="memory-view">
-    <ViewHeading title={`Wspomnienia ${record.pet.name}`} description="To, co zapiszesz, pomaga prowadzić bardziej osobistą rozmowę. Możesz poprawić pamięć, usuwając błędny wpis i dodając właściwy." />
+    {!embedded && <ViewHeading title={`Wspomnienia ${record.pet.name}`} description="To, co zapiszesz, pomaga prowadzić bardziej osobistą rozmowę. Możesz poprawić pamięć, usuwając błędny wpis i dodając właściwy." />}
     <div className="memory-hero card"><div><span className="eyebrow">Wasza wspólna historia</span><h2>Małe obserwacje. Coraz bliższa rozmowa.</h2><p>Ulubiona zabawka, miejsce odpoczynku, wydarzenie z ostatniego spaceru. Zapisuj konkretne sytuacje i ich kontekst.</p></div><img src="/images/pet-memory.png" alt="" /></div>
     {record.isDemo && <div className="notice">Oznaczona demonstracja: wspomnienia w tym profilu są syntetyczne. Nie opisują rzeczywistego zwierzaka.</div>}
 

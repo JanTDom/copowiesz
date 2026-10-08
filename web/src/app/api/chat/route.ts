@@ -4,6 +4,7 @@ import { claimProviderCall, providerCaller } from "@/lib/server/access";
 import { geminiPublicPolicyNotice, generateGeminiReply, getGeminiConfig, isPublicGeminiAllowed } from "@/lib/server/gemini";
 import { errorResult, jsonResult, readJson } from "@/lib/server/http";
 import { chatRequestSchema } from "@/lib/server/validation";
+import { buildSituationReply } from "@/lib/server/situation";
 
 export const runtime = "nodejs";
 export const maxDuration = 60;
@@ -15,6 +16,7 @@ Uwzględniaj wyłącznie dostarczone informacje o tym zwierzęciu; każdą infor
 Nie wymyślaj wspólnych wspomnień, cytowań, zdarzeń, emocji, wyników analizy wideo, ocen osobowości, procentów pewności ani reakcji nieobserwowanych. Wcześniejsze wypowiedzi asystenta nie są dowodami.
 Przy braku informacji odpowiedz naturalnie, że jeszcze tego nie wiemy, i zadaj jedno proste pytanie o zwykłą sytuację. Prawdziwe informacje mają pierwszeństwo przed stylem.
 Nie rozpoznawaj chorób, nie doradzaj leków ani dawek. Nie polecaj zadań prowokujących ból, lęk, agresję, pozbawianie zasobów lub przytrzymywanie. Nie opisuj problemów zdrowotnych jako osobowości.
+Jeśli currentSituation jest podane, odpowiadaj jako pomoc dla opiekuna, poza fikcyjną rolą zwierzaka. Oddziel dosłowny opis opiekuna, podany kontekst i rzeczy niewiadome. Nie przypisuj emocji ani przyczyn z pewnością. Zaproponuj jeden bezpieczny krok i jedno krótkie pytanie uzupełniające. currentSituation.clipReference to wyłącznie powiązanie z metadanymi: nie otrzymujesz filmu, klatek ani dźwięku i nie deklaruj ich analizy. Nie dopisuj opisu do stałej pamięci. Tytuł karty wiedzy i dopasowanie słów nie są diagnozą tej sytuacji. W tym trybie evidenceIds musi zawierać "situation:owner", aby podstawą był jawny bieżący opis.
 W trybie demo wyraźnie zaznacz demonstrację. Jeśli synthetic=true, informacje przykładu są syntetyczne; jeśli false, profil jest w przygotowaniu i zakres informacji ograniczony. Nie deklaruj pełnej personalizacji.
 Zwróć JSON {"content":"odpowiedź po polsku","evidenceIds":["id użytego dowodu"]}. Używaj wyłącznie id ze suppliedEvidence, bez dodawania adresów URL. Możesz też użyć evidenceIds:[] przy braku podstaw. Nie podawaj nowych twierdzeń naukowych spoza dostarczonej odpowiedzi bazowej i dowodów.`;
 
@@ -25,8 +27,9 @@ function unacceptable(text: string): boolean {
 
 export async function POST(request: Request): Promise<Response> {
   try {
-    const { record, message } = await readJson(request, chatRequestSchema, 512_000);
-    const base = buildGroundedReply(record, message);
+    const { record, message, situation } = await readJson(request, chatRequestSchema, 2 * 1024 * 1024);
+    const base = situation ? buildSituationReply(record, message, situation) : buildGroundedReply(record, message);
+    const healthQuery = `${message}\n${situation?.description ?? ""}\n${situation?.context ?? ""}`;
     // User-supplied mode and isDemo=false cannot unlock a completed personal profile.
     const demo = !!record.isDemo || !getReadiness(record).ready;
     const fallback = {
@@ -36,30 +39,37 @@ export async function POST(request: Request): Promise<Response> {
       provider: "local",
     };
     if (!isPublicGeminiAllowed()) return jsonResult({ ...fallback, notice: geminiPublicPolicyNotice });
-    if (isHealthQuestion(message) || base.mode === "health") return jsonResult(fallback);
+    if (isHealthQuestion(healthQuery) || base.mode === "health") return jsonResult(fallback);
     if (!getGeminiConfig()) return jsonResult({ ...fallback, notice: "Gemini nie jest podłączone. Odpowiedź powstała lokalnie z zapisanych informacji." });
     const caller = await providerCaller(request);
     claimProviderCall(caller);
     const personal = buildProfileFacts(record)
       .filter((fact) => !record.memories.some((memory) => memory.id === fact.id && memory.category === "health"))
       .filter((fact) => !/^q0(2[0-9]|9[34])$/.test(fact.id))
+      .filter((fact) => !isHealthQuestion(`${fact.title} ${fact.excerpt}`))
       .slice(0, 60).map((fact) => ({ ...fact, excerpt: fact.excerpt.slice(0, 1000) }));
-    const suppliedEvidence = [...new Map([...base.evidence, ...personal].map((fact) => [fact.id, fact])).values()].slice(0, 70);
+    const suppliedEvidence = [...new Map([...personal, ...base.evidence].map((fact) => [fact.id, fact])).values()].slice(-70);
     const generated = await generateGeminiReply(instructions, {
       pet: { name: record.pet.name, species: record.pet.species, ageMonths: record.pet.ageMonths },
       demo, synthetic: !!record.isDemo,
       suppliedEvidence,
       baseReply: base.content.slice(0, 6000),
       previousMessages: record.messages.slice(-6).map((item) => ({ role: item.role, content: item.content.slice(0, 1500) })),
+      currentSituation: situation ? {
+        description: situation.description, context: situation.context ?? "", provenance: "owner_report",
+        clipReference: situation.clipId ? { id: situation.clipId, mediaReceived: false } : null,
+      } : null,
       message,
     });
     if (!generated.reply) return jsonResult({ ...fallback, notice: generated.reason === "quota" ? "Limit Gemini został osiągnięty. Wyświetlam odpowiedź lokalną; nie przełączamy na płatną usługę." : "Gemini nie odpowiedziało poprawnie. Wyświetlam odpowiedź opartą na lokalnych zapisach." });
     const ids = new Set(suppliedEvidence.map((fact) => fact.id));
-    if (generated.reply.evidenceIds.some((id) => !ids.has(id)) || unacceptable(generated.reply.content)) {
+    if (generated.reply.evidenceIds.some((id) => !ids.has(id)) || unacceptable(generated.reply.content)
+      || (situation && !generated.reply.evidenceIds.includes("situation:owner"))) {
       return jsonResult({ ...fallback, notice: "Odpowiedź modelu wymagała sprawdzenia. Wyświetlam lokalną odpowiedź z dostępną podstawą." });
     }
     const evidence = suppliedEvidence.filter((fact) => generated.reply!.evidenceIds.includes(fact.id));
     let content = generated.reply.content;
+    if (situation && !/^Pomoc dla opiekuna/i.test(content)) content = `Pomoc dla opiekuna — poza wyobrażonym głosem zwierzaka.\n\n${content}`;
     if (demo && !/demonstracj/i.test(content)) content = `Demonstracja${record.isDemo ? " — dane syntetyczne" : " — profil w przygotowaniu"}. ${content}`;
     return jsonResult({ content, evidence, mode: demo ? "demo" : "gemini", provider: "gemini" });
   } catch (error) {

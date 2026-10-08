@@ -1,0 +1,55 @@
+.album { margin-top: 38px; padding-top: 32px; border-top: 1px solid var(--border); }
+.heading { display: flex; align-items: flex-start; justify-content: space-between; gap: 22px; }
+.heading > div { max-width: 630px; min-width: 0; }
+.heading h2 { margin-top: 10px; font-size: 32px; }
+.heading p, .formIntro { color: var(--muted); font-size: 13px; }
+.heading button { flex-shrink: 0; margin-top: 8px; }
+.privacy { display: flex; align-items: flex-start; gap: 9px; color: var(--muted); font-size: 12px; max-width: 850px; margin: 20px 0 27px; }
+.privacy svg { color: var(--gold); margin-top: 3px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 310px), 1fr)); gap: 22px; align-items: start; }
+.moment { border: 1px solid var(--border); border-radius: 14px; background: var(--surface); overflow: hidden; min-width: 0; }
+.photo { aspect-ratio: 4 / 3; background: #101929; }
+.photo img { width: 100%; height: 100%; display: block; object-fit: cover; }
+.missingPhoto { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; height: 100%; padding: 25px; text-align: center; color: var(--muted); font-size: 13px; }
+.missingPhoto svg { color: var(--gold); }
+.missingPhoto small { max-width: 240px; font-size: 11px; }
+.textMoment { background: linear-gradient(120deg, #233047, #141d2c); padding: 28px 22px; color: var(--gold); }
+.textMoment span { display: flex; align-items: center; gap: 12px; font-family: var(--serif); font-size: 21px; }
+.momentBody { padding: 22px; }
+.meta { display: flex; justify-content: space-between; gap: 12px; align-items: center; color: var(--muted); font-size: 10px; flex-wrap: wrap; }
+.meta span { display: inline-flex; align-items: center; gap: 5px; }
+.moment h3 { font-family: var(--serif); font-size: 25px; font-weight: 400; line-height: 1.3; margin-top: 12px; overflow-wrap: anywhere; }
+.caption { font-size: 13px; color: #d5dcea; white-space: pre-wrap; overflow-wrap: anywhere; }
+.videoBlock { padding-top: 14px; margin-top: 18px; border-top: 1px solid var(--border); }
+.clipLabel { display: flex; gap: 7px; align-items: center; color: var(--muted); font-size: 11px; }
+.missingClip { color: var(--muted); font-size: 11px; margin-top: 0; }
+.mediaActions { display: flex; gap: 18px; flex-wrap: wrap; }
+.videoPreview { margin-top: 12px; }
+.videoPreview video { display: block; width: 100%; max-height: 350px; background: #080d16; border-radius: 8px; }
+.momentActions { display: flex; justify-content: space-between; align-items: center; gap: 10px; margin-top: 15px; padding-top: 15px; border-top: 1px solid var(--border); flex-wrap: wrap; }
+.momentActions > div { display: flex; gap: 2px; }
+.momentActions > button { font-size: 11px; }
+.empty { text-align: center; padding: 44px 24px; border: 1px dashed #3d4b63; border-radius: 14px; background: #111b2a; }
+.empty > svg { color: var(--gold); margin-bottom: 16px; }
+.empty h3 { font-family: var(--serif); font-size: 27px; font-weight: 400; }
+.empty p { color: var(--muted); font-size: 13px; max-width: 520px; margin: 12px auto 22px; }
+.empty > div { display: flex; gap: 20px; align-items: center; justify-content: center; flex-wrap: wrap; }
+.form { display: grid; gap: 18px; }
+.form label { font-size: 13px; margin-top: 0; }
+.formIntro { margin-top: 0; }
+.photoPicker { padding: 17px; border: 1px dashed #3d4b63; border-radius: 10px; display: flex; flex-wrap: wrap; align-items: center; gap: 12px; }
+.photoPicker > span, .photoPicker > small { color: var(--muted); font-size: 11px; }
+.photoPicker > small { flex-basis: 100%; }
+.selectedPhoto { width: 100%; }
+.selectedPhoto img { display: block; max-height: 210px; max-width: 100%; border-radius: 8px; object-fit: contain; }
+.formActions { display: flex; align-items: center; flex-wrap: wrap; gap: 18px; margin-top: 12px; }
+@media (max-width: 600px) {
+  .heading { flex-direction: column; gap: 13px; }
+  .heading h2 { font-size: 29px; }
+  .heading button { margin-top: 0; }
+  .grid { grid-template-columns: 1fr; gap: 18px; }
+  .momentBody { padding: 19px; }
+  .momentActions > button { flex: 1; }
+  .empty { padding: 30px 18px; }
+  .empty h3 { font-size: 25px; }
+}

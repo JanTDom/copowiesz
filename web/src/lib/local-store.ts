@@ -6,13 +6,14 @@ export const emptyWorkspace: Workspace = { schemaVersion: 1, pets: [], activePet
 
 function openDb(): Promise<IDBDatabase> {
   return new Promise((resolve, reject) => {
-    const request = indexedDB.open(DB_NAME, 1);
+    let blocked = false;
+    const request = indexedDB.open(DB_NAME, 2);
     request.onupgradeneeded = () => {
-      request.result.createObjectStore("workspace");
-      request.result.createObjectStore("clips");
+      for (const name of ["workspace", "clips", "photos"]) if (!request.result.objectStoreNames.contains(name)) request.result.createObjectStore(name);
     };
-    request.onsuccess = () => resolve(request.result);
+    request.onsuccess = () => { if (blocked) request.result.close(); else resolve(request.result); };
     request.onerror = () => reject(new Error("Nie udało się otworzyć lokalnego zapisu. Sprawdź ustawienia przeglądarki."));
+    request.onblocked = () => { blocked = true; reject(new Error("Zamknij pozostałe karty COPOWIESZ, aby zaktualizować lokalny zapis zdjęć.")); };
   });
 }
 
@@ -52,6 +53,30 @@ export const saveClipBlob = (id: string, blob: Blob) => mutate("clips", s => { s
 export const loadClipBlob = (id: string) => read<Blob>("clips", id);
 export const deleteClipBlob = (id: string) => mutate("clips", s => { s.delete(id); });
 
+function photoKey(id: string): string {
+  if (!/^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i.test(id)) throw new Error("Nieprawidłowy identyfikator zdjęcia.");
+  return id.toLowerCase();
+}
+export const MAX_PHOTO_BYTES = 5 * 1024 * 1024;
+export async function validatePhotoBlob(blob: Blob): Promise<void> {
+  if (!(blob instanceof Blob) || blob.size === 0 || blob.size > MAX_PHOTO_BYTES || !["image/jpeg", "image/png", "image/webp"].includes(blob.type)) {
+    throw new Error("Wybierz zdjęcie JPEG, PNG lub WebP o rozmiarze do 5 MiB.");
+  }
+  const prefix = new Uint8Array(await blob.slice(0, 12).arrayBuffer());
+  const last = new Uint8Array(await blob.slice(-2).arrayBuffer());
+  const text = new TextDecoder("latin1").decode(prefix);
+  const valid = blob.type === "image/jpeg" ? blob.size >= 4 && prefix[0] === 255 && prefix[1] === 216 && last[0] === 255 && last[1] === 217
+    : blob.type === "image/png" ? [137,80,78,71,13,10,26,10].every((byte,index) => prefix[index] === byte)
+      : blob.size >= 12 && text.startsWith("RIFF") && text.slice(8,12) === "WEBP";
+  if (!valid) throw new Error("Zawartość pliku nie pasuje do formatu zdjęcia.");
+}
+export async function savePhotoBlob(id: string, blob: Blob): Promise<void> {
+  const key = photoKey(id); await validatePhotoBlob(blob);
+  return mutate("photos", store => { store.put(blob, key); });
+}
+export const loadPhotoBlob = (id: string) => read<Blob>("photos", photoKey(id));
+export const deletePhotoBlob = (id: string) => mutate("photos", store => { store.delete(photoKey(id)); });
+
 export function downloadBlob(blob: Blob, name: string) {
   const url = URL.createObjectURL(blob);
   const a = document.createElement("a"); a.href = url; a.download = name; a.click();
@@ -59,7 +84,8 @@ export function downloadBlob(blob: Blob, name: string) {
 }
 
 export function exportWorkspace(workspace: Workspace) {
-  downloadBlob(new Blob([JSON.stringify(workspace, null, 2)], { type: "application/json" }), "copowiesz-profile.json");
+  // Legacy avatar remains in the owner's explicit copy. New album/video bytes are separate downloads.
+  downloadBlob(new Blob([JSON.stringify(validateWorkspace(workspace), null, 2)], { type: "application/json" }), "copowiesz-profile.json");
 }
 
 export function parseWorkspace(text: string): Workspace {

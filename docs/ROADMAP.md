@@ -1,6 +1,6 @@
 # Stan realizacji i dalsze etapy
 
-Stan na 7 października 2026. Rozmowa z własnym psem lub kotem jest główną funkcją działającej
+Stan na 8 października 2026. Rozmowa z własnym psem lub kotem jest główną funkcją działającej
 aplikacji Next.js w `web/`. Test, filmy, pamięć i wiedza wspierają indywidualność rozmówcy.
 Stan publikacji GitHub/Vercel/DNS opisuje [WEB_DEPLOYMENT.md](WEB_DEPLOYMENT.md).
 
@@ -23,20 +23,25 @@ Stan publikacji GitHub/Vercel/DNS opisuje [WEB_DEPLOYMENT.md](WEB_DEPLOYMENT.md)
   eksport/import ze sprawdzaniem struktury, usuwanie profili i bajtów lokalnych nagrań.
 - Supabase w oddzielnej organizacji COPOWIESZ Free, Frankfurt, z prywatnymi profilami,
   kluczami obcymi właściciela i prywatnym Storage. RLS przetestowane na chmurowym PostgreSQL.
+- Siedem rozszerzeń rozmowy i historii: osobisty finał przygotowania, tematy z zapisów,
+  „Nasz tydzień”, sesja głosowa, opis sytuacji z odwołaniem do klipu, prywatny album oraz
+  karta PNG. [Zakres, prywatność i granice sprawdzeń](ENGAGEMENT_FEATURES.md).
 
 Materiał jest gotowy do rozmowy o pełnym zakresie profilu po przejrzeniu 85 pytań i zapisaniu
 czterech rzeczywistych klipów. Pozostałe braki, relacje opiekuna i wyniki modelu nadal wymagają
 ostrożnego traktowania. Licznik gotowości opisuje pokrycie materiału, nie naukową jakość profilu.
 Wersja ta nie wylicza osobowości ani nie diagnozuje chorób.
 
-Sprawdzenia: **50 testów web + 33 Python, TypeScript i build; 14/14 pgTAP na Supabase;
-18 sprawdzeń interfejsu** z syntetycznymi materiałami. Interfejs sprawdzono na 1440 × 1000
+Sprawdzenia: **119 testów web + 33 Python, TypeScript i build; wcześniejsze 14/14 RLS
+i 43/43 płatności pgTAP na Supabase**. Pierwszy etap obejmował 18 sprawdzeń interfejsu
+z syntetycznymi materiałami. Interfejs sprawdzono na 1440 × 1000
 oraz 390 × 844; wykonano po jednym rzeczywistym wywołaniu Gemini dla syntetycznej rozmowy
 i filmu. Testy oprogramowania nie zastępują niezależnej oceny behawiorystycznej i klinicznej.
 
 ## Przed udostępnieniem szerszemu pilotażowi
 
-Dokończyć i sprawdzić dostępność domeny oraz deploymentu. Publiczna rejestracja email wymaga
+Domena i publiczny deployment działają; nowe wydania nadal wymagają sprawdzenia po publikacji.
+Publiczna rejestracja email wymaga
 własnego SMTP; domyślna poczta Supabase obsługuje wyłącznie członków zespołu. Potwierdzanie
 email pozostaje włączone, a konta anonimowe wyłączone. Włączenie kont gości wymaga osobnej
 jawnej zgody na ten zakres uwierzytelniania; nie obchodzić odmowy kontroli uprawnień.

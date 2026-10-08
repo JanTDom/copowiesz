@@ -1,12 +1,21 @@
 # Aplikacja webowa — lokalnie i wdrożenie
 
-Stan konfiguracji: 7 października 2026. Aplikacja działa publicznie pod
+Stan konfiguracji: 8 października 2026. Aplikacja działa publicznie pod
 [copowiesz.pl](https://copowiesz.pl) i [copowiesz.vercel.app](https://copowiesz.vercel.app).
 Kod jest w repozytorium GitHub, pierwszy workflow CI zakończył się powodzeniem, a Vercel
 publikuje gałąź `main`. Supabase utworzono i przetestowano w oddzielnej organizacji Free.
 Aplikacja znajduje się w `web/`; publiczny fundament Python i dane źródłowe pozostają w
 katalogu głównym. Publiczna rejestracja nadal wymaga własnego SMTP; poniżej opisano zakres
 rzeczywistych sprawdzeń i pozostałe ograniczenia.
+
+## Rozmowa i wspólna historia
+
+Kod rozszerzono o osobisty finał po przygotowaniu profilu, tematy z zapisów, „Nasz tydzień”,
+sesję głosową, opis sytuacji z odwołaniem do klipu, prywatny album oraz kartę PNG.
+[Dokładny zakres](ENGAGEMENT_FEATURES.md). Migracja IndexedDB do wersji 2 zachowuje profile
+i nagrania, dodając lokalny magazyn zdjęć. Album w JSON zawiera opisy i odnośniki; bajty zdjęć
+nie synchronizują się w Supabase. Istniejący prywatny JSON profilu obsługuje nowe pola, bez
+nowych tabel i zmian Auth lub RLS. Nie zmieniono flagi publicznego Gemini ani zakresu rozliczeń.
 
 ## Uzupełnienie serwisu i płatności
 
@@ -26,7 +35,7 @@ PostgreSQL: 43/43 asercje pgTAP, pełny ROLLBACK i potwierdzone zero syntetyczny
 zamówień oraz uprawnień po teście. Security advisors nie zgłosił ostrzeżeń. Ten test jednej
 transakcji nie zastępuje dwóch równoległych sesji ani prawdziwego sandboxa P24.
 
-Końcowa weryfikacja kodu obejmuje 87/87 testów web, w tym 32 płatności, 33/33 Python,
+Końcowa weryfikacja kodu obejmuje 119/119 testów web, w tym 32 płatności, 33/33 Python,
 TypeScript, produkcyjny build Next i zgodność eksportu wiedzy. Osobny przegląd odtworzył
 odzyskanie zamówienia po niepewnej awarii bazy, bez drugiej rejestracji u operatora.
 
@@ -94,11 +103,12 @@ Analiza po zgodzie zwraca `source=technical` i informację, że filmu/klatek nie
 Niskie funkcje generowania oraz kontroli dostępności mają tę samą blokadę, również przed
 odczytem zapamiętanego wyniku dostępności. Konta i zgoda filmu nie omijają warunku.
 
-Zmianę sprawdzono lokalnie w 55 testach web oraz przez TypeScript. Nowe regresje nie używają
+Pierwotną zmianę sprawdzono lokalnie w 55 testach web oraz przez TypeScript. Regresje nie używają
 realnych kluczy ani płatnych wywołań; dotychczasowe testy autoryzacji mają syntetyczne jawne
-potwierdzenie w swoich fixture. Ten etap nie zmienia produkcyjnych zmiennych środowiska,
-nie uruchamia rozliczeń i nie potwierdza jeszcze wdrożenia blokady pod publiczną domeną.
-Poniższe wcześniejsze wyniki produkcji należy odczytywać z tym rozróżnieniem.
+potwierdzenie w swoich fixture. Późniejsza publikacja i odczyt publicznego `/api/status`
+potwierdziły blokadę na domenie: `publicAccessAllowed=false`; czat zwraca `provider=local`.
+Nowe rozszerzenia zachowują tę blokadę i nie zmieniają produkcyjnych zmiennych środowiska.
+Poniższe wcześniejsze wyniki produkcji należy odczytywać jako historyczne.
 
 ## Sprawdzenia
 

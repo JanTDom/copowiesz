@@ -4,7 +4,7 @@
 zwierzaka na podstawie odpowiedzi opiekuna, wspólnej historii i kierowanych nagrań. Rozmowa
 jest głównym ekranem; przy każdej odpowiedzi można sprawdzić jej dostępną podstawę.
 
-Stan na 7 października 2026: działa aplikacja Next.js w `web/`, rozmowa lokalna i adapter Gemini, nagrywanie
+Stan na 8 października 2026: działa aplikacja Next.js w `web/`, rozmowa lokalna i adapter Gemini, nagrywanie
 w przeglądarce, lokalna pamięć i wyszukiwarka wiedzy. Prywatna baza Supabase została wdrożona
 w oddzielnej organizacji Free. Konfiguracja wdrożenia GitHub/Vercel i domeny `copowiesz.pl`
 jest opisana w [dokumencie wdrożenia](docs/WEB_DEPLOYMENT.md), który rozróżnia konfigurację,
@@ -26,9 +26,14 @@ formularza nie potwierdzają naukowej trafności modelu osobowości.
 | Pamięć | Jawne relacje opiekuna i potwierdzone adnotacje filmu; wyniki modelu pozostają osobno; lokalny eksport/import i usuwanie profilu |
 | Wiedza | 290 autorskich polskich kart i 173 źródła; filtry gatunku, domeny i wyszukiwania; źródła, ograniczenia i bezpieczne kroki |
 | Zdrowie | Informacje dla opiekuna poza fikcyjnym głosem; obserwowalne sygnały, przykładowe przyczyny i pilność konsultacji, bez diagnozy lub dawkowania |
+| Osobista rozmowa | Finał po 85 pytaniach i czterech rzeczywistych kontekstach wideo; tematy z własnych zapisów, albumu i brakujących odpowiedzi |
+| Rozmowa głosowa | Jawne dyktowanie z poprawą tekstu, polski lektor, tempo, opcjonalny odczyt i przerwanie; dostępność zależy od przeglądarki |
+| Zrozum sytuację | Opis opiekuna i kontekst, lokalny podgląd własnego klipu; do czatu nie przesyła się filmu, klatek ani dźwięku |
+| Wasza historia | Zapisy, prywatny album zdjęć i chwil oraz „Nasz tydzień” z podstawami, bez wymyślonych wydarzeń |
+| Karta zwierzaka | Lokalny PNG 1080 × 1350 z logo, wybranym zdjęciem i do trzech jawnie wybranych potwierdzonych faktów; bez automatycznej publikacji |
 | Supabase | Projekt `copowiesz` w organizacji Free, Frankfurt; trzy prywatne tabele, prywatny bucket, RLS właściciela i klucze obce |
 | Fundament Python | Odtwarzalny indeks SQLite FTS5, pamięć opisowa, katalog źródeł, import metadanych Europe PMC/Crossref/Hugging Face |
-| Sprawdzenia | 55 testów web i 33 Python; 14 testów pgTAP na chmurowym PostgreSQL; 18 wcześniejszych sprawdzeń interfejsu z syntetycznymi danymi |
+| Sprawdzenia | 119 testów web i 33 Python, TypeScript i build; wcześniejsze 14 testów RLS i 43 płatności pgTAP; UI nowych funkcji z syntetycznymi danymi |
 
 Przygotowanie materiału obejmuje przejrzenie wszystkich 85 pytań oraz zapis czterech
 rzeczywistych krótkich klipów w wymaganych kontekstach. Przed tym aplikacja oznacza rozmowę
@@ -53,8 +58,9 @@ npm run dev
 ```
 
 Otwórz `http://127.0.0.1:3000`. Dane aplikacji i bajty nagrań domyślnie pozostają w IndexedDB
-tej przeglądarki. Wyczyszczenie danych przeglądarki może je usunąć; eksport profilu i pobranie
-filmów są osobnymi operacjami.
+tej przeglądarki, podobnie jak zdjęcia albumu. Wyczyszczenie danych przeglądarki może je usunąć;
+eksport profilu, pobranie filmów i pobranie zdjęć albumu są osobnymi operacjami. Ręczna
+synchronizacja profilu w chmurze obejmuje opisy albumu, bez jego plików zdjęć.
 
 Bez klucza API działają formularz, pamięć, wiedza, kontrola techniczna nagrań oraz ograniczone
 odpowiedzi oparte na zapisach. Lokalnie można skonfigurować klucz Gemini
@@ -104,7 +110,10 @@ przerwanie, import filmu, potwierdzenie adnotacji, odświeżenie i widoki 1440 �
 Wykonano także po jednym wywołaniu Gemini dla syntetycznej rozmowy i filmu. Standardowy błąd
 odmowy kamery sprawdzono kontrolowanym błędem; rzeczywista odmowa na telefonach, Safari/iPhone,
 Chrome/Android, przejście w tło oraz transfer bajtów przez zalogowany Storage API nadal
-wymagają odrębnej weryfikacji. To sprawdzenia oprogramowania, a nie walidacja behawiorystyczna.
+wymagają odrębnej weryfikacji. Nowy przegląd obejmuje album po odświeżeniu, edycję, przeniesienie
+chwili do rozmowy, osobiste tematy, renderowanie karty PNG i jej unieważnienie oraz panel
+głosowy. Mikrofon na fizycznym urządzeniu, zapis PNG w systemie i natywne udostępnianie telefonu
+pozostają do sprawdzenia. To sprawdzenia oprogramowania, a nie walidacja behawiorystyczna.
 
 Wiedza obejmuje 106 kart psa, 104 kota, 40 metod i 40 sygnałów zdrowotnych. Kwestionariusz
 źródłowy ma 94 pytania w 12 sekcjach: 76 wspólnych i po 9 specyficznych dla gatunku. Karty
@@ -162,6 +171,7 @@ są w [WEB_DEPLOYMENT.md](docs/WEB_DEPLOYMENT.md).
 
 - [Założenia produktu](docs/PRODUCT_BRIEF.md) i [dalsze etapy](docs/ROADMAP.md).
 - [Uruchomienie i wdrożenie](docs/WEB_DEPLOYMENT.md), [styl aplikacji](docs/DESIGN_SYSTEM.md).
+- [Rozmowa, album, tydzień i karta zwierzaka](docs/ENGAGEMENT_FEATURES.md).
 - [Wiedza psa](docs/behavior/dog.md), [kota](docs/behavior/cat.md), [sygnały zdrowotne](docs/HEALTH_SIGNALS.md).
 - [Źródła](docs/SOURCES.md), [bibliografia do przeglądu](docs/LITERATURE_CANDIDATES.md), [lektury](docs/papers/INDEX.md).
 - [Kwestionariusz](docs/QUESTIONNAIRES.md), [protokół wideo](docs/VIDEO_PROTOCOL.md), [zadania kierowane](docs/GUIDED_VIDEO_TASKS.md).

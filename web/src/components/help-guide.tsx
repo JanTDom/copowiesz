@@ -19,6 +19,30 @@ type GuideEntry = {
 
 const guideEntries: GuideEntry[] = [
   {
+    id: "pierwsza-osobista-rozmowa", category: "Rozmowa", question: "Kiedy zaczyna się nasza pierwsza osobista rozmowa?",
+    paragraphs: ["Po przejrzeniu wszystkich 85 pytań i zapisaniu czterech rzeczywistych nagrań w wymaganych kontekstach zobaczysz na ekranie rozmowy powitanie z imieniem i zdjęciem zwierzaka. Wybierz „Rozpocznij naszą rozmowę”. Powitanie korzysta z zapisanych przez Ciebie informacji i pokazuje ich podstawę.", "„Nie wiem” pozostaje brakiem informacji, a nagranie przerwane dla komfortu lub pominięte nie zalicza kontekstu. Gotowość opisuje zebrany materiał. Nie stanowi wyniku osobowości ani walidacji naukowej. Przed ukończeniem przygotowania rozmowa nadal jest oznaczona jako demonstracja profilu w przygotowaniu."], keywords: "finał ukończenie powitanie gotowość pełny test pierwsza rozmowa",
+  },
+  {
+    id: "osobiste-tematy", category: "Rozmowa", question: "Skąd biorą się proponowane tematy rozmowy?",
+    paragraphs: ["Na ekranie rozmowy znajdziesz tematy dobrane do zapisanych zwyczajów, ostatnich chwil i brakujących informacji o tym konkretnym zwierzaku. Wybranie tematu przygotowuje pytanie; możesz je zmienić przed wysłaniem.", "Propozycja nie jest nowym rozpoznaniem ani dopisanym wspomnieniem. Kiedy brakuje danych, aplikacja proponuje pytanie o naturalną sytuację zamiast udawać, że zna odpowiedź. Tematy zdrowotne omawiamy osobno jako informacje dla opiekuna."], keywords: "sugestie pytania tematy personalizacja pamięć",
+  },
+  {
+    id: "nasz-tydzien", category: "Twoje dane", question: "Co pokazuje „Nasz tydzień”?",
+    paragraphs: ["Otwórz „Wasza historia” → „Nasz tydzień”. Zobaczysz zapisy dodane w ostatnich siedmiu dniach: obserwacje, chwile w albumie i metadane nagrań, a także ostatnie aktualizacje odpowiedzi w teście. Pod każdym zapisem możesz sprawdzić podstawę i przejść do rozmowy o nim. Zmiana podpisu dawnej chwili nie przenosi jej do bieżącego tygodnia.", "Podsumowanie przygotowuje się lokalnie, gdy otwierasz ten widok. Nie wysyła przypomnień i nie tworzy ocen samopoczucia z liczby zapisów. Jeśli niczego nie dodano, powie to wprost. Kontekst zdrowia pozostaje w obserwacjach; brak aktualizacji nie oznacza, że coś jest nie tak."], keywords: "raport tydzień 7 dni podsumowanie powrót historia powiadomienia",
+  },
+  {
+    id: "sytuacja-w-rozmowie", category: "Rozmowa", question: "Jak porozmawiać o konkretnej reakcji lub chwili?",
+    paragraphs: ["Na ekranie rozmowy wybierz „Zrozum tę sytuację”. Opisz widoczną reakcję i kontekst: co było przed nią, co zrobił zwierzak i co nastąpiło później. Możesz wskazać istniejący klip, obejrzeć go i poprawić opis przed wysłaniem.", "Do tej rozmowy trafia Twój opis i odwołanie do klipu. Sam wybór filmu nie przesyła jego obrazu ani dźwięku do modelu i nie wykonuje nowej analizy wideo. Analiza Gemini pozostaje osobnym działaniem w „Nagraniach”, zależnym od zgody i dostępności dostawcy. Możesz też wybrać „Porozmawiaj o tej chwili” bezpośrednio z albumu."], tip: "Odpowiedź o sytuacji oddziela relację opiekuna, braki w kontekście i bezpieczny kolejny krok. Sygnały zdrowotne omawia poza wyobrażonym głosem zwierzaka.", keywords: "zdarzenie opis zachowanie reakcja dlaczego dołącz film kontekst album",
+  },
+  {
+    id: "prywatny-album", category: "Twoje dane", question: "Jak korzystać z prywatnego albumu?",
+    paragraphs: ["Otwórz „Wasza historia” → „Wasz album”. Dodaj tytuł, własny podpis i datę chwili. Możesz dołączyć zdjęcie JPEG, PNG lub WebP do 5 MiB albo powiązać zapisany film. Zdjęcie jest przygotowywane na urządzeniu jako kopia JPEG do 2400 pikseli; zachowaj oryginał osobno.", "Album pozostaje w tej przeglądarce. Możesz oglądać materiały, zmienić podpis, pobrać plik, usunąć chwilę lub omówić jej opis w rozmowie. Opis wydarzenia jest Twoją relacją, a zdjęcie samo nie potwierdza emocji, zdrowia ani przyczyny reakcji."], tip: "JSON przenosi opisy i odwołania albumu, ale nie pliki zdjęć i filmów. Pobierz pliki osobno przed zmianą urządzenia. Ręczny zapis profilu w chmurze również nie wysyła zdjęć albumu.", keywords: "galeria zdjęcie fotografia wspomnienia album pliki pobierz usuń podpis data",
+  },
+  {
+    id: "karta-zwierzaka", category: "Twoje dane", question: "Jak przygotować kartę zwierzaka do udostępnienia?",
+    paragraphs: ["W rozmowie lub „Waszej historii” wybierz „Karta zwierzaka”. Sprawdź imię i zdjęcie, a następnie zaznacz do trzech informacji, które chcesz pokazać. Żaden fakt nie jest zaznaczony automatycznie. Karta korzysta z wybranych zapisów opiekuna, bez diagnoz i procentów osobowości.", "Wybierz przygotowanie i pobranie karty PNG. Jeśli urządzenie obsługuje udostępnianie plików, osobny przycisk pozwoli otworzyć jego okno udostępniania. Aplikacja sama niczego nie publikuje. Po wysłaniu pliku innej osobie jego kopia pozostaje poza kontrolą aplikacji. Karta profilu demonstracyjnego jest oznaczona jako demonstracja."], keywords: "share udostępnij karta PNG portret media społecznościowe wybrane fakty",
+  },
+  {
     id: "pierwszy-profil", category: "Pierwsze kroki", question: "Od czego zacząć z własnym psem lub kotem?",
     paragraphs: ["Otwórz aplikację i wybierz „Poznajmy się”. Wpisz imię zwierzaka i wybierz psa albo kota. Wiek i zdjęcie możesz uzupełnić, jeśli je znasz i chcesz je dodać. Każdy zwierzak ma osobny profil, odpowiedzi, nagrania i historię.", "Przygotowanie osobistego profilu obejmuje pełny test i cztery kierowane sytuacje do nagrania. Możesz rozłożyć je na kilka spokojnych sesji. Rozmowa pokazana przed ukończeniem przygotowania jest oznaczona jako demonstracja; nie oznacza gotowej personalizacji Twojego zwierzaka."],
     tip: "Najpierw chcesz zobaczyć pomysł? Wybierz „Zobacz rozmowę z Luną”. Luna jest przykładem z wymyślonymi danymi.", keywords: "start nowy zwierzak dodaj imię pies kot wiek zdjęcie",
@@ -104,8 +128,8 @@ const guideEntries: GuideEntry[] = [
     keywords: "weterynarz choroba diagnoza objawy leczenie leki ból pilność nagła zmiana",
   },
   {
-    id: "dyktowanie-odsluch", category: "Rozmowa", question: "Jak użyć mikrofonu i przycisku „Posłuchaj”?",
-    paragraphs: ["Jeśli przeglądarka obsługuje dyktowanie, przycisk mikrofonu pozwala wprowadzić tekst głosem. Przeczytaj rozpoznaną wiadomość przed wysłaniem — imiona i krótkie słowa mogą zostać zapisane błędnie. Gdy dyktowanie jest niedostępne, wpisz wiadomość zwyczajnie.", "„Posłuchaj” odczytuje tekst przez funkcję głosową urządzenia. Dostępność polskiego głosu zależy od przeglądarki i systemu. Sprawdź głośność oraz wyciszenie telefonu. To odczyt odpowiedzi aplikacji, a nie tłumaczenie odgłosów zwierzaka."],
+    id: "dyktowanie-odsluch", category: "Rozmowa", question: "Jak działa tryb głosowy i przycisk „Posłuchaj”?",
+    paragraphs: ["W rozmowie otwórz tryb głosowy. Jeśli przeglądarka obsługuje dyktowanie, możesz rozpocząć i zakończyć słuchanie, a rozpoznaną wiadomość poprawić przed wysłaniem. Przycisk mikrofonu pozwala również podyktować pojedynczą wiadomość. Przeczytaj rozpoznaną wiadomość przed wysłaniem — imiona i krótkie słowa mogą zostać zapisane błędnie. Gdy dyktowanie jest niedostępne, wpisz wiadomość zwyczajnie.", "„Posłuchaj” odczytuje tekst przez funkcję głosową urządzenia. Dostępność polskiego głosu zależy od przeglądarki i systemu. Sprawdź głośność oraz wyciszenie telefonu. W trybie głosowym możesz wybrać dostępny polski głos, tempo oraz automatyczny odczyt kolejnych odpowiedzi. Odczyt można przerwać. To głos urządzenia; aplikacja nie odtwarza biologicznego głosu zwierzaka. Rozpoznawanie mowy w niektórych przeglądarkach korzysta z zewnętrznej usługi ich dostawcy."],
     keywords: "mikrofon mowa głos dźwięk TTS speech safari chrome dyktuj odsłuchaj posłuchaj polski",
   },
   {
@@ -115,7 +139,7 @@ const guideEntries: GuideEntry[] = [
   },
   {
     id: "kopia-danych", category: "Twoje dane", question: "Jak zrobić kopię i przenieść profil na inne urządzenie?",
-    paragraphs: ["W Ustawieniach znajdź „Twoja kopia danych” i wybierz „Pobierz dane JSON”. Kopia zawiera profile, odpowiedzi, historię i rozmowy. Nie zawiera plików wideo ani klucza API. Filmy pobierz osobno przy każdym klipie w „Nagraniach”."],
+    paragraphs: ["W Ustawieniach znajdź „Twoja kopia danych” i wybierz „Pobierz dane JSON”. Kopia zawiera profile, odpowiedzi, historię, opisy albumu, rozmowy i ewentualne zdjęcie profilowe. Nie zawiera plików wideo, zdjęć albumu ani klucza API. Filmy pobierz osobno w „Nagraniach”, a zdjęcia w albumie."],
     steps: ["Zapisz kopię JSON i potrzebne filmy w miejscu, do którego masz dostęp, a inne osoby nie mają przypadkowego dostępu.", "Na drugim urządzeniu otwórz aplikację i w Ustawieniach wybierz „Wczytaj kopię”.", "Sprawdź komunikat o liczbie profili. Wczytanie zastępuje obecne dane w tej przeglądarce — najpierw pobierz ich kopię, jeśli chcesz je zachować.", "Pliki wideo pozostają osobną kopią. Sam import JSON nie przywraca filmów w odtwarzaczu ani nie pobiera ich z chmury."],
     keywords: "backup export import eksport JSON pobierz wczytaj zmiana komórki utrata danych",
   },
@@ -126,7 +150,7 @@ const guideEntries: GuideEntry[] = [
   },
   {
     id: "usun-profil", category: "Twoje dane", question: "Jak usunąć profil i jego dane?",
-    paragraphs: ["Wybierz właściwego zwierzaka, otwórz Ustawienia i znajdź „Usuń profil … i jego lokalne dane”. Przed potwierdzeniem możesz pobrać kopię. Usunięcie obejmuje lokalny profil, odpowiedzi, rozmowy, pamięć i jego pliki wideo.", "Jeżeli jesteś zalogowany i masz kopię w chmurze, w oknie potwierdzenia zaznacz także usunięcie profilu i filmów z konta w chmurze. Usunięcie tylko lokalnej kopii nie usuwa kopii chmurowej. Osobno usuń wyeksportowane pliki, które sam zachowałeś."],
+    paragraphs: ["Wybierz właściwego zwierzaka, otwórz Ustawienia i znajdź „Usuń profil … i jego lokalne dane”. Przed potwierdzeniem możesz pobrać kopię. Usunięcie obejmuje lokalny profil, odpowiedzi, rozmowy, pamięć, album oraz jego lokalne pliki zdjęć i wideo.", "Jeżeli jesteś zalogowany i masz kopię w chmurze, w oknie potwierdzenia zaznacz także usunięcie profilu i filmów z konta w chmurze. Usunięcie tylko lokalnej kopii nie usuwa kopii chmurowej. Osobno usuń wyeksportowane pliki, które sam zachowałeś."],
     keywords: "kasowanie usuń prywatność zapomnij lokalnie chmura RODO dane",
   },
   {

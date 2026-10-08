@@ -56,7 +56,7 @@ Moduł zdrowia ma opisywać obserwowalne objawy, kilka możliwych przyczyn i pil
 ze źródłami weterynaryjnymi. Nie rozpoznawaj choroby z wyglądu, wideo lub kwestionariusza,
 nie zalecaj leków/dawkowania i nie nadpisuj osobowości na podstawie choroby.
 
-## Rzeczywisty stan aplikacji — 7 października 2026
+## Rzeczywisty stan aplikacji — 8 października 2026
 
 - Działa interfejs z rozmową jako głównym ekranem, pełnym testem, nagraniami, historią,
   wiedzą i ustawieniami. Fundament zawiera 290 kart i 173 źródła. Kwestionariusz źródłowy
@@ -65,6 +65,11 @@ nie zalecaj leków/dawkowania i nie nadpisuj osobowości na podstawie choroby.
   znany głos/imię, znana zabawa i dobrowolny kontakt. „Nie wiem” jest poprawnym zapisem przeglądu,
   pozostając brakiem wiedzy. Przerwane/pominięte klipy nie zaliczają kontekstu. Gotowość
   opisuje pokrycie materiału, a nie naukową jakość lub procent osobowości.
+- Rozszerzenia: osobisty finał przygotowania, tematy z własnych zapisów, „Nasz tydzień”, sesja
+  głosowa, opis sytuacji z lokalnym podglądem klipu, prywatny album i karta PNG. IndexedDB v2
+  zachowuje dotychczasowe dane i dodaje `photos`; JSON/chmura obejmują opisy albumu bez plików
+  zdjęć. Czat nie przesyła bajtów filmu/zdjęć ani dźwięku. Udostępnianie karty jest jawne,
+  bez wstępnie wybranych faktów. Szczegóły i granice: docs/ENGAGEMENT_FEATURES.md.
 - Rozmowa używa Gemini `gemini-3.1-flash-lite`. Przy niepełnym profilu pozostaje oznaczoną
   demonstracją. Publiczny Vercel dopuszcza Gemini tylko gdy operator świadomie ustawi
   `GEMINI_PUBLIC_BILLING_CONFIRMED=true`; przy wymaganiu projektu Free pozostawić false.
@@ -99,8 +104,10 @@ nie zalecaj leków/dawkowania i nie nadpisuj osobowości na podstawie choroby.
   `/api/status` raportuje klucz jako configured, available=false, publicAccessAllowed=false
   i policyNotice, bez zapytania do Auth/Google nawet z Bearer. Chat zwraca 200 local;
   analiza z wyrażoną zgodą zwraca technical z informacją, że materiału nie wysłano.
-- Zweryfikowano 55 testów web i 33 Python, TypeScript oraz wcześniejszy build, 14 testów RLS oraz 18 sprawdzeń
-  UI z syntetycznymi danymi. Nie deklaruj walidacji ekspertów ani testów na fizycznym telefonie.
+- Zweryfikowano 119 testów web i 33 Python, TypeScript i build, wcześniejsze 14 testów RLS
+  i 43 płatności pgTAP oraz UI z syntetycznymi danymi. Mikrofon na fizycznym urządzeniu,
+  zapis PNG w systemie i natywne udostępnianie telefonu wymagają osobnego sprawdzenia.
+  Nie deklaruj walidacji ekspertów ani testów na fizycznym telefonie.
 
 Stan wdrożenia GitHub/Vercel/DNS i ograniczenia usług sprawdzaj w docs/WEB_DEPLOYMENT.md;
 to dokument aktualizowany po poszczególnych etapach, nie obietnica dostępności.

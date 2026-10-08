@@ -74,6 +74,12 @@ const messageSchema = z.object({
   evidence: z.array(evidenceSchema).max(30).optional(),
   mode: z.enum(["grounded", "gemini", "ollama", "health", "demo"]).optional(),
   provider: z.enum(["gemini", "local", "ollama"]).optional(),
+  situation: z.object({ description: z.string().trim().min(1).max(1500), context: z.string().trim().max(500).optional(), clipId: uuid.optional() }).optional(),
+});
+
+const momentSchema = z.object({
+  id: uuid, title: z.string().trim().min(1).max(120), caption: z.string().max(2000),
+  occurredAt: timestamp, createdAt: timestamp, photoId: uuid.optional(), clipId: uuid.optional(),
 });
 
 export const workspacePetRecordSchema: z.ZodType<PetRecord> = z.object({
@@ -84,6 +90,8 @@ export const workspacePetRecordSchema: z.ZodType<PetRecord> = z.object({
   answers: z.record(z.string().regex(/^q\d{3}$/), answerSchema).refine((value) => Object.keys(value).length <= 94),
   clips: z.array(clipSchema).max(500), memories: z.array(memorySchema).max(1000), messages: z.array(messageSchema).max(2000),
   isDemo: z.boolean().optional(),
+  moments: z.array(momentSchema).max(1000).optional(),
+  preferences: z.object({ firstConversationCelebratedAt: timestamp.optional() }).optional(),
 }).superRefine((record, ctx) => {
   const questions = new Map(getQuestions(record.pet.species).map((question) => [question.id, question]));
   for (const [key, answer] of Object.entries(record.answers)) {
@@ -91,17 +99,25 @@ export const workspacePetRecordSchema: z.ZodType<PetRecord> = z.object({
     if (!question || key !== answer.questionId || !validateAnswer(question, answer)) ctx.addIssue({ code: "custom", path: ["answers", key], message: "Nieprawidłowa odpowiedź lub pytanie innego gatunku." });
     if (question?.construct === "species" && answer.status === "answered" && answer.value !== record.pet.species) ctx.addIssue({ code: "custom", path: ["answers", key, "value"], message: "Odpowiedź o gatunku jest sprzeczna z profilem zwierzaka." });
   }
-  for (const [field, values] of [["clips", record.clips], ["memories", record.memories], ["messages", record.messages]] as const) {
+  for (const [field, values] of [["clips", record.clips], ["memories", record.memories], ["messages", record.messages], ["moments", record.moments ?? []]] as const) {
     if (new Set(values.map((value) => value.id)).size !== values.length) ctx.addIssue({ code: "custom", path: [field], message: "Powtórzone identyfikatory zapisów." });
   }
-  const clipIds = new Set(record.clips.map((clip) => clip.id));
   record.clips.forEach((clip, index) => {
     if (clip.petId !== record.pet.id) ctx.addIssue({ code: "custom", path: ["clips", index, "petId"], message: "Klip należy do innego profilu." });
   });
+  const usableClipIds = new Set(record.clips.filter((clip) => clip.petId === record.pet.id && clip.durationSec > 0 && clip.width > 0 && clip.height > 0 && ["technical_only", "ai_reviewed"].includes(clip.status)).map((clip) => clip.id));
+  record.moments?.forEach((moment, index) => {
+    if (moment.clipId && !usableClipIds.has(moment.clipId)) ctx.addIssue({ code: "custom", path: ["moments", index, "clipId"], message: "Chwila wymaga rzeczywistego nagrania tego zwierzaka." });
+  });
+  const photoIds = (record.moments ?? []).flatMap((moment) => moment.photoId ? [moment.photoId] : []);
+  if (new Set(photoIds).size !== photoIds.length) ctx.addIssue({ code: "custom", path: ["moments"], message: "Powtórzony identyfikator zdjęcia albumu." });
+  record.messages.forEach((message, index) => {
+    if (message.situation?.clipId && !usableClipIds.has(message.situation.clipId)) ctx.addIssue({ code: "custom", path: ["messages", index, "situation", "clipId"], message: "Sytuacja odwołuje się do niegotowego lub obcego nagrania." });
+  });
   record.memories.forEach((memory, index) => {
     if (demoMemoryIds.has(memory.id) && !record.isDemo) ctx.addIssue({ code: "custom", path: ["memories", index, "id"], message: "Identyfikator demonstracji w rzeczywistym profilu." });
-    if (memory.source === "video_annotation" && (!memory.clipId || !clipIds.has(memory.clipId))) ctx.addIssue({ code: "custom", path: ["memories", index, "clipId"], message: "Adnotacja wymaga istniejącego klipu tego zwierzaka." });
-    if (memory.clipId && !clipIds.has(memory.clipId)) ctx.addIssue({ code: "custom", path: ["memories", index, "clipId"], message: "Odwołanie do nieistniejącego klipu." });
+    if (memory.source === "video_annotation" && (!memory.clipId || !usableClipIds.has(memory.clipId))) ctx.addIssue({ code: "custom", path: ["memories", index, "clipId"], message: "Adnotacja wymaga rzeczywistego klipu tego zwierzaka." });
+    if (memory.clipId && !usableClipIds.has(memory.clipId)) ctx.addIssue({ code: "custom", path: ["memories", index, "clipId"], message: "Odwołanie do nieistniejącego lub niegotowego klipu." });
   });
 });
 
@@ -109,6 +125,10 @@ const workspaceSchema = z.object({ schemaVersion: z.literal(1), pets: z.array(wo
   if (new Set(workspace.pets.map((record) => record.pet.id)).size !== workspace.pets.length) ctx.addIssue({ code: "custom", path: ["pets"], message: "Powtórzone profile." });
   const clipIds = workspace.pets.flatMap((record) => record.clips.map((clip) => clip.id));
   if (new Set(clipIds).size !== clipIds.length) ctx.addIssue({ code: "custom", path: ["pets"], message: "Ten sam klip występuje w kilku profilach." });
+  const momentIds = workspace.pets.flatMap((record) => (record.moments ?? []).map((moment) => moment.id));
+  const photoIds = workspace.pets.flatMap((record) => (record.moments ?? []).flatMap((moment) => moment.photoId ? [moment.photoId] : []));
+  if (new Set(momentIds).size !== momentIds.length) ctx.addIssue({ code: "custom", path: ["pets"], message: "Ta sama chwila występuje w kilku profilach." });
+  if (new Set(photoIds).size !== photoIds.length) ctx.addIssue({ code: "custom", path: ["pets"], message: "Zdjęcie albumu ma powtórzony identyfikator." });
 });
 
 export function validatePetRecord(value: unknown): PetRecord {

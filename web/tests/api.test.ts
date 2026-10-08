@@ -102,7 +102,7 @@ test("API odrzuca obce pochodzenie, błędne dane i nadmierny strumień przed mo
   value.clips.push({ ...clip(value), petId: "other-pet" });
   assert.equal((await chat(request("chat", { record: value, message: "Hej" }))).status, 400);
   assert.equal((await chat(request("chat", { record: record(), message: "x".repeat(2001) }))).status, 400);
-  const oversized = new Request("http://localhost:3000/api/chat", { method: "POST", headers: { "Content-Type": "application/json", Origin: "http://localhost:3000" }, body: "x".repeat(512001) });
+  const oversized = new Request("http://localhost:3000/api/chat", { method: "POST", headers: { "Content-Type": "application/json", Origin: "http://localhost:3000" }, body: "x".repeat(2 * 1024 * 1024 + 1) });
   assert.equal((await chat(oversized)).status, 413);
 }));
 

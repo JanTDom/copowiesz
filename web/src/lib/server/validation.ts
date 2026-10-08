@@ -54,6 +54,12 @@ export const petRecordSchema: z.ZodType<PetRecord> = z.object({
 export const chatRequestSchema = z.object({
   record: petRecordSchema,
   message: z.string().trim().min(1).max(2000),
+  situation: z.object({ description: z.string().trim().min(1).max(1500), context: z.string().trim().max(500).optional(), clipId: identifier.optional() }).strict().optional(),
+}).superRefine(({record,situation},ctx) => {
+  if (situation?.clipId && !record.clips.some(clip => clip.id === situation.clipId && clip.petId === record.pet.id
+    && clip.durationSec > 0 && clip.width > 0 && clip.height > 0 && ["technical_only", "ai_reviewed"].includes(clip.status))) {
+    ctx.addIssue({code:"custom",path:["situation","clipId"],message:"Sytuacja wymaga własnego gotowego nagrania."});
+  }
 });
 
 const jpegFrame = z.string().max(240_000).regex(/^data:image\/jpeg;base64,[A-Za-z0-9+/]+={0,2}$/)

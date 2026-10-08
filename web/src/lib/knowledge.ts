@@ -59,7 +59,8 @@ export function getKnowledgeEvidence(card: KnowledgeCard): Evidence[] {
 
 // Routing językowy do ostrożnej informacji, nie algorytm rozpoznawania chorób.
 export function isHealthQuestion(message: string): boolean {
-  return /\b(bol\w*|chorob\w*|chory|chora|choruje|zdrow\w*|wymiot\w*|rzyga|dusz\w*|oddych\w*|oddech\w*|krw\w*|sinaw\w*|lek\w*|dawk\w*|biegun\w*|drgawk\w*|omdla\w*|zatruc\w*|truciz\w*|weterynar\w*|zolte|zolty|zolta|dzi\w*sla|kuweta|mocz\w*|sika\w*|wysik\w*)\b/.test(fold(message)) || /nie (je|pije|moze wstac|moze oddac|moze sie wysikac)/.test(fold(message));
+  const text = fold(message);
+  return /\b(bol\w*|chorob\w*|chory|chora|choruje|zdrow\w*|wymiot\w*|rzyga|dusz\w*|oddych\w*|oddech\w*|krw\w*|sinaw\w*|lek\w*|dawk\w*|biegun\w*|drgawk\w*|omdla\w*|zatruc\w*|truciz\w*|weterynar\w*|zolte|zolty|zolta|dzi\w*sla|kuweta|mocz\w*|sika\w*|wysik\w*|rak|nowotwor\w*|cukrzyc\w*|insulin\w*|padaczk\w*|astm\w*|zapalen\w*|antybiotyk\w*|klinicz\w*|operacj\w*|uraz\w*|kulaw\w*|apat\w*|nerk\w*|tarczyc\w*|kastrac\w*|steryliz\w*|leczeni\w*|dysplazj\w*|niewydoln\w*)\b/.test(text) || /nie (je|pije|moze wstac|moze oddac|moze sie wysikac)/.test(text);
 }
 
 export interface GroundedReply { content: string; evidence: Evidence[]; mode: NonNullable<Message["mode"]> }
@@ -82,6 +83,7 @@ function matchingFacts(record: PetRecord, query: string): Evidence[] {
     // Nie używamy zgłoszonych problemów zdrowotnych jako „osobowości”.
     .filter((fact) => !record.memories.some((memory) => memory.id === fact.id && memory.category === "health"))
     .filter((fact) => !/^q0(2[0-9]|9[34])$/.test(fact.id))
+    .filter((fact) => !isHealthQuestion(`${fact.title} ${fact.excerpt}`))
     .map((fact) => { const factTokens = new Set(tokens(`${fact.title} ${fact.excerpt}`)); return { fact, score: queryTokens.reduce((sum, token) => sum + (factTokens.has(token) ? 1 : 0), 0) }; })
     .filter(({ score }) => score > 0)
     .sort((a, b) => b.score - a.score)

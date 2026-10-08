@@ -1,4 +1,4 @@
-export const LEGAL_VERSION = "2026-10-07.1";
+export const LEGAL_VERSION = "2026-10-08.1";
 export const operator = {
   name: "Multinewsroom Jan Domaniewski",
   address: "ul. Barcicka 44, 01-839 Warszawa",
@@ -10,7 +10,7 @@ export type LegalSection = { id: string; title: string; paragraphs: string[]; bu
 export const termsSections: LegalSection[] = [
   { id: "uslugodawca", title: "1. Usługodawca i kontakt", paragraphs: [
     "Serwis COPOWIESZ pod adresem copowiesz.pl prowadzi Multinewsroom Jan Domaniewski, przedsiębiorca prowadzący działalność gospodarczą, ul. Barcicka 44, 01-839 Warszawa, NIP 5252189241, REGON 147154574. Kontakt dotyczący usługi, danych, reklamacji i odstąpienia: kontakt@copowiesz.pl.",
-    "Regulamin opisuje pilotażową wersję aplikacji oraz zasady przygotowanego procesu zakupu, gdy konkretna płatna oferta zostanie uruchomiona. Wersja dokumentu: 2026-10-07.1. COPOWIESZ jest przeznaczony dla pełnoletnich opiekunów psów i kotów.",
+    "Regulamin opisuje pilotażową wersję aplikacji oraz zasady przygotowanego procesu zakupu, gdy konkretna płatna oferta zostanie uruchomiona. Wersja dokumentu: 2026-10-08.1. COPOWIESZ jest przeznaczony dla pełnoletnich opiekunów psów i kotów.",
   ] },
   { id: "przedmiot", title: "2. Co oferuje COPOWIESZ", paragraphs: [
     "Aplikacja pozwala utworzyć profil psa lub kota, przejrzeć przekrojowy formularz, nagrać krótkie sceny według instrukcji, zapisać obserwacje i rozmawiać po polsku z cyfrową reprezentacją zwierzęcia. Udostępnia też bazę wiedzy z odsyłaczami do źródeł. Indywidualny profil wymaga przejrzenia 85 pytań i czterech kontekstów rzeczywistych nagrań. Odpowiedzi «nie wiem» pozostają brakiem informacji.",
@@ -51,17 +51,17 @@ export const termsSections: LegalSection[] = [
 ];
 export const privacySections: LegalSection[] = [
   { id: "administrator", title: "1. Administrator i zakres", paragraphs: [
-    "Administratorem danych przetwarzanych w związku z COPOWIESZ jest Multinewsroom Jan Domaniewski, ul. Barcicka 44, 01-839 Warszawa, NIP 5252189241, REGON 147154574. Sprawy prywatności i praw do danych: kontakt@copowiesz.pl. Wersja informacji: 2026-10-07.1.",
+    "Administratorem danych przetwarzanych w związku z COPOWIESZ jest Multinewsroom Jan Domaniewski, ul. Barcicka 44, 01-839 Warszawa, NIP 5252189241, REGON 147154574. Sprawy prywatności i praw do danych: kontakt@copowiesz.pl. Wersja informacji: 2026-10-08.1.",
     "Informacje o zwierzęciu mogą łączyć się z danymi opiekuna i jego otoczenia. Traktujemy te zapisy jako prywatne. Film może zawierać głos, twarz, adres lub inne informacje o człowieku; unikaj ich rejestrowania. Nie wymagamy takich danych do przygotowania profilu i nie tworzymy biometrii ludzi.",
   ] },
   { id: "lokalnie", title: "2. Co zapisuje się na urządzeniu", paragraphs: [
     "Profile, zdjęcia, odpowiedzi, notatki, historia rozmów i pliki nagrań są domyślnie przechowywane w IndexedDB tej przeglądarki. Samo dodanie zwierzaka nie tworzy kopii profilu w Supabase. Po zalogowaniu przeglądarka może przechowywać techniczne tokeny sesji potrzebne do uwierzytelnienia.",
-    "Lokalny zapis nie oznacza braku transmisji. Po wysłaniu wiadomości wiadomość i wybrany kontekst profilu trafiają do serwera aplikacji. Odpowiedź lokalna jest przygotowywana przez serwer z tych danych. Przy aktywnym Gemini odpowiednia część kontekstu i historii trafia też do Google. Zdjęcie profilu jest pomijane w kontekście rozmowy. Funkcje głosu w przeglądarce mogą korzystać z usług jej dostawcy.",
+    "Lokalny zapis nie oznacza braku transmisji. Po wysłaniu wiadomości wiadomość i wybrany kontekst profilu trafiają do serwera aplikacji. Odpowiedź lokalna jest przygotowywana przez serwer z tych danych. Przy aktywnym Gemini odpowiednia część kontekstu i historii trafia też do Google. Zdjęcie profilu i bajty zdjęć albumu są pomijane w kontekście rozmowy. Omówienie wybranej chwili przekazuje jej opis opiekuna oraz ewentualne odwołanie do klipu; nie jest automatyczną analizą filmu. Funkcje głosu w przeglądarce mogą korzystać z usług jej dostawcy.",
   ] },
   { id: "przeplywy", title: "3. Oddzielne przepływy, oddzielne decyzje", paragraphs: [
     "Rozmowa: przekazujesz wiadomość, gatunek, imię, zgłoszony wiek, wybrane relacje i fragment wcześniejszej rozmowy. To dane do odpowiedzi, a nie automatycznie potwierdzone fakty. W publicznym pilotażu dostęp do Gemini jest obecnie wyłączony do czasu spełnienia wymogów dostawcy; odpowiedź lokalna ma własne oznaczenie.",
-    "Analiza filmu: zapis w przeglądarce następuje przed analizą. Wysłanie krótkiego filmu albo wybranych klatek do Google wymaga osobnego zaznaczenia zgody. Większy film może być reprezentowany przez kilka klatek bez dźwięku; aplikacja opisuje ten zakres. Bez tej decyzji działa sprawdzenie parametrów. Nie zaznaczamy zgody automatycznie.",
-    "Chmura: po zalogowaniu i wybraniu «Zapisz profile w chmurze» profile i historia trafiają do prywatnego projektu Supabase. Wysłanie filmów jest osobną czynnością. Pobranie profilu nie pobiera automatycznie filmów. Zalogowanie samo w sobie nie synchronizuje historii.",
+    "Analiza filmu: zapis w przeglądarce następuje przed analizą. Wysłanie krótkiego filmu albo wybranych klatek do Google wymaga osobnego zaznaczenia zgody. Większy film może być reprezentowany przez kilka klatek bez dźwięku; aplikacja opisuje ten zakres. Bez tej decyzji działa sprawdzenie parametrów. Nie zaznaczamy zgody automatycznie. Album, podsumowanie tygodnia i karta zwierzaka powstają na urządzeniu. Karta pokazuje tylko świadomie wybrane niezdrowotne informacje; pobranie i udostępnienie pliku wymagają osobnego działania użytkownika. Aplikacja nie publikuje jej automatycznie.",
+    "Chmura: po zalogowaniu i wybraniu «Zapisz profile w chmurze» profile i historia trafiają do prywatnego projektu Supabase. Wysłanie filmów jest osobną czynnością. Pobranie profilu nie pobiera automatycznie filmów ani zdjęć albumu. Bajty zdjęć albumu pozostają lokalne także po ręcznym zapisie opisów profilu w chmurze. Zalogowanie samo w sobie nie synchronizuje historii.",
     "Płatność: gdy sprzedaż zostanie uruchomiona, przekażemy Przelewy24 dane potrzebne do transakcji, w tym kwotę, opis i e-mail z potwierdzonego konta. Nie będziemy przechowywać numeru karty ani bankowych danych logowania. Zamówienie zachowa zaakceptowane wersje warunków i potwierdzenie transakcji.",
   ] },
   { id: "cele", title: "4. Cele i podstawy przetwarzania", paragraphs: [
@@ -75,7 +75,7 @@ export const privacySections: LegalSection[] = [
     "Aktualne warunki Google wymagają dla aplikacji dostępnych użytkownikom EOG projektu API z aktywnym rozliczaniem. Dla usług objętych zasadami Paid Services Google deklaruje, że nie używa przekazanych treści do ulepszania modeli. Google może przechowywać je przez ograniczony czas dla bezpieczeństwa. W EOG te zasady użycia danych dotyczą także bezpłatnej quota; nie należy utożsamiać nazwy planu z zasadami trenowania.",
   ] },
   { id: "retencja", title: "6. Przechowywanie i usuwanie", paragraphs: [
-    "Lokalne dane pozostają do usunięcia przez Ciebie, wyczyszczenia przeglądarki lub działania jej mechanizmów zwalniania miejsca. Własne pobrane kopie pozostają poza kontrolą aplikacji. Pobieraj je świadomie i przechowuj bezpiecznie; eksport JSON nie zawiera plików wideo ani klucza API.",
+    "Lokalne dane pozostają do usunięcia przez Ciebie, wyczyszczenia przeglądarki lub działania jej mechanizmów zwalniania miejsca. Własne pobrane kopie pozostają poza kontrolą aplikacji. Pobieraj je świadomie i przechowuj bezpiecznie; eksport JSON zawiera opisy albumu i ewentualne zdjęcie profilowe, lecz nie zawiera plików zdjęć albumu, wideo ani klucza API. Zdjęcia albumu i filmy pobierasz osobno.",
     "Dane konta i dobrowolnie zapisane profile pozostają w chmurze przez czas korzystania z konta, do usunięcia profilu lub zakończenia konta. Nie ma automatycznej gwarancji bezterminowej archiwizacji. Kopie techniczne dostawców i dane wymagane do obrony roszczeń lub wykonania obowiązku prawnego mogą pozostać po usunięciu danych operacyjnych, przez okres uzasadniony tym celem i zasadami danego dostawcy.",
     "Zgłoszenia obsługujemy przez czas ich rozpatrywania i ewentualnego dochodzenia roszczeń. Po uruchomieniu sprzedaży dokumenty rozliczeniowe będą przechowywane przez okres wymagany prawem podatkowym. Nie zapisujemy treści profili ani nagrań w zamierzonej analityce reklamowej. Żądanie usunięcia pozostałych danych lub konta skieruj na kontakt@copowiesz.pl; wskaż dane pozwalające bezpiecznie ustalić Twoje uprawnienie.",
   ] },

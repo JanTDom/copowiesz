@@ -1,0 +1,55 @@
+.view { max-height: none; min-height: calc(100dvh - 190px); }
+.conversation { max-height: 58dvh; min-height: 210px; flex: 1 1 auto; }
+.quickActions { display: flex; flex-wrap: wrap; gap: 8px 18px; padding: 15px 0 2px; }
+.quickActions button { display: inline-flex; align-items: center; gap: 7px; color: var(--blue); padding: 7px 0; font-size: 11px; }
+.quickActions button[aria-expanded="true"] { color: var(--gold); }
+.quickActions button:hover { color: var(--gold); }
+.topicSection { border-top: 1px solid var(--border); padding-top: 13px; margin-top: 8px; }
+.topicHeading { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 8px; font-size: 10px; color: var(--muted); margin-bottom: 9px; }
+.topicHeading button { display: inline-flex; gap: 5px; align-items: center; color: var(--blue); font-size: 10px; padding: 4px 0; }
+.topics { display: flex; gap: 8px; flex-wrap: wrap; }
+.topics button { display: inline-flex; align-items: center; gap: 9px; max-width: 100%; padding: 9px 12px; font-size: 11px; text-align: left; color: var(--blue); border: 1px solid #394963; border-radius: 8px; background: #152238; }
+.topics button:hover { border-color: var(--gold); color: var(--gold); }
+.topics svg { flex-shrink: 0; }
+.voicePanel, .situationPanel { border: 1px solid #3d4e66; border-radius: 12px; background: #152238; padding: 18px; margin: 0 0 15px; }
+.panelHeading { display: flex; align-items: flex-start; justify-content: space-between; gap: 10px; }
+.panelHeading h2 { font-family: var(--sans); font-size: 15px; display: flex; align-items: center; gap: 9px; line-height: 1.5; }
+.panelHeading h2 svg { flex-shrink: 0; color: var(--gold); }
+.voicePanel p, .situationPanel p { font-size: 11px; line-height: 1.8; color: var(--muted); margin-top: 10px; }
+.voicePanel button, .situationPanel button { flex-shrink: 0; }
+.voiceActions { display: flex; flex-wrap: wrap; gap: 10px; margin: 15px 0; }
+.voiceOptions { display: grid; grid-template-columns: 1.1fr 1fr; gap: 12px 18px; align-items: center; }
+.voiceOptions label { font-size: 11px; margin-top: 0; }
+.voiceOptions select { margin-top: 7px; font-size: 11px; padding: 9px 10px; }
+.voiceOptions input[type="range"] { margin: 10px 0 0; padding: 0; accent-color: var(--gold); width: 100%; }
+.check { display: flex; align-items: flex-start; gap: 9px; grid-column: 1/-1; font-weight: 400; }
+.check input { margin: 3px 0 0; }
+.voicePanel p.voiceDisclosure, .situationPanel p.voiceDisclosure { font-size: 10px; color: #9aacc7; }
+.voicePanel p.voiceStatus, .voiceStatus { color: var(--gold); font-size: 11px; line-height: 1.7; margin-top: 10px; }
+.voicePanel p.interim { color: var(--blue); padding: 10px 12px; border-left: 2px solid var(--gold); overflow-wrap: anywhere; background: #0f1b2d; }
+.situationPanel label { display: block; font-size: 12px; margin-top: 15px; }
+.situationPanel label span { color: var(--muted); font-size: 10px; font-weight: 400; }
+.situationPanel textarea, .situationPanel input, .situationPanel select { font-size: 12px; margin-top: 8px; }
+.situationPanel textarea { min-height: 90px; resize: vertical; }
+.preview { display: block; width: 100%; max-height: 280px; background: #08101d; border-radius: 8px; margin: 15px 0; }
+.situationActions { display: flex; flex-wrap: wrap; gap: 12px 20px; margin-top: 14px; }
+.situationMessage { font-size: 11px; color: var(--blue); padding: 11px 13px; margin-bottom: 9px; border: 1px solid var(--border); border-radius: 8px; }
+.situationMessage summary { cursor: pointer; }
+.situationMessage p { white-space: pre-wrap; overflow-wrap: anywhere; color: var(--muted); margin-top: 10px; }
+.helperAvatar { display: grid; place-items: center; flex-shrink: 0; width: 36px; height: 36px; border: 1px solid #405575; border-radius: 50%; color: var(--blue); background: #192943; }
+@media (max-width: 800px) {
+  .view { min-height: calc(100dvh - 138px); max-height: none; }
+  .conversation { max-height: 55dvh; min-height: 180px; }
+  .quickActions { gap: 4px 15px; padding-top: 11px; }
+  .quickActions button { font-size: 10px; }
+  .topics { flex-wrap: nowrap; overflow-x: auto; padding-bottom: 7px; scrollbar-width: thin; }
+  .topics button { flex-shrink: 0; max-width: 260px; font-size: 10px; line-height: 1.6; padding: 8px 10px; }
+  .voicePanel, .situationPanel { padding: 14px; }
+  .panelHeading h2 { font-size: 14px; }
+  .voiceOptions { grid-template-columns: 1fr; }
+  .voiceOptions select { font-size: 12px; }
+  .helperAvatar { width: 27px; height: 27px; }
+  .helperAvatar svg { width: 16px; height: 16px; }
+}
+
+.voicePanel, .situationPanel { scroll-margin-top: 92px; }

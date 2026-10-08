@@ -1,6 +1,6 @@
 # Wygląd aplikacji COPOWIESZ
 
-Stan na 7 października 2026. Źródłem tokenów i responsywnych reguł jest
+Stan na 8 października 2026. Źródłem tokenów i responsywnych reguł jest
 `web/src/app/globals.css`; fonty są importowane lokalnie w `web/src/app/layout.tsx`.
 Wygląd ma wspierać spokojną rozmowę o bliskim zwierzęciu oraz czytelne przejście przez test
 i nagrania. Nie używać dekoracyjnych wskaźników pewności lub osobowości.
@@ -61,6 +61,12 @@ Najważniejszą akcją produktu jest rozmowa. Test pokazuje jedno pytanie i jawn
 nagranie pokazuje instrukcję, zgodę na model, zapis i bezpieczne przerwanie. Komunikaty
 „demonstracja”, „kontrola parametrów” i „opis modelu do sprawdzenia” muszą pozostać czytelne
 przy wyniku, również w mobilnym układzie.
+
+Historia ma trzy zakładki: zapisy, album i tydzień. Album zachowuje szerokość kolumn także
+przy pojedynczej chwili, aby zdjęcie nie wypychało podpisu i działań. Tematy oraz opis sytuacji
+wypełniają edytowalną wiadomość. Panel głosowy jasno rozdziela rozpoczęcie mikrofonu, odczyt
+i ręczne wysłanie. Karta PNG 1080 × 1350 korzysta z logo i typografii; podgląd zachowuje
+czytelne oznaczenie podstawy oraz demonstracji. Wyboru faktów nie zaznacza się automatycznie.
 
 Dotychczasowy QA obejmował 1440 × 1000 i 390 × 844 oraz brak poziomego przepełnienia głównego
 ekranu. To nie jest pełny audyt dostępności. Przed pilotażem sprawdzić klawiaturę, czytniki,
